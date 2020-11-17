@@ -9,12 +9,15 @@ files.
 NOTE: This file does not currently list the FHIR resources and examples generated from .fsh files. It only
 lists those files generated from project configs or the contents in the ig-data folder.
 
-| SUSHI-GENERATED FILE                                          | ACTION    | INPUT FILE(S)                                                             |
-| ------------------------------------------------------------- | --------- | ------------------------------------------------------------------------- |
-| input/ImplementationGuide-cibmtr-reporting.json               | generated | fsh/config.yaml, {all input resources and pages}                          |
-| input/ignoreWarnings.txt                                      | generated |                                                                           |
-| ig.ini                                                        | copied    | fsh/ig-data/ig.ini                                                        |
-| input/includes/menu.xml                                       | copied    | fsh/ig-data/input/includes/menu.xml                                       |
-| input/pagecontent/StructureDefinition-cibmtr-patient-intro.md | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-cibmtr-patient-intro.md |
-| input/pagecontent/index.xml                                   | copied    | fsh/ig-data/input/pagecontent/index.xml                                   |
-| package-list.json                                             | copied    | fsh/ig-data/package-list.json                                             |
+| SUSHI-GENERATED FILE                                                  | ACTION    | INPUT FILE(S)                                                                     |
+| --------------------------------------------------------------------- | --------- | --------------------------------------------------------------------------------- |
+| input/ImplementationGuide-cibmtr-reporting.json                       | generated | fsh/config.yaml, {all input resources and pages}                                  |
+| input/ignoreWarnings.txt                                              | generated |                                                                                   |
+| ig.ini                                                                | copied    | fsh/ig-data/ig.ini                                                                |
+| input/includes/menu.xml                                               | copied    | fsh/ig-data/input/includes/menu.xml                                               |
+| input/pagecontent/StructureDefinition-cibmtr-observation-lab-intro.md | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-cibmtr-observation-lab-intro.md |
+| input/pagecontent/StructureDefinition-cibmtr-observation-lab-notes.md | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-cibmtr-observation-lab-notes.md |
+| input/pagecontent/StructureDefinition-cibmtr-patient-intro.md         | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-cibmtr-patient-intro.md         |
+| input/pagecontent/StructureDefinition-cibmtr-patient-notes.md         | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-cibmtr-patient-notes.md         |
+| input/pagecontent/index.xml                                           | copied    | fsh/ig-data/input/pagecontent/index.xml                                           |
+| package-list.json                                                     | copied    | fsh/ig-data/package-list.json                                                     |

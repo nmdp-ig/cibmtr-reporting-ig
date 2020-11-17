@@ -10,7 +10,7 @@
   "name": "CIBMTRReportingImplementationGuide",
   "title": "CIBMTR Reporting Implementation Guide",
   "status": "active",
-  "date": "2020-08-13T09:10:40-05:00",
+  "date": "2020-11-17T15:55:44-06:00",
   "contact": [
     {
       "name": "Bob Milius",
@@ -305,10 +305,6 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-cibmtr-observation-lab.html"
           }
         ],
         "reference": {
@@ -323,10 +319,6 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-cibmtr-patient.html"
           }
         ],
         "reference": {
@@ -341,10 +333,6 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Patient-MyPatientExample1.html"
           }
         ],
         "reference": {
@@ -359,10 +347,6 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Patient-MyPatientExample2.html"
           }
         ],
         "reference": {
@@ -377,10 +361,6 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Observation"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Observation-PostInfusionProcedureTimepointType.html"
           }
         ],
         "reference": {
@@ -447,6 +427,10 @@
       {
         "code": "path-resource",
         "value": "input/history"
+      },
+      {
+        "code": "path-resource",
+        "value": "fsh-generated/resources"
       },
       {
         "code": "path-pages",

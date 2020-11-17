@@ -11,7 +11,7 @@
   <name value="CIBMTRReportingImplementationGuide"/>
   <title value="CIBMTR Reporting Implementation Guide"/>
   <status value="active"/>
-  <date value="2020-08-13T09:10:40-05:00"/>
+  <date value="2020-11-17T15:55:44-06:00"/>
   <contact>
     <name value="Bob Milius"/>
     <telecom>
@@ -193,9 +193,6 @@
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-cibmtr-observation-lab.html"/>
-      </extension>
       <reference>
         <reference value="StructureDefinition/cibmtr-observation-lab"/>
       </reference>
@@ -206,9 +203,6 @@
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-cibmtr-patient.html"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/cibmtr-patient"/>
@@ -221,9 +215,6 @@
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Patient-MyPatientExample1.html"/>
-      </extension>
       <reference>
         <reference value="Patient/MyPatientExample1"/>
       </reference>
@@ -235,9 +226,6 @@
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Patient-MyPatientExample2.html"/>
-      </extension>
       <reference>
         <reference value="Patient/MyPatientExample2"/>
       </reference>
@@ -248,9 +236,6 @@
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-PostInfusionProcedureTimepointType.html"/>
       </extension>
       <reference>
         <reference value="Observation/PostInfusionProcedureTimepointType"/>
@@ -312,6 +297,10 @@
     <parameter>
       <code value="path-resource"/>
       <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
     </parameter>
     <parameter>
       <code value="path-pages"/>

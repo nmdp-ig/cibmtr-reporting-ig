@@ -18,7 +18,8 @@
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
    <h3>Structures: Resource Profiles </h3>
-   <p>These define constraints on FHIR resources that need to be complied with by conformant implementations</p>
+   <p>{% capture grouping_desc %}These define constraints on FHIR resources for systems conforming to this implementation guide{% endcapture %}
+    {{ grouping_desc | markdownify}}</p>
    <p>
       <table class="grid">
          <col style="width:20%"/>
@@ -44,7 +45,8 @@
    </p>
    <a name="2"> </a>
    <h3>Example: Example Instances </h3>
-   <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
+   <p>{% capture grouping_desc %}These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like{% endcapture %}
+    {{ grouping_desc | markdownify}}</p>
    <p>
       <table class="grid">
          <col style="width:20%"/>

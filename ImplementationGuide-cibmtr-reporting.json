@@ -1,0 +1,88 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "cibmtr-reporting",
+  "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/cibmtr-reporting",
+  "version": "0.1.0",
+  "name": "CIBMTRReportingImplementationGuide",
+  "title": "CIBMTR Reporting Implementation Guide",
+  "status": "active",
+  "publisher": "NMDP/Be The Match",
+  "contact": [
+    {
+      "name": "Bob Milius",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:bmilius@nmdp.org"
+        }
+      ]
+    }
+  ],
+  "description": "How to report hemat data to CIBMTR",
+  "packageId": "cibmtr-reporting",
+  "license": "Apache-2.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "packageId": "hl7.fhir.us.core",
+      "version": "3.1.0"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/cibmtr-uscore-patient"
+        },
+        "name": "CIBMTR Patient Profile (us-core)",
+        "description": "CIBMTR Patient Profile for CRID assignment (us-core)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/CridAssignmentFormLogicalModel"
+        },
+        "name": "CridAssignmentFormLogicalModel",
+        "description": "Logical model for form 2804r5 - CIBMTR Research ID Assignment Form",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/PatientCridAssignment"
+        },
+        "name": "PatientCridAssignment",
+        "description": "Patient information needed for the assignment of the Center for International Blood and Marrow Transplant Research (CIBMTR)'s Research Identification Number (CRID).",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "html"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2019+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "STU1"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      }
+    ]
+  }
+}

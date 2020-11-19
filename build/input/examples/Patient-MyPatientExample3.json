@@ -1,0 +1,74 @@
+{
+  "resourceType": "Patient",
+  "id": "MyPatientExample3",
+  "meta": {
+    "profile": [
+      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
+    ],
+    "security": [
+      {
+        "system": "http://terminology.cibmtr.org/codesystem/transplant-center",
+        "code": "rc_00000",
+        "display": "00000 Good Health Medical Center"
+      }
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://terminology.cibmtr.org/identifier/CRID",
+      "value": "123456"
+    }
+  ],
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "text",
+          "valueString": "White Caucasian"
+        },
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "code": "2106-3",
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "display": "White"
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+    },
+    {
+      "extension": [
+        {
+          "url": "text",
+          "valueString": "Unknown"
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Jane"
+      ],
+      "family": "Doe"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1944-01-29",
+  "address": [
+    {
+      "use": "home",
+      "city": "Garland",
+      "state": "Texas"
+    }
+  ],
+  "managingOrganization": {
+    "identifier": {
+      "system": "http://terminology.cibmtr.org/identifier/transplant-center",
+      "value": "00000"
+    },
+    "display": "Good Health Medical Center"
+  }
+}

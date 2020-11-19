@@ -37,3 +37,4 @@ Usage: #example
 * subject.identifier.value = "1234567"
 * component[aGVHD].code =  http://loinc.org#75323-6 "Condition"
 * component[aGVHD].valueCodeableConcept =  http://cdebrowser.nci.nih.gov#4722619 "aGVHD"
+

@@ -62,13 +62,14 @@ Description:    "CIBMTR Patient Profile for CRID assignment (us-core)"
 // Expression: "('http://cibmtr.org/identifier/transplant-center' in identifier.system) or ('http://nmdp.org/identifier/transplant-center' in identifier.system)"
 // Severity: #warning
 
+
 Instance: MyPatientExample1 
 InstanceOf: http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
 Description: "example using NMDP center number"
 Usage: #example
 * meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* meta.security[TransplantCenter].code = #rc_00000
+* meta.security[TransplantCenter].display = "00000 Good Health Medical Center"
 * identifier.system = "http://example.org/mrn"
 * identifier.value = "abc"
 * name.given = "John"
@@ -77,13 +78,32 @@ Usage: #example
 // * managingOrganization.identifier.system = "http://cibmtr.org/identifier/transplant-center"
 // * managingOrganization.identifier.value = "456"
 
+
 Instance: MyPatientExample2
 InstanceOf: http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
 Description: "example using NMDP center number"
 Usage: #example
 * meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
 * meta.security[TransplantCenter].code = #rc_00000
-* meta.security[TransplantCenter].display = "0000 My Transplant Center"
+* meta.security[TransplantCenter].display = "00000 Good Health Medical Center"
+* identifier[0].system = "http://example.org/mrn"
+* identifier[0].value = "abc"
+* identifier[1].system = "http://terminology.cibmtr.org/identifier/CRID"
+* identifier[1].value = "123456"
+* name.given = "Jane"
+* name.family = "Doe"
+* gender = #female
+// * managingOrganization.identifier.system = "http://cibmtr.org/identifier/transplant-center"
+// * managingOrganization.identifier.value = "456"
+
+
+Instance: MyPatientExample3
+InstanceOf: http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
+Description: "example using NMDP center number"
+Usage: #example
+* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
+* meta.security[TransplantCenter].code = #rc_00000
+* meta.security[TransplantCenter].display = "00000 Good Health Medical Center"
 * identifier.system = "http://terminology.cibmtr.org/identifier/CRID"
 * identifier.value = "abc"
 * identifier[CRID].system = "http://terminology.cibmtr.org/identifier/CRID"
@@ -91,8 +111,79 @@ Usage: #example
 * name.given = "Jane"
 * name.family = "Doe"
 * gender = #female
-// * managingOrganization.identifier.system = "http://cibmtr.org/identifier/transplant-center"
-// * managingOrganization.identifier.value = "456"
+* birthDate = "1944-01-29"
+* address[0].use = #home
+* address[0].city = "Garland"
+* address[0].state = "Texas"
+* extension[race].extension[text].valueString = "White Caucasian"
+* extension[race].extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
+* extension[ethnicity].extension[text].valueString = "Unknown"
+* managingOrganization.identifier.system = "http://terminology.cibmtr.org/identifier/transplant-center"
+* managingOrganization.identifier.value = "00000"
+* managingOrganization.display = "Good Health Medical Center"
+
+
+Instance: MyPatientExample4
+InstanceOf: http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
+Description: "example using NMDP center number"
+Usage: #example
+* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
+* meta.security[TransplantCenter].code = #rc_00000
+* meta.security[TransplantCenter].display = "00000 Good Health Medical Center"
+* identifier[0].system = "http://example.org/mrn"
+* identifier[0].value = "abc"
+* identifier[1].system = "http://terminology.cibmtr.org/identifier/CRID"
+* identifier[1].value = "1234567"
+* identifier[1].use = #official
+* name.given = "Peter"
+* name.family = "Doe"
+* gender = #male
+* birthDate = "1952-05-07"
+* address[0].use = #home
+* address[0].city = "Grand Prarie"
+* address[0].state = "Texas"
+* address[0].country = "Unknown or unspecified"
+* extension[race].extension[text].valueString = "Black or African American"
+* extension[race].extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2054-5	 "Black or African American"
+* extension[ethnicity].extension[text].valueString = "Unknown"
+* managingOrganization.identifier.system = "http://terminology.cibmtr.org/identifier/transplant-center"
+* managingOrganization.identifier.value = "00000"
+* managingOrganization.display = "Good Health Medical Center"
+
+
+Instance: MyPatientExample5
+InstanceOf: http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
+Description: "example using NMDP center number"
+Usage: #example
+* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
+* meta.security[TransplantCenter].code = #rc_00000
+* meta.security[TransplantCenter].display = "00000 Good Health Medical Center"
+* identifier[0].system = "http://example.org/mrn"
+* identifier[0].value = "abc"
+* identifier[1].system = "http://terminology.cibmtr.org/identifier/CRID"
+* identifier[1].value = "1234567"
+* identifier[1].use = #official
+* name.given = "Peter"
+* name.family = "Doe"
+* gender = #male
+* birthDate = "1952-05-07"
+* address[0].use = #home
+* address[0].city = "Grand Prarie"
+* address[0].state = "Texas"
+* address[0].country = "Unknown or unspecified"
+
+* extension[race].extension[text].valueString = "Mixed"
+* extension[race].extension[ombCategory][0].valueCoding = urn:oid:2.16.840.1.113883.6.238#2054-5	 "Black or African American"
+* extension[race].extension[ombCategory][1].valueCoding = urn:oid:2.16.840.1.113883.6.238#2028-9	 "Asian"
+
+* extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
+* extension[ethnicity].extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2186-5 "Not Hispanic or Latino"
+
+* managingOrganization.identifier.system = "http://terminology.cibmtr.org/identifier/transplant-center"
+* managingOrganization.identifier.value = "00000"
+* managingOrganization.display = "Good Health Medical Center"
+
+
 
 // ValueSet: ManagingOrgVS
 // Title: "Managing Organizations Value Set"

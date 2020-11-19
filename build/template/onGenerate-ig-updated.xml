@@ -17,7 +17,7 @@
    <name value="CIBMTRReportingImplementationGuide"/>
    <title value="CIBMTR Reporting Implementation Guide"/>
    <status value="active"/>
-   <date value="2020-11-17T15:55:44-06:00"/>
+   <date value="2020-11-18T19:36:29-06:00"/>
    <contact>
       <name value="Bob Milius"/>
       <telecom>
@@ -32,7 +32,7 @@
    <dependsOn id="hl7_fhir_us_core">
       <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
       <packageId value="hl7.fhir.us.core"/>
-      <version value="3.1.0"/>
+      <version value="3.1.1"/>
    </dependsOn>
    <definition>
 
@@ -121,6 +121,51 @@
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-MyPatientExample3.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/MyPatientExample3"/>
+         </reference>
+         <name value="MyPatientExample3"/>
+         <description value="example using NMDP center number"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-MyPatientExample4.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/MyPatientExample4"/>
+         </reference>
+         <name value="MyPatientExample4"/>
+         <description value="example using NMDP center number"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-MyPatientExample5.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/MyPatientExample5"/>
+         </reference>
+         <name value="MyPatientExample5"/>
+         <description value="example using NMDP center number"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="Observation"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -165,6 +210,21 @@
             <page>
                <nameUrl value="Patient-MyPatientExample2.html"/>
                <title value="MyPatientExample2"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-MyPatientExample3.html"/>
+               <title value="MyPatientExample3"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-MyPatientExample4.html"/>
+               <title value="MyPatientExample4"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-MyPatientExample5.html"/>
+               <title value="MyPatientExample5"/>
                <generation value="generated"/>
             </page>
             <page>

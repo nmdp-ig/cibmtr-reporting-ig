@@ -26,7 +26,7 @@
   "dependsOn": [
     {
       "packageId": "hl7.fhir.us.core",
-      "version": "3.1.0",
+      "version": "3.1.1",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "id": "hl7_fhir_us_core"
     }
@@ -62,6 +62,30 @@
           "reference": "Patient/MyPatientExample2"
         },
         "name": "MyPatientExample2",
+        "description": "example using NMDP center number",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/MyPatientExample3"
+        },
+        "name": "MyPatientExample3",
+        "description": "example using NMDP center number",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/MyPatientExample4"
+        },
+        "name": "MyPatientExample4",
+        "description": "example using NMDP center number",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/MyPatientExample5"
+        },
+        "name": "MyPatientExample5",
         "description": "example using NMDP center number",
         "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
       },

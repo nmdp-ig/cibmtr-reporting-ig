@@ -13,12 +13,6 @@
       }
     ]
   },
-  "identifier": [
-    {
-      "system": "http://terminology.cibmtr.org/identifier/CRID",
-      "value": "123456"
-    }
-  ],
   "extension": [
     {
       "extension": [
@@ -45,6 +39,16 @@
         }
       ],
       "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://example.org/mrn",
+      "value": "abc"
+    },
+    {
+      "system": "http://terminology.cibmtr.org/identifier/CRID",
+      "value": "123456"
     }
   ],
   "name": [

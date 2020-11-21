@@ -17,7 +17,7 @@
    <name value="CIBMTRReportingImplementationGuide"/>
    <title value="CIBMTR Reporting Implementation Guide"/>
    <status value="active"/>
-   <date value="2020-11-18T20:23:08-06:00"/>
+   <date value="2020-11-19T10:34:52-06:00"/>
    <contact>
       <name value="Bob Milius"/>
       <telecom>
@@ -100,7 +100,7 @@
             <reference value="Patient/MyPatientExample1"/>
          </reference>
          <name value="MyPatientExample1"/>
-         <description value="example using NMDP center number"/>
+         <description value="example using CIBMTR center number"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
          <groupingId value="_ex_example"/>
       </resource>
@@ -115,7 +115,7 @@
             <reference value="Patient/MyPatientExample2"/>
          </reference>
          <name value="MyPatientExample2"/>
-         <description value="example using NMDP center number"/>
+         <description value="example using CIBMTR CRID"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
          <groupingId value="_ex_example"/>
       </resource>
@@ -130,7 +130,7 @@
             <reference value="Patient/MyPatientExample3"/>
          </reference>
          <name value="MyPatientExample3"/>
-         <description value="example using NMDP center number"/>
+         <description value="example using MRN and CRID, Race=White, Ethnicity=Unknown"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
          <groupingId value="_ex_example"/>
       </resource>
@@ -145,7 +145,7 @@
             <reference value="Patient/MyPatientExample4"/>
          </reference>
          <name value="MyPatientExample4"/>
-         <description value="example using NMDP center number"/>
+         <description value="example using CRID and MRN, Race=Black or African American, Ethnicity=Unknown"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
          <groupingId value="_ex_example"/>
       </resource>
@@ -160,7 +160,7 @@
             <reference value="Patient/MyPatientExample5"/>
          </reference>
          <name value="MyPatientExample5"/>
-         <description value="example using NMDP center number"/>
+         <description value="example using CRID &amp; MRN, Race=Mixed, Ethnicity=Not Hispanic or Latino"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
          <groupingId value="_ex_example"/>
       </resource>

@@ -6,7 +6,6 @@
   "name": "CIBMTRReportingImplementationGuide",
   "title": "CIBMTR Reporting Implementation Guide",
   "status": "active",
-  "publisher": "NMDP/Be The Match",
   "contact": [
     {
       "name": "Bob Milius",
@@ -18,7 +17,7 @@
       ]
     }
   ],
-  "description": "How to report hemat data to CIBMTR",
+  "description": "How to report HCT data to CIBMTR",
   "packageId": "cibmtr-reporting",
   "license": "Apache-2.0",
   "fhirVersion": [
@@ -26,16 +25,25 @@
   ],
   "dependsOn": [
     {
-      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "packageId": "hl7.fhir.us.core",
-      "version": "3.1.0"
+      "version": "3.1.1",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "id": "hl7_fhir_us_core"
     }
   ],
   "definition": {
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/cibmtr-uscore-patient"
+          "reference": "StructureDefinition/cibmtr-observation-lab"
+        },
+        "name": "CIBMTR Observation Laboratory Results Profile (us-core)",
+        "description": "CIBMTR Observation Laboratory Results Profile (us-core)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cibmtr-patient"
         },
         "name": "CIBMTR Patient Profile (us-core)",
         "description": "CIBMTR Patient Profile for CRID assignment (us-core)",
@@ -43,19 +51,51 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/CridAssignmentFormLogicalModel"
+          "reference": "Patient/MyPatientExample1"
         },
-        "name": "CridAssignmentFormLogicalModel",
-        "description": "Logical model for form 2804r5 - CIBMTR Research ID Assignment Form",
-        "exampleBoolean": false
+        "name": "MyPatientExample1",
+        "description": "example using NMDP center number",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
       },
       {
         "reference": {
-          "reference": "StructureDefinition/PatientCridAssignment"
+          "reference": "Patient/MyPatientExample2"
         },
-        "name": "PatientCridAssignment",
-        "description": "Patient information needed for the assignment of the Center for International Blood and Marrow Transplant Research (CIBMTR)'s Research Identification Number (CRID).",
-        "exampleBoolean": false
+        "name": "MyPatientExample2",
+        "description": "example using NMDP center number",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/MyPatientExample3"
+        },
+        "name": "MyPatientExample3",
+        "description": "example using NMDP center number",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/MyPatientExample4"
+        },
+        "name": "MyPatientExample4",
+        "description": "example using NMDP center number",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/MyPatientExample5"
+        },
+        "name": "MyPatientExample5",
+        "description": "example using NMDP center number",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
+      },
+      {
+        "reference": {
+          "reference": "Observation/PostInfusionProcedureTimepointType"
+        },
+        "name": "PostInfusionProcedureTimepointType",
+        "description": "Post Infusion Procedure Timepoint Type",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab"
       }
     ],
     "page": {

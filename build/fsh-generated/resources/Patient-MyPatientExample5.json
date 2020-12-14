@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "MyPatientExample3",
+  "id": "MyPatientExample5",
   "meta": {
     "profile": [
       "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
@@ -13,25 +13,27 @@
       }
     ]
   },
-  "identifier": [
-    {
-      "system": "http://terminology.cibmtr.org/identifier/CRID",
-      "value": "123456"
-    }
-  ],
   "extension": [
     {
       "extension": [
         {
           "url": "text",
-          "valueString": "White Caucasian"
+          "valueString": "Mixed"
         },
         {
           "url": "ombCategory",
           "valueCoding": {
-            "code": "2106-3",
+            "code": "2054-5",
             "system": "urn:oid:2.16.840.1.113883.6.238",
-            "display": "White"
+            "display": "Black or African American"
+          }
+        },
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "code": "2028-9",
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "display": "Asian"
           }
         }
       ],
@@ -41,26 +43,45 @@
       "extension": [
         {
           "url": "text",
-          "valueString": "Unknown"
+          "valueString": "Not Hispanic or Latino"
+        },
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "code": "2186-5",
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "display": "Not Hispanic or Latino"
+          }
         }
       ],
       "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
     }
   ],
+  "identifier": [
+    {
+      "system": "http://example.org/mrn",
+      "value": "abc"
+    },
+    {
+      "system": "http://terminology.cibmtr.org/identifier/CRID",
+      "value": "1234567",
+      "use": "official"
+    }
+  ],
   "name": [
     {
       "given": [
-        "Jane"
+        "Peter"
       ],
       "family": "Doe"
     }
   ],
-  "gender": "female",
-  "birthDate": "1944-01-29",
+  "gender": "male",
+  "birthDate": "1952-05-07",
   "address": [
     {
       "use": "home",
-      "city": "Garland",
+      "city": "Grand Prarie",
       "state": "Texas"
     }
   ],

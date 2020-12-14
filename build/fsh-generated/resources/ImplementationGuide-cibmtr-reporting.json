@@ -3,16 +3,26 @@
   "id": "cibmtr-reporting",
   "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/cibmtr-reporting",
   "version": "0.1.0",
-  "name": "CIBMTRReportingImplementationGuide",
+  "name": "CIBMTRReporting",
   "title": "CIBMTR Reporting Implementation Guide",
-  "status": "active",
+  "status": "draft",
+  "publisher": "NMDP/Be The Match",
   "contact": [
+    {
+      "name": "NMDP/Be The Match",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://bethematch.org"
+        }
+      ]
+    },
     {
       "name": "Bob Milius",
       "telecom": [
         {
           "system": "email",
-          "value": "mailto:bmilius@nmdp.org"
+          "value": "bmilius@nmdp.org"
         }
       ]
     }
@@ -25,10 +35,10 @@
   ],
   "dependsOn": [
     {
+      "id": "uscore",
       "packageId": "hl7.fhir.us.core",
-      "version": "3.1.1",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
-      "id": "hl7_fhir_us_core"
+      "version": "3.1.1"
     }
   ],
   "definition": {
@@ -54,7 +64,7 @@
           "reference": "Patient/MyPatientExample1"
         },
         "name": "MyPatientExample1",
-        "description": "example using NMDP center number",
+        "description": "example using CIBMTR center number",
         "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
       },
       {
@@ -62,7 +72,7 @@
           "reference": "Patient/MyPatientExample2"
         },
         "name": "MyPatientExample2",
-        "description": "example using NMDP center number",
+        "description": "example using CIBMTR CRID",
         "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
       },
       {
@@ -70,7 +80,7 @@
           "reference": "Patient/MyPatientExample3"
         },
         "name": "MyPatientExample3",
-        "description": "example using NMDP center number",
+        "description": "example using MRN and CRID, Race=White, Ethnicity=Unknown",
         "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
       },
       {
@@ -78,7 +88,7 @@
           "reference": "Patient/MyPatientExample4"
         },
         "name": "MyPatientExample4",
-        "description": "example using NMDP center number",
+        "description": "example using CRID and MRN, Race=Black or African American, Ethnicity=Unknown",
         "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
       },
       {
@@ -86,7 +96,7 @@
           "reference": "Patient/MyPatientExample5"
         },
         "name": "MyPatientExample5",
-        "description": "example using NMDP center number",
+        "description": "example using CRID & MRN, Race=Mixed, Ethnicity=Not Hispanic or Latino",
         "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
       },
       {
@@ -113,11 +123,11 @@
     "parameter": [
       {
         "code": "copyrightyear",
-        "value": "2019+"
+        "value": "2020+"
       },
       {
         "code": "releaselabel",
-        "value": "STU1"
+        "value": "draft"
       },
       {
         "code": "show-inherited-invariants",

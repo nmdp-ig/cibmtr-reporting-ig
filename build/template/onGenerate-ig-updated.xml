@@ -4,7 +4,7 @@
    <text>
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
-         <h2>CIBMTRReportingImplementationGuide</h2>
+         <h2>CIBMTRReporting</h2>
          <p>The official URL for this implementation guide is: </p>
          <pre>http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/cibmtr-reporting</pre>
          <div>
@@ -14,22 +14,30 @@
    </text>
    <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/cibmtr-reporting"/>
    <version value="0.1.0"/>
-   <name value="CIBMTRReportingImplementationGuide"/>
+   <name value="CIBMTRReporting"/>
    <title value="CIBMTR Reporting Implementation Guide"/>
-   <status value="active"/>
-   <date value="2020-11-18T20:23:08-06:00"/>
+   <status value="draft"/>
+   <date value="2020-12-13T20:40:20-06:00"/>
+   <publisher value="NMDP/Be The Match"/>
+   <contact>
+      <name value="NMDP/Be The Match"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://bethematch.org"/>
+      </telecom>
+   </contact>
    <contact>
       <name value="Bob Milius"/>
       <telecom>
          <system value="email"/>
-         <value value="mailto:bmilius@nmdp.org"/>
+         <value value="bmilius@nmdp.org"/>
       </telecom>
    </contact>
    <description value="How to report HCT data to CIBMTR"/>
    <packageId value="cibmtr-reporting"/>
    <license value="Apache-2.0"/>
    <fhirVersion value="4.0.1"/>
-   <dependsOn id="hl7_fhir_us_core">
+   <dependsOn id="uscore">
       <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
       <packageId value="hl7.fhir.us.core"/>
       <version value="3.1.1"/>
@@ -100,7 +108,7 @@
             <reference value="Patient/MyPatientExample1"/>
          </reference>
          <name value="MyPatientExample1"/>
-         <description value="example using NMDP center number"/>
+         <description value="example using CIBMTR center number"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
          <groupingId value="_ex_example"/>
       </resource>
@@ -115,7 +123,7 @@
             <reference value="Patient/MyPatientExample2"/>
          </reference>
          <name value="MyPatientExample2"/>
-         <description value="example using NMDP center number"/>
+         <description value="example using CIBMTR CRID"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
          <groupingId value="_ex_example"/>
       </resource>
@@ -130,7 +138,7 @@
             <reference value="Patient/MyPatientExample3"/>
          </reference>
          <name value="MyPatientExample3"/>
-         <description value="example using NMDP center number"/>
+         <description value="example using MRN and CRID, Race=White, Ethnicity=Unknown"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
          <groupingId value="_ex_example"/>
       </resource>
@@ -145,7 +153,7 @@
             <reference value="Patient/MyPatientExample4"/>
          </reference>
          <name value="MyPatientExample4"/>
-         <description value="example using NMDP center number"/>
+         <description value="example using CRID and MRN, Race=Black or African American, Ethnicity=Unknown"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
          <groupingId value="_ex_example"/>
       </resource>
@@ -160,7 +168,7 @@
             <reference value="Patient/MyPatientExample5"/>
          </reference>
          <name value="MyPatientExample5"/>
-         <description value="example using NMDP center number"/>
+         <description value="example using CRID &amp; MRN, Race=Mixed, Ethnicity=Not Hispanic or Latino"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
          <groupingId value="_ex_example"/>
       </resource>
@@ -236,11 +244,11 @@
       </page>
       <parameter>
          <code value="copyrightyear"/>
-         <value value="2019+"/>
+         <value value="2020+"/>
       </parameter>
       <parameter>
          <code value="releaselabel"/>
-         <value value="STU1"/>
+         <value value="draft"/>
       </parameter>
       <parameter>
          <code value="show-inherited-invariants"/>

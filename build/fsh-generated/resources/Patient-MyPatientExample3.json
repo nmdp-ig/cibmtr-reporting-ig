@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "MyPatientExample5",
+  "id": "MyPatientExample3",
   "meta": {
     "profile": [
       "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
@@ -18,22 +18,14 @@
       "extension": [
         {
           "url": "text",
-          "valueString": "Mixed"
+          "valueString": "White Caucasian"
         },
         {
           "url": "ombCategory",
           "valueCoding": {
-            "code": "2054-5",
+            "code": "2106-3",
             "system": "urn:oid:2.16.840.1.113883.6.238",
-            "display": "Black or African American"
-          }
-        },
-        {
-          "url": "ombCategory",
-          "valueCoding": {
-            "code": "2028-9",
-            "system": "urn:oid:2.16.840.1.113883.6.238",
-            "display": "Asian"
+            "display": "White"
           }
         }
       ],
@@ -43,15 +35,7 @@
       "extension": [
         {
           "url": "text",
-          "valueString": "Not Hispanic or Latino"
-        },
-        {
-          "url": "ombCategory",
-          "valueCoding": {
-            "code": "2186-5",
-            "system": "urn:oid:2.16.840.1.113883.6.238",
-            "display": "Not Hispanic or Latino"
-          }
+          "valueString": "Unknown"
         }
       ],
       "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
@@ -64,26 +48,24 @@
     },
     {
       "system": "http://terminology.cibmtr.org/identifier/CRID",
-      "value": "1234567",
-      "use": "official"
+      "value": "123456"
     }
   ],
   "name": [
     {
       "given": [
-        "Peter"
+        "Jane"
       ],
       "family": "Doe"
     }
   ],
-  "gender": "male",
-  "birthDate": "1952-05-07",
+  "gender": "female",
+  "birthDate": "1944-01-29",
   "address": [
     {
       "use": "home",
-      "city": "Grand Prarie",
-      "state": "Texas",
-      "country": "Unknown or unspecified"
+      "city": "Garland",
+      "state": "Texas"
     }
   ],
   "managingOrganization": {

@@ -13,11 +13,11 @@
       </div>
    </text>
    <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/cibmtr-reporting"/>
-   <version value="0.1.1"/>
+   <version value="0.1.2"/>
    <name value="CIBMTRReporting"/>
    <title value="CIBMTR Reporting Implementation Guide"/>
    <status value="draft"/>
-   <date value="2020-12-14T10:20:38-06:00"/>
+   <date value="2021-03-01T11:28:05-06:00"/>
    <publisher value="NMDP/Be The Match"/>
    <contact>
       <name value="NMDP/Be The Match"/>
@@ -56,8 +56,14 @@
       </grouping>
 
 
-
-
+      <grouping id="_term_valueset">
+         <name value="Terminology: Value Sets"/>
+         <description value="These define sets of codes used by systems conforming to this implementation guide"/>
+      </grouping>
+      <grouping id="_term_codesystem">
+         <name value="Terminology: Code Systems"/>
+         <description value="These define new code systems used by systems conforming to this implementation guide"/>
+      </grouping>
 
 
 
@@ -67,6 +73,21 @@
          <description value="These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like"/>
       </grouping>
 
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-cibmtr-obs-priority-variables.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/cibmtr-obs-priority-variables"/>
+         </reference>
+         <name value="CIBMTR Observation Laboratory Results: Priority Variables"/>
+         <description value="CIBMTR Observation Laboratory Results: Priority Variables"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
@@ -96,6 +117,276 @@
          <description value="CIBMTR Patient Profile for CRID assignment (us-core)"/>
          <exampleBoolean value="false"/>
          <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-auto-differential-blood-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/auto-differential-blood-vs"/>
+         </reference>
+         <name value="Auto Differential panel - Blood (57023-4)"/>
+         <description value="Auto Differential panel - Blood (57023-4)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-cbc-blood-automated-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/cbc-blood-automated-vs"/>
+         </reference>
+         <name value="CBC panel - Blood by Automated count (58410-2)"/>
+         <description value="CBC panel - Blood by Automated count (58410-2)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-cbc-w-auto-differential-blood-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/cbc-w-auto-differential-blood-vs"/>
+         </reference>
+         <name value="CBC W Auto Differential panel - Blood (57021-8)"/>
+         <description value="CBC W Auto Differential panel - Blood (57021-8)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-cbc-w-differential-unspecified-blood-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/cbc-w-differential-unspecified-blood-vs"/>
+         </reference>
+         <name value="CBC W Differential panel, method unspecified - Blood (69742-5)"/>
+         <description value="CBC W Differential panel, method unspecified - Blood (69742-5)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-cbc-w-ordered-manual-differential-blood-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/cbc-w-ordered-manual-differential-blood-vs"/>
+         </reference>
+         <name value="CBC W Ordered Manual Differential panel - Blood (57782-5)"/>
+         <description value="CBC W Ordered Manual Differential panel - Blood (57782-5)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-differential-unspecified-blood-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/differential-unspecified-blood-vs"/>
+         </reference>
+         <name value="Differential panel, method unspecified - Blood (69738-3)"/>
+         <description value="Differential panel, method unspecified - Blood (69738-3)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-erythrocyte-morphology-blood-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/erythrocyte-morphology-blood-vs"/>
+         </reference>
+         <name value="Erythrocyte morphology panel - Blood (58408-6)"/>
+         <description value="Erythrocyte morphology panel - Blood (58408-6)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-gvhdtype-valueset.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/gvhdtype-valueset"/>
+         </reference>
+         <name value="GVHD Type Value Set"/>
+         <description value="Permissible values for types of Graft vs Host Disease, from NIH caDSR"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-leukocyte-morphology-blood-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/leukocyte-morphology-blood-vs"/>
+         </reference>
+         <name value="Leukocyte morphology panel - Blood (58407-8)"/>
+         <description value="Leukocyte morphology panel - Blood (58407-8)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-manual-differential-blood-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/manual-differential-blood-vs"/>
+         </reference>
+         <name value="Manual Differential panel - Blood (24318-8)"/>
+         <description value="Manual Differential panel - Blood (24318-8)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-platelet-morphology-blood-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/platelet-morphology-blood-vs"/>
+         </reference>
+         <name value="Platelet morphology panel - Blood (58406-0)"/>
+         <description value="Platelet morphology panel - Blood (58406-0)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-cibmtr-priority-variables-all-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/cibmtr-priority-variables-all-vs"/>
+         </reference>
+         <name value="CIBMTR All Priority Variables Value Set (FY21)"/>
+         <description value="All Priority Variables for CIBMTR (FY21)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-cibmtr-priority-variables-extended-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/cibmtr-priority-variables-extended-vs"/>
+         </reference>
+         <name value="CIBMTR Priority Variables Extended Value Set V3 (FY21)"/>
+         <description value="Priority Variables Extended for CIBMTR V3 (FY21)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-cibmtr-priority-variables-primary-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/cibmtr-priority-variables-primary-vs"/>
+         </reference>
+         <name value="CIBMTR Priority Variables Value Set (FY21)"/>
+         <description value="Priority Variables for CIBMTR (FY21)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-smear-morphology-blood-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/smear-morphology-blood-vs"/>
+         </reference>
+         <name value="Smear morphology panel - Blood (34994-4)"/>
+         <description value="Smear morphology panel - Blood (34994-4)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-cibmtr-cadsr-cde.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/cibmtr-cadsr-cde"/>
+         </reference>
+         <name value="NIH Common Data Elements for CIBMTR"/>
+         <description value="NIH Common Data Elements for CIBMTR"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-cibmtr-cadsr-vm.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/cibmtr-cadsr-vm"/>
+         </reference>
+         <name value="NIH Common Data Element Value Meanings for CIBMTR"/>
+         <description value="NIH Common Data Element Value Meanings for CIBMTR"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-AlbuminObservation.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/AlbuminObservation"/>
+         </reference>
+         <name value="AlbuminObservation"/>
+         <description value="Albumin observation"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+         <groupingId value="_ex_example"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -177,14 +468,14 @@
             <valueString value="Observation"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Observation-PostInfusionProcedureTimepointType.html"/>
+            <valueUri value="Observation-NeutrophilsObservation.html"/>
          </extension>
          <reference>
-            <reference value="Observation/PostInfusionProcedureTimepointType"/>
+            <reference value="Observation/NeutrophilsObservation"/>
          </reference>
-         <name value="PostInfusionProcedureTimepointType"/>
-         <description value="Post Infusion Procedure Timepoint Type"/>
-         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab"/>
+         <name value="NeutrophilsObservation"/>
+         <description value="Neutrophils observation"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
          <groupingId value="_ex_example"/>
       </resource>
       <page>
@@ -197,9 +488,19 @@
             <generation value="html"/>
          </page>
          <page>
+            <nameUrl value="Direct-FHIR-STU3.html"/>
+            <title value="Direct FHIR STU 3"/>
+            <generation value="html"/>
+         </page>
+         <page>
             <nameUrl value="artifacts.html"/>
             <title value="Artifacts Summary"/>
             <generation value="html"/>
+            <page>
+               <nameUrl value="StructureDefinition-cibmtr-obs-priority-variables.html"/>
+               <title value="CIBMTR Observation Laboratory Results: Priority Variables"/>
+               <generation value="generated"/>
+            </page>
             <page>
                <nameUrl value="StructureDefinition-cibmtr-observation-lab.html"/>
                <title value="CIBMTR Observation Laboratory Results Profile (us-core)"/>
@@ -208,6 +509,96 @@
             <page>
                <nameUrl value="StructureDefinition-cibmtr-patient.html"/>
                <title value="CIBMTR Patient Profile (us-core)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-auto-differential-blood-vs.html"/>
+               <title value="Auto Differential panel - Blood (57023-4)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-cbc-blood-automated-vs.html"/>
+               <title value="CBC panel - Blood by Automated count (58410-2)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-cbc-w-auto-differential-blood-vs.html"/>
+               <title value="CBC W Auto Differential panel - Blood (57021-8)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-cbc-w-differential-unspecified-blood-vs.html"/>
+               <title value="CBC W Differential panel, method unspecified - Blood (69742-5)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-cbc-w-ordered-manual-differential-blood-vs.html"/>
+               <title value="CBC W Ordered Manual Differential panel - Blood (57782-5)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-differential-unspecified-blood-vs.html"/>
+               <title value="Differential panel, method unspecified - Blood (69738-3)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-erythrocyte-morphology-blood-vs.html"/>
+               <title value="Erythrocyte morphology panel - Blood (58408-6)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-gvhdtype-valueset.html"/>
+               <title value="GVHD Type Value Set"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-leukocyte-morphology-blood-vs.html"/>
+               <title value="Leukocyte morphology panel - Blood (58407-8)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-manual-differential-blood-vs.html"/>
+               <title value="Manual Differential panel - Blood (24318-8)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-platelet-morphology-blood-vs.html"/>
+               <title value="Platelet morphology panel - Blood (58406-0)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-cibmtr-priority-variables-all-vs.html"/>
+               <title value="CIBMTR All Priority Variables Value Set (FY21)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-cibmtr-priority-variables-extended-vs.html"/>
+               <title value="CIBMTR Priority Variables Extended Value Set V3 (FY21)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-cibmtr-priority-variables-primary-vs.html"/>
+               <title value="CIBMTR Priority Variables Value Set (FY21)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-smear-morphology-blood-vs.html"/>
+               <title value="Smear morphology panel - Blood (34994-4)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-cibmtr-cadsr-cde.html"/>
+               <title value="NIH Common Data Elements for CIBMTR"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-cibmtr-cadsr-vm.html"/>
+               <title value="NIH Common Data Element Value Meanings for CIBMTR"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-AlbuminObservation.html"/>
+               <title value="AlbuminObservation"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -236,8 +627,8 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="Observation-PostInfusionProcedureTimepointType.html"/>
-               <title value="PostInfusionProcedureTimepointType"/>
+               <nameUrl value="Observation-NeutrophilsObservation.html"/>
+               <title value="NeutrophilsObservation"/>
                <generation value="generated"/>
             </page>
          </page>

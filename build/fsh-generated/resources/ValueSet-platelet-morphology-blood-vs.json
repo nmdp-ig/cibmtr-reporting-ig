@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PlateletMorphologyBloodVS",
+  "id": "platelet-morphology-blood-vs",
+  "title": "Platelet morphology panel - Blood (58406-0)",
+  "description": "Platelet morphology panel - Blood (58406-0)",
+  "version": "0.1.2",
+  "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/platelet-morphology-blood-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "7796-6",
+            "display": "Platelet clump [Presence] in Blood by Light microscopy"
+          },
+          {
+            "code": "18312-9",
+            "display": "Platelet satellitism [Presence] in Blood by Light microscopy"
+          },
+          {
+            "code": "33216-3",
+            "display": "Platelets agranular [Presence] in Blood by Light microscopy"
+          },
+          {
+            "code": "5908-9",
+            "display": "Giant platelets [Presence] in Blood by Light microscopy"
+          },
+          {
+            "code": "32146-3",
+            "display": "Platelets Large [Presence] in Blood by Light microscopy"
+          },
+          {
+            "code": "32208-1",
+            "display": "Platelets Small [Presence] in Blood by Light microscopy"
+          },
+          {
+            "code": "11125-2",
+            "display": "Platelet morphology finding [Identifier] in Blood"
+          }
+        ]
+      }
+    ]
+  }
+}

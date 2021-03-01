@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CBCWOrderedManualDifferentialBloodVS",
+  "id": "cbc-w-ordered-manual-differential-blood-vs",
+  "title": "CBC W Ordered Manual Differential panel - Blood (57782-5)",
+  "description": "CBC W Ordered Manual Differential panel - Blood (57782-5)",
+  "version": "0.1.2",
+  "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-ordered-manual-differential-blood-vs",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-blood-automated-vs"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/manual-differential-blood-vs"
+        ]
+      }
+    ]
+  }
+}

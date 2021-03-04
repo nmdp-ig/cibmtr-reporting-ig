@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/CodeSystem/cibmtr-cadsr-cde> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cibmtr-cadsr-cde"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://cdebrowser.nci.nih.gov defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">CADSR:2603692<a name=\"cibmtr-cadsr-cde-CADSR.582603692\"> </a></td><td>Acute Graft Versus Host Disease Maximum Overall Grade</td></tr><tr><td style=\"white-space:nowrap\">CADSR:2626409<a name=\"cibmtr-cadsr-cde-CADSR.582626409\"> </a></td><td>Biopsy Anatomic Site Performed Name</td></tr><tr><td style=\"white-space:nowrap\">CADSR:2797618<a name=\"cibmtr-cadsr-cde-CADSR.582797618\"> </a></td><td>Acute Graft Versus Host Disease Skin Involvement Maximum Severity Type</td></tr><tr><td style=\"white-space:nowrap\">CADSR:2797633<a name=\"cibmtr-cadsr-cde-CADSR.582797633\"> </a></td><td>Acute Graft Versus Host Disease Lower Gastrointestinal Tract Involvement Maximum Severity Type</td></tr><tr><td style=\"white-space:nowrap\">CADSR:2797671<a name=\"cibmtr-cadsr-cde-CADSR.582797671\"> </a></td><td>Acute Graft Versus Host Disease Liver Involvement Maximum Severity Type</td></tr><tr><td style=\"white-space:nowrap\">CADSR:2980753<a name=\"cibmtr-cadsr-cde-CADSR.582980753\"> </a></td><td>Therapeutic Procedure Administered Type</td></tr><tr><td style=\"white-space:nowrap\">CADSR:3005293<a name=\"cibmtr-cadsr-cde-CADSR.583005293\"> </a></td><td>Graft Versus Host Disease Diagnosis Type</td></tr><tr><td style=\"white-space:nowrap\">CADSR:5040179<a name=\"cibmtr-cadsr-cde-CADSR.585040179\"> </a></td><td>Acute Graft Versus Host Disease Stage Upper Gastrointestinal Tract Severity Type</td></tr><tr><td style=\"white-space:nowrap\">CADSR:5263856<a name=\"cibmtr-cadsr-cde-CADSR.585263856\"> </a></td><td>Post Infusion Procedure Timepoint Type</td></tr><tr><td style=\"white-space:nowrap\">CADSR:6975011<a name=\"cibmtr-cadsr-cde-CADSR.586975011\"> </a></td><td>Concomitant Medication Use Indication Reason</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://cdebrowser.nci.nih.gov"];
+  fhir:CodeSystem.version [ fhir:value "0.1.2"];
+  fhir:CodeSystem.name [ fhir:value "CADSR_CDE_CS"];
+  fhir:CodeSystem.title [ fhir:value "NIH Common Data Elements for CIBMTR"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2021-03-02T13:25:50-06:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "NMDP/Be The Match"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "NMDP/Be The Match" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://bethematch.org" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Bob Milius" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "bmilius@nmdp.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "NIH Common Data Elements for CIBMTR"];
+  fhir:CodeSystem.copyright [ fhir:value "National Cancer Institute (NCI)"];
+  fhir:CodeSystem.content [ fhir:value "fragment"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "CADSR:2603692" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Acute Graft Versus Host Disease Maximum Overall Grade" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "CADSR:2626409" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Biopsy Anatomic Site Performed Name" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "CADSR:2797618" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Acute Graft Versus Host Disease Skin Involvement Maximum Severity Type" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "CADSR:2797633" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Acute Graft Versus Host Disease Lower Gastrointestinal Tract Involvement Maximum Severity Type" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "CADSR:2797671" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Acute Graft Versus Host Disease Liver Involvement Maximum Severity Type" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "CADSR:2980753" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Therapeutic Procedure Administered Type" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "CADSR:3005293" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Graft Versus Host Disease Diagnosis Type" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "CADSR:5040179" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Acute Graft Versus Host Disease Stage Upper Gastrointestinal Tract Severity Type" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "CADSR:5263856" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Post Infusion Procedure Timepoint Type" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "CADSR:6975011" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concomitant Medication Use Indication Reason" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/CodeSystem/cibmtr-cadsr-cde.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

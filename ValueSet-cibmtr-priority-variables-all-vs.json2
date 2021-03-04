@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "cibmtr-priority-variables-all-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-cibmtr-priority-variables-primary-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-primary-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-cibmtr-priority-variables-extended-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-extended-vs</a></li></ul></div>"
+  },
+  "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-all-vs",
+  "version": "0.1.2",
+  "name": "PriorityVariablesAllVS",
+  "title": "CIBMTR All Priority Variables Value Set (FY21)",
+  "status": "active",
+  "date": "2021-03-02T13:25:50-06:00",
+  "publisher": "NMDP/Be The Match",
+  "contact": [
+    {
+      "name": "NMDP/Be The Match",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://bethematch.org"
+        }
+      ]
+    },
+    {
+      "name": "Bob Milius",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "bmilius@nmdp.org"
+        }
+      ]
+    }
+  ],
+  "description": "All Priority Variables for CIBMTR (FY21)",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-primary-vs"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-extended-vs"
+        ]
+      }
+    ]
+  }
+}

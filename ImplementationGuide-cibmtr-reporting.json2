@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CIBMTRReporting</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/cibmtr-reporting</pre><div><p>How to report HCT data to CIBMTR</p>\n</div></div>"
   },
   "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/cibmtr-reporting",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "name": "CIBMTRReporting",
   "title": "CIBMTR Reporting Implementation Guide",
   "status": "draft",
-  "date": "2020-12-13T20:40:20-06:00",
+  "date": "2021-03-02T13:25:50-06:00",
   "publisher": "NMDP/Be The Match",
   "contact": [
     {
@@ -318,6 +318,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/cibmtr-obs-priority-variables"
+        },
+        "name": "CIBMTR Observation Laboratory Results: Priority Variables",
+        "description": "CIBMTR Observation Laboratory Results: Priority Variables",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/cibmtr-observation-lab"
         },
         "name": "CIBMTR Observation Laboratory Results Profile (us-core)",
@@ -337,6 +351,258 @@
         "name": "CIBMTR Patient Profile (us-core)",
         "description": "CIBMTR Patient Profile for CRID assignment (us-core)",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/auto-differential-blood-vs"
+        },
+        "name": "Auto Differential panel - Blood (57023-4)",
+        "description": "Auto Differential panel - Blood (57023-4)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/cbc-blood-automated-vs"
+        },
+        "name": "CBC panel - Blood by Automated count (58410-2)",
+        "description": "CBC panel - Blood by Automated count (58410-2)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/cbc-w-auto-differential-blood-vs"
+        },
+        "name": "CBC W Auto Differential panel - Blood (57021-8)",
+        "description": "CBC W Auto Differential panel - Blood (57021-8)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/cbc-w-differential-unspecified-blood-vs"
+        },
+        "name": "CBC W Differential panel, method unspecified - Blood (69742-5)",
+        "description": "CBC W Differential panel, method unspecified - Blood (69742-5)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/cbc-w-ordered-manual-differential-blood-vs"
+        },
+        "name": "CBC W Ordered Manual Differential panel - Blood (57782-5)",
+        "description": "CBC W Ordered Manual Differential panel - Blood (57782-5)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/differential-unspecified-blood-vs"
+        },
+        "name": "Differential panel, method unspecified - Blood (69738-3)",
+        "description": "Differential panel, method unspecified - Blood (69738-3)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/erythrocyte-morphology-blood-vs"
+        },
+        "name": "Erythrocyte morphology panel - Blood (58408-6)",
+        "description": "Erythrocyte morphology panel - Blood (58408-6)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/gvhdtype-valueset"
+        },
+        "name": "GVHD Type Value Set",
+        "description": "Permissible values for types of Graft vs Host Disease, from NIH caDSR",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/leukocyte-morphology-blood-vs"
+        },
+        "name": "Leukocyte morphology panel - Blood (58407-8)",
+        "description": "Leukocyte morphology panel - Blood (58407-8)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/manual-differential-blood-vs"
+        },
+        "name": "Manual Differential panel - Blood (24318-8)",
+        "description": "Manual Differential panel - Blood (24318-8)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/platelet-morphology-blood-vs"
+        },
+        "name": "Platelet morphology panel - Blood (58406-0)",
+        "description": "Platelet morphology panel - Blood (58406-0)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/cibmtr-priority-variables-all-vs"
+        },
+        "name": "CIBMTR All Priority Variables Value Set (FY21)",
+        "description": "All Priority Variables for CIBMTR (FY21)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/cibmtr-priority-variables-extended-vs"
+        },
+        "name": "CIBMTR Priority Variables Extended Value Set V3 (FY21)",
+        "description": "Priority Variables Extended for CIBMTR V3 (FY21)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/cibmtr-priority-variables-primary-vs"
+        },
+        "name": "CIBMTR Priority Variables Value Set (FY21)",
+        "description": "Priority Variables for CIBMTR (FY21)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/smear-morphology-blood-vs"
+        },
+        "name": "Smear morphology panel - Blood (34994-4)",
+        "description": "Smear morphology panel - Blood (34994-4)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cibmtr-cadsr-cde"
+        },
+        "name": "NIH Common Data Elements for CIBMTR",
+        "description": "NIH Common Data Elements for CIBMTR",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cibmtr-cadsr-vm"
+        },
+        "name": "NIH Common Data Element Value Meanings for CIBMTR",
+        "description": "NIH Common Data Element Value Meanings for CIBMTR",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/AlbuminObservation"
+        },
+        "name": "AlbuminObservation",
+        "description": "Albumin observation",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"
       },
       {
         "extension": [
@@ -416,11 +682,11 @@
           }
         ],
         "reference": {
-          "reference": "Observation/PostInfusionProcedureTimepointType"
+          "reference": "Observation/NeutrophilsObservation"
         },
-        "name": "PostInfusionProcedureTimepointType",
-        "description": "Post Infusion Procedure Timepoint Type",
-        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab"
+        "name": "NeutrophilsObservation",
+        "description": "Neutrophils observation",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"
       }
     ],
     "page": {
@@ -431,6 +697,11 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "Direct-FHIR-STU3.html",
+          "title": "Direct FHIR STU 3",
           "generation": "html"
         }
       ]

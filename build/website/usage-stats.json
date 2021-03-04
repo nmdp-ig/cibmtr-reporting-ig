@@ -1,10 +1,14 @@
 {
   "package": "cibmtr-reporting",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
     "Observation": [
+      {
+        "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables",
+        "title": "CIBMTR Observation Laboratory Results: Priority Variables"
+      },
       {
         "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab",
         "title": "CIBMTR Observation Laboratory Results Profile (us-core)"

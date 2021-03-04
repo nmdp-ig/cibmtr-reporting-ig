@@ -1,30 +1,57 @@
 ﻿CIBMTRReporting : Validation Results
 =========================================
 
-err = 0, warn = 0, info = 16
-IG Publisher Version: 1.1.51
-Generated Mon Dec 14 10:21:07 CST 2020. FHIR version 4.0.1 for cibmtr-reporting#0.1.1 (canonical = http://fhir.nmdp.org/ig/cibmtr-reporting)
+err = 0, warn = 4, info = 12
+IG Publisher Version: 1.1.59
+Generated Tue Mar 02 13:26:25 CST 2021. FHIR version 4.0.1 for cibmtr-reporting#0.1.2 (canonical = http://fhir.nmdp.org/ig/cibmtr-reporting)
 
- Build Errors : 0 / 0 / 0
+ Build Errors : 4 / 0 / 0
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ImplementationGuide-cibmtr-reporting : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/observation-PostInfusionProcedureTimepointType : 0 / 0 / 5
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/codesystem-cibmtr-cadsr-cde : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/codesystem-cibmtr-cadsr-vm : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/observation-AlbuminObservation : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/observation-NeutrophilsObservation : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/patient-MyPatientExample1 : 0 / 0 / 3
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/patient-MyPatientExample2 : 0 / 0 / 3
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/patient-MyPatientExample3 : 0 / 0 / 3
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/patient-MyPatientExample4 : 0 / 0 / 3
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/patient-MyPatientExample5 : 0 / 0 / 3
- /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/structuredefinition-cibmtr-observation-lab : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/structuredefinition-cibmtr-obs-priority-variables : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/structuredefinition-cibmtr-observation-lab : 0 / 3 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/structuredefinition-cibmtr-patient : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-auto-differential-blood-vs : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-cbc-blood-automated-vs : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-cbc-w-auto-differential-blood-vs : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-cbc-w-differential-unspecified-blood-vs : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-cbc-w-ordered-manual-differential-blood-vs : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-cibmtr-priority-variables-all-vs : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-cibmtr-priority-variables-extended-vs : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-cibmtr-priority-variables-primary-vs : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-differential-unspecified-blood-vs : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-erythrocyte-morphology-blood-vs : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-gvhdtype-valueset : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-leukocyte-morphology-blood-vs : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-manual-differential-blood-vs : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-platelet-morphology-blood-vs : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-smear-morphology-blood-vs : 0 / 0 / 1
 </table>
 == n/a ==
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/output/StructureDefinition-cibmtr-obs-priority-variables.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 928, column 217: The link 'CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-3005293' for "3005293" cannot be resolved (valid targets: [cibmtr-cadsr-vm-CADSR.582991795, cibmtr-cadsr-vm-CADSR.582991796, segment-header, cibmtr-cadsr-vm-CADSR.584722619, publish-box, segment-post-footer, cibmtr-cadsr-vm-CADSR.582991794, ig-status, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, cibmtr-cadsr-vm-CADSR.583261243])
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/output/StructureDefinition-cibmtr-observation-lab.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 952, column 217: The link 'CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-3005293' for "3005293" cannot be resolved (valid targets: [cibmtr-cadsr-vm-CADSR.582991795, cibmtr-cadsr-vm-CADSR.582991796, segment-header, cibmtr-cadsr-vm-CADSR.584722619, publish-box, segment-post-footer, cibmtr-cadsr-vm-CADSR.582991794, ig-status, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, cibmtr-cadsr-vm-CADSR.583261243])
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/output/index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 163, column 10: The link 'StructureDefinition/cibmtr-patient' for "CIBMTR Patient" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/output/index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 164, column 10: The link 'StructureDefinition/cibmtr-observation-lab' for "CIBMTR Observation Laboratory Results" cannot be resolved
 == /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ImplementationGuide-cibmtr-reporting.json ==
 INFORMATION: ImplementationGuide/cibmtr-reporting: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Observation-PostInfusionProcedureTimepointType.json ==
-INFORMATION: Observation/PostInfusionProcedureTimepointType: Observation: Validate resource against profile http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab
-INFORMATION: Observation/PostInfusionProcedureTimepointType: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
-INFORMATION: Observation/PostInfusionProcedureTimepointType: Observation.code.coding[0]: Code System URI 'https://cdebrowser.nci.nih.gov' is unknown so the code cannot be validated
-INFORMATION: Observation/PostInfusionProcedureTimepointType: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'https://cdebrowser.nci.nih.gov' is unknown so the code cannot be validated
-INFORMATION: Observation/PostInfusionProcedureTimepointType: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://cdebrowser.nci.nih.gov' is unknown so the code cannot be validated
+== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/CodeSystem-cibmtr-cadsr-cde.json ==
+INFORMATION: CodeSystem/cibmtr-cadsr-cde: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/CodeSystem-cibmtr-cadsr-vm.json ==
+INFORMATION: CodeSystem/cibmtr-cadsr-vm: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Observation-AlbuminObservation.json ==
+INFORMATION: Observation/AlbuminObservation: Observation: Validate resource against profile http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables
+INFORMATION: Observation/AlbuminObservation: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Observation-NeutrophilsObservation.json ==
+INFORMATION: Observation/NeutrophilsObservation: Observation: Validate resource against profile http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables
+INFORMATION: Observation/NeutrophilsObservation: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Patient-MyPatientExample1.json ==
 INFORMATION: Patient/MyPatientExample1: Patient: Validate resource against profile http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
 INFORMATION: Patient/MyPatientExample1: Patient.identifier[0]: This element does not match any known slice defined in the profile http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
@@ -45,9 +72,43 @@ INFORMATION: Patient/MyPatientExample4: Patient.meta.security[0]: Code System UR
 INFORMATION: Patient/MyPatientExample5: Patient: Validate resource against profile http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
 INFORMATION: Patient/MyPatientExample5: Patient.identifier[0]: This element does not match any known slice defined in the profile http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
 INFORMATION: Patient/MyPatientExample5: Patient.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/StructureDefinition-cibmtr-obs-priority-variables.json ==
+INFORMATION: StructureDefinition/cibmtr-obs-priority-variables: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/cibmtr-obs-priority-variables: StructureDefinition.snapshot.element[75].pattern.ofType(CodeableConcept).coding[0]: Unknown Code http://cdebrowser.nci.nih.gov#3005293 in http://cdebrowser.nci.nih.gov - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://cdebrowser.nci.nih.gov#3005293'
 == /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/StructureDefinition-cibmtr-observation-lab.json ==
 INFORMATION: StructureDefinition/cibmtr-observation-lab: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cibmtr-observation-lab: StructureDefinition.snapshot.element[73].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://cdebrowser.nci.nih.gov' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/cibmtr-observation-lab: StructureDefinition.differential.element[9].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://cdebrowser.nci.nih.gov' is unknown so the code cannot be validated
+WARNING: StructureDefinition/cibmtr-observation-lab: StructureDefinition.snapshot.element[71].pattern.ofType(CodeableConcept).coding[0]: Unknown Code http://cdebrowser.nci.nih.gov#3005293 in http://cdebrowser.nci.nih.gov - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://cdebrowser.nci.nih.gov#3005293'
+WARNING: StructureDefinition/cibmtr-observation-lab: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept).coding[0]: Unknown Code http://cdebrowser.nci.nih.gov#3005293 in http://cdebrowser.nci.nih.gov - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://cdebrowser.nci.nih.gov#3005293'
+WARNING: StructureDefinition.where(url = 'http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab'): The Implementation Guide contains no examples for this profile
 == /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/StructureDefinition-cibmtr-patient.json ==
 INFORMATION: StructureDefinition/cibmtr-patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-auto-differential-blood-vs.json ==
+INFORMATION: ValueSet/auto-differential-blood-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-cbc-blood-automated-vs.json ==
+INFORMATION: ValueSet/cbc-blood-automated-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-cbc-w-auto-differential-blood-vs.json ==
+INFORMATION: ValueSet/cbc-w-auto-differential-blood-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-cbc-w-differential-unspecified-blood-vs.json ==
+INFORMATION: ValueSet/cbc-w-differential-unspecified-blood-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-cbc-w-ordered-manual-differential-blood-vs.json ==
+INFORMATION: ValueSet/cbc-w-ordered-manual-differential-blood-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-cibmtr-priority-variables-all-vs.json ==
+INFORMATION: ValueSet/cibmtr-priority-variables-all-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-cibmtr-priority-variables-extended-vs.json ==
+INFORMATION: ValueSet/cibmtr-priority-variables-extended-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-cibmtr-priority-variables-primary-vs.json ==
+INFORMATION: ValueSet/cibmtr-priority-variables-primary-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-differential-unspecified-blood-vs.json ==
+INFORMATION: ValueSet/differential-unspecified-blood-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-erythrocyte-morphology-blood-vs.json ==
+INFORMATION: ValueSet/erythrocyte-morphology-blood-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-gvhdtype-valueset.json ==
+INFORMATION: ValueSet/gvhdtype-valueset: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-leukocyte-morphology-blood-vs.json ==
+INFORMATION: ValueSet/leukocyte-morphology-blood-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-manual-differential-blood-vs.json ==
+INFORMATION: ValueSet/manual-differential-blood-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-platelet-morphology-blood-vs.json ==
+INFORMATION: ValueSet/platelet-morphology-blood-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-smear-morphology-blood-vs.json ==
+INFORMATION: ValueSet/smear-morphology-blood-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet

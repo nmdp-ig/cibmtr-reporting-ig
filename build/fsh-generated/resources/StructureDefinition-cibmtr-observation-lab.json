@@ -86,14 +86,6 @@
         "path": "Observation.meta.security.code",
         "constraint": [
           {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
             "key": "sec-rc",
             "severity": "error",
             "human": "Use transplant center identifier for security tag",

@@ -19,12 +19,14 @@ The instructions below assume `publisher`, `ig-template-base`, and `ig-registry`
 ```
 git clone https://github.com/nmdp-ig/cibmtr-reporting-ig
 cd cibmtr-reporting-ig/build
-# Edit version of the IG in sushi-config.yaml as needed (line 20)
+```
+* Edit version of the IG in sushi-config.yaml as needed (line 20)
+```
 java -jar ../publisher.jar -ig ig.ini
-# check output/qa.html for errors, warnings. If no errors, proceed to publishing
+```
+* Check output/qa.html for errors, warnings. If no errors, proceed to publishing
 ```
 ## Publishing
-```
 * Preparing contents for publishing
 ```
 java -jar ../publisher.jar -no-sushi -ig ig.ini -publish http://fhir.nmdp.org/ig/cibmtr-reporting

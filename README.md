@@ -41,7 +41,7 @@ mkdir website/2021-03
 cp -r output/*  website/2021-03/
 ```
 * Make sure website/publish.ini has been created, e.g.,
-```block
+```
 [website]
 style=fhir.layout
 server=apache
@@ -54,8 +54,8 @@ package=package-feed.xml
 publication=publication-feed.xml
 ```
 
-# Modify website/package-list.json as needed for new milestone, e.g.,
-```block
+* Modify website/package-list.json as needed for new milestone, e.g.,
+```
 {
   "package-id": "cibmtr-reporting",
   "title": "CIBMTR Reporting Implementation Guide",

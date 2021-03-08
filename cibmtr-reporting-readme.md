@@ -1,5 +1,6 @@
 # CIBMTR Reporting Implementation Guide
 
+
 ## Prerequisties
 * FHIR IG Publisher
   * current version: https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
@@ -7,7 +8,7 @@
 * Sushi
   * Installation - https://fshschool.org/docs/sushi/installation/
   * Learn how to use FHS - https://fshschool.org/
-* Local copies of
+* l=Local copies of
     * https://github.com/HL7/ig-template-base
     * https://github.com/FHIR/ig-registry
 
@@ -18,20 +19,18 @@ The instructions below assume `publisher``, `ig-template-base``, and `ig-registr
 # Clone this repo
 git clone https://github.com/nmdp-ig/cibmtr-reporting-ig
 cd cibmtr-reporting-ig/build
-# Edit version of the IG in sushi-config.yaml as needed (line 20)
+# edit version of the IG in sushi-config.yaml as needed (line 20)
 java -jar ../publisher.jar -ig ig.ini
-# check output/qa.html for errors, warnings. If no errors, proceed to publishing
+# if no errors, proceed to publishing
 ```
 ## Publishing
 ```
-# Preparing contents for publishing
 java -jar ../publisher.jar -no-sushi -ig ig.ini -publish http://fhir.nmdp.org/ig/cibmtr-reporting
-# Copy contents of output to a directory that contains the published IG
-cp -r output/* website/
-# If you're creating a new milestone, create it in the website folder, e.g.,
+cp -r output/* website
+# if you're creating a new milestone, create it in the website folder, e.g.,
 mkdir website/2021-03
-cp -r output/*  website/2021-03/
-# Make sure website/publish.ini has been created, e.g.,
+cp -r output/ website/2021-03
+# modify website/publish.ini if needed, e.g.,
 [website]
 style=fhir.layout
 server=apache
@@ -43,7 +42,7 @@ no-registry=1
 package=package-feed.xml
 publication=publication-feed.xml
 
-# Modify website/package-list.json as needed for new milestone, e.g.,
+# modify website/package-list.json as needed for new milestone, e.g.,
 {
   "package-id": "cibmtr-reporting",
   "title": "CIBMTR Reporting Implementation Guide",
@@ -92,9 +91,9 @@ publication=publication-feed.xml
   "category": "Research"
 }
 
-# Copy the history template files to website/
+# copy the history files to website/
 $ cp -r ../fhir-ig-history-template/*hist* website/
-# Update the website contents. This creates the history pages and the PHP redirect scripts
+# update the website contents. This creates the history pages and the php redirects
 java -jar ../publisher.jar -publish-update -registry ../ig-registry/fhir-ig-list.json
-# Test contents of website directory for proper PHP redirects and history files.
+# test contents of website directory for propler php redirects and history files.
 ```

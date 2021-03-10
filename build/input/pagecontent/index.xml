@@ -1,7 +1,16 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
-  This FHIR Implemenation Guide (IG) describes how to send data to CIBMTR via HL7 FHIR. 
+  <p>
+  This FHIR Implemenation Guide (IG) describes how to send data to CIBMTR via HL7 FHIR.   
+  </p>
 
-  
+  <blockquote class="stu-note">
+  <p>
+  This Implementation Guide is designed to use FHIR R4. 
+  For information on submitting to our Direct FHIR endpoints using FHIR STU3, see the 
+  <a href="CIBMTR_Direct_FHIR_Guide_v2101.pdf">Direct FHIR for STU3 Guide</a>.
+  </p>
+  </blockquote>
+
   <a name="Introduction"> </a>
   <h3>Introduction</h3>
   <p>
@@ -27,14 +36,20 @@
   requirements for accessing patient data. 
   </p>
   <p>
-  Initially, this IG is focused on information required for sending Patient demographic data that is necessary for creating or retrieving a CIBMTR.
-  Research ID (CRID), and for reporting Patient resources with a known CRID. We have also begun specifying a profile for reporting laboratory observations.
+  Initially, this IG is focused on information required for sending Patient demographic data that is necessary for creating or retrieving a CIBMTR 
+  Research ID (CRID), and for reporting Patient resources with a known CRID. We have also begun specifying a profile for reporting laboratory observations, 
+  focusing on a set of variables that have been identified as a priority for the CIBMTR Data Transformation Initiative in Fiscal Year 2021.
   </p>
   <a name="Profiles"> </a>
   <h3>Profiles contained in this IG</h3>
   <ul>
-    <li><a href="StructureDefinition/cibmtr-patient">CIBMTR Patient</a></li>
-    <li><a href="StructureDefinition/cibmtr-observation-lab">CIBMTR Observation Laboratory Results</a></li>
+    <li><a href="StructureDefinition-cibmtr-patient.html">CIBMTR Patient</a></li>
+    <li><a href="StructureDefinition-cibmtr-observation-lab.html">CIBMTR Observation Laboratory Results</a></li>
+    <li><a href="StructureDefinition-cibmtr-obs-priority-variables.html"></a>CIBMTR Observation for Priority Variables</li>
   </ul>
-  
+  <a name="ValueSets"></a>
+  <h3>ValueSets</h3>
+  <ul>
+    <li><a href="ValueSet-cibmtr-priority-variables-vs.html">CIBMTR Priority Variables for FY21</a></li>
+  </ul>
 </div>

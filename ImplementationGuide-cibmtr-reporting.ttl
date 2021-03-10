@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CIBMTRReporting</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/cibmtr-reporting</pre><div><p>How to report HCT data to CIBMTR</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/cibmtr-reporting"];
-  fhir:ImplementationGuide.version [ fhir:value "0.1.2"];
+  fhir:ImplementationGuide.version [ fhir:value "0.1.3"];
   fhir:ImplementationGuide.name [ fhir:value "CIBMTRReporting"];
   fhir:ImplementationGuide.title [ fhir:value "CIBMTR Reporting Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-03-02T13:25:50-06:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-03-09T19:13:08-06:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "NMDP/Be The Match"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -75,7 +75,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "draft" ]
+         fhir:Extension.valueString [ fhir:value "ci-build" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -499,42 +499,14 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-all-vs>;
-         fhir:Reference.reference [ fhir:value "ValueSet/cibmtr-priority-variables-all-vs" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CIBMTR All Priority Variables Value Set (FY21)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "All Priority Variables for CIBMTR (FY21)" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 15;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-extended-vs>;
-         fhir:Reference.reference [ fhir:value "ValueSet/cibmtr-priority-variables-extended-vs" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CIBMTR Priority Variables Extended Value Set V3 (FY21)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Priority Variables Extended for CIBMTR V3 (FY21)" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 16;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-primary-vs>;
-         fhir:Reference.reference [ fhir:value "ValueSet/cibmtr-priority-variables-primary-vs" ]
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/cibmtr-priority-variables-vs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CIBMTR Priority Variables Value Set (FY21)" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Priority Variables for CIBMTR (FY21)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -548,7 +520,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Smear morphology panel - Blood (34994-4)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -562,7 +534,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NIH Common Data Elements for CIBMTR" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -576,7 +548,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NIH Common Data Element Value Meanings for CIBMTR" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -593,7 +565,24 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables>
        ]
      ], [
-       fhir:index 21;
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/Observation/LeukocytesObservation>;
+         fhir:Reference.reference [ fhir:value "Observation/LeukocytesObservation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "LeukocytesObservation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Leukocytes observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab";
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab>
+       ]
+     ], [
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -610,7 +599,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient>
        ]
      ], [
-       fhir:index 22;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -627,7 +616,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient>
        ]
      ], [
-       fhir:index 23;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -644,7 +633,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient>
        ]
      ], [
-       fhir:index 24;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -661,7 +650,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient>
        ]
      ], [
-       fhir:index 25;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -678,7 +667,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient>
        ]
      ], [
-       fhir:index 26;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

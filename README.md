@@ -69,13 +69,10 @@ publication=publication-feed.xml
   "introduction": "CIBMTR Reporting Implementation Guide based on US-Core",
   "list": [
     {
-        "version":      "0.1.2",
-        "date":         "2021-03-01",
-        "desc":         "Draft",
-        "path":         "http://fhir.nmdp.org/ig/cibmtr-reporting",
-        "status":       "trial-use",
-        "sequence":     "Trial Use: 1",
-        "fhirversion":  "4.0.1",
+        "version":      "current",
+        "desc":         "Continuous Integration Build (latest in version control)",
+        "path":         "http://build.fhir.nmdp.org/ig/cibmtr-reporting",
+        "status":       "ci-build",
         "current": true
     },
     {
@@ -103,8 +100,7 @@ publication=publication-feed.xml
         "path":         "http://fhir.nmdp.org/ig/cibmtr-reporting/2021-03",
         "status":       "trial-use",
         "sequence":     "Trial Use: 1",
-        "fhirversion":  "4.0.1",
-        "current":      "true"
+        "fhirversion":  "4.0.1"
     }
   ],
   "category": "Research"
@@ -117,6 +113,6 @@ $ cp -r ../fhir-ig-history-template/*hist* website/
 ```
 * Update the `website` contents. This creates the history pages and the PHP redirect scripts
 ```
-java -jar ../publisher.jar -publish-update -registry ../ig-registry/fhir-ig-list.json
+java -jar ../publisher.jar -publish-update -folder website -registry ../ig-registry/fhir-ig-list.json
 ```
 * Test contents of `website` directory for proper PHP redirects and history files.

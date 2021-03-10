@@ -17,7 +17,7 @@ contact:
       value: bmilius@nmdp.org
 description: How to report HCT data to CIBMTR
 license: Apache-2.0
-version: 0.1.2
+version: 0.1.3
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core:
@@ -27,7 +27,7 @@ dependencies:
 parameters:
   show-inherited-invariants: false
 copyrightYear: 2020+
-releaseLabel: draft
+releaseLabel: ci-build
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
@@ -37,6 +37,6 @@ menu:
   Home: index.html
   Table of Contents: toc.html
   Artifact Index: artifacts.html
-  Direct FHIR (STU3): Direct-FHIR-STU3.html
+  Direct FHIR (STU3): CIBMTR_Direct_FHIR_Guide_v2101.pdf
   Support:
     "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html

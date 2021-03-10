@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "cibmtr-reporting",
   "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/cibmtr-reporting",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "name": "CIBMTRReporting",
   "title": "CIBMTR Reporting Implementation Guide",
   "status": "draft",
@@ -157,23 +157,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/cibmtr-priority-variables-all-vs"
-        },
-        "name": "CIBMTR All Priority Variables Value Set (FY21)",
-        "description": "All Priority Variables for CIBMTR (FY21)",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/cibmtr-priority-variables-extended-vs"
-        },
-        "name": "CIBMTR Priority Variables Extended Value Set V3 (FY21)",
-        "description": "Priority Variables Extended for CIBMTR V3 (FY21)",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/cibmtr-priority-variables-primary-vs"
+          "reference": "ValueSet/cibmtr-priority-variables-vs"
         },
         "name": "CIBMTR Priority Variables Value Set (FY21)",
         "description": "Priority Variables for CIBMTR (FY21)",
@@ -210,6 +194,14 @@
         "name": "AlbuminObservation",
         "description": "Albumin observation",
         "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"
+      },
+      {
+        "reference": {
+          "reference": "Observation/LeukocytesObservation"
+        },
+        "name": "LeukocytesObservation",
+        "description": "Leukocytes observation",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab"
       },
       {
         "reference": {
@@ -284,7 +276,7 @@
       },
       {
         "code": "releaselabel",
-        "value": "draft"
+        "value": "ci-build"
       },
       {
         "code": "show-inherited-invariants",

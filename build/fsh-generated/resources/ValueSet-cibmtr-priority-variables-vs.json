@@ -1,12 +1,12 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "PriorityVariablesPrimaryVS",
-  "id": "cibmtr-priority-variables-primary-vs",
+  "name": "PriorityVariablesVS",
+  "id": "cibmtr-priority-variables-vs",
   "title": "CIBMTR Priority Variables Value Set (FY21)",
   "description": "Priority Variables for CIBMTR (FY21)",
-  "version": "0.1.2",
-  "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-primary-vs",
+  "version": "0.1.3",
+  "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-vs",
   "compose": {
     "include": [
       {
@@ -69,6 +69,10 @@
             "display": "Band form neutrophils/100 leukocytes in Blood by Automated count"
           },
           {
+            "code": "764-1",
+            "display": "Band form neutrophils/100 leukocytes in Blood by Manual count"
+          },
+          {
             "code": "703-9",
             "display": "Basophilic stippling [Presence] in Blood by Light microscopy"
           },
@@ -87,6 +91,10 @@
           {
             "code": "706-2",
             "display": "Basophils/100 leukocytes in Blood by Automated count"
+          },
+          {
+            "code": "707-0",
+            "display": "Basophils/100 leukocytes in Blood by Manual count"
           },
           {
             "code": "1952-1",
@@ -185,6 +193,10 @@
             "display": "Eosinophils/100 leukocytes in Blood by Automated count"
           },
           {
+            "code": "714-6",
+            "display": "Eosinophils/100 leukocytes in Blood by Manual count"
+          },
+          {
             "code": "30384-2",
             "display": "Erythrocyte distribution width [Entitic volume]"
           },
@@ -217,8 +229,36 @@
             "display": "Erythrocytes [#/volume] in Blood by Automated count"
           },
           {
+            "code": "790-6",
+            "display": "Erythrocytes [#/volume] in Blood by Manual count"
+          },
+          {
             "code": "10379-6",
             "display": "Erythrocytes.dual population [Presence] in Blood by Light microscopy"
+          },
+          {
+            "code": "35209-6",
+            "display": "Ferritin [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "24373-3",
+            "display": "Ferritin [Mass/volume] in Blood"
+          },
+          {
+            "code": "2276-4",
+            "display": "Ferritin [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "20567-4",
+            "display": "Ferritin [Mass/volume] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "14723-1",
+            "display": "Ferritin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "86914-9",
+            "display": "Ferritin goal [Mass/volume] Serum or Plasma"
           },
           {
             "code": "32778-3",
@@ -261,12 +301,60 @@
             "display": "Helmet cells [Presence] in Blood by Light microscopy"
           },
           {
+            "code": "71832-0",
+            "display": "Hematocrit [Pure volume fraction] of Arterial blood"
+          },
+          {
+            "code": "71833-8",
+            "display": "Hematocrit [Pure volume fraction] of Blood by Automated count"
+          },
+          {
+            "code": "71831-2",
+            "display": "Hematocrit [Pure volume fraction] of Capillary blood"
+          },
+          {
+            "code": "71830-4",
+            "display": "Hematocrit [Pure volume fraction] of Mixed venous blood"
+          },
+          {
+            "code": "71829-6",
+            "display": "Hematocrit [Pure volume fraction] of Venous blood"
+          },
+          {
+            "code": "32354-3",
+            "display": "Hematocrit [Volume Fraction] of Arterial blood"
+          },
+          {
             "code": "20570-8",
             "display": "Hematocrit [Volume Fraction] of Blood"
           },
           {
             "code": "4544-3",
             "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+          },
+          {
+            "code": "4545-0",
+            "display": "Hematocrit [Volume Fraction] of Blood by Centrifugation"
+          },
+          {
+            "code": "48703-3",
+            "display": "Hematocrit [Volume Fraction] of Blood by Estimated"
+          },
+          {
+            "code": "31100-1",
+            "display": "Hematocrit [Volume Fraction] of Blood by Impedance"
+          },
+          {
+            "code": "42908-4",
+            "display": "Hematocrit [Volume Fraction] of Capillary blood"
+          },
+          {
+            "code": "41655-2",
+            "display": "Hematocrit [Volume Fraction] of Mixed venous blood"
+          },
+          {
+            "code": "41654-5",
+            "display": "Hematocrit [Volume Fraction] of Venous blood"
           },
           {
             "code": "30313-1",
@@ -315,6 +403,38 @@
           {
             "code": "93846-4",
             "display": "Hemoglobin [Moles/volume] in Venous blood"
+          },
+          {
+            "code": "71865-0",
+            "display": "Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by Electrophoresis"
+          },
+          {
+            "code": "71864-3",
+            "display": "Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by HPLC"
+          },
+          {
+            "code": "71863-5",
+            "display": "Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by Kleihauer-Betke method"
+          },
+          {
+            "code": "4576-5",
+            "display": "Hemoglobin F/Hemoglobin.total in Blood"
+          },
+          {
+            "code": "32682-7",
+            "display": "Hemoglobin F/Hemoglobin.total in Blood by Electrophoresis"
+          },
+          {
+            "code": "38524-5",
+            "display": "Hemoglobin F/Hemoglobin.total in Blood by Electrophoresis alkaline (pH 8.9)"
+          },
+          {
+            "code": "42246-9",
+            "display": "Hemoglobin F/Hemoglobin.total in Blood by HPLC"
+          },
+          {
+            "code": "4633-4",
+            "display": "Hemoglobin F/Hemoglobin.total in Blood by Kleihauer-Betke method"
           },
           {
             "code": "7793-3",
@@ -473,6 +593,10 @@
             "display": "Lymphocytes/100 leukocytes in Blood by Automated count"
           },
           {
+            "code": "30365-1",
+            "display": "Lymphocytes/100 leukocytes in Blood by Flow cytometry (FC)"
+          },
+          {
             "code": "737-7",
             "display": "Lymphocytes/100 leukocytes in Blood by Manual count"
           },
@@ -505,12 +629,20 @@
             "display": "MCH [Entitic mass] by Automated count"
           },
           {
+            "code": "59468-9",
+            "display": "MCH [Entitic substance]"
+          },
+          {
             "code": "28540-3",
             "display": "MCHC [Mass/volume]"
           },
           {
             "code": "786-4",
             "display": "MCHC [Mass/volume] by Automated count"
+          },
+          {
+            "code": "59467-1",
+            "display": "MCHC [Moles/volume]"
           },
           {
             "code": "30428-7",
@@ -527,6 +659,10 @@
           {
             "code": "28541-1",
             "display": "Metamyelocytes/100 leukocytes in Blood"
+          },
+          {
+            "code": "740-1",
+            "display": "Metamyelocytes/100 leukocytes in Blood by Manual count"
           },
           {
             "code": "741-9",
@@ -547,6 +683,10 @@
           {
             "code": "742-7",
             "display": "Monocytes [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "743-5",
+            "display": "Monocytes [#/volume] in Blood by Manual count"
           },
           {
             "code": "30440-2",
@@ -585,6 +725,10 @@
             "display": "Myelocytes/100 leukocytes in Blood"
           },
           {
+            "code": "749-2",
+            "display": "Myelocytes/100 leukocytes in Blood by Manual count"
+          },
+          {
             "code": "26499-4",
             "display": "Neutrophils [#/volume] in Blood"
           },
@@ -611,6 +755,10 @@
           {
             "code": "30450-1",
             "display": "Neutrophils.hypersegmented/100 leukocytes in Blood"
+          },
+          {
+            "code": "767-4",
+            "display": "Neutrophils.hypersegmented/100 leukocytes in Blood by Manual count"
           },
           {
             "code": "18319-4",
@@ -777,6 +925,10 @@
             "display": "Prolymphocytes/100 leukocytes in Blood"
           },
           {
+            "code": "6746-2",
+            "display": "Prolymphocytes/100 leukocytes in Blood by Manual count"
+          },
+          {
             "code": "34926-6",
             "display": "Promonocytes [#/volume] in Blood"
           },
@@ -811,6 +963,14 @@
           {
             "code": "26505-8",
             "display": "Segmented neutrophils/100 leukocytes in Blood"
+          },
+          {
+            "code": "32200-8",
+            "display": "Segmented neutrophils/100 leukocytes in Blood by Automated count"
+          },
+          {
+            "code": "769-0",
+            "display": "Segmented neutrophils/100 leukocytes in Blood by Manual count"
           },
           {
             "code": "34918-3",

@@ -15,17 +15,17 @@ Description:    "CIBMTR Observation Laboratory Results Profile (us-core)"
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component ^slicing.description = "Slice based on the component.code pattern"
-* component contains GVHD 0..1
-* component[GVHD].code =  CADSR#3005293 "Type of Graft vs Host Disease (GVHD)"
-* component[GVHD].value[x] only CodeableConcept
-* component[GVHD].valueCodeableConcept from  GVHDTypeValueSet (required)
+// * component contains GVHD 0..1
+// * component[GVHD].code =  CADSR#3005293 "Type of Graft vs Host Disease (GVHD)"
+// * component[GVHD].value[x] only CodeableConcept
+// * component[GVHD].valueCodeableConcept from  GVHDTypeValueSet (required)
 
 Profile:    CIBMTRObsPriorityVariables
 Parent:     cibmtr-observation-lab
 Id:         cibmtr-obs-priority-variables
 Title:      "CIBMTR Observation Laboratory Results: Priority Variables"
 Description:    "CIBMTR Observation Laboratory Results: Priority Variables"
-* code.coding from PriorityVariablesAllVS (extensible)
+* code.coding from PriorityVariablesVS (extensible)
 
 // Instance: PostInfusionProcedureTimepointType 
 // InstanceOf: cibmtr-observation-lab
@@ -69,6 +69,21 @@ Usage: #example
 * code.coding = LNC#74398-9 "Neutrophils [#/volume] in Cord blood"
 * valueQuantity = UCUM#10*9/L "billion per liter"
 * valueQuantity.value = 7.9
+* effectiveDateTime = "2020-07-21T14:17:00Z"
+* subject.identifier.system = "http://terminology.cibmtr.org/identifier/CRID"
+* subject.identifier.value = "1234567"
+
+Instance: LeukocytesObservation 
+InstanceOf: cibmtr-observation-lab
+Description: "Leukocytes observation"
+Usage: #example
+* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
+* meta.security[TransplantCenter].code = #rc_99999
+* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* status = #final
+* code.coding = LNC#26464-8 "Leukocytes [#/volume] in Blood"
+* valueQuantity = UCUM#10*9/L "billion per liter"
+* valueQuantity.value = 5.2
 * effectiveDateTime = "2020-07-21T14:17:00Z"
 * subject.identifier.system = "http://terminology.cibmtr.org/identifier/CRID"
 * subject.identifier.value = "1234567"

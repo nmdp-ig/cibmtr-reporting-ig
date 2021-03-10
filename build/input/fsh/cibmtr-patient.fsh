@@ -13,9 +13,9 @@ Description:    "CIBMTR Patient Profile for CRID assignment (us-core)"
 * extension contains MothersMaidenNameExtension named MaidenNameExt 0..1 MS
 * extension contains BirthSexExtension named BirthSexExt 0..1 MS
 * extension contains PatientBirthPlaceExtension named PatBirthPlaceExt 0..1 MS
-* extension[PatBirthPlaceExt].valueAddress.city MS
-* extension[PatBirthPlaceExt].valueAddress.state MS
-* extension[PatBirthPlaceExt].valueAddress.country MS
+// * extension[PatBirthPlaceExt].valueAddress.city MS
+// * extension[PatBirthPlaceExt].valueAddress.state MS
+// * extension[PatBirthPlaceExt].valueAddress.country MS
  
 * meta.security ^slicing.discriminator.type = #pattern
 * meta.security ^slicing.discriminator.path = "system"

@@ -13,11 +13,11 @@
       </div>
    </text>
    <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/cibmtr-reporting"/>
-   <version value="0.1.2"/>
+   <version value="0.1.3"/>
    <name value="CIBMTRReporting"/>
    <title value="CIBMTR Reporting Implementation Guide"/>
    <status value="draft"/>
-   <date value="2021-03-02T13:25:50-06:00"/>
+   <date value="2021-03-09T19:13:08-06:00"/>
    <publisher value="NMDP/Be The Match"/>
    <contact>
       <name value="NMDP/Be The Match"/>
@@ -288,40 +288,10 @@
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="ValueSet-cibmtr-priority-variables-all-vs.html"/>
+            <valueUri value="ValueSet-cibmtr-priority-variables-vs.html"/>
          </extension>
          <reference>
-            <reference value="ValueSet/cibmtr-priority-variables-all-vs"/>
-         </reference>
-         <name value="CIBMTR All Priority Variables Value Set (FY21)"/>
-         <description value="All Priority Variables for CIBMTR (FY21)"/>
-         <exampleBoolean value="false"/>
-         <groupingId value="_term_valueset"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="ValueSet"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="ValueSet-cibmtr-priority-variables-extended-vs.html"/>
-         </extension>
-         <reference>
-            <reference value="ValueSet/cibmtr-priority-variables-extended-vs"/>
-         </reference>
-         <name value="CIBMTR Priority Variables Extended Value Set V3 (FY21)"/>
-         <description value="Priority Variables Extended for CIBMTR V3 (FY21)"/>
-         <exampleBoolean value="false"/>
-         <groupingId value="_term_valueset"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="ValueSet"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="ValueSet-cibmtr-priority-variables-primary-vs.html"/>
-         </extension>
-         <reference>
-            <reference value="ValueSet/cibmtr-priority-variables-primary-vs"/>
+            <reference value="ValueSet/cibmtr-priority-variables-vs"/>
          </reference>
          <name value="CIBMTR Priority Variables Value Set (FY21)"/>
          <description value="Priority Variables for CIBMTR (FY21)"/>
@@ -386,6 +356,21 @@
          <name value="AlbuminObservation"/>
          <description value="Albumin observation"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-LeukocytesObservation.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/LeukocytesObservation"/>
+         </reference>
+         <name value="LeukocytesObservation"/>
+         <description value="Leukocytes observation"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab"/>
          <groupingId value="_ex_example"/>
       </resource>
       <resource>
@@ -567,17 +552,7 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="ValueSet-cibmtr-priority-variables-all-vs.html"/>
-               <title value="CIBMTR All Priority Variables Value Set (FY21)"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="ValueSet-cibmtr-priority-variables-extended-vs.html"/>
-               <title value="CIBMTR Priority Variables Extended Value Set V3 (FY21)"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="ValueSet-cibmtr-priority-variables-primary-vs.html"/>
+               <nameUrl value="ValueSet-cibmtr-priority-variables-vs.html"/>
                <title value="CIBMTR Priority Variables Value Set (FY21)"/>
                <generation value="generated"/>
             </page>
@@ -599,6 +574,11 @@
             <page>
                <nameUrl value="Observation-AlbuminObservation.html"/>
                <title value="AlbuminObservation"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-LeukocytesObservation.html"/>
+               <title value="LeukocytesObservation"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -639,7 +619,7 @@
       </parameter>
       <parameter>
          <code value="releaselabel"/>
-         <value value="draft"/>
+         <value value="ci-build"/>
       </parameter>
       <parameter>
          <code value="show-inherited-invariants"/>

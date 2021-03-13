@@ -25,6 +25,7 @@ Description:    "CIBMTR Patient Profile for CRID assignment (us-core)"
     TransplantCenter 1..1 MS
 * meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
 * meta.security[TransplantCenter].code obeys sec-rc
+* meta.security[TransplantCenter].code 1..1
 
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "system"

@@ -11,10 +11,11 @@ Description:    "CIBMTR Observation Laboratory Results Profile (us-core)"
     TransplantCenter 1..1 MS
 * meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
 * meta.security[TransplantCenter].code obeys sec-rc
-* component ^slicing.discriminator.type = #pattern
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component ^slicing.description = "Slice based on the component.code pattern"
+* meta.security[TransplantCenter].code 1..1 
+// * component ^slicing.discriminator.type = #pattern
+// * component ^slicing.discriminator.path = "code"
+// * component ^slicing.rules = #open
+// * component ^slicing.description = "Slice based on the component.code pattern"
 // * component contains GVHD 0..1
 // * component[GVHD].code =  CADSR#3005293 "Type of Graft vs Host Disease (GVHD)"
 // * component[GVHD].value[x] only CodeableConcept

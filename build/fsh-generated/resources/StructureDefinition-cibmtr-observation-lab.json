@@ -84,6 +84,7 @@
       {
         "id": "Observation.meta.security:TransplantCenter.code",
         "path": "Observation.meta.security.code",
+        "min": 1,
         "constraint": [
           {
             "key": "sec-rc",
@@ -93,20 +94,6 @@
             "source": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab"
           }
         ]
-      },
-      {
-        "id": "Observation.component",
-        "path": "Observation.component",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "code"
-            }
-          ],
-          "rules": "open",
-          "description": "Slice based on the component.code pattern"
-        }
       }
     ]
   }

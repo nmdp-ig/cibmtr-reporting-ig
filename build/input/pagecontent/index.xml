@@ -1,16 +1,14 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+   <blockquote class="fhir-version-note">
   <p>
-  This FHIR Implemenation Guide (IG) describes how to send data to CIBMTR via HL7 FHIR.   
-  </p>
-
-  <blockquote class="stu-note">
-  <p>
-  This Implementation Guide is designed to use FHIR R4. 
+  This Implementation Guide is designed to use FHIR R4.<br /> 
   For information on submitting to our Direct FHIR endpoints using FHIR STU3, see the 
   <a href="CIBMTR_Direct_FHIR_Guide_v2101.pdf">Direct FHIR for STU3 Guide</a>.
   </p>
   </blockquote>
-
+ <p>
+  This FHIR Implementation Guide (IG) describes how to send data to CIBMTR via HL7 FHIR.   
+  </p>
   <a name="Introduction"> </a>
   <h3>Introduction</h3>
   <p>
@@ -40,8 +38,18 @@
   Research ID (CRID), and for reporting Patient resources with a known CRID. We have also begun specifying a profile for reporting laboratory observations, 
   focusing on a set of variables that have been identified as a priority for the CIBMTR Data Transformation Initiative in Fiscal Year 2021.
   </p>
+  <a name="CRID"> </a>
+  <h3>CRID Lookup/Creation</h3>
+  <p>
+  A REST API is available for enabling users to lookup and/or create CRIDs based on patient demographic
+  information. This is described in <a href="CIBMTR_Direct_FHIR_Guide_v2101.pdf">Direct FHIR for STU3 Guide</a>. 
+  This API does not use FHIR Patient resources, but instead uses a special JSON structure. 
+  We are working on true FHIR interface for this function in the future where Patient FHIR resources may be submitted. 
+  In the meantime, please use the method described <a href="CIBMTR_Direct_FHIR_Guide_v2101.pdf">here</a>.
+  </p>
+
   <a name="Profiles"> </a>
-  <h3>Profiles contained in this IG</h3>
+  <h3>Profiles</h3>
   <ul>
     <li><a href="StructureDefinition-cibmtr-patient.html">CIBMTR Patient</a></li>
     <li><a href="StructureDefinition-cibmtr-observation-lab.html">CIBMTR Observation Laboratory Results</a></li>

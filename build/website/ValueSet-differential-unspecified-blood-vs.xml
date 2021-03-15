@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="differential-unspecified-blood-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://details.loinc.org/LOINC/26464-8.html">26464-8</a></td><td>Leukocytes [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30180-4.html">30180-4</a></td><td>Basophils/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/26444-0.html">26444-0</a></td><td>Basophils [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/34911-8.html">34911-8</a></td><td>Immature basophils/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/34910-0.html">34910-0</a></td><td>Immature basophils [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/26446-5.html">26446-5</a></td><td>Blasts/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30376-8.html">30376-8</a></td><td>Blasts [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/26450-7.html">26450-7</a></td><td>Eosinophils/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/26449-9.html">26449-9</a></td><td>Eosinophils [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/34913-4.html">34913-4</a></td><td>Immature eosinophils/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/34912-6.html">34912-6</a></td><td>Immature eosinophils [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30395-8.html">30395-8</a></td><td>Granulocytes/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30394-1.html">30394-1</a></td><td>Granulocytes [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/35058-7.html">35058-7</a></td><td>Hairy cells/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30397-4.html">30397-4</a></td><td>Hairy cells [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/26463-0.html">26463-0</a></td><td>Large unstained cells/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/26462-2.html">26462-2</a></td><td>Large unstained cells [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/26471-3.html">26471-3</a></td><td>Leukocytes other/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30406-3.html">30406-3</a></td><td>Leukocytes other [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/34922-5.html">34922-5</a></td><td>Lymphoblasts/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/35050-4.html">35050-4</a></td><td>Lymphoblasts [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/26478-8.html">26478-8</a></td><td>Lymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/26474-7.html">26474-7</a></td><td>Lymphocytes [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30413-9.html">30413-9</a></td><td>Abnormal lymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30412-1.html">30412-1</a></td><td>Abnormal lymphocytes [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/13046-8.html">13046-8</a></td><td>Variant lymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/26477-0.html">26477-0</a></td><td>Variant lymphocytes [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30420-4.html">30420-4</a></td><td>Large granular lymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/35082-7.html">35082-7</a></td><td>Large granular lymphocytes [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/34921-7.html">34921-7</a></td><td>Lymphocytes Plasmacytoid/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/35039-7.html">35039-7</a></td><td>Lymphocytes Plasmacytoid [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30423-8.html">30423-8</a></td><td>Lymphoma cells/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30422-0.html">30422-0</a></td><td>Lymphoma cells [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/34915-9.html">34915-9</a></td><td>Malignant cells/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/34914-2.html">34914-2</a></td><td>Malignant cells [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/28541-1.html">28541-1</a></td><td>Metamyelocytes/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30433-7.html">30433-7</a></td><td>Metamyelocytes [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/34923-3.html">34923-3</a></td><td>Monoblasts/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/35029-8.html">35029-8</a></td><td>Monoblasts [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/26485-3.html">26485-3</a></td><td>Monocytes/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/26484-6.html">26484-6</a></td><td>Monocytes [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30441-0.html">30441-0</a></td><td>Monocytes Abnormal/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30440-2.html">30440-2</a></td><td>Monocytes Abnormal [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/34925-8.html">34925-8</a></td><td>Immature monocytes/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/34924-1.html">34924-1</a></td><td>Immature monocytes [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30445-1.html">30445-1</a></td><td>Myeloblasts/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30444-4.html">30444-4</a></td><td>Myeloblasts [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/26498-6.html">26498-6</a></td><td>Myelocytes/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30446-9.html">30446-9</a></td><td>Myelocytes [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/26511-6.html">26511-6</a></td><td>Neutrophils/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/26499-4.html">26499-4</a></td><td>Neutrophils [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/26508-2.html">26508-2</a></td><td>Band form neutrophils/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/26507-4.html">26507-4</a></td><td>Band form neutrophils [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30450-1.html">30450-1</a></td><td>Neutrophils.hypersegmented/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30449-3.html">30449-3</a></td><td>Neutrophils.hypersegmented [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30451-9.html">30451-9</a></td><td>Segmented neutrophils [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/26505-8.html">26505-8</a></td><td>Segmented neutrophils/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/34917-5.html">34917-5</a></td><td>Plasma cell precursor/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/34916-7.html">34916-7</a></td><td>Plasma cell precursor [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/13047-6.html">13047-6</a></td><td>Plasma cells/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30458-4.html">30458-4</a></td><td>Plasma cells [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/34999-3.html">34999-3</a></td><td>Polymorphonuclear cells/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/35003-3.html">35003-3</a></td><td>Polymorphonuclear cells [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30465-9.html">30465-9</a></td><td>Prolymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30464-2.html">30464-2</a></td><td>Prolymphocytes [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/30466-7.html">30466-7</a></td><td>Promonocytes/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/34926-6.html">34926-6</a></td><td>Promonocytes [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/26524-9.html">26524-9</a></td><td>Promyelocytes/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/26523-1.html">26523-1</a></td><td>Promyelocytes [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/34919-1.html">34919-1</a></td><td>Sezary cells/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/34918-3.html">34918-3</a></td><td>Sezary cells [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/34992-8.html">34992-8</a></td><td>Smudge cells/100 leukocytes in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/34993-6.html">34993-6</a></td><td>Smudge cells [#/volume] in Blood</td></tr><tr><td><a href="http://details.loinc.org/LOINC/33255-1.html">33255-1</a></td><td>Cell Fractions/Differential [Interpretation] in Blood</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/differential-unspecified-blood-vs"/>
+  <version value="0.1.3"/>
+  <name value="DifferentialUnspecifiedBloodVS"/>
+  <title value="Differential panel, method unspecified - Blood (69738-3)"/>
+  <status value="active"/>
+  <date value="2021-03-15T17:28:36-05:00"/>
+  <publisher value="NMDP/Be The Match"/>
+  <contact>
+    <name value="NMDP/Be The Match"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Milius"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bmilius@nmdp.org"/>
+    </telecom>
+  </contact>
+  <description value="Differential panel, method unspecified - Blood (69738-3)"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="26464-8"/>
+        <display value="Leukocytes [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="30180-4"/>
+        <display value="Basophils/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="26444-0"/>
+        <display value="Basophils [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="34911-8"/>
+        <display value="Immature basophils/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="34910-0"/>
+        <display value="Immature basophils [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="26446-5"/>
+        <display value="Blasts/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="30376-8"/>
+        <display value="Blasts [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="26450-7"/>
+        <display value="Eosinophils/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="26449-9"/>
+        <display value="Eosinophils [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="34913-4"/>
+        <display value="Immature eosinophils/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="34912-6"/>
+        <display value="Immature eosinophils [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="30395-8"/>
+        <display value="Granulocytes/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="30394-1"/>
+        <display value="Granulocytes [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="35058-7"/>
+        <display value="Hairy cells/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="30397-4"/>
+        <display value="Hairy cells [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="26463-0"/>
+        <display value="Large unstained cells/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="26462-2"/>
+        <display value="Large unstained cells [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="26471-3"/>
+        <display value="Leukocytes other/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="30406-3"/>
+        <display value="Leukocytes other [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="34922-5"/>
+        <display value="Lymphoblasts/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="35050-4"/>
+        <display value="Lymphoblasts [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="26478-8"/>
+        <display value="Lymphocytes/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="26474-7"/>
+        <display value="Lymphocytes [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="30413-9"/>
+        <display value="Abnormal lymphocytes/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="30412-1"/>
+        <display value="Abnormal lymphocytes [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="13046-8"/>
+        <display value="Variant lymphocytes/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="26477-0"/>
+        <display value="Variant lymphocytes [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="30420-4"/>
+        <display value="Large granular lymphocytes/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="35082-7"/>
+        <display value="Large granular lymphocytes [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="34921-7"/>
+        <display value="Lymphocytes Plasmacytoid/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="35039-7"/>
+        <display value="Lymphocytes Plasmacytoid [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="30423-8"/>
+        <display value="Lymphoma cells/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="30422-0"/>
+        <display value="Lymphoma cells [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="34915-9"/>
+        <display value="Malignant cells/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="34914-2"/>
+        <display value="Malignant cells [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="28541-1"/>
+        <display value="Metamyelocytes/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="30433-7"/>
+        <display value="Metamyelocytes [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="34923-3"/>
+        <display value="Monoblasts/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="35029-8"/>
+        <display value="Monoblasts [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="26485-3"/>
+        <display value="Monocytes/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="26484-6"/>
+        <display value="Monocytes [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="30441-0"/>
+        <display value="Monocytes Abnormal/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="30440-2"/>
+        <display value="Monocytes Abnormal [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="34925-8"/>
+        <display value="Immature monocytes/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="34924-1"/>
+        <display value="Immature monocytes [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="30445-1"/>
+        <display value="Myeloblasts/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="30444-4"/>
+        <display value="Myeloblasts [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="26498-6"/>
+        <display value="Myelocytes/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="30446-9"/>
+        <display value="Myelocytes [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="26511-6"/>
+        <display value="Neutrophils/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="26499-4"/>
+        <display value="Neutrophils [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="26508-2"/>
+        <display value="Band form neutrophils/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="26507-4"/>
+        <display value="Band form neutrophils [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="30450-1"/>
+        <display value="Neutrophils.hypersegmented/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="30449-3"/>
+        <display value="Neutrophils.hypersegmented [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="30451-9"/>
+        <display value="Segmented neutrophils [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="26505-8"/>
+        <display value="Segmented neutrophils/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="34917-5"/>
+        <display value="Plasma cell precursor/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="34916-7"/>
+        <display value="Plasma cell precursor [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="13047-6"/>
+        <display value="Plasma cells/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="30458-4"/>
+        <display value="Plasma cells [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="34999-3"/>
+        <display value="Polymorphonuclear cells/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="35003-3"/>
+        <display value="Polymorphonuclear cells [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="30465-9"/>
+        <display value="Prolymphocytes/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="30464-2"/>
+        <display value="Prolymphocytes [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="30466-7"/>
+        <display value="Promonocytes/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="34926-6"/>
+        <display value="Promonocytes [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="26524-9"/>
+        <display value="Promyelocytes/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="26523-1"/>
+        <display value="Promyelocytes [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="34919-1"/>
+        <display value="Sezary cells/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="34918-3"/>
+        <display value="Sezary cells [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="34992-8"/>
+        <display value="Smudge cells/100 leukocytes in Blood"/>
+      </concept>
+      <concept>
+        <code value="34993-6"/>
+        <display value="Smudge cells [#/volume] in Blood"/>
+      </concept>
+      <concept>
+        <code value="33255-1"/>
+        <display value="Cell Fractions/Differential [Interpretation] in Blood"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

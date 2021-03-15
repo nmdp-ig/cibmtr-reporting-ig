@@ -1,0 +1,914 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-primary-vs> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cibmtr-priority-variables-primary-vs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30412-1.html\">30412-1</a></td><td>Abnormal lymphocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30413-9.html\">30413-9</a></td><td>Abnormal lymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/7789-1.html\">7789-1</a></td><td>Acanthocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/1751-7.html\">1751-7</a></td><td>Albumin [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/61151-7.html\">61151-7</a></td><td>Albumin [Mass/volume] in Serum or Plasma by Bromocresol green (BCG) dye binding method</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/61152-5.html\">61152-5</a></td><td>Albumin [Mass/volume] in Serum or Plasma by Bromocresol purple (BCP) dye binding method</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2862-1.html\">2862-1</a></td><td>Albumin [Mass/volume] in Serum or Plasma by Electrophoresis</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/702-1.html\">702-1</a></td><td>Anisocytosis [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/11281-3.html\">11281-3</a></td><td>Auer rods [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/18280-8.html\">18280-8</a></td><td>Background stain [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26507-4.html\">26507-4</a></td><td>Band form neutrophils [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30229-9.html\">30229-9</a></td><td>Band form neutrophils [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26508-2.html\">26508-2</a></td><td>Band form neutrophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/35332-6.html\">35332-6</a></td><td>Band form neutrophils/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/703-9.html\">703-9</a></td><td>Basophilic stippling [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26444-0.html\">26444-0</a></td><td>Basophils [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/704-7.html\">704-7</a></td><td>Basophils [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30180-4.html\">30180-4</a></td><td>Basophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/706-2.html\">706-2</a></td><td>Basophils/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/1952-1.html\">1952-1</a></td><td>Beta-2-Microglobulin [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/76484-5.html\">76484-5</a></td><td>Beta-2-Microglobulin [Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/35194-0.html\">35194-0</a></td><td>Bilirubin.total [Mass or Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/1975-2.html\">1975-2</a></td><td>Bilirubin.total [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14631-6.html\">14631-6</a></td><td>Bilirubin.total [Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77137-8.html\">77137-8</a></td><td>Bilirubin.total [Moles/volume] in Serum, Plasma or Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/10371-3.html\">10371-3</a></td><td>Bite cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30376-8.html\">30376-8</a></td><td>Blasts [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/11150-0.html\">11150-0</a></td><td>Blasts/100 cells in Bone marrow</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26446-5.html\">26446-5</a></td><td>Blasts/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/709-6.html\">709-6</a></td><td>Blasts/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/71669-6.html\">71669-6</a></td><td>Blasts/Leukocytes [Pure number fraction] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/10372-1.html\">10372-1</a></td><td>Blister cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/5909-7.html\">5909-7</a></td><td>Blood smear finding [Identifier] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/7790-9.html\">7790-9</a></td><td>Burr cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/11280-5.html\">11280-5</a></td><td>Cabot rings [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/33255-1.html\">33255-1</a></td><td>Cell Fractions/Differential [Interpretation] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/7791-7.html\">7791-7</a></td><td>Dacrocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/7792-5.html\">7792-5</a></td><td>Dohle body [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/11274-8.html\">11274-8</a></td><td>Elliptocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26449-9.html\">26449-9</a></td><td>Eosinophils [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/711-2.html\">711-2</a></td><td>Eosinophils [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26450-7.html\">26450-7</a></td><td>Eosinophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/713-8.html\">713-8</a></td><td>Eosinophils/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30384-2.html\">30384-2</a></td><td>Erythrocyte distribution width [Entitic volume]</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/21000-5.html\">21000-5</a></td><td>Erythrocyte distribution width [Entitic volume] by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30385-9.html\">30385-9</a></td><td>Erythrocyte distribution width [Ratio]</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/788-0.html\">788-0</a></td><td>Erythrocyte distribution width [Ratio] by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/49121-7.html\">49121-7</a></td><td>Erythrocyte inclusion bodies [Identifier] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/6742-1.html\">6742-1</a></td><td>Erythrocyte morphology finding [Identifier] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26453-1.html\">26453-1</a></td><td>Erythrocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/789-8.html\">789-8</a></td><td>Erythrocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/10379-6.html\">10379-6</a></td><td>Erythrocytes.dual population [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/32778-3.html\">32778-3</a></td><td>Fibrin strands [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/10373-9.html\">10373-9</a></td><td>Fragments [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/5908-9.html\">5908-9</a></td><td>Giant platelets [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30394-1.html\">30394-1</a></td><td>Granulocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30395-8.html\">30395-8</a></td><td>Granulocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/19023-1.html\">19023-1</a></td><td>Granulocytes/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30397-4.html\">30397-4</a></td><td>Hairy cells [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/35058-7.html\">35058-7</a></td><td>Hairy cells/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/716-1.html\">716-1</a></td><td>Heinz bodies [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/10374-7.html\">10374-7</a></td><td>Helmet cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/20570-8.html\">20570-8</a></td><td>Hematocrit [Volume Fraction] of Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/4544-3.html\">4544-3</a></td><td>Hematocrit [Volume Fraction] of Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30313-1.html\">30313-1</a></td><td>Hemoglobin [Mass/volume] in Arterial blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14775-1.html\">14775-1</a></td><td>Hemoglobin [Mass/volume] in Arterial blood by Oximetry</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/718-7.html\">718-7</a></td><td>Hemoglobin [Mass/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/20509-6.html\">20509-6</a></td><td>Hemoglobin [Mass/volume] in Blood by calculation</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/55782-7.html\">55782-7</a></td><td>Hemoglobin [Mass/volume] in Blood by Oximetry</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30351-1.html\">30351-1</a></td><td>Hemoglobin [Mass/volume] in Mixed venous blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/76768-1.html\">76768-1</a></td><td>Hemoglobin [Mass/volume] in Mixed venous blood by Oximetry</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30350-3.html\">30350-3</a></td><td>Hemoglobin [Mass/volume] in Venous blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/76769-9.html\">76769-9</a></td><td>Hemoglobin [Mass/volume] in Venous blood by Oximetry</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/75928-2.html\">75928-2</a></td><td>Hemoglobin [Moles/volume] in Arterial blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/59260-0.html\">59260-0</a></td><td>Hemoglobin [Moles/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/93846-4.html\">93846-4</a></td><td>Hemoglobin [Moles/volume] in Venous blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/7793-3.html\">7793-3</a></td><td>Howell-Jolly bodies [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/33249-4.html\">33249-4</a></td><td>Hyperchromia [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/728-6.html\">728-6</a></td><td>Hypochromia [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34910-0.html\">34910-0</a></td><td>Immature basophils [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34911-8.html\">34911-8</a></td><td>Immature basophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34912-6.html\">34912-6</a></td><td>Immature eosinophils [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34913-4.html\">34913-4</a></td><td>Immature eosinophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34924-1.html\">34924-1</a></td><td>Immature monocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34925-8.html\">34925-8</a></td><td>Immature monocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/35214-6.html\">35214-6</a></td><td>Iron [Mass or Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2498-4.html\">2498-4</a></td><td>Iron [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14798-3.html\">14798-3</a></td><td>Iron [Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/35215-3.html\">35215-3</a></td><td>Iron binding capacity [Mass or Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2500-7.html\">2500-7</a></td><td>Iron binding capacity [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14800-7.html\">14800-7</a></td><td>Iron binding capacity [Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/10375-4.html\">10375-4</a></td><td>Irregularly contracted cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2532-0.html\">2532-0</a></td><td>Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14804-9.html\">14804-9</a></td><td>Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14805-6.html\">14805-6</a></td><td>Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Pyruvate to lactate reaction</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/35082-7.html\">35082-7</a></td><td>Large granular lymphocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30420-4.html\">30420-4</a></td><td>Large granular lymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26462-2.html\">26462-2</a></td><td>Large unstained cells [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26463-0.html\">26463-0</a></td><td>Large unstained cells/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/11156-7.html\">11156-7</a></td><td>Leukocyte morphology finding [Identifier] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26464-8.html\">26464-8</a></td><td>Leukocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/6690-2.html\">6690-2</a></td><td>Leukocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/49498-9.html\">49498-9</a></td><td>Leukocytes [#/volume] in Blood by Estimate</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/804-5.html\">804-5</a></td><td>Leukocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30406-3.html\">30406-3</a></td><td>Leukocytes other [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/51383-8.html\">51383-8</a></td><td>Leukocytes other [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26471-3.html\">26471-3</a></td><td>Leukocytes other/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/35050-4.html\">35050-4</a></td><td>Lymphoblasts [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34922-5.html\">34922-5</a></td><td>Lymphoblasts/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26474-7.html\">26474-7</a></td><td>Lymphocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/731-0.html\">731-0</a></td><td>Lymphocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/35039-7.html\">35039-7</a></td><td>Lymphocytes Plasmacytoid [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34921-7.html\">34921-7</a></td><td>Lymphocytes Plasmacytoid/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26478-8.html\">26478-8</a></td><td>Lymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/736-9.html\">736-9</a></td><td>Lymphocytes/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/737-7.html\">737-7</a></td><td>Lymphocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30422-0.html\">30422-0</a></td><td>Lymphoma cells [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30423-8.html\">30423-8</a></td><td>Lymphoma cells/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/738-5.html\">738-5</a></td><td>Macrocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34914-2.html\">34914-2</a></td><td>Malignant cells [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34915-9.html\">34915-9</a></td><td>Malignant cells/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/28539-5.html\">28539-5</a></td><td>MCH [Entitic mass]</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/785-6.html\">785-6</a></td><td>MCH [Entitic mass] by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/28540-3.html\">28540-3</a></td><td>MCHC [Mass/volume]</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/786-4.html\">786-4</a></td><td>MCHC [Mass/volume] by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30428-7.html\">30428-7</a></td><td>MCV [Entitic volume]</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/787-2.html\">787-2</a></td><td>MCV [Entitic volume] by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30433-7.html\">30433-7</a></td><td>Metamyelocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/28541-1.html\">28541-1</a></td><td>Metamyelocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/741-9.html\">741-9</a></td><td>Microcytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/35029-8.html\">35029-8</a></td><td>Monoblasts [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34923-3.html\">34923-3</a></td><td>Monoblasts/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26484-6.html\">26484-6</a></td><td>Monocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/742-7.html\">742-7</a></td><td>Monocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30440-2.html\">30440-2</a></td><td>Monocytes Abnormal [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30441-0.html\">30441-0</a></td><td>Monocytes Abnormal/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26485-3.html\">26485-3</a></td><td>Monocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/5905-5.html\">5905-5</a></td><td>Monocytes/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/744-3.html\">744-3</a></td><td>Monocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30444-4.html\">30444-4</a></td><td>Myeloblasts [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30445-1.html\">30445-1</a></td><td>Myeloblasts/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30446-9.html\">30446-9</a></td><td>Myelocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26498-6.html\">26498-6</a></td><td>Myelocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26499-4.html\">26499-4</a></td><td>Neutrophils [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/751-8.html\">751-8</a></td><td>Neutrophils [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/753-4.html\">753-4</a></td><td>Neutrophils [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/33215-5.html\">33215-5</a></td><td>Neutrophils.agranular [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30449-3.html\">30449-3</a></td><td>Neutrophils.hypersegmented [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/765-8.html\">765-8</a></td><td>Neutrophils.hypersegmented [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30450-1.html\">30450-1</a></td><td>Neutrophils.hypersegmented/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/18319-4.html\">18319-4</a></td><td>Neutrophils.vacuolated [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26511-6.html\">26511-6</a></td><td>Neutrophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/770-8.html\">770-8</a></td><td>Neutrophils/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/23761-0.html\">23761-0</a></td><td>Neutrophils/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/33364-1.html\">33364-1</a></td><td>Normochromic [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/33363-3.html\">33363-3</a></td><td>Normocytic [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/7794-1.html\">7794-1</a></td><td>Normocytic/Normochromic polychromasia [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/58443-3.html\">58443-3</a></td><td>Other cells [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/58409-4.html\">58409-4</a></td><td>Other cells/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/10376-2.html\">10376-2</a></td><td>Oval macrocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/774-0.html\">774-0</a></td><td>Ovalocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/7795-8.html\">7795-8</a></td><td>Pappenheimer bodies [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/18311-1.html\">18311-1</a></td><td>Pelger Huet cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/10377-0.html\">10377-0</a></td><td>Pencil cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34916-7.html\">34916-7</a></td><td>Plasma cell precursor [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34917-5.html\">34917-5</a></td><td>Plasma cell precursor/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30458-4.html\">30458-4</a></td><td>Plasma cells [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/24103-4.html\">24103-4</a></td><td>Plasma cells [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/13047-6.html\">13047-6</a></td><td>Plasma cells/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/79426-3.html\">79426-3</a></td><td>Plasma cells/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/9317-9.html\">9317-9</a></td><td>Platelet adequacy [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/7796-6.html\">7796-6</a></td><td>Platelet clump [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/32207-3.html\">32207-3</a></td><td>Platelet distribution width [Entitic volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/28542-9.html\">28542-9</a></td><td>Platelet mean volume [Entitic volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/32623-1.html\">32623-1</a></td><td>Platelet mean volume [Entitic volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/11125-2.html\">11125-2</a></td><td>Platelet morphology finding [Identifier] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/18312-9.html\">18312-9</a></td><td>Platelet satellitism [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26515-7.html\">26515-7</a></td><td>Platelets [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/777-3.html\">777-3</a></td><td>Platelets [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/49497-1.html\">49497-1</a></td><td>Platelets [#/volume] in Blood by Estimate</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/778-1.html\">778-1</a></td><td>Platelets [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/33216-3.html\">33216-3</a></td><td>Platelets agranular [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/32146-3.html\">32146-3</a></td><td>Platelets Large [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/32208-1.html\">32208-1</a></td><td>Platelets Small [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/779-9.html\">779-9</a></td><td>Poikilocytosis [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/10378-8.html\">10378-8</a></td><td>Polychromasia [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/35003-3.html\">35003-3</a></td><td>Polymorphonuclear cells [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34999-3.html\">34999-3</a></td><td>Polymorphonuclear cells/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/50260-9.html\">50260-9</a></td><td>Prekeratocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30464-2.html\">30464-2</a></td><td>Prolymphocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30465-9.html\">30465-9</a></td><td>Prolymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34926-6.html\">34926-6</a></td><td>Promonocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30466-7.html\">30466-7</a></td><td>Promonocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26523-1.html\">26523-1</a></td><td>Promyelocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26524-9.html\">26524-9</a></td><td>Promyelocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/33044-9.html\">33044-9</a></td><td>Pyknosis [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/7797-4.html\">7797-4</a></td><td>Rouleaux [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/800-3.html\">800-3</a></td><td>Schistocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30451-9.html\">30451-9</a></td><td>Segmented neutrophils [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26505-8.html\">26505-8</a></td><td>Segmented neutrophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34918-3.html\">34918-3</a></td><td>Sezary cells [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/13048-4.html\">13048-4</a></td><td>Sezary cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34919-1.html\">34919-1</a></td><td>Sezary cells/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/801-1.html\">801-1</a></td><td>Sickle cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34993-6.html\">34993-6</a></td><td>Smudge cells [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/7798-2.html\">7798-2</a></td><td>Smudge cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34992-8.html\">34992-8</a></td><td>Smudge cells/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/802-9.html\">802-9</a></td><td>Spherocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/10380-4.html\">10380-4</a></td><td>Stomatocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/10381-2.html\">10381-2</a></td><td>Target cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/803-7.html\">803-7</a></td><td>Toxic granules [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26477-0.html\">26477-0</a></td><td>Variant lymphocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/43743-4.html\">43743-4</a></td><td>Variant lymphocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/13046-8.html\">13046-8</a></td><td>Variant lymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/42250-1.html\">42250-1</a></td><td>Variant lymphocytes/100 leukocytes in Blood by Automated count</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-primary-vs"];
+  fhir:ValueSet.version [ fhir:value "0.1.2"];
+  fhir:ValueSet.name [ fhir:value "PriorityVariablesPrimaryVS"];
+  fhir:ValueSet.title [ fhir:value "CIBMTR Priority Variables Value Set (FY21)"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-03-02T13:25:50-06:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "NMDP/Be The Match"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "NMDP/Be The Match" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://bethematch.org" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Bob Milius" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "bmilius@nmdp.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Priority Variables for CIBMTR (FY21)"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30412-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Abnormal lymphocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30413-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Abnormal lymphocytes/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7789-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acanthocytes [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1751-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Albumin [Mass/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "61151-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Albumin [Mass/volume] in Serum or Plasma by Bromocresol green (BCG) dye binding method" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "61152-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Albumin [Mass/volume] in Serum or Plasma by Bromocresol purple (BCP) dye binding method" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2862-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Albumin [Mass/volume] in Serum or Plasma by Electrophoresis" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anisocytosis [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11281-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Auer rods [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "18280-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Background stain [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26507-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Band form neutrophils [#/volume] in Blood" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30229-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Band form neutrophils [#/volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26508-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Band form neutrophils/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35332-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Band form neutrophils/100 leukocytes in Blood by Automated count" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "703-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Basophilic stippling [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26444-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Basophils [#/volume] in Blood" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "704-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Basophils [#/volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30180-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Basophils/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "706-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Basophils/100 leukocytes in Blood by Automated count" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1952-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Beta-2-Microglobulin [Mass/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "76484-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Beta-2-Microglobulin [Moles/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35194-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bilirubin.total [Mass or Moles/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1975-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bilirubin.total [Mass/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14631-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bilirubin.total [Moles/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77137-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bilirubin.total [Moles/volume] in Serum, Plasma or Blood" ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10371-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bite cells [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30376-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blasts [#/volume] in Blood" ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11150-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blasts/100 cells in Bone marrow" ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26446-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blasts/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "709-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blasts/100 leukocytes in Blood by Manual count" ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "71669-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blasts/Leukocytes [Pure number fraction] in Blood by Manual count" ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10372-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blister cells [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "5909-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood smear finding [Identifier] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7790-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Burr cells [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11280-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cabot rings [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "33255-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cell Fractions/Differential [Interpretation] in Blood" ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7791-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dacrocytes [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7792-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dohle body [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11274-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Elliptocytes [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26449-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eosinophils [#/volume] in Blood" ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "711-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eosinophils [#/volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 41;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26450-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eosinophils/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 42;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "713-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eosinophils/100 leukocytes in Blood by Automated count" ]
+       ], [
+         fhir:index 43;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30384-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrocyte distribution width [Entitic volume]" ]
+       ], [
+         fhir:index 44;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "21000-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrocyte distribution width [Entitic volume] by Automated count" ]
+       ], [
+         fhir:index 45;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30385-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrocyte distribution width [Ratio]" ]
+       ], [
+         fhir:index 46;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "788-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrocyte distribution width [Ratio] by Automated count" ]
+       ], [
+         fhir:index 47;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "49121-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrocyte inclusion bodies [Identifier] in Blood" ]
+       ], [
+         fhir:index 48;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "6742-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrocyte morphology finding [Identifier] in Blood" ]
+       ], [
+         fhir:index 49;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26453-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 50;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "789-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrocytes [#/volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 51;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10379-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrocytes.dual population [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 52;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32778-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fibrin strands [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 53;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10373-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fragments [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 54;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "5908-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Giant platelets [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 55;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30394-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Granulocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 56;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30395-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Granulocytes/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 57;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "19023-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Granulocytes/100 leukocytes in Blood by Automated count" ]
+       ], [
+         fhir:index 58;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30397-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hairy cells [#/volume] in Blood" ]
+       ], [
+         fhir:index 59;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35058-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hairy cells/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 60;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "716-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Heinz bodies [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 61;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10374-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Helmet cells [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 62;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20570-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hematocrit [Volume Fraction] of Blood" ]
+       ], [
+         fhir:index 63;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4544-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hematocrit [Volume Fraction] of Blood by Automated count" ]
+       ], [
+         fhir:index 64;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30313-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Mass/volume] in Arterial blood" ]
+       ], [
+         fhir:index 65;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14775-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Mass/volume] in Arterial blood by Oximetry" ]
+       ], [
+         fhir:index 66;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "718-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Mass/volume] in Blood" ]
+       ], [
+         fhir:index 67;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20509-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Mass/volume] in Blood by calculation" ]
+       ], [
+         fhir:index 68;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "55782-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Mass/volume] in Blood by Oximetry" ]
+       ], [
+         fhir:index 69;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30351-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Mass/volume] in Mixed venous blood" ]
+       ], [
+         fhir:index 70;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "76768-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Mass/volume] in Mixed venous blood by Oximetry" ]
+       ], [
+         fhir:index 71;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30350-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Mass/volume] in Venous blood" ]
+       ], [
+         fhir:index 72;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "76769-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Mass/volume] in Venous blood by Oximetry" ]
+       ], [
+         fhir:index 73;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "75928-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Moles/volume] in Arterial blood" ]
+       ], [
+         fhir:index 74;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "59260-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Moles/volume] in Blood" ]
+       ], [
+         fhir:index 75;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "93846-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Moles/volume] in Venous blood" ]
+       ], [
+         fhir:index 76;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7793-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Howell-Jolly bodies [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 77;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "33249-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hyperchromia [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 78;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "728-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hypochromia [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 79;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34910-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immature basophils [#/volume] in Blood" ]
+       ], [
+         fhir:index 80;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34911-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immature basophils/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 81;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34912-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immature eosinophils [#/volume] in Blood" ]
+       ], [
+         fhir:index 82;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34913-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immature eosinophils/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 83;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34924-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immature monocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 84;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34925-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immature monocytes/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 85;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35214-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iron [Mass or Moles/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 86;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2498-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iron [Mass/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 87;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14798-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iron [Moles/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 88;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35215-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iron binding capacity [Mass or Moles/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 89;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2500-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iron binding capacity [Mass/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 90;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14800-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iron binding capacity [Moles/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 91;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10375-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Irregularly contracted cells [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 92;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2532-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 93;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14804-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction" ]
+       ], [
+         fhir:index 94;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14805-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Pyruvate to lactate reaction" ]
+       ], [
+         fhir:index 95;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35082-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Large granular lymphocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 96;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30420-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Large granular lymphocytes/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 97;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26462-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Large unstained cells [#/volume] in Blood" ]
+       ], [
+         fhir:index 98;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26463-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Large unstained cells/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 99;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11156-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Leukocyte morphology finding [Identifier] in Blood" ]
+       ], [
+         fhir:index 100;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26464-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Leukocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 101;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "6690-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Leukocytes [#/volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 102;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "49498-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Leukocytes [#/volume] in Blood by Estimate" ]
+       ], [
+         fhir:index 103;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "804-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Leukocytes [#/volume] in Blood by Manual count" ]
+       ], [
+         fhir:index 104;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30406-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Leukocytes other [#/volume] in Blood" ]
+       ], [
+         fhir:index 105;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "51383-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Leukocytes other [#/volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 106;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26471-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Leukocytes other/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 107;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35050-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymphoblasts [#/volume] in Blood" ]
+       ], [
+         fhir:index 108;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34922-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymphoblasts/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 109;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26474-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymphocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 110;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "731-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymphocytes [#/volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 111;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35039-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymphocytes Plasmacytoid [#/volume] in Blood" ]
+       ], [
+         fhir:index 112;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34921-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymphocytes Plasmacytoid/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 113;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26478-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymphocytes/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 114;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "736-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymphocytes/100 leukocytes in Blood by Automated count" ]
+       ], [
+         fhir:index 115;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "737-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymphocytes/100 leukocytes in Blood by Manual count" ]
+       ], [
+         fhir:index 116;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30422-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymphoma cells [#/volume] in Blood" ]
+       ], [
+         fhir:index 117;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30423-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymphoma cells/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 118;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "738-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Macrocytes [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 119;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34914-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Malignant cells [#/volume] in Blood" ]
+       ], [
+         fhir:index 120;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34915-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Malignant cells/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 121;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "28539-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MCH [Entitic mass]" ]
+       ], [
+         fhir:index 122;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "785-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MCH [Entitic mass] by Automated count" ]
+       ], [
+         fhir:index 123;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "28540-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MCHC [Mass/volume]" ]
+       ], [
+         fhir:index 124;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "786-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MCHC [Mass/volume] by Automated count" ]
+       ], [
+         fhir:index 125;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30428-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MCV [Entitic volume]" ]
+       ], [
+         fhir:index 126;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "787-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MCV [Entitic volume] by Automated count" ]
+       ], [
+         fhir:index 127;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30433-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Metamyelocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 128;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "28541-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Metamyelocytes/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 129;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "741-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Microcytes [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 130;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35029-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Monoblasts [#/volume] in Blood" ]
+       ], [
+         fhir:index 131;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34923-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Monoblasts/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 132;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26484-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Monocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 133;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "742-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Monocytes [#/volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 134;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30440-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Monocytes Abnormal [#/volume] in Blood" ]
+       ], [
+         fhir:index 135;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30441-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Monocytes Abnormal/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 136;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26485-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Monocytes/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 137;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "5905-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Monocytes/100 leukocytes in Blood by Automated count" ]
+       ], [
+         fhir:index 138;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "744-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Monocytes/100 leukocytes in Blood by Manual count" ]
+       ], [
+         fhir:index 139;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30444-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myeloblasts [#/volume] in Blood" ]
+       ], [
+         fhir:index 140;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30445-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myeloblasts/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 141;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30446-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myelocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 142;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26498-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myelocytes/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 143;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26499-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neutrophils [#/volume] in Blood" ]
+       ], [
+         fhir:index 144;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "751-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neutrophils [#/volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 145;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "753-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neutrophils [#/volume] in Blood by Manual count" ]
+       ], [
+         fhir:index 146;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "33215-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neutrophils.agranular [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 147;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30449-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neutrophils.hypersegmented [#/volume] in Blood" ]
+       ], [
+         fhir:index 148;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "765-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neutrophils.hypersegmented [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 149;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30450-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neutrophils.hypersegmented/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 150;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "18319-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neutrophils.vacuolated [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 151;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26511-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neutrophils/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 152;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "770-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neutrophils/100 leukocytes in Blood by Automated count" ]
+       ], [
+         fhir:index 153;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "23761-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neutrophils/100 leukocytes in Blood by Manual count" ]
+       ], [
+         fhir:index 154;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "33364-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Normochromic [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 155;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "33363-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Normocytic [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 156;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7794-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Normocytic/Normochromic polychromasia [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 157;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "58443-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other cells [#/volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 158;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "58409-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other cells/100 leukocytes in Blood by Automated count" ]
+       ], [
+         fhir:index 159;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10376-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oval macrocytes [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 160;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "774-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ovalocytes [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 161;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7795-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pappenheimer bodies [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 162;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "18311-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pelger Huet cells [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 163;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10377-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pencil cells [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 164;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34916-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plasma cell precursor [#/volume] in Blood" ]
+       ], [
+         fhir:index 165;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34917-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plasma cell precursor/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 166;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30458-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plasma cells [#/volume] in Blood" ]
+       ], [
+         fhir:index 167;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "24103-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plasma cells [#/volume] in Blood by Manual count" ]
+       ], [
+         fhir:index 168;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13047-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plasma cells/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 169;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "79426-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plasma cells/100 leukocytes in Blood by Manual count" ]
+       ], [
+         fhir:index 170;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9317-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelet adequacy [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 171;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7796-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelet clump [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 172;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32207-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelet distribution width [Entitic volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 173;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "28542-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelet mean volume [Entitic volume] in Blood" ]
+       ], [
+         fhir:index 174;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32623-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelet mean volume [Entitic volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 175;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11125-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelet morphology finding [Identifier] in Blood" ]
+       ], [
+         fhir:index 176;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "18312-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelet satellitism [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 177;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26515-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelets [#/volume] in Blood" ]
+       ], [
+         fhir:index 178;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "777-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelets [#/volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 179;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "49497-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelets [#/volume] in Blood by Estimate" ]
+       ], [
+         fhir:index 180;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "778-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelets [#/volume] in Blood by Manual count" ]
+       ], [
+         fhir:index 181;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "33216-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelets agranular [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 182;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32146-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelets Large [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 183;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32208-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelets Small [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 184;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "779-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Poikilocytosis [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 185;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10378-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Polychromasia [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 186;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35003-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Polymorphonuclear cells [#/volume] in Blood" ]
+       ], [
+         fhir:index 187;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34999-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Polymorphonuclear cells/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 188;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50260-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prekeratocytes [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 189;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30464-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prolymphocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 190;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30465-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prolymphocytes/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 191;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34926-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Promonocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 192;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30466-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Promonocytes/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 193;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26523-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Promyelocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 194;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26524-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Promyelocytes/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 195;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "33044-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pyknosis [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 196;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7797-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rouleaux [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 197;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "800-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Schistocytes [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 198;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30451-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Segmented neutrophils [#/volume] in Blood" ]
+       ], [
+         fhir:index 199;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26505-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Segmented neutrophils/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 200;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34918-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sezary cells [#/volume] in Blood" ]
+       ], [
+         fhir:index 201;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13048-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sezary cells [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 202;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34919-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sezary cells/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 203;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "801-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sickle cells [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 204;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34993-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Smudge cells [#/volume] in Blood" ]
+       ], [
+         fhir:index 205;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7798-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Smudge cells [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 206;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34992-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Smudge cells/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 207;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "802-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spherocytes [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 208;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10380-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stomatocytes [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 209;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10381-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Target cells [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 210;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "803-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Toxic granules [Presence] in Blood by Light microscopy" ]
+       ], [
+         fhir:index 211;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26477-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Variant lymphocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 212;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "43743-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Variant lymphocytes [#/volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 213;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13046-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Variant lymphocytes/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 214;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "42250-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Variant lymphocytes/100 leukocytes in Blood by Automated count" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-primary-vs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

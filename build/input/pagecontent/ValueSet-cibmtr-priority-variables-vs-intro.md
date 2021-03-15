@@ -1,5 +1,5 @@
 ### Introduction
-The codes desribed here represent variables have been identified as a priority for the CIBMTR Data Transformation Initiative in Fiscal Year 2021. They include codes from LOINC panels describing Complete Blood Count (CBC) (see below) and other codes that represent similar concepts that are not found in these panels.
+The codes described here represent variables that have been identified as a priority for the CIBMTR Data Transformation Initiative in Fiscal Year 2021. They include codes from LOINC panels describing Complete Blood Count (CBC) (see below) and other codes representing similar concepts but are not found in these panels.
 
 | **Panel Code** | **Name** |
 | --- | --- |

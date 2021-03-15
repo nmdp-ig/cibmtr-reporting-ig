@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="PostInfusionProcedureTimepointType"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab"/>
+    <security>
+      <system value="http://terminology.cibmtr.org/codesystem/transplant-center"/>
+      <code value="rc_99999"/>
+      <display value="99999 My Transplant Center"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes: {https://cdebrowser.nci.nih.gov 5263856}">Post Infusion Procedure Timepoint Type</span></p><p><b>subject</b>: <span></span></p><p><b>effective</b>: Jul 21, 2020 9:17:00 AM</p><p><b>value</b>: <span title="Codes: {https://cdebrowser.nci.nih.gov 4025292}">100 day</span></p><h3>Components</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><span title="Codes: {http://loinc.org 75323-6}">Condition</span></td><td><span title="Codes: {http://cdebrowser.nci.nih.gov 4722619}">aGVHD</span></td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="https://cdebrowser.nci.nih.gov"/>
+      <code value="5263856"/>
+      <display value="Post Infusion Procedure Timepoint Type"/>
+    </coding>
+  </code>
+  <subject>
+    <identifier>
+      <system value="http://terminology.cibmtr.org/identifier/CRID"/>
+      <value value="1234567"/>
+    </identifier>
+  </subject>
+  <effectiveDateTime value="2020-07-21T14:17:00Z"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="https://cdebrowser.nci.nih.gov"/>
+      <code value="4025292"/>
+      <display value="100 day"/>
+    </coding>
+  </valueCodeableConcept>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="75323-6"/>
+        <display value="Condition"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://cdebrowser.nci.nih.gov"/>
+        <code value="4722619"/>
+        <display value="aGVHD"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

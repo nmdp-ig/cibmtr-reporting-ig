@@ -6,12 +6,12 @@
   * documentation: https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation
 * Sushi
   * Installation - https://fshschool.org/docs/sushi/installation/
-  * Learn how to use FHS - https://fshschool.org/
+  * Learn how to use FSH - https://fshschool.org/
 * Local copies of
-    * https://github.com/HL7/ig-template-base
     * https://github.com/FHIR/ig-registry
+    * https://github.com/HL7/fhir-ig-history-template
 
-The instructions below assume `publisher`, `ig-template-base`, and `ig-registry` are found in the parent directory.
+The instructions below assume `publisher`, `fhir-ig-template-base`, and `ig-registry` are found in the parent directory.
 
 ## Building the IG
 
@@ -33,18 +33,11 @@ java -jar ../publisher.jar -ig ig.ini
 * Check `output/qa.html` for errors, warnings. If no errors, proceed to publishing
 
 ## Publishing
-* Preparing contents for publishing
+* Preparing contents for publishing for the milestone
 ```
-java -jar ../publisher.jar -no-sushi -ig ig.ini -publish http://fhir.nmdp.org/ig/cibmtr-reporting
+java -jar ../publisher.jar -no-sushi -ig ig.ini -publish http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.1
 ```
-* Copy contents of `output/` to a directory that contains the published IG
-```
-cp -r output/* website/
-```
-* If you're creating a new milestone, create it in the `website` folder, e.g.,
-```
-mkdir website/2021-03
-cp -r output/*  website/2021-03/
+
 ```
 * Make sure `website/publish.ini` has been created, e.g.,
 ```
@@ -73,7 +66,7 @@ publication=publication-feed.xml
         "desc":         "Continuous Integration Build (latest in version control)",
         "path":         "http://build.fhir.nmdp.org/ig/cibmtr-reporting",
         "status":       "ci-build",
-        "current": true
+        "current":      true
     },
     {
         "version":      "0.1.0",
@@ -91,18 +84,9 @@ publication=publication-feed.xml
         "path":         "http://fhir.nmdp.org/ig/cibmtr-reporting/2020-11",
         "status":       "trial-use",
         "sequence":     "Trial Use: 1",
-        "fhirversion":  "4.0.1"
+        "fhirversion":  "4.0.1",
+        "current":      true
     },
-    {
-        "version":      "0.1.2",
-        "date":         "2021-03-01",
-        "desc":         "Draft",
-        "path":         "http://fhir.nmdp.org/ig/cibmtr-reporting/2021-03",
-        "status":       "trial-use",
-        "sequence":     "Trial Use: 1",
-        "fhirversion":  "4.0.1"
-    }
-  ],
   "category": "Research"
 }
 ```
@@ -110,6 +94,25 @@ publication=publication-feed.xml
 * Copy the history template files to `website/`
 ```
 $ cp -r ../fhir-ig-history-template/*hist* website/
+```
+* Edit website/history.html if necessary to change http to https for two js scripts. Change:
+```
+  <script type="application/javascript" src="http://hl7.org/fhir/history-cm.js"> </script>
+  <script type="application/javascript" src="http://hl7.org/fhir/history.js"> </script>
+```
+to
+```
+  <script type="application/javascript" src="https://hl7.org/fhir/history-cm.js"> </script>
+  <script type="application/javascript" src="https://hl7.org/fhir/history.js"> </script>
+```
+* Copy contents of `output/` to a directory that contains the published IG
+```
+cp -r output/* website/
+```
+* If you're creating a new milestone, create it in the `website` folder, e.g.,
+```
+mkdir website/0.1.1
+cp -r output/*  website/0.1.1
 ```
 * Update the `website` contents. This creates the history pages and the PHP redirect scripts
 ```

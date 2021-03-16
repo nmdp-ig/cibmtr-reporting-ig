@@ -37,6 +37,20 @@ java -jar ../publisher.jar -ig ig.ini
 ```
 java -jar ../publisher.jar -no-sushi -ig ig.ini -publish http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.1
 ```
+* Copy the history template files to `website/`
+```
+$ cp -r ../fhir-ig-history-template/*hist* website/
+```
+* Edit website/history.html if necessary to change http to https for two js scripts. Change:
+```
+  <script type="application/javascript" src="http://hl7.org/fhir/history-cm.js"> </script>
+  <script type="application/javascript" src="http://hl7.org/fhir/history.js"> </script>
+```
+to
+```
+  <script type="application/javascript" src="https://hl7.org/fhir/history-cm.js"> </script>
+  <script type="application/javascript" src="https://hl7.org/fhir/history.js"> </script>
+```
 * Make sure `website/publish.ini` has been created, e.g.,
 ```
 [website]
@@ -89,20 +103,7 @@ publication=publication-feed.xml
 }
 ```
 
-* Copy the history template files to `website/`
-```
-$ cp -r ../fhir-ig-history-template/*hist* website/
-```
-* Edit website/history.html if necessary to change http to https for two js scripts. Change:
-```
-  <script type="application/javascript" src="http://hl7.org/fhir/history-cm.js"> </script>
-  <script type="application/javascript" src="http://hl7.org/fhir/history.js"> </script>
-```
-to
-```
-  <script type="application/javascript" src="https://hl7.org/fhir/history-cm.js"> </script>
-  <script type="application/javascript" src="https://hl7.org/fhir/history.js"> </script>
-```
+
 * Copy contents of `output/` to a directory that contains the published IG
 ```
 cp -r output/* website/

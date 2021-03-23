@@ -1,0 +1,100 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PriorityVariablesCRA2021",
+  "id": "cibmtr-priority-variables-cra-2021",
+  "title": "CIBMTR Priority Variables Value Set for CRA (FY21)",
+  "description": "Priority Variables for Epic CIBMTR Reporting App (FY21)",
+  "version": "0.1.4",
+  "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-cra-2021",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-2021"
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "1754-1",
+            "display": "Albumin [Mass/volume] in Urine"
+          },
+          {
+            "code": "6942-7",
+            "display": "Albumin [Mass/volume] in Urine by Electrophoresis"
+          },
+          {
+            "code": "77158-4",
+            "display": "Albumin [Moles/volume] in Urine by Detection limit <= 3.0 mg/L"
+          },
+          {
+            "code": "1952-1",
+            "display": "Beta-2-Microglobulin [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "76484-5",
+            "display": "Beta-2-Microglobulin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "35194-0",
+            "display": "Bilirubin.total [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "1975-2",
+            "display": "Bilirubin.total [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14631-6",
+            "display": "Bilirubin.total [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "77137-8",
+            "display": "Bilirubin.total [Moles/volume] in Serum, Plasma or Blood"
+          },
+          {
+            "code": "2532-0",
+            "display": "Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14804-9",
+            "display": "Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction"
+          },
+          {
+            "code": "14805-6",
+            "display": "Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Pyruvate to lactate reaction"
+          },
+          {
+            "code": "35214-6",
+            "display": "Iron [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2498-4",
+            "display": "Iron [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14798-3",
+            "display": "Iron [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "35215-3",
+            "display": "Iron binding capacity [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2500-7",
+            "display": "Iron binding capacity [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14800-7",
+            "display": "Iron binding capacity [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "57028-3",
+            "display": "Iron [Mass/mass] in Liver"
+          }
+        ]
+      }
+    ]
+  }
+}

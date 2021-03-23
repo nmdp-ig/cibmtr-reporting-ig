@@ -21,59 +21,6 @@ Description:    "CIBMTR Observation Laboratory Results Profile (us-core)"
 // * component[GVHD].value[x] only CodeableConcept
 // * component[GVHD].valueCodeableConcept from  GVHDTypeValueSet (required)
 
-Profile:    CIBMTRObsPriorityVariables
-Parent:     cibmtr-observation-lab
-Id:         cibmtr-obs-priority-variables
-Title:      "CIBMTR Observation Laboratory Results: Priority Variables"
-Description:    "CIBMTR Observation Laboratory Results: Priority Variables"
-* code.coding from PriorityVariables2021 (extensible)
-
-// Instance: PostInfusionProcedureTimepointType 
-// InstanceOf: cibmtr-observation-lab
-// Description: "Post Infusion Procedure Timepoint Type"
-// Usage: #example
-// * meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-// * meta.security[TransplantCenter].code = #rc_99999
-// * meta.security[TransplantCenter].display = "99999 My Transplant Center"
-// * status = #final
-// * code.coding = http://cdebrowser.nci.nih.gov#5263856 "Post Infusion Procedure Timepoint Type"
-// * valueCodeableConcept = http://cdebrowser.nci.nih.gov#4025292 "100 day"
-// * effectiveDateTime = "2020-07-21T14:17:00Z"
-// * subject.identifier.system = "http://terminology.cibmtr.org/identifier/CRID"
-// * subject.identifier.value = "1234567"
-// * component[GVHD].code =  CADSR#3005293 "Type of Graft vs Host Disease (GVHD)"
-// * component[GVHD].valueCodeableConcept =  SCT#402355000 "Acute graft-versus-host disease (disorder)"
-
-Instance: AlbuminObservation 
-InstanceOf: cibmtr-obs-priority-variables
-Description: "Albumin observation"
-Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
-* status = #final
-* code.coding = LNC#1751-7 "Albumin [Mass/volume] in Serum or Plasma"
-* valueQuantity = UCUM#g/dL "gram per deciliter"
-* valueQuantity.value = 5
-* effectiveDateTime = "2020-07-21T14:17:00Z"
-* subject.identifier.system = "http://terminology.cibmtr.org/identifier/CRID"
-* subject.identifier.value = "1234567"
-
-Instance: NeutrophilsObservation 
-InstanceOf: cibmtr-obs-priority-variables
-Description: "Neutrophils observation"
-Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
-* status = #final
-* code.coding = LNC#74398-9 "Neutrophils [#/volume] in Cord blood"
-* valueQuantity = UCUM#10*9/L "billion per liter"
-* valueQuantity.value = 7.9
-* effectiveDateTime = "2020-07-21T14:17:00Z"
-* subject.identifier.system = "http://terminology.cibmtr.org/identifier/CRID"
-* subject.identifier.value = "1234567"
-
 Instance: LeukocytesObservation 
 InstanceOf: cibmtr-observation-lab
 Description: "Leukocytes observation"
@@ -88,6 +35,112 @@ Usage: #example
 * effectiveDateTime = "2020-07-21T14:17:00Z"
 * subject.identifier.system = "http://terminology.cibmtr.org/identifier/CRID"
 * subject.identifier.value = "1234567"
+
+Profile:    CIBMTRObsPriorityVariables
+Parent:     cibmtr-observation-lab
+Id:         cibmtr-obs-priority-variables
+Title:      "CIBMTR Observation Laboratory Results: Priority Variables"
+Description:    "CIBMTR Observation Laboratory Results: Priority Variables"
+* code.coding from PriorityVariables2021 (extensible)
+
+Instance: AlbuminObservation 
+InstanceOf: cibmtr-obs-priority-variables
+Description: "Albumin [Mass/volume] in Serum or Plasma"
+Usage: #example
+* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
+* meta.security[TransplantCenter].code = #rc_99999
+* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* status = #final
+* code.coding = LNC#1751-7 "Albumin [Mass/volume] in Serum or Plasma"
+* valueQuantity = UCUM#g/dL "gram per deciliter"
+* valueQuantity.value = 5
+* effectiveDateTime = "2020-07-21T14:17:00Z"
+* subject.identifier.system = "http://terminology.cibmtr.org/identifier/CRID"
+* subject.identifier.value = "1234567"
+
+Instance: NeutrophilsObservation 
+InstanceOf: cibmtr-obs-priority-variables
+Description: "Neutrophils [#/volume] in Cord blood"
+Usage: #example
+* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
+* meta.security[TransplantCenter].code = #rc_99999
+* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* status = #final
+* code.coding = LNC#74398-9 "Neutrophils [#/volume] in Cord blood"
+* valueQuantity = UCUM#10*9/L "billion per liter"
+* valueQuantity.value = 7.9
+* effectiveDateTime = "2020-07-21T14:17:00Z"
+* subject.identifier.system = "http://terminology.cibmtr.org/identifier/CRID"
+* subject.identifier.value = "1234567"
+
+Instance: BasophilsObservation 
+InstanceOf: cibmtr-obs-priority-variables
+Description: "Basophils/100 leukocytes in Blood"
+Usage: #example
+* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
+* meta.security[TransplantCenter].code = #rc_99999
+* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* status = #final
+* code.coding = LNC#30180-4	"Basophils/100 leukocytes in Blood"
+* valueQuantity = UCUM#% "percent"
+* valueQuantity.value = 1
+* effectiveDateTime = "2020-07-21T14:17:00Z"
+* subject.identifier.system = "http://terminology.cibmtr.org/identifier/CRID"
+* subject.identifier.value = "1234567"
+
+Instance: EosinophilsObservation 
+InstanceOf: cibmtr-obs-priority-variables
+Description: "Eosinophils observation, #/volume in Blood"
+Usage: #example
+* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
+* meta.security[TransplantCenter].code = #rc_99999
+* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* status = #final
+* code.coding = LNC#26449-9	"Eosinophils [#/volume] in Blood"
+* valueQuantity = UCUM#10*3/uL	"Thousands Per MicroLiter"
+* valueQuantity.value = 0.5
+* effectiveDateTime = "2020-07-21T14:17:00Z"
+* subject.identifier.system = "http://terminology.cibmtr.org/identifier/CRID"
+* subject.identifier.value = "1234567"
+
+Instance: HemoglobinObservation 
+InstanceOf: cibmtr-obs-priority-variables
+Description: "Hemoglobin [Mass/volume] in Blood"
+Usage: #example
+* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
+* meta.security[TransplantCenter].code = #rc_99999
+* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* status = #final
+* code.coding = LNC#718-7 "Hemoglobin [Mass/volume] in Blood"
+* valueQuantity = UCUM#g/dL "gram per deciliter"
+* valueQuantity.value = 15
+* effectiveDateTime = "2020-07-21T14:17:00Z"
+* subject.identifier.system = "http://terminology.cibmtr.org/identifier/CRID"
+* subject.identifier.value = "1234567"
+
+Instance: MetamyelocytesObservation 
+InstanceOf: cibmtr-obs-priority-variables
+Description: "Metamyelocytes [Presence] in Blood"
+Usage: #example
+* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
+* meta.security[TransplantCenter].code = #rc_99999
+* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* status = #final
+* code.coding = LNC#40651-2 "Metamyelocytes [Presence] in Blood"
+* valueCodeableConcept = LNC#LA9633-4 "Present"
+* effectiveDateTime = "2020-07-21T14:17:00Z"
+* subject.identifier.system = "http://terminology.cibmtr.org/identifier/CRID"
+* subject.identifier.value = "1234567"
+
+
+ValueSet:    PresenceValueSet
+Title:       "Presence Answer List"
+Id:          presence-valueset
+Description: "Permissible values for presence"
+* LNC#LA9633-4 "Present"
+* LNC#LA9634-2 "Absent"
+* SCT#52101004 "Present"
+* SCT#2667000 "Absent"
 
 
 ValueSet:    GVHDTypeValueSet

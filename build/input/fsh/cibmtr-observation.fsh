@@ -26,7 +26,7 @@ Parent:     cibmtr-observation-lab
 Id:         cibmtr-obs-priority-variables
 Title:      "CIBMTR Observation Laboratory Results: Priority Variables"
 Description:    "CIBMTR Observation Laboratory Results: Priority Variables"
-* code.coding from PriorityVariablesVS (extensible)
+* code.coding from PriorityVariables2021 (extensible)
 
 // Instance: PostInfusionProcedureTimepointType 
 // InstanceOf: cibmtr-observation-lab

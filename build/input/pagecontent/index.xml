@@ -1,13 +1,13 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
    <blockquote class="fhir-version-note">
   <p>
-  This Implementation Guide is designed to use FHIR R4.<br /> 
+  This Implementation Guide is designed to use the R4 version of the HL7&#174; FHIR&#174; standard.<br /> 
   For information on submitting to our Direct FHIR endpoints using FHIR STU3, see the 
   <a href="CIBMTR_Direct_FHIR_Guide_v2101.pdf">Direct FHIR for STU3 Guide</a>.
   </p>
   </blockquote>
  <p>
-  This FHIR Implementation Guide (IG) describes how to send data to CIBMTR via HL7 FHIR.   
+  This FHIR Implementation Guide (IG) describes how to send data to CIBMTR via HL7&#174; FHIR&#174;.   
   </p>
   <a name="Introduction"> </a>
   <h3>Introduction</h3>
@@ -28,7 +28,7 @@
   (<a href="https://www.cibmtr.org/DataManagement/SystemApplications/AGNIS/Pages/default.aspx">A Growable Network Information System (AGNIS)</a>).
   </p>
   <p>
-  CIBMTR is now collecting data through the <a href="http://hl7.org/fhir">HL7 Fast Healthcare Interoperability Resources (FHIR)</a> standard. 
+  CIBMTR is now collecting data through the <a href="http://hl7.org/fhir">HL7 Fast Healthcare Interoperability Resources&#174; (FHIR&#174;)</a> standard. 
   This IG describes the technical specification that CIBMTR accepts from third party clients producing FHIR resources for reporting HCT data.
   It is primarily based on the <a href="https://www.hl7.org/fhir/us/core/">US Core FHIR IG</a> which defines the minimum conformance 
   requirements for accessing patient data. 
@@ -47,17 +47,18 @@
   We are working on true FHIR interface for this function in the future where Patient FHIR resources may be submitted. 
   In the meantime, please use the method described <a href="CIBMTR_Direct_FHIR_Guide_v2101.pdf">here</a>.
   </p>
-
+  <a name="Artifacts"> </a>
+  <h3>Highlighted Artifacts</h3>
   <a name="Profiles"> </a>
-  <h3>Profiles</h3>
+  <h4>Profiles</h4>
   <ul>
     <li><a href="StructureDefinition-cibmtr-patient.html">CIBMTR Patient</a></li>
     <li><a href="StructureDefinition-cibmtr-observation-lab.html">CIBMTR Observation Laboratory Results</a></li>
     <li><a href="StructureDefinition-cibmtr-obs-priority-variables.html"></a>CIBMTR Observation for Priority Variables</li>
   </ul>
   <a name="ValueSets"></a>
-  <h3>ValueSets</h3>
+  <h4>ValueSets</h4>
   <ul>
-    <li><a href="ValueSet-cibmtr-priority-variables-vs.html">CIBMTR Priority Variables for FY21</a></li>
+    <li><a href="ValueSet-cibmtr-priority-variables-2021.html">CIBMTR Priority Variables for FY21</a></li>
   </ul>
 </div>

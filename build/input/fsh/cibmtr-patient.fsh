@@ -7,7 +7,6 @@ Parent:         us-core-patient
 Id:             cibmtr-patient
 Title:          "CIBMTR Patient Profile (us-core)"
 Description:    "CIBMTR Patient Profile for CRID assignment (us-core)"
-
 // * extension contains http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName 0..1 MS
 // * extension contains MaidenNameExt 0..1 MS
 * extension contains MothersMaidenNameExtension named MaidenNameExt 0..1 MS
@@ -16,7 +15,6 @@ Description:    "CIBMTR Patient Profile for CRID assignment (us-core)"
 // * extension[PatBirthPlaceExt].valueAddress.city MS
 // * extension[PatBirthPlaceExt].valueAddress.state MS
 // * extension[PatBirthPlaceExt].valueAddress.country MS
- 
 * meta.security ^slicing.discriminator.type = #pattern
 * meta.security ^slicing.discriminator.path = "system"
 * meta.security ^slicing.rules = #open
@@ -26,7 +24,6 @@ Description:    "CIBMTR Patient Profile for CRID assignment (us-core)"
 * meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
 * meta.security[TransplantCenter].code obeys sec-rc
 * meta.security[TransplantCenter].code 1..1
-
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
@@ -40,22 +37,13 @@ Description:    "CIBMTR Patient Profile for CRID assignment (us-core)"
     // institutionPersonID 0..1 MS and
     // otherOutcomesRegistryPersonId 0..1 MS and
     SSN 0..1 MS
-    
 * identifier[CRID].system = "http://terminology.cibmtr.org/identifier/CRID"
-
 * identifier[GRID].system = "http://www.isbt128.org/uri/GRID"
 * identifier[GRID].type.coding.system = "https://www.hl7.org/fhir/v2/0203/index.html"
 * identifier[GRID].type.coding.code = #DR
-
 * identifier[NMDPRecipient].system = "http://terminology.nmdp.org/identifier/recipient"
-
 * identifier[CIBMTR-non-NMDP-donor].system = "http://terminology.cibmtr.org/identifier/non-nmdp-donor"
-
-// * identifier[IUBMID].system = "http://terminology.cibmtr.org/identifier/iubmid"
-// * identifier[IUBMID].assigner.display = "IBMTR"
-
 * identifier[SSN].system = "http://hl7.org/fhir/sid/us-ssn"
-
 // * managingOrganization obeys orgSys 
 // * managingOrganization.identifier from ManagingOrgVS 
 // Invariant: orgSys
@@ -64,7 +52,7 @@ Description:    "CIBMTR Patient Profile for CRID assignment (us-core)"
 // Severity: #warning
 
 
-Instance: MyPatientExample1 
+Instance: PatientExample1 
 InstanceOf: http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
 Description: "example using CIBMTR center number"
 Usage: #example
@@ -80,9 +68,9 @@ Usage: #example
 // * managingOrganization.identifier.value = "456"
 
 
-Instance: MyPatientExample2
+Instance: PatientExample2
 InstanceOf: http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
-Description: "example using CIBMTR CRID"
+Description: "Patient with CIBMTR CRID"
 Usage: #example
 * meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
 * meta.security[TransplantCenter].code = #rc_00000
@@ -98,9 +86,9 @@ Usage: #example
 // * managingOrganization.identifier.value = "456"
 
 
-Instance: MyPatientExample3
+Instance: PatientExample3
 InstanceOf: http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
-Description: "example using MRN and CRID, Race=White, Ethnicity=Unknown"
+Description: "Patient with MRN and CRID, Race=White, Ethnicity=Unknown"
 Usage: #example
 * meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
 * meta.security[TransplantCenter].code = #rc_00000
@@ -124,9 +112,9 @@ Usage: #example
 * managingOrganization.display = "Good Health Medical Center"
 
 
-Instance: MyPatientExample4
+Instance: PatientExample4
 InstanceOf: http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
-Description: "example using CRID and MRN, Race=Black or African American, Ethnicity=Unknown"
+Description: "Patient with CRID and MRN, Race=Black or African American, Ethnicity=Unknown"
 Usage: #example
 * meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
 * meta.security[TransplantCenter].code = #rc_00000
@@ -152,9 +140,9 @@ Usage: #example
 * managingOrganization.display = "Good Health Medical Center"
 
 
-Instance: MyPatientExample5
+Instance: PatientExample5
 InstanceOf: http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
-Description: "example using CRID & MRN, Race=Mixed, Ethnicity=Not Hispanic or Latino"
+Description: "Patient with CRID & MRN, Race=Mixed, Ethnicity=Not Hispanic or Latino"
 Usage: #example
 * meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
 * meta.security[TransplantCenter].code = #rc_00000

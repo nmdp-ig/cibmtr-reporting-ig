@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PatientExample1"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
+    <security>
+      <system value="http://terminology.cibmtr.org/codesystem/transplant-center"/>
+      <code value="rc_00000"/>
+      <display value="00000 Good Health Medical Center"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: abc</p><p><b>name</b>: John Doe </p><p><b>gender</b>: male</p></div>
+  </text>
+  <identifier>
+    <system value="http://example.org/mrn"/>
+    <value value="abc"/>
+  </identifier>
+  <name>
+    <family value="Doe"/>
+    <given value="John"/>
+  </name>
+  <gender value="male"/>
+</Patient>

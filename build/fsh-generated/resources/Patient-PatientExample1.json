@@ -1,0 +1,31 @@
+{
+  "resourceType": "Patient",
+  "id": "PatientExample1",
+  "meta": {
+    "profile": [
+      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
+    ],
+    "security": [
+      {
+        "system": "http://terminology.cibmtr.org/codesystem/transplant-center",
+        "code": "rc_00000",
+        "display": "00000 Good Health Medical Center"
+      }
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://example.org/mrn",
+      "value": "abc"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "John"
+      ],
+      "family": "Doe"
+    }
+  ],
+  "gender": "male"
+}

@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 0, warn = 0, info = 14 -->
+<!-- broken links = 0, errors = 0, warn = 1, info = 17 -->
 <head>
   <title>CIBMTRReporting : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,9 +23,9 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for CIBMTRReporting</h1>
- <p>Generated Tue Mar 23 14:58:55 CDT 2021, FHIR version 4.0.1 for cibmtr-reporting#0.1.4 (canonical = <a href="http://fhir.nmdp.org/ig/cibmtr-reporting">http://fhir.nmdp.org/ig/cibmtr-reporting</a> (<a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">history</a>)). See <a href="/users/bmilius/documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/output/qa.html">Full QA Report</a></p>
+ <p>Generated Tue May 04 12:32:57 CDT 2021, FHIR version 4.0.1 for cibmtr-reporting#0.1.4 (canonical = <a href="http://fhir.nmdp.org/ig/cibmtr-reporting">http://fhir.nmdp.org/ig/cibmtr-reporting</a> (<a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">history</a>)). See <a href="/users/bmilius/documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.63, which is out of date. The current version is v1.1.64 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.64, which is out of date. The current version is v1.1.68 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = cibmtr-reporting, Canonical = http://fhir.nmdp.org/ig/cibmtr-reporting</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Version Check:</td><td>0.1.4: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
@@ -38,7 +38,7 @@
 </td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://fhir.nmdp.org/ig/cibmtr-reporting (Problem #1 with package-list.json at http://fhir.nmdp.org/ig/cibmtr-reporting: com.google.gson.JsonNull cannot be cast to com.google.gson.JsonObject)</td></tr>
- <tr><td>Summary:</td><td> broken links = 0, errors = 0, warn = 0, info = 14</td></tr>
+ <tr><td>Summary:</td><td> broken links = 0, errors = 0, warn = 1, info = 17</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -47,11 +47,28 @@
    <tr style="background-color: #EFFFEF">
      <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_bmilius_Documents_src_github-nmdp-ig_cibmtr-reporting-ig_build_fsh-generated_resources_valueset-cibmtr-priority-variables-2021"><b>/Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-cibmtr-priority-variables-2021</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
 </table>
 <hr/>
 <a name="internal"> </a>
 <h2><a href="">n/a</a></h2>
  <table class="grid">
+</table>
+<hr/>
+<a name="_Users_bmilius_Documents_src_github-nmdp-ig_cibmtr-reporting-ig_build_fsh-generated_resources_valueset-cibmtr-priority-variables-2021"> </a>
+<h2><a href="ValueSet-cibmtr-priority-variables-2021.html">/Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-cibmtr-priority-variables-2021.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/cibmtr-priority-variables-2021: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet/cibmtr-priority-variables-2021: ValueSet.compose.include[0].concept[51].display</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
 </table>
 <a name="suppressed"> </a>
 <p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
@@ -68,25 +85,42 @@
      <td><a href="Observation-BasophilsObservation.html">/Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Observation-BasophilsObservation.json</a></td><td><b>Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
+     <td><a href="Observation-EosinophilsObservation.html">/Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Observation-EosinophilsObservation.json</a></td><td><b>Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-HemoglobinObservation.html">/Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Observation-HemoglobinObservation.json</a></td><td><b>Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
      <td><a href="Observation-LeukocytesObservation.html">/Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Observation-LeukocytesObservation.json</a></td><td><b>Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-MetamyelocytesObservation.html">/Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Observation-MetamyelocytesObservation.json</a></td><td><b>Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="Observation-NeutrophilsObservation.html">/Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Observation-NeutrophilsObservation.json</a></td><td><b>Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Patient-MyPatientExample1.html">/Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Patient-MyPatientExample1.json</a></td><td><b>Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><a href="Patient-PatientExample1.html">/Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Patient-PatientExample1.json</a></td><td><b>Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Patient-MyPatientExample2.html">/Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Patient-MyPatientExample2.json</a></td><td><b>Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><a href="Patient-PatientExample2.html">/Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Patient-PatientExample2.json</a></td><td><b>Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Patient-MyPatientExample3.html">/Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Patient-MyPatientExample3.json</a></td><td><b>Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><a href="Patient-PatientExample3.html">/Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Patient-PatientExample3.json</a></td><td><b>Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Patient-MyPatientExample4.html">/Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Patient-MyPatientExample4.json</a></td><td><b>Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><a href="Patient-PatientExample4.html">/Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Patient-PatientExample4.json</a></td><td><b>Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Patient-MyPatientExample5.html">/Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Patient-MyPatientExample5.json</a></td><td><b>Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><a href="Patient-PatientExample5.html">/Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Patient-PatientExample5.json</a></td><td><b>Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_String_WS"> </a>
+<h2>Type_Specific_Checks_DT_String_WS</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-cibmtr-priority-variables-2021.html">/Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-cibmtr-priority-variables-2021.json</a></td><td><b>value should not start or finish with whitespace</b></td>
    </tr>
 </table>
 </body>

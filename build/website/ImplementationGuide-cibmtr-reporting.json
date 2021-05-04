@@ -10,7 +10,7 @@
   "name": "CIBMTRReporting",
   "title": "CIBMTR Reporting Implementation Guide",
   "status": "draft",
-  "date": "2021-03-23T14:58:23-05:00",
+  "date": "2021-05-04T12:31:56-05:00",
   "publisher": "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact": [
     {
@@ -514,6 +514,20 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/presence-valueset"
+        },
+        "name": "Presence Answer List",
+        "description": "Permissible values for presence",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/cibmtr-priority-variables-2021"
         },
         "name": "CIBMTR Priority Variables Value Set (FY21)",
@@ -528,9 +542,9 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/cibmtr-priority-variables-cra-2021"
+          "reference": "ValueSet/cibmtr-priority-variables-epic-2021"
         },
-        "name": "CIBMTR Priority Variables Value Set for CRA (FY21)",
+        "name": "CIBMTR Priority Variables Value Set for Epic App (FY21)",
         "description": "Priority Variables for Epic CIBMTR Reporting App (FY21)",
         "exampleBoolean": false
       },
@@ -587,7 +601,7 @@
           "reference": "Observation/AlbuminObservation"
         },
         "name": "AlbuminObservation",
-        "description": "Albumin observation",
+        "description": "Albumin [Mass/volume] in Serum or Plasma",
         "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"
       },
       {
@@ -601,7 +615,35 @@
           "reference": "Observation/BasophilsObservation"
         },
         "name": "BasophilsObservation",
-        "description": "Basophils observation",
+        "description": "Basophils/100 leukocytes in Blood",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/EosinophilsObservation"
+        },
+        "name": "EosinophilsObservation",
+        "description": "Eosinophils observation, #/volume in Blood",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/HemoglobinObservation"
+        },
+        "name": "HemoglobinObservation",
+        "description": "Hemoglobin [Mass/volume] in Blood",
         "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"
       },
       {
@@ -622,71 +664,15 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
+            "valueString": "Observation"
           }
         ],
         "reference": {
-          "reference": "Patient/MyPatientExample1"
+          "reference": "Observation/MetamyelocytesObservation"
         },
-        "name": "MyPatientExample1",
-        "description": "example using CIBMTR center number",
-        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/MyPatientExample2"
-        },
-        "name": "MyPatientExample2",
-        "description": "example using CIBMTR CRID",
-        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/MyPatientExample3"
-        },
-        "name": "MyPatientExample3",
-        "description": "example using MRN and CRID, Race=White, Ethnicity=Unknown",
-        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/MyPatientExample4"
-        },
-        "name": "MyPatientExample4",
-        "description": "example using CRID and MRN, Race=Black or African American, Ethnicity=Unknown",
-        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/MyPatientExample5"
-        },
-        "name": "MyPatientExample5",
-        "description": "example using CRID & MRN, Race=Mixed, Ethnicity=Not Hispanic or Latino",
-        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
+        "name": "MetamyelocytesObservation",
+        "description": "Metamyelocytes [Presence] in Blood",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"
       },
       {
         "extension": [
@@ -699,8 +685,78 @@
           "reference": "Observation/NeutrophilsObservation"
         },
         "name": "NeutrophilsObservation",
-        "description": "Neutrophils observation",
+        "description": "Neutrophils [#/volume] in Cord blood",
         "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/PatientExample1"
+        },
+        "name": "PatientExample1",
+        "description": "example using CIBMTR center number",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/PatientExample2"
+        },
+        "name": "PatientExample2",
+        "description": "Patient with CIBMTR CRID",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/PatientExample3"
+        },
+        "name": "PatientExample3",
+        "description": "Patient with MRN and CRID, Race=White, Ethnicity=Unknown",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/PatientExample4"
+        },
+        "name": "PatientExample4",
+        "description": "Patient with CRID and MRN, Race=Black or African American, Ethnicity=Unknown",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/PatientExample5"
+        },
+        "name": "PatientExample5",
+        "description": "Patient with CRID & MRN, Race=Mixed, Ethnicity=Not Hispanic or Latino",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
       }
     ],
     "page": {

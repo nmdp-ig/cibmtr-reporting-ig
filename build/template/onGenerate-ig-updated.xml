@@ -17,7 +17,7 @@
    <name value="CIBMTRReporting"/>
    <title value="CIBMTR Reporting Implementation Guide"/>
    <status value="draft"/>
-   <date value="2021-03-23T14:58:23-05:00"/>
+   <date value="2021-05-04T12:31:56-05:00"/>
    <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
    <contact>
       <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -292,6 +292,21 @@
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-presence-valueset.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/presence-valueset"/>
+         </reference>
+         <name value="Presence Answer List"/>
+         <description value="Permissible values for presence"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="ValueSet-cibmtr-priority-variables-2021.html"/>
          </extension>
          <reference>
@@ -307,12 +322,12 @@
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="ValueSet-cibmtr-priority-variables-cra-2021.html"/>
+            <valueUri value="ValueSet-cibmtr-priority-variables-epic-2021.html"/>
          </extension>
          <reference>
-            <reference value="ValueSet/cibmtr-priority-variables-cra-2021"/>
+            <reference value="ValueSet/cibmtr-priority-variables-epic-2021"/>
          </reference>
-         <name value="CIBMTR Priority Variables Value Set for CRA (FY21)"/>
+         <name value="CIBMTR Priority Variables Value Set for Epic App (FY21)"/>
          <description value="Priority Variables for Epic CIBMTR Reporting App (FY21)"/>
          <exampleBoolean value="false"/>
          <groupingId value="_term_valueset"/>
@@ -373,7 +388,7 @@
             <reference value="Observation/AlbuminObservation"/>
          </reference>
          <name value="AlbuminObservation"/>
-         <description value="Albumin observation"/>
+         <description value="Albumin [Mass/volume] in Serum or Plasma"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
          <groupingId value="_ex_example"/>
       </resource>
@@ -388,7 +403,37 @@
             <reference value="Observation/BasophilsObservation"/>
          </reference>
          <name value="BasophilsObservation"/>
-         <description value="Basophils observation"/>
+         <description value="Basophils/100 leukocytes in Blood"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-EosinophilsObservation.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/EosinophilsObservation"/>
+         </reference>
+         <name value="EosinophilsObservation"/>
+         <description value="Eosinophils observation, #/volume in Blood"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-HemoglobinObservation.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/HemoglobinObservation"/>
+         </reference>
+         <name value="HemoglobinObservation"/>
+         <description value="Hemoglobin [Mass/volume] in Blood"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
          <groupingId value="_ex_example"/>
       </resource>
@@ -409,77 +454,17 @@
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Patient"/>
+            <valueString value="Observation"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Patient-MyPatientExample1.html"/>
+            <valueUri value="Observation-MetamyelocytesObservation.html"/>
          </extension>
          <reference>
-            <reference value="Patient/MyPatientExample1"/>
+            <reference value="Observation/MetamyelocytesObservation"/>
          </reference>
-         <name value="MyPatientExample1"/>
-         <description value="example using CIBMTR center number"/>
-         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
-         <groupingId value="_ex_example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Patient"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Patient-MyPatientExample2.html"/>
-         </extension>
-         <reference>
-            <reference value="Patient/MyPatientExample2"/>
-         </reference>
-         <name value="MyPatientExample2"/>
-         <description value="example using CIBMTR CRID"/>
-         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
-         <groupingId value="_ex_example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Patient"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Patient-MyPatientExample3.html"/>
-         </extension>
-         <reference>
-            <reference value="Patient/MyPatientExample3"/>
-         </reference>
-         <name value="MyPatientExample3"/>
-         <description value="example using MRN and CRID, Race=White, Ethnicity=Unknown"/>
-         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
-         <groupingId value="_ex_example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Patient"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Patient-MyPatientExample4.html"/>
-         </extension>
-         <reference>
-            <reference value="Patient/MyPatientExample4"/>
-         </reference>
-         <name value="MyPatientExample4"/>
-         <description value="example using CRID and MRN, Race=Black or African American, Ethnicity=Unknown"/>
-         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
-         <groupingId value="_ex_example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Patient"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Patient-MyPatientExample5.html"/>
-         </extension>
-         <reference>
-            <reference value="Patient/MyPatientExample5"/>
-         </reference>
-         <name value="MyPatientExample5"/>
-         <description value="example using CRID &amp; MRN, Race=Mixed, Ethnicity=Not Hispanic or Latino"/>
-         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
+         <name value="MetamyelocytesObservation"/>
+         <description value="Metamyelocytes [Presence] in Blood"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
          <groupingId value="_ex_example"/>
       </resource>
       <resource>
@@ -493,8 +478,83 @@
             <reference value="Observation/NeutrophilsObservation"/>
          </reference>
          <name value="NeutrophilsObservation"/>
-         <description value="Neutrophils observation"/>
+         <description value="Neutrophils [#/volume] in Cord blood"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-PatientExample1.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/PatientExample1"/>
+         </reference>
+         <name value="PatientExample1"/>
+         <description value="example using CIBMTR center number"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-PatientExample2.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/PatientExample2"/>
+         </reference>
+         <name value="PatientExample2"/>
+         <description value="Patient with CIBMTR CRID"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-PatientExample3.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/PatientExample3"/>
+         </reference>
+         <name value="PatientExample3"/>
+         <description value="Patient with MRN and CRID, Race=White, Ethnicity=Unknown"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-PatientExample4.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/PatientExample4"/>
+         </reference>
+         <name value="PatientExample4"/>
+         <description value="Patient with CRID and MRN, Race=Black or African American, Ethnicity=Unknown"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-PatientExample5.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/PatientExample5"/>
+         </reference>
+         <name value="PatientExample5"/>
+         <description value="Patient with CRID &amp; MRN, Race=Mixed, Ethnicity=Not Hispanic or Latino"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
          <groupingId value="_ex_example"/>
       </resource>
       <page>
@@ -586,13 +646,18 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="ValueSet-presence-valueset.html"/>
+               <title value="Presence Answer List"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="ValueSet-cibmtr-priority-variables-2021.html"/>
                <title value="CIBMTR Priority Variables Value Set (FY21)"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="ValueSet-cibmtr-priority-variables-cra-2021.html"/>
-               <title value="CIBMTR Priority Variables Value Set for CRA (FY21)"/>
+               <nameUrl value="ValueSet-cibmtr-priority-variables-epic-2021.html"/>
+               <title value="CIBMTR Priority Variables Value Set for Epic App (FY21)"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -621,38 +686,53 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="Observation-EosinophilsObservation.html"/>
+               <title value="EosinophilsObservation"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-HemoglobinObservation.html"/>
+               <title value="HemoglobinObservation"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="Observation-LeukocytesObservation.html"/>
                <title value="LeukocytesObservation"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="Patient-MyPatientExample1.html"/>
-               <title value="MyPatientExample1"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="Patient-MyPatientExample2.html"/>
-               <title value="MyPatientExample2"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="Patient-MyPatientExample3.html"/>
-               <title value="MyPatientExample3"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="Patient-MyPatientExample4.html"/>
-               <title value="MyPatientExample4"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="Patient-MyPatientExample5.html"/>
-               <title value="MyPatientExample5"/>
+               <nameUrl value="Observation-MetamyelocytesObservation.html"/>
+               <title value="MetamyelocytesObservation"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="Observation-NeutrophilsObservation.html"/>
                <title value="NeutrophilsObservation"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-PatientExample1.html"/>
+               <title value="PatientExample1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-PatientExample2.html"/>
+               <title value="PatientExample2"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-PatientExample3.html"/>
+               <title value="PatientExample3"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-PatientExample4.html"/>
+               <title value="PatientExample4"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-PatientExample5.html"/>
+               <title value="PatientExample5"/>
                <generation value="generated"/>
             </page>
          </page>

@@ -11,7 +11,6 @@
     <link href="fhir.css" rel="stylesheet"/>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
     <!-- Project extras -->
@@ -37,7 +36,7 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
-  <body onload="document.body.style.opacity='1'">
+  <body>
 
 	  <script src="assets/js/prism.js"></script>
 
@@ -117,7 +116,7 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">  <!-- segment-content -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
@@ -306,6 +305,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-presence-valueset.html"
+                     title="ValueSet/presence-valueset">Presence Answer List</a>
+               </td>
+               <td>
+<p>Permissible values for presence</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-cibmtr-priority-variables-2021.html"
                      title="ValueSet/cibmtr-priority-variables-2021">CIBMTR Priority Variables Value Set (FY21)</a>
                </td>
@@ -315,8 +323,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-cibmtr-priority-variables-cra-2021.html"
-                     title="ValueSet/cibmtr-priority-variables-cra-2021">CIBMTR Priority Variables Value Set for CRA (FY21)</a>
+                  <a href="ValueSet-cibmtr-priority-variables-epic-2021.html"
+                     title="ValueSet/cibmtr-priority-variables-epic-2021">CIBMTR Priority Variables Value Set for Epic App (FY21)</a>
                </td>
                <td>
 <p>Priority Variables for Epic CIBMTR Reporting App (FY21)</p>
@@ -379,7 +387,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="Observation/AlbuminObservation">AlbuminObservation</a>
                </td>
                <td>
-<p>Albumin observation</p>
+<p>Albumin [Mass/volume] in Serum or Plasma</p>
 </td>
             </tr>
             <tr>
@@ -388,7 +396,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="Observation/BasophilsObservation">BasophilsObservation</a>
                </td>
                <td>
-<p>Basophils observation</p>
+<p>Basophils/100 leukocytes in Blood</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-EosinophilsObservation.html"
+                     title="Observation/EosinophilsObservation">EosinophilsObservation</a>
+               </td>
+               <td>
+<p>Eosinophils observation, #/volume in Blood</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-HemoglobinObservation.html"
+                     title="Observation/HemoglobinObservation">HemoglobinObservation</a>
+               </td>
+               <td>
+<p>Hemoglobin [Mass/volume] in Blood</p>
 </td>
             </tr>
             <tr>
@@ -402,42 +428,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Patient-MyPatientExample1.html" title="Patient/MyPatientExample1">MyPatientExample1</a>
+                  <a href="Observation-MetamyelocytesObservation.html"
+                     title="Observation/MetamyelocytesObservation">MetamyelocytesObservation</a>
                </td>
                <td>
-<p>example using CIBMTR center number</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Patient-MyPatientExample2.html" title="Patient/MyPatientExample2">MyPatientExample2</a>
-               </td>
-               <td>
-<p>example using CIBMTR CRID</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Patient-MyPatientExample3.html" title="Patient/MyPatientExample3">MyPatientExample3</a>
-               </td>
-               <td>
-<p>example using MRN and CRID, Race=White, Ethnicity=Unknown</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Patient-MyPatientExample4.html" title="Patient/MyPatientExample4">MyPatientExample4</a>
-               </td>
-               <td>
-<p>example using CRID and MRN, Race=Black or African American, Ethnicity=Unknown</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Patient-MyPatientExample5.html" title="Patient/MyPatientExample5">MyPatientExample5</a>
-               </td>
-               <td>
-<p>example using CRID &amp; MRN, Race=Mixed, Ethnicity=Not Hispanic or Latino</p>
+<p>Metamyelocytes [Presence] in Blood</p>
 </td>
             </tr>
             <tr>
@@ -446,7 +441,47 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="Observation/NeutrophilsObservation">NeutrophilsObservation</a>
                </td>
                <td>
-<p>Neutrophils observation</p>
+<p>Neutrophils [#/volume] in Cord blood</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-PatientExample1.html" title="Patient/PatientExample1">PatientExample1</a>
+               </td>
+               <td>
+<p>example using CIBMTR center number</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-PatientExample2.html" title="Patient/PatientExample2">PatientExample2</a>
+               </td>
+               <td>
+<p>Patient with CIBMTR CRID</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-PatientExample3.html" title="Patient/PatientExample3">PatientExample3</a>
+               </td>
+               <td>
+<p>Patient with MRN and CRID, Race=White, Ethnicity=Unknown</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-PatientExample4.html" title="Patient/PatientExample4">PatientExample4</a>
+               </td>
+               <td>
+<p>Patient with CRID and MRN, Race=Black or African American, Ethnicity=Unknown</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-PatientExample5.html" title="Patient/PatientExample5">PatientExample5</a>
+               </td>
+               <td>
+<p>Patient with CRID &amp; MRN, Race=Mixed, Ethnicity=Not Hispanic or Latino</p>
 </td>
             </tr>
          </tbody>
@@ -455,58 +490,62 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 
 </div>
-        </div>  <!-- /inner-wrapper -->
-      </div>  <!-- /row -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-content -->
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
-  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-    <div class="container">  <!-- container -->
-      <div class="inner-wrapper">
-        <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>.  Package cibmtr-reporting#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 23, 2021 14:58-0500">2021-03-23</span>
-          <br/>
-          <span style="color: #FFFF77">
-                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+<script type="text/javascript">
+$(document).ready(function(){
+if(window.location.hash != "") {
+    $('a[href="' + window.location.hash + '"]').click()
+}
+});
+</script>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
+    <br/>Package cibmtr-reporting#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 4, 2021 12:31-0500">2021-05-04</span>
+    <br/>
+    <span style="color: #FFFF77">
+                Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
+                 
+                
 <div id="cibmtr-footer">
     <p>
     <br/>HL7&#174;, and FHIR&#174; are the registered trademarks of Health Level Seven International 
     and their use of these trademarks does not constitute an endorsement by HL7.
     </p>
 </div>
-          </span>
-        </p>
-      </div>  <!-- /inner-wrapper -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-footer -->
-  
-  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-    <div class="container">  <!-- container -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-post-footer -->
-  
-  <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-  <script>anchors.options.visible = 'hover'
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script>anchors.options.visible = 'hover'
 anchors.add()</script>
-  
-  <!-- Analytics Below
-  ================================================== -->
-  </body>
+
+<!-- Analytics Below
+================================================== -->
+</body>
 </html>
+

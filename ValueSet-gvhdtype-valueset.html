@@ -11,7 +11,6 @@
     <link href="fhir.css" rel="stylesheet"/>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
     <!-- Project extras -->
@@ -37,7 +36,7 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
-  <body onload="document.body.style.opacity='1'">
+  <body>
 
 	  <script src="assets/js/prism.js"></script>
 
@@ -56,7 +55,7 @@
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span><br/>0.1.3 - Trial Use 1</p>
+          <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span><br/>0.1.4 - Trial Use 1</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -117,13 +116,13 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">  <!-- segment-content -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the CIMBTRReporting (v0.1.3: Trial Use 1) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the CIMBTRReporting (v0.1.4: Trial Use 1) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a></p><!--EndReleaseHeader-->
   
 
 
@@ -170,13 +169,13 @@
   <table class="grid">
 <tbody>
 <tr><td>Defining URL:</td><td>http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhdtype-valueset</td></tr>
- <tr><td>Version:</td><td>0.1.3</td></tr>
+ <tr><td>Version:</td><td>0.1.4</td></tr>
  <tr><td>Name:</td><td>GVHDTypeValueSet</td></tr>
  <tr><td>Title:</td><td>GVHD Type Value Set</td></tr>
- <tr><td>Status:</td><td>Active as of 2021-03-16T13:49:46-05:00</td></tr>
+ <tr><td>Status:</td><td>Active as of 2021-05-04T12:31:56-05:00</td></tr>
  <tr><td>Definition:</td><td><p>Permissible values for types of Graft vs Host Disease, from NIH caDSR</p>
 </td></tr>
- <tr><td>Publisher:</td><td>NMDP/Be The Match</td></tr>
+ <tr><td>Publisher:</td><td>The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</td></tr>
  <tr><td>Source Resource:</td><td><a href="ValueSet-gvhdtype-valueset.xml.html">XML</a> / <a href="ValueSet-gvhdtype-valueset.json.html">JSON</a> / <a href="ValueSet-gvhdtype-valueset.ttl.html">Turtle</a></td></tr>
 </tbody></table>
 
@@ -203,7 +202,7 @@
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 14 concepts</p><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion based on: </p><ul><li><a href="CodeSystem-cibmtr-cadsr-vm.html">NIH Common Data Element Value Meanings for CIBMTR v0.1.3 (CodeSystem)</a></li><li>SNOMED CT International edition 31-Jan 2021</li></ul></div><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-234646005"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=234646005">234646005</a></td><td>http://snomed.info/sct</td><td>Graft versus host disease</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-402355000"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=402355000">402355000</a></td><td>http://snomed.info/sct</td><td>Acute graft-versus-host disease</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-402356004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=402356004">402356004</a></td><td>http://snomed.info/sct</td><td>Chronic graft-versus-host disease</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-402357008"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=402357008">402357008</a></td><td>http://snomed.info/sct</td><td>Lichenoid chronic graft-versus-host disease</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-402358003"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=402358003">402358003</a></td><td>http://snomed.info/sct</td><td>Sclerodermoid chronic graft-versus-host disease</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-402360001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=402360001">402360001</a></td><td>http://snomed.info/sct</td><td>Materno-fetal graft-versus-host disease</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-444547006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=444547006">444547006</a></td><td>http://snomed.info/sct</td><td>Cutaneous graft-versus-host disease</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-846606007"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=846606007">846606007</a></td><td>http://snomed.info/sct</td><td>Graft versus host disease of liver</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-121131000119109"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=121131000119109">121131000119109</a></td><td>http://snomed.info/sct</td><td>Chronic graft versus host disease after transplantation of bone marrow</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---cdebrowser.nci.nih.gov-CADSR-4722619"> </a>CADSR:4722619</td><td>http://cdebrowser.nci.nih.gov</td><td>Acute GVHD</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---cdebrowser.nci.nih.gov-CADSR-2991794"> </a>CADSR:2991794</td><td>http://cdebrowser.nci.nih.gov</td><td>Classic cGVHD</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---cdebrowser.nci.nih.gov-CADSR-2991796"> </a>CADSR:2991796</td><td>http://cdebrowser.nci.nih.gov</td><td>Late Acute GVHD</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---cdebrowser.nci.nih.gov-CADSR-3261243"> </a>CADSR:3261243</td><td>http://cdebrowser.nci.nih.gov</td><td>Not Applicable</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---cdebrowser.nci.nih.gov-CADSR-2991795"> </a>CADSR:2991795</td><td>http://cdebrowser.nci.nih.gov</td><td>Overlap cGVHD</td><td/></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 14 concepts</p><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion based on: </p><ul><li><a href="CodeSystem-cibmtr-cadsr-vm.html">NIH Common Data Element Value Meanings for CIBMTR v0.1.4 (CodeSystem)</a></li><li>SNOMED CT International edition 31-Jan 2021</li></ul></div><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-234646005"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=234646005">234646005</a></td><td>http://snomed.info/sct</td><td>Graft versus host disease</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-402355000"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=402355000">402355000</a></td><td>http://snomed.info/sct</td><td>Acute graft-versus-host disease</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-402356004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=402356004">402356004</a></td><td>http://snomed.info/sct</td><td>Chronic graft-versus-host disease</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-402357008"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=402357008">402357008</a></td><td>http://snomed.info/sct</td><td>Lichenoid chronic graft-versus-host disease</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-402358003"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=402358003">402358003</a></td><td>http://snomed.info/sct</td><td>Sclerodermoid chronic graft-versus-host disease</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-402360001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=402360001">402360001</a></td><td>http://snomed.info/sct</td><td>Materno-fetal graft-versus-host disease</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-444547006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=444547006">444547006</a></td><td>http://snomed.info/sct</td><td>Cutaneous graft-versus-host disease</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-846606007"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=846606007">846606007</a></td><td>http://snomed.info/sct</td><td>Graft versus host disease of liver</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-121131000119109"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=121131000119109">121131000119109</a></td><td>http://snomed.info/sct</td><td>Chronic graft versus host disease after transplantation of bone marrow</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---cdebrowser.nci.nih.gov-CADSR-4722619"> </a>CADSR:4722619</td><td>http://cdebrowser.nci.nih.gov</td><td>Acute GVHD</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---cdebrowser.nci.nih.gov-CADSR-2991794"> </a>CADSR:2991794</td><td>http://cdebrowser.nci.nih.gov</td><td>Classic cGVHD</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---cdebrowser.nci.nih.gov-CADSR-2991796"> </a>CADSR:2991796</td><td>http://cdebrowser.nci.nih.gov</td><td>Late Acute GVHD</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---cdebrowser.nci.nih.gov-CADSR-3261243"> </a>CADSR:3261243</td><td>http://cdebrowser.nci.nih.gov</td><td>Not Applicable</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---cdebrowser.nci.nih.gov-CADSR-2991795"> </a>CADSR:2991795</td><td>http://cdebrowser.nci.nih.gov</td><td>Overlap cGVHD</td><td/></tr></table></div>
 
   <hr/>
   <p>
@@ -245,52 +244,62 @@
   
 
 </div>
-        </div>  <!-- /inner-wrapper -->
-      </div>  <!-- /row -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-content -->
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
-  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-    <div class="container">  <!-- container -->
-      <div class="inner-wrapper">
-        <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://bethematch.org">NMDP/Be The Match</a>.  Package cibmtr-reporting#0.1.3 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 16, 2021 13:49-0500">2021-03-16</span>
-          <br/>
-          <span style="color: #FFFF77">
-                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+<script type="text/javascript">
+$(document).ready(function(){
+if(window.location.hash != "") {
+    $('a[href="' + window.location.hash + '"]').click()
+}
+});
+</script>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
+    <br/>Package cibmtr-reporting#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 4, 2021 12:31-0500">2021-05-04</span>
+    <br/>
+    <span style="color: #FFFF77">
+                Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
-          </span>
-        </p>
-      </div>  <!-- /inner-wrapper -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-footer -->
-  
-  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-    <div class="container">  <!-- container -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-post-footer -->
-  
-  <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-  <script>anchors.options.visible = 'hover'
+                 
+                
+<div id="cibmtr-footer">
+    <p>
+    <br/>HL7&#174;, and FHIR&#174; are the registered trademarks of Health Level Seven International 
+    and their use of these trademarks does not constitute an endorsement by HL7.
+    </p>
+</div>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script>anchors.options.visible = 'hover'
 anchors.add()</script>
-  
-  <!-- Analytics Below
-  ================================================== -->
-  </body>
+
+<!-- Analytics Below
+================================================== -->
+</body>
 </html>
+

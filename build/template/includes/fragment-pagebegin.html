@@ -35,7 +35,7 @@
     <link rel="apple-touch-icon-precomposed" href="{{site.data.info.assets}}assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="{{site.data.info.assets}}assets/ico/favicon.png"/>
   </head>
-  <body>
+  <body onload="document.body.style.opacity='1'">
 {% assign label = {{site.data.pages[page.path].label}} | split: '.0' %}
 	  <script src="{{site.data.info.assets}}assets/js/prism.js"></script>
 
@@ -82,10 +82,20 @@
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           {{site.data.pages[page.path].breadcrumb}}
+          <span style="float:right;">
+{% if site.data.pages[page.path].previous %}
+            <a href="{{site.data.pages[page.path].previous}}">&lt;prev</a> | 
+{% endif %}
+            <a href="#bottom">bottom</a>
+{% if site.data.pages[page.path].next %}
+          | <a href="{{site.data.pages[page.path].next}}">next&gt;</a>
+{% endif %}
+          </span>
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
 
+    <a name="top"> </a>
     <div id="segment-content" class="segment">  <!-- segment-content -->
       <div class="container">  <!-- container -->
         <div class="row">

@@ -23,7 +23,7 @@ cd cibmtr-reporting-ig/build
 * Edit version of the IG in `sushi-config.yaml` as needed (line 20), e.g.,
 ```
 ...etc...
-version: 0.1.1
+version: 0.1.2
 ...etc...
 ```
 * Run the publisher
@@ -35,7 +35,7 @@ java -jar ../publisher.jar -ig ig.ini
 ## Publishing
 * Prepare contents for publishing for the milestone
 ```
-java -jar ../publisher.jar -no-sushi -ig ig.ini -publish http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.1
+java -jar ../publisher.jar -no-sushi -ig ig.ini -publish http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.2
 ```
 * Copy the history template files to `website/`
 ```
@@ -68,38 +68,48 @@ publication=publication-feed.xml
 * Modify `website/package-list.json` as needed for new milestone, e.g.,
 ```
 {
-  "package-id": "cibmtr-reporting",
-  "title": "CIBMTR Reporting Implementation Guide",
-  "canonical": "http://fhir.nmdp.org/ig/cibmtr-reporting",
-  "introduction": "CIBMTR Reporting Implementation Guide based on US-Core",
-  "list": [
-    {
-        "version":      "current",
-        "desc":         "Continuous Integration Build (latest in version control)",
-        "path":         "http://build.fhir.nmdp.org/ig/cibmtr-reporting",
-        "status":       "ci-build",
-        "current":      true
-    },
-    {
-        "version":      "0.1.0",
-        "date":         "2020-09-01",
-        "desc":         "Draft",
-        "path":         "http://fhir.nmdp.org/ig/cibmtr-reporting/2020-09",
-        "status":       "trial-use",
-        "sequence":     "Trial Use: 1",
-        "fhirversion":  "4.0.1"
-    },
-    {
-        "version":      "0.1.1",
-        "date":         "2020-11-01",
-        "desc":         "Draft",
-        "path":         "http://fhir.nmdp.org/ig/cibmtr-reporting/2020-11",
-        "status":       "trial-use",
-        "sequence":     "Trial Use: 1",
-        "fhirversion":  "4.0.1",
-        "current":      true
-    },
-  "category": "Research"
+    "package-id": "cibmtr-reporting",
+    "title": "CIMBTRReporting",
+    "canonical": "http://fhir.nmdp.org/ig/cibmtr-reporting",
+    "introduction": "This is the CIBMTR Reporting Implementation Guide",
+    "category": "Research",
+    "list": [   
+        {
+            "version": "current",
+            "desc": "Continuous Integration Build (latest in version control)",
+            "path": "http://build.fhir.nmdp.org/ig/cibmtr-reporting",
+            "status": "ci-build",
+            "current": true
+        },
+        {
+            "version": "0.1.0",
+            "date": "2020-09-01",
+            "desc": "CIBMTR Reporting IG",
+            "path": "http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.0",
+            "status": "trial-use",
+            "fhirversion": "4.0.1", 
+            "sequence": "Trial Use 1"
+        },
+        {
+            "version": "0.1.1",
+            "date": "2020-11-01",
+            "desc": "CIBMTR Reporting IG",
+            "path": "http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.1",
+            "status": "trial-use",
+            "fhirversion": "4.0.1", 
+            "sequence": "Trial Use 1"
+        },
+        {
+            "version": "0.1.2",
+            "date": "2021-03-01",
+            "desc": "CIBMTR Reporting IG",
+            "path": "http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.2",
+            "status": "trial-use",
+            "fhirversion": "4.0.1", 
+            "sequence": "Trial Use 1",
+            "current": true
+        }
+    ]
 }
 ```
 
@@ -110,8 +120,8 @@ cp -r output/* website/
 ```
 * If you're creating a new milestone, create it in the `website` folder, e.g.,
 ```
-mkdir website/0.1.1
-cp -r output/*  website/0.1.1
+mkdir website/0.1.2
+cp -r output/*  website/0.1.2
 ```
 * Update the `website` contents. This creates the history pages and the PHP redirect scripts
 ```

@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="8a200afc-ddff-489f-9fc8-3f2d3894910c"/>
+  <id value="e3a1abc9-e7c8-4468-bb93-0d98173d6018"/>
   <meta>
-    <lastUpdated value="2021-06-04T14:42:41.338-05:00"/>
+    <lastUpdated value="2021-06-25T13:41:27.646-05:00"/>
   </meta>
   <type value="collection"/>
   <entry>
     <resource>
       <ValueSet>
+        <language value="en"/>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
             <p>This value set contains 18 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.69</p>
             <p>All codes from system 
@@ -23,7 +24,7 @@
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display</b> - English (English, en)
                 </td>
               </tr>
               <tr>
@@ -157,8 +158,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:b96766da-dc6c-4081-968f-a6b23c74eb4f"/>
-          <timestamp value="2021-06-04T19:30:34.482Z"/>
+          <identifier value="urn:uuid:2abdb443-710e-441d-bb68-2d972b0aadee"/>
+          <timestamp value="2021-06-25T18:36:51.139Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -264,9 +265,10 @@
   <entry>
     <resource>
       <ValueSet>
+        <language value="en"/>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
             <p>This value set contains 12 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.69</p>
             <p>All codes from system 
@@ -278,7 +280,7 @@
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display</b> - English (English, en)
                 </td>
               </tr>
               <tr>
@@ -370,8 +372,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:9104dd2a-ba93-4b76-a0d4-a6d19e3e2add"/>
-          <timestamp value="2021-06-04T19:30:34.841Z"/>
+          <identifier value="urn:uuid:9a5e5a0e-3b76-4bda-b3fd-09fdbaa5854a"/>
+          <timestamp value="2021-06-25T18:36:51.248Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -457,11 +459,11 @@
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="ValueSet-auto-differential-blood-vs.html">Auto Differential panel - Blood (57023-4) v0.1.6 (ValueSet)</a>
+                  <a href="ValueSet-auto-differential-blood-vs.html">Auto Differential panel - Blood (57023-4) v0.1.4 (ValueSet)</a>
                 </li>
                 <li>Loinc v2.69</li>
                 <li>
-                  <a href="ValueSet-cbc-blood-automated-vs.html">CBC panel - Blood by Automated count (58410-2) v0.1.6 (ValueSet)</a>
+                  <a href="ValueSet-cbc-blood-automated-vs.html">CBC panel - Blood by Automated count (58410-2) v0.1.4 (ValueSet)</a>
                 </li>
               </ul>
             </div>
@@ -691,11 +693,11 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-auto-differential-blood-vs"/>
-        <version value="0.1.6"/>
+        <version value="0.1.4"/>
         <name value="CBCWAutoDifferentialBloodVS"/>
         <title value="CBC W Auto Differential panel - Blood (57021-8)"/>
         <status value="active"/>
-        <date value="2021-06-04T14:42:41-05:00"/>
+        <date value="2021-06-25T13:41:27-05:00"/>
         <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
         <contact>
           <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -713,8 +715,8 @@
         </contact>
         <description value="CBC W Auto Differential panel - Blood (57021-8)"/>
         <expansion>
-          <identifier value="urn:uuid:7d3813ec-05da-4f93-b5ab-ec746984cc3f"/>
-          <timestamp value="2021-06-04T14:43:13-05:00"/>
+          <identifier value="urn:uuid:bacef2db-ce69-4066-82fb-f5447c5e7fb7"/>
+          <timestamp value="2021-06-25T13:42:00-05:00"/>
           <total value="30"/>
           <parameter>
             <name value="excludeNested"/>
@@ -722,7 +724,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-blood-automated-vs|0.1.6"/>
+            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-blood-automated-vs|0.1.4"/>
           </parameter>
           <parameter>
             <name value="limitedExpansion"/>
@@ -734,7 +736,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/auto-differential-blood-vs|0.1.6"/>
+            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/auto-differential-blood-vs|0.1.4"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
@@ -963,7 +965,7 @@
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="ValueSet-differential-unspecified-blood-vs.html">Differential panel, method unspecified - Blood (69738-3) v0.1.6 (ValueSet)</a>
+                  <a href="ValueSet-differential-unspecified-blood-vs.html">Differential panel, method unspecified - Blood (69738-3) v0.1.4 (ValueSet)</a>
                 </li>
                 <li>Loinc v2.69</li>
               </ul>
@@ -1572,11 +1574,11 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-differential-unspecified-blood-vs"/>
-        <version value="0.1.6"/>
+        <version value="0.1.4"/>
         <name value="CBCWDifferentialUnspecifiedBloodVS"/>
         <title value="CBC W Differential panel, method unspecified - Blood (69742-5)"/>
         <status value="active"/>
-        <date value="2021-06-04T14:42:41-05:00"/>
+        <date value="2021-06-25T13:41:27-05:00"/>
         <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
         <contact>
           <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -1594,8 +1596,8 @@
         </contact>
         <description value="CBC W Differential panel, method unspecified - Blood (69742-5)"/>
         <expansion>
-          <identifier value="urn:uuid:d155ee3f-3c2b-4913-9c95-c5365a2203e4"/>
-          <timestamp value="2021-06-04T14:43:13-05:00"/>
+          <identifier value="urn:uuid:e8f12270-2393-4034-b968-412b3bf0111f"/>
+          <timestamp value="2021-06-25T13:42:00-05:00"/>
           <total value="84"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1611,7 +1613,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/differential-unspecified-blood-vs|0.1.6"/>
+            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/differential-unspecified-blood-vs|0.1.4"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
@@ -2198,23 +2200,23 @@
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="ValueSet-manual-differential-blood-vs.html">Manual Differential panel - Blood (24318-8) v0.1.6 (ValueSet)</a>
+                  <a href="ValueSet-manual-differential-blood-vs.html">Manual Differential panel - Blood (24318-8) v0.1.4 (ValueSet)</a>
                 </li>
                 <li>
-                  <a href="ValueSet-leukocyte-morphology-blood-vs.html">Leukocyte morphology panel - Blood (58407-8) v0.1.6 (ValueSet)</a>
+                  <a href="ValueSet-leukocyte-morphology-blood-vs.html">Leukocyte morphology panel - Blood (58407-8) v0.1.4 (ValueSet)</a>
                 </li>
                 <li>
-                  <a href="ValueSet-platelet-morphology-blood-vs.html">Platelet morphology panel - Blood (58406-0) v0.1.6 (ValueSet)</a>
+                  <a href="ValueSet-platelet-morphology-blood-vs.html">Platelet morphology panel - Blood (58406-0) v0.1.4 (ValueSet)</a>
                 </li>
                 <li>
-                  <a href="ValueSet-smear-morphology-blood-vs.html">Smear morphology panel - Blood (34994-4) v0.1.6 (ValueSet)</a>
+                  <a href="ValueSet-smear-morphology-blood-vs.html">Smear morphology panel - Blood (34994-4) v0.1.4 (ValueSet)</a>
                 </li>
                 <li>Loinc v2.69</li>
                 <li>
-                  <a href="ValueSet-cbc-blood-automated-vs.html">CBC panel - Blood by Automated count (58410-2) v0.1.6 (ValueSet)</a>
+                  <a href="ValueSet-cbc-blood-automated-vs.html">CBC panel - Blood by Automated count (58410-2) v0.1.4 (ValueSet)</a>
                 </li>
                 <li>
-                  <a href="ValueSet-erythrocyte-morphology-blood-vs.html">Erythrocyte morphology panel - Blood (58408-6) v0.1.6 (ValueSet)</a>
+                  <a href="ValueSet-erythrocyte-morphology-blood-vs.html">Erythrocyte morphology panel - Blood (58408-6) v0.1.4 (ValueSet)</a>
                 </li>
               </ul>
             </div>
@@ -3256,11 +3258,11 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-ordered-manual-differential-blood-vs"/>
-        <version value="0.1.6"/>
+        <version value="0.1.4"/>
         <name value="CBCWOrderedManualDifferentialBloodVS"/>
         <title value="CBC W Ordered Manual Differential panel - Blood (57782-5)"/>
         <status value="active"/>
-        <date value="2021-06-04T14:42:41-05:00"/>
+        <date value="2021-06-25T13:41:27-05:00"/>
         <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
         <contact>
           <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -3278,8 +3280,8 @@
         </contact>
         <description value="CBC W Ordered Manual Differential panel - Blood (57782-5)"/>
         <expansion>
-          <identifier value="urn:uuid:e67e1554-8fa9-400c-bdad-89ba6cb7b43d"/>
-          <timestamp value="2021-06-04T14:43:14-05:00"/>
+          <identifier value="urn:uuid:dcb8223f-27d5-40c2-b4a1-d81e12804aa3"/>
+          <timestamp value="2021-06-25T13:42:00-05:00"/>
           <total value="146"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3287,7 +3289,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-blood-automated-vs|0.1.6"/>
+            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-blood-automated-vs|0.1.4"/>
           </parameter>
           <parameter>
             <name value="limitedExpansion"/>
@@ -3299,23 +3301,23 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/manual-differential-blood-vs|0.1.6"/>
+            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/manual-differential-blood-vs|0.1.4"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/smear-morphology-blood-vs|0.1.6"/>
+            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/smear-morphology-blood-vs|0.1.4"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/erythrocyte-morphology-blood-vs|0.1.6"/>
+            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/erythrocyte-morphology-blood-vs|0.1.4"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/leukocyte-morphology-blood-vs|0.1.6"/>
+            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/leukocyte-morphology-blood-vs|0.1.4"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/platelet-morphology-blood-vs|0.1.6"/>
+            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/platelet-morphology-blood-vs|0.1.4"/>
           </parameter>
           <parameter>
             <name value="excludeNested"/>
@@ -4350,9 +4352,10 @@
   <entry>
     <resource>
       <ValueSet>
+        <language value="en"/>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
             <p>This value set contains 74 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.69</p>
             <p>All codes from system 
@@ -4364,7 +4367,7 @@
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display</b> - English (English, en)
                 </td>
               </tr>
               <tr>
@@ -4890,8 +4893,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:0c3bc85f-d2d3-4e70-b92f-fd32b72ee45d"/>
-          <timestamp value="2021-06-04T19:30:35.482Z"/>
+          <identifier value="urn:uuid:d66d2936-db4e-4c51-94dd-92e16d6cb0e6"/>
+          <timestamp value="2021-06-25T18:36:51.498Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -5277,9 +5280,10 @@
   <entry>
     <resource>
       <ValueSet>
+        <language value="en"/>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
             <p>This value set contains 38 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.69</p>
             <p>All codes from system 
@@ -5291,7 +5295,7 @@
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display</b> - English (English, en)
                 </td>
               </tr>
               <tr>
@@ -5565,8 +5569,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:b2a12657-ed61-4687-9aa1-53cb28b5ea85"/>
-          <timestamp value="2021-06-04T19:30:36.513Z"/>
+          <identifier value="urn:uuid:05f0c493-ad1e-4ba7-b207-bd9c9630cbce"/>
+          <timestamp value="2021-06-25T18:36:51.780Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -5782,7 +5786,7 @@
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="CodeSystem-cibmtr-cadsr-vm.html">NIH Common Data Element Value Meanings for CIBMTR v0.1.6 (CodeSystem)</a>
+                  <a href="CodeSystem-cibmtr-cadsr-vm.html">NIH Common Data Element Value Meanings for CIBMTR v0.1.4 (CodeSystem)</a>
                 </li>
                 <li>SNOMED CT International edition 31-Jan 2021</li>
               </ul>
@@ -5817,7 +5821,7 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=402355000">402355000</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Acute graft-versus-host disease</td>
+                <td>Acute graft-versus-host disease (disorder)</td>
                 <td/>
               </tr>
               <tr>
@@ -5826,7 +5830,7 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=402356004">402356004</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Chronic graft-versus-host disease</td>
+                <td>Chronic graft-versus-host disease (disorder)</td>
                 <td/>
               </tr>
               <tr>
@@ -5835,7 +5839,7 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=402357008">402357008</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Lichenoid chronic graft-versus-host disease</td>
+                <td>Lichenoid chronic graft-versus-host disease (disorder)</td>
                 <td/>
               </tr>
               <tr>
@@ -5844,7 +5848,7 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=402358003">402358003</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Sclerodermoid chronic graft-versus-host disease</td>
+                <td>Sclerodermoid chronic graft-versus-host disease (disorder)</td>
                 <td/>
               </tr>
               <tr>
@@ -5853,7 +5857,7 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=402360001">402360001</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Materno-fetal graft-versus-host disease</td>
+                <td>Materno-fetal graft-versus-host disease (disorder)</td>
                 <td/>
               </tr>
               <tr>
@@ -5862,7 +5866,7 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=444547006">444547006</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Cutaneous graft-versus-host disease</td>
+                <td>Graft versus host disease of skin (disorder)</td>
                 <td/>
               </tr>
               <tr>
@@ -5927,11 +5931,11 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhdtype-valueset"/>
-        <version value="0.1.6"/>
+        <version value="0.1.4"/>
         <name value="GVHDTypeValueSet"/>
         <title value="GVHD Type Value Set"/>
         <status value="active"/>
-        <date value="2021-06-04T14:42:41-05:00"/>
+        <date value="2021-06-25T13:41:27-05:00"/>
         <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
         <contact>
           <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -5952,8 +5956,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:e3875b9a-97c7-4643-aedc-a3454d760b8e"/>
-          <timestamp value="2021-06-04T14:43:14-05:00"/>
+          <identifier value="urn:uuid:9548efd9-6974-4696-ae37-8654afe3acdd"/>
+          <timestamp value="2021-06-25T13:42:01-05:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -5969,7 +5973,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://cdebrowser.nci.nih.gov|0.1.6"/>
+            <valueUri value="http://cdebrowser.nci.nih.gov|0.1.4"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -5979,32 +5983,32 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="402355000"/>
-            <display value="Acute graft-versus-host disease"/>
+            <display value="Acute graft-versus-host disease (disorder)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="402356004"/>
-            <display value="Chronic graft-versus-host disease"/>
+            <display value="Chronic graft-versus-host disease (disorder)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="402357008"/>
-            <display value="Lichenoid chronic graft-versus-host disease"/>
+            <display value="Lichenoid chronic graft-versus-host disease (disorder)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="402358003"/>
-            <display value="Sclerodermoid chronic graft-versus-host disease"/>
+            <display value="Sclerodermoid chronic graft-versus-host disease (disorder)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="402360001"/>
-            <display value="Materno-fetal graft-versus-host disease"/>
+            <display value="Materno-fetal graft-versus-host disease (disorder)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="444547006"/>
-            <display value="Cutaneous graft-versus-host disease"/>
+            <display value="Graft versus host disease of skin (disorder)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -6048,9 +6052,10 @@
   <entry>
     <resource>
       <ValueSet>
+        <language value="en"/>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
             <p>This value set contains 10 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.69</p>
             <p>All codes from system 
@@ -6062,7 +6067,7 @@
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display</b> - English (English, en)
                 </td>
               </tr>
               <tr>
@@ -6140,8 +6145,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:220faf1f-a6f5-4ce2-86f1-ce05fdaa4b2e"/>
-          <timestamp value="2021-06-04T19:30:37.279Z"/>
+          <identifier value="urn:uuid:6357b746-b3cb-47ed-9094-6b46c0339ebe"/>
+          <timestamp value="2021-06-25T18:36:51.873Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -6217,17 +6222,17 @@
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="ValueSet-leukocyte-morphology-blood-vs.html">Leukocyte morphology panel - Blood (58407-8) v0.1.6 (ValueSet)</a>
+                  <a href="ValueSet-leukocyte-morphology-blood-vs.html">Leukocyte morphology panel - Blood (58407-8) v0.1.4 (ValueSet)</a>
                 </li>
                 <li>
-                  <a href="ValueSet-platelet-morphology-blood-vs.html">Platelet morphology panel - Blood (58406-0) v0.1.6 (ValueSet)</a>
+                  <a href="ValueSet-platelet-morphology-blood-vs.html">Platelet morphology panel - Blood (58406-0) v0.1.4 (ValueSet)</a>
                 </li>
                 <li>
-                  <a href="ValueSet-smear-morphology-blood-vs.html">Smear morphology panel - Blood (34994-4) v0.1.6 (ValueSet)</a>
+                  <a href="ValueSet-smear-morphology-blood-vs.html">Smear morphology panel - Blood (34994-4) v0.1.4 (ValueSet)</a>
                 </li>
                 <li>Loinc v2.69</li>
                 <li>
-                  <a href="ValueSet-erythrocyte-morphology-blood-vs.html">Erythrocyte morphology panel - Blood (58408-6) v0.1.6 (ValueSet)</a>
+                  <a href="ValueSet-erythrocyte-morphology-blood-vs.html">Erythrocyte morphology panel - Blood (58408-6) v0.1.4 (ValueSet)</a>
                 </li>
               </ul>
             </div>
@@ -7185,11 +7190,11 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/manual-differential-blood-vs"/>
-        <version value="0.1.6"/>
+        <version value="0.1.4"/>
         <name value="ManualDifferentialBloodVS"/>
         <title value="Manual Differential panel - Blood (24318-8)"/>
         <status value="active"/>
-        <date value="2021-06-04T14:42:41-05:00"/>
+        <date value="2021-06-25T13:41:27-05:00"/>
         <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
         <contact>
           <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -7207,8 +7212,8 @@
         </contact>
         <description value="Manual Differential panel - Blood (24318-8)"/>
         <expansion>
-          <identifier value="urn:uuid:57ad0ce2-3014-42e4-9cf8-aa607ad21dc6"/>
-          <timestamp value="2021-06-04T14:43:14-05:00"/>
+          <identifier value="urn:uuid:c528e2eb-5f5e-410a-9b7e-ff26ffef7d11"/>
+          <timestamp value="2021-06-25T13:42:01-05:00"/>
           <total value="134"/>
           <parameter>
             <name value="excludeNested"/>
@@ -7216,7 +7221,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/smear-morphology-blood-vs|0.1.6"/>
+            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/smear-morphology-blood-vs|0.1.4"/>
           </parameter>
           <parameter>
             <name value="limitedExpansion"/>
@@ -7228,15 +7233,15 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/erythrocyte-morphology-blood-vs|0.1.6"/>
+            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/erythrocyte-morphology-blood-vs|0.1.4"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/leukocyte-morphology-blood-vs|0.1.6"/>
+            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/leukocyte-morphology-blood-vs|0.1.4"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/platelet-morphology-blood-vs|0.1.6"/>
+            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/platelet-morphology-blood-vs|0.1.4"/>
           </parameter>
           <parameter>
             <name value="excludeNested"/>
@@ -8037,9 +8042,10 @@
   <entry>
     <resource>
       <ValueSet>
+        <language value="en"/>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
             <p>This value set contains 7 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.69</p>
             <p>All codes from system 
@@ -8051,7 +8057,7 @@
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display</b> - English (English, en)
                 </td>
               </tr>
               <tr>
@@ -8108,8 +8114,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:ce78550a-830a-4df7-9376-ca02c1010adb"/>
-          <timestamp value="2021-06-04T19:30:37.669Z"/>
+          <identifier value="urn:uuid:b26b0faf-6e4b-4047-aeb8-099879983ee6"/>
+          <timestamp value="2021-06-25T18:36:51.983Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -8228,11 +8234,11 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/presence-valueset"/>
-        <version value="0.1.6"/>
+        <version value="0.1.4"/>
         <name value="PresenceValueSet"/>
         <title value="Presence Answer List"/>
         <status value="active"/>
-        <date value="2021-06-04T14:42:41-05:00"/>
+        <date value="2021-06-25T13:41:27-05:00"/>
         <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
         <contact>
           <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -8250,8 +8256,8 @@
         </contact>
         <description value="Permissible values for presence"/>
         <expansion>
-          <identifier value="urn:uuid:23efa641-8746-4056-9fb0-47e819634516"/>
-          <timestamp value="2021-06-04T14:43:14-05:00"/>
+          <identifier value="urn:uuid:daeedd1b-7d27-4e33-b454-7e49f51ac0c5"/>
+          <timestamp value="2021-06-25T13:42:01-05:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -8300,10 +8306,11 @@
   <entry>
     <resource>
       <ValueSet>
+        <language value="en"/>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 119 concepts</p>
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+            <p>This value set contains 122 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.69</p>
             <p>All codes from system 
               <code>http://loinc.org</code>
@@ -8314,7 +8321,7 @@
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display</b> - English (English, en)
                 </td>
               </tr>
               <tr>
@@ -9150,13 +9157,34 @@
                 </td>
                 <td>Segmented neutrophils/100 leukocytes in Blood by Manual count</td>
               </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-4679-7"> </a>
+                  <a href="http://details.loinc.org/LOINC/4679-7.html">4679-7</a>
+                </td>
+                <td>Reticulocytes/100 erythrocytes in Blood</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-17849-1"> </a>
+                  <a href="http://details.loinc.org/LOINC/17849-1.html">17849-1</a>
+                </td>
+                <td>Reticulocytes/100 erythrocytes in Blood by Automated count</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-31112-6"> </a>
+                  <a href="http://details.loinc.org/LOINC/31112-6.html">31112-6</a>
+                </td>
+                <td>Reticulocytes/100 erythrocytes in Blood by Manual</td>
+              </tr>
             </table>
           </div>
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:badfcdb0-26dc-4e62-a51c-ab41742a0090"/>
-          <timestamp value="2021-06-04T19:36:48.904Z"/>
+          <identifier value="urn:uuid:8055101f-8815-41a9-996e-5fc3593fbfa2"/>
+          <timestamp value="2021-06-25T18:36:52.873Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -9760,6 +9788,21 @@
             <code value="769-0"/>
             <display value="Segmented neutrophils/100 leukocytes in Blood by Manual count"/>
           </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="4679-7"/>
+            <display value="Reticulocytes/100 erythrocytes in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="17849-1"/>
+            <display value="Reticulocytes/100 erythrocytes in Blood by Automated count"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="31112-6"/>
+            <display value="Reticulocytes/100 erythrocytes in Blood by Manual"/>
+          </contains>
         </expansion>
       </ValueSet>
     </resource>
@@ -9767,9 +9810,10 @@
   <entry>
     <resource>
       <ValueSet>
+        <language value="en"/>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
             <p>This value set contains 148 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.69</p>
             <p>All codes from system 
@@ -9781,7 +9825,7 @@
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display</b> - English (English, en)
                 </td>
               </tr>
               <tr>
@@ -10825,8 +10869,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:7fc4abd8-2cf4-4375-acd4-b491377d2a7c"/>
-          <timestamp value="2021-06-04T19:30:41.341Z"/>
+          <identifier value="urn:uuid:7b1fa7fc-49d3-4eb9-b497-e2639503ab80"/>
+          <timestamp value="2021-06-25T18:36:53.076Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -11592,14 +11636,14 @@
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="ValueSet-leukocyte-morphology-blood-vs.html">Leukocyte morphology panel - Blood (58407-8) v0.1.6 (ValueSet)</a>
+                  <a href="ValueSet-leukocyte-morphology-blood-vs.html">Leukocyte morphology panel - Blood (58407-8) v0.1.4 (ValueSet)</a>
                 </li>
                 <li>
-                  <a href="ValueSet-platelet-morphology-blood-vs.html">Platelet morphology panel - Blood (58406-0) v0.1.6 (ValueSet)</a>
+                  <a href="ValueSet-platelet-morphology-blood-vs.html">Platelet morphology panel - Blood (58406-0) v0.1.4 (ValueSet)</a>
                 </li>
                 <li>Loinc v2.69</li>
                 <li>
-                  <a href="ValueSet-erythrocyte-morphology-blood-vs.html">Erythrocyte morphology panel - Blood (58408-6) v0.1.6 (ValueSet)</a>
+                  <a href="ValueSet-erythrocyte-morphology-blood-vs.html">Erythrocyte morphology panel - Blood (58408-6) v0.1.4 (ValueSet)</a>
                 </li>
               </ul>
             </div>
@@ -12032,11 +12076,11 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/smear-morphology-blood-vs"/>
-        <version value="0.1.6"/>
+        <version value="0.1.4"/>
         <name value="SmearMorphologyBloodVS"/>
         <title value="Smear morphology panel - Blood (34994-4)"/>
         <status value="active"/>
-        <date value="2021-06-04T14:42:41-05:00"/>
+        <date value="2021-06-25T13:41:27-05:00"/>
         <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
         <contact>
           <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -12054,8 +12098,8 @@
         </contact>
         <description value="Smear morphology panel - Blood (34994-4)"/>
         <expansion>
-          <identifier value="urn:uuid:efadf21b-e754-45a6-a7da-69c6cdba27ab"/>
-          <timestamp value="2021-06-04T14:43:15-05:00"/>
+          <identifier value="urn:uuid:84886cb0-ea2a-4f70-9fd8-83cf33a8d17e"/>
+          <timestamp value="2021-06-25T13:42:01-05:00"/>
           <total value="59"/>
           <parameter>
             <name value="excludeNested"/>
@@ -12071,15 +12115,15 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/erythrocyte-morphology-blood-vs|0.1.6"/>
+            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/erythrocyte-morphology-blood-vs|0.1.4"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/leukocyte-morphology-blood-vs|0.1.6"/>
+            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/leukocyte-morphology-blood-vs|0.1.4"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/platelet-morphology-blood-vs|0.1.6"/>
+            <valueUri value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/platelet-morphology-blood-vs|0.1.4"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>

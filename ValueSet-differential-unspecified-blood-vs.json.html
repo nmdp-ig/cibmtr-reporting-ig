@@ -13,7 +13,6 @@
     <link href="fhir.css" rel="stylesheet"/>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
     <!-- Project extras -->
@@ -58,7 +57,7 @@
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span><br/>0.1.3 - Trial Use 1</p>
+          <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span><br/>0.1.4 - Trial Use 1</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -91,7 +90,7 @@
     <a href="artifacts.html">Artifact Index</a>
   </li>
   <li>
-    <a href="CIBMTR_Direct_FHIR_Guide_v2101.pdf">Direct FHIR (STU3)</a>
+    <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR (STU3)</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
@@ -111,21 +110,24 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
+
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Differential panel, method unspecified - Blood (69738-3)</b></li>
+
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">  <!-- segment-content -->
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the CIMBTRReporting (v0.1.3: Trial Use 1) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the CIMBTRReporting (v0.1.4: Trial Use 1) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a></p><!--EndReleaseHeader-->
 
 
 
@@ -186,19 +188,19 @@
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://loinc.org\&quot;&gt;&lt;code&gt;http://loinc.org&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26464-8.html\&quot;&gt;26464-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leukocytes [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30180-4.html\&quot;&gt;30180-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Basophils/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26444-0.html\&quot;&gt;26444-0&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Basophils [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/34911-8.html\&quot;&gt;34911-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Immature basophils/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/34910-0.html\&quot;&gt;34910-0&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Immature basophils [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26446-5.html\&quot;&gt;26446-5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blasts/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30376-8.html\&quot;&gt;30376-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blasts [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26450-7.html\&quot;&gt;26450-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eosinophils/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26449-9.html\&quot;&gt;26449-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eosinophils [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/34913-4.html\&quot;&gt;34913-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Immature eosinophils/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/34912-6.html\&quot;&gt;34912-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Immature eosinophils [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30395-8.html\&quot;&gt;30395-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Granulocytes/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30394-1.html\&quot;&gt;30394-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Granulocytes [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/35058-7.html\&quot;&gt;35058-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hairy cells/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30397-4.html\&quot;&gt;30397-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hairy cells [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26463-0.html\&quot;&gt;26463-0&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Large unstained cells/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26462-2.html\&quot;&gt;26462-2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Large unstained cells [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26471-3.html\&quot;&gt;26471-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leukocytes other/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30406-3.html\&quot;&gt;30406-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leukocytes other [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/34922-5.html\&quot;&gt;34922-5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lymphoblasts/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/35050-4.html\&quot;&gt;35050-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lymphoblasts [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26478-8.html\&quot;&gt;26478-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lymphocytes/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26474-7.html\&quot;&gt;26474-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lymphocytes [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30413-9.html\&quot;&gt;30413-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Abnormal lymphocytes/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30412-1.html\&quot;&gt;30412-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Abnormal lymphocytes [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/13046-8.html\&quot;&gt;13046-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Variant lymphocytes/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26477-0.html\&quot;&gt;26477-0&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Variant lymphocytes [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30420-4.html\&quot;&gt;30420-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Large granular lymphocytes/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/35082-7.html\&quot;&gt;35082-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Large granular lymphocytes [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/34921-7.html\&quot;&gt;34921-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lymphocytes Plasmacytoid/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/35039-7.html\&quot;&gt;35039-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lymphocytes Plasmacytoid [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30423-8.html\&quot;&gt;30423-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lymphoma cells/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30422-0.html\&quot;&gt;30422-0&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lymphoma cells [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/34915-9.html\&quot;&gt;34915-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Malignant cells/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/34914-2.html\&quot;&gt;34914-2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Malignant cells [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/28541-1.html\&quot;&gt;28541-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Metamyelocytes/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30433-7.html\&quot;&gt;30433-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Metamyelocytes [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/34923-3.html\&quot;&gt;34923-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Monoblasts/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/35029-8.html\&quot;&gt;35029-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Monoblasts [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26485-3.html\&quot;&gt;26485-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Monocytes/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26484-6.html\&quot;&gt;26484-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Monocytes [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30441-0.html\&quot;&gt;30441-0&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Monocytes Abnormal/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30440-2.html\&quot;&gt;30440-2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Monocytes Abnormal [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/34925-8.html\&quot;&gt;34925-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Immature monocytes/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/34924-1.html\&quot;&gt;34924-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Immature monocytes [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30445-1.html\&quot;&gt;30445-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Myeloblasts/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30444-4.html\&quot;&gt;30444-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Myeloblasts [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26498-6.html\&quot;&gt;26498-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Myelocytes/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30446-9.html\&quot;&gt;30446-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Myelocytes [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26511-6.html\&quot;&gt;26511-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neutrophils/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26499-4.html\&quot;&gt;26499-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neutrophils [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26508-2.html\&quot;&gt;26508-2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Band form neutrophils/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26507-4.html\&quot;&gt;26507-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Band form neutrophils [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30450-1.html\&quot;&gt;30450-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neutrophils.hypersegmented/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30449-3.html\&quot;&gt;30449-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neutrophils.hypersegmented [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30451-9.html\&quot;&gt;30451-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Segmented neutrophils [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26505-8.html\&quot;&gt;26505-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Segmented neutrophils/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/34917-5.html\&quot;&gt;34917-5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Plasma cell precursor/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/34916-7.html\&quot;&gt;34916-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Plasma cell precursor [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/13047-6.html\&quot;&gt;13047-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Plasma cells/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30458-4.html\&quot;&gt;30458-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Plasma cells [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/34999-3.html\&quot;&gt;34999-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polymorphonuclear cells/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/35003-3.html\&quot;&gt;35003-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polymorphonuclear cells [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30465-9.html\&quot;&gt;30465-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Prolymphocytes/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30464-2.html\&quot;&gt;30464-2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Prolymphocytes [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30466-7.html\&quot;&gt;30466-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Promonocytes/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/34926-6.html\&quot;&gt;34926-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Promonocytes [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26524-9.html\&quot;&gt;26524-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Promyelocytes/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26523-1.html\&quot;&gt;26523-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Promyelocytes [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/34919-1.html\&quot;&gt;34919-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sezary cells/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/34918-3.html\&quot;&gt;34918-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sezary cells [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/34992-8.html\&quot;&gt;34992-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Smudge cells/100 leukocytes in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/34993-6.html\&quot;&gt;34993-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Smudge cells [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/33255-1.html\&quot;&gt;33255-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cell Fractions/Differential [Interpretation] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/differential-unspecified-blood-vs",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.3",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.4",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "DifferentialUnspecifiedBloodVS",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "Differential panel, method unspecified - Blood (69738-3)",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2021-03-16T13:49:46-05:00",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "NMDP/Be The Match",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2021-06-25T13:41:27-05:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "NMDP/Be The Match",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
       "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://bethematch.org"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://www.cibmtr.org"
         }
       ]
     },
@@ -527,52 +529,62 @@
 
 
 </div>
-        </div>  <!-- /inner-wrapper -->
-      </div>  <!-- /row -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-content -->
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
-  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-    <div class="container">  <!-- container -->
-      <div class="inner-wrapper">
-        <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://bethematch.org">NMDP/Be The Match</a>.  Package cibmtr-reporting#0.1.3 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 16, 2021 13:49-0500">2021-03-16</span>
-          <br/>
-          <span style="color: #FFFF77">
-                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
-          </span>
-        </p>
-      </div>  <!-- /inner-wrapper -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-footer -->
-  
-  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-    <div class="container">  <!-- container -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-post-footer -->
-  
-  <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-  <script>anchors.options.visible = 'hover'
+<script type="text/javascript">
+$(document).ready(function(){
+if(window.location.hash != "") {
+    $('a[href="' + window.location.hash + '"]').click()
+}
+});
+</script>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
+    <br/>Package cibmtr-reporting#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 25, 2021 13:41-0500">2021-06-25</span>
+    <br/>
+    <span style="color: #FFFF77">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+<div id="cibmtr-footer">
+    <p>
+    <br/>HL7&#174;, and FHIR&#174; are the registered trademarks of Health Level Seven International 
+    and their use of these trademarks does not constitute an endorsement by HL7.
+    </p>
+</div>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script>anchors.options.visible = 'hover'
 anchors.add()</script>
-  
-  <!-- Analytics Below
-  ================================================== -->
-  </body>
+
+<!-- Analytics Below
+================================================== -->
+</body>
 </html>
+

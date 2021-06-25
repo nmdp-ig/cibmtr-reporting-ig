@@ -11,7 +11,6 @@
     <link href="fhir.css" rel="stylesheet"/>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
     <!-- Project extras -->
@@ -56,7 +55,7 @@
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span><br/>0.1.3 - Trial Use 1</p>
+          <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span><br/>0.1.4 - Trial Use 1</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -89,7 +88,7 @@
     <a href="artifacts.html">Artifact Index</a>
   </li>
   <li>
-    <a href="CIBMTR_Direct_FHIR_Guide_v2101.pdf">Direct FHIR (STU3)</a>
+    <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR (STU3)</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
@@ -109,15 +108,18 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
+
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">  <!-- segment-content -->
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
@@ -130,19 +132,19 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the CIMBTRReporting (v0.1.3: Trial Use 1) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the CIMBTRReporting (v0.1.4: Trial Use 1) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
-  <div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#Introduction">Introduction</a></li><li><a href="#CRID">CRID Lookup/Creation</a></li><li><a href="#Profiles">Profiles</a></li><li><a href="#ValueSets">ValueSets</a></li></ul></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#Introduction">Introduction</a></li><li><a href="#CRID">CRID Lookup/Creation</a></li><li><a href="#Artifacts">Highlighted Artifacts</a></li></ul></div>
    <blockquote class="fhir-version-note">
   <p>
-  This Implementation Guide is designed to use FHIR R4.<br/> 
+  This Implementation Guide is designed to use the R4 version of the HL7® FHIR® standard.<br/> 
   For information on submitting to our Direct FHIR endpoints using FHIR STU3, see the 
-  <a href="CIBMTR_Direct_FHIR_Guide_v2101.pdf">Direct FHIR for STU3 Guide</a>.
+  <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR for STU3 Guide</a>.
   </p>
   </blockquote>
  <p>
-  This FHIR Implementation Guide (IG) describes how to send data to CIBMTR via HL7 FHIR.   
+  This FHIR Implementation Guide (IG) describes how to send data to CIBMTR via HL7® FHIR®.   
   </p>
   <a name="Introduction">  </a>
   <h3>Introduction</h3>
@@ -163,7 +165,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   (<a href="https://www.cibmtr.org/DataManagement/SystemApplications/AGNIS/Pages/default.aspx">A Growable Network Information System (AGNIS)</a>).
   </p>
   <p>
-  CIBMTR is now collecting data through the <a href="http://hl7.org/fhir">HL7 Fast Healthcare Interoperability Resources (FHIR)</a> standard. 
+  CIBMTR is now collecting data through the <a href="http://hl7.org/fhir">HL7 Fast Healthcare Interoperability Resources® (FHIR®)</a> standard. 
   This IG describes the technical specification that CIBMTR accepts from third party clients producing FHIR resources for reporting HCT data.
   It is primarily based on the <a href="https://www.hl7.org/fhir/us/core/">US Core FHIR IG</a> which defines the minimum conformance 
   requirements for accessing patient data. 
@@ -177,72 +179,83 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <h3>CRID Lookup/Creation</h3>
   <p>
   A REST API is available for enabling users to lookup and/or create CRIDs based on patient demographic
-  information. This is described in <a href="CIBMTR_Direct_FHIR_Guide_v2101.pdf">Direct FHIR for STU3 Guide</a>. 
+  information. This is described in <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR for STU3 Guide</a>. 
   This API does not use FHIR Patient resources, but instead uses a special JSON structure. 
   We are working on true FHIR interface for this function in the future where Patient FHIR resources may be submitted. 
-  In the meantime, please use the method described <a href="CIBMTR_Direct_FHIR_Guide_v2101.pdf">here</a>.
+  In the meantime, please use the method described <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">here</a>.
   </p>
-
+  <a name="Artifacts">  </a>
+  <h3>Highlighted Artifacts</h3>
   <a name="Profiles">  </a>
-  <h3>Profiles</h3>
+  <h4>Profiles</h4>
   <ul>
     <li><a href="StructureDefinition-cibmtr-patient.html">CIBMTR Patient</a></li>
     <li><a href="StructureDefinition-cibmtr-observation-lab.html">CIBMTR Observation Laboratory Results</a></li>
     <li><a href="StructureDefinition-cibmtr-obs-priority-variables.html"/>CIBMTR Observation for Priority Variables</li>
   </ul>
   <a name="ValueSets"> </a>
-  <h3>ValueSets</h3>
+  <h4>ValueSets</h4>
   <ul>
-    <li><a href="ValueSet-cibmtr-priority-variables-vs.html">CIBMTR Priority Variables for FY21</a></li>
+    <li><a href="ValueSet-cibmtr-priority-variables-2021.html">CIBMTR Priority Variables for FY21</a></li>
   </ul>
 </div>
 </div>
-        </div>  <!-- /inner-wrapper -->
-      </div>  <!-- /row -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-content -->
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
-  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-    <div class="container">  <!-- container -->
-      <div class="inner-wrapper">
-        <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://bethematch.org">NMDP/Be The Match</a>.  Package cibmtr-reporting#0.1.3 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 16, 2021 13:49-0500">2021-03-16</span>
-          <br/>
-          <span style="color: #FFFF77">
-                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
-          </span>
-        </p>
-      </div>  <!-- /inner-wrapper -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-footer -->
-  
-  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-    <div class="container">  <!-- container -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-post-footer -->
-  
-  <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-  <script>anchors.options.visible = 'hover'
+<script type="text/javascript">
+$(document).ready(function(){
+if(window.location.hash != "") {
+    $('a[href="' + window.location.hash + '"]').click()
+}
+});
+</script>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
+    <br/>Package cibmtr-reporting#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 25, 2021 13:41-0500">2021-06-25</span>
+    <br/>
+    <span style="color: #FFFF77">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+<div id="cibmtr-footer">
+    <p>
+    <br/>HL7&#174;, and FHIR&#174; are the registered trademarks of Health Level Seven International 
+    and their use of these trademarks does not constitute an endorsement by HL7.
+    </p>
+</div>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script>anchors.options.visible = 'hover'
 anchors.add()</script>
-  
-  <!-- Analytics Below
-  ================================================== -->
-  </body>
+
+<!-- Analytics Below
+================================================== -->
+</body>
 </html>
+

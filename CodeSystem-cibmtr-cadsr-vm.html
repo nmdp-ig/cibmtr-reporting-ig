@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.20"}
-    h3,h4,h5,h6{--heading-prefix:"3.20"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.21"}
+    h3,h4,h5,h6{--heading-prefix:"3.21"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -55,7 +55,13 @@
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span><br/>0.1.4 - Trial Use 1</p>
+          <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.4a - Trial Use 1
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -125,8 +131,10 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the CIMBTRReporting (v0.1.4: Trial Use 1) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.4a). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
+
+
 
 
 
@@ -165,32 +173,60 @@
 </ul>
 
   <a name="root"> </a>
-  <h2 id="root">CodeSystem: NIH Common Data Element Value Meanings for CIBMTR</h2>
+  <h2 id="root">CodeSystem: NIH Common Data Element Value Meanings for CIBMTR
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://cdebrowser.nci.nih.gov<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://cdebrowser.nci.nih.gov"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.4a<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://cdebrowser.nci.nih.gov|0.1.4a"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2022-05-27
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">CADSR_VM_CS</span></td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: National Cancer Institute (NCI)</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>NIH Common Data Element Value Meanings for CIBMTR</p>
+
+</p>
 
   <!-- insert intro if present -->
   
 
-
-
-  <p>
-    <b>Summary</b>
-  </p>
-
-  <table class="grid">
-<tbody>
-<tr><td>Defining URL:</td><td>http://cdebrowser.nci.nih.gov</td></tr>
- <tr><td>Version:</td><td>0.1.4</td></tr>
- <tr><td>Name:</td><td>CADSR_VM_CS</td></tr>
- <tr><td>Title:</td><td>NIH Common Data Element Value Meanings for CIBMTR</td></tr>
- <tr><td>Status:</td><td>Active as of 2021-06-25T13:41:27-05:00</td></tr>
- <tr><td>Definition:</td><td><p>NIH Common Data Element Value Meanings for CIBMTR</p>
-</td></tr>
- <tr><td>Publisher:</td><td>The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</td></tr>
- <tr><td>Copyright:</td><td><p>National Cancer Institute (NCI)</p>
-</td></tr>
- <tr><td>Content:</td><td>Fragment: A subset of the code system concepts are included in the code system resource</td></tr>
- <tr><td>Source Resource:</td><td><a href="CodeSystem-cibmtr-cadsr-vm.xml.html">XML</a> / <a href="CodeSystem-cibmtr-cadsr-vm.json.html">JSON</a> / <a href="CodeSystem-cibmtr-cadsr-vm.ttl.html">Turtle</a></td></tr>
-</tbody></table>
 
 
   <p>
@@ -203,7 +239,9 @@
 </ul>
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://cdebrowser.nci.nih.gov defines many codes, of which the following are a subset:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">CADSR:4722619<a name="cibmtr-cadsr-vm-CADSR.584722619"> </a></td><td>Acute GVHD</td></tr><tr><td style="white-space:nowrap">CADSR:2991794<a name="cibmtr-cadsr-vm-CADSR.582991794"> </a></td><td>Classic cGVHD</td></tr><tr><td style="white-space:nowrap">CADSR:2991795<a name="cibmtr-cadsr-vm-CADSR.582991795"> </a></td><td>Overlap cGVHD</td></tr><tr><td style="white-space:nowrap">CADSR:2991796<a name="cibmtr-cadsr-vm-CADSR.582991796"> </a></td><td>Late Acute GVHD</td></tr><tr><td style="white-space:nowrap">CADSR:3261243<a name="cibmtr-cadsr-vm-CADSR.583261243"> </a></td><td>Not Applicable</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://cdebrowser.nci.nih.gov defines many codes, of which the following are a subset:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">$CADSR:4722619<a name="cibmtr-cadsr-vm-.36CADSR.584722619"> </a></td><td>Acute GVHD</td></tr><tr><td style="white-space:nowrap">$CADSR:2991794<a name="cibmtr-cadsr-vm-.36CADSR.582991794"> </a></td><td>Classic cGVHD</td></tr><tr><td style="white-space:nowrap">$CADSR:2991795<a name="cibmtr-cadsr-vm-.36CADSR.582991795"> </a></td><td>Overlap cGVHD</td></tr><tr><td style="white-space:nowrap">$CADSR:2991796<a name="cibmtr-cadsr-vm-.36CADSR.582991796"> </a></td><td>Late Acute GVHD</td></tr><tr><td style="white-space:nowrap">$CADSR:3261243<a name="cibmtr-cadsr-vm-.36CADSR.583261243"> </a></td><td>Not Applicable</td></tr></table></div>
+
+  
 
   <!-- insert notes if present -->
   
@@ -233,7 +271,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 25, 2021 13:41-0500">2021-06-25</span>
+    <br/>Package cibmtr-reporting#0.1.4a based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 27, 2022 13:25-0500">2022-05-27</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

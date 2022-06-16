@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.19"}
-    h3,h4,h5,h6{--heading-prefix:"3.19"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.20"}
+    h3,h4,h5,h6{--heading-prefix:"3.20"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -57,7 +57,13 @@
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span><br/>0.1.4 - Trial Use 1</p>
+          <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.4a - Trial Use 1
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -127,7 +133,9 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the CIMBTRReporting (v0.1.4: Trial Use 1) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.4a). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
 
 
 
@@ -171,6 +179,21 @@
 
 
 <h2 id="root">: NIH Common Data Elements for CIBMTR - XML Representation</h2>
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-05-27
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
 
 <p><a href="CodeSystem-cibmtr-cadsr-cde.xml" no-download="true">Raw xml</a> | <a href="CodeSystem-cibmtr-cadsr-cde.xml" download>Download</a></p>
 
@@ -185,15 +208,15 @@
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;cibmtr-cadsr-cde&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;This code system http://cdebrowser.nci.nih.gov defines many codes, of which the following are a subset:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;CADSR:2603692&lt;a name=&quot;cibmtr-cadsr-cde-CADSR.582603692&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acute Graft Versus Host Disease Maximum Overall Grade&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;CADSR:2626409&lt;a name=&quot;cibmtr-cadsr-cde-CADSR.582626409&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Biopsy Anatomic Site Performed Name&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;CADSR:2797618&lt;a name=&quot;cibmtr-cadsr-cde-CADSR.582797618&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acute Graft Versus Host Disease Skin Involvement Maximum Severity Type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;CADSR:2797633&lt;a name=&quot;cibmtr-cadsr-cde-CADSR.582797633&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acute Graft Versus Host Disease Lower Gastrointestinal Tract Involvement Maximum Severity Type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;CADSR:2797671&lt;a name=&quot;cibmtr-cadsr-cde-CADSR.582797671&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acute Graft Versus Host Disease Liver Involvement Maximum Severity Type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;CADSR:2980753&lt;a name=&quot;cibmtr-cadsr-cde-CADSR.582980753&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Therapeutic Procedure Administered Type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;CADSR:3005293&lt;a name=&quot;cibmtr-cadsr-cde-CADSR.583005293&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Graft Versus Host Disease Diagnosis Type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;CADSR:5040179&lt;a name=&quot;cibmtr-cadsr-cde-CADSR.585040179&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acute Graft Versus Host Disease Stage Upper Gastrointestinal Tract Severity Type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;CADSR:5263856&lt;a name=&quot;cibmtr-cadsr-cde-CADSR.585263856&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Post Infusion Procedure Timepoint Type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;CADSR:6975011&lt;a name=&quot;cibmtr-cadsr-cde-CADSR.586975011&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Concomitant Medication Use Indication Reason&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;This code system http://cdebrowser.nci.nih.gov defines many codes, of which the following are a subset:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;$CADSR:2603692&lt;a name=&quot;cibmtr-cadsr-cde-.36CADSR.582603692&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acute Graft Versus Host Disease Maximum Overall Grade&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;$CADSR:2626409&lt;a name=&quot;cibmtr-cadsr-cde-.36CADSR.582626409&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Biopsy Anatomic Site Performed Name&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;$CADSR:2797618&lt;a name=&quot;cibmtr-cadsr-cde-.36CADSR.582797618&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acute Graft Versus Host Disease Skin Involvement Maximum Severity Type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;$CADSR:2797633&lt;a name=&quot;cibmtr-cadsr-cde-.36CADSR.582797633&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acute Graft Versus Host Disease Lower Gastrointestinal Tract Involvement Maximum Severity Type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;$CADSR:2797671&lt;a name=&quot;cibmtr-cadsr-cde-.36CADSR.582797671&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acute Graft Versus Host Disease Liver Involvement Maximum Severity Type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;$CADSR:2980753&lt;a name=&quot;cibmtr-cadsr-cde-.36CADSR.582980753&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Therapeutic Procedure Administered Type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;$CADSR:3005293&lt;a name=&quot;cibmtr-cadsr-cde-.36CADSR.583005293&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Graft Versus Host Disease Diagnosis Type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;$CADSR:5040179&lt;a name=&quot;cibmtr-cadsr-cde-.36CADSR.585040179&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acute Graft Versus Host Disease Stage Upper Gastrointestinal Tract Severity Type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;$CADSR:5263856&lt;a name=&quot;cibmtr-cadsr-cde-.36CADSR.585263856&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Post Infusion Procedure Timepoint Type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;$CADSR:6975011&lt;a name=&quot;cibmtr-cadsr-cde-.36CADSR.586975011&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Concomitant Medication Use Indication Reason&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cdebrowser.nci.nih.gov&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.1.4&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.1.4a&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CADSR_CDE_CS&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;NIH Common Data Elements for CIBMTR&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2021-06-25T13:41:27-05:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2022-05-27T13:25:29-05:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The Medical College of Wisconsin, Inc. and the National Marrow Donor Program&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>&gt;
@@ -215,47 +238,47 @@
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.copyright">copyright</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;National Cancer Institute (NCI)&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fragment&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CADSR:2603692&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;$CADSR:2603692&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Acute Graft Versus Host Disease Maximum Overall Grade&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CADSR:2626409&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;$CADSR:2626409&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Biopsy Anatomic Site Performed Name&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CADSR:2797618&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;$CADSR:2797618&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Acute Graft Versus Host Disease Skin Involvement Maximum Severity Type&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CADSR:2797633&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;$CADSR:2797633&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Acute Graft Versus Host Disease Lower Gastrointestinal Tract Involvement Maximum Severity Type&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CADSR:2797671&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;$CADSR:2797671&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Acute Graft Versus Host Disease Liver Involvement Maximum Severity Type&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CADSR:2980753&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;$CADSR:2980753&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Therapeutic Procedure Administered Type&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CADSR:3005293&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;$CADSR:3005293&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Graft Versus Host Disease Diagnosis Type&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CADSR:5040179&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;$CADSR:5040179&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Acute Graft Versus Host Disease Stage Upper Gastrointestinal Tract Severity Type&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CADSR:5263856&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;$CADSR:5263856&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Post Infusion Procedure Timepoint Type&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CADSR:6975011&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;$CADSR:6975011&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Concomitant Medication Use Indication Reason&quot;/&gt;
   &lt;/concept&gt;
 &lt;/CodeSystem&gt;</code></pre>
@@ -287,7 +310,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 25, 2021 13:41-0500">2021-06-25</span>
+    <br/>Package cibmtr-reporting#0.1.4a based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 27, 2022 13:25-0500">2022-05-27</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

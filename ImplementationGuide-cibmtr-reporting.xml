@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/cibmtr-reporting"/>
-  <version value="0.1.4"/>
+  <version value="0.1.4a"/>
   <name value="CIBMTRReporting"/>
   <title value="CIBMTR Reporting Implementation Guide"/>
   <status value="draft"/>
-  <date value="2021-06-25T13:41:27-05:00"/>
+  <date value="2022-05-27T13:25:29-05:00"/>
   <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
   <contact>
     <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -31,6 +31,11 @@
   <packageId value="cibmtr-reporting"/>
   <license value="Apache-2.0"/>
   <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="3.1.0"/>
+  </dependsOn>
   <dependsOn id="uscore">
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <packageId value="hl7.fhir.us.core"/>
@@ -192,6 +197,30 @@
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
         <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -371,6 +400,17 @@
       </reference>
       <name value="CIBMTR Priority Variables Value Set (FY21)"/>
       <description value="Priority Variables for CIBMTR (FY21)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cibmtr-priority-variables-2022"/>
+      </reference>
+      <name value="CIBMTR Priority Variables Value Set (FY22)"/>
+      <description value="Priority Variables for CIBMTR (FY22)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

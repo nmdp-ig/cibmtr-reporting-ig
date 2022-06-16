@@ -59,7 +59,13 @@
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span><br/>0.1.4 - Trial Use 1</p>
+          <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.4a - Trial Use 1
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -129,8 +135,9 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 4" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the CIMBTRReporting (v0.1.4: Trial Use 1) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.4a). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
+
 
 
 
@@ -202,6 +209,21 @@
 
 <a name="root"> </a>
 <h2 id="root">Resource Profile: CIBMTRObsPriorityVariables - Detailed Descriptions</h2>
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-05-27
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
 
 <p>Definitions for the cibmtr-obs-priority-variables resource profile.</p>
 
@@ -407,9 +429,9 @@ Codes that represent various types of tags, commonly workflow-related; e.g. &quo
   <tr><td>Definition</td><td><p>The base language in which the resource is written.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><br/><a style="font-weight:bold" title="Max Value Set Extension" href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html">Max Binding</a>: <a href="http://hl7.org/fhir/R4/valueset-all-languages.html">AllLanguages</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
 A human language.</p>
-</td></tr>
+<table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td></tr><tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a></td></tr></table></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
   <tr><td>Comments</td><td><p>Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).</p>
 </td></tr>
@@ -570,7 +592,7 @@ LOINC codes</p>
   <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-cibmtr-priority-variables-2021.html">CIBMTR Priority Variables Value Set (FY21)</a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-cibmtr-priority-variables-2022.html">CIBMTR Priority Variables Value Set (FY22)</a>; other codes may be used where these codes are not suitable</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td></tr>
   <tr><td>Requirements</td><td><p>Allows for alternative encodings within a code system, and translations to other code systems.</p>
 </td></tr>
@@ -622,7 +644,7 @@ LOINC codes</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Observation.effective[x]"> </a><a name="Observation.effectivePeriod"> </a><a name="Observation.effectiveDateTime"> </a><span style="color: grey">40.</span> <b>Observation.effective[x]</b><a href="#Observation.effective[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Observation.effective[x]"> </a><a name="Observation.effectiveDateTime"> </a><a name="Observation.effective[x]:effectiveDateTime"> </a><a name="Observation.effectivePeriod"> </a><a name="Observation.effective[x]:effectivePeriod"> </a><span style="color: grey">40.</span> <b>Observation.effective[x]</b><a href="#Observation.effective[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>For lab tests this is the specimen collection date.  For Ask at Order Entry Questions (AOE)'s this is the date the question was asked.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: us-core-1</td></tr>
@@ -655,7 +677,7 @@ LOINC codes</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Observation.value[x]"> </a><a name="Observation.valueQuantity"> </a><a name="Observation.valueInteger"> </a><a name="Observation.valueTime"> </a><a name="Observation.valueDateTime"> </a><a name="Observation.valueSampledData"> </a><a name="Observation.valuePeriod"> </a><a name="Observation.valueString"> </a><a name="Observation.valueBoolean"> </a><a name="Observation.valueRange"> </a><a name="Observation.valueRatio"> </a><a name="Observation.valueCodeableConcept"> </a><span style="color: grey">43.</span> <b>Observation.value[x]</b><a href="#Observation.value[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Observation.value[x]"> </a><a name="Observation.valueQuantity"> </a><a name="Observation.value[x]:valueQuantity"> </a><a name="Observation.valueCodeableConcept"> </a><a name="Observation.value[x]:valueCodeableConcept"> </a><a name="Observation.valueString"> </a><a name="Observation.value[x]:valueString"> </a><a name="Observation.valueBoolean"> </a><a name="Observation.value[x]:valueBoolean"> </a><a name="Observation.valueInteger"> </a><a name="Observation.value[x]:valueInteger"> </a><a name="Observation.valueRange"> </a><a name="Observation.value[x]:valueRange"> </a><a name="Observation.valueRatio"> </a><a name="Observation.value[x]:valueRatio"> </a><a name="Observation.valueSampledData"> </a><a name="Observation.value[x]:valueSampledData"> </a><a name="Observation.valueTime"> </a><a name="Observation.value[x]:valueTime"> </a><a name="Observation.valueDateTime"> </a><a name="Observation.value[x]:valueDateTime"> </a><a name="Observation.valuePeriod"> </a><a name="Observation.value[x]:valuePeriod"> </a><span style="color: grey">43.</span> <b>Observation.value[x]</b><a href="#Observation.value[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>The Laboratory result value.  If a coded value,  the valueCodeableConcept.code <strong>SHOULD</strong>  be selected from <a href="http://hl7.org/fhir/ValueSet/uslab-obs-codedresults">SNOMED CT</a>.  If a numeric value, valueQuantity.code <strong>SHALL</strong> be selected from <a href="http://unitsofmeasure.org">UCUM</a>.  A FHIR <a href="http://hl7.org/fhir/STU3/valueset-ucum-units.html">UCUM Codes value set</a> that defines all UCUM codes is in the FHIR specification.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: obs-7, us-core-2, us-core-3, us-core-4</td></tr>
@@ -924,7 +946,7 @@ Codes identifying names of simple observations.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Observation.component.value[x]"> </a><a name="Observation.component.valueCodeableConcept"> </a><a name="Observation.component.valueBoolean"> </a><a name="Observation.component.valueInteger"> </a><a name="Observation.component.valueRange"> </a><a name="Observation.component.valueTime"> </a><a name="Observation.component.valueQuantity"> </a><a name="Observation.component.valueRatio"> </a><a name="Observation.component.valueSampledData"> </a><a name="Observation.component.valueString"> </a><a name="Observation.component.valuePeriod"> </a><a name="Observation.component.valueDateTime"> </a><span style="color: grey">68.</span> <b>Observation.component.value[x]</b><a href="#Observation.component.value[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Observation.component.value[x]"> </a><a name="Observation.component.valueQuantity"> </a><a name="Observation.component.value[x]:valueQuantity"> </a><a name="Observation.component.valueCodeableConcept"> </a><a name="Observation.component.value[x]:valueCodeableConcept"> </a><a name="Observation.component.valueString"> </a><a name="Observation.component.value[x]:valueString"> </a><a name="Observation.component.valueBoolean"> </a><a name="Observation.component.value[x]:valueBoolean"> </a><a name="Observation.component.valueInteger"> </a><a name="Observation.component.value[x]:valueInteger"> </a><a name="Observation.component.valueRange"> </a><a name="Observation.component.value[x]:valueRange"> </a><a name="Observation.component.valueRatio"> </a><a name="Observation.component.value[x]:valueRatio"> </a><a name="Observation.component.valueSampledData"> </a><a name="Observation.component.value[x]:valueSampledData"> </a><a name="Observation.component.valueTime"> </a><a name="Observation.component.value[x]:valueTime"> </a><a name="Observation.component.valueDateTime"> </a><a name="Observation.component.value[x]:valueDateTime"> </a><a name="Observation.component.valuePeriod"> </a><a name="Observation.component.value[x]:valuePeriod"> </a><span style="color: grey">68.</span> <b>Observation.component.value[x]</b><a href="#Observation.component.value[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>The information determined as a result of making the observation, if the information has a simple value.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
@@ -1030,7 +1052,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 25, 2021 13:41-0500">2021-06-25</span>
+    <br/>Package cibmtr-reporting#0.1.4a based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 27, 2022 13:25-0500">2022-05-27</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

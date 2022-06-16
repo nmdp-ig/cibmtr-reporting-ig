@@ -1,3 +1,3 @@
 # Intro
-This is the introduction to the CIBMTR Observation Lab Profile.
-This is found at the beginning of the profile.
+This is describes how FHIR Observations should be formated for 
+submission to the CIBMTR Direct, and what ValueSets should be used.

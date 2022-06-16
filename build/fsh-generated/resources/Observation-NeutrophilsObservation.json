@@ -2,15 +2,15 @@
   "resourceType": "Observation",
   "id": "NeutrophilsObservation",
   "meta": {
-    "profile": [
-      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"
-    ],
     "security": [
       {
         "system": "http://terminology.cibmtr.org/codesystem/transplant-center",
         "code": "rc_99999",
         "display": "99999 My Transplant Center"
       }
+    ],
+    "profile": [
+      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"
     ]
   },
   "category": [

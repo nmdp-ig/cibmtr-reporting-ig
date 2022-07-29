@@ -10,7 +10,7 @@
   "name": "CIBMTRReporting",
   "title": "CIBMTR Reporting Implementation Guide",
   "status": "draft",
-  "date": "2022-07-29T15:34:16-05:00",
+  "date": "2022-07-29T16:31:05-05:00",
   "publisher": "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact": [
     {
@@ -405,66 +405,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/med-alemtuzumab-vs"
-        },
-        "name": "RxNorm - Alemtuzumab",
-        "description": "RxNorm codes for Alemtuzumab",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/med-anti-thymocyte-globulin-vs"
-        },
-        "name": "RxNorm - Anti-Thymocyte Globulin",
-        "description": "RxNorm codes for Anti-Thymocyte Globulin",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
           "reference": "ValueSet/auto-differential-blood-vs"
         },
         "name": "Auto Differential panel - Blood (57023-4)",
         "description": "Auto Differential panel - Blood (57023-4)",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/med-bortezomib-vs"
-        },
-        "name": "RxNorm - Bortezomib",
-        "description": "RxNorm codes for Bortezomib",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/med-busulfan-vs"
-        },
-        "name": "RxNorm - Busulfan",
-        "description": "RxNorm codes for Busulfan",
         "exampleBoolean": false
       },
       {
@@ -531,62 +475,6 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/med-carmustine-vs"
-        },
-        "name": "RxNorm - Carmustine",
-        "description": "RxNorm codes for Carmustine",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/med-cyclophosphamide-vs"
-        },
-        "name": "RxNorm - Cyclophosphamide",
-        "description": "RxNorm codes for Cyclophosphamide ",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/med-cytarabine-vs"
-        },
-        "name": "RxNorm - Cytarabine",
-        "description": "RxNorm codes for Cytarabine",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/med-defibrotide-vs"
-        },
-        "name": "RxNorm - Defibrotide",
-        "description": "RxNorm codes for Defibrotide",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
           "reference": "ValueSet/differential-unspecified-blood-vs"
         },
         "name": "Differential panel, method unspecified - Blood (69738-3)",
@@ -605,34 +493,6 @@
         },
         "name": "Erythrocyte morphology panel - Blood (58408-6)",
         "description": "Erythrocyte morphology panel - Blood (58408-6)",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/med-etoposide-vs"
-        },
-        "name": "RxNorm - Etoposide",
-        "description": "RxNorm codes for Etoposide ",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/med-fludarabine-vs"
-        },
-        "name": "RxNorm - Fludarabine",
-        "description": "RxNorm codes for Fludarabine ",
         "exampleBoolean": false
       },
       {
@@ -675,20 +535,6 @@
         },
         "name": "Manual Differential panel - Blood (24318-8)",
         "description": "Manual Differential panel - Blood (24318-8)",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/med-melphalan-vs"
-        },
-        "name": "RxNorm - Melphalan",
-        "description": "RxNorm codes for Melphalan ",
         "exampleBoolean": false
       },
       {
@@ -769,10 +615,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/med-rituximab-vs"
+          "reference": "ValueSet/med-alemtuzumab-vs"
         },
-        "name": "RxNorm - Rituximab",
-        "description": "RxNorm codes for Rituximab",
+        "name": "RxNorm - Alemtuzumab",
+        "description": "RxNorm codes for Alemtuzumab",
         "exampleBoolean": false
       },
       {
@@ -783,10 +629,150 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/smear-morphology-blood-vs"
+          "reference": "ValueSet/med-anti-thymocyte-globulin-vs"
         },
-        "name": "Smear morphology panel - Blood (34994-4)",
-        "description": "Smear morphology panel - Blood (34994-4)",
+        "name": "RxNorm - Anti-Thymocyte Globulin",
+        "description": "RxNorm codes for Anti-Thymocyte Globulin",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/med-bortezomib-vs"
+        },
+        "name": "RxNorm - Bortezomib",
+        "description": "RxNorm codes for Bortezomib",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/med-busulfan-vs"
+        },
+        "name": "RxNorm - Busulfan",
+        "description": "RxNorm codes for Busulfan",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/med-carmustine-vs"
+        },
+        "name": "RxNorm - Carmustine",
+        "description": "RxNorm codes for Carmustine",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/med-cyclophosphamide-vs"
+        },
+        "name": "RxNorm - Cyclophosphamide",
+        "description": "RxNorm codes for Cyclophosphamide ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/med-cytarabine-vs"
+        },
+        "name": "RxNorm - Cytarabine",
+        "description": "RxNorm codes for Cytarabine",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/med-defibrotide-vs"
+        },
+        "name": "RxNorm - Defibrotide",
+        "description": "RxNorm codes for Defibrotide",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/med-etoposide-vs"
+        },
+        "name": "RxNorm - Etoposide",
+        "description": "RxNorm codes for Etoposide ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/med-fludarabine-vs"
+        },
+        "name": "RxNorm - Fludarabine",
+        "description": "RxNorm codes for Fludarabine ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/med-melphalan-vs"
+        },
+        "name": "RxNorm - Melphalan",
+        "description": "RxNorm codes for Melphalan ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/med-rituximab-vs"
+        },
+        "name": "RxNorm - Rituximab",
+        "description": "RxNorm codes for Rituximab",
         "exampleBoolean": false
       },
       {
@@ -829,6 +815,20 @@
         },
         "name": "RxNorm - Ursodiol",
         "description": "RxNorm codes for Ursodiol",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/smear-morphology-blood-vs"
+        },
+        "name": "Smear morphology panel - Blood (34994-4)",
+        "description": "Smear morphology panel - Blood (34994-4)",
         "exampleBoolean": false
       },
       {

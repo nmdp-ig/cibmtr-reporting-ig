@@ -1,4 +1,4 @@
-ValueSet: Rituximab
+ValueSet: RxNormRituximabVS
 Id: med-rituximab-vs
 Title: "RxNorm - Rituximab"
 Description: "RxNorm codes for Rituximab"

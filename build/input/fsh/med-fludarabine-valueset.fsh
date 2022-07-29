@@ -1,4 +1,4 @@
-ValueSet: Fludarabine
+ValueSet: RxNormFludarabineVS
 Id: med-fludarabine-vs
 Title: "RxNorm - Fludarabine"
 Description: "RxNorm codes for Fludarabine "

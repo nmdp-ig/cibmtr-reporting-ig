@@ -1,4 +1,4 @@
-ValueSet: Melphalan
+ValueSet: RxNormMelphalanVS
 Id: med-melphalan-vs
 Title: "RxNorm - Melphalan"
 Description: "RxNorm codes for Melphalan "

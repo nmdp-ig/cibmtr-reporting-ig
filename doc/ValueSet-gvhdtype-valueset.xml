@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="gvhdtype-valueset"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  234646005 (Graft versus host disease)</li><li>Include these codes as defined in <a href="CodeSystem-cibmtr-cadsr-vm.html"><code>http://cdebrowser.nci.nih.gov</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.584722619">CADSR:4722619</a></td><td>Acute GVHD</td></tr><tr><td><a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.582991794">CADSR:2991794</a></td><td>Classic cGVHD</td></tr><tr><td><a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.582991796">CADSR:2991796</a></td><td>Late Acute GVHD</td></tr><tr><td><a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.583261243">CADSR:3261243</a></td><td>Not Applicable</td></tr><tr><td><a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.582991795">CADSR:2991795</a></td><td>Overlap cGVHD</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhdtype-valueset"/>
+  <version value="0.1.4a"/>
+  <name value="GVHDTypeValueSet"/>
+  <title value="GVHD Type Value Set"/>
+  <status value="active"/>
+  <date value="2022-07-29T15:34:16-05:00"/>
+  <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
+  <contact>
+    <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.cibmtr.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Milius"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bmilius@nmdp.org"/>
+    </telecom>
+  </contact>
+  <description value="Permissible values for types of Graft vs Host Disease, from NIH caDSR"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="234646005"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://cdebrowser.nci.nih.gov"/>
+      <concept>
+        <code value="CADSR:4722619"/>
+        <display value="Acute GVHD"/>
+      </concept>
+      <concept>
+        <code value="CADSR:2991794"/>
+        <display value="Classic cGVHD"/>
+      </concept>
+      <concept>
+        <code value="CADSR:2991796"/>
+        <display value="Late Acute GVHD"/>
+      </concept>
+      <concept>
+        <code value="CADSR:3261243"/>
+        <display value="Not Applicable"/>
+      </concept>
+      <concept>
+        <code value="CADSR:2991795"/>
+        <display value="Overlap cGVHD"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,16 @@
+ValueSet: Melphalan
+Id: med-melphalan-vs
+Title: "RxNorm - Melphalan"
+Description: "RxNorm codes for Melphalan "
+* $RXNORM#6718	    "melphalan"
+* $RXNORM#151325	"Alkeran"
+* $RXNORM#1745086	"Evomela"
+* $RXNORM#317646	"melphalan 2 MG"
+* $RXNORM#332190	"melphalan 5 MG"
+* $RXNORM#1740948	"melphalan 50 MG"
+* $RXNORM#446276	"melphalan Extended Release Oral Tablet"
+* $RXNORM#1159787	"melphalan Injectable Product"
+* $RXNORM#1740949	"melphalan Injection"
+* $RXNORM#1159788	"melphalan Oral Product"
+* $RXNORM#372756	"melphalan Oral Tablet"
+* $RXNORM#1159789	"melphalan Pill"

@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-bortezomib-vs> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "med-bortezomib-vs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>358258</td><td>bortezomib</td></tr><tr><td>356733</td><td>Velcade</td></tr><tr><td>1804993</td><td>bortezomib 3.5 MG</td></tr><tr><td>1804996</td><td>bortezomib 3.5 MG [Velcade]</td></tr><tr><td>402244</td><td>bortezomib 3.5 MG Injection [Velcade]</td></tr><tr><td>1163075</td><td>bortezomib Injectable Product</td></tr><tr><td>1804994</td><td>bortezomib Injection</td></tr><tr><td>1804997</td><td>bortezomib Injection [Velcade]</td></tr><tr><td>1187756</td><td>Velcade Injectable Product</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-bortezomib-vs"];
+  fhir:ValueSet.version [ fhir:value "0.1.4a"];
+  fhir:ValueSet.name [ fhir:value "Bortezomib"];
+  fhir:ValueSet.title [ fhir:value "RxNorm - Bortezomib"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2022-07-29T15:34:16-05:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.cibmtr.org" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Bob Milius" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "bmilius@nmdp.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "RxNorm codes for Bortezomib"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "358258" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bortezomib" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "356733" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Velcade" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1804993" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bortezomib 3.5 MG" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1804996" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bortezomib 3.5 MG [Velcade]" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "402244" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bortezomib 3.5 MG Injection [Velcade]" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1163075" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bortezomib Injectable Product" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1804994" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bortezomib Injection" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1804997" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bortezomib Injection [Velcade]" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1187756" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Velcade Injectable Product" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-bortezomib-vs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

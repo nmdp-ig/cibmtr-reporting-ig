@@ -1,0 +1,84 @@
+{
+  "resourceType": "Patient",
+  "id": "PatientExample4",
+  "meta": {
+    "profile": [
+      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
+    ],
+    "security": [
+      {
+        "system": "http://terminology.cibmtr.org/codesystem/transplant-center",
+        "code": "rc_00000",
+        "display": "00000 Good Health Medical Center"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Peter Doe </b> male, DoB: 1952-05-07 ( id: 1234567 (OFFICIAL))</p></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "text",
+          "valueString": "Black or African American"
+        },
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2054-5",
+            "display": "Black or African American"
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+    },
+    {
+      "extension": [
+        {
+          "url": "text",
+          "valueString": "Unknown"
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://example.org/mrn",
+      "value": "abc"
+    },
+    {
+      "use": "official",
+      "system": "http://terminology.cibmtr.org/identifier/CRID",
+      "value": "1234567"
+    }
+  ],
+  "name": [
+    {
+      "family": "Doe",
+      "given": [
+        "Peter"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1952-05-07",
+  "address": [
+    {
+      "use": "home",
+      "city": "Grand Prarie",
+      "state": "Texas",
+      "country": "Unknown or unspecified"
+    }
+  ],
+  "managingOrganization": {
+    "identifier": {
+      "system": "http://terminology.cibmtr.org/identifier/transplant-center",
+      "value": "00000"
+    },
+    "display": "Good Health Medical Center"
+  }
+}

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CIBMTRReporting"];
   fhir:ImplementationGuide.title [ fhir:value "CIBMTR Reporting Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-07-29T15:34:16-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-07-29T16:31:05-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -390,34 +390,6 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-alemtuzumab-vs>;
-         fhir:Reference.reference [ fhir:value "ValueSet/med-alemtuzumab-vs" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Alemtuzumab" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Alemtuzumab" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 4;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-anti-thymocyte-globulin-vs>;
-         fhir:Reference.reference [ fhir:value "ValueSet/med-anti-thymocyte-globulin-vs" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Anti-Thymocyte Globulin" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Anti-Thymocyte Globulin" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 5;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/auto-differential-blood-vs>;
          fhir:Reference.reference [ fhir:value "ValueSet/auto-differential-blood-vs" ]
        ];
@@ -425,35 +397,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Auto Differential panel - Blood (57023-4)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-bortezomib-vs>;
-         fhir:Reference.reference [ fhir:value "ValueSet/med-bortezomib-vs" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Bortezomib" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Bortezomib" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 7;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs>;
-         fhir:Reference.reference [ fhir:value "ValueSet/med-busulfan-vs" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Busulfan" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Busulfan" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 8;
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -467,7 +411,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CBC panel - Blood by Automated count (58410-2)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -481,7 +425,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CBC W Auto Differential panel - Blood (57021-8)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -495,7 +439,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CBC W Differential panel, method unspecified - Blood (69742-5)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -509,63 +453,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CBC W Ordered Manual Differential panel - Blood (57782-5)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-carmustine-vs>;
-         fhir:Reference.reference [ fhir:value "ValueSet/med-carmustine-vs" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Carmustine" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Carmustine" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 13;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cyclophosphamide-vs>;
-         fhir:Reference.reference [ fhir:value "ValueSet/med-cyclophosphamide-vs" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Cyclophosphamide" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Cyclophosphamide " ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 14;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cytarabine-vs>;
-         fhir:Reference.reference [ fhir:value "ValueSet/med-cytarabine-vs" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Cytarabine" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Cytarabine" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 15;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-defibrotide-vs>;
-         fhir:Reference.reference [ fhir:value "ValueSet/med-defibrotide-vs" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Defibrotide" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Defibrotide" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 16;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -579,7 +467,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Differential panel, method unspecified - Blood (69738-3)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -593,35 +481,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Erythrocyte morphology panel - Blood (58408-6)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-etoposide-vs>;
-         fhir:Reference.reference [ fhir:value "ValueSet/med-etoposide-vs" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Etoposide" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Etoposide " ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 19;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-fludarabine-vs>;
-         fhir:Reference.reference [ fhir:value "ValueSet/med-fludarabine-vs" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Fludarabine" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Fludarabine " ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 20;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -635,7 +495,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Permissible values for types of Graft vs Host Disease, from NIH caDSR" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -649,7 +509,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Leukocyte morphology panel - Blood (58407-8)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 22;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -663,21 +523,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Manual Differential panel - Blood (24318-8)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 23;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-melphalan-vs>;
-         fhir:Reference.reference [ fhir:value "ValueSet/med-melphalan-vs" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Melphalan" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Melphalan " ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 24;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -691,7 +537,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Platelet morphology panel - Blood (58406-0)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 25;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -705,7 +551,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Permissible values for presence" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 26;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -719,7 +565,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Priority Variables for CIBMTR (FY21)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 27;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -733,7 +579,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Priority Variables for CIBMTR (FY22)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 28;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -745,6 +591,160 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CIBMTR Priority Variables Value Set for Epic App (FY21)" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Priority Variables for Epic CIBMTR Reporting App (FY21)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-alemtuzumab-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/med-alemtuzumab-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Alemtuzumab" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Alemtuzumab" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-anti-thymocyte-globulin-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/med-anti-thymocyte-globulin-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Anti-Thymocyte Globulin" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Anti-Thymocyte Globulin" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-bortezomib-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/med-bortezomib-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Bortezomib" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Bortezomib" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/med-busulfan-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Busulfan" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Busulfan" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-carmustine-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/med-carmustine-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Carmustine" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Carmustine" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cyclophosphamide-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/med-cyclophosphamide-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Cyclophosphamide" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Cyclophosphamide " ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cytarabine-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/med-cytarabine-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Cytarabine" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Cytarabine" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-defibrotide-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/med-defibrotide-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Defibrotide" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Defibrotide" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-etoposide-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/med-etoposide-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Etoposide" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Etoposide " ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-fludarabine-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/med-fludarabine-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Fludarabine" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Fludarabine " ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-melphalan-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/med-melphalan-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Melphalan" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Melphalan " ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 29;
@@ -768,20 +768,6 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/smear-morphology-blood-vs>;
-         fhir:Reference.reference [ fhir:value "ValueSet/smear-morphology-blood-vs" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Smear morphology panel - Blood (34994-4)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Smear morphology panel - Blood (34994-4)" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 31;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-thiotepa-vs>;
          fhir:Reference.reference [ fhir:value "ValueSet/med-thiotepa-vs" ]
        ];
@@ -789,7 +775,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Thiotepa" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 32;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -803,7 +789,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Treosulfan" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 33;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -815,6 +801,20 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - Ursodiol" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Ursodiol" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/smear-morphology-blood-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/smear-morphology-blood-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Smear morphology panel - Blood (34994-4)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Smear morphology panel - Blood (34994-4)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 34;

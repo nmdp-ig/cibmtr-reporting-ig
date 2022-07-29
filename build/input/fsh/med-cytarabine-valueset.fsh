@@ -1,4 +1,4 @@
-ValueSet: Cytarabine
+ValueSet: RxNormCytarabineVS
 Id: med-cytarabine-vs
 Title: "RxNorm - Cytarabine"
 Description: "RxNorm codes for Cytarabine"

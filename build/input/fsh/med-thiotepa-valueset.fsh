@@ -1,4 +1,4 @@
-ValueSet: Thiotepa
+ValueSet: RxNormThiotepaVS
 Id: med-thiotepa-vs
 Title: "RxNorm - Thiotepa"
 Description: "RxNorm codes for Thiotepa"

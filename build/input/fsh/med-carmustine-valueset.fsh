@@ -1,4 +1,4 @@
-ValueSet: Carmustine
+ValueSet: RxNormCarmustineVS
 Id: med-carmustine-vs
 Title: "RxNorm - Carmustine"
 Description: "RxNorm codes for Carmustine"

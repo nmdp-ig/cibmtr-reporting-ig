@@ -1,4 +1,4 @@
-ValueSet: Cyclophosphamide
+ValueSet: RxNormCyclophosphamideVS
 Id: med-cyclophosphamide-vs
 Title: "RxNorm - Cyclophosphamide"
 Description: "RxNorm codes for Cyclophosphamide "

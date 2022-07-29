@@ -1,4 +1,4 @@
-ValueSet: Etoposide
+ValueSet: RxNormEtoposideVS
 Id: med-etoposide-vs
 Title: "RxNorm - Etoposide"
 Description: "RxNorm codes for Etoposide "

@@ -1,4 +1,4 @@
-ValueSet: Busulfan
+ValueSet: RxNormBusulfanVS
 Id: med-busulfan-vs
 Title: "RxNorm - Busulfan"
 Description: "RxNorm codes for Busulfan"

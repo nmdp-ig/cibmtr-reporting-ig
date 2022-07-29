@@ -1,4 +1,4 @@
-ValueSet: Treosulfan
+ValueSet: RxNormTreosulfanVS
 Id: med-treosulfan-vs
 Title: "RxNorm - Treosulfan"
 Description: "RxNorm codes for Treosulfan"

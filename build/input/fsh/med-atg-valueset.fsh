@@ -1,4 +1,4 @@
-ValueSet: AntiThymocyteGlobulin
+ValueSet: RxNormAntiThymocyteGlobulinVS
 Id: med-anti-thymocyte-globulin-vs
 Title: "RxNorm - Anti-Thymocyte Globulin"
 Description: "RxNorm codes for Anti-Thymocyte Globulin"

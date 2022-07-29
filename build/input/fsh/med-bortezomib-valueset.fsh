@@ -1,4 +1,4 @@
-ValueSet: Bortezomib
+ValueSet: RxNormBortezomibVS
 Id: med-bortezomib-vs
 Title: "RxNorm - Bortezomib"
 Description: "RxNorm codes for Bortezomib"

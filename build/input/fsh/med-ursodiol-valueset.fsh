@@ -1,4 +1,4 @@
-ValueSet: Ursodiol
+ValueSet: RxNormUrsodiolVS
 Id: med-ursodiol-vs
 Title: "RxNorm - Ursodiol"
 Description: "RxNorm codes for Ursodiol"

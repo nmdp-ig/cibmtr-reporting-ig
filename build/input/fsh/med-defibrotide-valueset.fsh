@@ -1,4 +1,4 @@
-ValueSet: Defibrotide
+ValueSet: RxNormDefibrotideVS
 Id: med-defibrotide-vs
 Title: "RxNorm - Defibrotide"
 Description: "RxNorm codes for Defibrotide"

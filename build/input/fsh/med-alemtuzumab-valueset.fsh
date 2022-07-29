@@ -1,4 +1,4 @@
-ValueSet: Alemtuzumab
+ValueSet: RxNormAlemtuzumabVS
 Id: med-alemtuzumab-vs
 Title: "RxNorm - Alemtuzumab"
 Description: "RxNorm codes for Alemtuzumab"

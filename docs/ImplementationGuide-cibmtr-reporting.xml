@@ -11,7 +11,7 @@
   <name value="CIBMTRReporting"/>
   <title value="CIBMTR Reporting Implementation Guide"/>
   <status value="draft"/>
-  <date value="2022-07-29T15:34:16-05:00"/>
+  <date value="2022-07-29T16:31:05-05:00"/>
   <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
   <contact>
     <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -264,54 +264,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/med-alemtuzumab-vs"/>
-      </reference>
-      <name value="RxNorm - Alemtuzumab"/>
-      <description value="RxNorm codes for Alemtuzumab"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/med-anti-thymocyte-globulin-vs"/>
-      </reference>
-      <name value="RxNorm - Anti-Thymocyte Globulin"/>
-      <description value="RxNorm codes for Anti-Thymocyte Globulin"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/auto-differential-blood-vs"/>
       </reference>
       <name value="Auto Differential panel - Blood (57023-4)"/>
       <description value="Auto Differential panel - Blood (57023-4)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/med-bortezomib-vs"/>
-      </reference>
-      <name value="RxNorm - Bortezomib"/>
-      <description value="RxNorm codes for Bortezomib"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/med-busulfan-vs"/>
-      </reference>
-      <name value="RxNorm - Busulfan"/>
-      <description value="RxNorm codes for Busulfan"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -363,50 +319,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/med-carmustine-vs"/>
-      </reference>
-      <name value="RxNorm - Carmustine"/>
-      <description value="RxNorm codes for Carmustine"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/med-cyclophosphamide-vs"/>
-      </reference>
-      <name value="RxNorm - Cyclophosphamide"/>
-      <description value="RxNorm codes for Cyclophosphamide "/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/med-cytarabine-vs"/>
-      </reference>
-      <name value="RxNorm - Cytarabine"/>
-      <description value="RxNorm codes for Cytarabine"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/med-defibrotide-vs"/>
-      </reference>
-      <name value="RxNorm - Defibrotide"/>
-      <description value="RxNorm codes for Defibrotide"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/differential-unspecified-blood-vs"/>
       </reference>
       <name value="Differential panel, method unspecified - Blood (69738-3)"/>
@@ -422,28 +334,6 @@
       </reference>
       <name value="Erythrocyte morphology panel - Blood (58408-6)"/>
       <description value="Erythrocyte morphology panel - Blood (58408-6)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/med-etoposide-vs"/>
-      </reference>
-      <name value="RxNorm - Etoposide"/>
-      <description value="RxNorm codes for Etoposide "/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/med-fludarabine-vs"/>
-      </reference>
-      <name value="RxNorm - Fludarabine"/>
-      <description value="RxNorm codes for Fludarabine "/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -477,17 +367,6 @@
       </reference>
       <name value="Manual Differential panel - Blood (24318-8)"/>
       <description value="Manual Differential panel - Blood (24318-8)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/med-melphalan-vs"/>
-      </reference>
-      <name value="RxNorm - Melphalan"/>
-      <description value="RxNorm codes for Melphalan "/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -550,10 +429,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/med-rituximab-vs"/>
+        <reference value="ValueSet/med-alemtuzumab-vs"/>
       </reference>
-      <name value="RxNorm - Rituximab"/>
-      <description value="RxNorm codes for Rituximab"/>
+      <name value="RxNorm - Alemtuzumab"/>
+      <description value="RxNorm codes for Alemtuzumab"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -561,10 +440,120 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/smear-morphology-blood-vs"/>
+        <reference value="ValueSet/med-anti-thymocyte-globulin-vs"/>
       </reference>
-      <name value="Smear morphology panel - Blood (34994-4)"/>
-      <description value="Smear morphology panel - Blood (34994-4)"/>
+      <name value="RxNorm - Anti-Thymocyte Globulin"/>
+      <description value="RxNorm codes for Anti-Thymocyte Globulin"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/med-bortezomib-vs"/>
+      </reference>
+      <name value="RxNorm - Bortezomib"/>
+      <description value="RxNorm codes for Bortezomib"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/med-busulfan-vs"/>
+      </reference>
+      <name value="RxNorm - Busulfan"/>
+      <description value="RxNorm codes for Busulfan"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/med-carmustine-vs"/>
+      </reference>
+      <name value="RxNorm - Carmustine"/>
+      <description value="RxNorm codes for Carmustine"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/med-cyclophosphamide-vs"/>
+      </reference>
+      <name value="RxNorm - Cyclophosphamide"/>
+      <description value="RxNorm codes for Cyclophosphamide "/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/med-cytarabine-vs"/>
+      </reference>
+      <name value="RxNorm - Cytarabine"/>
+      <description value="RxNorm codes for Cytarabine"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/med-defibrotide-vs"/>
+      </reference>
+      <name value="RxNorm - Defibrotide"/>
+      <description value="RxNorm codes for Defibrotide"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/med-etoposide-vs"/>
+      </reference>
+      <name value="RxNorm - Etoposide"/>
+      <description value="RxNorm codes for Etoposide "/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/med-fludarabine-vs"/>
+      </reference>
+      <name value="RxNorm - Fludarabine"/>
+      <description value="RxNorm codes for Fludarabine "/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/med-melphalan-vs"/>
+      </reference>
+      <name value="RxNorm - Melphalan"/>
+      <description value="RxNorm codes for Melphalan "/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/med-rituximab-vs"/>
+      </reference>
+      <name value="RxNorm - Rituximab"/>
+      <description value="RxNorm codes for Rituximab"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -598,6 +587,17 @@
       </reference>
       <name value="RxNorm - Ursodiol"/>
       <description value="RxNorm codes for Ursodiol"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/smear-morphology-blood-vs"/>
+      </reference>
+      <name value="Smear morphology panel - Blood (34994-4)"/>
+      <description value="Smear morphology panel - Blood (34994-4)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

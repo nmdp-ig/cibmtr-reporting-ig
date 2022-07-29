@@ -1,0 +1,1166 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-2022> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cibmtr-priority-variables-2022"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/50190-8.html\">50190-8</a></td><td>Iron and Iron binding capacity panel - Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14800-7.html\">14800-7</a></td><td>Iron binding capacity [Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2500-7.html\">2500-7</a></td><td>Iron binding capacity [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/22753-8.html\">22753-8</a></td><td>Iron binding capacity.unsaturated [Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2501-5.html\">2501-5</a></td><td>Iron binding capacity.unsaturated [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14801-5.html\">14801-5</a></td><td>Iron saturation [Molar fraction] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2502-3.html\">2502-3</a></td><td>Iron saturation [Mass Fraction] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2498-4.html\">2498-4</a></td><td>Iron [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/44326-7.html\">44326-7</a></td><td>Iron [Presence] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14798-3.html\">14798-3</a></td><td>Iron [Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34442-4.html\">34442-4</a></td><td>Bilirubin.conjugated/Bilirubin.total in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/35672-5.html\">35672-5</a></td><td>Bilirubin.direct/Bilirubin.total in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14631-6.html\">14631-6</a></td><td>Bilirubin.total [Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/1975-2.html\">1975-2</a></td><td>Bilirubin.total [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77137-8.html\">77137-8</a></td><td>Bilirubin.total [Moles/volume] in Serum, Plasma or Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/50189-0.html\">50189-0</a></td><td>Neonatal bilirubin panel [Mass/volume] - Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/78961-0.html\">78961-0</a></td><td>IgG clearance/Albumin clearance [Ratio] in Urine and Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/1754-1.html\">1754-1</a></td><td>Albumin [Mass/volume] in Urine</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/1753-3.html\">1753-3</a></td><td>Albumin [Presence] in Urine</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/50949-7.html\">50949-7</a></td><td>Albumin [Presence] in Urine by Test strip</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/6942-7.html\">6942-7</a></td><td>Albumin [Mass/volume] in Urine by Electrophoresis</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77158-4.html\">77158-4</a></td><td>Albumin [Moles/volume] in Urine by Detection limit &lt;= 3.0 mg/L</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14957-5.html\">14957-5</a></td><td>Microalbumin [Mass/volume] in Urine</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/53531-0.html\">53531-0</a></td><td>Microalbumin [Mass/volume] in Urine by Detection limit &lt;= 1.0 mg/L</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/11218-5.html\">11218-5</a></td><td>Microalbumin [Mass/volume] in Urine by Test strip</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/95232-5.html\">95232-5</a></td><td>Microalbumin [Presence] in Urine by Test strip</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/1755-8.html\">1755-8</a></td><td>Albumin [Mass/time] in 24 hour Urine</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/89999-7.html\">89999-7</a></td><td>Albumin [Mass/volume] in Urine by Detection limit &lt;= 3.0 mg/L</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/9318-7.html\">9318-7</a></td><td>Albumin/Creatinine [Mass Ratio] in Urine</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/1916-6.html\">1916-6</a></td><td>Aspartate aminotransferase/Alanine aminotransferase [Enzymatic activity ratio] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/16325-3.html\">16325-3</a></td><td>Alanine aminotransferase/Aspartate aminotransferase [Enzymatic activity ratio] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2325-9.html\">2325-9</a></td><td>Gamma glutamyl transferase/Aspartate aminotransferase [Enzymatic activity ratio] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/1920-8.html\">1920-8</a></td><td>Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/44786-2.html\">44786-2</a></td><td>Aspartate aminotransferase [Enzymatic activity/volume] (Maximum value during study) in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30239-8.html\">30239-8</a></td><td>Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/88112-8.html\">88112-8</a></td><td>Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by No addition of P-5'-P</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/48136-6.html\">48136-6</a></td><td>Aspartate aminotransferase.macromolecular [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/54500-4.html\">54500-4</a></td><td>Aspartate aminotransferase.macromolecular/Aspartate aminotransferase.total in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/76625-3.html\">76625-3</a></td><td>Alanine aminotransferase [Enzymatic activity/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/16324-6.html\">16324-6</a></td><td>Alanine aminotransferase [Enzymatic activity/volume] in Red Blood Cells</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/96586-3.html\">96586-3</a></td><td>Alanine aminotransferase [Enzymatic activity/volume] in DBS</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77144-4.html\">77144-4</a></td><td>Alanine aminotransferase [Enzymatic activity/volume] in Serum, Plasma or Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/48134-1.html\">48134-1</a></td><td>Alanine aminotransferase.macromolecular [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/1742-6.html\">1742-6</a></td><td>Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/1743-4.html\">1743-4</a></td><td>Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/1744-2.html\">1744-2</a></td><td>Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma by No addition of P-5'-P</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/44785-4.html\">44785-4</a></td><td>Alanine aminotransferase [Enzymatic activity/volume] (Maximum value during study) in Serum or Plasma by No addition of P-5'-P</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14119-2.html\">14119-2</a></td><td>Lactate dehydrogenase 1/Lactate dehydrogenase 2 [Enzymatic activity ratio] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2540-3.html\">2540-3</a></td><td>Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2549-4.html\">2549-4</a></td><td>Lactate dehydrogenase 5 [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2537-9.html\">2537-9</a></td><td>Lactate dehydrogenase 1 [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2543-7.html\">2543-7</a></td><td>Lactate dehydrogenase 3 [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2546-0.html\">2546-0</a></td><td>Lactate dehydrogenase 4 [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14804-9.html\">14804-9</a></td><td>Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14805-6.html\">14805-6</a></td><td>Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Pyruvate to lactate reaction</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2541-1.html\">2541-1</a></td><td>Lactate dehydrogenase 3 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2544-5.html\">2544-5</a></td><td>Lactate dehydrogenase 4 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2547-8.html\">2547-8</a></td><td>Lactate dehydrogenase 5 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2535-3.html\">2535-3</a></td><td>Lactate dehydrogenase 1 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2538-7.html\">2538-7</a></td><td>Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/19248-4.html\">19248-4</a></td><td>Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma by Electrophoresis</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/93905-8.html\">93905-8</a></td><td>ABO group [Type] in Blood--during infancy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/883-9.html\">883-9</a></td><td>ABO group [Type] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14580-5.html\">14580-5</a></td><td>ABO group [Type] in Blood from Newborn</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/882-1.html\">882-1</a></td><td>ABO and Rh group [Type] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/57743-7.html\">57743-7</a></td><td>ABO group [Type] in Blood by Confirmatory method</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/51892-8.html\">51892-8</a></td><td>ABO group [Type] in Cord blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/93906-6.html\">93906-6</a></td><td>ABO and Rh group [Type] in Blood--during infancy</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/44086-7.html\">44086-7</a></td><td>ABO and Rh group [Interpretation] in Blood from Newborn</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77397-8.html\">77397-8</a></td><td>ABO and Rh group [Type] in Blood by Confirmatory method</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/19057-9.html\">19057-9</a></td><td>ABO and Rh group [Type] in Blood from Newborn</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/884-7.html\">884-7</a></td><td>ABO and Rh group [Type] in Capillary blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/54417-1.html\">54417-1</a></td><td>ABO and Rh group [Type] in Blood from Fetus</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34474-7.html\">34474-7</a></td><td>ABO and Rh group [Type] in Cord blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/1303-7.html\">1303-7</a></td><td>Reverse ABO group [Type]</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/54416-3.html\">54416-3</a></td><td>Rh [Type] in Blood from Fetus</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14906-2.html\">14906-2</a></td><td>Rh [Type] in Cord blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/13225-8.html\">13225-8</a></td><td>Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma --1st specimen</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/16714-8.html\">16714-8</a></td><td>Cytomegalovirus Ab [Units/volume] in Serum by Latex agglutination</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/16715-5.html\">16715-5</a></td><td>Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma by Immunofluorescence</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/16716-3.html\">16716-3</a></td><td>Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma by Immunoassay --2nd specimen</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/22241-4.html\">22241-4</a></td><td>Cytomegalovirus Ab [Titer] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/22246-3.html\">22246-3</a></td><td>Cytomegalovirus IgG Ab [Titer] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/22247-1.html\">22247-1</a></td><td>Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma --2nd specimen</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/22249-7.html\">22249-7</a></td><td>Cytomegalovirus IgM Ab [Titer] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/29590-7.html\">29590-7</a></td><td>Cytomegalovirus DNA [Mass/volume] (viral load) in Blood by Probe</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/29604-6.html\">29604-6</a></td><td>Cytomegalovirus DNA [#/volume] (viral load) in Blood by NAA with probe detection</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30247-1.html\">30247-1</a></td><td>Cytomegalovirus DNA [#/volume] (viral load) in Serum or Plasma by NAA with probe detection</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/32170-3.html\">32170-3</a></td><td>Cytomegalovirus Ab [Titer] in Serum or Plasma by Immunofluorescence</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/49349-4.html\">49349-4</a></td><td>Cytomegalovirus DNA [#/volume] (viral load) in Bronchoalveolar lavage by NAA with probe detection</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/5121-9.html\">5121-9</a></td><td>Cytomegalovirus Ab [Titer] in Serum or Plasma by Latex agglutination</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/5122-7.html\">5122-7</a></td><td>Cytomegalovirus Ab [Units/volume] in Serum or Plasma by Immunofluorescence</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/5124-3.html\">5124-3</a></td><td>Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma by Immunoassay</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/5125-0.html\">5125-0</a></td><td>Cytomegalovirus IgG Ab [Titer] in Serum or Plasma by Immunofluorescence</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/5126-8.html\">5126-8</a></td><td>Cytomegalovirus IgM Ab [Units/volume] in Serum or Plasma by Immunoassay</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/5127-6.html\">5127-6</a></td><td>Cytomegalovirus IgM Ab [Titer] in Serum or Plasma by Immunofluorescence</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/52976-8.html\">52976-8</a></td><td>Cytomegalovirus Ab [Units/volume] in Serum by Complement fixation</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/54206-8.html\">54206-8</a></td><td>Cytomegalovirus DNA [Log #/volume] (viral load) in Serum or Plasma by NAA with probe detection</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/72493-0.html\">72493-0</a></td><td>Cytomegalovirus DNA [Units/volume] (viral load) in Plasma by NAA with probe detection</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/72494-8.html\">72494-8</a></td><td>Cytomegalovirus DNA [log units/volume] (viral load) in Plasma by NAA with probe detection</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/7851-9.html\">7851-9</a></td><td>Cytomegalovirus Ab [Units/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/7852-7.html\">7852-7</a></td><td>Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/7853-5.html\">7853-5</a></td><td>Cytomegalovirus IgM Ab [Units/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/88545-9.html\">88545-9</a></td><td>Cytomegalovirus DNA [#/volume] (viral load) in DBS by NAA with probe detection</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/9513-3.html\">9513-3</a></td><td>Cytomegalovirus Ab [Titer] in Serum by Complement fixation</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/32791-6.html\">32791-6</a></td><td>Cytomegalovirus IgG Ab [Ratio] in Serum or Plasma by Immunoassay --1st specimen/2nd specimen</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/32835-1.html\">32835-1</a></td><td>Cytomegalovirus IgG Ab [Ratio] in Serum or Plasma --1st specimen/2nd specimen</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/52984-2.html\">52984-2</a></td><td>Cytomegalovirus IgG Ab avidity [Ratio] in Serum or Plasma by Immunoassay</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/78445-4.html\">78445-4</a></td><td>Cytomegalovirus IgG Ab avidity [Presence] in Serum or Plasma by Immunoassay</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/67805-2.html\">67805-2</a></td><td>Cytomegalovirus Ag [Presence] in Isolate by Immunofluorescence</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/59838-3.html\">59838-3</a></td><td>Cytomegalovirus Ab [Presence] in Serum or Plasma by Latex agglutination</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30325-5.html\">30325-5</a></td><td>Cytomegalovirus IgM Ab [Presence] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/13949-3.html\">13949-3</a></td><td>Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/22239-8.html\">22239-8</a></td><td>Cytomegalovirus Ab [Presence] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/24119-0.html\">24119-0</a></td><td>Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunoassay</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/6377-6.html\">6377-6</a></td><td>Cytomegalovirus Ag [Presence] in Serum or Plasma by Immunofluorescence</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/6376-8.html\">6376-8</a></td><td>Cytomegalovirus Ag [Presence] in Serum or Plasma by Immunoassay</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/5835-4.html\">5835-4</a></td><td>Cytomegalovirus [Presence] in Blood by Organism specific culture</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/54164-9.html\">54164-9</a></td><td>Cytomegalovirus immediate-early Ag [Presence] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/4996-5.html\">4996-5</a></td><td>Cytomegalovirus DNA [Presence] in Blood by NAA with probe detection</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/49539-0.html\">49539-0</a></td><td>Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunofluorescence</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/43703-8.html\">43703-8</a></td><td>Cytomegalovirus [Presence] in Blood by Shell vial culture</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/31795-8.html\">31795-8</a></td><td>Cytomegalovirus Ag [Presence] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30246-3.html\">30246-3</a></td><td>Cytomegalovirus DNA [Presence] in Serum or Plasma by NAA with probe detection</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/15377-5.html\">15377-5</a></td><td>Cytomegalovirus Ab [Presence] in Serum by Latex agglutination</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/16718-9.html\">16718-9</a></td><td>Cytomegalovirus Ag [Presence] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/22244-8.html\">22244-8</a></td><td>Cytomegalovirus IgG Ab [Presence] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/28008-1.html\">28008-1</a></td><td>Cytomegalovirus DNA [Presence] in Blood by Probe with signal amplification</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/20475-0.html\">20475-0</a></td><td>Cytomegalovirus IgG Ab [Interpretation] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/87424-8.html\">87424-8</a></td><td>Cytomegalovirus IgG and IgM panel - Serum or Plasma Qualitative</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/88535-0.html\">88535-0</a></td><td>Cytomegalovirus DNA [Presence] in DBS by NAA with probe detection</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/95184-8.html\">95184-8</a></td><td>Cytomegalovirus T-cell immunodeficiency panel - Blood by Flow cytometry (FC)</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/78006-4.html\">78006-4</a></td><td>Isotopic Glomerular filtration rate/1.73 sq M [Volume Rate/Area] in Urine and Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/96591-3.html\">96591-3</a></td><td>Glomerular filtration rate/1.73 sq M.predicted among blacks [Volume Rate/Area] in DBS</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/69405-9.html\">69405-9</a></td><td>Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/96592-1.html\">96592-1</a></td><td>Glomerular filtration rate/1.73 sq M.predicted among non-blacks [Volume Rate/Area] in DBS</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/50384-7.html\">50384-7</a></td><td>Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (Schwartz)</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/50210-4.html\">50210-4</a></td><td>Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Cystatin-based formula</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/62238-1.html\">62238-1</a></td><td>Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI)</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77147-7.html\">77147-7</a></td><td>Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/88293-6.html\">88293-6</a></td><td>Glomerular filtration rate/1.73 sq M.predicted among blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI)</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/48643-1.html\">48643-1</a></td><td>Glomerular filtration rate/1.73 sq M.predicted among blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/50044-7.html\">50044-7</a></td><td>Glomerular filtration rate/1.73 sq M.predicted among females [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/70969-1.html\">70969-1</a></td><td>Glomerular filtration rate/1.73 sq M.predicted among males [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/88294-4.html\">88294-4</a></td><td>Glomerular filtration rate/1.73 sq M.predicted among non-blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI)</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/48642-3.html\">48642-3</a></td><td>Glomerular filtration rate/1.73 sq M.predicted among non-blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/87430-5.html\">87430-5</a></td><td>Cystatin C and Glomerular filtration rate by Cystatin-based formula panel - Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/45066-8.html\">45066-8</a></td><td>Creatinine and Glomerular filtration rate.predicted panel - Serum, Plasma or Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/94677-2.html\">94677-2</a></td><td>Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine and Cystatin C-based formula (CKD-EPI)</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/98979-8.html\">98979-8</a></td><td>Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI 2021)</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2164-2.html\">2164-2</a></td><td>Creatinine renal clearance in 24 hour Urine and Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/6690-2.html\">6690-2</a></td><td>Leukocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/804-5.html\">804-5</a></td><td>Leukocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26464-8.html\">26464-8</a></td><td>Leukocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/49498-9.html\">49498-9</a></td><td>Leukocytes [#/volume] in Blood by Estimate</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/789-8.html\">789-8</a></td><td>Erythrocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26453-1.html\">26453-1</a></td><td>Erythrocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/790-6.html\">790-6</a></td><td>Erythrocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/93846-4.html\">93846-4</a></td><td>Hemoglobin [Moles/volume] in Venous blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/718-7.html\">718-7</a></td><td>Hemoglobin [Mass/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30313-1.html\">30313-1</a></td><td>Hemoglobin [Mass/volume] in Arterial blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30350-3.html\">30350-3</a></td><td>Hemoglobin [Mass/volume] in Venous blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14775-1.html\">14775-1</a></td><td>Hemoglobin [Mass/volume] in Arterial blood by Oximetry</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30351-1.html\">30351-1</a></td><td>Hemoglobin [Mass/volume] in Mixed venous blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/20509-6.html\">20509-6</a></td><td>Hemoglobin [Mass/volume] in Blood by calculation</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/75928-2.html\">75928-2</a></td><td>Hemoglobin [Moles/volume] in Arterial blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/55782-7.html\">55782-7</a></td><td>Hemoglobin [Mass/volume] in Blood by Oximetry</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/59260-0.html\">59260-0</a></td><td>Hemoglobin [Moles/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/76768-1.html\">76768-1</a></td><td>Hemoglobin [Mass/volume] in Mixed venous blood by Oximetry</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/76769-9.html\">76769-9</a></td><td>Hemoglobin [Mass/volume] in Venous blood by Oximetry</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/4633-4.html\">4633-4</a></td><td>Hemoglobin F/Hemoglobin.total in Blood by Kleihauer-Betke method</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/4576-5.html\">4576-5</a></td><td>Hemoglobin F/Hemoglobin.total in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/42246-9.html\">42246-9</a></td><td>Hemoglobin F/Hemoglobin.total in Blood by HPLC</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/32682-7.html\">32682-7</a></td><td>Hemoglobin F/Hemoglobin.total in Blood by Electrophoresis</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/38524-5.html\">38524-5</a></td><td>Hemoglobin F/Hemoglobin.total in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/71863-5.html\">71863-5</a></td><td>Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by Kleihauer-Betke method</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/71864-3.html\">71864-3</a></td><td>Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by HPLC</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/71865-0.html\">71865-0</a></td><td>Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by Electrophoresis</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/20570-8.html\">20570-8</a></td><td>Hematocrit [Volume Fraction] of Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/31100-1.html\">31100-1</a></td><td>Hematocrit [Volume Fraction] of Blood by Impedance</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/4545-0.html\">4545-0</a></td><td>Hematocrit [Volume Fraction] of Blood by Centrifugation</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/4544-3.html\">4544-3</a></td><td>Hematocrit [Volume Fraction] of Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/42908-4.html\">42908-4</a></td><td>Hematocrit [Volume Fraction] of Capillary blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/41654-5.html\">41654-5</a></td><td>Hematocrit [Volume Fraction] of Venous blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/48703-3.html\">48703-3</a></td><td>Hematocrit [Volume Fraction] of Blood by Estimated</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/71829-6.html\">71829-6</a></td><td>Hematocrit [Pure volume fraction] of Venous blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/71831-2.html\">71831-2</a></td><td>Hematocrit [Pure volume fraction] of Capillary blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/71833-8.html\">71833-8</a></td><td>Hematocrit [Pure volume fraction] of Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26515-7.html\">26515-7</a></td><td>Platelets [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/778-1.html\">778-1</a></td><td>Platelets [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/777-3.html\">777-3</a></td><td>Platelets [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/49497-1.html\">49497-1</a></td><td>Platelets [#/volume] in Blood by Estimate</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/28542-9.html\">28542-9</a></td><td>Platelet mean volume [Entitic volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/32623-1.html\">32623-1</a></td><td>Platelet mean volume [Entitic volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/732-8.html\">732-8</a></td><td>Lymphocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/731-0.html\">731-0</a></td><td>Lymphocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26474-7.html\">26474-7</a></td><td>Lymphocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26478-8.html\">26478-8</a></td><td>Lymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/736-9.html\">736-9</a></td><td>Lymphocytes/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/737-7.html\">737-7</a></td><td>Lymphocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26484-6.html\">26484-6</a></td><td>Monocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/742-7.html\">742-7</a></td><td>Monocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/743-5.html\">743-5</a></td><td>Monocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/5905-5.html\">5905-5</a></td><td>Monocytes/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26485-3.html\">26485-3</a></td><td>Monocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/744-3.html\">744-3</a></td><td>Monocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/751-8.html\">751-8</a></td><td>Neutrophils [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/753-4.html\">753-4</a></td><td>Neutrophils [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26499-4.html\">26499-4</a></td><td>Neutrophils [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/770-8.html\">770-8</a></td><td>Neutrophils/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26511-6.html\">26511-6</a></td><td>Neutrophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/23761-0.html\">23761-0</a></td><td>Neutrophils/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26508-2.html\">26508-2</a></td><td>Band form neutrophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/764-1.html\">764-1</a></td><td>Band form neutrophils/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/35332-6.html\">35332-6</a></td><td>Band form neutrophils/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/32200-8.html\">32200-8</a></td><td>Segmented neutrophils/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26505-8.html\">26505-8</a></td><td>Segmented neutrophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/769-0.html\">769-0</a></td><td>Segmented neutrophils/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/709-6.html\">709-6</a></td><td>Blasts/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26446-5.html\">26446-5</a></td><td>Blasts/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/707-0.html\">707-0</a></td><td>Basophils/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/706-2.html\">706-2</a></td><td>Basophils/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30180-4.html\">30180-4</a></td><td>Basophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/712-0.html\">712-0</a></td><td>Eosinophils [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26449-9.html\">26449-9</a></td><td>Eosinophils [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/711-2.html\">711-2</a></td><td>Eosinophils [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26450-7.html\">26450-7</a></td><td>Eosinophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/713-8.html\">713-8</a></td><td>Eosinophils/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/714-6.html\">714-6</a></td><td>Eosinophils/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30458-4.html\">30458-4</a></td><td>Plasma cells [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/24103-4.html\">24103-4</a></td><td>Plasma cells [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/13047-6.html\">13047-6</a></td><td>Plasma cells/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/79426-3.html\">79426-3</a></td><td>Plasma cells/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/33855-8.html\">33855-8</a></td><td>Promonocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34926-6.html\">34926-6</a></td><td>Promonocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/13599-6.html\">13599-6</a></td><td>Promonocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30466-7.html\">30466-7</a></td><td>Promonocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26523-1.html\">26523-1</a></td><td>Promyelocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/781-5.html\">781-5</a></td><td>Promyelocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/783-1.html\">783-1</a></td><td>Promyelocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/71666-2.html\">71666-2</a></td><td>Promyelocytes/Leukocytes [Pure number fraction] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26524-9.html\">26524-9</a></td><td>Promyelocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30444-4.html\">30444-4</a></td><td>Myeloblasts [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/746-8.html\">746-8</a></td><td>Myeloblasts [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30445-1.html\">30445-1</a></td><td>Myeloblasts/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/747-6.html\">747-6</a></td><td>Myeloblasts/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/748-4.html\">748-4</a></td><td>Myelocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30446-9.html\">30446-9</a></td><td>Myelocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26498-6.html\">26498-6</a></td><td>Myelocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/749-2.html\">749-2</a></td><td>Myelocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/71667-0.html\">71667-0</a></td><td>Myelocytes/Leukocytes [Pure number fraction] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/739-3.html\">739-3</a></td><td>Metamyelocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30433-7.html\">30433-7</a></td><td>Metamyelocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/740-1.html\">740-1</a></td><td>Metamyelocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/28541-1.html\">28541-1</a></td><td>Metamyelocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/71668-8.html\">71668-8</a></td><td>Metamyelocytes/Leukocytes [Pure number fraction] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/6746-2.html\">6746-2</a></td><td>Prolymphocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30465-9.html\">30465-9</a></td><td>Prolymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14196-0.html\">14196-0</a></td><td>Reticulocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/40665-2.html\">40665-2</a></td><td>Reticulocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/60474-4.html\">60474-4</a></td><td>Reticulocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/31112-6.html\">31112-6</a></td><td>Reticulocytes/100 erythrocytes in Blood by Manual</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/17849-1.html\">17849-1</a></td><td>Reticulocytes/100 erythrocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/4679-7.html\">4679-7</a></td><td>Reticulocytes/100 erythrocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/1751-7.html\">1751-7</a></td><td>Albumin [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2862-1.html\">2862-1</a></td><td>Albumin [Mass/volume] in Serum or Plasma by Electrophoresis</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/61151-7.html\">61151-7</a></td><td>Albumin [Mass/volume] in Serum or Plasma by Bromocresol green (BCG) dye binding method</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/61152-5.html\">61152-5</a></td><td>Albumin [Mass/volume] in Serum or Plasma by Bromocresol purple (BCP) dye binding method</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/1952-1.html\">1952-1</a></td><td>Beta-2-Microglobulin [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/76484-5.html\">76484-5</a></td><td>Beta-2-Microglobulin [Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2276-4.html\">2276-4</a></td><td>Ferritin [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/24373-3.html\">24373-3</a></td><td>Ferritin [Mass/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/20567-4.html\">20567-4</a></td><td>Ferritin [Mass/volume] in Serum or Plasma by Immunoassay</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/11150-0.html\">11150-0</a></td><td>Blasts/100 cells in Bone marrow</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/57028-3.html\">57028-3</a></td><td>Iron [Mass/mass] in Liver</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2160-0.html\">2160-0</a></td><td>Creatinine [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14682-9.html\">14682-9</a></td><td>Creatinine [Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77140-2.html\">77140-2</a></td><td>Creatinine [Moles/volume] in Serum, Plasma or Blood</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-2022"];
+  fhir:ValueSet.version [ fhir:value "0.1.4a"];
+  fhir:ValueSet.name [ fhir:value "PriorityVariables2022"];
+  fhir:ValueSet.title [ fhir:value "CIBMTR Priority Variables Value Set (FY22)"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2022-07-29T15:34:16-05:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.cibmtr.org" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Bob Milius" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "bmilius@nmdp.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Priority Variables for CIBMTR (FY22)"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50190-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iron and Iron binding capacity panel - Serum or Plasma" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14800-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iron binding capacity [Moles/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2500-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iron binding capacity [Mass/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22753-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iron binding capacity.unsaturated [Moles/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2501-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iron binding capacity.unsaturated [Mass/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14801-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iron saturation [Molar fraction] in Serum or Plasma" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2502-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iron saturation [Mass Fraction] in Serum or Plasma" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2498-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iron [Mass/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "44326-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iron [Presence] in Serum or Plasma" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14798-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iron [Moles/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34442-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bilirubin.conjugated/Bilirubin.total in Serum or Plasma" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35672-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bilirubin.direct/Bilirubin.total in Serum or Plasma" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14631-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bilirubin.total [Moles/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1975-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bilirubin.total [Mass/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77137-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bilirubin.total [Moles/volume] in Serum, Plasma or Blood" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50189-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neonatal bilirubin panel [Mass/volume] - Serum or Plasma" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "78961-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "IgG clearance/Albumin clearance [Ratio] in Urine and Serum or Plasma" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1754-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Albumin [Mass/volume] in Urine" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1753-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Albumin [Presence] in Urine" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50949-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Albumin [Presence] in Urine by Test strip" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "6942-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Albumin [Mass/volume] in Urine by Electrophoresis" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77158-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Albumin [Moles/volume] in Urine by Detection limit <= 3.0 mg/L" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14957-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Microalbumin [Mass/volume] in Urine" ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "53531-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Microalbumin [Mass/volume] in Urine by Detection limit <= 1.0 mg/L" ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11218-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Microalbumin [Mass/volume] in Urine by Test strip" ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "95232-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Microalbumin [Presence] in Urine by Test strip" ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1755-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Albumin [Mass/time] in 24 hour Urine" ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "89999-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Albumin [Mass/volume] in Urine by Detection limit <= 3.0 mg/L" ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9318-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Albumin/Creatinine [Mass Ratio] in Urine" ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1916-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aspartate aminotransferase/Alanine aminotransferase [Enzymatic activity ratio] in Serum or Plasma" ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16325-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alanine aminotransferase/Aspartate aminotransferase [Enzymatic activity ratio] in Serum or Plasma" ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2325-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gamma glutamyl transferase/Aspartate aminotransferase [Enzymatic activity ratio] in Serum or Plasma" ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1920-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "44786-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aspartate aminotransferase [Enzymatic activity/volume] (Maximum value during study) in Serum or Plasma" ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30239-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P" ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "88112-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by No addition of P-5'-P" ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "48136-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aspartate aminotransferase.macromolecular [Enzymatic activity/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "54500-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aspartate aminotransferase.macromolecular/Aspartate aminotransferase.total in Serum or Plasma" ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "76625-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alanine aminotransferase [Enzymatic activity/volume] in Blood" ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16324-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alanine aminotransferase [Enzymatic activity/volume] in Red Blood Cells" ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "96586-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alanine aminotransferase [Enzymatic activity/volume] in DBS" ]
+       ], [
+         fhir:index 41;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77144-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alanine aminotransferase [Enzymatic activity/volume] in Serum, Plasma or Blood" ]
+       ], [
+         fhir:index 42;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "48134-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alanine aminotransferase.macromolecular [Enzymatic activity/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 43;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1742-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 44;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1743-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P" ]
+       ], [
+         fhir:index 45;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1744-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma by No addition of P-5'-P" ]
+       ], [
+         fhir:index 46;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "44785-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alanine aminotransferase [Enzymatic activity/volume] (Maximum value during study) in Serum or Plasma by No addition of P-5'-P" ]
+       ], [
+         fhir:index 47;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14119-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactate dehydrogenase 1/Lactate dehydrogenase 2 [Enzymatic activity ratio] in Serum or Plasma" ]
+       ], [
+         fhir:index 48;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2540-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 49;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2549-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactate dehydrogenase 5 [Enzymatic activity/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 50;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2537-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactate dehydrogenase 1 [Enzymatic activity/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 51;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2543-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactate dehydrogenase 3 [Enzymatic activity/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 52;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2546-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactate dehydrogenase 4 [Enzymatic activity/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 53;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14804-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction" ]
+       ], [
+         fhir:index 54;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14805-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Pyruvate to lactate reaction" ]
+       ], [
+         fhir:index 55;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2541-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactate dehydrogenase 3 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation" ]
+       ], [
+         fhir:index 56;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2544-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactate dehydrogenase 4 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation" ]
+       ], [
+         fhir:index 57;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2547-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactate dehydrogenase 5 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation" ]
+       ], [
+         fhir:index 58;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2535-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactate dehydrogenase 1 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation" ]
+       ], [
+         fhir:index 59;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2538-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation" ]
+       ], [
+         fhir:index 60;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "19248-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma by Electrophoresis" ]
+       ], [
+         fhir:index 61;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "93905-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ABO group [Type] in Blood--during infancy" ]
+       ], [
+         fhir:index 62;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "883-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ABO group [Type] in Blood" ]
+       ], [
+         fhir:index 63;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14580-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ABO group [Type] in Blood from Newborn" ]
+       ], [
+         fhir:index 64;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "882-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ABO and Rh group [Type] in Blood" ]
+       ], [
+         fhir:index 65;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "57743-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ABO group [Type] in Blood by Confirmatory method" ]
+       ], [
+         fhir:index 66;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "51892-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ABO group [Type] in Cord blood" ]
+       ], [
+         fhir:index 67;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "93906-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ABO and Rh group [Type] in Blood--during infancy" ]
+       ], [
+         fhir:index 68;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "44086-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ABO and Rh group [Interpretation] in Blood from Newborn" ]
+       ], [
+         fhir:index 69;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77397-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ABO and Rh group [Type] in Blood by Confirmatory method" ]
+       ], [
+         fhir:index 70;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "19057-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ABO and Rh group [Type] in Blood from Newborn" ]
+       ], [
+         fhir:index 71;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "884-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ABO and Rh group [Type] in Capillary blood" ]
+       ], [
+         fhir:index 72;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "54417-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ABO and Rh group [Type] in Blood from Fetus" ]
+       ], [
+         fhir:index 73;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34474-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ABO and Rh group [Type] in Cord blood" ]
+       ], [
+         fhir:index 74;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1303-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Reverse ABO group [Type]" ]
+       ], [
+         fhir:index 75;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "54416-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rh [Type] in Blood from Fetus" ]
+       ], [
+         fhir:index 76;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14906-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rh [Type] in Cord blood" ]
+       ], [
+         fhir:index 77;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13225-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma --1st specimen" ]
+       ], [
+         fhir:index 78;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16714-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus Ab [Units/volume] in Serum by Latex agglutination" ]
+       ], [
+         fhir:index 79;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16715-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma by Immunofluorescence" ]
+       ], [
+         fhir:index 80;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16716-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma by Immunoassay --2nd specimen" ]
+       ], [
+         fhir:index 81;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22241-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus Ab [Titer] in Serum or Plasma" ]
+       ], [
+         fhir:index 82;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22246-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgG Ab [Titer] in Serum or Plasma" ]
+       ], [
+         fhir:index 83;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22247-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma --2nd specimen" ]
+       ], [
+         fhir:index 84;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22249-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgM Ab [Titer] in Serum or Plasma" ]
+       ], [
+         fhir:index 85;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "29590-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus DNA [Mass/volume] (viral load) in Blood by Probe" ]
+       ], [
+         fhir:index 86;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "29604-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus DNA [#/volume] (viral load) in Blood by NAA with probe detection" ]
+       ], [
+         fhir:index 87;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30247-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus DNA [#/volume] (viral load) in Serum or Plasma by NAA with probe detection" ]
+       ], [
+         fhir:index 88;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32170-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus Ab [Titer] in Serum or Plasma by Immunofluorescence" ]
+       ], [
+         fhir:index 89;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "49349-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus DNA [#/volume] (viral load) in Bronchoalveolar lavage by NAA with probe detection" ]
+       ], [
+         fhir:index 90;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "5121-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus Ab [Titer] in Serum or Plasma by Latex agglutination" ]
+       ], [
+         fhir:index 91;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "5122-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus Ab [Units/volume] in Serum or Plasma by Immunofluorescence" ]
+       ], [
+         fhir:index 92;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "5124-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma by Immunoassay" ]
+       ], [
+         fhir:index 93;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "5125-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgG Ab [Titer] in Serum or Plasma by Immunofluorescence" ]
+       ], [
+         fhir:index 94;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "5126-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgM Ab [Units/volume] in Serum or Plasma by Immunoassay" ]
+       ], [
+         fhir:index 95;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "5127-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgM Ab [Titer] in Serum or Plasma by Immunofluorescence" ]
+       ], [
+         fhir:index 96;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "52976-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus Ab [Units/volume] in Serum by Complement fixation" ]
+       ], [
+         fhir:index 97;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "54206-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus DNA [Log #/volume] (viral load) in Serum or Plasma by NAA with probe detection" ]
+       ], [
+         fhir:index 98;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "72493-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus DNA [Units/volume] (viral load) in Plasma by NAA with probe detection" ]
+       ], [
+         fhir:index 99;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "72494-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus DNA [log units/volume] (viral load) in Plasma by NAA with probe detection" ]
+       ], [
+         fhir:index 100;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7851-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus Ab [Units/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 101;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7852-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 102;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7853-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgM Ab [Units/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 103;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "88545-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus DNA [#/volume] (viral load) in DBS by NAA with probe detection" ]
+       ], [
+         fhir:index 104;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9513-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus Ab [Titer] in Serum by Complement fixation" ]
+       ], [
+         fhir:index 105;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32791-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgG Ab [Ratio] in Serum or Plasma by Immunoassay --1st specimen/2nd specimen" ]
+       ], [
+         fhir:index 106;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32835-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgG Ab [Ratio] in Serum or Plasma --1st specimen/2nd specimen" ]
+       ], [
+         fhir:index 107;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "52984-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgG Ab avidity [Ratio] in Serum or Plasma by Immunoassay" ]
+       ], [
+         fhir:index 108;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "78445-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgG Ab avidity [Presence] in Serum or Plasma by Immunoassay" ]
+       ], [
+         fhir:index 109;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "67805-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus Ag [Presence] in Isolate by Immunofluorescence" ]
+       ], [
+         fhir:index 110;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "59838-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus Ab [Presence] in Serum or Plasma by Latex agglutination" ]
+       ], [
+         fhir:index 111;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30325-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgM Ab [Presence] in Serum or Plasma" ]
+       ], [
+         fhir:index 112;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13949-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay" ]
+       ], [
+         fhir:index 113;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22239-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus Ab [Presence] in Serum or Plasma" ]
+       ], [
+         fhir:index 114;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "24119-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunoassay" ]
+       ], [
+         fhir:index 115;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "6377-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus Ag [Presence] in Serum or Plasma by Immunofluorescence" ]
+       ], [
+         fhir:index 116;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "6376-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus Ag [Presence] in Serum or Plasma by Immunoassay" ]
+       ], [
+         fhir:index 117;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "5835-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus [Presence] in Blood by Organism specific culture" ]
+       ], [
+         fhir:index 118;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "54164-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus immediate-early Ag [Presence] in Blood" ]
+       ], [
+         fhir:index 119;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4996-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus DNA [Presence] in Blood by NAA with probe detection" ]
+       ], [
+         fhir:index 120;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "49539-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunofluorescence" ]
+       ], [
+         fhir:index 121;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "43703-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus [Presence] in Blood by Shell vial culture" ]
+       ], [
+         fhir:index 122;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "31795-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus Ag [Presence] in Serum or Plasma" ]
+       ], [
+         fhir:index 123;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30246-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus DNA [Presence] in Serum or Plasma by NAA with probe detection" ]
+       ], [
+         fhir:index 124;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15377-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus Ab [Presence] in Serum by Latex agglutination" ]
+       ], [
+         fhir:index 125;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16718-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus Ag [Presence] in Blood" ]
+       ], [
+         fhir:index 126;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22244-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgG Ab [Presence] in Serum or Plasma" ]
+       ], [
+         fhir:index 127;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "28008-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus DNA [Presence] in Blood by Probe with signal amplification" ]
+       ], [
+         fhir:index 128;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20475-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgG Ab [Interpretation] in Serum or Plasma" ]
+       ], [
+         fhir:index 129;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "87424-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus IgG and IgM panel - Serum or Plasma Qualitative" ]
+       ], [
+         fhir:index 130;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "88535-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus DNA [Presence] in DBS by NAA with probe detection" ]
+       ], [
+         fhir:index 131;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "95184-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytomegalovirus T-cell immunodeficiency panel - Blood by Flow cytometry (FC)" ]
+       ], [
+         fhir:index 132;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "78006-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Isotopic Glomerular filtration rate/1.73 sq M [Volume Rate/Area] in Urine and Serum or Plasma" ]
+       ], [
+         fhir:index 133;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "96591-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glomerular filtration rate/1.73 sq M.predicted among blacks [Volume Rate/Area] in DBS" ]
+       ], [
+         fhir:index 134;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "69405-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood" ]
+       ], [
+         fhir:index 135;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "96592-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glomerular filtration rate/1.73 sq M.predicted among non-blacks [Volume Rate/Area] in DBS" ]
+       ], [
+         fhir:index 136;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50384-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (Schwartz)" ]
+       ], [
+         fhir:index 137;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50210-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Cystatin-based formula" ]
+       ], [
+         fhir:index 138;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "62238-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI)" ]
+       ], [
+         fhir:index 139;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77147-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)" ]
+       ], [
+         fhir:index 140;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "88293-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glomerular filtration rate/1.73 sq M.predicted among blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI)" ]
+       ], [
+         fhir:index 141;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "48643-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glomerular filtration rate/1.73 sq M.predicted among blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)" ]
+       ], [
+         fhir:index 142;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50044-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glomerular filtration rate/1.73 sq M.predicted among females [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)" ]
+       ], [
+         fhir:index 143;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "70969-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glomerular filtration rate/1.73 sq M.predicted among males [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)" ]
+       ], [
+         fhir:index 144;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "88294-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glomerular filtration rate/1.73 sq M.predicted among non-blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI)" ]
+       ], [
+         fhir:index 145;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "48642-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glomerular filtration rate/1.73 sq M.predicted among non-blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)" ]
+       ], [
+         fhir:index 146;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "87430-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cystatin C and Glomerular filtration rate by Cystatin-based formula panel - Serum or Plasma" ]
+       ], [
+         fhir:index 147;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "45066-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Creatinine and Glomerular filtration rate.predicted panel - Serum, Plasma or Blood" ]
+       ], [
+         fhir:index 148;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "94677-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine and Cystatin C-based formula (CKD-EPI)" ]
+       ], [
+         fhir:index 149;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "98979-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI 2021)" ]
+       ], [
+         fhir:index 150;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2164-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Creatinine renal clearance in 24 hour Urine and Serum or Plasma" ]
+       ], [
+         fhir:index 151;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "6690-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Leukocytes [#/volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 152;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "804-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Leukocytes [#/volume] in Blood by Manual count" ]
+       ], [
+         fhir:index 153;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26464-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Leukocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 154;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "49498-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Leukocytes [#/volume] in Blood by Estimate" ]
+       ], [
+         fhir:index 155;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "789-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrocytes [#/volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 156;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26453-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 157;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "790-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrocytes [#/volume] in Blood by Manual count" ]
+       ], [
+         fhir:index 158;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "93846-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Moles/volume] in Venous blood" ]
+       ], [
+         fhir:index 159;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "718-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Mass/volume] in Blood" ]
+       ], [
+         fhir:index 160;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30313-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Mass/volume] in Arterial blood" ]
+       ], [
+         fhir:index 161;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30350-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Mass/volume] in Venous blood" ]
+       ], [
+         fhir:index 162;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14775-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Mass/volume] in Arterial blood by Oximetry" ]
+       ], [
+         fhir:index 163;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30351-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Mass/volume] in Mixed venous blood" ]
+       ], [
+         fhir:index 164;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20509-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Mass/volume] in Blood by calculation" ]
+       ], [
+         fhir:index 165;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "75928-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Moles/volume] in Arterial blood" ]
+       ], [
+         fhir:index 166;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "55782-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Mass/volume] in Blood by Oximetry" ]
+       ], [
+         fhir:index 167;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "59260-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Moles/volume] in Blood" ]
+       ], [
+         fhir:index 168;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "76768-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Mass/volume] in Mixed venous blood by Oximetry" ]
+       ], [
+         fhir:index 169;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "76769-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin [Mass/volume] in Venous blood by Oximetry" ]
+       ], [
+         fhir:index 170;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4633-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin F/Hemoglobin.total in Blood by Kleihauer-Betke method" ]
+       ], [
+         fhir:index 171;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4576-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin F/Hemoglobin.total in Blood" ]
+       ], [
+         fhir:index 172;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "42246-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin F/Hemoglobin.total in Blood by HPLC" ]
+       ], [
+         fhir:index 173;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32682-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin F/Hemoglobin.total in Blood by Electrophoresis" ]
+       ], [
+         fhir:index 174;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "38524-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin F/Hemoglobin.total in Blood by Electrophoresis alkaline (pH 8.9)" ]
+       ], [
+         fhir:index 175;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "71863-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by Kleihauer-Betke method" ]
+       ], [
+         fhir:index 176;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "71864-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by HPLC" ]
+       ], [
+         fhir:index 177;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "71865-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by Electrophoresis" ]
+       ], [
+         fhir:index 178;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20570-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hematocrit [Volume Fraction] of Blood" ]
+       ], [
+         fhir:index 179;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "31100-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hematocrit [Volume Fraction] of Blood by Impedance" ]
+       ], [
+         fhir:index 180;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4545-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hematocrit [Volume Fraction] of Blood by Centrifugation" ]
+       ], [
+         fhir:index 181;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4544-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hematocrit [Volume Fraction] of Blood by Automated count" ]
+       ], [
+         fhir:index 182;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "42908-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hematocrit [Volume Fraction] of Capillary blood" ]
+       ], [
+         fhir:index 183;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "41654-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hematocrit [Volume Fraction] of Venous blood" ]
+       ], [
+         fhir:index 184;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "48703-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hematocrit [Volume Fraction] of Blood by Estimated" ]
+       ], [
+         fhir:index 185;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "71829-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hematocrit [Pure volume fraction] of Venous blood" ]
+       ], [
+         fhir:index 186;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "71831-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hematocrit [Pure volume fraction] of Capillary blood" ]
+       ], [
+         fhir:index 187;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "71833-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hematocrit [Pure volume fraction] of Blood by Automated count" ]
+       ], [
+         fhir:index 188;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26515-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelets [#/volume] in Blood" ]
+       ], [
+         fhir:index 189;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "778-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelets [#/volume] in Blood by Manual count" ]
+       ], [
+         fhir:index 190;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "777-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelets [#/volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 191;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "49497-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelets [#/volume] in Blood by Estimate" ]
+       ], [
+         fhir:index 192;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "28542-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelet mean volume [Entitic volume] in Blood" ]
+       ], [
+         fhir:index 193;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32623-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelet mean volume [Entitic volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 194;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "732-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymphocytes [#/volume] in Blood by Manual count" ]
+       ], [
+         fhir:index 195;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "731-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymphocytes [#/volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 196;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26474-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymphocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 197;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26478-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymphocytes/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 198;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "736-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymphocytes/100 leukocytes in Blood by Automated count" ]
+       ], [
+         fhir:index 199;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "737-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymphocytes/100 leukocytes in Blood by Manual count" ]
+       ], [
+         fhir:index 200;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26484-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Monocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 201;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "742-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Monocytes [#/volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 202;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "743-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Monocytes [#/volume] in Blood by Manual count" ]
+       ], [
+         fhir:index 203;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "5905-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Monocytes/100 leukocytes in Blood by Automated count" ]
+       ], [
+         fhir:index 204;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26485-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Monocytes/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 205;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "744-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Monocytes/100 leukocytes in Blood by Manual count" ]
+       ], [
+         fhir:index 206;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "751-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neutrophils [#/volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 207;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "753-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neutrophils [#/volume] in Blood by Manual count" ]
+       ], [
+         fhir:index 208;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26499-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neutrophils [#/volume] in Blood" ]
+       ], [
+         fhir:index 209;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "770-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neutrophils/100 leukocytes in Blood by Automated count" ]
+       ], [
+         fhir:index 210;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26511-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neutrophils/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 211;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "23761-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neutrophils/100 leukocytes in Blood by Manual count" ]
+       ], [
+         fhir:index 212;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26508-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Band form neutrophils/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 213;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "764-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Band form neutrophils/100 leukocytes in Blood by Manual count" ]
+       ], [
+         fhir:index 214;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35332-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Band form neutrophils/100 leukocytes in Blood by Automated count" ]
+       ], [
+         fhir:index 215;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32200-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Segmented neutrophils/100 leukocytes in Blood by Automated count" ]
+       ], [
+         fhir:index 216;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26505-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Segmented neutrophils/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 217;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "769-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Segmented neutrophils/100 leukocytes in Blood by Manual count" ]
+       ], [
+         fhir:index 218;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "709-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blasts/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 219;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26446-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blasts/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 220;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "707-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Basophils/100 leukocytes in Blood by Manual count" ]
+       ], [
+         fhir:index 221;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "706-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Basophils/100 leukocytes in Blood by Automated count" ]
+       ], [
+         fhir:index 222;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30180-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Basophils/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 223;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "712-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eosinophils [#/volume] in Blood by Manual count" ]
+       ], [
+         fhir:index 224;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26449-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eosinophils [#/volume] in Blood" ]
+       ], [
+         fhir:index 225;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "711-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eosinophils [#/volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 226;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26450-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eosinophils/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 227;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "713-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eosinophils/100 leukocytes in Blood by Automated count" ]
+       ], [
+         fhir:index 228;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "714-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eosinophils/100 leukocytes in Blood by Manual count" ]
+       ], [
+         fhir:index 229;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30458-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plasma cells [#/volume] in Blood" ]
+       ], [
+         fhir:index 230;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "24103-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plasma cells [#/volume] in Blood by Manual count" ]
+       ], [
+         fhir:index 231;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13047-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plasma cells/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 232;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "79426-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plasma cells/100 leukocytes in Blood by Manual count" ]
+       ], [
+         fhir:index 233;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "33855-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Promonocytes [#/volume] in Blood by Manual count" ]
+       ], [
+         fhir:index 234;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34926-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Promonocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 235;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13599-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Promonocytes/100 leukocytes in Blood by Manual count" ]
+       ], [
+         fhir:index 236;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30466-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Promonocytes/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 237;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26523-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Promyelocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 238;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "781-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Promyelocytes [#/volume] in Blood by Manual count" ]
+       ], [
+         fhir:index 239;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "783-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Promyelocytes/100 leukocytes in Blood by Manual count" ]
+       ], [
+         fhir:index 240;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "71666-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Promyelocytes/Leukocytes [Pure number fraction] in Blood by Manual count" ]
+       ], [
+         fhir:index 241;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26524-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Promyelocytes/100 leukocytes in Blood by Manual count" ]
+       ], [
+         fhir:index 242;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30444-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myeloblasts [#/volume] in Blood" ]
+       ], [
+         fhir:index 243;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "746-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myeloblasts [#/volume] in Blood by Manual count" ]
+       ], [
+         fhir:index 244;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30445-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myeloblasts/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 245;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "747-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myeloblasts/100 leukocytes in Blood by Manual count" ]
+       ], [
+         fhir:index 246;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "748-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myelocytes [#/volume] in Blood by Manual count" ]
+       ], [
+         fhir:index 247;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30446-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myelocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 248;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26498-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myelocytes/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 249;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "749-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myelocytes/100 leukocytes in Blood by Manual count" ]
+       ], [
+         fhir:index 250;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "71667-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myelocytes/Leukocytes [Pure number fraction] in Blood by Manual count" ]
+       ], [
+         fhir:index 251;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "739-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Metamyelocytes [#/volume] in Blood by Manual count" ]
+       ], [
+         fhir:index 252;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30433-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Metamyelocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 253;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "740-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Metamyelocytes/100 leukocytes in Blood by Manual count" ]
+       ], [
+         fhir:index 254;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "28541-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Metamyelocytes/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 255;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "71668-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Metamyelocytes/Leukocytes [Pure number fraction] in Blood by Manual count" ]
+       ], [
+         fhir:index 256;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "6746-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prolymphocytes/100 leukocytes in Blood by Manual count" ]
+       ], [
+         fhir:index 257;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30465-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prolymphocytes/100 leukocytes in Blood" ]
+       ], [
+         fhir:index 258;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14196-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Reticulocytes [#/volume] in Blood" ]
+       ], [
+         fhir:index 259;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "40665-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Reticulocytes [#/volume] in Blood by Manual count" ]
+       ], [
+         fhir:index 260;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "60474-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Reticulocytes [#/volume] in Blood by Automated count" ]
+       ], [
+         fhir:index 261;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "31112-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Reticulocytes/100 erythrocytes in Blood by Manual" ]
+       ], [
+         fhir:index 262;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "17849-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Reticulocytes/100 erythrocytes in Blood by Automated count" ]
+       ], [
+         fhir:index 263;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4679-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Reticulocytes/100 erythrocytes in Blood" ]
+       ], [
+         fhir:index 264;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1751-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Albumin [Mass/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 265;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2862-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Albumin [Mass/volume] in Serum or Plasma by Electrophoresis" ]
+       ], [
+         fhir:index 266;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "61151-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Albumin [Mass/volume] in Serum or Plasma by Bromocresol green (BCG) dye binding method" ]
+       ], [
+         fhir:index 267;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "61152-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Albumin [Mass/volume] in Serum or Plasma by Bromocresol purple (BCP) dye binding method" ]
+       ], [
+         fhir:index 268;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1952-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Beta-2-Microglobulin [Mass/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 269;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "76484-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Beta-2-Microglobulin [Moles/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 270;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2276-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ferritin [Mass/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 271;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "24373-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ferritin [Mass/volume] in Blood" ]
+       ], [
+         fhir:index 272;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20567-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ferritin [Mass/volume] in Serum or Plasma by Immunoassay" ]
+       ], [
+         fhir:index 273;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11150-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blasts/100 cells in Bone marrow" ]
+       ], [
+         fhir:index 274;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "57028-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iron [Mass/mass] in Liver" ]
+       ], [
+         fhir:index 275;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2160-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Creatinine [Mass/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 276;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14682-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Creatinine [Moles/volume] in Serum or Plasma" ]
+       ], [
+         fhir:index 277;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77140-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Creatinine [Moles/volume] in Serum, Plasma or Blood" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-2022.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

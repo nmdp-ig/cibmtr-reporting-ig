@@ -5,3 +5,4 @@ Alias: $LNC = http://loinc.org
 Alias: $SCT = http://snomed.info/sct
 Alias: $CADSR = http://cdebrowser.nci.nih.gov
 Alias: $UCUM = http://unitsofmeasure.org 
+Alias: $RXNORM = http://www.nlm.nih.gov/research/umls/rxnorm 

@@ -1,0 +1,16 @@
+ValueSet: Defibrotide
+Id: med-defibrotide-vs
+Title: "RxNorm - Defibrotide"
+Description: "RxNorm codes for Defibrotide"
+* $RXNORM#1311089	"defibrotide"
+* $RXNORM#1746523	"defibrotide sodium"
+* $RXNORM#1746528	"Defitelio"
+* $RXNORM#1788946	"defibrotide, bovine lung"
+* $RXNORM#1746532	"2.5 ML defibrotide sodium 80 MG/ML Injection [Defitelio]"
+* $RXNORM#1746525	"defibrotide Injectable Product"
+* $RXNORM#1746526	"defibrotide Injection"
+* $RXNORM#1746530	"defibrotide Injection [Defitelio]"
+* $RXNORM#1746524	"defibrotide sodium 80 MG/ML"
+* $RXNORM#1746529	"defibrotide sodium 80 MG/ML [Defitelio]"
+* $RXNORM#1746534	"defibrotide sodium 80 MG/ML Injection [Defitelio]"
+* $RXNORM#1746531	"Defitelio Injectable Product"

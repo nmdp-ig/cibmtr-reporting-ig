@@ -1,0 +1,15 @@
+ValueSet: Fludarabine
+Id: med-fludarabine-vs
+Title: "RxNorm - Fludarabine"
+Description: "RxNorm codes for Fludarabine "
+* $RXNORM#24698	    "fludarabine"
+* $RXNORM#877487	"Oforta"
+* $RXNORM#1165043	"fludarabine Injectable Product"
+* $RXNORM#1740863	"fludarabine Injection"
+* $RXNORM#828708	"fludarabine Oral Capsule"
+* $RXNORM#1165044	"fludarabine Oral Product"
+* $RXNORM#393413	"fludarabine Oral Tablet"
+* $RXNORM#828705	"fludarabine phosphate 10 MG"
+* $RXNORM#328431	"fludarabine phosphate 25 MG/ML"
+* $RXNORM#1740862	"fludarabine phosphate 50 MG"
+* $RXNORM#1165045	"fludarabine Pill"

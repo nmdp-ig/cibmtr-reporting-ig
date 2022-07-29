@@ -1,0 +1,93 @@
+{
+  "resourceType": "ValueSet",
+  "id": "med-defibrotide-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1311089</td><td>defibrotide</td></tr><tr><td>1746523</td><td>defibrotide sodium</td></tr><tr><td>1746528</td><td>Defitelio</td></tr><tr><td>1788946</td><td>defibrotide, bovine lung</td></tr><tr><td>1746532</td><td>2.5 ML defibrotide sodium 80 MG/ML Injection [Defitelio]</td></tr><tr><td>1746525</td><td>defibrotide Injectable Product</td></tr><tr><td>1746526</td><td>defibrotide Injection</td></tr><tr><td>1746530</td><td>defibrotide Injection [Defitelio]</td></tr><tr><td>1746524</td><td>defibrotide sodium 80 MG/ML</td></tr><tr><td>1746529</td><td>defibrotide sodium 80 MG/ML [Defitelio]</td></tr><tr><td>1746534</td><td>defibrotide sodium 80 MG/ML Injection [Defitelio]</td></tr><tr><td>1746531</td><td>Defitelio Injectable Product</td></tr></table></li></ul></div>"
+  },
+  "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-defibrotide-vs",
+  "version": "0.1.4a",
+  "name": "Defibrotide",
+  "title": "RxNorm - Defibrotide",
+  "status": "active",
+  "date": "2022-07-29T15:34:16-05:00",
+  "publisher": "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+  "contact": [
+    {
+      "name": "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.cibmtr.org"
+        }
+      ]
+    },
+    {
+      "name": "Bob Milius",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "bmilius@nmdp.org"
+        }
+      ]
+    }
+  ],
+  "description": "RxNorm codes for Defibrotide",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "concept": [
+          {
+            "code": "1311089",
+            "display": "defibrotide"
+          },
+          {
+            "code": "1746523",
+            "display": "defibrotide sodium"
+          },
+          {
+            "code": "1746528",
+            "display": "Defitelio"
+          },
+          {
+            "code": "1788946",
+            "display": "defibrotide, bovine lung"
+          },
+          {
+            "code": "1746532",
+            "display": "2.5 ML defibrotide sodium 80 MG/ML Injection [Defitelio]"
+          },
+          {
+            "code": "1746525",
+            "display": "defibrotide Injectable Product"
+          },
+          {
+            "code": "1746526",
+            "display": "defibrotide Injection"
+          },
+          {
+            "code": "1746530",
+            "display": "defibrotide Injection [Defitelio]"
+          },
+          {
+            "code": "1746524",
+            "display": "defibrotide sodium 80 MG/ML"
+          },
+          {
+            "code": "1746529",
+            "display": "defibrotide sodium 80 MG/ML [Defitelio]"
+          },
+          {
+            "code": "1746534",
+            "display": "defibrotide sodium 80 MG/ML Injection [Defitelio]"
+          },
+          {
+            "code": "1746531",
+            "display": "Defitelio Injectable Product"
+          }
+        ]
+      }
+    ]
+  }
+}

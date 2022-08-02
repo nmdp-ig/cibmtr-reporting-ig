@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.24"}
-    h3,h4,h5,h6{--heading-prefix:"3.24"}</style>
+    <style type="text/css">h2{--heading-prefix:"8.25"}
+    h3,h4,h5,h6{--heading-prefix:"8.25"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -92,11 +92,33 @@
   <li>
     <a href="toc.html">Table of Contents</a>
   </li>
-  <li>
-    <a href="artifacts.html">Artifact Index</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Connection-Guide.html">Connection - R4</a>
+      </li>
+      <li>
+        <a href="CRID-Assignment.html">CRID Assignment</a>
+      </li>
+      <li>
+        <a href="Medications.html">Medications</a>
+      </li>
+      <li>
+        <a href="Laboratory-Observations.html">Lab Observations</a>
+      </li>
+      <li>
+        <a href="Form-2450.html">Form 2450</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR (STU3)</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
@@ -186,7 +208,7 @@
         
           Active
           
-            as of 2022-07-29
+            as of 2022-08-02
           
         
       </td>
@@ -215,14 +237,14 @@
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;med-cyclophosphamide-vs&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://www.nlm.nih.gov/research/umls/rxnorm\&quot;&gt;&lt;code&gt;http://www.nlm.nih.gov/research/umls/rxnorm&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3002&lt;/td&gt;&lt;td&gt;cyclophosphamide&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;202589&lt;/td&gt;&lt;td&gt;Cytoxan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;202588&lt;/td&gt;&lt;td&gt;Endoxana&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;CC0010583&lt;/td&gt;&lt;td&gt;cyclophosphamide&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1545988&lt;/td&gt;&lt;td&gt;cyclophosphamide anhydrous&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;221085&lt;/td&gt;&lt;td&gt;cyclophosphamide lyophilized&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1156180&lt;/td&gt;&lt;td&gt;cyclophosphamide / mannitol Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;377238&lt;/td&gt;&lt;td&gt;cyclophosphamide / mannitol Injectable Solution&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;358855&lt;/td&gt;&lt;td&gt;cyclophosphamide 10 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;563185&lt;/td&gt;&lt;td&gt;cyclophosphamide 10 MG [Endoxana]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;102948&lt;/td&gt;&lt;td&gt;cyclophosphamide 10 MG Oral Tablet [Endoxana]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;438828&lt;/td&gt;&lt;td&gt;cyclophosphamide 10 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1734918&lt;/td&gt;&lt;td&gt;cyclophosphamide 1000 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;329664&lt;/td&gt;&lt;td&gt;cyclophosphamide 20 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2386858&lt;/td&gt;&lt;td&gt;cyclophosphamide 200 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1734920&lt;/td&gt;&lt;td&gt;cyclophosphamide 2000 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;315746&lt;/td&gt;&lt;td&gt;cyclophosphamide 25 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;571074&lt;/td&gt;&lt;td&gt;cyclophosphamide 25 MG [Cytoxan]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;210570&lt;/td&gt;&lt;td&gt;cyclophosphamide 25 MG Oral Tablet [Cytoxan]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;438830&lt;/td&gt;&lt;td&gt;cyclophosphamide 5 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;315747&lt;/td&gt;&lt;td&gt;cyclophosphamide 50 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;571139&lt;/td&gt;&lt;td&gt;cyclophosphamide 50 MG [Cytoxan]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;564082&lt;/td&gt;&lt;td&gt;cyclophosphamide 50 MG [Endoxana]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;210639&lt;/td&gt;&lt;td&gt;cyclophosphamide 50 MG Oral Tablet [Cytoxan]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;105555&lt;/td&gt;&lt;td&gt;cyclophosphamide 50 MG Oral Tablet [Endoxana]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1734915&lt;/td&gt;&lt;td&gt;cyclophosphamide 500 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;438831&lt;/td&gt;&lt;td&gt;cyclophosphamide 7.5 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1156181&lt;/td&gt;&lt;td&gt;cyclophosphamide Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;376666&lt;/td&gt;&lt;td&gt;cyclophosphamide Injectable Solution&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1734916&lt;/td&gt;&lt;td&gt;cyclophosphamide Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1437967&lt;/td&gt;&lt;td&gt;cyclophosphamide Oral Capsule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1156182&lt;/td&gt;&lt;td&gt;cyclophosphamide Oral Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;371664&lt;/td&gt;&lt;td&gt;cyclophosphamide Oral Tablet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;367922&lt;/td&gt;&lt;td&gt;cyclophosphamide Oral Tablet [Cytoxan]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;368546&lt;/td&gt;&lt;td&gt;cyclophosphamide Oral Tablet [Endoxana]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1156183&lt;/td&gt;&lt;td&gt;cyclophosphamide Pill&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1174493&lt;/td&gt;&lt;td&gt;Cytoxan Oral Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1174494&lt;/td&gt;&lt;td&gt;Cytoxan Pill&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1176602&lt;/td&gt;&lt;td&gt;Endoxana Oral Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1176603&lt;/td&gt;&lt;td&gt;Endoxana Pill&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;690313&lt;/td&gt;&lt;td&gt;cyclophosphamide / mannitol&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://www.nlm.nih.gov/research/umls/rxnorm\&quot;&gt;&lt;code&gt;http://www.nlm.nih.gov/research/umls/rxnorm&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3002&lt;/td&gt;&lt;td&gt;cyclophosphamide&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;202589&lt;/td&gt;&lt;td&gt;Cytoxan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;202588&lt;/td&gt;&lt;td&gt;Endoxana&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1545988&lt;/td&gt;&lt;td&gt;cyclophosphamide anhydrous&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;221085&lt;/td&gt;&lt;td&gt;cyclophosphamide lyophilized&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1156180&lt;/td&gt;&lt;td&gt;cyclophosphamide / mannitol Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;377238&lt;/td&gt;&lt;td&gt;cyclophosphamide / mannitol Injectable Solution&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;358855&lt;/td&gt;&lt;td&gt;cyclophosphamide 10 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;563185&lt;/td&gt;&lt;td&gt;cyclophosphamide 10 MG [Endoxana]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;102948&lt;/td&gt;&lt;td&gt;cyclophosphamide 10 MG Oral Tablet [Endoxana]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;438828&lt;/td&gt;&lt;td&gt;cyclophosphamide 10 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1734918&lt;/td&gt;&lt;td&gt;cyclophosphamide 1000 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;329664&lt;/td&gt;&lt;td&gt;cyclophosphamide 20 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2386858&lt;/td&gt;&lt;td&gt;cyclophosphamide 200 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1734920&lt;/td&gt;&lt;td&gt;cyclophosphamide 2000 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;315746&lt;/td&gt;&lt;td&gt;cyclophosphamide 25 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;571074&lt;/td&gt;&lt;td&gt;cyclophosphamide 25 MG [Cytoxan]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;210570&lt;/td&gt;&lt;td&gt;cyclophosphamide 25 MG Oral Tablet [Cytoxan]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;438830&lt;/td&gt;&lt;td&gt;cyclophosphamide 5 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;315747&lt;/td&gt;&lt;td&gt;cyclophosphamide 50 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;571139&lt;/td&gt;&lt;td&gt;cyclophosphamide 50 MG [Cytoxan]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;564082&lt;/td&gt;&lt;td&gt;cyclophosphamide 50 MG [Endoxana]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;210639&lt;/td&gt;&lt;td&gt;cyclophosphamide 50 MG Oral Tablet [Cytoxan]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;105555&lt;/td&gt;&lt;td&gt;cyclophosphamide 50 MG Oral Tablet [Endoxana]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1734915&lt;/td&gt;&lt;td&gt;cyclophosphamide 500 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;438831&lt;/td&gt;&lt;td&gt;cyclophosphamide 7.5 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1156181&lt;/td&gt;&lt;td&gt;cyclophosphamide Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;376666&lt;/td&gt;&lt;td&gt;cyclophosphamide Injectable Solution&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1734916&lt;/td&gt;&lt;td&gt;cyclophosphamide Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1437967&lt;/td&gt;&lt;td&gt;cyclophosphamide Oral Capsule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1156182&lt;/td&gt;&lt;td&gt;cyclophosphamide Oral Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;371664&lt;/td&gt;&lt;td&gt;cyclophosphamide Oral Tablet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;367922&lt;/td&gt;&lt;td&gt;cyclophosphamide Oral Tablet [Cytoxan]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;368546&lt;/td&gt;&lt;td&gt;cyclophosphamide Oral Tablet [Endoxana]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1156183&lt;/td&gt;&lt;td&gt;cyclophosphamide Pill&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1174493&lt;/td&gt;&lt;td&gt;Cytoxan Oral Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1174494&lt;/td&gt;&lt;td&gt;Cytoxan Pill&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1176602&lt;/td&gt;&lt;td&gt;Endoxana Oral Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1176603&lt;/td&gt;&lt;td&gt;Endoxana Pill&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;690313&lt;/td&gt;&lt;td&gt;cyclophosphamide / mannitol&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
   ];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cyclophosphamide-vs&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;0.1.4a&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;RxNormCyclophosphamideVS&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;RxNorm - Cyclophosphamide&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2022-07-29T16:31:05-05:00&quot;^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2022-08-02T11:06:34-05:00&quot;^^xsd:dateTime];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;The Medical College of Wisconsin, Inc. and the National Marrow Donor Program&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -255,117 +277,114 @@
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;202588&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Endoxana&quot; ]       ], [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;CC0010583&quot; ];
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1545988&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide anhydrous&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 5;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;221085&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide lyophilized&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 6;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 5;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1156180&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide / mannitol Injectable Product&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 7;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 6;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;377238&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide / mannitol Injectable Solution&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 8;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 7;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;358855&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide 10 MG&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 9;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 8;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;563185&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide 10 MG [Endoxana]&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 10;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 9;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;102948&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide 10 MG Oral Tablet [Endoxana]&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 11;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 10;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;438828&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide 10 MG/ML&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 12;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 11;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1734918&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide 1000 MG&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 13;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 12;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;329664&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide 20 MG/ML&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 14;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 13;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2386858&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide 200 MG/ML&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 15;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 14;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1734920&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide 2000 MG&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 16;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 15;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;315746&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide 25 MG&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 17;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 16;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;571074&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide 25 MG [Cytoxan]&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 18;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 17;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;210570&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide 25 MG Oral Tablet [Cytoxan]&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 19;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 18;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;438830&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide 5 MG/ML&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 20;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 19;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;315747&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide 50 MG&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 21;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 20;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;571139&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide 50 MG [Cytoxan]&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 22;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 21;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;564082&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide 50 MG [Endoxana]&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 23;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 22;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;210639&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide 50 MG Oral Tablet [Cytoxan]&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 24;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 23;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;105555&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide 50 MG Oral Tablet [Endoxana]&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 25;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 24;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1734915&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide 500 MG&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 26;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 25;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;438831&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide 7.5 MG/ML&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 27;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 26;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1156181&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide Injectable Product&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 28;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 27;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;376666&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide Injectable Solution&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 29;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 28;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1734916&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide Injection&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 30;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 29;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1437967&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide Oral Capsule&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 31;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 30;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1156182&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide Oral Product&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 32;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 31;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;371664&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide Oral Tablet&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 33;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 32;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;367922&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide Oral Tablet [Cytoxan]&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 34;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 33;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;368546&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide Oral Tablet [Endoxana]&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 35;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 34;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1156183&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide Pill&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 36;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 35;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1174493&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Cytoxan Oral Product&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 37;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 36;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1174494&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Cytoxan Pill&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 38;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 37;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1176602&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Endoxana Oral Product&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 39;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 38;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1176603&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Endoxana Pill&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 40;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 39;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;690313&quot; ];
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cyclophosphamide / mannitol&quot; ]       ]     ]
   ].
@@ -405,7 +424,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.4a based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 29, 2022 16:31-0500">2022-07-29</span>
+    <br/>Package cibmtr-reporting#0.1.4a based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 2, 2022 11:06-0500">2022-08-02</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

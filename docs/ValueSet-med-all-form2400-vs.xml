@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="med-all-form2400-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-med-alemtuzumab-vs.html">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-alemtuzumab-vs</a></li><li>Import all the codes that are contained in <a href="ValueSet-med-anti-thymocyte-globulin-vs.html">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-anti-thymocyte-globulin-vs</a></li><li>Import all the codes that are contained in <a href="ValueSet-med-bortezomib-vs.html">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-bortezomib-vs</a></li><li>Import all the codes that are contained in <a href="ValueSet-med-busulfan-vs.html">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs</a></li><li>Import all the codes that are contained in <a href="ValueSet-med-carmustine-vs.html">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-carmustine-vs</a></li><li>Import all the codes that are contained in <a href="ValueSet-med-cyclophosphamide-vs.html">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cyclophosphamide-vs</a></li><li>Import all the codes that are contained in <a href="ValueSet-med-cytarabine-vs.html">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cytarabine-vs</a></li><li>Import all the codes that are contained in <a href="ValueSet-med-defibrotide-vs.html">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-defibrotide-vs</a></li><li>Import all the codes that are contained in <a href="ValueSet-med-etoposide-vs.html">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-etoposide-vs</a></li><li>Import all the codes that are contained in <a href="ValueSet-med-fludarabine-vs.html">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-fludarabine-vs</a></li><li>Import all the codes that are contained in <a href="ValueSet-med-melphalan-vs.html">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-melphalan-vs</a></li><li>Import all the codes that are contained in <a href="ValueSet-med-rituximab-vs.html">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-rituximab-vs</a></li><li>Import all the codes that are contained in <a href="ValueSet-med-thiotepa-vs.html">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-thiotepa-vs</a></li><li>Import all the codes that are contained in <a href="ValueSet-med-treosulfan-vs.html">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-treosulfan-vs</a></li><li>Import all the codes that are contained in <a href="ValueSet-med-ursodiol-vs.html">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-ursodiol-vs</a></li></ul></div>
+  </text>
+  <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-all-form2400-vs"/>
+  <version value="0.1.4a"/>
+  <name value="RxNormAll2400VS"/>
+  <title value="RxNorm - All of Form 2400"/>
+  <status value="active"/>
+  <date value="2022-08-02T11:06:34-05:00"/>
+  <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
+  <contact>
+    <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.cibmtr.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Milius"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bmilius@nmdp.org"/>
+    </telecom>
+  </contact>
+  <description value="RxNorm codes for all of Form 2400"/>
+  <compose>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-alemtuzumab-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-anti-thymocyte-globulin-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-bortezomib-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-carmustine-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cyclophosphamide-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cytarabine-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-defibrotide-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-etoposide-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-fludarabine-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-melphalan-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-rituximab-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-thiotepa-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-treosulfan-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-ursodiol-vs"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CIBMTRReporting"];
   fhir:ImplementationGuide.title [ fhir:value "CIBMTR Reporting Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-07-29T16:31:05-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-08-02T11:06:34-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -614,6 +614,20 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-all-form2400-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/med-all-form2400-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RxNorm - All of Form 2400" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for all of Form 2400" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-anti-thymocyte-globulin-vs>;
          fhir:Reference.reference [ fhir:value "ValueSet/med-anti-thymocyte-globulin-vs" ]
        ];
@@ -621,7 +635,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Anti-Thymocyte Globulin" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -635,7 +649,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Bortezomib" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -649,7 +663,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Busulfan" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 22;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -663,7 +677,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Carmustine" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 23;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -677,7 +691,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Cyclophosphamide " ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 24;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -691,7 +705,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Cytarabine" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 25;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -705,7 +719,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Defibrotide" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 26;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -719,7 +733,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Etoposide " ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 27;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -733,7 +747,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Fludarabine " ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 28;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -747,7 +761,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Melphalan " ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 29;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -761,7 +775,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Rituximab" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 30;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -775,7 +789,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Thiotepa" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 31;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -789,7 +803,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Treosulfan" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 32;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -803,7 +817,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "RxNorm codes for Ursodiol" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 33;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -817,7 +831,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Smear morphology panel - Blood (34994-4)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 34;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -831,7 +845,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NIH Common Data Elements for CIBMTR" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 35;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -845,7 +859,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NIH Common Data Element Value Meanings for CIBMTR" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 36;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -862,7 +876,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables>
        ]
      ], [
-       fhir:index 37;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -879,7 +893,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables>
        ]
      ], [
-       fhir:index 38;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -896,7 +910,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables>
        ]
      ], [
-       fhir:index 39;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -913,7 +927,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables>
        ]
      ], [
-       fhir:index 40;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -930,7 +944,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab>
        ]
      ], [
-       fhir:index 41;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -947,7 +961,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables>
        ]
      ], [
-       fhir:index 42;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -964,7 +978,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables>
        ]
      ], [
-       fhir:index 43;
+       fhir:index 44;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -981,7 +995,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient>
        ]
      ], [
-       fhir:index 44;
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -998,7 +1012,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient>
        ]
      ], [
-       fhir:index 45;
+       fhir:index 46;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1015,7 +1029,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient>
        ]
      ], [
-       fhir:index 46;
+       fhir:index 47;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1032,7 +1046,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient>
        ]
      ], [
-       fhir:index 47;
+       fhir:index 48;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1060,9 +1074,34 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Connection-Guide.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Connection Guide" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "CRID-Assignment.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "CRID Assignment" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Direct-FHIR-STU3.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Direct FHIR STU 3" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+       ], [
+         fhir:index 4;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Form-2450.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Form 2450" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 5;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Laboratory-Observations.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Laboratory Observations" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 6;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Medications.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Medications" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ];
      fhir:ImplementationGuide.definition.parameter [

@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "CIBMTRObsPriorityVariables"];
   fhir:StructureDefinition.title [ fhir:value "CIBMTR Observation Laboratory Results: Priority Variables"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-08-02T11:06:34-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-02T15:12:35-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -40,36 +40,31 @@
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;
-     fhir:StructureDefinition.mapping.identity [ fhir:value "argonaut-dq-dstu2" ];
-     fhir:StructureDefinition.mapping.uri [ fhir:value "http://unknown.org/Argonaut-DQ-DSTU2" ];
-     fhir:StructureDefinition.mapping.name [ fhir:value "Argonaut-DQ-DSTU2" ]
-  ], [
-     fhir:index 1;
      fhir:StructureDefinition.mapping.identity [ fhir:value "workflow" ];
      fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/fhir/workflow" ];
      fhir:StructureDefinition.mapping.name [ fhir:value "Workflow Pattern" ]
   ], [
-     fhir:index 2;
+     fhir:index 1;
      fhir:StructureDefinition.mapping.identity [ fhir:value "sct-concept" ];
      fhir:StructureDefinition.mapping.uri [ fhir:value "http://snomed.info/conceptdomain" ];
      fhir:StructureDefinition.mapping.name [ fhir:value "SNOMED CT Concept Domain Binding" ]
   ], [
-     fhir:index 3;
+     fhir:index 2;
      fhir:StructureDefinition.mapping.identity [ fhir:value "v2" ];
      fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/v2" ];
      fhir:StructureDefinition.mapping.name [ fhir:value "HL7 v2 Mapping" ]
   ], [
-     fhir:index 4;
+     fhir:index 3;
      fhir:StructureDefinition.mapping.identity [ fhir:value "rim" ];
      fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/v3" ];
      fhir:StructureDefinition.mapping.name [ fhir:value "RIM Mapping" ]
   ], [
-     fhir:index 5;
+     fhir:index 4;
      fhir:StructureDefinition.mapping.identity [ fhir:value "w5" ];
      fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/fhir/fivews" ];
      fhir:StructureDefinition.mapping.name [ fhir:value "FiveWs Pattern Mapping" ]
   ], [
-     fhir:index 6;
+     fhir:index 5;
      fhir:StructureDefinition.mapping.identity [ fhir:value "sct-attr" ];
      fhir:StructureDefinition.mapping.uri [ fhir:value "http://snomed.org/attributebinding" ];
      fhir:StructureDefinition.mapping.name [ fhir:value "SNOMED CT Attribute Binding" ]
@@ -2192,10 +2187,21 @@
        ];
        fhir:ElementDefinition.type [
          fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support" ];
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ];
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ], [
          fhir:index 1;
          fhir:ElementDefinition.type.code [ fhir:value "Period" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.type.code [ fhir:value "Timing" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.type.code [ fhir:value "instant" ]
        ];
        fhir:ElementDefinition.condition [
          fhir:value "us-core-1";
@@ -2217,7 +2223,7 @@
          fhir:ElementDefinition.constraint.key [ fhir:value "us-core-1" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "Datetime must be at least to day." ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "($this as dateTime).toString().length() >= 8" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "Observation.effectiveDateTime.exists() implies Observation.effectiveDateTime.toString().length() >= 8" ];
          fhir:ElementDefinition.constraint.xpath [ fhir:value "f:matches(effectiveDateTime,/\\d{4}-[01]\\d-[0-3]\\dT[0-2]\\d:[0-5]\\d([+-][0-2]\\d:[0-5]\\d|Z)/)" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab";
@@ -2372,7 +2378,7 @@
        fhir:Element.id [ fhir:value "Observation.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.value[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Result Value" ];
-       fhir:ElementDefinition.definition [ fhir:value "The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://hl7.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification." ];
+       fhir:ElementDefinition.definition [ fhir:value "The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD** be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults) if the concept exists. If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://hl7.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification." ];
        fhir:ElementDefinition.comment [ fhir:value "An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below." ];
        fhir:ElementDefinition.requirements [ fhir:value "An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -2384,12 +2390,27 @@
        ];
        fhir:ElementDefinition.type [
          fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support" ];
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ];
          fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
        ], [
          fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support" ];
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ];
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ], [
          fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support" ];
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ];
          fhir:ElementDefinition.type.code [ fhir:value "string" ]
        ], [
          fhir:index 3;

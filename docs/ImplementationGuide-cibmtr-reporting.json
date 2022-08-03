@@ -10,7 +10,7 @@
   "name": "CIBMTRReporting",
   "title": "CIBMTR Reporting Implementation Guide",
   "status": "draft",
-  "date": "2022-08-02T11:06:34-05:00",
+  "date": "2022-08-02T15:12:35-05:00",
   "publisher": "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact": [
     {
@@ -46,10 +46,16 @@
       "version": "3.1.0"
     },
     {
-      "id": "uscore",
+      "id": "hl7_fhir_us_core",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "packageId": "hl7.fhir.us.core",
-      "version": "3.1.1"
+      "version": "4.0.0"
+    },
+    {
+      "id": "mcode",
+      "uri": "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode",
+      "packageId": "hl7.fhir.us.mcode",
+      "version": "2.0.0"
     }
   ],
   "definition": {
@@ -395,6 +401,62 @@
         },
         "name": "CIBMTR Patient Profile (us-core)",
         "description": "CIBMTR Patient Profile for CRID assignment (us-core)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cibmtr-medication"
+        },
+        "name": "CIBMTR Medication (us-core)",
+        "description": "CIBMTR Medication (us-core)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cibmtr-medication-administration"
+        },
+        "name": "CIBMTR Medication Administration (mcode)",
+        "description": "CIBMTR Medication Administration (mcode)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cibmtr-medication-dispense"
+        },
+        "name": "CIBMTR Medication Dispense",
+        "description": "CIBMTR Medication Dispense",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cibmtr-medication-request"
+        },
+        "name": "CIBMTR Medication Request (mcode)",
+        "description": "CIBMTR Medication Request (mcode)",
         "exampleBoolean": false
       },
       {

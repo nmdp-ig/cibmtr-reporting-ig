@@ -10,7 +10,7 @@
   "name": "CIBMTRObsPriorityVariables",
   "title": "CIBMTR Observation Laboratory Results: Priority Variables",
   "status": "active",
-  "date": "2022-08-02T11:06:34-05:00",
+  "date": "2022-08-02T15:12:35-05:00",
   "publisher": "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact": [
     {
@@ -35,11 +35,6 @@
   "description": "CIBMTR Observation Laboratory Results: Priority Variables",
   "fhirVersion": "4.0.1",
   "mapping": [
-    {
-      "identity": "argonaut-dq-dstu2",
-      "uri": "http://unknown.org/Argonaut-DQ-DSTU2",
-      "name": "Argonaut-DQ-DSTU2"
-    },
     {
       "identity": "workflow",
       "uri": "http://hl7.org/fhir/workflow",
@@ -2048,10 +2043,22 @@
         },
         "type": [
           {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean": true
+              }
+            ],
             "code": "dateTime"
           },
           {
             "code": "Period"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "instant"
           }
         ],
         "condition": [
@@ -2070,7 +2077,7 @@
             "key": "us-core-1",
             "severity": "error",
             "human": "Datetime must be at least to day.",
-            "expression": "($this as dateTime).toString().length() >= 8",
+            "expression": "Observation.effectiveDateTime.exists() implies Observation.effectiveDateTime.toString().length() >= 8",
             "xpath": "f:matches(effectiveDateTime,/\\d{4}-[01]\\d-[0-3]\\dT[0-2]\\d:[0-5]\\d([+-][0-2]\\d:[0-5]\\d|Z)/)",
             "source": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
           }
@@ -2207,7 +2214,7 @@
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "short": "Result Value",
-        "definition": "The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://hl7.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification.",
+        "definition": "The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD** be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults) if the concept exists. If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://hl7.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification.",
         "comment": "An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below.",
         "requirements": "An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.",
         "min": 0,
@@ -2219,12 +2226,30 @@
         },
         "type": [
           {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean": true
+              }
+            ],
             "code": "Quantity"
           },
           {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean": true
+              }
+            ],
             "code": "CodeableConcept"
           },
           {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean": true
+              }
+            ],
             "code": "string"
           },
           {

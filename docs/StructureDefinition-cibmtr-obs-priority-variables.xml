@@ -13,7 +13,7 @@
   <name value="CIBMTRObsPriorityVariables"/>
   <title value="CIBMTR Observation Laboratory Results: Priority Variables"/>
   <status value="active"/>
-  <date value="2022-08-02T11:06:34-05:00"/>
+  <date value="2022-08-02T15:12:35-05:00"/>
   <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
   <contact>
     <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -31,11 +31,6 @@
   </contact>
   <description value="CIBMTR Observation Laboratory Results: Priority Variables"/>
   <fhirVersion value="4.0.1"/>
-  <mapping>
-    <identity value="argonaut-dq-dstu2"/>
-    <uri value="http://unknown.org/Argonaut-DQ-DSTU2"/>
-    <name value="Argonaut-DQ-DSTU2"/>
-  </mapping>
   <mapping>
     <identity value="workflow"/>
     <uri value="http://hl7.org/fhir/workflow"/>
@@ -1695,10 +1690,19 @@
         <max value="1"/>
       </base>
       <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+          <valueBoolean value="true"/>
+        </extension>
         <code value="dateTime"/>
       </type>
       <type>
         <code value="Period"/>
+      </type>
+      <type>
+        <code value="Timing"/>
+      </type>
+      <type>
+        <code value="instant"/>
       </type>
       <condition value="us-core-1"/>
       <constraint>
@@ -1713,7 +1717,7 @@
         <key value="us-core-1"/>
         <severity value="error"/>
         <human value="Datetime must be at least to day."/>
-        <expression value="($this as dateTime).toString().length() &gt;= 8"/>
+        <expression value="Observation.effectiveDateTime.exists() implies Observation.effectiveDateTime.toString().length() &gt;= 8"/>
         <xpath value="f:matches(effectiveDateTime,/\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)/)"/>
         <source value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
       </constraint>
@@ -1830,7 +1834,7 @@
     <element id="Observation.value[x]">
       <path value="Observation.value[x]"/>
       <short value="Result Value"/>
-      <definition value="The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://hl7.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification."/>
+      <definition value="The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD** be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults) if the concept exists. If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://hl7.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification."/>
       <comment value="An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below."/>
       <requirements value="An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations."/>
       <min value="0"/>
@@ -1841,12 +1845,21 @@
         <max value="1"/>
       </base>
       <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+          <valueBoolean value="true"/>
+        </extension>
         <code value="Quantity"/>
       </type>
       <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+          <valueBoolean value="true"/>
+        </extension>
         <code value="CodeableConcept"/>
       </type>
       <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+          <valueBoolean value="true"/>
+        </extension>
         <code value="string"/>
       </type>
       <type>

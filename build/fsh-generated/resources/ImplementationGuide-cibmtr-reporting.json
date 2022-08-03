@@ -35,10 +35,16 @@
   ],
   "dependsOn": [
     {
-      "id": "uscore",
       "packageId": "hl7.fhir.us.core",
+      "version": "4.0.0",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
-      "version": "3.1.1"
+      "id": "hl7_fhir_us_core"
+    },
+    {
+      "id": "mcode",
+      "packageId": "hl7.fhir.us.mcode",
+      "uri": "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode",
+      "version": "2.0.0"
     }
   ],
   "definition": {
@@ -65,6 +71,38 @@
         },
         "name": "CIBMTR Patient Profile (us-core)",
         "description": "CIBMTR Patient Profile for CRID assignment (us-core)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cibmtr-medication"
+        },
+        "name": "CIBMTR Medication (us-core)",
+        "description": "CIBMTR Medication (us-core)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cibmtr-medication-administration"
+        },
+        "name": "CIBMTR Medication Administration (mcode)",
+        "description": "CIBMTR Medication Administration (mcode)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cibmtr-medication-dispense"
+        },
+        "name": "CIBMTR Medication Dispense",
+        "description": "CIBMTR Medication Dispense",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cibmtr-medication-request"
+        },
+        "name": "CIBMTR Medication Request (mcode)",
+        "description": "CIBMTR Medication Request (mcode)",
         "exampleBoolean": false
       },
       {

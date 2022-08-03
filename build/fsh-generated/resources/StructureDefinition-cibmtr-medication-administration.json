@@ -1,0 +1,91 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cibmtr-medication-administration",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Medications"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration",
+  "version": "0.1.4a",
+  "name": "CIBMTR_MedicationAdministration",
+  "title": "CIBMTR Medication Administration (mcode)",
+  "status": "active",
+  "description": "CIBMTR Medication Administration (mcode)",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "w3c.prov",
+      "uri": "http://www.w3.org/ns/prov",
+      "name": "W3C PROV"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationAdministration",
+  "baseDefinition": "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationAdministration.meta.security",
+        "path": "MedicationAdministration.meta.security",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "description": "slicing on meta.security"
+        },
+        "min": 1
+      },
+      {
+        "id": "MedicationAdministration.meta.security:TransplantCenter",
+        "path": "MedicationAdministration.meta.security",
+        "sliceName": "TransplantCenter",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.meta.security:TransplantCenter.system",
+        "path": "MedicationAdministration.meta.security.system",
+        "min": 1,
+        "patternUri": "http://terminology.nmdp.org/codesystem/transplant-center"
+      },
+      {
+        "id": "MedicationAdministration.meta.security:TransplantCenter.code",
+        "path": "MedicationAdministration.meta.security.code",
+        "min": 1
+      }
+    ]
+  }
+}

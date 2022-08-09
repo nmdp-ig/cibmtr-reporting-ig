@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "med-all-form2400-vs"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-med-alemtuzumab-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-alemtuzumab-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-anti-thymocyte-globulin-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-anti-thymocyte-globulin-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-bortezomib-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-bortezomib-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-busulfan-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-carmustine-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-carmustine-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-cyclophosphamide-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cyclophosphamide-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-cytarabine-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cytarabine-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-defibrotide-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-defibrotide-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-etoposide-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-etoposide-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-fludarabine-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-fludarabine-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-melphalan-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-melphalan-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-rituximab-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-rituximab-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-thiotepa-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-thiotepa-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-treosulfan-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-treosulfan-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-ursodiol-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-ursodiol-vs</a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-med-addition-peri-transplant-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-addition-peri-transplant-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-gvhd-prophylaxis-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-mobilizing-agents-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-post-hct-disease-therapy-planned-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-post-hct-disease-therapy-planned-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-prep-regiment-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prep-regiment-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-prior-exposure-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prior-exposure-vs</a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-all-form2400-vs"];
   fhir:ValueSet.version [ fhir:value "0.1.4a"];
   fhir:ValueSet.name [ fhir:value "RxNormAll2400VS"];
   fhir:ValueSet.title [ fhir:value "RxNorm - All of Form 2400"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-08-02T15:12:35-05:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-08-09T16:48:03-05:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -41,107 +41,44 @@
      fhir:ValueSet.compose.include [
        fhir:index 0;
        fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-alemtuzumab-vs";
+         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-addition-peri-transplant-vs";
          fhir:index 0;
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-alemtuzumab-vs>
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-addition-peri-transplant-vs>
        ]
      ], [
        fhir:index 1;
        fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-anti-thymocyte-globulin-vs";
+         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs";
          fhir:index 0;
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-anti-thymocyte-globulin-vs>
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs>
        ]
      ], [
        fhir:index 2;
        fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-bortezomib-vs";
+         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs";
          fhir:index 0;
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-bortezomib-vs>
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs>
        ]
      ], [
        fhir:index 3;
        fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs";
+         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-post-hct-disease-therapy-planned-vs";
          fhir:index 0;
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs>
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-post-hct-disease-therapy-planned-vs>
        ]
      ], [
        fhir:index 4;
        fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-carmustine-vs";
+         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prep-regiment-vs";
          fhir:index 0;
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-carmustine-vs>
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prep-regiment-vs>
        ]
      ], [
        fhir:index 5;
        fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cyclophosphamide-vs";
+         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prior-exposure-vs";
          fhir:index 0;
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cyclophosphamide-vs>
-       ]
-     ], [
-       fhir:index 6;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cytarabine-vs";
-         fhir:index 0;
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cytarabine-vs>
-       ]
-     ], [
-       fhir:index 7;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-defibrotide-vs";
-         fhir:index 0;
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-defibrotide-vs>
-       ]
-     ], [
-       fhir:index 8;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-etoposide-vs";
-         fhir:index 0;
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-etoposide-vs>
-       ]
-     ], [
-       fhir:index 9;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-fludarabine-vs";
-         fhir:index 0;
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-fludarabine-vs>
-       ]
-     ], [
-       fhir:index 10;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-melphalan-vs";
-         fhir:index 0;
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-melphalan-vs>
-       ]
-     ], [
-       fhir:index 11;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-rituximab-vs";
-         fhir:index 0;
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-rituximab-vs>
-       ]
-     ], [
-       fhir:index 12;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-thiotepa-vs";
-         fhir:index 0;
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-thiotepa-vs>
-       ]
-     ], [
-       fhir:index 13;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-treosulfan-vs";
-         fhir:index 0;
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-treosulfan-vs>
-       ]
-     ], [
-       fhir:index 14;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-ursodiol-vs";
-         fhir:index 0;
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-ursodiol-vs>
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prior-exposure-vs>
        ]
      ]
   ] .

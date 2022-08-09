@@ -10,7 +10,7 @@
   "name": "CIBMTRReporting",
   "title": "CIBMTR Reporting Implementation Guide",
   "status": "draft",
-  "date": "2022-08-02T15:12:35-05:00",
+  "date": "2022-08-09T16:48:03-05:00",
   "publisher": "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact": [
     {
@@ -677,6 +677,20 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/med-addition-peri-transplant-vs"
+        },
+        "name": "RxNorm - Additional Drugs in Peri-Transplant Period",
+        "description": "RxNorm codes for Additional Drugs in Peri-Transplant Period",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/med-alemtuzumab-vs"
         },
         "name": "RxNorm - Alemtuzumab",
@@ -831,10 +845,80 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/med-gvhd-prophylaxis-vs"
+        },
+        "name": "RxNorm - GVHD Prophylaxis",
+        "description": "RxNorm codes for GVHD Prophylaxis",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/med-melphalan-vs"
         },
         "name": "RxNorm - Melphalan",
         "description": "RxNorm codes for Melphalan ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/med-mobilizing-agents-vs"
+        },
+        "name": "RxNorm - Mobilizing Agents (auto only)",
+        "description": "RxNorm codes for Mobilizing Agents (auto only)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/med-post-hct-disease-therapy-planned-vs"
+        },
+        "name": "RxNorm - Post-HCT Disease Therapy Planned",
+        "description": "RxNorm codes for Post-HCT Disease Therapy Planned",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/med-prep-regiment-vs"
+        },
+        "name": "RxNorm - Prep Regimen",
+        "description": "RxNorm codes for Prep Regimen",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/med-prior-exposure-vs"
+        },
+        "name": "RxNorm - Prior Exposure: Potential Study Eligibility",
+        "description": "Prior Exposure: Potential Study Eligibility",
         "exampleBoolean": false
       },
       {

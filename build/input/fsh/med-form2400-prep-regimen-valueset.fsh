@@ -1,5 +1,5 @@
 ValueSet: RxNormPrepRegimenVS
-Id: med-prep-regiment-vs
+Id: med-prep-regimen-vs
 Title: "RxNorm - Prep Regimen"
 Description: "RxNorm codes for Prep Regimen"
 * $RXNORM#1008080	"aspirin / methylprednisolone"

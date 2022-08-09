@@ -11,7 +11,7 @@
   <name value="CIBMTRReporting"/>
   <title value="CIBMTR Reporting Implementation Guide"/>
   <status value="draft"/>
-  <date value="2022-08-02T15:12:35-05:00"/>
+  <date value="2022-08-09T16:48:03-05:00"/>
   <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
   <contact>
     <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -478,6 +478,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/med-addition-peri-transplant-vs"/>
+      </reference>
+      <name value="RxNorm - Additional Drugs in Peri-Transplant Period"/>
+      <description value="RxNorm codes for Additional Drugs in Peri-Transplant Period"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/med-alemtuzumab-vs"/>
       </reference>
       <name value="RxNorm - Alemtuzumab"/>
@@ -599,10 +610,65 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/med-gvhd-prophylaxis-vs"/>
+      </reference>
+      <name value="RxNorm - GVHD Prophylaxis"/>
+      <description value="RxNorm codes for GVHD Prophylaxis"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/med-melphalan-vs"/>
       </reference>
       <name value="RxNorm - Melphalan"/>
       <description value="RxNorm codes for Melphalan "/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/med-mobilizing-agents-vs"/>
+      </reference>
+      <name value="RxNorm - Mobilizing Agents (auto only)"/>
+      <description value="RxNorm codes for Mobilizing Agents (auto only)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/med-post-hct-disease-therapy-planned-vs"/>
+      </reference>
+      <name value="RxNorm - Post-HCT Disease Therapy Planned"/>
+      <description value="RxNorm codes for Post-HCT Disease Therapy Planned"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/med-prep-regiment-vs"/>
+      </reference>
+      <name value="RxNorm - Prep Regimen"/>
+      <description value="RxNorm codes for Prep Regimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/med-prior-exposure-vs"/>
+      </reference>
+      <name value="RxNorm - Prior Exposure: Potential Study Eligibility"/>
+      <description value="Prior Exposure: Potential Study Eligibility"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

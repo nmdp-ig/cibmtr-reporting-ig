@@ -1,0 +1,2018 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-post-hct-disease-therapy-planned-vs> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "med-post-hct-disease-therapy-planned-vs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>10432</td><td>thalidomide</td></tr><tr><td>1045401</td><td>dasatinib 140 MG</td></tr><tr><td>1045402</td><td>dasatinib 140 MG Oral Tablet</td></tr><tr><td>1045403</td><td>dasatinib 140 MG [Sprycel]</td></tr><tr><td>1045404</td><td>dasatinib 140 MG Oral Tablet [Sprycel]</td></tr><tr><td>1045405</td><td>dasatinib 80 MG</td></tr><tr><td>1045406</td><td>dasatinib 80 MG Oral Tablet</td></tr><tr><td>1045407</td><td>dasatinib 80 MG [Sprycel]</td></tr><tr><td>1045408</td><td>dasatinib 80 MG Oral Tablet [Sprycel]</td></tr><tr><td>1147320</td><td>brentuximab vedotin</td></tr><tr><td>1147323</td><td>brentuximab vedotin 50 MG Injection</td></tr><tr><td>1147324</td><td>Adcetris</td></tr><tr><td>1147327</td><td>brentuximab vedotin 50 MG Injection [Adcetris]</td></tr><tr><td>1154999</td><td>azacitidine Injectable Product</td></tr><tr><td>1157186</td><td>dasatinib Oral Product</td></tr><tr><td>1157187</td><td>dasatinib Pill</td></tr><tr><td>1157195</td><td>decitabine Injectable Product</td></tr><tr><td>1157967</td><td>rituximab Injectable Product</td></tr><tr><td>1159691</td><td>sorafenib Oral Product</td></tr><tr><td>1159692</td><td>sorafenib Pill</td></tr><tr><td>1160679</td><td>imatinib Oral Product</td></tr><tr><td>1160680</td><td>imatinib Pill</td></tr><tr><td>1160852</td><td>sunitinib Oral Product</td></tr><tr><td>1160853</td><td>sunitinib Pill</td></tr><tr><td>1162569</td><td>lenalidomide Oral Product</td></tr><tr><td>1162570</td><td>lenalidomide Pill</td></tr><tr><td>1163075</td><td>bortezomib Injectable Product</td></tr><tr><td>1163087</td><td>brentuximab vedotin Injectable Product</td></tr><tr><td>1164873</td><td>thalidomide Oral Product</td></tr><tr><td>1164874</td><td>thalidomide Pill</td></tr><tr><td>1166941</td><td>Dacogen Injectable Product</td></tr><tr><td>1170611</td><td>Adcetris Injectable Product</td></tr><tr><td>1171230</td><td>Gleevec Oral Product</td></tr><tr><td>1171231</td><td>Gleevec Pill</td></tr><tr><td>1177781</td><td>Sprycel Oral Product</td></tr><tr><td>1177782</td><td>Sprycel Pill</td></tr><tr><td>1182522</td><td>Revlimid Oral Product</td></tr><tr><td>1182529</td><td>Revlimid Pill</td></tr><tr><td>1182862</td><td>Nexavar Oral Product</td></tr><tr><td>1182863</td><td>Nexavar Pill</td></tr><tr><td>1184929</td><td>Thalomid Oral Product</td></tr><tr><td>1184930</td><td>Thalomid Pill</td></tr><tr><td>1185345</td><td>Rituxan Injectable Product</td></tr><tr><td>1185474</td><td>Sutent Oral Product</td></tr><tr><td>1185475</td><td>Sutent Pill</td></tr><tr><td>1186581</td><td>Vidaza Injectable Product</td></tr><tr><td>1187756</td><td>Velcade Injectable Product</td></tr><tr><td>121191</td><td>rituximab</td></tr><tr><td>1242230</td><td>lenalidomide 2.5 MG</td></tr><tr><td>1242231</td><td>lenalidomide 2.5 MG Oral Capsule</td></tr><tr><td>1242232</td><td>lenalidomide 2.5 MG [Revlimid]</td></tr><tr><td>1242233</td><td>lenalidomide 2.5 MG Oral Capsule [Revlimid]</td></tr><tr><td>1251</td><td>azacitidine</td></tr><tr><td>1302966</td><td>carfilzomib</td></tr><tr><td>1302968</td><td>carfilzomib Injectable Product</td></tr><tr><td>1302971</td><td>Kyprolis</td></tr><tr><td>1302974</td><td>Kyprolis Injectable Product</td></tr><tr><td>1307619</td><td>bosutinib</td></tr><tr><td>1307620</td><td>bosutinib 100 MG</td></tr><tr><td>1307621</td><td>bosutinib Oral Product</td></tr><tr><td>1307622</td><td>bosutinib Pill</td></tr><tr><td>1307623</td><td>bosutinib Oral Tablet</td></tr><tr><td>1307624</td><td>bosutinib 100 MG Oral Tablet</td></tr><tr><td>1307625</td><td>Bosulif</td></tr><tr><td>1307626</td><td>bosutinib 100 MG [Bosulif]</td></tr><tr><td>1307627</td><td>bosutinib Oral Tablet [Bosulif]</td></tr><tr><td>1307628</td><td>Bosulif Oral Product</td></tr><tr><td>1307629</td><td>Bosulif Pill</td></tr><tr><td>1307630</td><td>bosutinib 100 MG Oral Tablet [Bosulif]</td></tr><tr><td>1307632</td><td>bosutinib 500 MG</td></tr><tr><td>1307633</td><td>bosutinib 500 MG Oral Tablet</td></tr><tr><td>1307634</td><td>bosutinib 500 MG [Bosulif]</td></tr><tr><td>1307635</td><td>bosutinib 500 MG Oral Tablet [Bosulif]</td></tr><tr><td>1314319</td><td>bosutinib monohydrate</td></tr><tr><td>1428946</td><td>lenalidomide 20 MG</td></tr><tr><td>1428947</td><td>lenalidomide 20 MG Oral Capsule</td></tr><tr><td>1429366</td><td>lenalidomide 20 MG [Revlimid]</td></tr><tr><td>1429367</td><td>lenalidomide 20 MG Oral Capsule [Revlimid]</td></tr><tr><td>1442690</td><td>obinutuzumab 25 MG/ML</td></tr><tr><td>1442691</td><td>obinutuzumab Injectable Product</td></tr><tr><td>1442693</td><td>40 ML obinutuzumab 25 MG/ML Injection</td></tr><tr><td>1442694</td><td>Gazyva</td></tr><tr><td>1442695</td><td>obinutuzumab 25 MG/ML [Gazyva]</td></tr><tr><td>1442697</td><td>Gazyva Injectable Product</td></tr><tr><td>1442698</td><td>40 ML obinutuzumab 25 MG/ML Injection [Gazyva]</td></tr><tr><td>1442981</td><td>ibrutinib</td></tr><tr><td>1442982</td><td>ibrutinib 140 MG</td></tr><tr><td>1442983</td><td>ibrutinib Oral Product</td></tr><tr><td>1442984</td><td>ibrutinib Pill</td></tr><tr><td>1442985</td><td>ibrutinib Oral Capsule</td></tr><tr><td>1442986</td><td>ibrutinib 140 MG Oral Capsule</td></tr><tr><td>1442987</td><td>Imbruvica</td></tr><tr><td>1442988</td><td>ibrutinib 140 MG [Imbruvica]</td></tr><tr><td>1442989</td><td>ibrutinib Oral Capsule [Imbruvica]</td></tr><tr><td>1442990</td><td>Imbruvica Oral Product</td></tr><tr><td>1442991</td><td>Imbruvica Pill</td></tr><tr><td>1442992</td><td>ibrutinib 140 MG Oral Capsule [Imbruvica]</td></tr><tr><td>1541889</td><td>sunitinib 37.5 MG</td></tr><tr><td>1541890</td><td>sunitinib 37.5 MG Oral Capsule</td></tr><tr><td>1541927</td><td>sunitinib 37.5 MG [Sutent]</td></tr><tr><td>1541928</td><td>sunitinib 37.5 MG Oral Capsule [Sutent]</td></tr><tr><td>1546019</td><td>dasatinib anhydrous</td></tr><tr><td>15657</td><td>decitabine</td></tr><tr><td>1597258</td><td>blinatumomab</td></tr><tr><td>1597260</td><td>blinatumomab Injectable Product</td></tr><tr><td>1597262</td><td>blinatumomab 0.035 MG Injection</td></tr><tr><td>1597263</td><td>Blincyto</td></tr><tr><td>1597266</td><td>Blincyto Injectable Product</td></tr><tr><td>1597267</td><td>blinatumomab 0.035 MG Injection [Blincyto]</td></tr><tr><td>1651249</td><td>blinatumomab 0.035 MG</td></tr><tr><td>1651250</td><td>blinatumomab Injection</td></tr><tr><td>1651252</td><td>blinatumomab 0.035 MG [Blincyto]</td></tr><tr><td>1651253</td><td>blinatumomab Injection [Blincyto]</td></tr><tr><td>1655961</td><td>brentuximab vedotin 50 MG</td></tr><tr><td>1655962</td><td>brentuximab vedotin Injection</td></tr><tr><td>1655964</td><td>brentuximab vedotin 50 MG [Adcetris]</td></tr><tr><td>1655965</td><td>brentuximab vedotin Injection [Adcetris]</td></tr><tr><td>1656294</td><td>obinutuzumab Injection</td></tr><tr><td>1656296</td><td>obinutuzumab Injection [Gazyva]</td></tr><tr><td>1657861</td><td>rituximab Injection</td></tr><tr><td>1657862</td><td>10 ML rituximab 10 MG/ML Injection</td></tr><tr><td>1657863</td><td>rituximab Injection [Rituxan]</td></tr><tr><td>1657864</td><td>10 ML rituximab 10 MG/ML Injection [Rituxan]</td></tr><tr><td>1657867</td><td>50 ML rituximab 10 MG/ML Injection</td></tr><tr><td>1657868</td><td>50 ML rituximab 10 MG/ML Injection [Rituxan]</td></tr><tr><td>1721947</td><td>daratumumab</td></tr><tr><td>1721948</td><td>daratumumab 20 MG/ML</td></tr><tr><td>1721949</td><td>daratumumab Injectable Product</td></tr><tr><td>1721950</td><td>daratumumab Injection</td></tr><tr><td>1721951</td><td>5 ML daratumumab 20 MG/ML Injection</td></tr><tr><td>1721952</td><td>Darzalex</td></tr><tr><td>1721953</td><td>daratumumab 20 MG/ML [Darzalex]</td></tr><tr><td>1721954</td><td>daratumumab Injection [Darzalex]</td></tr><tr><td>1721955</td><td>Darzalex Injectable Product</td></tr><tr><td>1721956</td><td>5 ML daratumumab 20 MG/ML Injection [Darzalex]</td></tr><tr><td>1723734</td><td>ixazomib citrate</td></tr><tr><td>1723735</td><td>ixazomib</td></tr><tr><td>1723753</td><td>ixazomib 2.3 MG</td></tr><tr><td>1723754</td><td>ixazomib Oral Product</td></tr><tr><td>1723755</td><td>ixazomib Pill</td></tr><tr><td>1723756</td><td>ixazomib Oral Capsule</td></tr><tr><td>1723757</td><td>ixazomib 2.3 MG Oral Capsule</td></tr><tr><td>1723758</td><td>Ninlaro</td></tr><tr><td>1723759</td><td>ixazomib 2.3 MG [Ninlaro]</td></tr><tr><td>1723760</td><td>ixazomib Oral Capsule [Ninlaro]</td></tr><tr><td>1723761</td><td>Ninlaro Oral Product</td></tr><tr><td>1723762</td><td>Ninlaro Pill</td></tr><tr><td>1723763</td><td>ixazomib 2.3 MG Oral Capsule [Ninlaro]</td></tr><tr><td>1723764</td><td>ixazomib 3 MG</td></tr><tr><td>1723765</td><td>ixazomib 3 MG Oral Capsule</td></tr><tr><td>1723766</td><td>ixazomib 3 MG [Ninlaro]</td></tr><tr><td>1723767</td><td>ixazomib 3 MG Oral Capsule [Ninlaro]</td></tr><tr><td>1723769</td><td>ixazomib 4 MG</td></tr><tr><td>1723770</td><td>ixazomib 4 MG Oral Capsule</td></tr><tr><td>1723771</td><td>ixazomib 4 MG [Ninlaro]</td></tr><tr><td>1723772</td><td>ixazomib 4 MG Oral Capsule [Ninlaro]</td></tr><tr><td>1726104</td><td>elotuzumab</td></tr><tr><td>1726107</td><td>elotuzumab 300 MG</td></tr><tr><td>1726108</td><td>elotuzumab Injectable Product</td></tr><tr><td>1726109</td><td>elotuzumab Injection</td></tr><tr><td>1726110</td><td>elotuzumab 300 MG Injection</td></tr><tr><td>1726111</td><td>Empliciti</td></tr><tr><td>1726112</td><td>elotuzumab 300 MG [Empliciti]</td></tr><tr><td>1726113</td><td>elotuzumab Injection [Empliciti]</td></tr><tr><td>1726114</td><td>Empliciti Injectable Product</td></tr><tr><td>1726115</td><td>elotuzumab 300 MG Injection [Empliciti]</td></tr><tr><td>1726116</td><td>elotuzumab 400 MG</td></tr><tr><td>1726117</td><td>elotuzumab 400 MG Injection</td></tr><tr><td>1726118</td><td>elotuzumab 400 MG [Empliciti]</td></tr><tr><td>1726119</td><td>elotuzumab 400 MG Injection [Empliciti]</td></tr><tr><td>1726439</td><td>20 ML daratumumab 20 MG/ML Injection</td></tr><tr><td>1726440</td><td>20 ML daratumumab 20 MG/ML Injection [Darzalex]</td></tr><tr><td>1726496</td><td>azacitidine 100 MG</td></tr><tr><td>1726497</td><td>azacitidine Injection</td></tr><tr><td>1726499</td><td>azacitidine 100 MG [Vidaza]</td></tr><tr><td>1726500</td><td>azacitidine Injection [Vidaza]</td></tr><tr><td>1804993</td><td>bortezomib 3.5 MG</td></tr><tr><td>1804994</td><td>bortezomib Injection</td></tr><tr><td>1804996</td><td>bortezomib 3.5 MG [Velcade]</td></tr><tr><td>1804997</td><td>bortezomib Injection [Velcade]</td></tr><tr><td>1806906</td><td>decitabine 50 MG</td></tr><tr><td>1806907</td><td>decitabine Injection</td></tr><tr><td>1806909</td><td>decitabine 50 MG [Dacogen]</td></tr><tr><td>1806910</td><td>decitabine Injection [Dacogen]</td></tr><tr><td>1806932</td><td>carfilzomib 30 MG</td></tr><tr><td>1806933</td><td>carfilzomib Injection</td></tr><tr><td>1806934</td><td>carfilzomib 30 MG Injection</td></tr><tr><td>1806935</td><td>carfilzomib 30 MG [Kyprolis]</td></tr><tr><td>1806936</td><td>carfilzomib Injection [Kyprolis]</td></tr><tr><td>1806937</td><td>carfilzomib 30 MG Injection [Kyprolis]</td></tr><tr><td>1806939</td><td>carfilzomib 60 MG</td></tr><tr><td>1806940</td><td>carfilzomib 60 MG Injection</td></tr><tr><td>1806941</td><td>carfilzomib 60 MG [Kyprolis]</td></tr><tr><td>1806942</td><td>carfilzomib 60 MG Injection [Kyprolis]</td></tr><tr><td>1919083</td><td>midostaurin</td></tr><tr><td>1919084</td><td>midostaurin 25 MG</td></tr><tr><td>1919085</td><td>midostaurin Oral Product</td></tr><tr><td>1919086</td><td>midostaurin Pill</td></tr><tr><td>1919087</td><td>midostaurin Oral Capsule</td></tr><tr><td>1919088</td><td>midostaurin 25 MG Oral Capsule</td></tr><tr><td>1919089</td><td>Rydapt</td></tr><tr><td>1919090</td><td>midostaurin 25 MG [Rydapt]</td></tr><tr><td>1919091</td><td>midostaurin Oral Capsule [Rydapt]</td></tr><tr><td>1919092</td><td>Rydapt Oral Product</td></tr><tr><td>1919093</td><td>Rydapt Pill</td></tr><tr><td>1919094</td><td>midostaurin 25 MG Oral Capsule [Rydapt]</td></tr><tr><td>1927881</td><td>rituximab 120 MG/ML</td></tr><tr><td>1927882</td><td>hyaluronidase / rituximab Injectable Product</td></tr><tr><td>1927883</td><td>hyaluronidase / rituximab Injection</td></tr><tr><td>1927884</td><td>hyaluronidase / rituximab</td></tr><tr><td>1927885</td><td>11.7 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection</td></tr><tr><td>1927886</td><td>Rituxan Hycela</td></tr><tr><td>1927887</td><td>hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML [Rituxan Hycela]</td></tr><tr><td>1927888</td><td>hyaluronidase / rituximab Injection [Rituxan Hycela]</td></tr><tr><td>1927889</td><td>Rituxan Hycela Injectable Product</td></tr><tr><td>1927890</td><td>11.7 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection [Rituxan Hycela]</td></tr><tr><td>1927893</td><td>13.4 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection</td></tr><tr><td>1927894</td><td>13.4 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection [Rituxan Hycela]</td></tr><tr><td>1940331</td><td>enasidenib mesylate</td></tr><tr><td>1940332</td><td>enasidenib</td></tr><tr><td>1940334</td><td>enasidenib Oral Product</td></tr><tr><td>1940335</td><td>enasidenib Pill</td></tr><tr><td>1940336</td><td>enasidenib Oral Tablet</td></tr><tr><td>1940338</td><td>Idhifa</td></tr><tr><td>1940340</td><td>enasidenib Oral Tablet [Idhifa]</td></tr><tr><td>1940341</td><td>Idhifa Oral Product</td></tr><tr><td>1940342</td><td>Idhifa Pill</td></tr><tr><td>1940369</td><td>enasidenib 100 MG</td></tr><tr><td>1940370</td><td>enasidenib 100 MG Oral Tablet</td></tr><tr><td>1940371</td><td>enasidenib 100 MG [Idhifa]</td></tr><tr><td>1940372</td><td>enasidenib 100 MG Oral Tablet [Idhifa]</td></tr><tr><td>1940373</td><td>enasidenib 50 MG</td></tr><tr><td>1940374</td><td>enasidenib 50 MG Oral Tablet</td></tr><tr><td>1940375</td><td>enasidenib 50 MG [Idhifa]</td></tr><tr><td>1940376</td><td>enasidenib 50 MG Oral Tablet [Idhifa]</td></tr><tr><td>1987732</td><td>bosutinib 400 MG Oral Tablet</td></tr><tr><td>1987734</td><td>bosutinib 400 MG Oral Tablet [Bosulif]</td></tr><tr><td>1988983</td><td>bosutinib 400 MG</td></tr><tr><td>1988985</td><td>bosutinib 400 MG [Bosulif]</td></tr><tr><td>1994359</td><td>ibrutinib 70 MG</td></tr><tr><td>1994360</td><td>ibrutinib 70 MG Oral Capsule</td></tr><tr><td>1994361</td><td>ibrutinib 70 MG [Imbruvica]</td></tr><tr><td>1994362</td><td>ibrutinib 70 MG Oral Capsule [Imbruvica]</td></tr><tr><td>2000016</td><td>ibrutinib Oral Tablet</td></tr><tr><td>2000017</td><td>ibrutinib 140 MG Oral Tablet</td></tr><tr><td>2000018</td><td>ibrutinib Oral Tablet [Imbruvica]</td></tr><tr><td>2000019</td><td>ibrutinib 140 MG Oral Tablet [Imbruvica]</td></tr><tr><td>2000020</td><td>ibrutinib 280 MG</td></tr><tr><td>2000021</td><td>ibrutinib 280 MG Oral Tablet</td></tr><tr><td>2000022</td><td>ibrutinib 280 MG [Imbruvica]</td></tr><tr><td>2000023</td><td>ibrutinib 280 MG Oral Tablet [Imbruvica]</td></tr><tr><td>2000024</td><td>ibrutinib 420 MG</td></tr><tr><td>2000025</td><td>ibrutinib 420 MG Oral Tablet</td></tr><tr><td>2000026</td><td>ibrutinib 420 MG [Imbruvica]</td></tr><tr><td>2000027</td><td>ibrutinib 420 MG Oral Tablet [Imbruvica]</td></tr><tr><td>2000028</td><td>ibrutinib 560 MG</td></tr><tr><td>2000029</td><td>ibrutinib 560 MG Oral Tablet</td></tr><tr><td>2000030</td><td>ibrutinib 560 MG [Imbruvica]</td></tr><tr><td>2000031</td><td>ibrutinib 560 MG Oral Tablet [Imbruvica]</td></tr><tr><td>200390</td><td>thalidomide 50 MG Oral Capsule</td></tr><tr><td>2046641</td><td>carfilzomib 10 MG</td></tr><tr><td>2046642</td><td>carfilzomib 10 MG Injection</td></tr><tr><td>2046643</td><td>carfilzomib 10 MG [Kyprolis]</td></tr><tr><td>2046644</td><td>carfilzomib 10 MG Injection [Kyprolis]</td></tr><tr><td>2049873</td><td>ivosidenib</td></tr><tr><td>2049874</td><td>ivosidenib 250 MG</td></tr><tr><td>2049875</td><td>ivosidenib Oral Product</td></tr><tr><td>2049876</td><td>ivosidenib Pill</td></tr><tr><td>2049877</td><td>ivosidenib Oral Tablet</td></tr><tr><td>2049878</td><td>ivosidenib 250 MG Oral Tablet</td></tr><tr><td>2049879</td><td>Tibsovo</td></tr><tr><td>2049880</td><td>ivosidenib 250 MG [Tibsovo]</td></tr><tr><td>2049881</td><td>ivosidenib Oral Tablet [Tibsovo]</td></tr><tr><td>2049882</td><td>Tibsovo Oral Product</td></tr><tr><td>2049883</td><td>Tibsovo Pill</td></tr><tr><td>2049884</td><td>ivosidenib 250 MG Oral Tablet [Tibsovo]</td></tr><tr><td>2105806</td><td>gilteritinib</td></tr><tr><td>2105807</td><td>gilteritinib 40 MG</td></tr><tr><td>2105808</td><td>gilteritinib Oral Product</td></tr><tr><td>2105809</td><td>gilteritinib Pill</td></tr><tr><td>2105810</td><td>gilteritinib Oral Tablet</td></tr><tr><td>2105811</td><td>gilteritinib 40 MG Oral Tablet</td></tr><tr><td>2105812</td><td>Xospata</td></tr><tr><td>2105813</td><td>gilteritinib 40 MG [Xospata]</td></tr><tr><td>2105814</td><td>gilteritinib Oral Tablet [Xospata]</td></tr><tr><td>2105815</td><td>Xospata Oral Product</td></tr><tr><td>2105816</td><td>Xospata Pill</td></tr><tr><td>2105817</td><td>gilteritinib 40 MG Oral Tablet [Xospata]</td></tr><tr><td>2105823</td><td>gilteritinib fumarate</td></tr><tr><td>2105824</td><td>rituximab-abbs</td></tr><tr><td>2105825</td><td>rituximab-abbs 10 MG/ML</td></tr><tr><td>2105826</td><td>10 ML rituximab-abbs 10 MG/ML Injection</td></tr><tr><td>2105827</td><td>Truxima</td></tr><tr><td>2105828</td><td>rituximab-abbs 10 MG/ML [Truxima]</td></tr><tr><td>2105829</td><td>rituximab Injection [Truxima]</td></tr><tr><td>2105830</td><td>Truxima Injectable Product</td></tr><tr><td>2105831</td><td>10 ML rituximab-abbs 10 MG/ML Injection [Truxima]</td></tr><tr><td>2105834</td><td>50 ML rituximab-abbs 10 MG/ML Injection</td></tr><tr><td>2105835</td><td>50 ML rituximab-abbs 10 MG/ML Injection [Truxima]</td></tr><tr><td>213360</td><td>thalidomide 50 MG Oral Capsule [Thalomid]</td></tr><tr><td>220239</td><td>Thalomid</td></tr><tr><td>226754</td><td>Rituxan</td></tr><tr><td>2273510</td><td>rituximab-pvvr</td></tr><tr><td>2273511</td><td>rituximab-pvvr 10 MG/ML</td></tr><tr><td>2273512</td><td>10 ML rituximab-pvvr 10 MG/ML Injection</td></tr><tr><td>2273513</td><td>Ruxience</td></tr><tr><td>2273514</td><td>rituximab-pvvr 10 MG/ML [Ruxience]</td></tr><tr><td>2273515</td><td>rituximab Injection [Ruxience]</td></tr><tr><td>2273516</td><td>Ruxience Injectable Product</td></tr><tr><td>2273517</td><td>10 ML rituximab-pvvr 10 MG/ML Injection [Ruxience]</td></tr><tr><td>2273520</td><td>50 ML rituximab-pvvr 10 MG/ML Injection</td></tr><tr><td>2273521</td><td>50 ML rituximab-pvvr 10 MG/ML Injection [Ruxience]</td></tr><tr><td>2372199</td><td>daratumumab / hyaluronidase</td></tr><tr><td>2375130</td><td>daratumumab-fihj</td></tr><tr><td>2375131</td><td>daratumumab-fihj 120 MG/ML</td></tr><tr><td>2375134</td><td>daratumumab / hyaluronidase Injectable Product</td></tr><tr><td>2375135</td><td>daratumumab / hyaluronidase Injection</td></tr><tr><td>2375136</td><td>15 ML daratumumab-fihj 120 MG/ML / hyaluronidase-fihj 2000 UNT/ML Injection</td></tr><tr><td>2375137</td><td>Darzalex Faspro</td></tr><tr><td>2375138</td><td>daratumumab-fihj 120 MG/ML / hyaluronidase-fihj 2000 UNT/ML [Darzalex Faspro]</td></tr><tr><td>2375139</td><td>daratumumab / hyaluronidase Injection [Darzalex Faspro]</td></tr><tr><td>2375140</td><td>Darzalex Faspro Injectable Product</td></tr><tr><td>2375141</td><td>15 ML daratumumab-fihj 120 MG/ML / hyaluronidase-fihj 2000 UNT/ML Injection [Darzalex Faspro]</td></tr><tr><td>2384452</td><td>decitabine 35 MG</td></tr><tr><td>2384453</td><td>cedazuridine / decitabine Oral Product</td></tr><tr><td>2384454</td><td>cedazuridine / decitabine Pill</td></tr><tr><td>2384455</td><td>cedazuridine / decitabine Oral Tablet</td></tr><tr><td>2384456</td><td>cedazuridine / decitabine</td></tr><tr><td>2384457</td><td>cedazuridine 100 MG / decitabine 35 MG Oral Tablet</td></tr><tr><td>2384458</td><td>{5 (cedazuridine 100 MG / decitabine 35 MG Oral Tablet) } Pack</td></tr><tr><td>2384459</td><td>Inqovi</td></tr><tr><td>2384460</td><td>cedazuridine 100 MG / decitabine 35 MG [Inqovi]</td></tr><tr><td>2384461</td><td>cedazuridine / decitabine Oral Tablet [Inqovi]</td></tr><tr><td>2384462</td><td>Inqovi Oral Product</td></tr><tr><td>2384463</td><td>Inqovi Pill</td></tr><tr><td>2384464</td><td>cedazuridine 100 MG / decitabine 35 MG Oral Tablet [Inqovi]</td></tr><tr><td>2384465</td><td>{5 (cedazuridine 100 MG / decitabine 35 MG Oral Tablet [Inqovi]) } Pack [Inqovi 5 Tablet Pack]</td></tr><tr><td>2396760</td><td>azacitidine 200 MG</td></tr><tr><td>2396761</td><td>azacitidine Oral Product</td></tr><tr><td>2396762</td><td>azacitidine Pill</td></tr><tr><td>2396763</td><td>azacitidine Oral Tablet</td></tr><tr><td>2396764</td><td>azacitidine 200 MG Oral Tablet</td></tr><tr><td>2396765</td><td>Onureg</td></tr><tr><td>2396766</td><td>azacitidine 200 MG [Onureg]</td></tr><tr><td>2396767</td><td>azacitidine Oral Tablet [Onureg]</td></tr><tr><td>2396768</td><td>Onureg Oral Product</td></tr><tr><td>2396769</td><td>Onureg Pill</td></tr><tr><td>2396770</td><td>azacitidine 200 MG Oral Tablet [Onureg]</td></tr><tr><td>2396771</td><td>azacitidine 300 MG</td></tr><tr><td>2396772</td><td>azacitidine 300 MG Oral Tablet</td></tr><tr><td>2396773</td><td>azacitidine 300 MG [Onureg]</td></tr><tr><td>2396774</td><td>azacitidine 300 MG Oral Tablet [Onureg]</td></tr><tr><td>2472325</td><td>rituximab-arrx</td></tr><tr><td>2472326</td><td>rituximab-arrx 10 MG/ML</td></tr><tr><td>2472327</td><td>10 ML rituximab-arrx 10 MG/ML Injection</td></tr><tr><td>2472328</td><td>Riabni</td></tr><tr><td>2472329</td><td>rituximab-arrx 10 MG/ML [Riabni]</td></tr><tr><td>2472330</td><td>rituximab Injection [Riabni]</td></tr><tr><td>2472331</td><td>Riabni Injectable Product</td></tr><tr><td>2472332</td><td>10 ML rituximab-arrx 10 MG/ML Injection [Riabni]</td></tr><tr><td>2472335</td><td>50 ML rituximab-arrx 10 MG/ML Injection</td></tr><tr><td>2472336</td><td>50 ML rituximab-arrx 10 MG/ML Injection [Riabni]</td></tr><tr><td>2595242</td><td>pacritinib citrate</td></tr><tr><td>2595243</td><td>pacritinib</td></tr><tr><td>2595244</td><td>pacritinib 100 MG</td></tr><tr><td>2595245</td><td>pacritinib Oral Product</td></tr><tr><td>2595246</td><td>pacritinib Pill</td></tr><tr><td>2595247</td><td>pacritinib Oral Capsule</td></tr><tr><td>2595248</td><td>pacritinib 100 MG Oral Capsule</td></tr><tr><td>2595249</td><td>Vonjo</td></tr><tr><td>2595250</td><td>pacritinib 100 MG [Vonjo]</td></tr><tr><td>2595251</td><td>Vonjo Oral Product</td></tr><tr><td>2595252</td><td>Vonjo Pill</td></tr><tr><td>2595253</td><td>pacritinib Oral Capsule [Vonjo]</td></tr><tr><td>2595254</td><td>pacritinib 100 MG Oral Capsule [Vonjo]</td></tr><tr><td>2601541</td><td>bortezomib 1 MG</td></tr><tr><td>2601542</td><td>bortezomib 1 MG Injection</td></tr><tr><td>2601543</td><td>bortezomib 2.5 MG</td></tr><tr><td>2601544</td><td>bortezomib 2.5 MG Injection</td></tr><tr><td>282386</td><td>Gleevec</td></tr><tr><td>282388</td><td>imatinib</td></tr><tr><td>284206</td><td>imatinib 100 MG Oral Capsule</td></tr><tr><td>316648</td><td>rituximab 10 MG/ML</td></tr><tr><td>316784</td><td>thalidomide 50 MG</td></tr><tr><td>331600</td><td>imatinib 100 MG</td></tr><tr><td>337535</td><td>Revlimid</td></tr><tr><td>342369</td><td>lenalidomide</td></tr><tr><td>356733</td><td>Velcade</td></tr><tr><td>357977</td><td>sunitinib</td></tr><tr><td>358258</td><td>bortezomib</td></tr><tr><td>360176</td><td>thalidomide 100 MG Oral Capsule</td></tr><tr><td>360177</td><td>thalidomide 200 MG Oral Capsule</td></tr><tr><td>360321</td><td>thalidomide 100 MG</td></tr><tr><td>360322</td><td>thalidomide 200 MG</td></tr><tr><td>366451</td><td>thalidomide Oral Capsule [Thalomid]</td></tr><tr><td>374072</td><td>thalidomide Oral Capsule</td></tr><tr><td>376335</td><td>imatinib Oral Capsule</td></tr><tr><td>402243</td><td>bortezomib 3.5 MG Injection</td></tr><tr><td>402244</td><td>bortezomib 3.5 MG Injection [Velcade]</td></tr><tr><td>403878</td><td>imatinib 100 MG Oral Tablet</td></tr><tr><td>403879</td><td>imatinib 400 MG Oral Tablet</td></tr><tr><td>404449</td><td>thalidomide 100 MG Oral Capsule [Thalomid]</td></tr><tr><td>404450</td><td>thalidomide 200 MG Oral Capsule [Thalomid]</td></tr><tr><td>404588</td><td>imatinib 100 MG Oral Tablet [Gleevec]</td></tr><tr><td>404589</td><td>imatinib 400 MG Oral Tablet [Gleevec]</td></tr><tr><td>406050</td><td>imatinib Oral Tablet</td></tr><tr><td>406051</td><td>imatinib 400 MG</td></tr><tr><td>406060</td><td>imatinib Oral Tablet [Gleevec]</td></tr><tr><td>411240</td><td>imatinib 50 MG Oral Capsule</td></tr><tr><td>440549</td><td>imatinib 50 MG</td></tr><tr><td>475342</td><td>dasatinib</td></tr><tr><td>483431</td><td>imatinib 400 MG Oral Capsule</td></tr><tr><td>485246</td><td>azacitidine 100 MG Injection</td></tr><tr><td>495881</td><td>sorafenib</td></tr><tr><td>545203</td><td>Vidaza</td></tr><tr><td>545206</td><td>azacitidine 100 MG Injection [Vidaza]</td></tr><tr><td>573051</td><td>rituximab 10 MG/ML [Rituxan]</td></tr><tr><td>573254</td><td>thalidomide 50 MG [Thalomid]</td></tr><tr><td>575017</td><td>imatinib 100 MG [Gleevec]</td></tr><tr><td>576406</td><td>thalidomide 100 MG [Thalomid]</td></tr><tr><td>576407</td><td>thalidomide 200 MG [Thalomid]</td></tr><tr><td>576514</td><td>imatinib 400 MG [Gleevec]</td></tr><tr><td>597744</td><td>sorafenib tosylate</td></tr><tr><td>597745</td><td>sorafenib 200 MG</td></tr><tr><td>597746</td><td>sorafenib Oral Tablet</td></tr><tr><td>597747</td><td>sorafenib 200 MG Oral Tablet</td></tr><tr><td>602908</td><td>lenalidomide 10 MG</td></tr><tr><td>602909</td><td>lenalidomide Oral Capsule</td></tr><tr><td>602910</td><td>lenalidomide 10 MG Oral Capsule</td></tr><tr><td>602911</td><td>lenalidomide 5 MG</td></tr><tr><td>602912</td><td>lenalidomide 5 MG Oral Capsule</td></tr><tr><td>615977</td><td>sorafenib 200 MG [Nexavar]</td></tr><tr><td>615978</td><td>sorafenib Oral Tablet [Nexavar]</td></tr><tr><td>615979</td><td>sorafenib 200 MG Oral Tablet [Nexavar]</td></tr><tr><td>616112</td><td>lenalidomide 10 MG [Revlimid]</td></tr><tr><td>616113</td><td>lenalidomide Oral Capsule [Revlimid]</td></tr><tr><td>616114</td><td>lenalidomide 10 MG Oral Capsule [Revlimid]</td></tr><tr><td>616115</td><td>lenalidomide 5 MG [Revlimid]</td></tr><tr><td>616116</td><td>lenalidomide 5 MG Oral Capsule [Revlimid]</td></tr><tr><td>616274</td><td>Sutent</td></tr><tr><td>616275</td><td>sunitinib malate</td></tr><tr><td>616277</td><td>sunitinib 12.5 MG</td></tr><tr><td>616278</td><td>sunitinib Oral Capsule</td></tr><tr><td>616279</td><td>sunitinib 12.5 MG Oral Capsule</td></tr><tr><td>616281</td><td>sunitinib 12.5 MG [Sutent]</td></tr><tr><td>616282</td><td>sunitinib Oral Capsule [Sutent]</td></tr><tr><td>616283</td><td>sunitinib 12.5 MG Oral Capsule [Sutent]</td></tr><tr><td>616284</td><td>sunitinib 25 MG</td></tr><tr><td>616285</td><td>sunitinib 25 MG Oral Capsule</td></tr><tr><td>616286</td><td>sunitinib 25 MG [Sutent]</td></tr><tr><td>616287</td><td>sunitinib 25 MG Oral Capsule [Sutent]</td></tr><tr><td>616288</td><td>sunitinib 50 MG</td></tr><tr><td>616289</td><td>sunitinib 50 MG Oral Capsule</td></tr><tr><td>616291</td><td>sunitinib 50 MG [Sutent]</td></tr><tr><td>616292</td><td>sunitinib 50 MG Oral Capsule [Sutent]</td></tr><tr><td>619985</td><td>Nexavar</td></tr><tr><td>636242</td><td>Dacogen</td></tr><tr><td>636631</td><td>decitabine 50 MG Injection</td></tr><tr><td>643103</td><td>dasatinib 20 MG</td></tr><tr><td>643104</td><td>dasatinib Oral Tablet</td></tr><tr><td>643105</td><td>dasatinib 20 MG Oral Tablet</td></tr><tr><td>643106</td><td>dasatinib 50 MG</td></tr><tr><td>643107</td><td>dasatinib 50 MG Oral Tablet</td></tr><tr><td>643108</td><td>dasatinib 70 MG</td></tr><tr><td>643109</td><td>dasatinib 70 MG Oral Tablet</td></tr><tr><td>643170</td><td>Sprycel</td></tr><tr><td>643171</td><td>dasatinib 20 MG [Sprycel]</td></tr><tr><td>643172</td><td>dasatinib Oral Tablet [Sprycel]</td></tr><tr><td>643173</td><td>dasatinib 20 MG Oral Tablet [Sprycel]</td></tr><tr><td>643174</td><td>dasatinib 50 MG [Sprycel]</td></tr><tr><td>643175</td><td>dasatinib 50 MG Oral Tablet [Sprycel]</td></tr><tr><td>643176</td><td>dasatinib 70 MG [Sprycel]</td></tr><tr><td>643177</td><td>dasatinib 70 MG Oral Tablet [Sprycel]</td></tr><tr><td>643711</td><td>lenalidomide 15 MG</td></tr><tr><td>643712</td><td>lenalidomide 15 MG Oral Capsule</td></tr><tr><td>643713</td><td>lenalidomide 15 MG [Revlimid]</td></tr><tr><td>643714</td><td>lenalidomide 15 MG Oral Capsule [Revlimid]</td></tr><tr><td>643719</td><td>lenalidomide 25 MG</td></tr><tr><td>643720</td><td>lenalidomide 25 MG Oral Capsule</td></tr><tr><td>643721</td><td>lenalidomide 25 MG [Revlimid]</td></tr><tr><td>643722</td><td>lenalidomide 25 MG Oral Capsule [Revlimid]</td></tr><tr><td>644989</td><td>decitabine 50 MG Injection [Dacogen]</td></tr><tr><td>700415</td><td>thalidomide 150 MG</td></tr><tr><td>700416</td><td>thalidomide 150 MG Oral Capsule</td></tr><tr><td>700417</td><td>thalidomide 150 MG [Thalomid]</td></tr><tr><td>700418</td><td>thalidomide 150 MG Oral Capsule [Thalomid]</td></tr><tr><td>799046</td><td>dasatinib 100 MG</td></tr><tr><td>799047</td><td>dasatinib 100 MG Oral Tablet</td></tr><tr><td>799829</td><td>dasatinib 100 MG [Sprycel]</td></tr><tr><td>799830</td><td>dasatinib 100 MG Oral Tablet [Sprycel]</td></tr><tr><td>974779</td><td>obinutuzumab</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-post-hct-disease-therapy-planned-vs"];
+  fhir:ValueSet.version [ fhir:value "0.1.4a"];
+  fhir:ValueSet.name [ fhir:value "RxNormPostHCTDiseaseTherapyPlannedVS"];
+  fhir:ValueSet.title [ fhir:value "RxNorm - Post-HCT Disease Therapy Planned"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2022-08-09T16:48:03-05:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.cibmtr.org" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Bob Milius" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "bmilius@nmdp.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "RxNorm codes for Post-HCT Disease Therapy Planned"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10432" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1045401" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 140 MG" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1045402" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 140 MG Oral Tablet" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1045403" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 140 MG [Sprycel]" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1045404" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 140 MG Oral Tablet [Sprycel]" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1045405" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 80 MG" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1045406" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 80 MG Oral Tablet" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1045407" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 80 MG [Sprycel]" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1045408" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 80 MG Oral Tablet [Sprycel]" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1147320" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "brentuximab vedotin" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1147323" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "brentuximab vedotin 50 MG Injection" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1147324" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Adcetris" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1147327" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "brentuximab vedotin 50 MG Injection [Adcetris]" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1154999" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "azacitidine Injectable Product" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1157186" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib Oral Product" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1157187" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib Pill" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1157195" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "decitabine Injectable Product" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1157967" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab Injectable Product" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1159691" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sorafenib Oral Product" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1159692" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sorafenib Pill" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1160679" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "imatinib Oral Product" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1160680" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "imatinib Pill" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1160852" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib Oral Product" ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1160853" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib Pill" ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1162569" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide Oral Product" ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1162570" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide Pill" ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1163075" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bortezomib Injectable Product" ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1163087" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "brentuximab vedotin Injectable Product" ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1164873" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide Oral Product" ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1164874" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide Pill" ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1166941" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dacogen Injectable Product" ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1170611" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Adcetris Injectable Product" ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1171230" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gleevec Oral Product" ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1171231" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gleevec Pill" ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1177781" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sprycel Oral Product" ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1177782" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sprycel Pill" ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1182522" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Revlimid Oral Product" ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1182529" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Revlimid Pill" ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1182862" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nexavar Oral Product" ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1182863" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nexavar Pill" ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1184929" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thalomid Oral Product" ]
+       ], [
+         fhir:index 41;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1184930" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thalomid Pill" ]
+       ], [
+         fhir:index 42;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1185345" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rituxan Injectable Product" ]
+       ], [
+         fhir:index 43;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1185474" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sutent Oral Product" ]
+       ], [
+         fhir:index 44;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1185475" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sutent Pill" ]
+       ], [
+         fhir:index 45;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1186581" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vidaza Injectable Product" ]
+       ], [
+         fhir:index 46;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1187756" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Velcade Injectable Product" ]
+       ], [
+         fhir:index 47;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "121191" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab" ]
+       ], [
+         fhir:index 48;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1242230" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 2.5 MG" ]
+       ], [
+         fhir:index 49;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1242231" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 2.5 MG Oral Capsule" ]
+       ], [
+         fhir:index 50;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1242232" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 2.5 MG [Revlimid]" ]
+       ], [
+         fhir:index 51;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1242233" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 2.5 MG Oral Capsule [Revlimid]" ]
+       ], [
+         fhir:index 52;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1251" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "azacitidine" ]
+       ], [
+         fhir:index 53;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1302966" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "carfilzomib" ]
+       ], [
+         fhir:index 54;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1302968" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "carfilzomib Injectable Product" ]
+       ], [
+         fhir:index 55;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1302971" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kyprolis" ]
+       ], [
+         fhir:index 56;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1302974" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kyprolis Injectable Product" ]
+       ], [
+         fhir:index 57;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1307619" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bosutinib" ]
+       ], [
+         fhir:index 58;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1307620" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bosutinib 100 MG" ]
+       ], [
+         fhir:index 59;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1307621" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bosutinib Oral Product" ]
+       ], [
+         fhir:index 60;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1307622" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bosutinib Pill" ]
+       ], [
+         fhir:index 61;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1307623" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bosutinib Oral Tablet" ]
+       ], [
+         fhir:index 62;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1307624" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bosutinib 100 MG Oral Tablet" ]
+       ], [
+         fhir:index 63;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1307625" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bosulif" ]
+       ], [
+         fhir:index 64;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1307626" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bosutinib 100 MG [Bosulif]" ]
+       ], [
+         fhir:index 65;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1307627" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bosutinib Oral Tablet [Bosulif]" ]
+       ], [
+         fhir:index 66;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1307628" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bosulif Oral Product" ]
+       ], [
+         fhir:index 67;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1307629" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bosulif Pill" ]
+       ], [
+         fhir:index 68;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1307630" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bosutinib 100 MG Oral Tablet [Bosulif]" ]
+       ], [
+         fhir:index 69;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1307632" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bosutinib 500 MG" ]
+       ], [
+         fhir:index 70;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1307633" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bosutinib 500 MG Oral Tablet" ]
+       ], [
+         fhir:index 71;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1307634" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bosutinib 500 MG [Bosulif]" ]
+       ], [
+         fhir:index 72;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1307635" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bosutinib 500 MG Oral Tablet [Bosulif]" ]
+       ], [
+         fhir:index 73;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1314319" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bosutinib monohydrate" ]
+       ], [
+         fhir:index 74;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1428946" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 20 MG" ]
+       ], [
+         fhir:index 75;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1428947" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 20 MG Oral Capsule" ]
+       ], [
+         fhir:index 76;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1429366" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 20 MG [Revlimid]" ]
+       ], [
+         fhir:index 77;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1429367" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 20 MG Oral Capsule [Revlimid]" ]
+       ], [
+         fhir:index 78;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442690" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "obinutuzumab 25 MG/ML" ]
+       ], [
+         fhir:index 79;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442691" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "obinutuzumab Injectable Product" ]
+       ], [
+         fhir:index 80;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442693" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "40 ML obinutuzumab 25 MG/ML Injection" ]
+       ], [
+         fhir:index 81;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442694" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gazyva" ]
+       ], [
+         fhir:index 82;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442695" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "obinutuzumab 25 MG/ML [Gazyva]" ]
+       ], [
+         fhir:index 83;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442697" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gazyva Injectable Product" ]
+       ], [
+         fhir:index 84;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442698" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "40 ML obinutuzumab 25 MG/ML Injection [Gazyva]" ]
+       ], [
+         fhir:index 85;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442981" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib" ]
+       ], [
+         fhir:index 86;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442982" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 140 MG" ]
+       ], [
+         fhir:index 87;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442983" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib Oral Product" ]
+       ], [
+         fhir:index 88;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442984" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib Pill" ]
+       ], [
+         fhir:index 89;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442985" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib Oral Capsule" ]
+       ], [
+         fhir:index 90;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442986" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 140 MG Oral Capsule" ]
+       ], [
+         fhir:index 91;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442987" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Imbruvica" ]
+       ], [
+         fhir:index 92;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442988" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 140 MG [Imbruvica]" ]
+       ], [
+         fhir:index 93;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442989" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib Oral Capsule [Imbruvica]" ]
+       ], [
+         fhir:index 94;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442990" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Imbruvica Oral Product" ]
+       ], [
+         fhir:index 95;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442991" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Imbruvica Pill" ]
+       ], [
+         fhir:index 96;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442992" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 140 MG Oral Capsule [Imbruvica]" ]
+       ], [
+         fhir:index 97;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1541889" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib 37.5 MG" ]
+       ], [
+         fhir:index 98;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1541890" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib 37.5 MG Oral Capsule" ]
+       ], [
+         fhir:index 99;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1541927" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib 37.5 MG [Sutent]" ]
+       ], [
+         fhir:index 100;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1541928" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib 37.5 MG Oral Capsule [Sutent]" ]
+       ], [
+         fhir:index 101;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1546019" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib anhydrous" ]
+       ], [
+         fhir:index 102;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15657" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "decitabine" ]
+       ], [
+         fhir:index 103;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1597258" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "blinatumomab" ]
+       ], [
+         fhir:index 104;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1597260" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "blinatumomab Injectable Product" ]
+       ], [
+         fhir:index 105;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1597262" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "blinatumomab 0.035 MG Injection" ]
+       ], [
+         fhir:index 106;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1597263" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blincyto" ]
+       ], [
+         fhir:index 107;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1597266" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blincyto Injectable Product" ]
+       ], [
+         fhir:index 108;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1597267" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "blinatumomab 0.035 MG Injection [Blincyto]" ]
+       ], [
+         fhir:index 109;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1651249" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "blinatumomab 0.035 MG" ]
+       ], [
+         fhir:index 110;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1651250" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "blinatumomab Injection" ]
+       ], [
+         fhir:index 111;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1651252" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "blinatumomab 0.035 MG [Blincyto]" ]
+       ], [
+         fhir:index 112;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1651253" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "blinatumomab Injection [Blincyto]" ]
+       ], [
+         fhir:index 113;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1655961" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "brentuximab vedotin 50 MG" ]
+       ], [
+         fhir:index 114;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1655962" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "brentuximab vedotin Injection" ]
+       ], [
+         fhir:index 115;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1655964" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "brentuximab vedotin 50 MG [Adcetris]" ]
+       ], [
+         fhir:index 116;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1655965" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "brentuximab vedotin Injection [Adcetris]" ]
+       ], [
+         fhir:index 117;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1656294" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "obinutuzumab Injection" ]
+       ], [
+         fhir:index 118;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1656296" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "obinutuzumab Injection [Gazyva]" ]
+       ], [
+         fhir:index 119;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1657861" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab Injection" ]
+       ], [
+         fhir:index 120;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1657862" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "10 ML rituximab 10 MG/ML Injection" ]
+       ], [
+         fhir:index 121;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1657863" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab Injection [Rituxan]" ]
+       ], [
+         fhir:index 122;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1657864" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "10 ML rituximab 10 MG/ML Injection [Rituxan]" ]
+       ], [
+         fhir:index 123;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1657867" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "50 ML rituximab 10 MG/ML Injection" ]
+       ], [
+         fhir:index 124;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1657868" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "50 ML rituximab 10 MG/ML Injection [Rituxan]" ]
+       ], [
+         fhir:index 125;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1721947" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "daratumumab" ]
+       ], [
+         fhir:index 126;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1721948" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "daratumumab 20 MG/ML" ]
+       ], [
+         fhir:index 127;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1721949" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "daratumumab Injectable Product" ]
+       ], [
+         fhir:index 128;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1721950" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "daratumumab Injection" ]
+       ], [
+         fhir:index 129;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1721951" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "5 ML daratumumab 20 MG/ML Injection" ]
+       ], [
+         fhir:index 130;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1721952" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Darzalex" ]
+       ], [
+         fhir:index 131;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1721953" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "daratumumab 20 MG/ML [Darzalex]" ]
+       ], [
+         fhir:index 132;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1721954" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "daratumumab Injection [Darzalex]" ]
+       ], [
+         fhir:index 133;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1721955" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Darzalex Injectable Product" ]
+       ], [
+         fhir:index 134;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1721956" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "5 ML daratumumab 20 MG/ML Injection [Darzalex]" ]
+       ], [
+         fhir:index 135;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723734" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ixazomib citrate" ]
+       ], [
+         fhir:index 136;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723735" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ixazomib" ]
+       ], [
+         fhir:index 137;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723753" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ixazomib 2.3 MG" ]
+       ], [
+         fhir:index 138;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723754" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ixazomib Oral Product" ]
+       ], [
+         fhir:index 139;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723755" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ixazomib Pill" ]
+       ], [
+         fhir:index 140;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723756" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ixazomib Oral Capsule" ]
+       ], [
+         fhir:index 141;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723757" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ixazomib 2.3 MG Oral Capsule" ]
+       ], [
+         fhir:index 142;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723758" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ninlaro" ]
+       ], [
+         fhir:index 143;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723759" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ixazomib 2.3 MG [Ninlaro]" ]
+       ], [
+         fhir:index 144;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723760" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ixazomib Oral Capsule [Ninlaro]" ]
+       ], [
+         fhir:index 145;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723761" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ninlaro Oral Product" ]
+       ], [
+         fhir:index 146;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723762" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ninlaro Pill" ]
+       ], [
+         fhir:index 147;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723763" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ixazomib 2.3 MG Oral Capsule [Ninlaro]" ]
+       ], [
+         fhir:index 148;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723764" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ixazomib 3 MG" ]
+       ], [
+         fhir:index 149;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723765" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ixazomib 3 MG Oral Capsule" ]
+       ], [
+         fhir:index 150;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723766" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ixazomib 3 MG [Ninlaro]" ]
+       ], [
+         fhir:index 151;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723767" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ixazomib 3 MG Oral Capsule [Ninlaro]" ]
+       ], [
+         fhir:index 152;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723769" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ixazomib 4 MG" ]
+       ], [
+         fhir:index 153;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723770" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ixazomib 4 MG Oral Capsule" ]
+       ], [
+         fhir:index 154;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723771" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ixazomib 4 MG [Ninlaro]" ]
+       ], [
+         fhir:index 155;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1723772" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ixazomib 4 MG Oral Capsule [Ninlaro]" ]
+       ], [
+         fhir:index 156;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1726104" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "elotuzumab" ]
+       ], [
+         fhir:index 157;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1726107" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "elotuzumab 300 MG" ]
+       ], [
+         fhir:index 158;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1726108" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "elotuzumab Injectable Product" ]
+       ], [
+         fhir:index 159;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1726109" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "elotuzumab Injection" ]
+       ], [
+         fhir:index 160;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1726110" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "elotuzumab 300 MG Injection" ]
+       ], [
+         fhir:index 161;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1726111" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Empliciti" ]
+       ], [
+         fhir:index 162;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1726112" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "elotuzumab 300 MG [Empliciti]" ]
+       ], [
+         fhir:index 163;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1726113" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "elotuzumab Injection [Empliciti]" ]
+       ], [
+         fhir:index 164;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1726114" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Empliciti Injectable Product" ]
+       ], [
+         fhir:index 165;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1726115" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "elotuzumab 300 MG Injection [Empliciti]" ]
+       ], [
+         fhir:index 166;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1726116" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "elotuzumab 400 MG" ]
+       ], [
+         fhir:index 167;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1726117" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "elotuzumab 400 MG Injection" ]
+       ], [
+         fhir:index 168;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1726118" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "elotuzumab 400 MG [Empliciti]" ]
+       ], [
+         fhir:index 169;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1726119" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "elotuzumab 400 MG Injection [Empliciti]" ]
+       ], [
+         fhir:index 170;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1726439" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "20 ML daratumumab 20 MG/ML Injection" ]
+       ], [
+         fhir:index 171;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1726440" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "20 ML daratumumab 20 MG/ML Injection [Darzalex]" ]
+       ], [
+         fhir:index 172;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1726496" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "azacitidine 100 MG" ]
+       ], [
+         fhir:index 173;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1726497" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "azacitidine Injection" ]
+       ], [
+         fhir:index 174;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1726499" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "azacitidine 100 MG [Vidaza]" ]
+       ], [
+         fhir:index 175;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1726500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "azacitidine Injection [Vidaza]" ]
+       ], [
+         fhir:index 176;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1804993" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bortezomib 3.5 MG" ]
+       ], [
+         fhir:index 177;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1804994" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bortezomib Injection" ]
+       ], [
+         fhir:index 178;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1804996" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bortezomib 3.5 MG [Velcade]" ]
+       ], [
+         fhir:index 179;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1804997" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bortezomib Injection [Velcade]" ]
+       ], [
+         fhir:index 180;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1806906" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "decitabine 50 MG" ]
+       ], [
+         fhir:index 181;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1806907" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "decitabine Injection" ]
+       ], [
+         fhir:index 182;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1806909" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "decitabine 50 MG [Dacogen]" ]
+       ], [
+         fhir:index 183;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1806910" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "decitabine Injection [Dacogen]" ]
+       ], [
+         fhir:index 184;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1806932" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "carfilzomib 30 MG" ]
+       ], [
+         fhir:index 185;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1806933" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "carfilzomib Injection" ]
+       ], [
+         fhir:index 186;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1806934" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "carfilzomib 30 MG Injection" ]
+       ], [
+         fhir:index 187;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1806935" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "carfilzomib 30 MG [Kyprolis]" ]
+       ], [
+         fhir:index 188;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1806936" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "carfilzomib Injection [Kyprolis]" ]
+       ], [
+         fhir:index 189;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1806937" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "carfilzomib 30 MG Injection [Kyprolis]" ]
+       ], [
+         fhir:index 190;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1806939" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "carfilzomib 60 MG" ]
+       ], [
+         fhir:index 191;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1806940" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "carfilzomib 60 MG Injection" ]
+       ], [
+         fhir:index 192;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1806941" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "carfilzomib 60 MG [Kyprolis]" ]
+       ], [
+         fhir:index 193;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1806942" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "carfilzomib 60 MG Injection [Kyprolis]" ]
+       ], [
+         fhir:index 194;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1919083" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "midostaurin" ]
+       ], [
+         fhir:index 195;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1919084" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "midostaurin 25 MG" ]
+       ], [
+         fhir:index 196;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1919085" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "midostaurin Oral Product" ]
+       ], [
+         fhir:index 197;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1919086" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "midostaurin Pill" ]
+       ], [
+         fhir:index 198;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1919087" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "midostaurin Oral Capsule" ]
+       ], [
+         fhir:index 199;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1919088" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "midostaurin 25 MG Oral Capsule" ]
+       ], [
+         fhir:index 200;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1919089" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rydapt" ]
+       ], [
+         fhir:index 201;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1919090" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "midostaurin 25 MG [Rydapt]" ]
+       ], [
+         fhir:index 202;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1919091" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "midostaurin Oral Capsule [Rydapt]" ]
+       ], [
+         fhir:index 203;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1919092" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rydapt Oral Product" ]
+       ], [
+         fhir:index 204;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1919093" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rydapt Pill" ]
+       ], [
+         fhir:index 205;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1919094" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "midostaurin 25 MG Oral Capsule [Rydapt]" ]
+       ], [
+         fhir:index 206;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927881" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab 120 MG/ML" ]
+       ], [
+         fhir:index 207;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927882" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "hyaluronidase / rituximab Injectable Product" ]
+       ], [
+         fhir:index 208;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927883" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "hyaluronidase / rituximab Injection" ]
+       ], [
+         fhir:index 209;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927884" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "hyaluronidase / rituximab" ]
+       ], [
+         fhir:index 210;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927885" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "11.7 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection" ]
+       ], [
+         fhir:index 211;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927886" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rituxan Hycela" ]
+       ], [
+         fhir:index 212;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927887" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML [Rituxan Hycela]" ]
+       ], [
+         fhir:index 213;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927888" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "hyaluronidase / rituximab Injection [Rituxan Hycela]" ]
+       ], [
+         fhir:index 214;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927889" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rituxan Hycela Injectable Product" ]
+       ], [
+         fhir:index 215;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927890" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "11.7 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection [Rituxan Hycela]" ]
+       ], [
+         fhir:index 216;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927893" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "13.4 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection" ]
+       ], [
+         fhir:index 217;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927894" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "13.4 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection [Rituxan Hycela]" ]
+       ], [
+         fhir:index 218;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1940331" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "enasidenib mesylate" ]
+       ], [
+         fhir:index 219;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1940332" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "enasidenib" ]
+       ], [
+         fhir:index 220;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1940334" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "enasidenib Oral Product" ]
+       ], [
+         fhir:index 221;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1940335" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "enasidenib Pill" ]
+       ], [
+         fhir:index 222;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1940336" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "enasidenib Oral Tablet" ]
+       ], [
+         fhir:index 223;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1940338" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Idhifa" ]
+       ], [
+         fhir:index 224;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1940340" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "enasidenib Oral Tablet [Idhifa]" ]
+       ], [
+         fhir:index 225;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1940341" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Idhifa Oral Product" ]
+       ], [
+         fhir:index 226;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1940342" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Idhifa Pill" ]
+       ], [
+         fhir:index 227;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1940369" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "enasidenib 100 MG" ]
+       ], [
+         fhir:index 228;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1940370" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "enasidenib 100 MG Oral Tablet" ]
+       ], [
+         fhir:index 229;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1940371" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "enasidenib 100 MG [Idhifa]" ]
+       ], [
+         fhir:index 230;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1940372" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "enasidenib 100 MG Oral Tablet [Idhifa]" ]
+       ], [
+         fhir:index 231;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1940373" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "enasidenib 50 MG" ]
+       ], [
+         fhir:index 232;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1940374" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "enasidenib 50 MG Oral Tablet" ]
+       ], [
+         fhir:index 233;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1940375" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "enasidenib 50 MG [Idhifa]" ]
+       ], [
+         fhir:index 234;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1940376" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "enasidenib 50 MG Oral Tablet [Idhifa]" ]
+       ], [
+         fhir:index 235;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1987732" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bosutinib 400 MG Oral Tablet" ]
+       ], [
+         fhir:index 236;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1987734" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bosutinib 400 MG Oral Tablet [Bosulif]" ]
+       ], [
+         fhir:index 237;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1988983" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bosutinib 400 MG" ]
+       ], [
+         fhir:index 238;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1988985" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bosutinib 400 MG [Bosulif]" ]
+       ], [
+         fhir:index 239;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1994359" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 70 MG" ]
+       ], [
+         fhir:index 240;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1994360" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 70 MG Oral Capsule" ]
+       ], [
+         fhir:index 241;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1994361" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 70 MG [Imbruvica]" ]
+       ], [
+         fhir:index 242;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1994362" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 70 MG Oral Capsule [Imbruvica]" ]
+       ], [
+         fhir:index 243;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2000016" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib Oral Tablet" ]
+       ], [
+         fhir:index 244;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2000017" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 140 MG Oral Tablet" ]
+       ], [
+         fhir:index 245;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2000018" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib Oral Tablet [Imbruvica]" ]
+       ], [
+         fhir:index 246;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2000019" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 140 MG Oral Tablet [Imbruvica]" ]
+       ], [
+         fhir:index 247;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2000020" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 280 MG" ]
+       ], [
+         fhir:index 248;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2000021" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 280 MG Oral Tablet" ]
+       ], [
+         fhir:index 249;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2000022" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 280 MG [Imbruvica]" ]
+       ], [
+         fhir:index 250;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2000023" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 280 MG Oral Tablet [Imbruvica]" ]
+       ], [
+         fhir:index 251;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2000024" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 420 MG" ]
+       ], [
+         fhir:index 252;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2000025" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 420 MG Oral Tablet" ]
+       ], [
+         fhir:index 253;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2000026" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 420 MG [Imbruvica]" ]
+       ], [
+         fhir:index 254;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2000027" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 420 MG Oral Tablet [Imbruvica]" ]
+       ], [
+         fhir:index 255;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2000028" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 560 MG" ]
+       ], [
+         fhir:index 256;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2000029" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 560 MG Oral Tablet" ]
+       ], [
+         fhir:index 257;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2000030" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 560 MG [Imbruvica]" ]
+       ], [
+         fhir:index 258;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2000031" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ibrutinib 560 MG Oral Tablet [Imbruvica]" ]
+       ], [
+         fhir:index 259;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "200390" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide 50 MG Oral Capsule" ]
+       ], [
+         fhir:index 260;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2046641" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "carfilzomib 10 MG" ]
+       ], [
+         fhir:index 261;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2046642" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "carfilzomib 10 MG Injection" ]
+       ], [
+         fhir:index 262;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2046643" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "carfilzomib 10 MG [Kyprolis]" ]
+       ], [
+         fhir:index 263;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2046644" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "carfilzomib 10 MG Injection [Kyprolis]" ]
+       ], [
+         fhir:index 264;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2049873" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ivosidenib" ]
+       ], [
+         fhir:index 265;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2049874" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ivosidenib 250 MG" ]
+       ], [
+         fhir:index 266;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2049875" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ivosidenib Oral Product" ]
+       ], [
+         fhir:index 267;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2049876" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ivosidenib Pill" ]
+       ], [
+         fhir:index 268;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2049877" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ivosidenib Oral Tablet" ]
+       ], [
+         fhir:index 269;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2049878" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ivosidenib 250 MG Oral Tablet" ]
+       ], [
+         fhir:index 270;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2049879" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tibsovo" ]
+       ], [
+         fhir:index 271;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2049880" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ivosidenib 250 MG [Tibsovo]" ]
+       ], [
+         fhir:index 272;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2049881" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ivosidenib Oral Tablet [Tibsovo]" ]
+       ], [
+         fhir:index 273;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2049882" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tibsovo Oral Product" ]
+       ], [
+         fhir:index 274;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2049883" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tibsovo Pill" ]
+       ], [
+         fhir:index 275;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2049884" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ivosidenib 250 MG Oral Tablet [Tibsovo]" ]
+       ], [
+         fhir:index 276;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105806" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "gilteritinib" ]
+       ], [
+         fhir:index 277;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105807" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "gilteritinib 40 MG" ]
+       ], [
+         fhir:index 278;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105808" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "gilteritinib Oral Product" ]
+       ], [
+         fhir:index 279;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105809" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "gilteritinib Pill" ]
+       ], [
+         fhir:index 280;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105810" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "gilteritinib Oral Tablet" ]
+       ], [
+         fhir:index 281;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105811" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "gilteritinib 40 MG Oral Tablet" ]
+       ], [
+         fhir:index 282;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105812" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Xospata" ]
+       ], [
+         fhir:index 283;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105813" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "gilteritinib 40 MG [Xospata]" ]
+       ], [
+         fhir:index 284;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105814" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "gilteritinib Oral Tablet [Xospata]" ]
+       ], [
+         fhir:index 285;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105815" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Xospata Oral Product" ]
+       ], [
+         fhir:index 286;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105816" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Xospata Pill" ]
+       ], [
+         fhir:index 287;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105817" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "gilteritinib 40 MG Oral Tablet [Xospata]" ]
+       ], [
+         fhir:index 288;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105823" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "gilteritinib fumarate" ]
+       ], [
+         fhir:index 289;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105824" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab-abbs" ]
+       ], [
+         fhir:index 290;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105825" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab-abbs 10 MG/ML" ]
+       ], [
+         fhir:index 291;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105826" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "10 ML rituximab-abbs 10 MG/ML Injection" ]
+       ], [
+         fhir:index 292;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105827" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Truxima" ]
+       ], [
+         fhir:index 293;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105828" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab-abbs 10 MG/ML [Truxima]" ]
+       ], [
+         fhir:index 294;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105829" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab Injection [Truxima]" ]
+       ], [
+         fhir:index 295;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105830" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Truxima Injectable Product" ]
+       ], [
+         fhir:index 296;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105831" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "10 ML rituximab-abbs 10 MG/ML Injection [Truxima]" ]
+       ], [
+         fhir:index 297;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105834" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "50 ML rituximab-abbs 10 MG/ML Injection" ]
+       ], [
+         fhir:index 298;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105835" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "50 ML rituximab-abbs 10 MG/ML Injection [Truxima]" ]
+       ], [
+         fhir:index 299;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "213360" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide 50 MG Oral Capsule [Thalomid]" ]
+       ], [
+         fhir:index 300;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "220239" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thalomid" ]
+       ], [
+         fhir:index 301;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "226754" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rituxan" ]
+       ], [
+         fhir:index 302;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2273510" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab-pvvr" ]
+       ], [
+         fhir:index 303;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2273511" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab-pvvr 10 MG/ML" ]
+       ], [
+         fhir:index 304;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2273512" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "10 ML rituximab-pvvr 10 MG/ML Injection" ]
+       ], [
+         fhir:index 305;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2273513" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ruxience" ]
+       ], [
+         fhir:index 306;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2273514" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab-pvvr 10 MG/ML [Ruxience]" ]
+       ], [
+         fhir:index 307;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2273515" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab Injection [Ruxience]" ]
+       ], [
+         fhir:index 308;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2273516" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ruxience Injectable Product" ]
+       ], [
+         fhir:index 309;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2273517" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "10 ML rituximab-pvvr 10 MG/ML Injection [Ruxience]" ]
+       ], [
+         fhir:index 310;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2273520" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "50 ML rituximab-pvvr 10 MG/ML Injection" ]
+       ], [
+         fhir:index 311;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2273521" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "50 ML rituximab-pvvr 10 MG/ML Injection [Ruxience]" ]
+       ], [
+         fhir:index 312;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2372199" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "daratumumab / hyaluronidase" ]
+       ], [
+         fhir:index 313;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2375130" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "daratumumab-fihj" ]
+       ], [
+         fhir:index 314;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2375131" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "daratumumab-fihj 120 MG/ML" ]
+       ], [
+         fhir:index 315;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2375134" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "daratumumab / hyaluronidase Injectable Product" ]
+       ], [
+         fhir:index 316;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2375135" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "daratumumab / hyaluronidase Injection" ]
+       ], [
+         fhir:index 317;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2375136" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "15 ML daratumumab-fihj 120 MG/ML / hyaluronidase-fihj 2000 UNT/ML Injection" ]
+       ], [
+         fhir:index 318;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2375137" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Darzalex Faspro" ]
+       ], [
+         fhir:index 319;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2375138" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "daratumumab-fihj 120 MG/ML / hyaluronidase-fihj 2000 UNT/ML [Darzalex Faspro]" ]
+       ], [
+         fhir:index 320;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2375139" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "daratumumab / hyaluronidase Injection [Darzalex Faspro]" ]
+       ], [
+         fhir:index 321;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2375140" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Darzalex Faspro Injectable Product" ]
+       ], [
+         fhir:index 322;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2375141" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "15 ML daratumumab-fihj 120 MG/ML / hyaluronidase-fihj 2000 UNT/ML Injection [Darzalex Faspro]" ]
+       ], [
+         fhir:index 323;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2384452" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "decitabine 35 MG" ]
+       ], [
+         fhir:index 324;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2384453" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "cedazuridine / decitabine Oral Product" ]
+       ], [
+         fhir:index 325;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2384454" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "cedazuridine / decitabine Pill" ]
+       ], [
+         fhir:index 326;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2384455" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "cedazuridine / decitabine Oral Tablet" ]
+       ], [
+         fhir:index 327;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2384456" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "cedazuridine / decitabine" ]
+       ], [
+         fhir:index 328;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2384457" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "cedazuridine 100 MG / decitabine 35 MG Oral Tablet" ]
+       ], [
+         fhir:index 329;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2384458" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "{5 (cedazuridine 100 MG / decitabine 35 MG Oral Tablet) } Pack" ]
+       ], [
+         fhir:index 330;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2384459" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inqovi" ]
+       ], [
+         fhir:index 331;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2384460" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "cedazuridine 100 MG / decitabine 35 MG [Inqovi]" ]
+       ], [
+         fhir:index 332;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2384461" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "cedazuridine / decitabine Oral Tablet [Inqovi]" ]
+       ], [
+         fhir:index 333;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2384462" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inqovi Oral Product" ]
+       ], [
+         fhir:index 334;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2384463" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inqovi Pill" ]
+       ], [
+         fhir:index 335;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2384464" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "cedazuridine 100 MG / decitabine 35 MG Oral Tablet [Inqovi]" ]
+       ], [
+         fhir:index 336;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2384465" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "{5 (cedazuridine 100 MG / decitabine 35 MG Oral Tablet [Inqovi]) } Pack [Inqovi 5 Tablet Pack]" ]
+       ], [
+         fhir:index 337;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2396760" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "azacitidine 200 MG" ]
+       ], [
+         fhir:index 338;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2396761" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "azacitidine Oral Product" ]
+       ], [
+         fhir:index 339;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2396762" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "azacitidine Pill" ]
+       ], [
+         fhir:index 340;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2396763" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "azacitidine Oral Tablet" ]
+       ], [
+         fhir:index 341;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2396764" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "azacitidine 200 MG Oral Tablet" ]
+       ], [
+         fhir:index 342;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2396765" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Onureg" ]
+       ], [
+         fhir:index 343;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2396766" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "azacitidine 200 MG [Onureg]" ]
+       ], [
+         fhir:index 344;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2396767" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "azacitidine Oral Tablet [Onureg]" ]
+       ], [
+         fhir:index 345;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2396768" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Onureg Oral Product" ]
+       ], [
+         fhir:index 346;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2396769" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Onureg Pill" ]
+       ], [
+         fhir:index 347;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2396770" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "azacitidine 200 MG Oral Tablet [Onureg]" ]
+       ], [
+         fhir:index 348;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2396771" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "azacitidine 300 MG" ]
+       ], [
+         fhir:index 349;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2396772" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "azacitidine 300 MG Oral Tablet" ]
+       ], [
+         fhir:index 350;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2396773" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "azacitidine 300 MG [Onureg]" ]
+       ], [
+         fhir:index 351;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2396774" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "azacitidine 300 MG Oral Tablet [Onureg]" ]
+       ], [
+         fhir:index 352;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2472325" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab-arrx" ]
+       ], [
+         fhir:index 353;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2472326" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab-arrx 10 MG/ML" ]
+       ], [
+         fhir:index 354;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2472327" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "10 ML rituximab-arrx 10 MG/ML Injection" ]
+       ], [
+         fhir:index 355;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2472328" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Riabni" ]
+       ], [
+         fhir:index 356;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2472329" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab-arrx 10 MG/ML [Riabni]" ]
+       ], [
+         fhir:index 357;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2472330" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab Injection [Riabni]" ]
+       ], [
+         fhir:index 358;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2472331" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Riabni Injectable Product" ]
+       ], [
+         fhir:index 359;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2472332" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "10 ML rituximab-arrx 10 MG/ML Injection [Riabni]" ]
+       ], [
+         fhir:index 360;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2472335" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "50 ML rituximab-arrx 10 MG/ML Injection" ]
+       ], [
+         fhir:index 361;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2472336" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "50 ML rituximab-arrx 10 MG/ML Injection [Riabni]" ]
+       ], [
+         fhir:index 362;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595242" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pacritinib citrate" ]
+       ], [
+         fhir:index 363;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595243" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pacritinib" ]
+       ], [
+         fhir:index 364;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595244" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pacritinib 100 MG" ]
+       ], [
+         fhir:index 365;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595245" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pacritinib Oral Product" ]
+       ], [
+         fhir:index 366;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595246" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pacritinib Pill" ]
+       ], [
+         fhir:index 367;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595247" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pacritinib Oral Capsule" ]
+       ], [
+         fhir:index 368;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595248" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pacritinib 100 MG Oral Capsule" ]
+       ], [
+         fhir:index 369;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595249" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vonjo" ]
+       ], [
+         fhir:index 370;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595250" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pacritinib 100 MG [Vonjo]" ]
+       ], [
+         fhir:index 371;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595251" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vonjo Oral Product" ]
+       ], [
+         fhir:index 372;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595252" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vonjo Pill" ]
+       ], [
+         fhir:index 373;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595253" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pacritinib Oral Capsule [Vonjo]" ]
+       ], [
+         fhir:index 374;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595254" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pacritinib 100 MG Oral Capsule [Vonjo]" ]
+       ], [
+         fhir:index 375;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2601541" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bortezomib 1 MG" ]
+       ], [
+         fhir:index 376;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2601542" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bortezomib 1 MG Injection" ]
+       ], [
+         fhir:index 377;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2601543" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bortezomib 2.5 MG" ]
+       ], [
+         fhir:index 378;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2601544" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bortezomib 2.5 MG Injection" ]
+       ], [
+         fhir:index 379;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "282386" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gleevec" ]
+       ], [
+         fhir:index 380;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "282388" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "imatinib" ]
+       ], [
+         fhir:index 381;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "284206" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "imatinib 100 MG Oral Capsule" ]
+       ], [
+         fhir:index 382;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "316648" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab 10 MG/ML" ]
+       ], [
+         fhir:index 383;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "316784" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide 50 MG" ]
+       ], [
+         fhir:index 384;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "331600" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "imatinib 100 MG" ]
+       ], [
+         fhir:index 385;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "337535" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Revlimid" ]
+       ], [
+         fhir:index 386;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "342369" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide" ]
+       ], [
+         fhir:index 387;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "356733" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Velcade" ]
+       ], [
+         fhir:index 388;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "357977" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib" ]
+       ], [
+         fhir:index 389;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "358258" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bortezomib" ]
+       ], [
+         fhir:index 390;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "360176" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide 100 MG Oral Capsule" ]
+       ], [
+         fhir:index 391;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "360177" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide 200 MG Oral Capsule" ]
+       ], [
+         fhir:index 392;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "360321" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide 100 MG" ]
+       ], [
+         fhir:index 393;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "360322" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide 200 MG" ]
+       ], [
+         fhir:index 394;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "366451" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide Oral Capsule [Thalomid]" ]
+       ], [
+         fhir:index 395;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "374072" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide Oral Capsule" ]
+       ], [
+         fhir:index 396;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "376335" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "imatinib Oral Capsule" ]
+       ], [
+         fhir:index 397;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "402243" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bortezomib 3.5 MG Injection" ]
+       ], [
+         fhir:index 398;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "402244" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bortezomib 3.5 MG Injection [Velcade]" ]
+       ], [
+         fhir:index 399;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "403878" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "imatinib 100 MG Oral Tablet" ]
+       ], [
+         fhir:index 400;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "403879" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "imatinib 400 MG Oral Tablet" ]
+       ], [
+         fhir:index 401;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "404449" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide 100 MG Oral Capsule [Thalomid]" ]
+       ], [
+         fhir:index 402;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "404450" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide 200 MG Oral Capsule [Thalomid]" ]
+       ], [
+         fhir:index 403;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "404588" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "imatinib 100 MG Oral Tablet [Gleevec]" ]
+       ], [
+         fhir:index 404;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "404589" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "imatinib 400 MG Oral Tablet [Gleevec]" ]
+       ], [
+         fhir:index 405;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "406050" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "imatinib Oral Tablet" ]
+       ], [
+         fhir:index 406;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "406051" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "imatinib 400 MG" ]
+       ], [
+         fhir:index 407;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "406060" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "imatinib Oral Tablet [Gleevec]" ]
+       ], [
+         fhir:index 408;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "411240" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "imatinib 50 MG Oral Capsule" ]
+       ], [
+         fhir:index 409;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "440549" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "imatinib 50 MG" ]
+       ], [
+         fhir:index 410;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "475342" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib" ]
+       ], [
+         fhir:index 411;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "483431" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "imatinib 400 MG Oral Capsule" ]
+       ], [
+         fhir:index 412;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "485246" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "azacitidine 100 MG Injection" ]
+       ], [
+         fhir:index 413;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "495881" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sorafenib" ]
+       ], [
+         fhir:index 414;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "545203" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vidaza" ]
+       ], [
+         fhir:index 415;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "545206" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "azacitidine 100 MG Injection [Vidaza]" ]
+       ], [
+         fhir:index 416;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "573051" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab 10 MG/ML [Rituxan]" ]
+       ], [
+         fhir:index 417;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "573254" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide 50 MG [Thalomid]" ]
+       ], [
+         fhir:index 418;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "575017" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "imatinib 100 MG [Gleevec]" ]
+       ], [
+         fhir:index 419;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "576406" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide 100 MG [Thalomid]" ]
+       ], [
+         fhir:index 420;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "576407" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide 200 MG [Thalomid]" ]
+       ], [
+         fhir:index 421;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "576514" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "imatinib 400 MG [Gleevec]" ]
+       ], [
+         fhir:index 422;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "597744" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sorafenib tosylate" ]
+       ], [
+         fhir:index 423;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "597745" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sorafenib 200 MG" ]
+       ], [
+         fhir:index 424;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "597746" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sorafenib Oral Tablet" ]
+       ], [
+         fhir:index 425;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "597747" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sorafenib 200 MG Oral Tablet" ]
+       ], [
+         fhir:index 426;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "602908" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 10 MG" ]
+       ], [
+         fhir:index 427;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "602909" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide Oral Capsule" ]
+       ], [
+         fhir:index 428;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "602910" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 10 MG Oral Capsule" ]
+       ], [
+         fhir:index 429;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "602911" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 5 MG" ]
+       ], [
+         fhir:index 430;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "602912" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 5 MG Oral Capsule" ]
+       ], [
+         fhir:index 431;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "615977" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sorafenib 200 MG [Nexavar]" ]
+       ], [
+         fhir:index 432;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "615978" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sorafenib Oral Tablet [Nexavar]" ]
+       ], [
+         fhir:index 433;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "615979" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sorafenib 200 MG Oral Tablet [Nexavar]" ]
+       ], [
+         fhir:index 434;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616112" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 10 MG [Revlimid]" ]
+       ], [
+         fhir:index 435;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616113" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide Oral Capsule [Revlimid]" ]
+       ], [
+         fhir:index 436;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616114" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 10 MG Oral Capsule [Revlimid]" ]
+       ], [
+         fhir:index 437;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616115" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 5 MG [Revlimid]" ]
+       ], [
+         fhir:index 438;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616116" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 5 MG Oral Capsule [Revlimid]" ]
+       ], [
+         fhir:index 439;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616274" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sutent" ]
+       ], [
+         fhir:index 440;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616275" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib malate" ]
+       ], [
+         fhir:index 441;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616277" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib 12.5 MG" ]
+       ], [
+         fhir:index 442;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616278" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib Oral Capsule" ]
+       ], [
+         fhir:index 443;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616279" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib 12.5 MG Oral Capsule" ]
+       ], [
+         fhir:index 444;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616281" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib 12.5 MG [Sutent]" ]
+       ], [
+         fhir:index 445;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616282" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib Oral Capsule [Sutent]" ]
+       ], [
+         fhir:index 446;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616283" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib 12.5 MG Oral Capsule [Sutent]" ]
+       ], [
+         fhir:index 447;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616284" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib 25 MG" ]
+       ], [
+         fhir:index 448;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616285" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib 25 MG Oral Capsule" ]
+       ], [
+         fhir:index 449;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616286" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib 25 MG [Sutent]" ]
+       ], [
+         fhir:index 450;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616287" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib 25 MG Oral Capsule [Sutent]" ]
+       ], [
+         fhir:index 451;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616288" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib 50 MG" ]
+       ], [
+         fhir:index 452;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616289" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib 50 MG Oral Capsule" ]
+       ], [
+         fhir:index 453;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616291" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib 50 MG [Sutent]" ]
+       ], [
+         fhir:index 454;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "616292" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sunitinib 50 MG Oral Capsule [Sutent]" ]
+       ], [
+         fhir:index 455;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "619985" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nexavar" ]
+       ], [
+         fhir:index 456;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "636242" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dacogen" ]
+       ], [
+         fhir:index 457;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "636631" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "decitabine 50 MG Injection" ]
+       ], [
+         fhir:index 458;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643103" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 20 MG" ]
+       ], [
+         fhir:index 459;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643104" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib Oral Tablet" ]
+       ], [
+         fhir:index 460;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643105" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 20 MG Oral Tablet" ]
+       ], [
+         fhir:index 461;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643106" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 50 MG" ]
+       ], [
+         fhir:index 462;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643107" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 50 MG Oral Tablet" ]
+       ], [
+         fhir:index 463;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643108" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 70 MG" ]
+       ], [
+         fhir:index 464;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643109" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 70 MG Oral Tablet" ]
+       ], [
+         fhir:index 465;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643170" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sprycel" ]
+       ], [
+         fhir:index 466;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643171" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 20 MG [Sprycel]" ]
+       ], [
+         fhir:index 467;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643172" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib Oral Tablet [Sprycel]" ]
+       ], [
+         fhir:index 468;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643173" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 20 MG Oral Tablet [Sprycel]" ]
+       ], [
+         fhir:index 469;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643174" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 50 MG [Sprycel]" ]
+       ], [
+         fhir:index 470;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643175" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 50 MG Oral Tablet [Sprycel]" ]
+       ], [
+         fhir:index 471;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643176" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 70 MG [Sprycel]" ]
+       ], [
+         fhir:index 472;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643177" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 70 MG Oral Tablet [Sprycel]" ]
+       ], [
+         fhir:index 473;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643711" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 15 MG" ]
+       ], [
+         fhir:index 474;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643712" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 15 MG Oral Capsule" ]
+       ], [
+         fhir:index 475;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643713" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 15 MG [Revlimid]" ]
+       ], [
+         fhir:index 476;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643714" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 15 MG Oral Capsule [Revlimid]" ]
+       ], [
+         fhir:index 477;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643719" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 25 MG" ]
+       ], [
+         fhir:index 478;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643720" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 25 MG Oral Capsule" ]
+       ], [
+         fhir:index 479;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643721" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 25 MG [Revlimid]" ]
+       ], [
+         fhir:index 480;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "643722" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenalidomide 25 MG Oral Capsule [Revlimid]" ]
+       ], [
+         fhir:index 481;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "644989" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "decitabine 50 MG Injection [Dacogen]" ]
+       ], [
+         fhir:index 482;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "700415" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide 150 MG" ]
+       ], [
+         fhir:index 483;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "700416" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide 150 MG Oral Capsule" ]
+       ], [
+         fhir:index 484;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "700417" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide 150 MG [Thalomid]" ]
+       ], [
+         fhir:index 485;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "700418" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "thalidomide 150 MG Oral Capsule [Thalomid]" ]
+       ], [
+         fhir:index 486;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "799046" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 100 MG" ]
+       ], [
+         fhir:index 487;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "799047" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 100 MG Oral Tablet" ]
+       ], [
+         fhir:index 488;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "799829" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 100 MG [Sprycel]" ]
+       ], [
+         fhir:index 489;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "799830" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dasatinib 100 MG Oral Tablet [Sprycel]" ]
+       ], [
+         fhir:index 490;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "974779" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "obinutuzumab" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-post-hct-disease-therapy-planned-vs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

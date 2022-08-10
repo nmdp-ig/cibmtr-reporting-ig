@@ -10,7 +10,7 @@
   "name": "CIBMTRReporting",
   "title": "CIBMTR Reporting Implementation Guide",
   "status": "draft",
-  "date": "2022-08-09T17:12:26-05:00",
+  "date": "2022-08-10T08:52:57-05:00",
   "publisher": "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact": [
     {
@@ -411,6 +411,34 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/cibmtr-additional-peri-transplant-medication"
+        },
+        "name": "CIBMTR Additional Drugs in Peri-Transplant Period",
+        "description": "CIBMTR Additional Drugs Given in the Peri-Transplant Period. Drugs may be given during the peri-transplant period to prevent transplant-related complications, such as liver injuries or to facilitate engraftment.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cibmtr-gvhd-prophylaxis-medication"
+        },
+        "name": "CIBMTR GVHD Prophylaxis Medication",
+        "description": "CIBMTR GVHD Prophylaxis Medication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/cibmtr-medication"
         },
         "name": "CIBMTR Medication (us-core)",
@@ -457,6 +485,62 @@
         },
         "name": "CIBMTR Medication Request (mcode)",
         "description": "CIBMTR Medication Request (mcode)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cibmtr-mobilizing-agent-medication"
+        },
+        "name": "CIBMTR Mobilizing Agent Medication",
+        "description": "CIBMTR Moblizing Agents (auto only) Medication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cibmtr-post-hct-disease-therapy-planned-medication"
+        },
+        "name": "CIBMTR Planned Post-HCT Disease Therapy Medication",
+        "description": "CIBMTR Planned Post-HCT Disease Therapy Medication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cibmtr-prep-regimen-medication"
+        },
+        "name": "CIBMTR Prep Regimen Medication",
+        "description": "CIBMTR Pre-HCT Preparative Regimen (Conditioning) Medication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cibmtr-prior-exposure-medication"
+        },
+        "name": "CIBMTR Prior Exposure Medication",
+        "description": "CIBMTR Prior Exposure: Potential Study Eligibility Medication",
         "exampleBoolean": false
       },
       {

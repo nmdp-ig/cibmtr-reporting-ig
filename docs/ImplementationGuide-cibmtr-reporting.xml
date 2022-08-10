@@ -11,7 +11,7 @@
   <name value="CIBMTRReporting"/>
   <title value="CIBMTR Reporting Implementation Guide"/>
   <status value="draft"/>
-  <date value="2022-08-09T17:12:26-05:00"/>
+  <date value="2022-08-10T08:52:57-05:00"/>
   <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
   <contact>
     <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -269,6 +269,28 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/cibmtr-additional-peri-transplant-medication"/>
+      </reference>
+      <name value="CIBMTR Additional Drugs in Peri-Transplant Period"/>
+      <description value="CIBMTR Additional Drugs Given in the Peri-Transplant Period. Drugs may be given during the peri-transplant period to prevent transplant-related complications, such as liver injuries or to facilitate engraftment."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cibmtr-gvhd-prophylaxis-medication"/>
+      </reference>
+      <name value="CIBMTR GVHD Prophylaxis Medication"/>
+      <description value="CIBMTR GVHD Prophylaxis Medication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/cibmtr-medication"/>
       </reference>
       <name value="CIBMTR Medication (us-core)"/>
@@ -306,6 +328,50 @@
       </reference>
       <name value="CIBMTR Medication Request (mcode)"/>
       <description value="CIBMTR Medication Request (mcode)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cibmtr-mobilizing-agent-medication"/>
+      </reference>
+      <name value="CIBMTR Mobilizing Agent Medication"/>
+      <description value="CIBMTR Moblizing Agents (auto only) Medication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cibmtr-post-hct-disease-therapy-planned-medication"/>
+      </reference>
+      <name value="CIBMTR Planned Post-HCT Disease Therapy Medication"/>
+      <description value="CIBMTR Planned Post-HCT Disease Therapy Medication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cibmtr-prep-regimen-medication"/>
+      </reference>
+      <name value="CIBMTR Prep Regimen Medication"/>
+      <description value="CIBMTR Pre-HCT Preparative Regimen (Conditioning) Medication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cibmtr-prior-exposure-medication"/>
+      </reference>
+      <name value="CIBMTR Prior Exposure Medication"/>
+      <description value="CIBMTR Prior Exposure: Potential Study Eligibility Medication"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

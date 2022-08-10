@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CIBMTRReporting"];
   fhir:ImplementationGuide.title [ fhir:value "CIBMTR Reporting Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-08-10T12:44:20-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-08-10T13:05:09-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -1071,6 +1071,20 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/snomed-myelodysplastic-diseases-VS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/snomed-myelodysplastic-diseases-VS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SNOMED Myelodysplastic Diseases" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The myelodysplastic syndromes (MDS) are a group of clonal hematopoietic stem cell diseases characterized by cytopenia(s), dysplasia (abnormal growth or development leading to an alteration in size, shape, and organization of the cell) in one or more of the major myeloid cell lines (WBC, RBC, and/or platelets), ineffective hematopoiesis, and an increased risk of developing acute myelogenous leukemia (AML). MDS occurs primarily in older adults, with a median age of 70 years. The majority of recipients present with symptoms related to cytopenias. Most recipients present with anemia requiring RBC transfusions." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/smear-morphology-blood-vs>;
          fhir:Reference.reference [ fhir:value "ValueSet/smear-morphology-blood-vs" ]
        ];
@@ -1078,7 +1092,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Smear morphology panel - Blood (34994-4)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 52;
+       fhir:index 53;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1092,7 +1106,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NIH Common Data Elements for CIBMTR" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 53;
+       fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1106,7 +1120,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NIH Common Data Element Value Meanings for CIBMTR" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 54;
+       fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1123,7 +1137,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables>
        ]
      ], [
-       fhir:index 55;
+       fhir:index 56;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1140,7 +1154,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables>
        ]
      ], [
-       fhir:index 56;
+       fhir:index 57;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1157,7 +1171,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables>
        ]
      ], [
-       fhir:index 57;
+       fhir:index 58;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1174,7 +1188,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables>
        ]
      ], [
-       fhir:index 58;
+       fhir:index 59;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1191,7 +1205,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab>
        ]
      ], [
-       fhir:index 59;
+       fhir:index 60;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1208,7 +1222,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables>
        ]
      ], [
-       fhir:index 60;
+       fhir:index 61;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1225,7 +1239,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables>
        ]
      ], [
-       fhir:index 61;
+       fhir:index 62;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1242,7 +1256,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient>
        ]
      ], [
-       fhir:index 62;
+       fhir:index 63;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1259,7 +1273,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient>
        ]
      ], [
-       fhir:index 63;
+       fhir:index 64;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1276,7 +1290,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient>
        ]
      ], [
-       fhir:index 64;
+       fhir:index 65;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1293,7 +1307,7 @@
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient>
        ]
      ], [
-       fhir:index 65;
+       fhir:index 66;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

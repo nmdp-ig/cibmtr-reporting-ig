@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "hematopoietic-disorder-valueset"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  414027002 (Disorder of hematopoietic structure (disorder))</li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  109995007 (Myelodysplastic syndrome (clinical))</li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/hematopoietic-disorder-valueset"];
   fhir:ValueSet.version [ fhir:value "0.1.4a"];
   fhir:ValueSet.name [ fhir:value "HematopoieticDisorderVS"];
   fhir:ValueSet.title [ fhir:value "Disorders of hematopoietic structure"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-08-10T12:44:20-05:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-08-10T13:05:09-05:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -45,7 +45,7 @@
          fhir:index 0;
          fhir:ValueSet.compose.include.filter.property [ fhir:value "concept" ];
          fhir:ValueSet.compose.include.filter.op [ fhir:value "is-a" ];
-         fhir:ValueSet.compose.include.filter.value [ fhir:value "414027002" ]
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "109995007" ]
        ]
      ]
   ] .

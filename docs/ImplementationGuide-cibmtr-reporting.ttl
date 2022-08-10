@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CIBMTRReporting"];
   fhir:ImplementationGuide.title [ fhir:value "CIBMTR Reporting Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-08-10T13:05:09-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-08-10T13:28:25-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -651,8 +651,8 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/hematopoietic-disorder-valueset>;
-         fhir:Reference.reference [ fhir:value "ValueSet/hematopoietic-disorder-valueset" ]
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/hematopoietic-disorder-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/hematopoietic-disorder-vs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Disorders of hematopoietic structure" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SNOMED: Disorders of hematopoietic structure" ];
@@ -1071,8 +1071,8 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/snomed-myelodysplastic-diseases-VS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/snomed-myelodysplastic-diseases-VS" ]
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/snomed-myelodysplastic-diseases-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/snomed-myelodysplastic-diseases-vs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SNOMED Myelodysplastic Diseases" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The myelodysplastic syndromes (MDS) are a group of clonal hematopoietic stem cell diseases characterized by cytopenia(s), dysplasia (abnormal growth or development leading to an alteration in size, shape, and organization of the cell) in one or more of the major myeloid cell lines (WBC, RBC, and/or platelets), ineffective hematopoiesis, and an increased risk of developing acute myelogenous leukemia (AML). MDS occurs primarily in older adults, with a median age of 70 years. The majority of recipients present with symptoms related to cytopenias. Most recipients present with anemia requiring RBC transfusions." ];

@@ -17,7 +17,7 @@
    <name value="CIBMTRReporting"/>
    <title value="CIBMTR Reporting Implementation Guide"/>
    <status value="draft"/>
-   <date value="2022-08-10T09:52:13-05:00"/>
+   <date value="2022-08-10T12:44:20-05:00"/>
    <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
    <contact>
       <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -399,6 +399,21 @@
          </reference>
          <name value="GVHD Type Value Set"/>
          <description value="Permissible values for types of Graft vs Host Disease, from NIH caDSR"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-hematopoietic-disorder-valueset.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/hematopoietic-disorder-valueset"/>
+         </reference>
+         <name value="Disorders of hematopoietic structure"/>
+         <description value="SNOMED: Disorders of hematopoietic structure"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -1208,6 +1223,11 @@
             <page>
                <nameUrl value="ValueSet-gvhdtype-valueset.html"/>
                <title value="GVHD Type Value Set"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-hematopoietic-disorder-valueset.html"/>
+               <title value="Disorders of hematopoietic structure"/>
                <generation value="generated"/>
             </page>
             <page>

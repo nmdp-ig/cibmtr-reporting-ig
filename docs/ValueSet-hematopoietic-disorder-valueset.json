@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hematopoietic-disorder-valueset",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  414027002 (Disorder of hematopoietic structure (disorder))</li></ul></div>"
+  },
+  "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/hematopoietic-disorder-valueset",
+  "version": "0.1.4a",
+  "name": "HematopoieticDisorderVS",
+  "title": "Disorders of hematopoietic structure",
+  "status": "active",
+  "date": "2022-08-10T12:44:20-05:00",
+  "publisher": "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+  "contact": [
+    {
+      "name": "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.cibmtr.org"
+        }
+      ]
+    },
+    {
+      "name": "Bob Milius",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "bmilius@nmdp.org"
+        }
+      ]
+    }
+  ],
+  "description": "SNOMED: Disorders of hematopoietic structure",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "414027002"
+          }
+        ]
+      }
+    ]
+  }
+}

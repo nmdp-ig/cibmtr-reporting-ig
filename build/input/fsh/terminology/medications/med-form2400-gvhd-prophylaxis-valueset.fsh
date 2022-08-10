@@ -1,4 +1,4 @@
-ValueSet: RxNormGVHDProphylaxis
+ValueSet: RxNormGVHDProphylaxisVS
 Id: med-gvhd-prophylaxis-vs
 Title: "RxNorm - GVHD Prophylaxis"
 Description: "RxNorm codes for GVHD Prophylaxis"

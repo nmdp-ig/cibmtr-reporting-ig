@@ -21,6 +21,20 @@
     "name": "CIBMTRReporting"
   },
   {
+    "id": "cibmtr-additional-peri-transplant-medication",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-additional-peri-transplant-medication",
+    "version": "0.1.4a",
+    "name": "CIBMTR_AdditionalPeriTransplantMedication"
+  },
+  {
+    "id": "cibmtr-gvhd-prophylaxis-medication",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-gvhd-prophylaxis-medication",
+    "version": "0.1.4a",
+    "name": "CIBMTR_GVHDProphylaxisMedication"
+  },
+  {
     "id": "cibmtr-medication",
     "type": "StructureDefinition",
     "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication",
@@ -49,6 +63,13 @@
     "name": "CIBMTR_MedicationRequest"
   },
   {
+    "id": "cibmtr-mobilizing-agent-medication",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-mobilizing-agent-medication",
+    "version": "0.1.4a",
+    "name": "CIBMTR_MobilizingAgentMedication"
+  },
+  {
     "id": "cibmtr-obs-priority-variables",
     "type": "StructureDefinition",
     "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables",
@@ -68,6 +89,27 @@
     "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient",
     "version": "0.1.4a",
     "name": "CIBMTRPatient"
+  },
+  {
+    "id": "cibmtr-post-hct-disease-therapy-planned-medication",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-post-hct-disease-therapy-planned-medication",
+    "version": "0.1.4a",
+    "name": "CIBMTR_PostHCTDiseaseTherapyPlannedMedication"
+  },
+  {
+    "id": "cibmtr-prep-regimen-medication",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prep-regimen-medication",
+    "version": "0.1.4a",
+    "name": "CIBMTR_PrepRegimenMedication"
+  },
+  {
+    "id": "cibmtr-prior-exposure-medication",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prior-exposure-medication",
+    "version": "0.1.4a",
+    "name": "CIBMTR_PrioExposureMedication"
   },
   {
     "id": "auto-differential-blood-vs",
@@ -249,7 +291,7 @@
     "type": "ValueSet",
     "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs",
     "version": "0.1.4a",
-    "name": "RxNormGVHDProphylaxis"
+    "name": "RxNormGVHDProphylaxisVS"
   },
   {
     "id": "med-melphalan-vs",

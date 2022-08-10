@@ -1,6 +1,6 @@
 # Guidance: Medications
 
-## Form 2400
+## Medication-related Profiles and ValueSets for CIBMTR
 Medication-related FHIR resource may be sent to the CIBMTR Direct FHIR API (see [R4 connection guide](Connection-Guide.html)). These profiles are derived from profiles found in the [US-Core](https://hl7.org/fhir/us/core/) or [mCode](https://hl7.org/fhir/us/mcode/) Implementation Guides. CIBMTR profiles add a requirement for the `meta.security` elements to identify your center, and often include bindings to ValueSets for RxNorm codes. They may also require elements previously tagged as optional in the original profiles.
 
 ### Medication-related profiles include
@@ -9,7 +9,8 @@ Medication-related FHIR resource may be sent to the CIBMTR Direct FHIR API (see 
 - [CIBMTR Medication Administration (mcode)](StructureDefinition-cibmtr-medication-administration.html)
   
 
-### FHIR ValueSets have been created that describe the RxNorm codes for medications described in various sections in CIBMTR Form 2400. These include
+### RxNorm ValueSets 
+FHIR ValueSets have been created that describe the RxNorm codes for medications described in various sections in CIBMTR Form 2400. These include
 - [Mobilizing Agents (auto only)](ValueSet-med-mobilizing-agents-vs.html) - 203 concepts
 - [Prep Regimen](ValueSet-med-prep-regimen-vs.html) - 501 concepts
 - [Additional Drugs in Peri-Transplant Period](ValueSet-med-addition-peri-transplant-vs.html) - 75 concepts
@@ -28,5 +29,5 @@ Because RxNorm is updated every week, the bindings of the profiles to these valu
 - [CIBMTR Prior Exposure Medication](StructureDefinition-cibmtr-prior-exposure-medication.html)
 - [CIBMTR Planned Post-HCT Disease Therapy Medication](StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html)
 
-### Exmples
+### Examples
 TBD

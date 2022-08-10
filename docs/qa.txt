@@ -3,7 +3,7 @@
 
 err = 0, warn = 15, info = 20
 IG Publisher Version: 1.1.127 Out of date - current version is 1.1.128
-Generated Wed Aug 10 09:55:47 CDT 2022. FHIR version 4.0.1 for cibmtr-reporting#0.1.4a (canonical = http://fhir.nmdp.org/ig/cibmtr-reporting)
+Generated Wed Aug 10 12:47:45 CDT 2022. FHIR version 4.0.1 for cibmtr-reporting#0.1.4a (canonical = http://fhir.nmdp.org/ig/cibmtr-reporting)
  Build Errors : 10 / 0 / 0
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ImplementationGuide-cibmtr-reporting : 0 / 4 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/codesystem-cibmtr-cadsr-cde : 0 / 0 / 2
@@ -44,6 +44,7 @@ Generated Wed Aug 10 09:55:47 CDT 2022. FHIR version 4.0.1 for cibmtr-reporting#
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-differential-unspecified-blood-vs : 0 / 0 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-erythrocyte-morphology-blood-vs : 0 / 0 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-gvhdtype-valueset : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-hematopoietic-disorder-valueset : 0 / 0 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-leukocyte-morphology-blood-vs : 0 / 0 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-manual-differential-blood-vs : 0 / 0 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/valueset-med-addition-peri-transplant-vs : 0 / 0 / 1
@@ -84,10 +85,10 @@ ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/out
 ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/output/ValueSet-gvhdtype-valueset.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 266, column 4790: The link 'CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.583261243' for "CADSR:3261243" cannot be resolved (valid targets: [cibmtr-footer, cibmtr-cadsr-vm-.36CADSR.584722619, cibmtr-logo, segment-header, cibmtr-nav, publish-box, cibmtr-cadsr-vm-.36CADSR.582991796, cibmtr-cadsr-vm-.36CADSR.582991794, segment-post-footer, codesystem-nih-common-data-element-value-meanings-for-cibmtr, cibmtr-cadsr-vm-.36CADSR.582991795, ig-status, cibmtr-cadsr-vm-.36CADSR.583261243, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
 ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/output/ValueSet-gvhdtype-valueset.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 266, column 5048: The link 'CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.582991795' for "CADSR:2991795" cannot be resolved (valid targets: [cibmtr-footer, cibmtr-cadsr-vm-.36CADSR.584722619, cibmtr-logo, segment-header, cibmtr-nav, publish-box, cibmtr-cadsr-vm-.36CADSR.582991796, cibmtr-cadsr-vm-.36CADSR.582991794, segment-post-footer, codesystem-nih-common-data-element-value-meanings-for-cibmtr, cibmtr-cadsr-vm-.36CADSR.582991795, ig-status, cibmtr-cadsr-vm-.36CADSR.583261243, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
 == fsh-generated/resources/ImplementationGuide-cibmtr-reporting.json ==
-WARNING: ImplementationGuide/cibmtr-reporting: ImplementationGuide.definition.resource[35].description: value should not start or finish with whitespace 'RxNorm...Cyclophosphamide '
-WARNING: ImplementationGuide/cibmtr-reporting: ImplementationGuide.definition.resource[38].description: value should not start or finish with whitespace 'RxNorm...Etoposide '
-WARNING: ImplementationGuide/cibmtr-reporting: ImplementationGuide.definition.resource[39].description: value should not start or finish with whitespace 'RxNorm...Fludarabine '
-WARNING: ImplementationGuide/cibmtr-reporting: ImplementationGuide.definition.resource[41].description: value should not start or finish with whitespace 'RxNorm...Melphalan '
+WARNING: ImplementationGuide/cibmtr-reporting: ImplementationGuide.definition.resource[36].description: value should not start or finish with whitespace 'RxNorm...Cyclophosphamide '
+WARNING: ImplementationGuide/cibmtr-reporting: ImplementationGuide.definition.resource[39].description: value should not start or finish with whitespace 'RxNorm...Etoposide '
+WARNING: ImplementationGuide/cibmtr-reporting: ImplementationGuide.definition.resource[40].description: value should not start or finish with whitespace 'RxNorm...Fludarabine '
+WARNING: ImplementationGuide/cibmtr-reporting: ImplementationGuide.definition.resource[42].description: value should not start or finish with whitespace 'RxNorm...Melphalan '
 == fsh-generated/resources/CodeSystem-cibmtr-cadsr-cde.json ==
 INFORMATION: CodeSystem/cibmtr-cadsr-cde: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-cibmtr-cadsr-vm.json ==
@@ -156,6 +157,7 @@ WARNING: StructureDefinition.where(url = 'http://fhir.nmdp.org/ig/cibmtr-reporti
 == fsh-generated/resources/ValueSet-differential-unspecified-blood-vs.json ==
 == fsh-generated/resources/ValueSet-erythrocyte-morphology-blood-vs.json ==
 == fsh-generated/resources/ValueSet-gvhdtype-valueset.json ==
+== fsh-generated/resources/ValueSet-hematopoietic-disorder-valueset.json ==
 == fsh-generated/resources/ValueSet-leukocyte-morphology-blood-vs.json ==
 == fsh-generated/resources/ValueSet-manual-differential-blood-vs.json ==
 == fsh-generated/resources/ValueSet-med-addition-peri-transplant-vs.json ==

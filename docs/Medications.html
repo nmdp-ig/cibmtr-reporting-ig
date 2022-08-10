@@ -179,11 +179,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#guidance-medications" id="markdown-toc-guidance-medications">Guidance: Medications</a>    <ul>
-      <li><a href="#form-2400" id="markdown-toc-form-2400">Form 2400</a>        <ul>
+      <li><a href="#medication-related-profiles-and-valuesets-for-cibmtr" id="markdown-toc-medication-related-profiles-and-valuesets-for-cibmtr">Medication-related Profiles and ValueSets for CIBMTR</a>        <ul>
           <li><a href="#medication-related-profiles-include" id="markdown-toc-medication-related-profiles-include">Medication-related profiles include</a></li>
-          <li><a href="#fhir-valuesets-have-been-created-that-describe-the-rxnorm-codes-for-medications-described-in-various-sections-in-cibmtr-form-2400-these-include" id="markdown-toc-fhir-valuesets-have-been-created-that-describe-the-rxnorm-codes-for-medications-described-in-various-sections-in-cibmtr-form-2400-these-include">FHIR ValueSets have been created that describe the RxNorm codes for medications described in various sections in CIBMTR Form 2400. These include</a></li>
+          <li><a href="#rxnorm-valuesets" id="markdown-toc-rxnorm-valuesets">RxNorm ValueSets</a></li>
           <li><a href="#medication-profiles-that-bind-to-these-valuesets" id="markdown-toc-medication-profiles-that-bind-to-these-valuesets">Medication profiles that bind to these ValueSets:</a></li>
-          <li><a href="#exmples" id="markdown-toc-exmples">Exmples</a></li>
+          <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
         </ul>
       </li>
     </ul>
@@ -193,8 +193,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h1 id="guidance-medications">Guidance: Medications</h1>
 
-<h2 id="form-2400">Form 2400</h2>
-<p>Medication-related FHIR resource may be sent to the CIBMTR Direct FHIR API (see <a href="Connection-Guide.html">R4 connection guide</a>). These profiles are derived from profiles found in the <a href="https://hl7.org/fhir/us/core/">US-Core</a> or <a href="https://hl7.org/fhir/us/mcode/">mCode</a> Implementation Guides. CIBMTR profiles add a requirement for the <code class="language-plaintext highlighter-rouge">meta.security</code> elements to identify your center, and often include bindings to ValueSets for RxNorm codes.</p>
+<h2 id="medication-related-profiles-and-valuesets-for-cibmtr">Medication-related Profiles and ValueSets for CIBMTR</h2>
+<p>Medication-related FHIR resource may be sent to the CIBMTR Direct FHIR API (see <a href="Connection-Guide.html">R4 connection guide</a>). These profiles are derived from profiles found in the <a href="https://hl7.org/fhir/us/core/">US-Core</a> or <a href="https://hl7.org/fhir/us/mcode/">mCode</a> Implementation Guides. CIBMTR profiles add a requirement for the <code class="language-plaintext highlighter-rouge">meta.security</code> elements to identify your center, and often include bindings to ValueSets for RxNorm codes. They may also require elements previously tagged as optional in the original profiles.</p>
 
 <h3 id="medication-related-profiles-include">Medication-related profiles include</h3>
 <ul>
@@ -203,7 +203,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="StructureDefinition-cibmtr-medication-administration.html">CIBMTR Medication Administration (mcode)</a></li>
 </ul>
 
-<h3 id="fhir-valuesets-have-been-created-that-describe-the-rxnorm-codes-for-medications-described-in-various-sections-in-cibmtr-form-2400-these-include">FHIR ValueSets have been created that describe the RxNorm codes for medications described in various sections in CIBMTR Form 2400. These include</h3>
+<h3 id="rxnorm-valuesets">RxNorm ValueSets</h3>
+<p>FHIR ValueSets have been created that describe the RxNorm codes for medications described in various sections in CIBMTR Form 2400. These include</p>
 <ul>
   <li><a href="ValueSet-med-mobilizing-agents-vs.html">Mobilizing Agents (auto only)</a> - 203 concepts</li>
   <li><a href="ValueSet-med-prep-regimen-vs.html">Prep Regimen</a> - 501 concepts</li>
@@ -226,7 +227,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html">CIBMTR Planned Post-HCT Disease Therapy Medication</a></li>
 </ul>
 
-<h3 id="exmples">Exmples</h3>
+<h3 id="examples">Examples</h3>
 <p>TBD</p>
 
 
@@ -252,7 +253,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.4a based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 10, 2022 09:42-0500">2022-08-10</span>
+    <br/>Package cibmtr-reporting#0.1.4a based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 10, 2022 09:52-0500">2022-08-10</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

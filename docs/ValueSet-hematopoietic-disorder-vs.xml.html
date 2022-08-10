@@ -1,9 +1,11 @@
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>CIBMTR-REPORTING\Disorders of hematopoietic structure - FHIR v4.0.1</title>
+    <title>CIBMTR-REPORTING\Disorders of hematopoietic structure - XML Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -152,9 +154,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.4a). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.4a). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
 
 
 
@@ -165,28 +167,28 @@
 
 <ul class="nav nav-tabs">
 
-  <li class="active">
-    <a href="#">Narrative Content</a>
+  <li>
+    <a href="ValueSet-hematopoietic-disorder-vs.html">Narrative Content</a>
   </li>
 
 
   
-    <li>
-      <a href="ValueSet-hematopoietic-disorder-valueset.xml.html">XML</a>
+    <li class="active">
+      <a href="#">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="ValueSet-hematopoietic-disorder-valueset.json.html">JSON</a>
+      <a href="ValueSet-hematopoietic-disorder-vs.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="ValueSet-hematopoietic-disorder-valueset.ttl.html">TTL</a>
+      <a href="ValueSet-hematopoietic-disorder-vs.ttl.html">TTL</a>
     </li>
   
 
@@ -194,29 +196,15 @@
 
 </ul>
 
-  <a name="root"> </a>
-  <h2 id="root">ValueSet: Disorders of hematopoietic structure
 
-  </h2>
+<a name="root"> </a>
+
+
+<h2 id="root">: Disorders of hematopoietic structure - XML Representation</h2>
   <table class="colsi">
-
-    <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/hematopoietic-disorder-valueset<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/hematopoietic-disorder-valueset"/></span>
-      </td>
-      <td><i>Version</i>:
-      <span class="copy-text">0.1.4a<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/hematopoietic-disorder-valueset|0.1.4a"/></span>
-      </td>
-    </tr>
-
     <tr>
 
-
-
-
-
-
-
-      <td colspan="4">
+      <td colspan="2">
         
           Active
           
@@ -225,86 +213,67 @@
         
       </td>
 
-
-
-      <td><i>Computable Name</i>: <span style="font-family: monospace;">HematopoieticDisorderVS</span></td>
     </tr>
-
-
-
-
   </table>
 
-<p>
-<p>SNOMED: Disorders of hematopoietic structure</p>
 
-</p>
-
-
-  <p>
-    <b>References</b>
-  </p>
-  
-<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
-
+<p><a href="ValueSet-hematopoietic-disorder-vs.xml" no-download="true">Raw xml</a> | <a href="ValueSet-hematopoietic-disorder-vs.xml" download>Download</a></p>
 
   <!-- insert intro if present -->
   
 
 
 
-  <a name="definition"> </a>
+  <pre class="xml"><code class="language-xml">
 
-<!-- Content Logical Definition heading in the fragment -->
-  <h3>Logical Definition (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  109995007 (Myelodysplastic syndrome (clinical))</li></ul></div>
+&lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">ValueSet</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;hematopoietic-disorder-vs&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;ul&gt;&lt;li&gt;Include codes from &lt;a href=&quot;http://www.snomed.org/&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt; where concept  is-a  414027002 (Disorder of hematopoietic structure (disorder))&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>
+       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/hematopoietic-disorder-vs&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.1.4a&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HematopoieticDisorderVS&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Disorders of hematopoietic structure&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2022-08-10T13:28:25-05:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The Medical College of Wisconsin, Inc. and the National Marrow Donor Program&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>
+          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The Medical College of Wisconsin, Inc. and the National Marrow Donor Program&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;http://www.cibmtr.org&quot;/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Bob Milius&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;bmilius@nmdp.org&quot;/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;SNOMED: Disorders of hematopoietic structure&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter">filter</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter.property">property</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;concept&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter.op">op</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;is-a&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;414027002&quot;/&gt;
+      &lt;/filter&gt;
+    &lt;/include&gt;
+  &lt;/compose&gt;
+&lt;/ValueSet&gt;</code></pre>
 
-  <p>&#160;</p>
-  <a name="expansion"> </a>
-  <h3 id="expansion">Expansion</h3>
-
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 17 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p><p>All codes in this table are from the system <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html"><code>http://snomed.info/sct</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-109995007"> </a>  <a href="http://snomed.info/id/109995007">109995007</a></td><td>Myelodysplastic syndrome (clinical)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-109996008"> </a>  <a href="http://snomed.info/id/109996008">109996008</a></td><td>Refractory anemia (clinical)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-109998009"> </a>  <a href="http://snomed.info/id/109998009">109998009</a></td><td>Refractory anemia with sideroblasts</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-110000005"> </a>  <a href="http://snomed.info/id/110000005">110000005</a></td><td>Refractory anemia with excess blasts in transformation (clinical)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-277597005"> </a>  <a href="http://snomed.info/id/277597005">277597005</a></td><td>Myelodysplastic syndrome with isolated del(5q) (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-307340003"> </a>  <a href="http://snomed.info/id/307340003">307340003</a></td><td>Monosomy 7 syndrome</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-398623004"> </a>  <a href="http://snomed.info/id/398623004">398623004</a></td><td>Refractory anemia with excess blasts</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-415283002"> </a>  <a href="http://snomed.info/id/415283002">415283002</a></td><td>Refractory anemia with excess blasts-1</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-415284008"> </a>  <a href="http://snomed.info/id/415284008">415284008</a></td><td>Refractory anemia with excess blasts-2</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-415285009"> </a>  <a href="http://snomed.info/id/415285009">415285009</a></td><td>Refractory cytopenia with multilineage dysplasia</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-415286005"> </a>  <a href="http://snomed.info/id/415286005">415286005</a></td><td>Refractory cytopenia with multilineage dysplasia and ringed sideroblasts</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-702476004"> </a>  <a href="http://snomed.info/id/702476004">702476004</a></td><td>Therapy-related myelodysplastic syndrome (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-705061009"> </a>  <a href="http://snomed.info/id/705061009">705061009</a></td><td>Childhood myelodysplastic syndrome (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-721303001"> </a>  <a href="http://snomed.info/id/721303001">721303001</a></td><td>Refractory neutropenia (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-721304007"> </a>  <a href="http://snomed.info/id/721304007">721304007</a></td><td>Refractory thrombocytopenia (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-1153345005"> </a>  <a href="http://snomed.info/id/1153345005">1153345005</a></td><td>Refractory cytopenia with unilineage dysplasia</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-1177173001"> </a>  <a href="http://snomed.info/id/1177173001">1177173001</a></td><td>Congenital progressive bone marrow failure, B-cell immunodeficiency, skeletal dysplasia syndrome (disorder)</td></tr></table></div>
-
-  <hr/>
-  <p>
-    Explanation of the columns that may appear on this page:
-  </p>
-  <table class="grid">
-    <tr>
-      <td>Level</td>
-      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
-          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
-    </tr>
-    <tr>
-      <td>System</td>
-      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
-    </tr>
-    <tr>
-      <td>Code</td>
-      <td>The code (used as the code in the resource instance)</td>
-    </tr>
-    <tr>
-      <td>Display</td>
-      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
-    </tr>
-    <tr>
-      <td>Definition</td>
-      <td>An explanation of the meaning of the concept</td>
-    </tr>
-    <tr>
-      <td>Comments</td>
-      <td>Additional notes about how to use the code</td>
-    </tr>
-  </table>
-
-  
 
   <!-- insert notes if present -->
   
 
 
-
-  
 
 </div>
 </div>  <!-- /inner-wrapper -->
@@ -327,7 +296,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.4a based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 10, 2022 13:05-0500">2022-08-10</span>
+    <br/>Package cibmtr-reporting#0.1.4a based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 10, 2022 13:28-0500">2022-08-10</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

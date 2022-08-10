@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="hematopoietic-disorder-valueset"/>
+  <id value="hematopoietic-disorder-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  109995007 (Myelodysplastic syndrome (clinical))</li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  414027002 (Disorder of hematopoietic structure (disorder))</li></ul></div>
   </text>
-  <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/hematopoietic-disorder-valueset"/>
+  <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/hematopoietic-disorder-vs"/>
   <version value="0.1.4a"/>
   <name value="HematopoieticDisorderVS"/>
   <title value="Disorders of hematopoietic structure"/>
   <status value="active"/>
-  <date value="2022-08-10T13:05:09-05:00"/>
+  <date value="2022-08-10T13:28:25-05:00"/>
   <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
   <contact>
     <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -33,7 +33,7 @@
       <filter>
         <property value="concept"/>
         <op value="is-a"/>
-        <value value="109995007"/>
+        <value value="414027002"/>
       </filter>
     </include>
   </compose>

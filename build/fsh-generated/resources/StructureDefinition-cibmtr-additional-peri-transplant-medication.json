@@ -1,0 +1,50 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cibmtr-additional-peri-transplant-medication",
+  "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-additional-peri-transplant-medication",
+  "version": "0.1.4a",
+  "name": "CIBMTR_AdditionalPeriTransplantMedication",
+  "title": "CIBMTR Additional Drugs in Peri-Transplant Period",
+  "status": "active",
+  "description": "CIBMTR Additional Drugs Given in the Peri-Transplant Period. Drugs may be given during the peri-transplant period to prevent transplant-related complications, such as liver injuries or to facilitate engraftment.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "script10.6",
+      "uri": "http://ncpdp.org/SCRIPT10_6",
+      "name": "Mapping to NCPDP SCRIPT 10.6"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Medication",
+  "baseDefinition": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Medication.code.coding",
+        "path": "Medication.code.coding",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-addition-peri-transplant-vs"
+        }
+      }
+    ]
+  }
+}

@@ -101,9 +101,9 @@ Usage: #example
 * name.family = "Doe"
 * gender = #female
 * birthDate = "1944-01-29"
-* address[0].use = #home
-* address[0].city = "Garland"
-* address[0].state = "Texas"
+* address[+].use = #home
+* address[=].city = "Garland"
+* address[=].state = "Texas"
 * extension[race].extension[text].valueString = "White Caucasian"
 * extension[race].extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
 * extension[ethnicity].extension[text].valueString = "Unknown"
@@ -119,19 +119,19 @@ Usage: #example
 * meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
 * meta.security[TransplantCenter].code = #rc_00000
 * meta.security[TransplantCenter].display = "00000 Good Health Medical Center"
-* identifier[0].system = "http://example.org/mrn"
-* identifier[0].value = "abc"
-* identifier[1].system = "http://terminology.cibmtr.org/identifier/CRID"
-* identifier[1].value = "1234567"
-* identifier[1].use = #official
+* identifier[+].system = "http://example.org/mrn"
+* identifier[=].value = "abc"
+* identifier[+].system = "http://terminology.cibmtr.org/identifier/CRID"
+* identifier[=].value = "1234567"
+* identifier[=].use = #official
 * name.given = "Peter"
 * name.family = "Doe"
 * gender = #male
 * birthDate = "1952-05-07"
-* address[0].use = #home
-* address[0].city = "Grand Prarie"
-* address[0].state = "Texas"
-* address[0].country = "Unknown or unspecified"
+* address[+].use = #home
+* address[=].city = "Grand Prarie"
+* address[=].state = "Texas"
+* address[=].country = "Unknown or unspecified"
 * extension[race].extension[text].valueString = "Black or African American"
 * extension[race].extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2054-5	 "Black or African American"
 * extension[ethnicity].extension[text].valueString = "Unknown"
@@ -147,11 +147,11 @@ Usage: #example
 * meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
 * meta.security[TransplantCenter].code = #rc_00000
 * meta.security[TransplantCenter].display = "00000 Good Health Medical Center"
-* identifier[0].system = "http://example.org/mrn"
-* identifier[0].value = "abc"
-* identifier[1].system = "http://terminology.cibmtr.org/identifier/CRID"
-* identifier[1].value = "1234567"
-* identifier[1].use = #official
+* identifier[+].system = "http://example.org/mrn"
+* identifier[=].value = "abc"
+* identifier[+].system = "http://terminology.cibmtr.org/identifier/CRID"
+* identifier[=].value = "1234567"
+* identifier[=].use = #official
 * name.given = "Peter"
 * name.family = "Doe"
 * gender = #male
@@ -168,6 +168,21 @@ Usage: #example
 * managingOrganization.identifier.value = "00000"
 * managingOrganization.display = "Good Health Medical Center"
 
+
+Instance: PatientExample6
+InstanceOf: http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
+Description: "Patient with CIBMTR CRID"
+Usage: #example
+* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
+* meta.security[TransplantCenter].code = #rc_00000
+* meta.security[TransplantCenter].display = "00000 Good Health Medical Center"
+* identifier[+]
+  * system = "http://terminology.cibmtr.org/identifier/CRID"
+  * value = "123456"
+* name[+].extension[http://hl7.org/fhir/StructureDefinition/data-absent-reason].valueCode = #masked
+* gender = #female
+// * managingOrganization.identifier.system = "http://cibmtr.org/identifier/transplant-center"
+// * managingOrganization.identifier.value = "456"
 
 // ValueSet: ManagingOrgVS
 // Title: "Managing Organizations Value Set"

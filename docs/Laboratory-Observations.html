@@ -179,9 +179,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<h1 id="guidnace-laboratory-observations">Guidnace: Laboratory Observations</h1>
+<h1 id="guidance-laboratory-observations">Guidance: Laboratory Observations</h1>
 
-<p>TBD</p>
+<h2 id="valuex">Value[x]</h2>
+
+<p>Observation values can be reported in many forms. CIBMTR currently supports only two:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">valueQuantity</code></li>
+  <li><code class="language-plaintext highlighter-rouge">valueCodeableConcept</code></li>
+</ul>
+
+<p>CIBMTR does <em>*NOT</em> support any other value types (e.g., <code class="language-plaintext highlighter-rouge">valueString</code> is not currently supported)
+&lt;!– - <del>valueString</del></p>
+<ul>
+  <li><del>valueBoolean</del></li>
+  <li><del>valueInteger</del></li>
+  <li><del>valueRange</del></li>
+  <li><del>valueRatio</del></li>
+  <li><del>valueSampledData</del></li>
+  <li><del>valueTime</del></li>
+  <li><del>valueDateTime</del></li>
+  <li><del>valuePeriod</del> –&gt;</li>
+</ul>
+
+<p>Special rules:</p>
+<ul>
+  <li>For CMV LOINC codes that use <code class="language-plaintext highlighter-rouge">ValueQuantity</code>, it MUST be accompanied with a <code class="language-plaintext highlighter-rouge">referenceRange</code></li>
+</ul>
 
 
 
@@ -207,7 +231,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.4a based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 10, 2022 13:28-0500">2022-08-10</span>
+    <br/>Package cibmtr-reporting#0.1.4a based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 11, 2022 16:57-0500">2022-08-11</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

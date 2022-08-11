@@ -1,15 +1,25 @@
 ﻿CIBMTRReporting : Validation Results
 =========================================
 
-err = 0, warn = 15, info = 20
+err = 0, warn = 15, info = 31
 IG Publisher Version: 1.1.127 Out of date - current version is 1.1.128
-Generated Wed Aug 10 13:32:02 CDT 2022. FHIR version 4.0.1 for cibmtr-reporting#0.1.4a (canonical = http://fhir.nmdp.org/ig/cibmtr-reporting)
+Generated Thu Aug 11 17:01:16 CDT 2022. FHIR version 4.0.1 for cibmtr-reporting#0.1.4a (canonical = http://fhir.nmdp.org/ig/cibmtr-reporting)
  Build Errors : 10 / 0 / 0
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ImplementationGuide-cibmtr-reporting : 0 / 4 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/codesystem-cibmtr-cadsr-cde : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/codesystem-cibmtr-cadsr-vm : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/observation-ABOBloodGroupObservationLOINC : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/observation-ABOBloodGroupObservationSNOMED : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/observation-ABORhObservationLOINC : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/observation-ABORhObservationSNOMED : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/observation-AlbuminObservation : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/observation-BasophilsObservation : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/observation-CMVDNAViralLoadCopiesmL : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/observation-CMVDNAViralLoadIUmL : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/observation-CMVIgAbPresenceSNOMED : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/observation-CMVIgGAbPresenceLOINC : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/observation-CMVIgMAbPresenceLOINC : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/observation-CMVIgMAbPresenceSNOMED : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/observation-EosinophilsObservation : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/observation-HemoglobinObservation : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/observation-LeukocytesObservation : 0 / 0 / 2
@@ -20,6 +30,7 @@ Generated Wed Aug 10 13:32:02 CDT 2022. FHIR version 4.0.1 for cibmtr-reporting#
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/patient-PatientExample3 : 0 / 0 / 3
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/patient-PatientExample4 : 0 / 0 / 3
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/patient-PatientExample5 : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/patient-PatientExample6 : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/structuredefinition-cibmtr-additional-peri-transplant-medication : 0 / 1 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/structuredefinition-cibmtr-gvhd-prophylaxis-medication : 0 / 1 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/structuredefinition-cibmtr-medication : 0 / 1 / 1
@@ -94,10 +105,30 @@ WARNING: ImplementationGuide/cibmtr-reporting: ImplementationGuide.definition.re
 INFORMATION: CodeSystem/cibmtr-cadsr-cde: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-cibmtr-cadsr-vm.json ==
 INFORMATION: CodeSystem/cibmtr-cadsr-vm: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated/resources/Observation-ABOBloodGroupObservationLOINC.json ==
+INFORMATION: Observation/ABOBloodGroupObservationLOINC: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-ABOBloodGroupObservationSNOMED.json ==
+INFORMATION: Observation/ABOBloodGroupObservationSNOMED: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-ABORhObservationLOINC.json ==
+INFORMATION: Observation/ABORhObservationLOINC: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-ABORhObservationSNOMED.json ==
+INFORMATION: Observation/ABORhObservationSNOMED: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-AlbuminObservation.json ==
 INFORMATION: Observation/AlbuminObservation: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-BasophilsObservation.json ==
 INFORMATION: Observation/BasophilsObservation: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-CMVDNAViralLoadCopiesmL.json ==
+INFORMATION: Observation/CMVDNAViralLoadCopiesmL: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-CMVDNAViralLoadIUmL.json ==
+INFORMATION: Observation/CMVDNAViralLoadIUmL: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-CMVIgAbPresenceSNOMED.json ==
+INFORMATION: Observation/CMVIgAbPresenceSNOMED: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-CMVIgGAbPresenceLOINC.json ==
+INFORMATION: Observation/CMVIgGAbPresenceLOINC: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-CMVIgMAbPresenceLOINC.json ==
+INFORMATION: Observation/CMVIgMAbPresenceLOINC: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-CMVIgMAbPresenceSNOMED.json ==
+INFORMATION: Observation/CMVIgMAbPresenceSNOMED: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-EosinophilsObservation.json ==
 INFORMATION: Observation/EosinophilsObservation: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-HemoglobinObservation.json ==
@@ -123,6 +154,8 @@ INFORMATION: Patient/PatientExample4: Patient.meta.security[0]: Code System URI 
 == fsh-generated/resources/Patient-PatientExample5.json ==
 INFORMATION: Patient/PatientExample5: Patient.identifier[0]: This element does not match any known slice defined in the profile http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
 INFORMATION: Patient/PatientExample5: Patient.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/Patient-PatientExample6.json ==
+INFORMATION: Patient/PatientExample6: Patient.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/StructureDefinition-cibmtr-additional-peri-transplant-medication.json ==
 WARNING: StructureDefinition.where(url = 'http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-additional-peri-transplant-medication'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cibmtr-gvhd-prophylaxis-medication.json ==

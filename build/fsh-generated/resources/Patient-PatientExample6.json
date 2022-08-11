@@ -1,0 +1,33 @@
+{
+  "resourceType": "Patient",
+  "id": "PatientExample6",
+  "meta": {
+    "security": [
+      {
+        "system": "http://terminology.cibmtr.org/codesystem/transplant-center",
+        "code": "rc_00000",
+        "display": "00000 Good Health Medical Center"
+      }
+    ],
+    "profile": [
+      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
+    ]
+  },
+  "name": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode": "masked"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://terminology.cibmtr.org/identifier/CRID",
+      "value": "123456"
+    }
+  ],
+  "gender": "female"
+}

@@ -17,7 +17,7 @@
    <name value="CIBMTRReporting"/>
    <title value="CIBMTR Reporting Implementation Guide"/>
    <status value="draft"/>
-   <date value="2022-08-10T13:28:25-05:00"/>
+   <date value="2022-08-11T16:57:48-05:00"/>
    <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
    <contact>
       <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -917,6 +917,66 @@
             <valueString value="Observation"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-ABOBloodGroupObservationLOINC.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/ABOBloodGroupObservationLOINC"/>
+         </reference>
+         <name value="ABOBloodGroupObservationLOINC"/>
+         <description value="ABO group [Type] in Blood (883-9) with LOINC answer"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-ABOBloodGroupObservationSNOMED.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/ABOBloodGroupObservationSNOMED"/>
+         </reference>
+         <name value="ABOBloodGroupObservationSNOMED"/>
+         <description value="ABO group [Type] in Blood (883-9) with SNOMED answer"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-ABORhObservationLOINC.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/ABORhObservationLOINC"/>
+         </reference>
+         <name value="ABORhObservationLOINC"/>
+         <description value="ABO and Rh group [Type] in Blood (882-1) with LOINC answer"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-ABORhObservationSNOMED.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/ABORhObservationSNOMED"/>
+         </reference>
+         <name value="ABORhObservationSNOMED"/>
+         <description value="ABO and Rh group [Type] in Blood (882-1) with SNOMED CT answer"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="Observation-AlbuminObservation.html"/>
          </extension>
          <reference>
@@ -939,6 +999,96 @@
          </reference>
          <name value="BasophilsObservation"/>
          <description value="Basophils/100 leukocytes in Blood"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-CMVDNAViralLoadCopiesmL.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/CMVDNAViralLoadCopiesmL"/>
+         </reference>
+         <name value="CMVDNAViralLoadCopiesmL"/>
+         <description value="Cytomegalovirus DNA [#/volume] (viral load) in Bronchoalveolar lavage by NAA with probe detection (49349-4)"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-CMVDNAViralLoadIUmL.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/CMVDNAViralLoadIUmL"/>
+         </reference>
+         <name value="CMVDNAViralLoadIUmL"/>
+         <description value="Cytomegalovirus DNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection (72493-0)"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-CMVIgAbPresenceSNOMED.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/CMVIgAbPresenceSNOMED"/>
+         </reference>
+         <name value="CMVIgAbPresenceSNOMED"/>
+         <description value="Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay (13949-3) with SNOMED CT answer"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-CMVIgGAbPresenceLOINC.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/CMVIgGAbPresenceLOINC"/>
+         </reference>
+         <name value="CMVIgGAbPresenceLOINC"/>
+         <description value="Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay (13949-3) with LOINC answer"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-CMVIgMAbPresenceLOINC.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/CMVIgMAbPresenceLOINC"/>
+         </reference>
+         <name value="CMVIgMAbPresenceLOINC"/>
+         <description value="Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunoassay (24119-0) with LOINC answer"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-CMVIgMAbPresenceSNOMED.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/CMVIgMAbPresenceSNOMED"/>
+         </reference>
+         <name value="CMVIgMAbPresenceSNOMED"/>
+         <description value="Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunoassay (24119-0) with SNOMED answer"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
          <groupingId value="-ex-example"/>
       </resource>
@@ -1089,6 +1239,21 @@
          </reference>
          <name value="PatientExample5"/>
          <description value="Patient with CRID &amp; MRN, Race=Mixed, Ethnicity=Not Hispanic or Latino"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-PatientExample6.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/PatientExample6"/>
+         </reference>
+         <name value="PatientExample6"/>
+         <description value="Patient with CIBMTR CRID"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
          <groupingId value="-ex-example"/>
       </resource>
@@ -1411,6 +1576,26 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="Observation-ABOBloodGroupObservationLOINC.html"/>
+               <title value="ABOBloodGroupObservationLOINC"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-ABOBloodGroupObservationSNOMED.html"/>
+               <title value="ABOBloodGroupObservationSNOMED"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-ABORhObservationLOINC.html"/>
+               <title value="ABORhObservationLOINC"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-ABORhObservationSNOMED.html"/>
+               <title value="ABORhObservationSNOMED"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="Observation-AlbuminObservation.html"/>
                <title value="AlbuminObservation"/>
                <generation value="generated"/>
@@ -1418,6 +1603,36 @@
             <page>
                <nameUrl value="Observation-BasophilsObservation.html"/>
                <title value="BasophilsObservation"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-CMVDNAViralLoadCopiesmL.html"/>
+               <title value="CMVDNAViralLoadCopiesmL"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-CMVDNAViralLoadIUmL.html"/>
+               <title value="CMVDNAViralLoadIUmL"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-CMVIgAbPresenceSNOMED.html"/>
+               <title value="CMVIgAbPresenceSNOMED"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-CMVIgGAbPresenceLOINC.html"/>
+               <title value="CMVIgGAbPresenceLOINC"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-CMVIgMAbPresenceLOINC.html"/>
+               <title value="CMVIgMAbPresenceLOINC"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-CMVIgMAbPresenceSNOMED.html"/>
+               <title value="CMVIgMAbPresenceSNOMED"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -1468,6 +1683,11 @@
             <page>
                <nameUrl value="Patient-PatientExample5.html"/>
                <title value="PatientExample5"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-PatientExample6.html"/>
+               <title value="PatientExample6"/>
                <generation value="generated"/>
             </page>
          </page>

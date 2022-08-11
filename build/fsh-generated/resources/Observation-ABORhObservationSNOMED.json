@@ -1,0 +1,48 @@
+{
+  "resourceType": "Observation",
+  "id": "ABORhObservationSNOMED",
+  "meta": {
+    "security": [
+      {
+        "system": "http://terminology.cibmtr.org/codesystem/transplant-center",
+        "code": "rc_99999",
+        "display": "99999 My Transplant Center"
+      }
+    ],
+    "profile": [
+      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "882-1",
+        "system": "http://loinc.org",
+        "display": "ABO and Rh group [Type] in Blood"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "278147001",
+        "system": "http://snomed.info/sct",
+        "display": "Blood group O Rh(D) positive (finding)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatientExample6"
+  }
+}

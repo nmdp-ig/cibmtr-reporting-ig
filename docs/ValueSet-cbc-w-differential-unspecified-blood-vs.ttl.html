@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"8.17"}
-    h3,h4,h5,h6{--heading-prefix:"8.17"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.17"}
+    h3,h4,h5,h6{--heading-prefix:"13.17"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -59,7 +59,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.4a - Trial Use 1
+            <span style="display:inline-block;">0.1.5 - Trial Use 1
 
 
             </span>
@@ -98,19 +98,31 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Connection-Guide.html">Connection - R4</a>
+        <a href="Connection-Guide-R4.html">Connection - R4</a>
+      </li>
+      <li>
+        <a href="Endpoints.html">Endpoints</a>
+      </li>
+      <li>
+        <a href="Access-Credentials.html">Access Credentials</a>
       </li>
       <li>
         <a href="CRID-Assignment.html">CRID Assignment</a>
       </li>
       <li>
-        <a href="Medications.html">Medications</a>
-      </li>
-      <li>
         <a href="Laboratory-Observations.html">Lab Observations</a>
       </li>
       <li>
+        <a href="Medications.html">Medications</a>
+      </li>
+      <li>
+        <a href="Bundles.html">Bundles</a>
+      </li>
+      <li>
         <a href="Form-2450.html">Form 2450</a>
+      </li>
+      <li>
+        <a href="Example-Code.html">Example Code Snippets</a>
       </li>
     </ul>
   </li>
@@ -155,7 +167,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.4a). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.5). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -208,7 +220,7 @@
         
           Active
           
-            as of 2022-08-11
+            as of 2022-08-24
           
         
       </td>
@@ -240,11 +252,11 @@
      fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://loinc.org\&quot;&gt;&lt;code&gt;http://loinc.org&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/20570-8.html\&quot;&gt;20570-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hematocrit [Volume Fraction] of Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26453-1.html\&quot;&gt;26453-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Erythrocytes [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/718-7.html\&quot;&gt;718-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hemoglobin [Mass/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/26515-7.html\&quot;&gt;26515-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Platelets [#/volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/28539-5.html\&quot;&gt;28539-5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;MCH [Entitic mass]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/28540-3.html\&quot;&gt;28540-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;MCHC [Mass/volume]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/28542-9.html\&quot;&gt;28542-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Platelet mean volume [Entitic volume] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30384-2.html\&quot;&gt;30384-2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Erythrocyte distribution width [Entitic volume]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30385-9.html\&quot;&gt;30385-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Erythrocyte distribution width [Ratio]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://details.loinc.org/LOINC/30428-7.html\&quot;&gt;30428-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;MCV [Entitic volume]&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Import all the codes that are contained in &lt;a href=\&quot;ValueSet-differential-unspecified-blood-vs.html\&quot;&gt;http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/differential-unspecified-blood-vs&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
   ];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-differential-unspecified-blood-vs&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;0.1.4a&quot;];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;0.1.5&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;CBCWDifferentialUnspecifiedBloodVS&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;CBC W Differential panel, method unspecified - Blood (69742-5)&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2022-08-11T16:57:48-05:00&quot;^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2022-08-24T16:05:20-05:00&quot;^^xsd:dateTime];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;The Medical College of Wisconsin, Inc. and the National Marrow Donor Program&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -339,7 +351,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.4a based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 11, 2022 16:57-0500">2022-08-11</span>
+    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 24, 2022 16:05-0500">2022-08-24</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

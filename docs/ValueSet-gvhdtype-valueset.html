@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"8.21"}
-    h3,h4,h5,h6{--heading-prefix:"8.21"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.21"}
+    h3,h4,h5,h6{--heading-prefix:"13.21"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.4a - Trial Use 1
+            <span style="display:inline-block;">0.1.5 - Trial Use 1
 
 
             </span>
@@ -95,19 +95,31 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Connection-Guide.html">Connection - R4</a>
+        <a href="Connection-Guide-R4.html">Connection - R4</a>
+      </li>
+      <li>
+        <a href="Endpoints.html">Endpoints</a>
+      </li>
+      <li>
+        <a href="Access-Credentials.html">Access Credentials</a>
       </li>
       <li>
         <a href="CRID-Assignment.html">CRID Assignment</a>
       </li>
       <li>
-        <a href="Medications.html">Medications</a>
-      </li>
-      <li>
         <a href="Laboratory-Observations.html">Lab Observations</a>
       </li>
       <li>
+        <a href="Medications.html">Medications</a>
+      </li>
+      <li>
+        <a href="Bundles.html">Bundles</a>
+      </li>
+      <li>
         <a href="Form-2450.html">Form 2450</a>
+      </li>
+      <li>
+        <a href="Example-Code.html">Example Code Snippets</a>
       </li>
     </ul>
   </li>
@@ -152,7 +164,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.4a). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.5). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -203,7 +215,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhdtype-valueset<button data-clipboard-text="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhdtype-valueset" title="Click to copy URL" class="btn-copy"></button></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.4a<button data-clipboard-text="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhdtype-valueset|0.1.4a" title="Click to copy versioned URL" class="btn-copy"></button></span>
+      <span class="copy-text">0.1.5<button data-clipboard-text="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhdtype-valueset|0.1.5" title="Click to copy versioned URL" class="btn-copy"></button></span>
       </td>
     </tr>
 
@@ -219,7 +231,7 @@
         
           Active
           
-            as of 2022-08-11
+            as of 2022-08-24
           
         
       </td>
@@ -256,13 +268,13 @@
 
   <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  234646005 (Graft versus host disease)</li><li>Include these codes as defined in <a href="CodeSystem-cibmtr-cadsr-vm.html"><code>http://cdebrowser.nci.nih.gov</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a name="l417">​</a><a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.584722619">CADSR:4722619</a></td><td>Acute GVHD</td></tr><tr><td><a name="l423">​</a><a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.582991794">CADSR:2991794</a></td><td>Classic cGVHD</td></tr><tr><td><a name="l429">​</a><a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.582991796">CADSR:2991796</a></td><td>Late Acute GVHD</td></tr><tr><td><a name="l435">​</a><a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.583261243">CADSR:3261243</a></td><td>Not Applicable</td></tr><tr><td><a name="l441">​</a><a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.582991795">CADSR:2991795</a></td><td>Overlap cGVHD</td></tr></table></li></ul></div>
+<div><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  234646005 (Graft versus host disease)</li><li>Include these codes as defined in <a href="CodeSystem-cibmtr-cadsr-vm.html"><code>http://cdebrowser.nci.nih.gov</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a name="l441">​</a><a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.584722619">CADSR:4722619</a></td><td>Acute GVHD</td></tr><tr><td><a name="l447">​</a><a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.582991794">CADSR:2991794</a></td><td>Classic cGVHD</td></tr><tr><td><a name="l453">​</a><a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.582991796">CADSR:2991796</a></td><td>Late Acute GVHD</td></tr><tr><td><a name="l459">​</a><a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.583261243">CADSR:3261243</a></td><td>Not Applicable</td></tr><tr><td><a name="l465">​</a><a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.582991795">CADSR:2991795</a></td><td>Overlap cGVHD</td></tr></table></li></ul></div>
 
   <p>&nbsp;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div><p>This value set contains 18 concepts</p><p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment <a href="CodeSystem-cibmtr-cadsr-vm.html">NIH Common Data Element Value Meanings for CIBMTR v0.1.4a (CodeSystem)</a></p><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion based on: </p><ul><li><a href="CodeSystem-cibmtr-cadsr-vm.html">NIH Common Data Element Value Meanings for CIBMTR v0.1.4a (CodeSystem)</a></li><li>SNOMED CT International edition 31-Jul 2022</li></ul></div><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-234646005"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/234646005">234646005</a></td><td>http://snomed.info/sct</td><td>Graft versus host disease</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-402355000"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/402355000">402355000</a></td><td>http://snomed.info/sct</td><td>Acute graft-versus-host disease (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-402356004"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/402356004">402356004</a></td><td>http://snomed.info/sct</td><td>Chronic graft-versus-host disease (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-402357008"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/402357008">402357008</a></td><td>http://snomed.info/sct</td><td>Lichenoid chronic graft-versus-host disease (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-402358003"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/402358003">402358003</a></td><td>http://snomed.info/sct</td><td>Sclerodermoid chronic graft-versus-host disease (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-402360001"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/402360001">402360001</a></td><td>http://snomed.info/sct</td><td>Materno-fetal graft-versus-host disease (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-444547006"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/444547006">444547006</a></td><td>http://snomed.info/sct</td><td>Graft versus host disease of skin (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-762618008"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/762618008">762618008</a></td><td>http://snomed.info/sct</td><td>Bronchiolitis obliterans syndrome due to and after lung transplantation (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-846606007"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/846606007">846606007</a></td><td>http://snomed.info/sct</td><td>Graft versus host disease of liver</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-1144907001"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1144907001">1144907001</a></td><td>http://snomed.info/sct</td><td>Late acute graft-versus-host disease (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-1144908006"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1144908006">1144908006</a></td><td>http://snomed.info/sct</td><td>Late chronic graft-versus-host disease</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-1144963000"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1144963000">1144963000</a></td><td>http://snomed.info/sct</td><td>Acute on chronic graft-versus-host disease (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-1177120001"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1177120001">1177120001</a></td><td>http://snomed.info/sct</td><td>Bronchiolitis obliterans syndrome due to and following allogeneic stem cell transplant</td></tr><tr><td style="white-space:nowrap"><a name="l627">​</a><a name="http---cdebrowser.nci.nih.gov-CADSR-4722619"> </a>&nbsp;&nbsp;<a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.584722619">CADSR:4722619</a></td><td>http://cdebrowser.nci.nih.gov</td><td>Acute GVHD</td></tr><tr><td style="white-space:nowrap"><a name="l638">​</a><a name="http---cdebrowser.nci.nih.gov-CADSR-2991794"> </a>&nbsp;&nbsp;<a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.582991794">CADSR:2991794</a></td><td>http://cdebrowser.nci.nih.gov</td><td>Classic cGVHD</td></tr><tr><td style="white-space:nowrap"><a name="l649">​</a><a name="http---cdebrowser.nci.nih.gov-CADSR-2991796"> </a>&nbsp;&nbsp;<a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.582991796">CADSR:2991796</a></td><td>http://cdebrowser.nci.nih.gov</td><td>Late Acute GVHD</td></tr><tr><td style="white-space:nowrap"><a name="l660">​</a><a name="http---cdebrowser.nci.nih.gov-CADSR-3261243"> </a>&nbsp;&nbsp;<a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.583261243">CADSR:3261243</a></td><td>http://cdebrowser.nci.nih.gov</td><td>Not Applicable</td></tr><tr><td style="white-space:nowrap"><a name="l671">​</a><a name="http---cdebrowser.nci.nih.gov-CADSR-2991795"> </a>&nbsp;&nbsp;<a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.582991795">CADSR:2991795</a></td><td>http://cdebrowser.nci.nih.gov</td><td>Overlap cGVHD</td></tr></table></div>
+  <div><p>This value set contains 18 concepts</p><p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment <a href="CodeSystem-cibmtr-cadsr-vm.html">NIH Common Data Element Value Meanings for CIBMTR v0.1.5 (CodeSystem)</a></p><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion based on: </p><ul><li><a href="CodeSystem-cibmtr-cadsr-vm.html">NIH Common Data Element Value Meanings for CIBMTR v0.1.5 (CodeSystem)</a></li><li>SNOMED CT International edition 31-Jul 2022</li></ul></div><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-234646005"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/234646005">234646005</a></td><td>http://snomed.info/sct</td><td>Graft versus host disease</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-402355000"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/402355000">402355000</a></td><td>http://snomed.info/sct</td><td>Acute graft-versus-host disease (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-402356004"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/402356004">402356004</a></td><td>http://snomed.info/sct</td><td>Chronic graft-versus-host disease (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-402357008"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/402357008">402357008</a></td><td>http://snomed.info/sct</td><td>Lichenoid chronic graft-versus-host disease (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-402358003"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/402358003">402358003</a></td><td>http://snomed.info/sct</td><td>Sclerodermoid chronic graft-versus-host disease (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-402360001"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/402360001">402360001</a></td><td>http://snomed.info/sct</td><td>Materno-fetal graft-versus-host disease (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-444547006"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/444547006">444547006</a></td><td>http://snomed.info/sct</td><td>Graft versus host disease of skin (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-762618008"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/762618008">762618008</a></td><td>http://snomed.info/sct</td><td>Bronchiolitis obliterans syndrome due to and after lung transplantation (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-846606007"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/846606007">846606007</a></td><td>http://snomed.info/sct</td><td>Graft versus host disease of liver</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-1144907001"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1144907001">1144907001</a></td><td>http://snomed.info/sct</td><td>Late acute graft-versus-host disease (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-1144908006"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1144908006">1144908006</a></td><td>http://snomed.info/sct</td><td>Late chronic graft-versus-host disease</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-1144963000"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1144963000">1144963000</a></td><td>http://snomed.info/sct</td><td>Acute on chronic graft-versus-host disease (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-1177120001"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1177120001">1177120001</a></td><td>http://snomed.info/sct</td><td>Bronchiolitis obliterans syndrome due to and following allogeneic stem cell transplant</td></tr><tr><td style="white-space:nowrap"><a name="l651">​</a><a name="http---cdebrowser.nci.nih.gov-CADSR-4722619"> </a>&nbsp;&nbsp;<a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.584722619">CADSR:4722619</a></td><td>http://cdebrowser.nci.nih.gov</td><td>Acute GVHD</td></tr><tr><td style="white-space:nowrap"><a name="l662">​</a><a name="http---cdebrowser.nci.nih.gov-CADSR-2991794"> </a>&nbsp;&nbsp;<a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.582991794">CADSR:2991794</a></td><td>http://cdebrowser.nci.nih.gov</td><td>Classic cGVHD</td></tr><tr><td style="white-space:nowrap"><a name="l673">​</a><a name="http---cdebrowser.nci.nih.gov-CADSR-2991796"> </a>&nbsp;&nbsp;<a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.582991796">CADSR:2991796</a></td><td>http://cdebrowser.nci.nih.gov</td><td>Late Acute GVHD</td></tr><tr><td style="white-space:nowrap"><a name="l684">​</a><a name="http---cdebrowser.nci.nih.gov-CADSR-3261243"> </a>&nbsp;&nbsp;<a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.583261243">CADSR:3261243</a></td><td>http://cdebrowser.nci.nih.gov</td><td>Not Applicable</td></tr><tr><td style="white-space:nowrap"><a name="l695">​</a><a name="http---cdebrowser.nci.nih.gov-CADSR-2991795"> </a>&nbsp;&nbsp;<a href="CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.582991795">CADSR:2991795</a></td><td>http://cdebrowser.nci.nih.gov</td><td>Overlap cGVHD</td></tr></table></div>
 
   <hr/>
   <p>
@@ -326,7 +338,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.4a based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 11, 2022 16:57-0500">2022-08-11</span>
+    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 24, 2022 16:05-0500">2022-08-24</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

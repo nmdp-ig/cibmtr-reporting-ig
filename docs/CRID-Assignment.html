@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3"}
-    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -57,7 +57,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.4a - Trial Use 1
+            <span style="display:inline-block;">0.1.5 - Trial Use 1
 
 
             </span>
@@ -96,19 +96,31 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Connection-Guide.html">Connection - R4</a>
+        <a href="Connection-Guide-R4.html">Connection - R4</a>
+      </li>
+      <li>
+        <a href="Endpoints.html">Endpoints</a>
+      </li>
+      <li>
+        <a href="Access-Credentials.html">Access Credentials</a>
       </li>
       <li>
         <a href="CRID-Assignment.html">CRID Assignment</a>
       </li>
       <li>
-        <a href="Medications.html">Medications</a>
-      </li>
-      <li>
         <a href="Laboratory-Observations.html">Lab Observations</a>
       </li>
       <li>
+        <a href="Medications.html">Medications</a>
+      </li>
+      <li>
+        <a href="Bundles.html">Bundles</a>
+      </li>
+      <li>
         <a href="Form-2450.html">Form 2450</a>
+      </li>
+      <li>
+        <a href="Example-Code.html">Example Code Snippets</a>
       </li>
     </ul>
   </li>
@@ -160,7 +172,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.4a). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.5). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>CRID Assignment</h2>
   
 
@@ -179,9 +191,140 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<h1 id="crid-assignment">CRID Assignment</h1>
+<h1 id="cibmtr-research-id-crid-lookup-or-creation">CIBMTR Research ID (CRID) Lookup or Creation</h1>
 
-<p>TBD</p>
+<p>The client must search for a patient that has been previously registered with CIBMTR, or register a new patient. In either case, the client will receive from the CRID service a CIBMTR Research Identifier (CRID) to be used as a patient resource identifier for all subsequent FHIR data submissions.  CIBMTR exposes a special service API to handle the submission of personally identifiable information (PII).  Data submitted via the externally available CRID API endpoint has special protections and exposure within CIBMTR to avoid unnecessary handling of PII.  For all subsequent FHIR data submissions, the CRID is used to identify the patient and any PII is removed from FHIR resources before being stored on CIBMTR FHIR servers.</p>
+
+<p>The CRID API uses a <code class="language-plaintext highlighter-rouge">PUT</code> request at the following case-sensitive endpoint URLs:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PUT    &lt;base URL&gt;/CRID
+</code></pre></div></div>
+
+<p>The authorization key and bearer token must be included in the request as mentioned in the previous section.  For the body of the PUT request, the following data fields are requested:</p>
+
+<p><strong>Five  required attributes</strong></p>
+<ul>
+  <li>CCN (5digit)</li>
+  <li>First name</li>
+  <li>Last name</li>
+  <li>Birthdate (YYYY-MM-DD)</li>
+  <li>Gender (M/F)</li>
+</ul>
+
+<p><strong>Optional attributes (possibly present)</strong></p>
+<ul>
+  <li>SSN (###-##-####)</li>
+  <li>Mother’s maiden name</li>
+  <li>Race (race code)</li>
+  <li>Ethnicity (ethnicity code)</li>
+  <li>NMDP RID</li>
+  <li>EBMT CIC + ID</li>
+  <li>CIBMTR Team + IUBMID</li>
+</ul>
+
+<p>Complete list of payload options for CRID registration is shown below. <strong>Note that this is not a FHIR JSON object, but rather is a CIBMTR specific JSON format</strong>.</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"ccn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"patient"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"birthDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"gender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"ssn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"mothersMaidenName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"race"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"string"</span><span class="p">],</span><span class="w">
+        </span><span class="nl">"ethnicity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"nmdpRid"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"ebmtCic"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"cibmtrIubmid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"cibmtrTeam"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">        
+        </span><span class="nl">"ebmtId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">        
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>CRID Race Codes</strong></p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Race Value Code</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1002-5</td>
+      <td>American Indian or Alaska Native</td>
+    </tr>
+    <tr>
+      <td>2028-9</td>
+      <td>Asian</td>
+    </tr>
+    <tr>
+      <td>2054-5</td>
+      <td>Black or African American</td>
+    </tr>
+    <tr>
+      <td>2076-8</td>
+      <td>Native Hawaiian or Other Pacific Islander</td>
+    </tr>
+    <tr>
+      <td>2106-3</td>
+      <td>White</td>
+    </tr>
+    <tr>
+      <td>ASKU</td>
+      <td>Not Reported</td>
+    </tr>
+    <tr>
+      <td>UNK</td>
+      <td>Unknown</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>CRID Ethnicity Codes</strong></p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Ethnicity Value Code</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2135-2</td>
+      <td>Hispanic or Latino</td>
+    </tr>
+    <tr>
+      <td>2186-5</td>
+      <td>Non Hispanic or Latino</td>
+    </tr>
+    <tr>
+      <td>UNK</td>
+      <td>Unknown</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Because the CRID API is available as a <code class="language-plaintext highlighter-rouge">PUT</code> request, submitting the same data twice does not re-register the patient, but rather will retrieve the same CRID number registered previously.   The CRID API will attempt to perform partial “fuzzy” matches based on data submitted to avoid re-registering the same patient with two different CRID numbers.</p>
+
+<p>The response payload of the CRID Service API is a JSON object that contains the CRID number (lower pane in Figure 4).  The CRID number is then used for all other data references to the registered patient.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="dfhir_r3_figure04.png" alt="Figure 1" width="50%" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><i>Figure 1: Example CRID registration PUT request with JSON body payload (top pane) and response payload (bottom pane)</i></td>
+    </tr>
+  </tbody>
+</table>
 
 
 
@@ -206,7 +349,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.4a based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 11, 2022 16:57-0500">2022-08-11</span>
+    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 24, 2022 16:05-0500">2022-08-24</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

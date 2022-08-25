@@ -72,9 +72,49 @@ Complete list of payload options for CRID registration is shown below. **Note th
 
 Because the CRID API is available as a `PUT` request, submitting the same data twice does not re-register the patient, but rather will retrieve the same CRID number registered previously.   The CRID API will attempt to perform partial "fuzzy" matches based on data submitted to avoid re-registering the same patient with two different CRID numbers. 
  
-The response payload of the CRID Service API is a JSON object that contains the CRID number (lower pane in Figure 4).  The CRID number is then used for all other data references to the registered patient.
+The response payload of the CRID Service API is a JSON object that contains the CRID number (lower pane in Figure).  The CRID number is then used for all other data references to the registered patient.
 
-
-|![Figure 1](dfhir_r3_figure04.png){: width="50%"}|
+|![Figure 1](CRID_response.jpg){: width="50%"}|
 |:--:|
 | <i>Figure 1: Example CRID registration PUT request with JSON body payload (top pane) and response payload (bottom pane)</i>|
+{:.grid}
+
+### Example Code
+
+## CRID Lookup/Registration (PUT)
+
+### _Python_ 
+
+~~~ python
+#!/usr/bin/env python3
+
+import json
+import requests
+from pathlib import Path
+
+# Replace patient variable with your patient demographic data. 
+# Below is just an example.
+patient = {
+    "ccn": "12002",
+    "patient": {
+        "firstName": "Steve",
+        "lastName": "Rogers",
+        "birthDate": "1925-07-04",
+        "gender": "M",
+        "ssn": "098-76-5432",
+        "race": ['2106-3'],
+        "ethnicity": "UNK"
+    }
+}
+tokenfile = Path('token.txt')  # Bearer token was previously captured in token.txt
+authstring = 'Bearer ' + tokenfile.read_text()
+headers = {'Authorization': authstring,
+            'Content-Type': 'application/json'}
+r = requests.put('https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1/CRID',
+                    json=patient,
+                    headers=headers)
+if r:
+    print(json.dumps(r.json(), indent=4))
+else:
+    print(r.status_code)
+~~~

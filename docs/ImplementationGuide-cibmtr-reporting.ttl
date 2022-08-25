@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CIBMTRReporting</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/cibmtr-reporting</pre><div><p>How to report HCT data to CIBMTR</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/cibmtr-reporting"];
-  fhir:ImplementationGuide.version [ fhir:value "0.1.4a"];
+  fhir:ImplementationGuide.version [ fhir:value "0.1.5"];
   fhir:ImplementationGuide.name [ fhir:value "CIBMTRReporting"];
   fhir:ImplementationGuide.title [ fhir:value "CIBMTR Reporting Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-08-11T16:57:48-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-08-24T16:05:20-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -1519,34 +1519,59 @@
          fhir:index 0;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 1;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Connection-Guide.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Connection Guide" ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "a-test.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "A Test" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Access-Credentials.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Access Credentials" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Bundles.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Bundles" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 4;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Connection-Guide-R4.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Connection Guide R 4" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 5;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "CRID-Assignment.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "CRID Assignment" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 3;
+         fhir:index 6;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Direct-FHIR-STU3.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Direct FHIR STU 3" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
-         fhir:index 4;
+         fhir:index 7;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Endpoints.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Endpoints" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 8;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Example-Code.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Example Code" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 9;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Form-2450.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Form 2450" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 5;
+         fhir:index 10;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Laboratory-Observations.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Laboratory Observations" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 6;
+         fhir:index 11;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Medications.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Medications" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]

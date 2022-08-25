@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"8.38"}
-    h3,h4,h5,h6{--heading-prefix:"8.38"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.38"}
+    h3,h4,h5,h6{--heading-prefix:"13.38"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -59,7 +59,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.4a - Trial Use 1
+            <span style="display:inline-block;">0.1.5 - Trial Use 1
 
 
             </span>
@@ -98,19 +98,31 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Connection-Guide.html">Connection - R4</a>
+        <a href="Connection-Guide-R4.html">Connection - R4</a>
+      </li>
+      <li>
+        <a href="Endpoints.html">Endpoints</a>
+      </li>
+      <li>
+        <a href="Access-Credentials.html">Access Credentials</a>
       </li>
       <li>
         <a href="CRID-Assignment.html">CRID Assignment</a>
       </li>
       <li>
-        <a href="Medications.html">Medications</a>
-      </li>
-      <li>
         <a href="Laboratory-Observations.html">Lab Observations</a>
       </li>
       <li>
+        <a href="Medications.html">Medications</a>
+      </li>
+      <li>
+        <a href="Bundles.html">Bundles</a>
+      </li>
+      <li>
         <a href="Form-2450.html">Form 2450</a>
+      </li>
+      <li>
+        <a href="Example-Code.html">Example Code Snippets</a>
       </li>
     </ul>
   </li>
@@ -155,7 +167,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.4a). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.5). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -208,7 +220,7 @@
         
           Active
           
-            as of 2022-08-11
+            as of 2022-08-24
           
         
       </td>
@@ -233,11 +245,11 @@
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://www.nlm.nih.gov/research/umls/rxnorm\&quot;&gt;&lt;code&gt;http://www.nlm.nih.gov/research/umls/rxnorm&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;151319&lt;/td&gt;&lt;td&gt;Alexan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3041&lt;/td&gt;&lt;td&gt;cytarabine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;151577&lt;/td&gt;&lt;td&gt;Cytosar&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;220177&lt;/td&gt;&lt;td&gt;Tarabine PFS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;196337&lt;/td&gt;&lt;td&gt;DepoCyt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942744&lt;/td&gt;&lt;td&gt;Vyxeos&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1175506&lt;/td&gt;&lt;td&gt;Alexan Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2285813&lt;/td&gt;&lt;td&gt;cytarabine / daunorubicin Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2285807&lt;/td&gt;&lt;td&gt;cytarabine / daunorubicin Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;331779&lt;/td&gt;&lt;td&gt;cytarabine 100 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;332422&lt;/td&gt;&lt;td&gt;cytarabine 20 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;564102&lt;/td&gt;&lt;td&gt;cytarabine 20 MG/ML [Alexan]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;564515&lt;/td&gt;&lt;td&gt;cytarabine 20 MG/ML [Cytosar]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;572983&lt;/td&gt;&lt;td&gt;cytarabine 20 MG/ML [Tarabine PFS]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;105580&lt;/td&gt;&lt;td&gt;cytarabine 20 MG/ML Injectable Solution [Alexan]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;108359&lt;/td&gt;&lt;td&gt;cytarabine 20 MG/ML Injectable Solution [Cytosar]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;213044&lt;/td&gt;&lt;td&gt;cytarabine 20 MG/ML Injectable Solution [Tarabine PFS]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;333668&lt;/td&gt;&lt;td&gt;cytarabine 50 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;564516&lt;/td&gt;&lt;td&gt;cytarabine 50 MG/ML [Cytosar]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;108360&lt;/td&gt;&lt;td&gt;cytarabine 50 MG/ML Injectable Solution [Cytosar]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1151483&lt;/td&gt;&lt;td&gt;cytarabine Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;371676&lt;/td&gt;&lt;td&gt;cytarabine Injectable Solution&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;362596&lt;/td&gt;&lt;td&gt;cytarabine Injectable Solution [Alexan]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;363023&lt;/td&gt;&lt;td&gt;cytarabine Injectable Solution [Cytosar]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;362991&lt;/td&gt;&lt;td&gt;cytarabine Injectable Solution [Tarabine PFS]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;544939&lt;/td&gt;&lt;td&gt;cytarabine Injectable Suspension&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1731354&lt;/td&gt;&lt;td&gt;cytarabine Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;968805&lt;/td&gt;&lt;td&gt;cytarabine liposome 10 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942738&lt;/td&gt;&lt;td&gt;cytarabine liposome 100 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1174486&lt;/td&gt;&lt;td&gt;Cytosar Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1179037&lt;/td&gt;&lt;td&gt;Tarabine PFS Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2017575&lt;/td&gt;&lt;td&gt;cytarabine / daunorubicin&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cytarabine-vs",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.4a",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.5",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "RxNormCytarabineVS",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "RxNorm - Cytarabine",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2022-08-11T16:57:48-05:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2022-08-24T16:05:20-05:00",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -426,7 +438,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.4a based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 11, 2022 16:57-0500">2022-08-11</span>
+    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 24, 2022 16:05-0500">2022-08-24</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

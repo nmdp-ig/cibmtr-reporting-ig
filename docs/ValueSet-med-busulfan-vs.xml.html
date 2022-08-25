@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"8.35"}
-    h3,h4,h5,h6{--heading-prefix:"8.35"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.35"}
+    h3,h4,h5,h6{--heading-prefix:"13.35"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -59,7 +59,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.4a - Trial Use 1
+            <span style="display:inline-block;">0.1.5 - Trial Use 1
 
 
             </span>
@@ -98,19 +98,31 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Connection-Guide.html">Connection - R4</a>
+        <a href="Connection-Guide-R4.html">Connection - R4</a>
+      </li>
+      <li>
+        <a href="Endpoints.html">Endpoints</a>
+      </li>
+      <li>
+        <a href="Access-Credentials.html">Access Credentials</a>
       </li>
       <li>
         <a href="CRID-Assignment.html">CRID Assignment</a>
       </li>
       <li>
-        <a href="Medications.html">Medications</a>
-      </li>
-      <li>
         <a href="Laboratory-Observations.html">Lab Observations</a>
       </li>
       <li>
+        <a href="Medications.html">Medications</a>
+      </li>
+      <li>
+        <a href="Bundles.html">Bundles</a>
+      </li>
+      <li>
         <a href="Form-2450.html">Form 2450</a>
+      </li>
+      <li>
+        <a href="Example-Code.html">Example Code Snippets</a>
       </li>
     </ul>
   </li>
@@ -155,7 +167,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.4a). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.5). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -208,7 +220,7 @@
         
           Active
           
-            as of 2022-08-11
+            as of 2022-08-24
           
         
       </td>
@@ -233,11 +245,11 @@
     &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;http://www.nlm.nih.gov/research/umls/rxnorm&quot;&gt;&lt;code&gt;http://www.nlm.nih.gov/research/umls/rxnorm&lt;/code&gt;&lt;/a&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1828&lt;/td&gt;&lt;td&gt;busulfan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;284676&lt;/td&gt;&lt;td&gt;Busulfex&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;203010&lt;/td&gt;&lt;td&gt;Myleran&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;284425&lt;/td&gt;&lt;td&gt;10 ML busulfan 6 MG/ML Injection [Busulfex]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;332701&lt;/td&gt;&lt;td&gt;busulfan 0.5 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;564077&lt;/td&gt;&lt;td&gt;busulfan 0.5 MG [Myleran]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;105550&lt;/td&gt;&lt;td&gt;busulfan 0.5 MG Oral Tablet [Myleran]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;317620&lt;/td&gt;&lt;td&gt;busulfan 2 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;564078&lt;/td&gt;&lt;td&gt;busulfan 2 MG [Myleran]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;105551&lt;/td&gt;&lt;td&gt;busulfan 2 MG Oral Tablet [Myleran]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;315503&lt;/td&gt;&lt;td&gt;busulfan 6 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;574864&lt;/td&gt;&lt;td&gt;busulfan 6 MG/ML [Busulfex]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1729356&lt;/td&gt;&lt;td&gt;busulfan 6 MG/ML Injection [Busulfex]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1151374&lt;/td&gt;&lt;td&gt;busulfan Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1729351&lt;/td&gt;&lt;td&gt;busulfan Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1729353&lt;/td&gt;&lt;td&gt;busulfan Injection [Busulfex]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1151375&lt;/td&gt;&lt;td&gt;busulfan Oral Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;371165&lt;/td&gt;&lt;td&gt;busulfan Oral Tablet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;368542&lt;/td&gt;&lt;td&gt;busulfan Oral Tablet [Myleran]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1151376&lt;/td&gt;&lt;td&gt;busulfan Pill&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1168702&lt;/td&gt;&lt;td&gt;Busulfex Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1185666&lt;/td&gt;&lt;td&gt;Myleran Oral Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1185667&lt;/td&gt;&lt;td&gt;Myleran Pill&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.1.4a&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.1.5&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;RxNormBusulfanVS&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;RxNorm - Busulfan&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2022-08-11T16:57:48-05:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2022-08-24T16:05:20-05:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The Medical College of Wisconsin, Inc. and the National Marrow Donor Program&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
@@ -382,7 +394,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.4a based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 11, 2022 16:57-0500">2022-08-11</span>
+    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 24, 2022 16:05-0500">2022-08-24</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

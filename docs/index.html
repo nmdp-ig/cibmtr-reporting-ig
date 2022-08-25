@@ -57,7 +57,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.4a - Trial Use 1
+            <span style="display:inline-block;">0.1.5 - Trial Use 1
 
 
             </span>
@@ -96,19 +96,31 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Connection-Guide.html">Connection - R4</a>
+        <a href="Connection-Guide-R4.html">Connection - R4</a>
+      </li>
+      <li>
+        <a href="Endpoints.html">Endpoints</a>
+      </li>
+      <li>
+        <a href="Access-Credentials.html">Access Credentials</a>
       </li>
       <li>
         <a href="CRID-Assignment.html">CRID Assignment</a>
       </li>
       <li>
-        <a href="Medications.html">Medications</a>
-      </li>
-      <li>
         <a href="Laboratory-Observations.html">Lab Observations</a>
       </li>
       <li>
+        <a href="Medications.html">Medications</a>
+      </li>
+      <li>
+        <a href="Bundles.html">Bundles</a>
+      </li>
+      <li>
         <a href="Form-2450.html">Form 2450</a>
+      </li>
+      <li>
+        <a href="Example-Code.html">Example Code Snippets</a>
       </li>
     </ul>
   </li>
@@ -160,10 +172,14 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.4a). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.5). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
-  
+
+
+
+
+
 
   <table class="colsd">
 
@@ -171,7 +187,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/cibmtr-reporting<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/cibmtr-reporting"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.4a<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/cibmtr-reporting|0.1.4a"/></span>
+      <span class="copy-text">0.1.5<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/cibmtr-reporting|0.1.5"/></span>
       </td>
     </tr>
 
@@ -187,7 +203,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2022-08-11
+            as of 2022-08-24
           
         
       </td>
@@ -201,73 +217,123 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
   </table>
-  
-  
-  
-  <div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#Introduction">Introduction</a></li><li><a href="#CRID">CRID Lookup/Creation</a></li><li><a href="#Artifacts">Highlighted Artifacts</a></li></ul></div>
-   <blockquote class="fhir-version-note">
-  <p>
-  This Implementation Guide is designed to use the R4 version of the HL7® FHIR® standard.<br/> 
-  For information on submitting to our Direct FHIR endpoints using FHIR STU3, see the 
-  <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR for STU3 Guide</a>.
-  </p>
-  </blockquote>
- <p>
-  This FHIR Implementation Guide (IG) describes how to send data to CIBMTR via HL7® FHIR®.   
-  </p>
-  <a name="Introduction">  </a>
-  <h3>Introduction</h3>
-  <p>
-  The <a href="https://www.cibmtr.org">Center for International Blood &amp; Marrow Transplant Research® (CIBMTR®)</a>
-  is a research collaboration between the <a href="https://bethematch.org/">National Marrow Donor Program® (NMDP)/Be The Match®</a> 
-  and the <a href="https://www.mcw.edu/">Medical College of Wisconsin (MCW)</a>. 
-  The CIBMTR collaborates with the global scientific community to advance hematopoietic cell 
-  transplantation (HCT) and other cellular therapy worldwide to increase survival and enrich 
-  quality of life for patients. 
-  </p>
-  <p>
-  The CIBMTR facilitates critical observational and interventional research through scientific 
-  and statistical expertise, a large network of transplant centers, and a unique and extensive clinical outcomes database.
-  CIBMTR collects data for HCT recipients using a web-based manual data entry system 
-  (<a href="https://www.cibmtr.org/DataManagement/SystemApplications/FormsNet3">FormsNet</a>) 
-  and an automated messaging system 
-  (<a href="https://www.cibmtr.org/DataManagement/SystemApplications/AGNIS/Pages/default.aspx">A Growable Network Information System (AGNIS)</a>).
-  </p>
-  <p>
-  CIBMTR is now collecting data through the <a href="http://hl7.org/fhir">HL7 Fast Healthcare Interoperability Resources® (FHIR®)</a> standard. 
-  This IG describes the technical specification that CIBMTR accepts from third party clients producing FHIR resources for reporting HCT data.
-  It is primarily based on the <a href="https://www.hl7.org/fhir/us/core/">US Core FHIR IG</a> which defines the minimum conformance 
-  requirements for accessing patient data. 
-  </p>
-  <p>
-  Initially, this IG is focused on information required for sending Patient demographic data that is necessary for creating or retrieving a CIBMTR 
-  Research ID (CRID), and for reporting Patient resources with a known CRID. We have also begun specifying a profile for reporting laboratory observations, 
-  focusing on a set of variables that have been identified as a priority for the CIBMTR Data Transformation Initiative in Fiscal Year 2021.
-  </p>
-  <a name="CRID">  </a>
-  <h3>CRID Lookup/Creation</h3>
-  <p>
-  A REST API is available for enabling users to lookup and/or create CRIDs based on patient demographic
-  information. This is described in <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR for STU3 Guide</a>. 
-  This API does not use FHIR Patient resources, but instead uses a special JSON structure. 
-  We are working on true FHIR interface for this function in the future where Patient FHIR resources may be submitted. 
-  In the meantime, please use the method described <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">here</a>.
-  </p>
-  <a name="Artifacts">  </a>
-  <h3>Highlighted Artifacts</h3>
-  <a name="Profiles">  </a>
-  <h4>Profiles</h4>
-  <ul>
-    <li><a href="StructureDefinition-cibmtr-patient.html">CIBMTR Patient</a></li>
-    <li><a href="StructureDefinition-cibmtr-observation-lab.html">CIBMTR Observation Laboratory Results</a></li>
-    <li><a href="StructureDefinition-cibmtr-obs-priority-variables.html"/>CIBMTR Observation for Priority Variables</li>
-  </ul>
-  <a name="ValueSets"> </a>
-  <h4>ValueSets</h4>
-  <ul>
-    <li><a href="ValueSet-cibmtr-priority-variables-2022.html">CIBMTR Priority Variables for FY22</a></li>
-  </ul>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#guidance" id="markdown-toc-guidance">Guidance</a></li>
+  <li><a href="#highlighted-artifacts" id="markdown-toc-highlighted-artifacts">Highlighted Artifacts</a></li>
+</ul>
+
 </div>
+<blockquote class="blockquote fhir-version-note">
+  <p>This Implementation Guide is designed to use the R4 version of the HL7® FHIR® standard. 
+For information on submitting to our Direct FHIR endpoints using FHIR STU3, see the 
+<a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR for STU3 Guide</a>.</p>
+</blockquote>
+
+<p>This FHIR Implementation Guide (IG) describes how to send data to CIBMTR via HL7® FHIR®.</p>
+
+<h3 id="introduction">Introduction</h3>
+
+<p>The <a href="https://www.cibmtr.org">Center for International Blood &amp; Marrow Transplant Research® (CIBMTR®)</a>
+is a research collaboration between the <a href="https://bethematch.org">National Marrow Donor Program® (NMDP)/Be The Match®</a> 
+and the <a href="https://www.mcw.edu">Medical College of Wisconsin (MCW)</a>. 
+The CIBMTR collaborates with the global scientific community to advance hematopoietic cell 
+transplantation (HCT) and other cellular therapy worldwide to increase survival and enrich 
+quality of life for patients.</p>
+
+<p>The CIBMTR facilitates critical observational and interventional research through scientific 
+and statistical expertise, a large network of transplant centers, and a unique and extensive clinical outcomes database.
+CIBMTR collects data for HCT recipients using a web-based manual data entry system 
+(<a href="https://www.cibmtr.org/DataManagement/SystemApplications/FormsNet3">FormsNet</a>) 
+and an automated messaging system 
+(<a href="https://www.cibmtr.org/DataManagement/SystemApplications/AGNIS/Pages/default.aspx">A Growable Network Information System (AGNIS)</a>).</p>
+
+<p>CIBMTR is now collecting data through the <a href="http://hl7.org/fhir">HL7 Fast Healthcare Interoperability Resources® (FHIR®)</a> standard. 
+This IG describes the technical specification that CIBMTR accepts from third party clients producing FHIR resources for reporting HCT data.
+It is primarily based on the <a href="https://www.hl7.org/fhir/us/core/">US Core FHIR IG</a> which defines the minimum conformance 
+requirements for accessing patient data. Profiles from the <a href="https://hl7.org/fhir/us/mcode/">minimal Common Oncology Data Elements (mCODE) IG</a>, which describes 
+the a core set of structured data elements for oncology, are also used.</p>
+
+<p>Initially, this IG is focused on information required for sending Patient demographic data that is necessary for creating or retrieving a CIBMTR 
+Research ID (CRID), and for reporting Patient resources with a known CRID. It also includes reporting laboratory observations,
+focusing on a set of variables that have been identified as a priority for the CIBMTR Data Transformation Initiative in Fiscal Year 2022. And we have 
+begun describing how medication-related resources may be reported, specifically in the context of CIBMTR Form 2400.</p>
+
+<h3 id="guidance">Guidance</h3>
+
+<ul>
+  <li><a href="Connection-Guide-R4.html">Connecting and Access</a></li>
+  <li><a href="Endpoints.html">API Endpoints</a></li>
+  <li><a href="Access-Credentials.html">Access Credentials</a></li>
+  <li><a href="CRID-Assignment.html">CRID Assignment</a></li>
+  <li><a href="Laboratory-Observations.html">Laboratory Observations</a></li>
+  <li><a href="Medications.html">Medications</a></li>
+  <li><a href="Bundles.html">Bundles</a></li>
+  <li><a href="Example-Code.html">Example code</a></li>
+</ul>
+
+<h3 id="highlighted-artifacts">Highlighted Artifacts</h3>
+
+<h4 id="profiles">Profiles</h4>
+
+<ul>
+  <li><a href="StructureDefinition-cibmtr-patient.html">CIBMTR Patient</a></li>
+  <li><a href="StructureDefinition-cibmtr-observation-lab.html">Laboratory Observation Results</a>
+    <ul>
+      <li><a href="StructureDefinition-cibmtr-obs-priority-variables.html">Laboratory Observation for Priority Variables</a></li>
+    </ul>
+  </li>
+  <li>Medication-related Profiles
+    <ul>
+      <li><a href="StructureDefinition-cibmtr-medication-request.html">MedicationRequest</a></li>
+      <li><a href="StructureDefinition-cibmtr-medication.html">Medication</a>
+        <ul>
+          <li><a href="StructureDefinition-cibmtr-mobilizing-agent-medication.html">Mobilizing Agent Medication</a></li>
+          <li><a href="StructureDefinition-cibmtr-prep-regimen-medication.html">Preprative Regimen Medications</a></li>
+          <li><a href="StructureDefinition-cibmtr-additional-peri-transplant-medication.html">Additional Drugs in Peri-Transplant Period</a></li>
+          <li><a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html">GVHD Prophylaxis Medication</a></li>
+          <li><a href="StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html">Planned Post-HCT Disease Therapy Medication</a></li>
+          <li><a href="StructureDefinition-cibmtr-prior-exposure-medication.html">Prior Exposure Medication</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="valuesets">ValueSets</h4>
+<ul>
+  <li>LOINC (used with Observation)
+    <ul>
+      <li><a href="ValueSet-cibmtr-priority-variables-2022.html">CIBMTR Priority Variables for FY22</a></li>
+    </ul>
+  </li>
+  <li>RxNorm (used in MedicationRequest and Medication)
+    <ul>
+      <li><a href="ValueSet-med-mobilizing-agents-vs.html">Mobilizing Agents (auto only)</a></li>
+      <li><a href="ValueSet-med-prep-regimen-vs.html">Prep Regimen</a></li>
+      <li><a href="ValueSet-med-addition-peri-transplant-vs.html">Additional Drugs in Peri-Transplant Period</a></li>
+      <li><a href="ValueSet-med-gvhd-prophylaxis-vs.html">GVHD Prophylaxis</a></li>
+      <li><a href="ValueSet-med-post-hct-disease-therapy-planned-vs.html">Post-HCT Disease Therapy Planned</a></li>
+      <li><a href="ValueSet-med-prior-exposure-vs.html">Prior Exposure: Potential Study Eligibility</a></li>
+      <li><a href="ValueSet-med-all-form2400-vs.html">All Form 2400 Medications</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+
+
 </div>
 </div>  <!-- /inner-wrapper -->
 </div>  <!-- /row -->
@@ -289,7 +355,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.4a based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 11, 2022 16:57-0500">2022-08-11</span>
+    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 24, 2022 16:05-0500">2022-08-24</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

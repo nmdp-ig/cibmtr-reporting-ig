@@ -1,4 +1,4 @@
-# CIBMTR Research ID (CRID) Lookup or Creation
+### CIBMTR Research ID (CRID) Lookup or Creation
  
 The client must search for a patient that has been previously registered with CIBMTR, or register a new patient. In either case, the client will receive from the CRID service a CIBMTR Research Identifier (CRID) to be used as a patient resource identifier for all subsequent FHIR data submissions.  CIBMTR exposes a special service API to handle the submission of personally identifiable information (PII).  Data submitted via the externally available CRID API endpoint has special protections and exposure within CIBMTR to avoid unnecessary handling of PII.  For all subsequent FHIR data submissions, the CRID is used to identify the patient and any PII is removed from FHIR resources before being stored on CIBMTR FHIR servers.  
 

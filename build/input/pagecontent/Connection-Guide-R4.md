@@ -1,46 +1,33 @@
-# CIBMTR Direct FHIR R4 Connection Guide
-
-## Introduction
+### Introduction
 
 CIBMTR collects clinical research data related to stem-cell transplants including patient characteristics, disease parameters, procedures, treatments, and longitudinal outcomes. Typically, this data is collected using an online form called FormsNet and populated by a data manager associated with a transplant center or hospital.  CIBMTR is committed to minimizing the data collection effort for transplant centers and data managers and is actively working to collect data electronically from transplant center Electronic Health Records (EHR) systems.  CIBMTR is engaged in a program called the Data Transformation Initiative (DTI) where electronic data is collected and used to prepopulate the questions on the applicable CIBMTR forms. Prepopulating form questions reduces the number of questions required by the data managers to subsequently answer manually.
 
 This document describes how to submit HL7 FHIR data electronically using available CIBMTR REST APIs.  Data for each patient is submitted using the HL7 FHIR exchange protocol in JSON or XML format. The REST APIs are available for integration into a custom client architecture or for submission using a manual HTTP client such as Postman. CIBMTR refers to data submitted directly to the CIBMTR FHIR API using a custom client as Direct FHIR data submission.
   
 The process for submitting production data to CIBMTR includes three sequential steps:
-1.	[Request CIBMTR Direct FHIR Service API Access Credentials](Access_Credentionals.md)
-2.	Submit test data using the CIBMTR test API endpoint URLs
-3.	Submit production data with the CIBMTR production API endpoint URLs
+1.	[Request CIBMTR Direct FHIR Service API Access Credentials](Access-Credentionals.html)
+2.	Submit test data using the [CIBMTR test API endpoint URLs](Endpoints.html)
+3.	Submit production data with the [CIBMTR production API endpoint URLs](Endpoints.html) (not yet supported)
 
-Once electronic data has been submitted via the Direct FHIR service API, the Data Manager can login to the FormsNet interface to complete the data submission process for form prepopulation. Associated with each form are important clarifying contextual questions that must be answered to provide necessary information for associating the dates of the electronic data with the key dates of interest on the form.  Answering these contextual questions within FormsNet initiates the electronic data form prepopulation for a specific form.   
+Once data has been submitted via the Direct FHIR service API, the Data Manager can login to the FormsNet interface to complete the data submission process for form prepopulation. Associated with each form are important clarifying contextual questions that must be answered to provide necessary information for associating the dates of the electronic data with the key dates of interest on the form.  Answering these contextual questions within FormsNet initiates the electronic data form prepopulation for a specific form.   
 
 
-## Recommended Data Submission Workflow
+### Recommended Data Submission Workflow
 
 Submitting data to CIBMTR via the Direct FHIR service API involves a four-step process for each patient:
 1.	Register/lookup patient and receive CRID
 2.	Check for existing Patient resource
 3.	Create new Patient resource only if it doesn't already exist
-4.	Send Observation using CIBMTR Patient resource Id as subject reference
+4.	Send Observation using CIBMTR Patient FHIR resource Id as subject reference
 
 Before we dive into the workflow, there are a couple of things to be aware of:  the `<base urls>` and security tags.
 
-**Base URLs**
+#### Base URLs
 
-For the CRID API, and all FHIR STU3 resources, use these `<base URLs>` in the examples that follow. 
+For the CRID API, and all FHIR R4 resources, use the `<base URLs>` from the [Endpoints table](Endpoints.html) in the examples that follow e
 
-_Test Environment (to be used for all development work)_ 
 
->~~~
->https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1
->~~~
-
-_Production Environment_
-
->~~~
->https://api.nmdp.org/cibmtr-fhir-backend/v1
->~~~
-
-**Security tags**
+#### Security tags
 
 Access credentials have been provisioned to allow access to patients and data that is identified to a particular transplant center. To enforce this, the Direct FHIR API requires that all FHIR resources contain a `meta.security` element containing the center number in a FHIR CodeableConcept. This has the form of:
 
@@ -55,10 +42,11 @@ Access credentials have been provisioned to allow access to patients and data th
 
 The `meta.security.code` is a string containing `rc_` followed by the CIBMTR Center Number (CCN). In the above example, replace `<CCN>` with your center number.  Examples of FHIR resources containing this element are found in the sections below.
 
-### Step 1
-    [Register patient and receive CRID](CRID-Assignment.md) 
+#### Step 1
+[Register patient and receive CRID](CRID-Assignment.md) 
 
-### Step 2: Search for existing Patient resource with CRID 
+#### Step 2: 
+Search for existing Patient resource with CRID 
 
 A FHIR Patient resource with an identifier containing the CRID must exist to be used as a subject reference in Observation or other resources. To prevent multiple identical Patient resources from being created, the client must first check to see if it already exists.
 
@@ -96,7 +84,7 @@ To drive home the point, the
 - `Patient.id` is a local server id, and is used as a subject.reference in other FHIR resources.
 - `Patient.identifier` is a business identifier and the where the CRID is located.
 
-### Step 3: Submit Patient FHIR Resource
+#### Step 3: Submit Patient FHIR Resource
 
 If the Patient FHIR resource doesn't already exist, it must be created before any other FHIR resources.  The Patient FHIR resource ID is part of the response to the Patient POST request.  The resource ID is unique to the CIBMTR FHIR server and is used to reference the Patient subject on all subsequently submitted FHIR resources. The resource ID is assigned by the FHIR server and is different from the Patient.identifier section of the FHIR resource. The Patient ID is **NOT** a Patient CRID.
 
@@ -108,7 +96,7 @@ POST    <base URL>/r4/Patient
 
 The authorization key and bearer token must be included in the request as mentioned in the previous section.  FHIR JSON submissions should also include a `content-type` key in the header with value: `application/fhir+json`.  
 
-#### Minimum Patient resource
+##### Minimum Patient resource
 The Patient FHIR resource usually contains the demographics data for the patient, however, since the demographics data is already submitted during the CRID registration process, there are only three primary components necessary in the Patient FHIR resource: 
 
 1.	A `security` label (describe above) within the `meta` section of the Patient resource must contain the CIBMTR Center Number (CCN) prepended with `rc_` and associated with the codesystem as shown in Figure 6.
@@ -330,30 +318,16 @@ An example of the structure of a transaction JSON Bundle FHIR resource is shown 
 }
 ~~~
 
+### Appendices
 
-## Submitting CRID/FHIR Data Using the Postman Client
-
-The example API calls in this document are taken from the Postman API client. Postman allows a user to manually configure and test connecting to and interacting with different APIs. Using Postman is a great way to understand an API, see the responses, and submit limited data manually.  Once the API is well understood, then a custom client can be implemented programmatically using any number of REST client libraries. 
-
-Postman includes the concept of a collection of requests. A collection file can be imported into Postman.  CIBMTR has a collection of requests that accomplish all the tasks in this user guide.  The collection is available upon request.  
-
-|![Figure 9](dfhir_r3_figure09.png){: width="100%"} |
-|:--:|
-| <i>Figure 9: Example POSTMAN collection of requests available from CIBMTR</i>|
-
-Postman also includes the option to run a pre-request script before making an API request. The CIBMTR collection includes a pre-request script that can get the authentication token automatically each time a request is made. These and other simplifications of the process make Postman an excellent tool for exploring, developing, and using the CIBMTR Direct FHIR service APIs for submitting patient data.   
-
-NOTE: Requesting a new token for manual requests should not cause Okta to rate-limit these requests.  However, automated systems must cache and re-use the authentication token to avoid errors.  Tokens are valid for 30 minutes in the production environment.
-
-
-## Appendix 1: CIBMTR Supported Labs and Associated LOINC Codes
+#### Appendix 1: CIBMTR Supported Labs and Associated LOINC Codes
 
 CIBMTR currently supports submission of lab measurements collected prior to and post-HCT transfusion.  When submitting FHIR Observation resources, one of the below supported LOINC codes must be used in the code section of the resource.  Selecting the correct LOINC code to use to represent the clinical concept of the lab data should be done by someone clinically trained to understand the lab measurement and corresponding LOINC code.  Lab quantities should always include the corresponding unit of measure coded using the UCUM standard vocabulary.
 
 A FHIR ValueSet representing these codes can be found on
 https://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet-cibmtr-priority-variables-2022.html 
 
-## Appendix 2: Frequently Asked Questions
+#### Appendix 2: Frequently Asked Questions
 
 **_Can multiple patients be registered at the same time using the CRID Service API?_** 
 > No, the API currently supports one CRID registration at a time.
@@ -365,7 +339,7 @@ https://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet-cibmtr-priority-variables-202
 > Send the same PUT request to the CRID Service API with the same patient demographic information and the CRID Service API will return the corresponding CRID number for that patient.
 
 **_What are the FHIR resources that are supported by the Direct FHIR service API?_**
-> Patient, Observation
+> Patient, Observation, Medication, MedicationRequest, MedicationAdministration
 
 **_What forms are currently supported for prepopulation?_**
 > The DTI program is engaging in prepopulating the data in Appendix 1 across all forms.  New supported data types will be supported approximately quarterly. 

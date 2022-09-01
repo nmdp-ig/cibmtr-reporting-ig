@@ -203,7 +203,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2022-08-24
+            as of 2022-08-31
           
         
       </td>
@@ -235,18 +235,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
+<blockquote>
+  <p>Some text about this being a Staandard for Trial Use (STU)
+{.stu-note}</p>
+</blockquote>
+
 <blockquote class="blockquote fhir-version-note">
-  <p>This Implementation Guide is designed to use the R4 version of the HL7® FHIR® standard. 
-For information on submitting to our Direct FHIR endpoints using FHIR STU3, see the 
+  <p>This Implementation Guide is designed to use the <a href="http://hl7.org/fhir/R4/index.html" title="FHIR Version R4 Specification Home Page">FHIR Version R4</a>. 
+For information on submitting to our Direct FHIR endpoints using <a href="http://hl7.org/fhir/STU3/index.html" title="FHIR Version STU3 Specification Home Page">FHIR Version STU3</a>, see the 
 <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR for STU3 Guide</a>.</p>
 </blockquote>
 
-<p>This FHIR Implementation Guide (IG) describes how to send data to CIBMTR via HL7® FHIR®.</p>
+<p>This FHIR Implementation Guide (IG) describes how to report transplant-related data to CIBMTR via HL7® FHIR®.</p>
 
 <h3 id="introduction">Introduction</h3>
 
 <p>The <a href="https://www.cibmtr.org">Center for International Blood &amp; Marrow Transplant Research® (CIBMTR®)</a>
-is a research collaboration between the <a href="https://bethematch.org">National Marrow Donor Program® (NMDP)/Be The Match®</a> 
+is a research collaboration between the <a href="https://bethematch.org">National Marrow Donor Program® (NMDP)/Be The Match®</a>
 and the <a href="https://www.mcw.edu">Medical College of Wisconsin (MCW)</a>. 
 The CIBMTR collaborates with the global scientific community to advance hematopoietic cell 
 transplantation (HCT) and other cellular therapy worldwide to increase survival and enrich 
@@ -255,7 +260,7 @@ quality of life for patients.</p>
 <p>The CIBMTR facilitates critical observational and interventional research through scientific 
 and statistical expertise, a large network of transplant centers, and a unique and extensive clinical outcomes database.
 CIBMTR collects data for HCT recipients using a web-based manual data entry system 
-(<a href="https://www.cibmtr.org/DataManagement/SystemApplications/FormsNet3">FormsNet</a>) 
+(<a href="https://www.cibmtr.org/DataManagement/SystemApplications/FormsNet3">FormsNet3</a>) 
 and an automated messaging system 
 (<a href="https://www.cibmtr.org/DataManagement/SystemApplications/AGNIS/Pages/default.aspx">A Growable Network Information System (AGNIS)</a>).</p>
 
@@ -265,22 +270,56 @@ It is primarily based on the <a href="https://www.hl7.org/fhir/us/core/">US Core
 requirements for accessing patient data. Profiles from the <a href="https://hl7.org/fhir/us/mcode/">minimal Common Oncology Data Elements (mCODE) IG</a>, which describes 
 the a core set of structured data elements for oncology, are also used.</p>
 
-<p>Initially, this IG is focused on information required for sending Patient demographic data that is necessary for creating or retrieving a CIBMTR 
+<p>This IG is focused on information required for sending Patient demographic data that is necessary for creating or retrieving a CIBMTR 
 Research ID (CRID), and for reporting Patient resources with a known CRID. It also includes reporting laboratory observations,
 focusing on a set of variables that have been identified as a priority for the CIBMTR Data Transformation Initiative in Fiscal Year 2022. And we have 
-begun describing how medication-related resources may be reported, specifically in the context of CIBMTR Form 2400.</p>
+begun describing how medication-related resources may be reported, specifically in the context of CIBMTR Form 2400. Future versions of this IG will include
+other FHIR resources such as Condition, Procedure, Encounter, EpisdoeOfCare, etc.</p>
 
 <h3 id="guidance">Guidance</h3>
+<p>Guidance on connecting to and sending data to the Direct FHIR API is found in the links below.</p>
 
 <ul>
-  <li><a href="Connection-Guide-R4.html">Connecting and Access</a></li>
-  <li><a href="Endpoints.html">API Endpoints</a></li>
-  <li><a href="Access-Credentials.html">Access Credentials</a></li>
-  <li><a href="CRID-Assignment.html">CRID Assignment</a></li>
-  <li><a href="Laboratory-Observations.html">Laboratory Observations</a></li>
-  <li><a href="Medications.html">Medications</a></li>
-  <li><a href="Bundles.html">Bundles</a></li>
-  <li><a href="Example-Code.html">Example code</a></li>
+  <li><a href="Connection-Guide-R4.html">Connecting and Access</a>
+    <ul>
+      <li>High-level overview of the recommended workflow to connect to the API</li>
+    </ul>
+  </li>
+  <li><a href="Endpoints.html">API Endpoints</a>
+    <ul>
+      <li>A table of API endpoint to get access tokens, assign a CRID, and submit FHIR resources to development and production work</li>
+    </ul>
+  </li>
+  <li><a href="Access-Credentials.html">Access Credentials</a>
+    <ul>
+      <li>Steps to request security tokens necessary for any interaction with the API</li>
+    </ul>
+  </li>
+  <li><a href="CRID-Assignment.html">CRID Assignment</a>
+    <ul>
+      <li>How to assign a CRID for Patient. This uses a non-FHIR API to submit patient demographic data to CIBMTR. The service will either match an existing patient, or create a new one if no match is found. The CRID is returned to the client.</li>
+    </ul>
+  </li>
+  <li><a href="Laboratory-Observations.html">Laboratory Observations</a>
+    <ul>
+      <li>Description of how to send lab values in FHIR Observations.</li>
+    </ul>
+  </li>
+  <li><a href="Medications.html">Medications</a>
+    <ul>
+      <li>Description of how to send medication-related FHIR resources</li>
+    </ul>
+  </li>
+  <li><a href="Bundles.html">Bundles</a>
+    <ul>
+      <li>How to send a FHIR bundle containing multiple FHIR Resources</li>
+    </ul>
+  </li>
+  <li><a href="Example-Code.html">Example code</a>
+    <ul>
+      <li>Example code, mostly in Python for now</li>
+    </ul>
+  </li>
 </ul>
 
 <h3 id="highlighted-artifacts">Highlighted Artifacts</h3>
@@ -288,20 +327,20 @@ begun describing how medication-related resources may be reported, specifically 
 <h4 id="profiles">Profiles</h4>
 
 <ul>
-  <li><a href="StructureDefinition-cibmtr-patient.html">CIBMTR Patient</a></li>
-  <li><a href="StructureDefinition-cibmtr-observation-lab.html">Laboratory Observation Results</a>
+  <li><a href="StructureDefinition-cibmtr-patient.html">CIBMTR Patient</a> - derived from US-Core</li>
+  <li><a href="StructureDefinition-cibmtr-observation-lab.html">Laboratory Observation Results</a> - derived from US-Core
     <ul>
-      <li><a href="StructureDefinition-cibmtr-obs-priority-variables.html">Laboratory Observation for Priority Variables</a></li>
+      <li><a href="StructureDefinition-cibmtr-obs-priority-variables.html">Laboratory Observation for Priority Variables</a> - derived from the general CIBMTR lab Observation, but bound to the FY2022 priority ValueSet</li>
     </ul>
   </li>
   <li>Medication-related Profiles
     <ul>
-      <li><a href="StructureDefinition-cibmtr-medication-request.html">MedicationRequest</a></li>
-      <li><a href="StructureDefinition-cibmtr-medication.html">Medication</a>
+      <li><a href="StructureDefinition-cibmtr-medication-request.html">MedicationRequest</a> - derived from mCode</li>
+      <li><a href="StructureDefinition-cibmtr-medication.html">Medication</a> - derived from US-Core
         <ul>
           <li><a href="StructureDefinition-cibmtr-mobilizing-agent-medication.html">Mobilizing Agent Medication</a></li>
           <li><a href="StructureDefinition-cibmtr-prep-regimen-medication.html">Preprative Regimen Medications</a></li>
-          <li><a href="StructureDefinition-cibmtr-additional-peri-transplant-medication.html">Additional Drugs in Peri-Transplant Period</a></li>
+          <li><a href="ValueSet-med-addition-peri-transplant-vs.html">Additional Drugs in Peri-Transplant Period</a></li>
           <li><a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html">GVHD Prophylaxis Medication</a></li>
           <li><a href="StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html">Planned Post-HCT Disease Therapy Medication</a></li>
           <li><a href="StructureDefinition-cibmtr-prior-exposure-medication.html">Prior Exposure Medication</a></li>
@@ -318,9 +357,9 @@ begun describing how medication-related resources may be reported, specifically 
       <li><a href="ValueSet-cibmtr-priority-variables-2022.html">CIBMTR Priority Variables for FY22</a></li>
     </ul>
   </li>
-  <li>RxNorm (used in MedicationRequest and Medication)
+  <li>RxNorm (used in medication-related resources)
     <ul>
-      <li><a href="ValueSet-med-mobilizing-agents-vs.html">Mobilizing Agents (auto only)</a></li>
+      <li>[Mobilizing Agents (auto only)]</li>
       <li><a href="ValueSet-med-prep-regimen-vs.html">Prep Regimen</a></li>
       <li><a href="ValueSet-med-addition-peri-transplant-vs.html">Additional Drugs in Peri-Transplant Period</a></li>
       <li><a href="ValueSet-med-gvhd-prophylaxis-vs.html">GVHD Prophylaxis</a></li>
@@ -355,7 +394,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 24, 2022 16:05-0500">2022-08-24</span>
+    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 31, 2022 14:35-0500">2022-08-31</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"11"}
-    h3,h4,h5,h6{--heading-prefix:"11"}</style>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -191,9 +191,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<h1 id="guidance-laboratory-observations">Guidance: Laboratory Observations</h1>
+<h3 id="guidance-laboratory-observations">Guidance: Laboratory Observations</h3>
 
-<h2 id="valuex">Value[x]</h2>
+<h4 id="valuex">Value[x]</h4>
 
 <p>Observation values can be reported in many forms. CIBMTR currently supports only two:</p>
 <ul>
@@ -201,22 +201,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><code class="language-plaintext highlighter-rouge">valueCodeableConcept</code></li>
 </ul>
 
-<p>CIBMTR does <em>*NOT</em> support any other value types (e.g., <code class="language-plaintext highlighter-rouge">valueString</code> is not currently supported)
-&lt;!– - <del>valueString</del></p>
-<ul>
-  <li><del>valueBoolean</del></li>
-  <li><del>valueInteger</del></li>
-  <li><del>valueRange</del></li>
-  <li><del>valueRatio</del></li>
-  <li><del>valueSampledData</del></li>
-  <li><del>valueTime</del></li>
-  <li><del>valueDateTime</del></li>
-  <li><del>valuePeriod</del> –&gt;</li>
-</ul>
+<p>CIBMTR does <strong>NOT</strong> support any other value types (e.g., <code class="language-plaintext highlighter-rouge">valueString</code> is not currently supported)</p>
 
-<p>Special rules:</p>
+<h4 id="special-rules">Special rules:</h4>
 <ul>
-  <li>For CMV LOINC codes that use <code class="language-plaintext highlighter-rouge">ValueQuantity</code>, it MUST be accompanied with a <code class="language-plaintext highlighter-rouge">referenceRange</code></li>
+  <li>For CMV LOINC codes that use <code class="language-plaintext highlighter-rouge">ValueQuantity</code>, it <strong>MUST</strong> be accompanied with a <code class="language-plaintext highlighter-rouge">referenceRange</code></li>
 </ul>
 
 
@@ -243,7 +232,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 24, 2022 16:05-0500">2022-08-24</span>
+    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 31, 2022 14:35-0500">2022-08-31</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

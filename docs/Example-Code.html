@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"9"}
-    h3,h4,h5,h6{--heading-prefix:"9"}</style>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -190,35 +190,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#example-code-snippets" id="markdown-toc-example-code-snippets">Example Code Snippets</a>    <ul>
-      <li><a href="#request-authorization-token-post" id="markdown-toc-request-authorization-token-post">Request Authorization Token (POST)</a>        <ul>
-          <li><a href="#python" id="markdown-toc-python"><em>Python</em></a></li>
-          <li><a href="#bash-script-using-curl-base64-and-jq" id="markdown-toc-bash-script-using-curl-base64-and-jq"><em>bash script using curl, base64, and jq</em></a></li>
-        </ul>
-      </li>
-      <li><a href="#crid-lookupregistration-put" id="markdown-toc-crid-lookupregistration-put">CRID Lookup/Registration (PUT)</a>        <ul>
-          <li><a href="#python-1" id="markdown-toc-python-1"><em>Python</em></a></li>
-        </ul>
-      </li>
-      <li><a href="#search-patient-by-crid-get" id="markdown-toc-search-patient-by-crid-get">Search Patient by CRID (GET)</a>        <ul>
-          <li><a href="#python-2" id="markdown-toc-python-2"><em>Python</em></a></li>
-        </ul>
-      </li>
-      <li><a href="#create-patient-post" id="markdown-toc-create-patient-post">Create Patient (POST)</a>        <ul>
-          <li><a href="#python-3" id="markdown-toc-python-3"><em>Python</em></a></li>
-        </ul>
-      </li>
-      <li><a href="#create-observation-post" id="markdown-toc-create-observation-post">Create Observation (POST)</a></li>
-      <li><a href="#search-observation-by-crid-get" id="markdown-toc-search-observation-by-crid-get">Search Observation by CRID (GET)</a></li>
-    </ul>
-  </li>
+  <li><a href="#request-authorization-token-post" id="markdown-toc-request-authorization-token-post">Request Authorization Token (POST)</a></li>
+  <li><a href="#crid-lookupregistration-put" id="markdown-toc-crid-lookupregistration-put">CRID Lookup/Registration (PUT)</a></li>
+  <li><a href="#search-patient-by-crid-get" id="markdown-toc-search-patient-by-crid-get">Search Patient by CRID (GET)</a></li>
+  <li><a href="#create-patient-post" id="markdown-toc-create-patient-post">Create Patient (POST)</a></li>
+  <li><a href="#create-observation-post" id="markdown-toc-create-observation-post">Create Observation (POST)</a></li>
+  <li><a href="#search-observation-by-crid-get" id="markdown-toc-search-observation-by-crid-get">Search Observation by CRID (GET)</a></li>
 </ul>
 
 </div>
-<h1 id="example-code-snippets">Example Code Snippets</h1>
+<h3 id="request-authorization-token-post">Request Authorization Token (POST)</h3>
 
-<h2 id="request-authorization-token-post">Request Authorization Token (POST)</h2>
-<h3 id="python"><em>Python</em></h3>
+<!-- Request Authorization Token (POST) -->
+<p><em>Python</em></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/env python3
 </span>
@@ -248,7 +232,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <span class="k">print</span><span class="p">(</span><span class="n">accessToken</span><span class="p">)</span>
 </code></pre></div></div>
 
-<h3 id="bash-script-using-curl-base64-and-jq"><em>bash script using curl, base64, and jq</em></h3>
+<p><em>bash script using curl, base64, and jq</em></p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
 <span class="nv">username</span><span class="o">=</span><span class="s1">'&lt;CIBMTR Service Account Username&gt;'</span>
@@ -270,10 +254,13 @@ curl <span class="nt">-s</span> <span class="nt">--location</span> <span class="
 <span class="nt">--data-urlencode</span> <span class="s2">"password=</span><span class="k">${</span><span class="nv">password</span><span class="k">}</span><span class="s2">"</span> <span class="se">\</span>
 | jq <span class="nt">-r</span> <span class="s1">'.access_token'</span>
 </code></pre></div></div>
-<p> </p>
-<h2 id="crid-lookupregistration-put">CRID Lookup/Registration (PUT)</h2>
 
-<h3 id="python-1"><em>Python</em></h3>
+<hr />
+
+<h3 id="crid-lookupregistration-put">CRID Lookup/Registration (PUT)</h3>
+
+<!-- CRID Lookup/Registration (PUT) -->
+<p><em>Python</em></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/env python3
 </span>
@@ -308,9 +295,12 @@ curl <span class="nt">-s</span> <span class="nt">--location</span> <span class="
     <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">status_code</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p> </p>
-<h2 id="search-patient-by-crid-get">Search Patient by CRID (GET)</h2>
-<h3 id="python-2"><em>Python</em></h3>
+<hr />
+
+<h3 id="search-patient-by-crid-get">Search Patient by CRID (GET)</h3>
+
+<!-- Search Patient by CRID (GET) -->
+<p><em>Python</em></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/env python3
 </span>
@@ -344,9 +334,12 @@ curl <span class="nt">-s</span> <span class="nt">--location</span> <span class="
     <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">status_code</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p> </p>
-<h2 id="create-patient-post">Create Patient (POST)</h2>
-<h3 id="python-3"><em>Python</em></h3>
+<hr />
+
+<h3 id="create-patient-post">Create Patient (POST)</h3>
+
+<!-- Create Patient (POST) -->
+<p><em>Python</em></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/env python3
 </span>
@@ -379,11 +372,15 @@ curl <span class="nt">-s</span> <span class="nt">--location</span> <span class="
     <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">headers</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">text</span><span class="p">)</span>
 </code></pre></div></div>
-<p> </p>
 
-<h2 id="create-observation-post">Create Observation (POST)</h2>
-<p>Python 
+<hr />
+
+<h3 id="create-observation-post">Create Observation (POST)</h3>
+
+<!-- Create Observation (POST) -->
+<p><em>Python</em> 
 note: POSTing an Observation is just like POSTing a Patient. You just need to change the endpoint to Observation.</p>
+
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/env python3
 </span>
 <span class="kn">import</span> <span class="nn">sys</span>
@@ -415,10 +412,13 @@ note: POSTing an Observation is just like POSTing a Patient. You just need to ch
     <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">headers</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">text</span><span class="p">)</span>
 </code></pre></div></div>
-<p> </p>
 
-<h2 id="search-observation-by-crid-get">Search Observation by CRID (GET)</h2>
-<p>Python</p>
+<hr />
+
+<h3 id="search-observation-by-crid-get">Search Observation by CRID (GET)</h3>
+
+<!-- Search Observation by CRID (GET) -->
+<p><em>Python</em></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/env python3
 </span>
@@ -476,7 +476,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 24, 2022 16:05-0500">2022-08-24</span>
+    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 31, 2022 14:35-0500">2022-08-31</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

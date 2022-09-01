@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6"}
-    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -188,10 +188,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#cibmtr-research-id-crid-lookup-or-creation" id="markdown-toc-cibmtr-research-id-crid-lookup-or-creation">CIBMTR Research ID (CRID) Lookup or Creation</a></li>
+  <li><a href="#example-code" id="markdown-toc-example-code">Example Code</a></li>
+</ul>
+
 </div>
-<h1 id="cibmtr-research-id-crid-lookup-or-creation">CIBMTR Research ID (CRID) Lookup or Creation</h1>
+<h3 id="cibmtr-research-id-crid-lookup-or-creation">CIBMTR Research ID (CRID) Lookup or Creation</h3>
 
 <p>The client must search for a patient that has been previously registered with CIBMTR, or register a new patient. In either case, the client will receive from the CRID service a CIBMTR Research Identifier (CRID) to be used as a patient resource identifier for all subsequent FHIR data submissions.  CIBMTR exposes a special service API to handle the submission of personally identifiable information (PII).  Data submitted via the externally available CRID API endpoint has special protections and exposure within CIBMTR to avoid unnecessary handling of PII.  For all subsequent FHIR data submissions, the CRID is used to identify the patient and any PII is removed from FHIR resources before being stored on CIBMTR FHIR servers.</p>
 
@@ -311,12 +315,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Because the CRID API is available as a <code class="language-plaintext highlighter-rouge">PUT</code> request, submitting the same data twice does not re-register the patient, but rather will retrieve the same CRID number registered previously.   The CRID API will attempt to perform partial “fuzzy” matches based on data submitted to avoid re-registering the same patient with two different CRID numbers.</p>
 
-<p>The response payload of the CRID Service API is a JSON object that contains the CRID number (lower pane in Figure 4).  The CRID number is then used for all other data references to the registered patient.</p>
+<p>The response payload of the CRID Service API is a JSON object that contains the CRID number (lower pane in Figure).  The CRID number is then used for all other data references to the registered patient.</p>
 
-<table>
+<table class="grid">
   <thead>
     <tr>
-      <th style="text-align: center"><img src="dfhir_r3_figure04.png" alt="Figure 1" width="50%" /></th>
+      <th style="text-align: center"><img src="CRID_response.jpg" alt="Figure 1" width="50%" /></th>
     </tr>
   </thead>
   <tbody>
@@ -325,6 +329,47 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
   </tbody>
 </table>
+
+<h3 id="example-code">Example Code</h3>
+
+<h4 id="crid-lookupregistration-put">CRID Lookup/Registration (PUT)</h4>
+
+<!-- CRID Lookup/Registration (PUT) -->
+<p><em>Python</em></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/env python3
+</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+
+<span class="c1"># Replace patient variable with your patient demographic data. 
+# Below is just an example.
+</span><span class="n">patient</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">"ccn"</span><span class="p">:</span> <span class="s">"12002"</span><span class="p">,</span>
+    <span class="s">"patient"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s">"firstName"</span><span class="p">:</span> <span class="s">"Steve"</span><span class="p">,</span>
+        <span class="s">"lastName"</span><span class="p">:</span> <span class="s">"Rogers"</span><span class="p">,</span>
+        <span class="s">"birthDate"</span><span class="p">:</span> <span class="s">"1925-07-04"</span><span class="p">,</span>
+        <span class="s">"gender"</span><span class="p">:</span> <span class="s">"M"</span><span class="p">,</span>
+        <span class="s">"ssn"</span><span class="p">:</span> <span class="s">"098-76-5432"</span><span class="p">,</span>
+        <span class="s">"race"</span><span class="p">:</span> <span class="p">[</span><span class="s">'2106-3'</span><span class="p">],</span>
+        <span class="s">"ethnicity"</span><span class="p">:</span> <span class="s">"UNK"</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">tokenfile</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s">'token.txt'</span><span class="p">)</span>  <span class="c1"># Bearer token was previously captured in token.txt
+</span><span class="n">authstring</span> <span class="o">=</span> <span class="s">'Bearer '</span> <span class="o">+</span> <span class="n">tokenfile</span><span class="p">.</span><span class="n">read_text</span><span class="p">()</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s">'Authorization'</span><span class="p">:</span> <span class="n">authstring</span><span class="p">,</span>
+            <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'application/json'</span><span class="p">}</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">put</span><span class="p">(</span><span class="s">'https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1/CRID'</span><span class="p">,</span>
+                    <span class="n">json</span><span class="o">=</span><span class="n">patient</span><span class="p">,</span>
+                    <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">r</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">json</span><span class="p">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">(),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">status_code</span><span class="p">)</span>
+</code></pre></div></div>
+
 
 
 
@@ -349,7 +394,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 24, 2022 16:05-0500">2022-08-24</span>
+    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 31, 2022 14:35-0500">2022-08-31</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

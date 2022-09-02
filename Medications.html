@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>CIBMTR-REPORTING\Medications - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/cibmtr.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"11"}
+    h3,h4,h5,h6{--heading-prefix:"11"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<div id="cibmtr-nav">
+  <a id="cibmtr-logo" no-external="true" href="http://www.cibmtr.org">
+    <!-- <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png" /> -->
+    <img height="80" alt="Visit the CIBMTR website"
+      src="assets/images/cibmtr-logo-header-3.png" />
+  </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.5 - Trial Use 1
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Connection-Guide-R4.html">Connection - R4</a>
+      </li>
+      <li>
+        <a href="Endpoints.html">Endpoints</a>
+      </li>
+      <li>
+        <a href="Access-Credentials.html">Access Credentials</a>
+      </li>
+      <li>
+        <a href="CRID-Assignment.html">CRID Assignment</a>
+      </li>
+      <li>
+        <a href="Laboratory-Observations.html">Lab Observations</a>
+      </li>
+      <li>
+        <a href="Medications.html">Medications</a>
+      </li>
+      <li>
+        <a href="Bundles.html">Bundles</a>
+      </li>
+      <li>
+        <a href="Form-2450.html">Form 2450</a>
+      </li>
+      <li>
+        <a href="Example-Code.html">Example Code Snippets</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR (STU3)</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Medications</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.5). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Medications</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#overview-medication-related-profiles-and-valuesets-for-cibmtr" id="markdown-toc-overview-medication-related-profiles-and-valuesets-for-cibmtr">Overview: Medication-related Profiles and ValueSets for CIBMTR</a></li>
+  <li><a href="#medication-related-artifacts" id="markdown-toc-medication-related-artifacts">Medication-related Artifacts</a></li>
+  <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
+</ul>
+
+</div>
+<h3 id="overview-medication-related-profiles-and-valuesets-for-cibmtr">Overview: Medication-related Profiles and ValueSets for CIBMTR</h3>
+<p>Medication-related FHIR resource may be sent to the CIBMTR Direct FHIR API (see <a href="Connection-Guide-R4.html">R4 connection guide</a>). These profiles are derived from profiles found in the <a href="https://hl7.org/fhir/us/core/">US-Core</a> or <a href="https://hl7.org/fhir/us/mcode/">mCode</a> Implementation Guides. CIBMTR profiles add a requirement for the <code class="language-plaintext highlighter-rouge">meta.security</code> elements to identify your center, and often include bindings to ValueSets for RxNorm codes. They may also require elements previously tagged as optional in the original profiles.</p>
+
+<p>Medication-related resources include Medication, MedicationRequest, and MedicationAdministration.
+While MedicationRequest and MedicationAdministration are specific for a particular subject, the Medication resource is definitonal and can be reused for different instances, including for different subjects. See figure below</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="medications-1.png" alt="Figure 1" width="50%" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><i>Figure 1: Relationships between different medication-related resources</i></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="medicationreference-vs-medicationcodeableconcept"><code class="language-plaintext highlighter-rouge">medicationReference</code> vs <code class="language-plaintext highlighter-rouge">medicationCodeableConcept</code></h4>
+
+<p>Note that both MedicationAdministration and MedicationRequest can refer to a Medication resource through the <code class="language-plaintext highlighter-rouge">medicationReference</code> element. This has the form of</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="nl">"medicationReference"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"reference"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Medication/&lt;resource Id&gt;"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+<p>This is useful when you want to be able to re-use the same medication multiple times, or if the medication description is more complex than a simple RxNorm code (e.g., contains multiple ingredients).</p>
+
+<p>Alternative, you might also reference a medication via the <code class="language-plaintext highlighter-rouge">medicationCodeableConcept</code> element. In this case, if the medication can be described as a set of equivalent RxNorm codes (i.e., only one ingredient), the codes may be included inline in the MedicationAdministration or MedicationRequest. Here is an example with multiple RxNorm codes that are effectively equivalent:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="nl">"medicationCodeableConcept"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.nlm.nih.gov/research/umls/rxnorm"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"4179"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"etoposide"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.nlm.nih.gov/research/umls/rxnorm"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"310248"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"etoposide 20 MG/ML Injectable Solution"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.nlm.nih.gov/research/umls/rxnorm"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"362972"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"etoposide Injectable Solution [Vepesid]"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.nlm.nih.gov/research/umls/rxnorm"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"206832"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"etoposide 20 MG/ML Injectable Solution [Vepesid]"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"text"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"ETOPOSIDE 20 MG/ML IV SOLN"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="reasoncode"><code class="language-plaintext highlighter-rouge">reasonCode</code></h4>
+<p>Both MedicationAdministration and MedciationRequest provide an element to describe the reason why a medication has been requested or administered. This is often useful to CIBMTR in understanding the context. Reason codes may be entered in as SNOMED or ICD-10 codes, or both if they are equivalent. For example,</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"reasonCode"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"coding"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"system"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"http://snomed.info/sct"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"code"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"363346000"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"display"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Malignant neoplastic disease (disorder)"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"system"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/sid/icd-10-cm"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"code"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"C80.1"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"display"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Malignant (primary) neoplasm, unspecified"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"text"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Cancer (CMS/HCC)"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="medication-related-artifacts">Medication-related Artifacts</h3>
+
+<h4 id="cibmtr-medication-related-profiles">CIBMTR Medication-related Profiles</h4>
+<ul>
+  <li><a href="StructureDefinition-cibmtr-medication.html">CIBMTR Medication (us-core)</a></li>
+  <li><a href="StructureDefinition-cibmtr-medication-request.html">CIBMTR Medication Request (mcode)</a></li>
+  <li><a href="StructureDefinition-cibmtr-medication-administration.html">CIBMTR Medication Administration (mcode)</a></li>
+</ul>
+
+<h4 id="rxnorm-valuesets">RxNorm ValueSets</h4>
+
+<p>FHIR ValueSets have been created that describe the RxNorm codes for medications described in various sections in CIBMTR Form 2400. These include</p>
+<ul>
+  <li><a href="ValueSet-med-mobilizing-agents-vs.html">Mobilizing Agents (auto only)</a> - 203 concepts</li>
+  <li><a href="ValueSet-med-prep-regimen-vs.html">Prep Regimen</a> - 501 concepts</li>
+  <li><a href="ValueSet-med-addition-peri-transplant-vs.html">Additional Drugs in Peri-Transplant Period</a> - 75 concepts</li>
+  <li><a href="ValueSet-med-gvhd-prophylaxis-vs.html">GVHD Prophylaxis</a> - 582 concepts</li>
+  <li><a href="ValueSet-med-post-hct-disease-therapy-planned-vs.html">Post-HCT Disease Therapy Planned</a> - 491 concepts</li>
+  <li><a href="ValueSet-med-prior-exposure-vs.html">Prior Exposure: Potential Study Eligibility</a> - 58 concepts</li>
+  <li><a href="ValueSet-med-all-form2400-vs.html">All meds in Form 2400</a> - 1737 concepts</li>
+</ul>
+
+<p>Because RxNorm is updated every week, the bindings of the profiles to these valueSets is extensible to allow for new RxNorm codes that did not exist when these value sets were created.</p>
+
+<h4 id="medication-profiles-that-bind-to-these-valuesets">Medication profiles that bind to these ValueSets:</h4>
+<ul>
+  <li><a href="StructureDefinition-cibmtr-mobilizing-agent-medication.html">CIBMTR Mobilizing Agent Medication</a></li>
+  <li><a href="StructureDefinition-cibmtr-prep-regimen-medication.html">CIBMTR Prep Regimen Medication</a></li>
+  <li><a href="StructureDefinition-cibmtr-additional-peri-transplant-medication.html">CIBMTR Additional Drugs in Peri-Transplant Period Medication</a></li>
+  <li><a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html">CIBMTR GVHD Prophylaxis Medication</a></li>
+  <li><a href="StructureDefinition-cibmtr-prior-exposure-medication.html">CIBMTR Prior Exposure Medication</a></li>
+  <li><a href="StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html">CIBMTR Planned Post-HCT Disease Therapy Medication</a></li>
+</ul>
+
+<h3 id="examples">Examples</h3>
+
+<h4 id="medicationadmintration">MedicationAdmintration</h4>
+<ul>
+  <li><a href="MedicationAdministration-MedicationAdministration-Example1.html">MedicationAdministration-Example1</a>: Medication Administration example using <code class="language-plaintext highlighter-rouge">medicationReference</code> - Etoposide</li>
+  <li><a href="MedicationAdministration-MedicationAdministration-Example2.html">MedicationAdministration-Example2</a>: Medication Administration example using <code class="language-plaintext highlighter-rouge">medicationCodeableConcept</code> - Etoposide</li>
+</ul>
+
+<h4 id="medicationrequest">MedicationRequest</h4>
+<ul>
+  <li><a href="MedicationRequest-MedicationRequest-Etoposide-Example.html">MedicationRequest-Etoposide-Example</a>: Medication Request for Etoposide (Vepesid) chemo IBPB, 20MG/ML</li>
+</ul>
+
+<h4 id="medication">Medication</h4>
+<ul>
+  <li><a href="Medication-Medication-Cyclophosphamide-Example.html">Medication-Cyclophosphamide-Example</a>: Cyclophosphamide, 1 G injection</li>
+  <li><a href="Medication-Medication-Etoposide-Example.html">Medication-Etoposide-Example</a>: Etoposide (Vepesid) chemo IBPB, 20MG/ML</li>
+  <li><a href="Medication-Medication-GVHD-Prophylaxis-Example.html">Medication-GVHD-Prophylaxis-Example</a>: GVHD Prophylaxis - Cyclosporine</li>
+  <li><a href="Medication-Medication-Mobilizing-Agent-Example.html">Medication-Mobilizing-Agent-Example</a>: Mobilizing Agent - Pegfilgrastim</li>
+  <li><a href="Medication-Medication-Peri-Transplant-Example.html">Medication-Peri-Transplant-Example</a>: Additional Peri-Transplant - Anti-Thymocyte Gobulin</li>
+  <li><a href="Medication-Medication-Post-HCT-Disease-Therapy-Example.html">Medication-Post-HCT-Disease-Therapy-Example</a>: Post-HCT Disease Therapy Planned - Blinatumomab</li>
+  <li><a href="Medication-Medication-Prep-Regimen-Example.html">Medication-Prep-Regimen-Example</a>:  Mobilizing Agent - Pegfilgrastim</li>
+  <li><a href="Medication-Medication-PriorExposure-Example.html">Medication-PriorExposure-Example</a>: Prior Exposure: Potential Study Eligibility - Mogamulizumab</li>
+</ul>
+
+<h4 id="bundle-of-medication-related-resources">Bundle of Medication-related Resources</h4>
+<ul>
+  <li>TBD</li>
+</ul>
+
+
+
+
+</div>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+if(window.location.hash != "") {
+    $('a[href="' + window.location.hash + '"]').click()
+}
+});
+</script>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
+    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 2, 2022 15:43-0500">2022-09-02</span>
+    <br/>
+    <span style="color: #FFFF77">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+<div id="cibmtr-footer">
+    <p>
+    <br/>HL7&#174;, and FHIR&#174; are the registered trademarks of Health Level Seven International 
+    and their use of these trademarks does not constitute an endorsement by HL7.
+    </p>
+</div>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script>anchors.options.visible = 'hover'
+anchors.add()</script>
+
+<!-- Analytics Below
+================================================== -->
+</body>
+</html>
+

@@ -1,0 +1,67 @@
+{
+  "resourceType": "Observation",
+  "id": "CMVDNAViralLoadIUmL",
+  "meta": {
+    "profile": [
+      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"
+    ],
+    "security": [
+      {
+        "system": "http://terminology.cibmtr.org/codesystem/transplant-center",
+        "code": "rc_99999",
+        "display": "99999 My Transplant Center"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"CMVDNAViralLoadIUmL\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cibmtr-obs-priority-variables.html\">CIBMTR Observation Laboratory Results: Priority Variables</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.cibmtr.org/codesystem/transplant-center http://terminology.cibmtr.org/codesystem/transplant-center}\">http://terminology.cibmtr.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Cytomegalovirus DNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#72493-0)</span></p><p><b>subject</b>: <a href=\"Patient-PatientExample6.html\">Patient/PatientExample6</a> \"\"</p><p><b>effective</b>: 2020-07-21 02:17:00+0000</p><p><b>value</b>: &lt;13700 internaltional unit per milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [IU]/mL = '[IU]/mL')</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>13700 internaltional unit per milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [IU]/mL = '[IU]/mL')</span></td><td>9000000 internaltional unit per milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [IU]/mL = '[IU]/mL')</span></td></tr></table></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "72493-0",
+        "display": "Cytomegalovirus DNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatientExample6"
+  },
+  "effectiveDateTime": "2020-07-21T14:17:00Z",
+  "valueQuantity": {
+    "value": 13700,
+    "comparator": "<",
+    "unit": "internaltional unit per milliliter",
+    "system": "http://unitsofmeasure.org",
+    "code": "[IU]/mL"
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "value": 13700,
+        "unit": "internaltional unit per milliliter",
+        "system": "http://unitsofmeasure.org",
+        "code": "[IU]/mL"
+      },
+      "high": {
+        "value": 9000000,
+        "unit": "internaltional unit per milliliter",
+        "system": "http://unitsofmeasure.org",
+        "code": "[IU]/mL"
+      }
+    }
+  ]
+}

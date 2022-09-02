@@ -1,0 +1,102 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-melphalan-vs> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "med-melphalan-vs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>6718</td><td>melphalan</td></tr><tr><td>151325</td><td>Alkeran</td></tr><tr><td>1745086</td><td>Evomela</td></tr><tr><td>317646</td><td>melphalan 2 MG</td></tr><tr><td>332190</td><td>melphalan 5 MG</td></tr><tr><td>1740948</td><td>melphalan 50 MG</td></tr><tr><td>446276</td><td>melphalan Extended Release Oral Tablet</td></tr><tr><td>1159787</td><td>melphalan Injectable Product</td></tr><tr><td>1740949</td><td>melphalan Injection</td></tr><tr><td>1159788</td><td>melphalan Oral Product</td></tr><tr><td>372756</td><td>melphalan Oral Tablet</td></tr><tr><td>1159789</td><td>melphalan Pill</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-melphalan-vs"];
+  fhir:ValueSet.version [ fhir:value "0.1.5"];
+  fhir:ValueSet.name [ fhir:value "RxNormMelphalanVS"];
+  fhir:ValueSet.title [ fhir:value "RxNorm - Melphalan"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2022-09-02T15:43:08-05:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.cibmtr.org" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Bob Milius" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "bmilius@nmdp.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "RxNorm codes for Melphalan"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "6718" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "melphalan" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "151325" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alkeran" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1745086" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evomela" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "317646" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "melphalan 2 MG" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "332190" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "melphalan 5 MG" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1740948" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "melphalan 50 MG" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "446276" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "melphalan Extended Release Oral Tablet" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1159787" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "melphalan Injectable Product" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1740949" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "melphalan Injection" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1159788" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "melphalan Oral Product" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "372756" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "melphalan Oral Tablet" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1159789" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "melphalan Pill" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-melphalan-vs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

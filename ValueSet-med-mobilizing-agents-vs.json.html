@@ -1,0 +1,1163 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>CIBMTR-REPORTING\RxNorm - Mobilizing Agents (auto only) - JSON Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/cibmtr.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"13.43"}
+    h3,h4,h5,h6{--heading-prefix:"13.43"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<div id="cibmtr-nav">
+  <a id="cibmtr-logo" no-external="true" href="http://www.cibmtr.org">
+    <!-- <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png" /> -->
+    <img height="80" alt="Visit the CIBMTR website"
+      src="assets/images/cibmtr-logo-header-3.png" />
+  </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.5 - Trial Use 1
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Connection-Guide-R4.html">Connection - R4</a>
+      </li>
+      <li>
+        <a href="Endpoints.html">Endpoints</a>
+      </li>
+      <li>
+        <a href="Access-Credentials.html">Access Credentials</a>
+      </li>
+      <li>
+        <a href="CRID-Assignment.html">CRID Assignment</a>
+      </li>
+      <li>
+        <a href="Laboratory-Observations.html">Lab Observations</a>
+      </li>
+      <li>
+        <a href="Medications.html">Medications</a>
+      </li>
+      <li>
+        <a href="Bundles.html">Bundles</a>
+      </li>
+      <li>
+        <a href="Form-2450.html">Form 2450</a>
+      </li>
+      <li>
+        <a href="Example-Code.html">Example Code Snippets</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR (STU3)</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>RxNorm - Mobilizing Agents (auto only)</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.5). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-med-mobilizing-agents-vs.html">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="ValueSet-med-mobilizing-agents-vs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-med-mobilizing-agents-vs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: RxNorm - Mobilizing Agents (auto only) - JSON Representation</h2>
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-09-02
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-med-mobilizing-agents-vs.json" no-download="true">Raw json</a> | <a href="ValueSet-med-mobilizing-agents-vs.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json"><code>
+{
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "med-mobilizing-agents-vs",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://www.nlm.nih.gov/research/umls/rxnorm\&quot;&gt;&lt;code&gt;http://www.nlm.nih.gov/research/umls/rxnorm&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1157967&lt;/td&gt;&lt;td&gt;rituximab Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1159651&lt;/td&gt;&lt;td&gt;filgrastim Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1159878&lt;/td&gt;&lt;td&gt;plerixafor Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1161380&lt;/td&gt;&lt;td&gt;pegfilgrastim Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1162571&lt;/td&gt;&lt;td&gt;lenograstim Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1182279&lt;/td&gt;&lt;td&gt;Neulasta Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1182281&lt;/td&gt;&lt;td&gt;Neupogen Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1183314&lt;/td&gt;&lt;td&gt;Mozobil Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1185345&lt;/td&gt;&lt;td&gt;Rituxan Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;121191&lt;/td&gt;&lt;td&gt;rituximab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1433764&lt;/td&gt;&lt;td&gt;tbo-filgrastim&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1433765&lt;/td&gt;&lt;td&gt;tbo-filgrastim 0.6 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1433768&lt;/td&gt;&lt;td&gt;0.5 ML tbo-filgrastim 0.6 MG/ML Prefilled Syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1433771&lt;/td&gt;&lt;td&gt;0.8 ML tbo-filgrastim 0.6 MG/ML Prefilled Syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1440046&lt;/td&gt;&lt;td&gt;lipegfilgrastim&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1442677&lt;/td&gt;&lt;td&gt;Granix&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1442678&lt;/td&gt;&lt;td&gt;tbo-filgrastim 0.6 MG/ML [Granix]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1442679&lt;/td&gt;&lt;td&gt;filgrastim Prefilled Syringe [Granix]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1442680&lt;/td&gt;&lt;td&gt;Granix Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1442681&lt;/td&gt;&lt;td&gt;0.5 ML tbo-filgrastim 0.6 MG/ML Prefilled Syringe [Granix]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1442683&lt;/td&gt;&lt;td&gt;0.8 ML tbo-filgrastim 0.6 MG/ML Prefilled Syringe [Granix]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1605064&lt;/td&gt;&lt;td&gt;filgrastim-sndz&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1605065&lt;/td&gt;&lt;td&gt;filgrastim-sndz 0.6 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1605066&lt;/td&gt;&lt;td&gt;0.5 ML filgrastim-sndz 0.6 MG/ML Prefilled Syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1605067&lt;/td&gt;&lt;td&gt;Zarxio&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1605068&lt;/td&gt;&lt;td&gt;filgrastim-sndz 0.6 MG/ML [Zarxio]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1605069&lt;/td&gt;&lt;td&gt;filgrastim Prefilled Syringe [Zarxio]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1605070&lt;/td&gt;&lt;td&gt;Zarxio Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1605071&lt;/td&gt;&lt;td&gt;0.5 ML filgrastim-sndz 0.6 MG/ML Prefilled Syringe [Zarxio]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1605074&lt;/td&gt;&lt;td&gt;0.8 ML filgrastim-sndz 0.6 MG/ML Prefilled Syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1605075&lt;/td&gt;&lt;td&gt;0.8 ML filgrastim-sndz 0.6 MG/ML Prefilled Syringe [Zarxio]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1649943&lt;/td&gt;&lt;td&gt;filgrastim Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1649944&lt;/td&gt;&lt;td&gt;1 ML filgrastim 0.3 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1649945&lt;/td&gt;&lt;td&gt;filgrastim Injection [Neupogen]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1649946&lt;/td&gt;&lt;td&gt;1 ML filgrastim 0.3 MG/ML Injection [Neupogen]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1649963&lt;/td&gt;&lt;td&gt;1.6 ML filgrastim 0.3 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1649964&lt;/td&gt;&lt;td&gt;1.6 ML filgrastim 0.3 MG/ML Injection [Neupogen]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1657861&lt;/td&gt;&lt;td&gt;rituximab Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1657862&lt;/td&gt;&lt;td&gt;10 ML rituximab 10 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1657863&lt;/td&gt;&lt;td&gt;rituximab Injection [Rituxan]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1657864&lt;/td&gt;&lt;td&gt;10 ML rituximab 10 MG/ML Injection [Rituxan]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1657867&lt;/td&gt;&lt;td&gt;50 ML rituximab 10 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1657868&lt;/td&gt;&lt;td&gt;50 ML rituximab 10 MG/ML Injection [Rituxan]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746487&lt;/td&gt;&lt;td&gt;pegbovigrastim&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1794537&lt;/td&gt;&lt;td&gt;plerixafor Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1794539&lt;/td&gt;&lt;td&gt;plerixafor Injection [Mozobil]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1927881&lt;/td&gt;&lt;td&gt;rituximab 120 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1927882&lt;/td&gt;&lt;td&gt;hyaluronidase / rituximab Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1927883&lt;/td&gt;&lt;td&gt;hyaluronidase / rituximab Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1927884&lt;/td&gt;&lt;td&gt;hyaluronidase / rituximab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1927885&lt;/td&gt;&lt;td&gt;11.7 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1927886&lt;/td&gt;&lt;td&gt;Rituxan Hycela&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1927887&lt;/td&gt;&lt;td&gt;hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML [Rituxan Hycela]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1927888&lt;/td&gt;&lt;td&gt;hyaluronidase / rituximab Injection [Rituxan Hycela]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1927889&lt;/td&gt;&lt;td&gt;Rituxan Hycela Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1927890&lt;/td&gt;&lt;td&gt;11.7 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection [Rituxan Hycela]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1927893&lt;/td&gt;&lt;td&gt;13.4 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1927894&lt;/td&gt;&lt;td&gt;13.4 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection [Rituxan Hycela]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2048018&lt;/td&gt;&lt;td&gt;pegfilgrastim-jmdb&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2048019&lt;/td&gt;&lt;td&gt;pegfilgrastim-jmdb 10 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2048020&lt;/td&gt;&lt;td&gt;0.6 ML pegfilgrastim-jmdb 10 MG/ML Prefilled Syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2048021&lt;/td&gt;&lt;td&gt;Fulphila&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2048022&lt;/td&gt;&lt;td&gt;pegfilgrastim-jmdb 10 MG/ML [Fulphila]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2048023&lt;/td&gt;&lt;td&gt;pegfilgrastim Prefilled Syringe [Fulphila]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2048024&lt;/td&gt;&lt;td&gt;Fulphila Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2048025&lt;/td&gt;&lt;td&gt;0.6 ML pegfilgrastim-jmdb 10 MG/ML Prefilled Syringe [Fulphila]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2057198&lt;/td&gt;&lt;td&gt;filgrastim-aafi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2057199&lt;/td&gt;&lt;td&gt;filgrastim-aafi 0.6 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2057200&lt;/td&gt;&lt;td&gt;0.5 ML filgrastim-aafi 0.6 MG/ML Prefilled Syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2057201&lt;/td&gt;&lt;td&gt;Nivestym&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2057202&lt;/td&gt;&lt;td&gt;filgrastim-aafi 0.6 MG/ML [Nivestym]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2057203&lt;/td&gt;&lt;td&gt;filgrastim Prefilled Syringe [Nivestym]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2057204&lt;/td&gt;&lt;td&gt;Nivestym Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2057205&lt;/td&gt;&lt;td&gt;0.5 ML filgrastim-aafi 0.6 MG/ML Prefilled Syringe [Nivestym]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2057208&lt;/td&gt;&lt;td&gt;filgrastim-aafi 0.3 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2057209&lt;/td&gt;&lt;td&gt;1 ML filgrastim-aafi 0.3 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2057210&lt;/td&gt;&lt;td&gt;filgrastim-aafi 0.3 MG/ML [Nivestym]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2057211&lt;/td&gt;&lt;td&gt;filgrastim Injection [Nivestym]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2057212&lt;/td&gt;&lt;td&gt;1 ML filgrastim-aafi 0.3 MG/ML Injection [Nivestym]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2057215&lt;/td&gt;&lt;td&gt;0.8 ML filgrastim-aafi 0.6 MG/ML Prefilled Syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2057216&lt;/td&gt;&lt;td&gt;0.8 ML filgrastim-aafi 0.6 MG/ML Prefilled Syringe [Nivestym]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2057218&lt;/td&gt;&lt;td&gt;1.6 ML filgrastim-aafi 0.3 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2057219&lt;/td&gt;&lt;td&gt;1.6 ML filgrastim-aafi 0.3 MG/ML Injection [Nivestym]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2101455&lt;/td&gt;&lt;td&gt;tbo-filgrastim 0.3 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2101456&lt;/td&gt;&lt;td&gt;1 ML tbo-filgrastim 0.3 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2101457&lt;/td&gt;&lt;td&gt;tbo-filgrastim 0.3 MG/ML [Granix]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2101458&lt;/td&gt;&lt;td&gt;filgrastim Injection [Granix]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2101459&lt;/td&gt;&lt;td&gt;1 ML tbo-filgrastim 0.3 MG/ML Injection [Granix]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2101464&lt;/td&gt;&lt;td&gt;1.6 ML tbo-filgrastim 0.3 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2101465&lt;/td&gt;&lt;td&gt;1.6 ML tbo-filgrastim 0.3 MG/ML Injection [Granix]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2102692&lt;/td&gt;&lt;td&gt;pegfilgrastim-cbqv&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2102695&lt;/td&gt;&lt;td&gt;Udenyca&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2102697&lt;/td&gt;&lt;td&gt;pegfilgrastim Prefilled Syringe [Udenyca]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2102698&lt;/td&gt;&lt;td&gt;Udenyca Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2102702&lt;/td&gt;&lt;td&gt;pegfilgrastim-cbqv 10 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2102703&lt;/td&gt;&lt;td&gt;0.6 ML pegfilgrastim-cbqv 10 MG/ML Prefilled Syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2102704&lt;/td&gt;&lt;td&gt;pegfilgrastim-cbqv 10 MG/ML [Udenyca]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2102705&lt;/td&gt;&lt;td&gt;0.6 ML pegfilgrastim-cbqv 10 MG/ML Prefilled Syringe [Udenyca]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2105824&lt;/td&gt;&lt;td&gt;rituximab-abbs&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2105825&lt;/td&gt;&lt;td&gt;rituximab-abbs 10 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2105826&lt;/td&gt;&lt;td&gt;10 ML rituximab-abbs 10 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2105827&lt;/td&gt;&lt;td&gt;Truxima&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2105828&lt;/td&gt;&lt;td&gt;rituximab-abbs 10 MG/ML [Truxima]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2105829&lt;/td&gt;&lt;td&gt;rituximab Injection [Truxima]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2105830&lt;/td&gt;&lt;td&gt;Truxima Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2105831&lt;/td&gt;&lt;td&gt;10 ML rituximab-abbs 10 MG/ML Injection [Truxima]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2105834&lt;/td&gt;&lt;td&gt;50 ML rituximab-abbs 10 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2105835&lt;/td&gt;&lt;td&gt;50 ML rituximab-abbs 10 MG/ML Injection [Truxima]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2260702&lt;/td&gt;&lt;td&gt;pegfilgrastim-bmez&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2260703&lt;/td&gt;&lt;td&gt;pegfilgrastim-bmez 10 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2260704&lt;/td&gt;&lt;td&gt;0.6 ML pegfilgrastim-bmez 10 MG/ML Prefilled Syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2260705&lt;/td&gt;&lt;td&gt;Ziextenzo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2260706&lt;/td&gt;&lt;td&gt;pegfilgrastim-bmez 10 MG/ML [Ziextenzo]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2260707&lt;/td&gt;&lt;td&gt;pegfilgrastim Prefilled Syringe [Ziextenzo]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2260708&lt;/td&gt;&lt;td&gt;Ziextenzo Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2260709&lt;/td&gt;&lt;td&gt;0.6 ML pegfilgrastim-bmez 10 MG/ML Prefilled Syringe [Ziextenzo]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;226754&lt;/td&gt;&lt;td&gt;Rituxan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;227304&lt;/td&gt;&lt;td&gt;Neupogen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2273510&lt;/td&gt;&lt;td&gt;rituximab-pvvr&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2273511&lt;/td&gt;&lt;td&gt;rituximab-pvvr 10 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2273512&lt;/td&gt;&lt;td&gt;10 ML rituximab-pvvr 10 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2273513&lt;/td&gt;&lt;td&gt;Ruxience&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2273514&lt;/td&gt;&lt;td&gt;rituximab-pvvr 10 MG/ML [Ruxience]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2273515&lt;/td&gt;&lt;td&gt;rituximab Injection [Ruxience]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2273516&lt;/td&gt;&lt;td&gt;Ruxience Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2273517&lt;/td&gt;&lt;td&gt;10 ML rituximab-pvvr 10 MG/ML Injection [Ruxience]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2273520&lt;/td&gt;&lt;td&gt;50 ML rituximab-pvvr 10 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2273521&lt;/td&gt;&lt;td&gt;50 ML rituximab-pvvr 10 MG/ML Injection [Ruxience]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2469333&lt;/td&gt;&lt;td&gt;pegfilgrastim-apgf&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2469334&lt;/td&gt;&lt;td&gt;pegfilgrastim-apgf 10 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2469335&lt;/td&gt;&lt;td&gt;0.6 ML pegfilgrastim-apgf 10 MG/ML Prefilled Syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2469336&lt;/td&gt;&lt;td&gt;Nyvepria&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2469337&lt;/td&gt;&lt;td&gt;pegfilgrastim-apgf 10 MG/ML [Nyvepria]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2469338&lt;/td&gt;&lt;td&gt;pegfilgrastim Prefilled Syringe [Nyvepria]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2469339&lt;/td&gt;&lt;td&gt;Nyvepria Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2469340&lt;/td&gt;&lt;td&gt;0.6 ML pegfilgrastim-apgf 10 MG/ML Prefilled Syringe [Nyvepria]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2472325&lt;/td&gt;&lt;td&gt;rituximab-arrx&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2472326&lt;/td&gt;&lt;td&gt;rituximab-arrx 10 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2472327&lt;/td&gt;&lt;td&gt;10 ML rituximab-arrx 10 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2472328&lt;/td&gt;&lt;td&gt;Riabni&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2472329&lt;/td&gt;&lt;td&gt;rituximab-arrx 10 MG/ML [Riabni]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2472330&lt;/td&gt;&lt;td&gt;rituximab Injection [Riabni]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2472331&lt;/td&gt;&lt;td&gt;Riabni Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2472332&lt;/td&gt;&lt;td&gt;10 ML rituximab-arrx 10 MG/ML Injection [Riabni]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2472335&lt;/td&gt;&lt;td&gt;50 ML rituximab-arrx 10 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2472336&lt;/td&gt;&lt;td&gt;50 ML rituximab-arrx 10 MG/ML Injection [Riabni]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2549330&lt;/td&gt;&lt;td&gt;pegfilgrastim Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2549331&lt;/td&gt;&lt;td&gt;0.6 ML pegfilgrastim 10 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2549332&lt;/td&gt;&lt;td&gt;pegfilgrastim Injection [Neulasta]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2549333&lt;/td&gt;&lt;td&gt;0.6 ML pegfilgrastim 10 MG/ML Injection [Neulasta]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2595942&lt;/td&gt;&lt;td&gt;filgrastim-ayow&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2595943&lt;/td&gt;&lt;td&gt;filgrastim-ayow 0.6 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2595944&lt;/td&gt;&lt;td&gt;0.5 ML filgrastim-ayow 0.6 MG/ML Prefilled Syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2595946&lt;/td&gt;&lt;td&gt;Releuko&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2595947&lt;/td&gt;&lt;td&gt;filgrastim-ayow 0.6 MG/ML [Releuko]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2595948&lt;/td&gt;&lt;td&gt;Releuko Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2595949&lt;/td&gt;&lt;td&gt;filgrastim Prefilled Syringe [Releuko]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2595950&lt;/td&gt;&lt;td&gt;0.5 ML filgrastim-ayow 0.6 MG/ML Prefilled Syringe [Releuko]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2595952&lt;/td&gt;&lt;td&gt;filgrastim-ayow 0.3 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2595953&lt;/td&gt;&lt;td&gt;1 ML filgrastim-ayow 0.3 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2595955&lt;/td&gt;&lt;td&gt;filgrastim-ayow 0.3 MG/ML [Releuko]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2595956&lt;/td&gt;&lt;td&gt;filgrastim Injection [Releuko]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2595957&lt;/td&gt;&lt;td&gt;1 ML filgrastim-ayow 0.3 MG/ML Injection [Releuko]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2595959&lt;/td&gt;&lt;td&gt;1.6 ML filgrastim-ayow 0.3 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2595960&lt;/td&gt;&lt;td&gt;1.6 ML filgrastim-ayow 0.3 MG/ML Injection [Releuko]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2595961&lt;/td&gt;&lt;td&gt;0.8 ML filgrastim-ayow 0.6 MG/ML Prefilled Syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2595962&lt;/td&gt;&lt;td&gt;0.8 ML filgrastim-ayow 0.6 MG/ML Prefilled Syringe [Releuko]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2602779&lt;/td&gt;&lt;td&gt;pegfilgrastim-pbbk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2602780&lt;/td&gt;&lt;td&gt;pegfilgrastim-pbbk 10 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2602781&lt;/td&gt;&lt;td&gt;0.6 ML pegfilgrastim-pbbk 10 MG/ML Prefilled Syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2602783&lt;/td&gt;&lt;td&gt;Fylnetra&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2602784&lt;/td&gt;&lt;td&gt;pegfilgrastim-pbbk 10 MG/ML [Fylnetra]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2602785&lt;/td&gt;&lt;td&gt;Fylnetra Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2602786&lt;/td&gt;&lt;td&gt;pegfilgrastim Prefilled Syringe [Fylnetra]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2602787&lt;/td&gt;&lt;td&gt;0.6 ML pegfilgrastim-pbbk 10 MG/ML Prefilled Syringe [Fylnetra]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;315932&lt;/td&gt;&lt;td&gt;filgrastim 0.3 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;316648&lt;/td&gt;&lt;td&gt;rituximab 10 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;331527&lt;/td&gt;&lt;td&gt;filgrastim 0.6 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;338036&lt;/td&gt;&lt;td&gt;pegfilgrastim&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;350977&lt;/td&gt;&lt;td&gt;pegfilgrastim 10 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;353501&lt;/td&gt;&lt;td&gt;Neulasta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;567845&lt;/td&gt;&lt;td&gt;filgrastim 0.3 MG/ML [Neupogen]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;573051&lt;/td&gt;&lt;td&gt;rituximab 10 MG/ML [Rituxan]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;574887&lt;/td&gt;&lt;td&gt;filgrastim 0.6 MG/ML [Neupogen]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;575870&lt;/td&gt;&lt;td&gt;pegfilgrastim 10 MG/ML [Neulasta]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;68442&lt;/td&gt;&lt;td&gt;filgrastim&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;70167&lt;/td&gt;&lt;td&gt;lenograstim&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;727534&lt;/td&gt;&lt;td&gt;filgrastim Prefilled Syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;727535&lt;/td&gt;&lt;td&gt;0.5 ML filgrastim 0.6 MG/ML Prefilled Syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;727536&lt;/td&gt;&lt;td&gt;filgrastim Prefilled Syringe [Neupogen]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;727537&lt;/td&gt;&lt;td&gt;0.5 ML filgrastim 0.6 MG/ML Prefilled Syringe [Neupogen]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;727538&lt;/td&gt;&lt;td&gt;pegfilgrastim Prefilled Syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;727539&lt;/td&gt;&lt;td&gt;0.6 ML pegfilgrastim 10 MG/ML Prefilled Syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;727541&lt;/td&gt;&lt;td&gt;pegfilgrastim Prefilled Syringe [Neulasta]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;727542&lt;/td&gt;&lt;td&gt;0.6 ML pegfilgrastim 10 MG/ML Prefilled Syringe [Neulasta]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;727544&lt;/td&gt;&lt;td&gt;0.8 ML filgrastim 0.6 MG/ML Prefilled Syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;727545&lt;/td&gt;&lt;td&gt;0.8 ML filgrastim 0.6 MG/ML Prefilled Syringe [Neupogen]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;733003&lt;/td&gt;&lt;td&gt;plerixafor&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;735381&lt;/td&gt;&lt;td&gt;Mozobil&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;828698&lt;/td&gt;&lt;td&gt;plerixafor 20 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;828700&lt;/td&gt;&lt;td&gt;1.2 ML plerixafor 20 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;828701&lt;/td&gt;&lt;td&gt;plerixafor 20 MG/ML [Mozobil]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;828703&lt;/td&gt;&lt;td&gt;1.2 ML plerixafor 20 MG/ML Injection [Mozobil]&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.5",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "RxNormMobilizingAgentsVS",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "RxNorm - Mobilizing Agents (auto only)",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2022-09-02T15:43:08-05:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://www.cibmtr.org"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Bob Milius",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "bmilius@nmdp.org"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "RxNorm codes for Mobilizing Agents (auto only)",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1157967",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "rituximab Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1159651",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1159878",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "plerixafor Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1161380",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1162571",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "lenograstim Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1182279",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Neulasta Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1182281",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Neupogen Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1183314",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Mozobil Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1185345",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Rituxan Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "121191",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "rituximab"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1433764",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "tbo-filgrastim"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1433765",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "tbo-filgrastim 0.6 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1433768",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.5 ML tbo-filgrastim 0.6 MG/ML Prefilled Syringe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1433771",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.8 ML tbo-filgrastim 0.6 MG/ML Prefilled Syringe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1440046",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "lipegfilgrastim"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1442677",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Granix"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1442678",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "tbo-filgrastim 0.6 MG/ML [Granix]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1442679",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim Prefilled Syringe [Granix]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1442680",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Granix Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1442681",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.5 ML tbo-filgrastim 0.6 MG/ML Prefilled Syringe [Granix]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1442683",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.8 ML tbo-filgrastim 0.6 MG/ML Prefilled Syringe [Granix]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1605064",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim-sndz"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1605065",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim-sndz 0.6 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1605066",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.5 ML filgrastim-sndz 0.6 MG/ML Prefilled Syringe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1605067",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zarxio"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1605068",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim-sndz 0.6 MG/ML [Zarxio]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1605069",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim Prefilled Syringe [Zarxio]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1605070",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zarxio Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1605071",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.5 ML filgrastim-sndz 0.6 MG/ML Prefilled Syringe [Zarxio]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1605074",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.8 ML filgrastim-sndz 0.6 MG/ML Prefilled Syringe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1605075",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.8 ML filgrastim-sndz 0.6 MG/ML Prefilled Syringe [Zarxio]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1649943",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1649944",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "1 ML filgrastim 0.3 MG/ML Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1649945",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim Injection [Neupogen]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1649946",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "1 ML filgrastim 0.3 MG/ML Injection [Neupogen]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1649963",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "1.6 ML filgrastim 0.3 MG/ML Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1649964",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "1.6 ML filgrastim 0.3 MG/ML Injection [Neupogen]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1657861",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "rituximab Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1657862",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "10 ML rituximab 10 MG/ML Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1657863",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "rituximab Injection [Rituxan]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1657864",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "10 ML rituximab 10 MG/ML Injection [Rituxan]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1657867",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "50 ML rituximab 10 MG/ML Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1657868",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "50 ML rituximab 10 MG/ML Injection [Rituxan]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1746487",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegbovigrastim"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1794537",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "plerixafor Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1794539",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "plerixafor Injection [Mozobil]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1927881",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "rituximab 120 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1927882",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "hyaluronidase / rituximab Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1927883",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "hyaluronidase / rituximab Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1927884",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "hyaluronidase / rituximab"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1927885",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "11.7 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1927886",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Rituxan Hycela"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1927887",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML [Rituxan Hycela]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1927888",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "hyaluronidase / rituximab Injection [Rituxan Hycela]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1927889",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Rituxan Hycela Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1927890",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "11.7 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection [Rituxan Hycela]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1927893",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "13.4 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1927894",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "13.4 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection [Rituxan Hycela]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2048018",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim-jmdb"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2048019",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim-jmdb 10 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2048020",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.6 ML pegfilgrastim-jmdb 10 MG/ML Prefilled Syringe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2048021",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Fulphila"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2048022",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim-jmdb 10 MG/ML [Fulphila]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2048023",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim Prefilled Syringe [Fulphila]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2048024",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Fulphila Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2048025",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.6 ML pegfilgrastim-jmdb 10 MG/ML Prefilled Syringe [Fulphila]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2057198",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim-aafi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2057199",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim-aafi 0.6 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2057200",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.5 ML filgrastim-aafi 0.6 MG/ML Prefilled Syringe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2057201",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nivestym"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2057202",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim-aafi 0.6 MG/ML [Nivestym]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2057203",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim Prefilled Syringe [Nivestym]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2057204",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nivestym Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2057205",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.5 ML filgrastim-aafi 0.6 MG/ML Prefilled Syringe [Nivestym]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2057208",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim-aafi 0.3 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2057209",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "1 ML filgrastim-aafi 0.3 MG/ML Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2057210",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim-aafi 0.3 MG/ML [Nivestym]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2057211",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim Injection [Nivestym]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2057212",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "1 ML filgrastim-aafi 0.3 MG/ML Injection [Nivestym]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2057215",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.8 ML filgrastim-aafi 0.6 MG/ML Prefilled Syringe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2057216",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.8 ML filgrastim-aafi 0.6 MG/ML Prefilled Syringe [Nivestym]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2057218",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "1.6 ML filgrastim-aafi 0.3 MG/ML Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2057219",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "1.6 ML filgrastim-aafi 0.3 MG/ML Injection [Nivestym]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2101455",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "tbo-filgrastim 0.3 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2101456",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "1 ML tbo-filgrastim 0.3 MG/ML Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2101457",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "tbo-filgrastim 0.3 MG/ML [Granix]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2101458",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim Injection [Granix]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2101459",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "1 ML tbo-filgrastim 0.3 MG/ML Injection [Granix]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2101464",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "1.6 ML tbo-filgrastim 0.3 MG/ML Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2101465",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "1.6 ML tbo-filgrastim 0.3 MG/ML Injection [Granix]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2102692",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim-cbqv"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2102695",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Udenyca"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2102697",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim Prefilled Syringe [Udenyca]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2102698",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Udenyca Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2102702",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim-cbqv 10 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2102703",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.6 ML pegfilgrastim-cbqv 10 MG/ML Prefilled Syringe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2102704",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim-cbqv 10 MG/ML [Udenyca]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2102705",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.6 ML pegfilgrastim-cbqv 10 MG/ML Prefilled Syringe [Udenyca]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2105824",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "rituximab-abbs"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2105825",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "rituximab-abbs 10 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2105826",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "10 ML rituximab-abbs 10 MG/ML Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2105827",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Truxima"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2105828",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "rituximab-abbs 10 MG/ML [Truxima]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2105829",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "rituximab Injection [Truxima]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2105830",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Truxima Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2105831",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "10 ML rituximab-abbs 10 MG/ML Injection [Truxima]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2105834",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "50 ML rituximab-abbs 10 MG/ML Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2105835",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "50 ML rituximab-abbs 10 MG/ML Injection [Truxima]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2260702",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim-bmez"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2260703",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim-bmez 10 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2260704",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.6 ML pegfilgrastim-bmez 10 MG/ML Prefilled Syringe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2260705",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ziextenzo"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2260706",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim-bmez 10 MG/ML [Ziextenzo]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2260707",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim Prefilled Syringe [Ziextenzo]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2260708",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ziextenzo Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2260709",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.6 ML pegfilgrastim-bmez 10 MG/ML Prefilled Syringe [Ziextenzo]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "226754",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Rituxan"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "227304",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Neupogen"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2273510",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "rituximab-pvvr"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2273511",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "rituximab-pvvr 10 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2273512",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "10 ML rituximab-pvvr 10 MG/ML Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2273513",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ruxience"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2273514",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "rituximab-pvvr 10 MG/ML [Ruxience]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2273515",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "rituximab Injection [Ruxience]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2273516",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ruxience Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2273517",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "10 ML rituximab-pvvr 10 MG/ML Injection [Ruxience]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2273520",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "50 ML rituximab-pvvr 10 MG/ML Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2273521",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "50 ML rituximab-pvvr 10 MG/ML Injection [Ruxience]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2469333",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim-apgf"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2469334",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim-apgf 10 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2469335",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.6 ML pegfilgrastim-apgf 10 MG/ML Prefilled Syringe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2469336",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nyvepria"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2469337",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim-apgf 10 MG/ML [Nyvepria]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2469338",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim Prefilled Syringe [Nyvepria]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2469339",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nyvepria Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2469340",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.6 ML pegfilgrastim-apgf 10 MG/ML Prefilled Syringe [Nyvepria]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2472325",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "rituximab-arrx"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2472326",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "rituximab-arrx 10 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2472327",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "10 ML rituximab-arrx 10 MG/ML Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2472328",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Riabni"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2472329",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "rituximab-arrx 10 MG/ML [Riabni]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2472330",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "rituximab Injection [Riabni]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2472331",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Riabni Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2472332",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "10 ML rituximab-arrx 10 MG/ML Injection [Riabni]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2472335",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "50 ML rituximab-arrx 10 MG/ML Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2472336",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "50 ML rituximab-arrx 10 MG/ML Injection [Riabni]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2549330",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2549331",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.6 ML pegfilgrastim 10 MG/ML Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2549332",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim Injection [Neulasta]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2549333",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.6 ML pegfilgrastim 10 MG/ML Injection [Neulasta]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2595942",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim-ayow"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2595943",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim-ayow 0.6 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2595944",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.5 ML filgrastim-ayow 0.6 MG/ML Prefilled Syringe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2595946",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Releuko"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2595947",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim-ayow 0.6 MG/ML [Releuko]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2595948",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Releuko Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2595949",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim Prefilled Syringe [Releuko]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2595950",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.5 ML filgrastim-ayow 0.6 MG/ML Prefilled Syringe [Releuko]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2595952",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim-ayow 0.3 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2595953",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "1 ML filgrastim-ayow 0.3 MG/ML Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2595955",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim-ayow 0.3 MG/ML [Releuko]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2595956",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim Injection [Releuko]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2595957",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "1 ML filgrastim-ayow 0.3 MG/ML Injection [Releuko]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2595959",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "1.6 ML filgrastim-ayow 0.3 MG/ML Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2595960",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "1.6 ML filgrastim-ayow 0.3 MG/ML Injection [Releuko]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2595961",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.8 ML filgrastim-ayow 0.6 MG/ML Prefilled Syringe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2595962",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.8 ML filgrastim-ayow 0.6 MG/ML Prefilled Syringe [Releuko]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2602779",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim-pbbk"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2602780",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim-pbbk 10 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2602781",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.6 ML pegfilgrastim-pbbk 10 MG/ML Prefilled Syringe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2602783",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Fylnetra"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2602784",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim-pbbk 10 MG/ML [Fylnetra]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2602785",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Fylnetra Injectable Product"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2602786",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim Prefilled Syringe [Fylnetra]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2602787",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.6 ML pegfilgrastim-pbbk 10 MG/ML Prefilled Syringe [Fylnetra]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "315932",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim 0.3 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "316648",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "rituximab 10 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "331527",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim 0.6 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "338036",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "350977",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim 10 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "353501",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Neulasta"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "567845",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim 0.3 MG/ML [Neupogen]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "573051",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "rituximab 10 MG/ML [Rituxan]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "574887",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim 0.6 MG/ML [Neupogen]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "575870",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim 10 MG/ML [Neulasta]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "68442",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "70167",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "lenograstim"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "727534",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim Prefilled Syringe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "727535",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.5 ML filgrastim 0.6 MG/ML Prefilled Syringe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "727536",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "filgrastim Prefilled Syringe [Neupogen]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "727537",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.5 ML filgrastim 0.6 MG/ML Prefilled Syringe [Neupogen]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "727538",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim Prefilled Syringe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "727539",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.6 ML pegfilgrastim 10 MG/ML Prefilled Syringe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "727541",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "pegfilgrastim Prefilled Syringe [Neulasta]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "727542",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.6 ML pegfilgrastim 10 MG/ML Prefilled Syringe [Neulasta]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "727544",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.8 ML filgrastim 0.6 MG/ML Prefilled Syringe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "727545",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "0.8 ML filgrastim 0.6 MG/ML Prefilled Syringe [Neupogen]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "733003",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "plerixafor"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "735381",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Mozobil"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "828698",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "plerixafor 20 MG/ML"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "828700",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "1.2 ML plerixafor 20 MG/ML Injection"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "828701",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "plerixafor 20 MG/ML [Mozobil]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "828703",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "1.2 ML plerixafor 20 MG/ML Injection [Mozobil]"
+          }
+        ]
+      }
+    ]
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+if(window.location.hash != "") {
+    $('a[href="' + window.location.hash + '"]').click()
+}
+});
+</script>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
+    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 2, 2022 15:43-0500">2022-09-02</span>
+    <br/>
+    <span style="color: #FFFF77">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+<div id="cibmtr-footer">
+    <p>
+    <br/>HL7&#174;, and FHIR&#174; are the registered trademarks of Health Level Seven International 
+    and their use of these trademarks does not constitute an endorsement by HL7.
+    </p>
+</div>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script>anchors.options.visible = 'hover'
+anchors.add()</script>
+
+<!-- Analytics Below
+================================================== -->
+</body>
+</html>
+

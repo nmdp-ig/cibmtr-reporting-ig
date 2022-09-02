@@ -1,0 +1,146 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "med-busulfan-vs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1828</td><td>busulfan</td></tr><tr><td>284676</td><td>Busulfex</td></tr><tr><td>203010</td><td>Myleran</td></tr><tr><td>284425</td><td>10 ML busulfan 6 MG/ML Injection [Busulfex]</td></tr><tr><td>332701</td><td>busulfan 0.5 MG</td></tr><tr><td>564077</td><td>busulfan 0.5 MG [Myleran]</td></tr><tr><td>105550</td><td>busulfan 0.5 MG Oral Tablet [Myleran]</td></tr><tr><td>317620</td><td>busulfan 2 MG</td></tr><tr><td>564078</td><td>busulfan 2 MG [Myleran]</td></tr><tr><td>105551</td><td>busulfan 2 MG Oral Tablet [Myleran]</td></tr><tr><td>315503</td><td>busulfan 6 MG/ML</td></tr><tr><td>574864</td><td>busulfan 6 MG/ML [Busulfex]</td></tr><tr><td>1729356</td><td>busulfan 6 MG/ML Injection [Busulfex]</td></tr><tr><td>1151374</td><td>busulfan Injectable Product</td></tr><tr><td>1729351</td><td>busulfan Injection</td></tr><tr><td>1729353</td><td>busulfan Injection [Busulfex]</td></tr><tr><td>1151375</td><td>busulfan Oral Product</td></tr><tr><td>371165</td><td>busulfan Oral Tablet</td></tr><tr><td>368542</td><td>busulfan Oral Tablet [Myleran]</td></tr><tr><td>1151376</td><td>busulfan Pill</td></tr><tr><td>1168702</td><td>Busulfex Injectable Product</td></tr><tr><td>1185666</td><td>Myleran Oral Product</td></tr><tr><td>1185667</td><td>Myleran Pill</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs"];
+  fhir:ValueSet.version [ fhir:value "0.1.5"];
+  fhir:ValueSet.name [ fhir:value "RxNormBusulfanVS"];
+  fhir:ValueSet.title [ fhir:value "RxNorm - Busulfan"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2022-09-02T15:43:08-05:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.cibmtr.org" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Bob Milius" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "bmilius@nmdp.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "RxNorm codes for Busulfan"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1828" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "busulfan" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "284676" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Busulfex" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "203010" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myleran" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "284425" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "10 ML busulfan 6 MG/ML Injection [Busulfex]" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "332701" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "busulfan 0.5 MG" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "564077" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "busulfan 0.5 MG [Myleran]" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "105550" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "busulfan 0.5 MG Oral Tablet [Myleran]" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "317620" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "busulfan 2 MG" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "564078" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "busulfan 2 MG [Myleran]" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "105551" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "busulfan 2 MG Oral Tablet [Myleran]" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "315503" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "busulfan 6 MG/ML" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "574864" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "busulfan 6 MG/ML [Busulfex]" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1729356" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "busulfan 6 MG/ML Injection [Busulfex]" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1151374" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "busulfan Injectable Product" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1729351" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "busulfan Injection" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1729353" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "busulfan Injection [Busulfex]" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1151375" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "busulfan Oral Product" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "371165" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "busulfan Oral Tablet" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "368542" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "busulfan Oral Tablet [Myleran]" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1151376" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "busulfan Pill" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1168702" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Busulfex Injectable Product" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1185666" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myleran Oral Product" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1185667" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myleran Pill" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

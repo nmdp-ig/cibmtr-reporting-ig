@@ -1,0 +1,80 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/Observation/CMVDNAViralLoadCopiesmL> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CMVDNAViralLoadCopiesmL"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables";
+       fhir:index 0;
+       fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables>
+     ];
+     fhir:Meta.security [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.cibmtr.org/codesystem/transplant-center" ];
+       fhir:Coding.code [ fhir:value "rc_99999" ];
+       fhir:Coding.display [ fhir:value "99999 My Transplant Center" ]
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"CMVDNAViralLoadCopiesmL\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cibmtr-obs-priority-variables.html\">CIBMTR Observation Laboratory Results: Priority Variables</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.cibmtr.org/codesystem/transplant-center http://terminology.cibmtr.org/codesystem/transplant-center}\">http://terminology.cibmtr.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Cytomegalovirus DNA [#/volume] (viral load) in Bronchoalveolar lavage by NAA with probe detection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#49349-4)</span></p><p><b>subject</b>: <a href=\"Patient-PatientExample6.html\">Patient/PatientExample6</a> \"\"</p><p><b>effective</b>: 2020-07-21 02:17:00+0000</p><p><b>value</b>: 6000000 copies per milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {copies}/mL = '{copies}/mL')</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>100 copies per milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {copies}/mL = '{copies}/mL')</span></td><td>10000000 copies per milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {copies}/mL = '{copies}/mL')</span></td></tr></table></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:49349-4;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "49349-4" ];
+       fhir:Coding.display [ fhir:value "Cytomegalovirus DNA [#/volume] (viral load) in Bronchoalveolar lavage by NAA with probe detection" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/Patient/PatientExample6>;
+     fhir:Reference.reference [ fhir:value "Patient/PatientExample6" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2020-07-21T14:17:00Z"^^xsd:dateTime];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "6000000"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "copies per milliliter" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "{copies}/mL" ]
+  ];
+  fhir:Observation.referenceRange [
+     fhir:index 0;
+     fhir:Observation.referenceRange.low [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "copies per milliliter" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "{copies}/mL" ]
+     ];
+     fhir:Observation.referenceRange.high [
+       fhir:Quantity.value [ fhir:value "10000000"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "copies per milliliter" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "{copies}/mL" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/Observation/CMVDNAViralLoadCopiesmL.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

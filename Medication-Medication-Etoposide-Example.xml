@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="Medication-Etoposide-Example"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication"/>
+    <security>
+      <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
+      <code value="rc_99999"/>
+      <display value="99999 My Transplant Center"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Medication-Etoposide-Example" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cibmtr-medication.html">CIBMTR Medication (us-core)</a></p><p style="margin-bottom: 0px">Security Labels: <span title="{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>code</b>: ETOPOSIDE 20 MG/ML IV SOLN <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html">RxNorm</a>#4179 "etoposide"; <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html">RxNorm</a>#310248 "etoposide 20 MG/ML Injectable Solution"; <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html">RxNorm</a>#362972 "etoposide Injectable Solution [Vepesid]"; <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html">RxNorm</a>#206832 "etoposide 20 MG/ML Injectable Solution [Vepesid]")</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>ETOPOSIDE 20 MG/ML IV SOLN <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html">RxNorm</a>#4179 "etoposide"; <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html">RxNorm</a>#310248 "etoposide 20 MG/ML Injectable Solution"; <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html">RxNorm</a>#362972 "etoposide Injectable Solution [Vepesid]"; <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html">RxNorm</a>#206832 "etoposide 20 MG/ML Injectable Solution [Vepesid]")</span></td><td>20 milligram per milliliter<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg/ml = 'mg/ml')</span>/20 milligram per milliliter<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg/ml = 'mg/ml')</span></td></tr></table></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="4179"/>
+      <display value="etoposide"/>
+    </coding>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="310248"/>
+      <display value="etoposide 20 MG/ML Injectable Solution"/>
+    </coding>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="362972"/>
+      <display value="etoposide Injectable Solution [Vepesid]"/>
+    </coding>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="206832"/>
+      <display value="etoposide 20 MG/ML Injectable Solution [Vepesid]"/>
+    </coding>
+    <text value="ETOPOSIDE 20 MG/ML IV SOLN"/>
+  </code>
+  <ingredient>
+    <itemCodeableConcept>
+      <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="4179"/>
+        <display value="etoposide"/>
+      </coding>
+      <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="310248"/>
+        <display value="etoposide 20 MG/ML Injectable Solution"/>
+      </coding>
+      <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="362972"/>
+        <display value="etoposide Injectable Solution [Vepesid]"/>
+      </coding>
+      <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="206832"/>
+        <display value="etoposide 20 MG/ML Injectable Solution [Vepesid]"/>
+      </coding>
+      <text value="ETOPOSIDE 20 MG/ML IV SOLN"/>
+    </itemCodeableConcept>
+    <strength>
+      <numerator>
+        <value value="20"/>
+        <unit value="milligram per milliliter"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/ml"/>
+      </numerator>
+      <denominator>
+        <value value="20"/>
+        <unit value="milligram per milliliter"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/ml"/>
+      </denominator>
+    </strength>
+  </ingredient>
+</Medication>

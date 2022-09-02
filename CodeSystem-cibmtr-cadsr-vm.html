@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.21"}
-    h3,h4,h5,h6{--heading-prefix:"3.21"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.54"}
+    h3,h4,h5,h6{--heading-prefix:"13.54"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -57,7 +57,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.4a - Trial Use 1
+            <span style="display:inline-block;">0.1.5 - Trial Use 1
 
 
             </span>
@@ -90,11 +90,45 @@
   <li>
     <a href="toc.html">Table of Contents</a>
   </li>
-  <li>
-    <a href="artifacts.html">Artifact Index</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Connection-Guide-R4.html">Connection - R4</a>
+      </li>
+      <li>
+        <a href="Endpoints.html">Endpoints</a>
+      </li>
+      <li>
+        <a href="Access-Credentials.html">Access Credentials</a>
+      </li>
+      <li>
+        <a href="CRID-Assignment.html">CRID Assignment</a>
+      </li>
+      <li>
+        <a href="Laboratory-Observations.html">Lab Observations</a>
+      </li>
+      <li>
+        <a href="Medications.html">Medications</a>
+      </li>
+      <li>
+        <a href="Bundles.html">Bundles</a>
+      </li>
+      <li>
+        <a href="Form-2450.html">Form 2450</a>
+      </li>
+      <li>
+        <a href="Example-Code.html">Example Code Snippets</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR (STU3)</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
@@ -131,7 +165,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.4a). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.5). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -183,7 +217,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://cdebrowser.nci.nih.gov<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://cdebrowser.nci.nih.gov"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.4a<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://cdebrowser.nci.nih.gov|0.1.4a"/></span>
+      <span class="copy-text">0.1.5<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://cdebrowser.nci.nih.gov|0.1.5"/></span>
       </td>
     </tr>
 
@@ -199,7 +233,7 @@
         
           Active
           
-            as of 2022-05-27
+            as of 2022-09-02
           
         
       </td>
@@ -239,7 +273,7 @@
 </ul>
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://cdebrowser.nci.nih.gov defines many codes, of which the following are a subset:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">$CADSR:4722619<a name="cibmtr-cadsr-vm-.36CADSR.584722619"> </a></td><td>Acute GVHD</td></tr><tr><td style="white-space:nowrap">$CADSR:2991794<a name="cibmtr-cadsr-vm-.36CADSR.582991794"> </a></td><td>Classic cGVHD</td></tr><tr><td style="white-space:nowrap">$CADSR:2991795<a name="cibmtr-cadsr-vm-.36CADSR.582991795"> </a></td><td>Overlap cGVHD</td></tr><tr><td style="white-space:nowrap">$CADSR:2991796<a name="cibmtr-cadsr-vm-.36CADSR.582991796"> </a></td><td>Late Acute GVHD</td></tr><tr><td style="white-space:nowrap">$CADSR:3261243<a name="cibmtr-cadsr-vm-.36CADSR.583261243"> </a></td><td>Not Applicable</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://cdebrowser.nci.nih.gov defines many codes, of which the following are a subset:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">4722619<a name="cibmtr-cadsr-vm-4722619"> </a></td><td>Acute GVHD</td><td>Acute Graft Vs Host Disease</td></tr><tr><td style="white-space:nowrap">2991794<a name="cibmtr-cadsr-vm-2991794"> </a></td><td>Classic cGVHD</td><td>Classic chronic Graft Vs Host Disease</td></tr><tr><td style="white-space:nowrap">2991795<a name="cibmtr-cadsr-vm-2991795"> </a></td><td>Overlap cGVHD</td><td>Overlap chronic Graft Vs Host Disease</td></tr><tr><td style="white-space:nowrap">2991796<a name="cibmtr-cadsr-vm-2991796"> </a></td><td>Late Acute GVHD</td><td>Late Acute Graft Vs Host Disease</td></tr><tr><td style="white-space:nowrap">3261243<a name="cibmtr-cadsr-vm-3261243"> </a></td><td>Not Applicable</td><td>Not Applicable</td></tr></table></div>
 
   
 
@@ -271,7 +305,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.4a based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 27, 2022 13:25-0500">2022-05-27</span>
+    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 2, 2022 15:43-0500">2022-09-02</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

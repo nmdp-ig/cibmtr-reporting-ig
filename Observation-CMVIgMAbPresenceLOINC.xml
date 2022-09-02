@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="CMVIgMAbPresenceLOINC"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+    <security>
+      <system value="http://terminology.cibmtr.org/codesystem/transplant-center"/>
+      <code value="rc_99999"/>
+      <display value="99999 My Transplant Center"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "CMVIgMAbPresenceLOINC" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cibmtr-obs-priority-variables.html">CIBMTR Observation Laboratory Results: Priority Variables</a></p><p style="margin-bottom: 0px">Security Labels: <span title="{http://terminology.cibmtr.org/codesystem/transplant-center http://terminology.cibmtr.org/codesystem/transplant-center}">http://terminology.cibmtr.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunoassay <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#24119-0)</span></p><p><b>subject</b>: <a href="Patient-PatientExample6.html">Patient/PatientExample6</a> ""</p><p><b>effective</b>: 2020-07-21 02:17:00+0000</p><p><b>value</b>: Reactive <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#LA15255-5)</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="24119-0"/>
+      <display value="Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunoassay"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/PatientExample6"/>
+  </subject>
+  <effectiveDateTime value="2020-07-21T14:17:00Z"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="LA15255-5"/>
+      <display value="Reactive"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

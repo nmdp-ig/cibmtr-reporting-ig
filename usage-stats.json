@@ -1,9 +1,35 @@
 {
   "package": "cibmtr-reporting",
-  "version": "0.1.4a",
+  "version": "0.1.5",
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
+    "Medication": [
+      {
+        "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-post-hct-disease-therapy-planned-medication",
+        "title": "CIBMTR Planned Post-HCT Disease Therapy Medication"
+      },
+      {
+        "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prep-regimen-medication",
+        "title": "CIBMTR Prep Regimen Medication"
+      },
+      {
+        "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prior-exposure-medication",
+        "title": "CIBMTR Prior Exposure Medication"
+      }
+    ],
+    "MedicationAdministration": [
+      {
+        "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration",
+        "title": "CIBMTR Medication Administration (mcode)"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-request",
+        "title": "CIBMTR Medication Request (mcode)"
+      }
+    ],
     "Observation": [
       {
         "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables",
@@ -22,6 +48,10 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "MedicationRequest.requester",
+      "Patient.name"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -40,11 +70,19 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type",
+      "StructureDefinition.snapshot.element.type.targetProfile"
+    ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
       "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName": [
       "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
@@ -57,6 +95,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
@@ -75,6 +116,14 @@
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
       "Patient"
+    ],
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent": [
+      "MedicationAdministration",
+      "MedicationRequest"
+    ],
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-treatment-termination-reason": [
+      "MedicationAdministration",
+      "MedicationRequest"
     ]
   }
 }

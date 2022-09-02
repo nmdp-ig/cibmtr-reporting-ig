@@ -1,0 +1,78 @@
+{
+  "resourceType": "Medication",
+  "id": "Medication-PriorExposure-Example",
+  "meta": {
+    "profile": [
+      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prior-exposure-medication"
+    ],
+    "security": [
+      {
+        "system": "http://terminology.nmdp.org/codesystem/transplant-center",
+        "code": "rc_99999",
+        "display": "99999 My Transplant Center"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Medication-PriorExposure-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cibmtr-prior-exposure-medication.html\">CIBMTR Prior Exposure Medication</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>code</b>: mogamulizumab <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#2054068; <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#2054084 \"mogamulizumab Injection [Poteligeo]\"; <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#2054086 \"5 ML mogamulizumab-kpkc 4 MG/ML Injection [Poteligeo]\")</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>mogamulizumab <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#2054068; <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#2054084 \"mogamulizumab Injection [Poteligeo]\"; <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#2054086 \"5 ML mogamulizumab-kpkc 4 MG/ML Injection [Poteligeo]\")</span></td><td>4 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/0.035 milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mL = 'mL')</span></td></tr></table></div>"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "2054068",
+        "display": "mogamulizumab"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "2054084",
+        "display": "mogamulizumab Injection [Poteligeo]"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "2054086",
+        "display": "5 ML mogamulizumab-kpkc 4 MG/ML Injection [Poteligeo]"
+      }
+    ],
+    "text": "mogamulizumab"
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2054068",
+            "display": "mogamulizumab"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2054084",
+            "display": "mogamulizumab Injection [Poteligeo]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2054086",
+            "display": "5 ML mogamulizumab-kpkc 4 MG/ML Injection [Poteligeo]"
+          }
+        ],
+        "text": "mogamulizumab"
+      },
+      "strength": {
+        "numerator": {
+          "value": 4,
+          "unit": "milligram",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg"
+        },
+        "denominator": {
+          "value": 0.035,
+          "unit": "milliliter",
+          "system": "http://unitsofmeasure.org",
+          "code": "mL"
+        }
+      }
+    }
+  ]
+}

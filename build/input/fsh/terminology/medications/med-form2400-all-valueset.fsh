@@ -7,5 +7,5 @@ Description: "RxNorm codes for all of Form 2400"
 * include codes from valueset RxNormMobilizingAgentsVS
 * include codes from valueset RxNormPostHCTDiseaseTherapyPlannedVS
 * include codes from valueset RxNormPrepRegimenVS
-* include codes from valueset RxNormPrioExposureVS
+* include codes from valueset RxNormPriorExposureVS
 

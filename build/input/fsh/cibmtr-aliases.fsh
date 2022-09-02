@@ -5,4 +5,6 @@ Alias: $LNC = http://loinc.org
 Alias: $SCT = http://snomed.info/sct
 Alias: $CADSR = http://cdebrowser.nci.nih.gov
 Alias: $UCUM = http://unitsofmeasure.org 
-Alias: $RXNORM = http://www.nlm.nih.gov/research/umls/rxnorm 
+Alias: $RXN = http://www.nlm.nih.gov/research/umls/rxnorm 
+Alias: $ICD9 = http://hl7.org/fhir/sid/icd-9-cm
+Alias: $ICD10 = http://hl7.org/fhir/sid/icd-10-cm

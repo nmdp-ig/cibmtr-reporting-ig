@@ -5,7 +5,7 @@ CIBMTR collects clinical research data related to stem-cell transplants includin
 This document describes how to submit HL7 FHIR data electronically using available CIBMTR REST APIs.  Data for each patient is submitted using the HL7 FHIR exchange protocol in JSON or XML format. The REST APIs are available for integration into a custom client architecture or for submission using a manual HTTP client such as Postman. CIBMTR refers to data submitted directly to the CIBMTR FHIR API using a custom client as Direct FHIR data submission.
   
 The process for submitting production data to CIBMTR includes three sequential steps:
-1.	[Request CIBMTR Direct FHIR Service API Access Credentials](Access-Credentionals.html)
+1.	[Request CIBMTR Direct FHIR Service API Access Credentials](Access-Credentials.html)
 2.	Submit test data using the [CIBMTR test API endpoint URLs](Endpoints.html)
 3.	Submit production data with the [CIBMTR production API endpoint URLs](Endpoints.html) (not yet supported)
 
@@ -24,7 +24,7 @@ Before we dive into the workflow, there are a couple of things to be aware of:  
 
 #### Base URLs
 
-For the CRID API, and all FHIR R4 resources, use the `<base URLs>` from the [Endpoints table](Endpoints.html) in the examples that follow e
+For the CRID API, and all FHIR R4 resources, use the `<base URLs>` from the [Endpoints table](Endpoints.html) in the examples that follow.
 
 
 #### Security tags
@@ -43,7 +43,7 @@ Access credentials have been provisioned to allow access to patients and data th
 The `meta.security.code` is a string containing `rc_` followed by the CIBMTR Center Number (CCN). In the above example, replace `<CCN>` with your center number.  Examples of FHIR resources containing this element are found in the sections below.
 
 #### Step 1
-[Register patient and receive CRID](CRID-Assignment.md) 
+[Register patient and receive CRID](CRID-Assignment.html) 
 
 #### Step 2: 
 Search for existing Patient resource with CRID 
@@ -111,14 +111,16 @@ The Patient FHIR resource usually contains the demographics data for the patient
 
 PII information should be avoided as part of the Patient resource.   However, the Direct FHIR service API will remove PII information, including any that might be contained in `text.div` or other sections of the resource before storing it on the FHIR server.  
 
-The response after submitting a Patient resource request, includes the Patient resource ID in the header of the response (see Figure 7).   The `Location` section of the response header includes a URL reference for the Patient resource on the CIBMTR FHIR server and the Patient resource ID is in the URL (circled in red in Figure 7).   The Patient resource ID is necessary for submitting other FHIR resources to the Direct FHIR service API, but if the ID for a Patient resource previously submitted is not known, the following GET request can be submitted to the API to retrieve the Patient resource for a given CRID:
+The response after submitting a Patient resource request, includes the Patient resource ID in the header of the response.   The `Location` section of the response header includes a URL reference for the Patient resource on the CIBMTR FHIR server and the Patient resource ID is in the URL 
+<!-- (circled in red in Figure 7) -->.   The Patient resource ID is necessary for submitting other FHIR resources to the Direct FHIR service API, but if the ID for a Patient resource previously submitted is not known, the following GET request can be submitted to the API to retrieve the Patient resource for a given CRID:
 
-
+<!--
 |![Figure 7](dfhir_r3_figure07.png){: width="50%"} |
 |:--:|
 | <i>Figure 7: Example FHIR Patient submission response with the Patient resource ID found in the response header Location</i>|
+-->
 
-Preferred Patient resource
+##### Preferred Patient resource
 While including the CRID identifier, meta.security tag, and empty text element is the bare minimum for creating a Patient resource, we prefer to have some additional data present to help with resource management. These include date of birth, gender, and race & ethnicity information. Race and ethnicity must be reported as described in the FHIR US-Core Implementation Guide:
 - `https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-race.html`
 - `https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-ethnicity.html`
@@ -351,3 +353,4 @@ https://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet-cibmtr-priority-variables-202
 > Yes, transaction bundles are currently supported. 	
 
 
+{% include link-list.md %}

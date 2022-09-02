@@ -3,14 +3,14 @@
   "id": "gvhdtype-valueset",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  234646005 (Graft versus host disease)</li><li>Include these codes as defined in <a href=\"CodeSystem-cibmtr-cadsr-vm.html\"><code>http://cdebrowser.nci.nih.gov</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.584722619\">CADSR:4722619</a></td><td>Acute GVHD</td></tr><tr><td><a href=\"CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.582991794\">CADSR:2991794</a></td><td>Classic cGVHD</td></tr><tr><td><a href=\"CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.582991796\">CADSR:2991796</a></td><td>Late Acute GVHD</td></tr><tr><td><a href=\"CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.583261243\">CADSR:3261243</a></td><td>Not Applicable</td></tr><tr><td><a href=\"CodeSystem-cibmtr-cadsr-vm.html#cibmtr-cadsr-vm-CADSR.582991795\">CADSR:2991795</a></td><td>Overlap cGVHD</td></tr></table></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  234646005 (Graft versus host disease)</li><li>Include all codes defined in <a href=\"CodeSystem-cibmtr-cadsr-vm.html\"><code>http://cdebrowser.nci.nih.gov</code></a></li></ul></div>"
   },
   "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhdtype-valueset",
   "version": "0.1.5",
   "name": "GVHDTypeValueSet",
   "title": "GVHD Type Value Set",
   "status": "active",
-  "date": "2022-08-31T14:35:45-05:00",
+  "date": "2022-09-02T15:43:08-05:00",
   "publisher": "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact": [
     {
@@ -46,29 +46,7 @@
         ]
       },
       {
-        "system": "http://cdebrowser.nci.nih.gov",
-        "concept": [
-          {
-            "code": "CADSR:4722619",
-            "display": "Acute GVHD"
-          },
-          {
-            "code": "CADSR:2991794",
-            "display": "Classic cGVHD"
-          },
-          {
-            "code": "CADSR:2991796",
-            "display": "Late Acute GVHD"
-          },
-          {
-            "code": "CADSR:3261243",
-            "display": "Not Applicable"
-          },
-          {
-            "code": "CADSR:2991795",
-            "display": "Overlap cGVHD"
-          }
-        ]
+        "system": "http://cdebrowser.nci.nih.gov"
       }
     ]
   }

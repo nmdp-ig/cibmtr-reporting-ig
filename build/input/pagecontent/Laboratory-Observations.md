@@ -11,3 +11,4 @@ CIBMTR does **NOT** support any other value types (e.g., `valueString` is not cu
 #### Special rules:
 - For CMV LOINC codes that use `ValueQuantity`, it **MUST** be accompanied with a `referenceRange`
 
+{% include link-list.md %}

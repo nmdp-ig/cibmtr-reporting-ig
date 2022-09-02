@@ -17,7 +17,7 @@
    <name value="CIBMTRReporting"/>
    <title value="CIBMTR Reporting Implementation Guide"/>
    <status value="draft"/>
-   <date value="2022-08-31T14:35:45-05:00"/>
+   <date value="2022-09-02T15:43:08-05:00"/>
    <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
    <contact>
       <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -197,21 +197,6 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-cibmtr-medication-dispense.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/cibmtr-medication-dispense"/>
-         </reference>
-         <name value="CIBMTR Medication Dispense"/>
-         <description value="CIBMTR Medication Dispense"/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="StructureDefinition-cibmtr-medication-request.html"/>
          </extension>
          <reference>
@@ -232,8 +217,8 @@
          <reference>
             <reference value="StructureDefinition/cibmtr-mobilizing-agent-medication"/>
          </reference>
-         <name value="CIBMTR Mobilizing Agent Medication"/>
-         <description value="CIBMTR Moblizing Agents (auto only) Medication"/>
+         <name value="CIBMTR Mobilizing Agents Medication"/>
+         <description value="CIBMTR Mobilizing Agents (auto only) Medication"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -638,7 +623,7 @@
             <reference value="ValueSet/med-cyclophosphamide-vs"/>
          </reference>
          <name value="RxNorm - Cyclophosphamide"/>
-         <description value="RxNorm codes for Cyclophosphamide "/>
+         <description value="RxNorm codes for Cyclophosphamide"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -683,7 +668,7 @@
             <reference value="ValueSet/med-etoposide-vs"/>
          </reference>
          <name value="RxNorm - Etoposide"/>
-         <description value="RxNorm codes for Etoposide "/>
+         <description value="RxNorm codes for Etoposide"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -698,7 +683,7 @@
             <reference value="ValueSet/med-fludarabine-vs"/>
          </reference>
          <name value="RxNorm - Fludarabine"/>
-         <description value="RxNorm codes for Fludarabine "/>
+         <description value="RxNorm codes for Fludarabine"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -728,7 +713,7 @@
             <reference value="ValueSet/med-melphalan-vs"/>
          </reference>
          <name value="RxNorm - Melphalan"/>
-         <description value="RxNorm codes for Melphalan "/>
+         <description value="RxNorm codes for Melphalan"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -1139,6 +1124,171 @@
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Medication"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Medication-Medication-Cyclophosphamide-Example.html"/>
+         </extension>
+         <reference>
+            <reference value="Medication/Medication-Cyclophosphamide-Example"/>
+         </reference>
+         <name value="Medication-Cyclophosphamide-Example"/>
+         <description value="Medication - Cyclophosphamide, 1 G injection"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Medication"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Medication-Medication-Etoposide-Example.html"/>
+         </extension>
+         <reference>
+            <reference value="Medication/Medication-Etoposide-Example"/>
+         </reference>
+         <name value="Medication-Etoposide-Example"/>
+         <description value="Medication - Etoposide (Vepesid) chemo IBPB, 20MG/ML"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Medication"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Medication-Medication-GVHD-Prophylaxis-Example.html"/>
+         </extension>
+         <reference>
+            <reference value="Medication/Medication-GVHD-Prophylaxis-Example"/>
+         </reference>
+         <name value="Medication-GVHD-Prophylaxis-Example"/>
+         <description value="Medication - GVHD Prophylaxis Example - Cyclosporine"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-gvhd-prophylaxis-medication"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Medication"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Medication-Medication-Mobilizing-Agent-Example.html"/>
+         </extension>
+         <reference>
+            <reference value="Medication/Medication-Mobilizing-Agent-Example"/>
+         </reference>
+         <name value="Medication-Mobilizing-Agent-Example"/>
+         <description value="Medication - Mobilizing Agents Example - Pegfilgrastim"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-mobilizing-agent-medication"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Medication"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Medication-Medication-Peri-Transplant-Example.html"/>
+         </extension>
+         <reference>
+            <reference value="Medication/Medication-Peri-Transplant-Example"/>
+         </reference>
+         <name value="Medication-Peri-Transplant-Example"/>
+         <description value="Medication - Additional Peri-Transplant Example - Anti-Thymocyte gGobulin"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-additional-peri-transplant-medication"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Medication"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Medication-Medication-Post-HCT-Disease-Therapy-Example.html"/>
+         </extension>
+         <reference>
+            <reference value="Medication/Medication-Post-HCT-Disease-Therapy-Example"/>
+         </reference>
+         <name value="Medication-Post-HCT-Disease-Therapy-Example"/>
+         <description value="Medication - Post-HCT Disease Therapy Planned Example - Blinatumomab"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-post-hct-disease-therapy-planned-medication"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Medication"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Medication-Medication-Prep-Regimen-Example.html"/>
+         </extension>
+         <reference>
+            <reference value="Medication/Medication-Prep-Regimen-Example"/>
+         </reference>
+         <name value="Medication-Prep-Regimen-Example"/>
+         <description value="Medication - Pre-HCT Preparatoive Regimen (Conditioning) Example - Pegfilgrastim"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prep-regimen-medication"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Medication"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Medication-Medication-PriorExposure-Example.html"/>
+         </extension>
+         <reference>
+            <reference value="Medication/Medication-PriorExposure-Example"/>
+         </reference>
+         <name value="Medication-PriorExposure-Example"/>
+         <description value="Medication - Prior Exposure: Potential Study Eligibility Example - Mogamulizumab"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prior-exposure-medication"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="MedicationAdministration"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="MedicationAdministration-MedicationAdministration-Example1.html"/>
+         </extension>
+         <reference>
+            <reference value="MedicationAdministration/MedicationAdministration-Example1"/>
+         </reference>
+         <name value="MedicationAdministration-Example1"/>
+         <description value="Medication - Medication Administration example using medicationReference - Etoposide"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="MedicationAdministration"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="MedicationAdministration-MedicationAdministration-Example2.html"/>
+         </extension>
+         <reference>
+            <reference value="MedicationAdministration/MedicationAdministration-Example2"/>
+         </reference>
+         <name value="MedicationAdministration-Example2"/>
+         <description value="Medication - Medication Administration example using medicationCodeableConcept - Etoposide"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="MedicationRequest"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="MedicationRequest-MedicationRequest-Etoposide-Example.html"/>
+         </extension>
+         <reference>
+            <reference value="MedicationRequest/MedicationRequest-Etoposide-Example"/>
+         </reference>
+         <name value="MedicationRequest-Etoposide-Example"/>
+         <description value="Medication Request for Etoposide (Vepesid) chemo IBPB, 20MG/ML"/>
+         <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-request"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="Observation"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -1361,18 +1511,13 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-cibmtr-medication-dispense.html"/>
-               <title value="CIBMTR Medication Dispense"/>
-               <generation value="generated"/>
-            </page>
-            <page>
                <nameUrl value="StructureDefinition-cibmtr-medication-request.html"/>
                <title value="CIBMTR Medication Request (mcode)"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="StructureDefinition-cibmtr-mobilizing-agent-medication.html"/>
-               <title value="CIBMTR Mobilizing Agent Medication"/>
+               <title value="CIBMTR Mobilizing Agents Medication"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -1673,6 +1818,61 @@
             <page>
                <nameUrl value="Observation-LeukocytesObservation.html"/>
                <title value="LeukocytesObservation"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Medication-Medication-Cyclophosphamide-Example.html"/>
+               <title value="Medication-Cyclophosphamide-Example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Medication-Medication-Etoposide-Example.html"/>
+               <title value="Medication-Etoposide-Example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Medication-Medication-GVHD-Prophylaxis-Example.html"/>
+               <title value="Medication-GVHD-Prophylaxis-Example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Medication-Medication-Mobilizing-Agent-Example.html"/>
+               <title value="Medication-Mobilizing-Agent-Example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Medication-Medication-Peri-Transplant-Example.html"/>
+               <title value="Medication-Peri-Transplant-Example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Medication-Medication-Post-HCT-Disease-Therapy-Example.html"/>
+               <title value="Medication-Post-HCT-Disease-Therapy-Example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Medication-Medication-Prep-Regimen-Example.html"/>
+               <title value="Medication-Prep-Regimen-Example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Medication-Medication-PriorExposure-Example.html"/>
+               <title value="Medication-PriorExposure-Example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="MedicationAdministration-MedicationAdministration-Example1.html"/>
+               <title value="MedicationAdministration-Example1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="MedicationAdministration-MedicationAdministration-Example2.html"/>
+               <title value="MedicationAdministration-Example2"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="MedicationRequest-MedicationRequest-Etoposide-Example.html"/>
+               <title value="MedicationRequest-Etoposide-Example"/>
                <generation value="generated"/>
             </page>
             <page>

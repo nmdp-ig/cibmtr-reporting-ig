@@ -107,14 +107,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cibmtr-medication-dispense"
-        },
-        "name": "CIBMTR Medication Dispense",
-        "description": "CIBMTR Medication Dispense",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/cibmtr-medication-request"
         },
         "name": "CIBMTR Medication Request (mcode)",
@@ -125,8 +117,8 @@
         "reference": {
           "reference": "StructureDefinition/cibmtr-mobilizing-agent-medication"
         },
-        "name": "CIBMTR Mobilizing Agent Medication",
-        "description": "CIBMTR Moblizing Agents (auto only) Medication",
+        "name": "CIBMTR Mobilizing Agents Medication",
+        "description": "CIBMTR Mobilizing Agents (auto only) Medication",
         "exampleBoolean": false
       },
       {
@@ -342,7 +334,7 @@
           "reference": "ValueSet/med-cyclophosphamide-vs"
         },
         "name": "RxNorm - Cyclophosphamide",
-        "description": "RxNorm codes for Cyclophosphamide ",
+        "description": "RxNorm codes for Cyclophosphamide",
         "exampleBoolean": false
       },
       {
@@ -366,7 +358,7 @@
           "reference": "ValueSet/med-etoposide-vs"
         },
         "name": "RxNorm - Etoposide",
-        "description": "RxNorm codes for Etoposide ",
+        "description": "RxNorm codes for Etoposide",
         "exampleBoolean": false
       },
       {
@@ -374,7 +366,7 @@
           "reference": "ValueSet/med-fludarabine-vs"
         },
         "name": "RxNorm - Fludarabine",
-        "description": "RxNorm codes for Fludarabine ",
+        "description": "RxNorm codes for Fludarabine",
         "exampleBoolean": false
       },
       {
@@ -390,7 +382,7 @@
           "reference": "ValueSet/med-melphalan-vs"
         },
         "name": "RxNorm - Melphalan",
-        "description": "RxNorm codes for Melphalan ",
+        "description": "RxNorm codes for Melphalan",
         "exampleBoolean": false
       },
       {
@@ -608,6 +600,94 @@
         "name": "LeukocytesObservation",
         "description": "Leukocytes observation",
         "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab"
+      },
+      {
+        "reference": {
+          "reference": "Medication/Medication-Cyclophosphamide-Example"
+        },
+        "name": "Medication-Cyclophosphamide-Example",
+        "description": "Medication - Cyclophosphamide, 1 G injection",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication"
+      },
+      {
+        "reference": {
+          "reference": "Medication/Medication-Etoposide-Example"
+        },
+        "name": "Medication-Etoposide-Example",
+        "description": "Medication - Etoposide (Vepesid) chemo IBPB, 20MG/ML",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication"
+      },
+      {
+        "reference": {
+          "reference": "Medication/Medication-GVHD-Prophylaxis-Example"
+        },
+        "name": "Medication-GVHD-Prophylaxis-Example",
+        "description": "Medication - GVHD Prophylaxis Example - Cyclosporine",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-gvhd-prophylaxis-medication"
+      },
+      {
+        "reference": {
+          "reference": "Medication/Medication-Mobilizing-Agent-Example"
+        },
+        "name": "Medication-Mobilizing-Agent-Example",
+        "description": "Medication - Mobilizing Agents Example - Pegfilgrastim",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-mobilizing-agent-medication"
+      },
+      {
+        "reference": {
+          "reference": "Medication/Medication-Peri-Transplant-Example"
+        },
+        "name": "Medication-Peri-Transplant-Example",
+        "description": "Medication - Additional Peri-Transplant Example - Anti-Thymocyte gGobulin",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-additional-peri-transplant-medication"
+      },
+      {
+        "reference": {
+          "reference": "Medication/Medication-Post-HCT-Disease-Therapy-Example"
+        },
+        "name": "Medication-Post-HCT-Disease-Therapy-Example",
+        "description": "Medication - Post-HCT Disease Therapy Planned Example - Blinatumomab",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-post-hct-disease-therapy-planned-medication"
+      },
+      {
+        "reference": {
+          "reference": "Medication/Medication-Prep-Regimen-Example"
+        },
+        "name": "Medication-Prep-Regimen-Example",
+        "description": "Medication - Pre-HCT Preparatoive Regimen (Conditioning) Example - Pegfilgrastim",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prep-regimen-medication"
+      },
+      {
+        "reference": {
+          "reference": "Medication/Medication-PriorExposure-Example"
+        },
+        "name": "Medication-PriorExposure-Example",
+        "description": "Medication - Prior Exposure: Potential Study Eligibility Example - Mogamulizumab",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prior-exposure-medication"
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/MedicationAdministration-Example1"
+        },
+        "name": "MedicationAdministration-Example1",
+        "description": "Medication - Medication Administration example using medicationReference - Etoposide",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration"
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/MedicationAdministration-Example2"
+        },
+        "name": "MedicationAdministration-Example2",
+        "description": "Medication - Medication Administration example using medicationCodeableConcept - Etoposide",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration"
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/MedicationRequest-Etoposide-Example"
+        },
+        "name": "MedicationRequest-Etoposide-Example",
+        "description": "Medication Request for Etoposide (Vepesid) chemo IBPB, 20MG/ML",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-request"
       },
       {
         "reference": {

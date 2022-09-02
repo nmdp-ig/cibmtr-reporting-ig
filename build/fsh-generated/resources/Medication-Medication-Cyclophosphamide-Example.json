@@ -1,0 +1,74 @@
+{
+  "resourceType": "Medication",
+  "id": "Medication-Cyclophosphamide-Example",
+  "meta": {
+    "security": [
+      {
+        "system": "http://terminology.nmdp.org/codesystem/transplant-center",
+        "code": "rc_99999",
+        "display": "99999 My Transplant Center"
+      }
+    ],
+    "profile": [
+      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "3002",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "cyclophosphamide"
+      },
+      {
+        "code": "1545988",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "cyclophosphamide anhydrous"
+      },
+      {
+        "code": "1734919",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "cyclophosphamide 1000 MG Injection"
+      }
+    ],
+    "text": "CYCLOPHOSPHAMIDE 1 G IJ SOLR"
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "3002",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "cyclophosphamide"
+          },
+          {
+            "code": "1545988",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "cyclophosphamide anhydrous"
+          },
+          {
+            "code": "1734919",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "cyclophosphamide 1000 MG Injection"
+          }
+        ],
+        "text": "CYCLOPHOSPHAMIDE 1 G IJ SOLR"
+      },
+      "strength": {
+        "numerator": {
+          "value": 1,
+          "unit": "gram",
+          "system": "http://unitsofmeasure.org",
+          "code": "g"
+        },
+        "denominator": {
+          "value": 1,
+          "unit": "gram",
+          "system": "http://unitsofmeasure.org",
+          "code": "g"
+        }
+      }
+    }
+  ]
+}

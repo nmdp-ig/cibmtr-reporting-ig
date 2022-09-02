@@ -1,0 +1,74 @@
+{
+  "resourceType": "Medication",
+  "id": "Medication-Mobilizing-Agent-Example",
+  "meta": {
+    "security": [
+      {
+        "system": "http://terminology.nmdp.org/codesystem/transplant-center",
+        "code": "rc_99999",
+        "display": "99999 My Transplant Center"
+      }
+    ],
+    "profile": [
+      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-mobilizing-agent-medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "338036",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "pegfilgrastim"
+      },
+      {
+        "code": "350977",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "pegfilgrastim 10 MG/ML"
+      },
+      {
+        "code": "1161380",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "pegfilgrastim Injectable Product"
+      }
+    ],
+    "text": "pegfilgrastim"
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "338036",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "pegfilgrastim"
+          },
+          {
+            "code": "350977",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "pegfilgrastim 10 MG/ML"
+          },
+          {
+            "code": "1161380",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "pegfilgrastim Injectable Product"
+          }
+        ],
+        "text": "pegfilgrastim 10 mg/mL"
+      },
+      "strength": {
+        "numerator": {
+          "value": 10,
+          "unit": "milligram",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg"
+        },
+        "denominator": {
+          "value": 1,
+          "unit": "milliliter",
+          "system": "http://unitsofmeasure.org",
+          "code": "mL"
+        }
+      }
+    }
+  ]
+}

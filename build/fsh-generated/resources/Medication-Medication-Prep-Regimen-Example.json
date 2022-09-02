@@ -1,0 +1,74 @@
+{
+  "resourceType": "Medication",
+  "id": "Medication-Prep-Regimen-Example",
+  "meta": {
+    "security": [
+      {
+        "system": "http://terminology.nmdp.org/codesystem/transplant-center",
+        "code": "rc_99999",
+        "display": "99999 My Transplant Center"
+      }
+    ],
+    "profile": [
+      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prep-regimen-medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "3002",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "cyclophosphamide"
+      },
+      {
+        "code": "1437967",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "cyclophosphamide Oral Capsule"
+      },
+      {
+        "code": "1437969",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "cyclophosphamide 50 MG Oral Capsule"
+      }
+    ],
+    "text": "cyclophosphamide"
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "3002",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "cyclophosphamide"
+          },
+          {
+            "code": "1437967",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "cyclophosphamide Oral Capsule"
+          },
+          {
+            "code": "1437969",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "cyclophosphamide 50 MG Oral Capsule"
+          }
+        ],
+        "text": "cyclophosphamide"
+      },
+      "strength": {
+        "numerator": {
+          "value": 50,
+          "unit": "milligram",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg"
+        },
+        "denominator": {
+          "value": 50,
+          "unit": "milligram",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg"
+        }
+      }
+    }
+  ]
+}

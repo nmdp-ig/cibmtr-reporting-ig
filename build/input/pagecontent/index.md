@@ -1,5 +1,6 @@
-> Some text about this being a Staandard for Trial Use (STU)
-{.stu-note}
+> This Implementation Guide is a CIBMTR Standard for Trial Use (STU). 
+> It is expected to undergo changes as we learn from experiences with our transplant center partners.
+{:.stu-note}
 
 > This Implementation Guide is designed to use the [FHIR Version R4]. 
 > For information on submitting to our Direct FHIR endpoints using [FHIR Version STU3], see the 
@@ -36,10 +37,9 @@ the a core set of structured data elements for oncology, are also used.
 This IG is focused on information required for sending Patient demographic data that is necessary for creating or retrieving a CIBMTR 
 Research ID (CRID), and for reporting Patient resources with a known CRID. It also includes reporting laboratory observations,
 focusing on a set of variables that have been identified as a priority for the CIBMTR Data Transformation Initiative in Fiscal Year 2022. And we have 
-begun describing how medication-related resources may be reported, specifically in the context of CIBMTR Form 2400. Future versions of this IG will include
+begun describing how medication-related resources may be reported, specifically in the context of [CIBMTR Form 2400 (Pre-TED)]. Future versions of this IG will include
 other FHIR resources such as Condition, Procedure, Encounter, EpisdoeOfCare, etc.
   
-
 ### Guidance
 Guidance on connecting to and sending data to the Direct FHIR API is found in the links below.
 

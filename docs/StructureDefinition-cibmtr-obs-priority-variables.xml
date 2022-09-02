@@ -13,7 +13,7 @@
   <name value="CIBMTRObsPriorityVariables"/>
   <title value="CIBMTR Observation Laboratory Results: Priority Variables"/>
   <status value="active"/>
-  <date value="2022-08-31T14:35:45-05:00"/>
+  <date value="2022-09-02T15:43:08-05:00"/>
   <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
   <contact>
     <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -1682,7 +1682,7 @@
       <comment value="At least a date should be present unless this observation is a historical report.  For recording imprecise or &quot;fuzzy&quot; times (For example, a blood glucose measurement taken &quot;after breakfast&quot;) use the [Timing](http://hl7.org/fhir/R4/datatypes.html#timing) datatype which allow the measurement to be tied to regular life events."/>
       <requirements value="Knowing when an observation was deemed true is important to its relevance as well as determining trends."/>
       <alias value="Occurrence"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="Observation.effective[x]"/>

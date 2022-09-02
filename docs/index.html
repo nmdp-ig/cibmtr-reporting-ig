@@ -203,7 +203,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2022-08-31
+            as of 2022-09-02
           
         
       </td>
@@ -235,9 +235,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<blockquote>
-  <p>Some text about this being a Staandard for Trial Use (STU)
-{.stu-note}</p>
+<blockquote class="stu-note">
+  <p>This Implementation Guide is a CIBMTR Standard for Trial Use (STU). 
+It is expected to undergo changes as we learn from experiences with our transplant center partners.</p>
 </blockquote>
 
 <blockquote class="blockquote fhir-version-note">
@@ -273,7 +273,7 @@ the a core set of structured data elements for oncology, are also used.</p>
 <p>This IG is focused on information required for sending Patient demographic data that is necessary for creating or retrieving a CIBMTR 
 Research ID (CRID), and for reporting Patient resources with a known CRID. It also includes reporting laboratory observations,
 focusing on a set of variables that have been identified as a priority for the CIBMTR Data Transformation Initiative in Fiscal Year 2022. And we have 
-begun describing how medication-related resources may be reported, specifically in the context of CIBMTR Form 2400. Future versions of this IG will include
+begun describing how medication-related resources may be reported, specifically in the context of <a href="https://www.cibmtr.org/manuals/fim/1/en/topic/2400">CIBMTR Form 2400 (Pre-TED)</a>. Future versions of this IG will include
 other FHIR resources such as Condition, Procedure, Encounter, EpisdoeOfCare, etc.</p>
 
 <h3 id="guidance">Guidance</h3>
@@ -359,7 +359,7 @@ other FHIR resources such as Condition, Procedure, Encounter, EpisdoeOfCare, etc
   </li>
   <li>RxNorm (used in medication-related resources)
     <ul>
-      <li>[Mobilizing Agents (auto only)]</li>
+      <li><a href="ValueSet-med-mobilizing-agents-vs.html">Mobilizing Agents (auto only)</a></li>
       <li><a href="ValueSet-med-prep-regimen-vs.html">Prep Regimen</a></li>
       <li><a href="ValueSet-med-addition-peri-transplant-vs.html">Additional Drugs in Peri-Transplant Period</a></li>
       <li><a href="ValueSet-med-gvhd-prophylaxis-vs.html">GVHD Prophylaxis</a></li>
@@ -394,7 +394,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 31, 2022 14:35-0500">2022-08-31</span>
+    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 2, 2022 15:43-0500">2022-09-02</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

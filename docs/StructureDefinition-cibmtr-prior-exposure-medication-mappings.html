@@ -44,8 +44,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"13.13"}
-    h3,h4,h5,h6{--heading-prefix:"13.13"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.12"}
+    h3,h4,h5,h6{--heading-prefix:"13.12"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -206,6 +206,16 @@
 
 
 
+  
+    
+      <li>
+        <a href="StructureDefinition-cibmtr-prior-exposure-medication-examples.html">Examples</a>
+      </li>
+    
+  
+
+
+
 
   
     <li>
@@ -232,7 +242,7 @@
 
 
 <a name="root"> </a>
-<h2 id="root">Resource Profile: CIBMTR_PrioExposureMedication - Mappings</h2>
+<h2 id="root">Resource Profile: CIBMTR_PriorExposureMedication - Mappings</h2>
   <table class="colsi">
     <tr>
 
@@ -240,7 +250,7 @@
         
           Active
           
-            as of 2022-08-31
+            as of 2022-09-02
           
         
       </td>
@@ -257,7 +267,7 @@
 
 
   <a name="script10.6"> </a><h3>Mappings for Mapping to NCPDP SCRIPT 10.6 (http://ncpdp.org/SCRIPT10_6)</h3><table class="grid">
- <tr><td colspan="3"><b>CIBMTR_PrioExposureMedication</b></td></tr>
+ <tr><td colspan="3"><b>CIBMTR_PriorExposureMedication</b></td></tr>
  <tr><td>Medication</td><td>NewRx/MedicationPrescribed-or-RxFill/MedicationDispensed-or-RxHistoryResponse/MedicationDispensed-or-RxHistoryResponse/MedicationPrescribed</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>coding.code = //element(*,MedicationType)/DrugCoded/ProductCodecoding.system = //element(*,MedicationType)/DrugCoded/ProductCodeQualifiercoding.display = //element(*,MedicationType)/DrugDescription</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;manufacturer</td><td>no mapping</td> </tr>
@@ -270,7 +280,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expirationDate</td><td>no mapping</td> </tr>
 </table>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>CIBMTR_PrioExposureMedication</b></td></tr>
+ <tr><td colspan="3"><b>CIBMTR_PriorExposureMedication</b></td></tr>
  <tr><td>Medication</td><td>Entity. Role, or Act, ManufacturedProduct[classCode=ADMM]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
@@ -313,14 +323,14 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expirationDate</td><td>participation[typeCode=CSM].role[classCode=INST].scopedRole.scoper[classCode=MMAT].expirationTime</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
- <tr><td colspan="3"><b>CIBMTR_PrioExposureMedication</b></td></tr>
+ <tr><td colspan="3"><b>CIBMTR_PriorExposureMedication</b></td></tr>
  <tr><td>Medication</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>FiveWs.class</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;manufacturer</td><td>FiveWs.actor</td> </tr>
 </table>
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>CIBMTR_PrioExposureMedication</b></td></tr>
+ <tr><td colspan="3"><b>CIBMTR_PriorExposureMedication</b></td></tr>
  <tr><td>Medication</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;security</td><td></td> </tr>
@@ -394,7 +404,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 31, 2022 14:35-0500">2022-08-31</span>
+    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 2, 2022 15:43-0500">2022-09-02</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

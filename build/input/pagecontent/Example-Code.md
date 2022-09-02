@@ -25,3 +25,5 @@
 
 ### Search Observation by CRID (GET)
 {% include example-code-search-observation-crid.md %}
+
+{% include link-list.md %}

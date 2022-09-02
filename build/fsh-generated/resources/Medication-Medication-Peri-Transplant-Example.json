@@ -1,0 +1,84 @@
+{
+  "resourceType": "Medication",
+  "id": "Medication-Peri-Transplant-Example",
+  "meta": {
+    "security": [
+      {
+        "system": "http://terminology.nmdp.org/codesystem/transplant-center",
+        "code": "rc_99999",
+        "display": "99999 My Transplant Center"
+      }
+    ],
+    "profile": [
+      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-additional-peri-transplant-medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "2282515",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "lymphocyte immune globulin, anti-thymocyte globulin Injectable Product"
+      },
+      {
+        "code": "2282516",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "lymphocyte immune globulin, anti-thymocyte globulin Injection"
+      },
+      {
+        "code": "2282518",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML [ATGAM]"
+      },
+      {
+        "code": "2282519",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "lymphocyte immune globulin, anti-thymocyte globulin Injection [ATGAM]"
+      }
+    ],
+    "text": "anti-thymocyte globulin Injection"
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "2282515",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "lymphocyte immune globulin, anti-thymocyte globulin Injectable Product"
+          },
+          {
+            "code": "2282516",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "lymphocyte immune globulin, anti-thymocyte globulin Injection"
+          },
+          {
+            "code": "2282518",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML [ATGAM]"
+          },
+          {
+            "code": "2282519",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "lymphocyte immune globulin, anti-thymocyte globulin Injection [ATGAM]"
+          }
+        ],
+        "text": "anti-thymocyte globulin Injection"
+      },
+      "strength": {
+        "numerator": {
+          "value": 50,
+          "unit": "milligram",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg"
+        },
+        "denominator": {
+          "value": 1,
+          "unit": "milliliter",
+          "system": "http://unitsofmeasure.org",
+          "code": "mL"
+        }
+      }
+    }
+  ]
+}

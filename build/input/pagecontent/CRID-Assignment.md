@@ -84,3 +84,5 @@ The response payload of the CRID Service API is a JSON object that contains the 
 
 #### CRID Lookup/Registration (PUT)
 {% include example-code-crid-lookup.md %}
+
+{% include link-list.md %}

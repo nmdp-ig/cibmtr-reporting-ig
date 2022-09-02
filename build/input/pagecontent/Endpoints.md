@@ -60,3 +60,5 @@
 {:.grid}
 
 The CIBMTR FHIR resource API only supports <a href="https://hl7.org/fhir/http.html#create">Create (POST)</a>, <a href="https://hl7.org/fhir/http.html#update">Update (PUT)</a>, <a href="https://hl7.org/fhir/http.html#read">Read (GET)</a>, and <a href="https://hl7.org/fhir/http.html#search">Search (GET)</a>, and <a href="https://hl7.org/fhir/http.html#capabilities">Capabilities (GET)</a> interactions.
+
+{% include link-list.md %}

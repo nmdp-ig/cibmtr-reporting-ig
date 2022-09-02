@@ -24,12 +24,6 @@
         "title": "CIBMTR Medication Administration (mcode)"
       }
     ],
-    "MedicationDispense": [
-      {
-        "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-dispense",
-        "title": "CIBMTR Medication Dispense"
-      }
-    ],
     "MedicationRequest": [
       {
         "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-request",
@@ -55,6 +49,7 @@
   },
   "usage": {
     "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "MedicationRequest.requester",
       "Patient.name"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [

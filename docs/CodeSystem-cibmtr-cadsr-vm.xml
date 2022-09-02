@@ -3,7 +3,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="cibmtr-cadsr-vm"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://cdebrowser.nci.nih.gov defines many codes, of which the following are a subset:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">$CADSR:4722619<a name="cibmtr-cadsr-vm-.36CADSR.584722619"> </a></td><td>Acute GVHD</td></tr><tr><td style="white-space:nowrap">$CADSR:2991794<a name="cibmtr-cadsr-vm-.36CADSR.582991794"> </a></td><td>Classic cGVHD</td></tr><tr><td style="white-space:nowrap">$CADSR:2991795<a name="cibmtr-cadsr-vm-.36CADSR.582991795"> </a></td><td>Overlap cGVHD</td></tr><tr><td style="white-space:nowrap">$CADSR:2991796<a name="cibmtr-cadsr-vm-.36CADSR.582991796"> </a></td><td>Late Acute GVHD</td></tr><tr><td style="white-space:nowrap">$CADSR:3261243<a name="cibmtr-cadsr-vm-.36CADSR.583261243"> </a></td><td>Not Applicable</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://cdebrowser.nci.nih.gov defines many codes, of which the following are a subset:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">4722619<a name="cibmtr-cadsr-vm-4722619"> </a></td><td>Acute GVHD</td><td>Acute Graft Vs Host Disease</td></tr><tr><td style="white-space:nowrap">2991794<a name="cibmtr-cadsr-vm-2991794"> </a></td><td>Classic cGVHD</td><td>Classic chronic Graft Vs Host Disease</td></tr><tr><td style="white-space:nowrap">2991795<a name="cibmtr-cadsr-vm-2991795"> </a></td><td>Overlap cGVHD</td><td>Overlap chronic Graft Vs Host Disease</td></tr><tr><td style="white-space:nowrap">2991796<a name="cibmtr-cadsr-vm-2991796"> </a></td><td>Late Acute GVHD</td><td>Late Acute Graft Vs Host Disease</td></tr><tr><td style="white-space:nowrap">3261243<a name="cibmtr-cadsr-vm-3261243"> </a></td><td>Not Applicable</td><td>Not Applicable</td></tr></table></div>
   </text>
   <url value="http://cdebrowser.nci.nih.gov"/>
   <version value="0.1.5"/>
@@ -11,7 +11,7 @@
   <title value="NIH Common Data Element Value Meanings for CIBMTR"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2022-08-31T14:35:45-05:00"/>
+  <date value="2022-09-02T15:43:08-05:00"/>
   <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
   <contact>
     <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -31,23 +31,28 @@
   <copyright value="National Cancer Institute (NCI)"/>
   <content value="fragment"/>
   <concept>
-    <code value="$CADSR:4722619"/>
+    <code value="4722619"/>
     <display value="Acute GVHD"/>
+    <definition value="Acute Graft Vs Host Disease"/>
   </concept>
   <concept>
-    <code value="$CADSR:2991794"/>
+    <code value="2991794"/>
     <display value="Classic cGVHD"/>
+    <definition value="Classic chronic Graft Vs Host Disease"/>
   </concept>
   <concept>
-    <code value="$CADSR:2991795"/>
+    <code value="2991795"/>
     <display value="Overlap cGVHD"/>
+    <definition value="Overlap chronic Graft Vs Host Disease"/>
   </concept>
   <concept>
-    <code value="$CADSR:2991796"/>
+    <code value="2991796"/>
     <display value="Late Acute GVHD"/>
+    <definition value="Late Acute Graft Vs Host Disease"/>
   </concept>
   <concept>
-    <code value="$CADSR:3261243"/>
+    <code value="3261243"/>
     <display value="Not Applicable"/>
+    <definition value="Not Applicable"/>
   </concept>
 </CodeSystem>

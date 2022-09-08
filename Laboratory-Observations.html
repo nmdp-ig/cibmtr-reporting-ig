@@ -193,20 +193,87 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h3 id="guidance-laboratory-observations">Guidance: Laboratory Observations</h3>
 
+<h4 id="profiles">Profiles</h4>
+<ul>
+  <li><a href="StructureDefinition-cibmtr-observation-lab.html">Laboratory Observation Results</a> - derived from US-Core</li>
+  <li><a href="StructureDefinition-cibmtr-obs-priority-variables.html">Laboratory Observation for Priority Variables</a> - derived from the general CIBMTR Laboratory Observation above, but bound to the FY2022 priority ValueSet</li>
+</ul>
+
 <h4 id="valuex">Value[x]</h4>
 
 <p>Observation values can be reported in many forms. CIBMTR currently supports only two:</p>
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">valueQuantity</code></li>
-  <li><code class="language-plaintext highlighter-rouge">valueCodeableConcept</code></li>
+  <li><code class="language-plaintext highlighter-rouge">valueQuantity</code>
+    <ul>
+      <li>per <a href="https://hl7.org/fhir/us/core/StructureDefinition-us-core-observation-lab.html">US-Core Laboratory Observation</a>, <strong>SHALL</strong> use UCUM for coded quantity units. For example,</li>
+    </ul>
+  </li>
 </ul>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"valueQuantity"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"value"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"unit"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"gram per deciliter"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"system"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"code"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"g/dL"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">valueCodeableConcept</code>
+    <ul>
+      <li>per <a href="https://hl7.org/fhir/us/core/StructureDefinition-us-core-observation-lab.html">US-Core Laboratory Observation</a>, <strong>SHOULD</strong> use Snomed CT for coded Results. For example,</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"valueCodeableConcept"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"coding"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"system"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"http://snomed.info/sct"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"10828004"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"display"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Positive (qualifier value)"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
 
 <p>CIBMTR does <strong>NOT</strong> support any other value types (e.g., <code class="language-plaintext highlighter-rouge">valueString</code> is not currently supported)</p>
 
+<h4 id="using-comparators-in-valuequantity">Using comparators in <code class="language-plaintext highlighter-rouge">valueQuantity</code></h4>
+
+<p>There are times when the result value is beyond the limits of the test, and a comparator such as <code class="language-plaintext highlighter-rouge">&lt;</code> or <code class="language-plaintext highlighter-rouge">&gt;</code> must be used. In this case, you must use the <code class="language-plaintext highlighter-rouge">valueQuantity.comparator</code> element. For example,</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"valueQuantity"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"value"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">13700</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"comparator"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"unit"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"international unit per milliliter"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"system"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"code"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"[IU]/mL"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
 <h4 id="special-rules">Special rules:</h4>
 <ul>
-  <li>For CMV LOINC codes that use <code class="language-plaintext highlighter-rouge">ValueQuantity</code>, it <strong>MUST</strong> be accompanied with a <code class="language-plaintext highlighter-rouge">referenceRange</code></li>
+  <li>For CMV LOINC codes that use <code class="language-plaintext highlighter-rouge">valueQuantity</code>, it <strong>MUST</strong> be accompanied with a <code class="language-plaintext highlighter-rouge">referenceRange</code>. For example,</li>
 </ul>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"referenceRange"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"low"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"value"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">13700</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"unit"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"international unit per milliliter"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"system"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"[IU]/mL"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"high"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"value"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">9000000</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"unit"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"international unit per milliliter"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"system"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"[IU]/mL"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
 
 
 
@@ -232,7 +299,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 2, 2022 15:43-0500">2022-09-02</span>
+    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 8, 2022 13:29-0500">2022-09-08</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

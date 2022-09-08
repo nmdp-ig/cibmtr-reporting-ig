@@ -300,20 +300,20 @@ Usage: #example
 * valueQuantity
   * value = 13700
   * comparator = #<
-  * unit = "internaltional unit per milliliter"
+  * unit = "international unit per milliliter"
   * system = $UCUM
   * code = #[IU]/mL
 // * referenceRange.high.value = 9e6
 * referenceRange
   * low
     * value = 13700
-    * unit = "internaltional unit per milliliter"
+    * unit = "international unit per milliliter"
     * system = $UCUM
     * code = #[IU]/mL
   * high
     // * value = 9E6
     * value = 9000000
-    * unit = "internaltional unit per milliliter"
+    * unit = "international unit per milliliter"
     * system = $UCUM
     * code = #[IU]/mL
 * effectiveDateTime = "2020-07-21T14:17:00Z"

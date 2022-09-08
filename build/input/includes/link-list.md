@@ -63,7 +63,7 @@
 [Post-HCT Disease Therapy Planned]: ValueSet-med-post-hct-disease-therapy-planned-vs.html
 [Prior Exposure: Potential Study Eligibility]: ValueSet-med-prior-exposure-vs.html
 [All Form 2400 Medications]: ValueSet-med-all-form2400-vs.html
-
+[US-Core Laboratory Observation]: https://hl7.org/fhir/us/core/StructureDefinition-us-core-observation-lab.html
 
 [Medication-Cyclophosphamide-Example]: Medication-Medication-Cyclophosphamide-Example.html
 [Medication-Etoposide-Example]: Medication-Medication-Etoposide-Example.html

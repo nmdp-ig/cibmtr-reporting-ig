@@ -117,7 +117,7 @@
         <a href="Bundles.html">Bundles</a>
       </li>
       <li>
-        <a href="Form-2450.html">Form 2450</a>
+        <a href="Form-2450.html">Form 2450: Post-TED</a>
       </li>
       <li>
         <a href="Example-Code.html">Example Code Snippets</a>
@@ -188,12 +188,173 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
-<h1 id="guidance-form-2450">Guidance: Form 2450</h1>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#guidance-form-2450---post-ted" id="markdown-toc-guidance-form-2450---post-ted">Guidance: Form 2450 - Post-TED</a>    <ul>
+      <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a>        <ul>
+          <li><a href="#q1---2-survival" id="markdown-toc-q1---2-survival">Q1 - 2: Survival</a></li>
+          <li><a href="#q3---12-subsequent-transplant" id="markdown-toc-q3---12-subsequent-transplant">Q3 - 12: Subsequent Transplant</a></li>
+          <li><a href="#q13--15-initial-anc-recovery" id="markdown-toc-q13--15-initial-anc-recovery">Q13 – 15: Initial ANC Recovery</a></li>
+          <li><a href="#q16--17-initial-platelet-recovery" id="markdown-toc-q16--17-initial-platelet-recovery">Q16 – 17: Initial Platelet Recovery</a></li>
+          <li><a href="#q18--43-graft-versus-host-disease-allogeneic-only" id="markdown-toc-q18--43-graft-versus-host-disease-allogeneic-only">Q18 – 43: Graft versus Host Disease (Allogeneic Only)</a></li>
+          <li><a href="#q44--46-liver-toxicity-prophylaxis" id="markdown-toc-q44--46-liver-toxicity-prophylaxis">Q44 – 46: Liver Toxicity Prophylaxis</a></li>
+          <li><a href="#q47--48-veno-occlusive-disease-vod--sinusoidal-obstruction-syndrome-sos" id="markdown-toc-q47--48-veno-occlusive-disease-vod--sinusoidal-obstruction-syndrome-sos">Q47 – 48: Veno-occlusive disease (VOD) / Sinusoidal obstruction syndrome (SOS)</a></li>
+          <li><a href="#q49--55-infection" id="markdown-toc-q49--55-infection">Q49 – 55: Infection</a></li>
+          <li><a href="#q56-new-malignancy-lymphoproliferative-or-myeloproliferative-disorder" id="markdown-toc-q56-new-malignancy-lymphoproliferative-or-myeloproliferative-disorder">Q56: New Malignancy, Lymphoproliferative or Myeloproliferative Disorder</a></li>
+          <li><a href="#q57--74-chimerism-studies-cord-blood-units-beta-thalassemia-and-sickle-cell-disease-only" id="markdown-toc-q57--74-chimerism-studies-cord-blood-units-beta-thalassemia-and-sickle-cell-disease-only">Q57 – 74: Chimerism Studies (Cord Blood Units, Beta Thalassemia, and Sickle Cell Disease Only)</a></li>
+          <li><a href="#q75--97-disease-assessment-at-the-time-of-best-response-to-infusion" id="markdown-toc-q75--97-disease-assessment-at-the-time-of-best-response-to-infusion">Q75 – 97: Disease Assessment at the Time of Best Response to Infusion</a></li>
+          <li><a href="#q98--106-post-infusion-therapy" id="markdown-toc-q98--106-post-infusion-therapy">Q98 – 106: Post-Infusion Therapy</a></li>
+          <li><a href="#q107--117-relapse-or-progression-post-infusion" id="markdown-toc-q107--117-relapse-or-progression-post-infusion">Q107 – 117: Relapse or Progression Post-Infusion</a></li>
+          <li><a href="#q118--120-current-disease-status" id="markdown-toc-q118--120-current-disease-status">Q118 – 120: Current Disease Status</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-<p>TBD</p>
+</div>
+<h1 id="guidance-form-2450---post-ted">Guidance: Form 2450 - Post-TED</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>See <a href="https://www.cibmtr.org/manuals/fim/1/en/topic/2450">Form 2450 manual</a> for more information about this form.</p>
+
+<p>Transplant centers participating in the CIBMTR must submit a Post-TED Form for recipients who meet any of the following criteria:</p>
+<ul>
+  <li>Recipient receives a transplant at a United States center designated as a TED-only center.</li>
+  <li>Recipient receives a transplant at a United States center designated as Comprehensive Report Form center, but has been assigned to the TED track by the Form Selection Algorithm.</li>
+  <li>Recipient receives an allogeneic transplant at a United States center designated as Comprehensive Report Form center, but has not consented to participate in research.</li>
+  <li>Recipient receives a transplant at an international center, has consented to participate in research, and has been assigned to the TED track by the Form Selection Algorithm.</li>
+</ul>
+
+<p>The follow describes sections in Form 2450, and what FHIR Resources/Profiles and Valuesets are used to answer the questions those sections. Examples are also given.</p>
+
+<h3 id="q1---2-survival"><a href="https://www.cibmtr.org/manuals/fim/1/en/topic/q1-7-100-day-report-only">Q1 - 2: Survival</a></h3>
+<ul>
+  <li>Comment:</li>
+  <li>Resources/Profiles:
+    <ul>
+      <li>Encounter? (for date of contact?)</li>
+      <li>Condition? (for survival status?)</li>
+    </ul>
+  </li>
+  <li>ValueSets:
+    <ul>
+      <li>Survial status</li>
+    </ul>
+  </li>
+  <li>Examples:
+    <ul>
+      <li>100 Day Date of Contact</li>
+      <li>6 Month Date of Contact</li>
+      <li>1 Year Date of Contact</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="q3---12-subsequent-transplant"><a href="https://www.cibmtr.org/manuals/fim/1/en/topic/q7-13-subsequent-transplant">Q3 - 12: Subsequent Transplant</a></h3>
+<ul>
+  <li>Comment:</li>
+  <li>Resource/Profiles:</li>
+  <li>ValueSets:
+    <ul>
+      <li>Reason for subsequent HCT</li>
+      <li>Source of HSCs</li>
+    </ul>
+  </li>
+  <li>Examples:</li>
+</ul>
+
+<h3 id="q13--15-initial-anc-recovery"><a href="https://www.cibmtr.org/manuals/fim/1/en/topic/q8-11-initial-anc-recovery">Q13 – 15: Initial ANC Recovery</a></h3>
+<ul>
+  <li>Comment:</li>
+  <li>Resource/Profiles:</li>
+  <li>ValueSets:</li>
+  <li>Examples:</li>
+</ul>
+
+<h3 id="q16--17-initial-platelet-recovery"><a href="https://www.cibmtr.org/manuals/fim/1/en/topic/q12-14-initial-platelet-recovery">Q16 – 17: Initial Platelet Recovery</a></h3>
+<ul>
+  <li>Comment:</li>
+  <li>Resource/Profiles:</li>
+  <li>ValueSets:</li>
+  <li>Examples:</li>
+</ul>
+
+<h3 id="q18--43-graft-versus-host-disease-allogeneic-only"><a href="https://www.cibmtr.org/manuals/fim/1/en/topic/q15-18-graft-versus-host-disease-allogeneic-only">Q18 – 43: Graft versus Host Disease (Allogeneic Only)</a></h3>
+<ul>
+  <li>Comment:</li>
+  <li>Resource/Profiles:</li>
+  <li>ValueSets:</li>
+  <li>Examples:</li>
+</ul>
+
+<h3 id="q44--46-liver-toxicity-prophylaxis"><a href="https://www.cibmtr.org/manuals/fim/1/en/topic/q39-45-liver-toxicity-prophylaxis">Q44 – 46: Liver Toxicity Prophylaxis</a></h3>
+<ul>
+  <li>Comment:</li>
+  <li>Resource/Profiles:</li>
+  <li>ValueSets:</li>
+  <li>Examples:</li>
+</ul>
+
+<h3 id="q47--48-veno-occlusive-disease-vod--sinusoidal-obstruction-syndrome-sos"><a href="https://www.cibmtr.org/manuals/fim/1/en/topic/q46-47-veno-occlusive-disease-vod-sinusoidal-obstruction-syndrome-sos">Q47 – 48: Veno-occlusive disease (VOD) / Sinusoidal obstruction syndrome (SOS)</a></h3>
+<ul>
+  <li>Comment:</li>
+  <li>Resource/Profiles:</li>
+  <li>ValueSets:</li>
+  <li>Examples:</li>
+</ul>
+
+<h3 id="q49--55-infection"><a href="https://www.cibmtr.org/manuals/fim/1/en/topic/q50-51-infection">Q49 – 55: Infection</a></h3>
+<ul>
+  <li>Comment:</li>
+  <li>Resource/Profiles:</li>
+  <li>ValueSets:</li>
+  <li>Examples:</li>
+</ul>
+
+<h3 id="q56-new-malignancy-lymphoproliferative-or-myeloproliferative-disorder"><a href="https://www.cibmtr.org/manuals/fim/1/en/topic/q19-61-new-malignancy-lymphoproliferative-or-myeloproliferative-disorder">Q56: New Malignancy, Lymphoproliferative or Myeloproliferative Disorder</a></h3>
+<ul>
+  <li>Comment:</li>
+  <li>Resource/Profiles:</li>
+  <li>ValueSets:</li>
+  <li>Examples:</li>
+</ul>
+
+<h3 id="q57--74-chimerism-studies-cord-blood-units-beta-thalassemia-and-sickle-cell-disease-only"><a href="https://www.cibmtr.org/manuals/fim/1/en/topic/q89-107-chimerism-studies-cord-blood-units-only">Q57 – 74: Chimerism Studies (Cord Blood Units, Beta Thalassemia, and Sickle Cell Disease Only)</a></h3>
+<ul>
+  <li>Comment:</li>
+  <li>Resource/Profiles:</li>
+  <li>ValueSets:</li>
+  <li>Examples:</li>
+  <li>
+    <h3 id="q75--97-disease-assessment-at-the-time-of-best-response-to-infusion"><a href="https://www.cibmtr.org/manuals/fim/1/en/topic/q75-97-disease-assessment">Q75 – 97: Disease Assessment at the Time of Best Response to Infusion</a></h3>
+  </li>
+  <li>Comment:</li>
+  <li>Resource/Profiles:</li>
+  <li>ValueSets:</li>
+  <li>Examples:</li>
+  <li>
+    <h3 id="q98--106-post-infusion-therapy"><a href="https://www.cibmtr.org/manuals/fim/1/en/topic/q75-77-post-hct-therapy">Q98 – 106: Post-Infusion Therapy</a></h3>
+  </li>
+  <li>Comment:</li>
+  <li>Resource/Profiles:</li>
+  <li>ValueSets:</li>
+  <li>Examples:</li>
+  <li>
+    <h3 id="q107--117-relapse-or-progression-post-infusion"><a href="https://www.cibmtr.org/manuals/fim/1/en/topic/q161-234-relapse-or-progression">Q107 – 117: Relapse or Progression Post-Infusion</a></h3>
+  </li>
+  <li>Comment:</li>
+  <li>Resource/Profiles:</li>
+  <li>ValueSets:</li>
+  <li>Examples:</li>
+  <li>
+    <h3 id="q118--120-current-disease-status"><a href="https://www.cibmtr.org/manuals/fim/1/en/topic/q235-238-current-disease-status">Q118 – 120: Current Disease Status</a></h3>
+  </li>
+  <li>Comment:</li>
+  <li>Resource/Profiles:</li>
+  <li>ValueSets:</li>
+  <li>Examples:</li>
+</ul>
 
 
 
@@ -219,7 +380,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 8, 2022 13:29-0500">2022-09-08</span>
+    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 9, 2022 13:32-0600">2022-11-09</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

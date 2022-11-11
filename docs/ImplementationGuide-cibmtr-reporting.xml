@@ -11,7 +11,7 @@
   <name value="CIBMTRReporting"/>
   <title value="CIBMTR Reporting Implementation Guide"/>
   <status value="draft"/>
-  <date value="2022-11-09T14:05:34-06:00"/>
+  <date value="2022-11-10T14:39:35-06:00"/>
   <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
   <contact>
     <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -44,6 +44,11 @@
   <dependsOn id="mcode">
     <uri value="http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode"/>
     <packageId value="hl7.fhir.us.mcode"/>
+    <version value="2.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_genomics_reporting">
+    <uri value="http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting"/>
+    <packageId value="hl7.fhir.uv.genomics-reporting"/>
     <version value="2.0.0"/>
   </dependsOn>
   <definition>
@@ -81,6 +86,14 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://iscn.karger.com"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueString value="autoload-resources"/>
       </extension>
       <extension url="value">
@@ -289,6 +302,14 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://iscn.karger.com"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueString value="autoload-resources"/>
       </extension>
       <extension url="value">
@@ -463,6 +484,17 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cibmtr-cytogenetics"/>
+      </reference>
+      <name value="CIBMTR Cytogenetics Profile"/>
+      <description value="CIBMTR Cytogenetics Profile to capture ISCN"/>
+      <exampleBoolean value="false"/>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
@@ -1194,6 +1226,17 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/Cytogenetics-Example-1"/>
+      </reference>
+      <name value="Cytogenetics-Example-1"/>
+      <description value="Example of ISCN report"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-cytogenetics"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/EosinophilsObservation"/>
       </reference>
       <name value="EosinophilsObservation"/>
@@ -1476,6 +1519,14 @@
         </extension>
         <nameUrl value="CRID-Assignment.html"/>
         <title value="CRID Assignment"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Cytogenetics.html"/>
+        </extension>
+        <nameUrl value="Cytogenetics.html"/>
+        <title value="Cytogenetics"/>
         <generation value="markdown"/>
       </page>
       <page>

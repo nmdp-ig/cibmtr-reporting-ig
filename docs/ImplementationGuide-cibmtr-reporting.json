@@ -10,7 +10,7 @@
   "name": "CIBMTRReporting",
   "title": "CIBMTR Reporting Implementation Guide",
   "status": "draft",
-  "date": "2022-11-09T14:05:34-06:00",
+  "date": "2022-11-10T14:39:35-06:00",
   "publisher": "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact": [
     {
@@ -55,6 +55,12 @@
       "id": "mcode",
       "uri": "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode",
       "packageId": "hl7.fhir.us.mcode",
+      "version": "2.0.0"
+    },
+    {
+      "id": "hl7_fhir_uv_genomics_reporting",
+      "uri": "http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting",
+      "packageId": "hl7.fhir.uv.genomics-reporting",
       "version": "2.0.0"
     }
   ],
@@ -108,6 +114,19 @@
           {
             "url": "value",
             "valueString": "http://cdebrowser.nci.nih.gov"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "special-url"
+          },
+          {
+            "url": "value",
+            "valueString": "https://iscn.karger.com"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -446,6 +465,19 @@
           {
             "url": "value",
             "valueString": "http://cdebrowser.nci.nih.gov"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "special-url"
+          },
+          {
+            "url": "value",
+            "valueString": "https://iscn.karger.com"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -738,6 +770,20 @@
       }
     ],
     "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cibmtr-cytogenetics"
+        },
+        "name": "CIBMTR Cytogenetics Profile",
+        "description": "CIBMTR Cytogenetics Profile to capture ISCN",
+        "exampleBoolean": false
+      },
       {
         "extension": [
           {
@@ -1670,6 +1716,20 @@
           }
         ],
         "reference": {
+          "reference": "Observation/Cytogenetics-Example-1"
+        },
+        "name": "Cytogenetics-Example-1",
+        "description": "Example of ISCN report",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-cytogenetics"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
           "reference": "Observation/EosinophilsObservation"
         },
         "name": "EosinophilsObservation",
@@ -2035,6 +2095,17 @@
           ],
           "nameUrl": "CRID-Assignment.html",
           "title": "CRID Assignment",
+          "generation": "markdown"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "Cytogenetics.html"
+            }
+          ],
+          "nameUrl": "Cytogenetics.html",
+          "title": "Cytogenetics",
           "generation": "markdown"
         },
         {

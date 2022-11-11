@@ -18,6 +18,16 @@
         "title": "CIBMTR Prior Exposure Medication"
       }
     ],
+    "Observation": [
+      {
+        "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables",
+        "title": "CIBMTR Observation Laboratory Results: Priority Variables"
+      },
+      {
+        "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab",
+        "title": "CIBMTR Observation Laboratory Results Profile (us-core)"
+      }
+    ],
     "MedicationAdministration": [
       {
         "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration",
@@ -30,16 +40,6 @@
         "title": "CIBMTR Medication Request (mcode)"
       }
     ],
-    "Observation": [
-      {
-        "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables",
-        "title": "CIBMTR Observation Laboratory Results: Priority Variables"
-      },
-      {
-        "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab",
-        "title": "CIBMTR Observation Laboratory Results Profile (us-core)"
-      }
-    ],
     "Patient": [
       {
         "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient",
@@ -48,6 +48,9 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/StructureDefinition/bodySite": [
+      "Observation"
+    ],
     "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
       "MedicationRequest.requester",
       "Patient.name"
@@ -74,6 +77,9 @@
       "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type",
       "StructureDefinition.snapshot.element.type.targetProfile"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding": [
+      "Observation"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
       "Patient"

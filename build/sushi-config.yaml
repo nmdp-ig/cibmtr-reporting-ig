@@ -25,10 +25,12 @@ dependencies:
     id: mcode
     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
     version: 2.0.0
+  hl7.fhir.uv.genomics-reporting: 2.0.0
 parameters:
   show-inherited-invariants: false
   special-url:
     - http://cdebrowser.nci.nih.gov
+    - https://iscn.karger.com
 copyrightYear: 2020+
 releaseLabel: Trial Use 1
 
@@ -48,6 +50,7 @@ menu:
     "Medications": Medications.html
     "Bundles": Bundles.html
     "Form 2450: Post-TED": Form-2450.html
+    "Cytogenetics - ISCN": Cytogenetics.html
     "Example Code Snippets": Example-Code.html
   Direct FHIR (STU3): CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf
   Artifact Index: artifacts.html

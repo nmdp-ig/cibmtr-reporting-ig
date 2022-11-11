@@ -5,7 +5,7 @@ RuleSet: MetaSecurityRules
 * meta.security ^slicing.description = "slicing on meta.security"
 * meta.security contains
     TransplantCenter 1..1 MS
-* meta.security[TransplantCenter].system = "http://terminology.nmdp.org/codesystem/transplant-center"
+* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
 // * meta.security[TransplantCenter].code obeys sec-rc
 * meta.security[TransplantCenter].code 1..1
 

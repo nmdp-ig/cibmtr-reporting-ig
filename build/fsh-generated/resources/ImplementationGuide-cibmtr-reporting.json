@@ -45,10 +45,24 @@
       "packageId": "hl7.fhir.us.mcode",
       "uri": "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode",
       "version": "2.0.0"
+    },
+    {
+      "packageId": "hl7.fhir.uv.genomics-reporting",
+      "version": "2.0.0",
+      "uri": "http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting",
+      "id": "hl7_fhir_uv_genomics_reporting"
     }
   ],
   "definition": {
     "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/cibmtr-cytogenetics"
+        },
+        "name": "CIBMTR Cytogenetics Profile",
+        "description": "CIBMTR Cytogenetics Profile to capture ISCN",
+        "exampleBoolean": false
+      },
       {
         "reference": {
           "reference": "StructureDefinition/cibmtr-obs-priority-variables"
@@ -579,6 +593,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/Cytogenetics-Example-1"
+        },
+        "name": "Cytogenetics-Example-1",
+        "description": "Example of ISCN report",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-cytogenetics"
+      },
+      {
+        "reference": {
           "reference": "Observation/EosinophilsObservation"
         },
         "name": "EosinophilsObservation",
@@ -785,6 +807,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "Cytogenetics.html",
+          "title": "Cytogenetics",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "Direct-FHIR-STU3.html",
           "title": "Direct FHIR STU 3",
           "generation": "html"
@@ -837,6 +864,10 @@
       {
         "code": "special-url",
         "value": "http://cdebrowser.nci.nih.gov"
+      },
+      {
+        "code": "special-url",
+        "value": "https://iscn.karger.com"
       }
     ]
   }

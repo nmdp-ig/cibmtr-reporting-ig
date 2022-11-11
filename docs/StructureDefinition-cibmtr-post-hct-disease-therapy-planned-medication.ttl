@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "CIBMTR_PostHCTDiseaseTherapyPlannedMedication"];
   fhir:StructureDefinition.title [ fhir:value "CIBMTR Planned Post-HCT Disease Therapy Medication"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-11-09T14:05:34-06:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-10T14:39:35-06:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -677,7 +677,7 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "uri" ]
        ];
-       fhir:ElementDefinition.patternUri [ fhir:value "http://terminology.nmdp.org/codesystem/transplant-center" ];
+       fhir:ElementDefinition.patternUri [ fhir:value "http://terminology.cibmtr.org/codesystem/transplant-center" ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];

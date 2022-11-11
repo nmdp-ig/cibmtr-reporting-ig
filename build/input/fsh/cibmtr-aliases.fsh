@@ -8,3 +8,4 @@ Alias: $UCUM = http://unitsofmeasure.org
 Alias: $RXN = http://www.nlm.nih.gov/research/umls/rxnorm 
 Alias: $ICD9 = http://hl7.org/fhir/sid/icd-9-cm
 Alias: $ICD10 = http://hl7.org/fhir/sid/icd-10-cm
+Alias: $ISCN = https://iscn.karger.com

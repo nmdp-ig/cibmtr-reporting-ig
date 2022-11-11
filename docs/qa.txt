@@ -1,9 +1,9 @@
 ﻿CIBMTRReporting : Validation Results
 =========================================
 
-err = 0, warn = 46, info = 41
+err = 0, warn = 46, info = 44
 IG Publisher Version: 1.2.12 Out of date - current version is 1.2.14
-Generated Wed Nov 09 14:07:37 CST 2022. FHIR version 4.0.1 for cibmtr-reporting#0.1.5 (canonical = http://fhir.nmdp.org/ig/cibmtr-reporting)
+Generated Thu Nov 10 14:41:55 CST 2022. FHIR version 4.0.1 for cibmtr-reporting#0.1.5 (canonical = http://fhir.nmdp.org/ig/cibmtr-reporting)
  Build Errors : 0 / 4 / 0
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/CodeSystem-cibmtr-cadsr-cde : 0 / 1 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/CodeSystem-cibmtr-cadsr-vm : 0 / 1 / 2
@@ -31,6 +31,7 @@ Generated Wed Nov 09 14:07:37 CST 2022. FHIR version 4.0.1 for cibmtr-reporting#
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Observation-CMVIgGAbPresenceLOINC : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Observation-CMVIgMAbPresenceLOINC : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Observation-CMVIgMAbPresenceSNOMED : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Observation-Cytogenetics-Example-1 : 0 / 0 / 3
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Observation-EosinophilsObservation : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Observation-HemoglobinObservation : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Observation-LeukocytesObservation : 0 / 0 / 2
@@ -43,6 +44,7 @@ Generated Wed Nov 09 14:07:37 CST 2022. FHIR version 4.0.1 for cibmtr-reporting#
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Patient-PatientExample5 : 0 / 0 / 3
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Patient-PatientExample6 : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/StructureDefinition-cibmtr-additional-peri-transplant-medication : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/StructureDefinition-cibmtr-cytogenetics : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/StructureDefinition-cibmtr-gvhd-prophylaxis-medication : 0 / 0 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/StructureDefinition-cibmtr-medication : 0 / 0 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/StructureDefinition-cibmtr-medication-administration : 0 / 0 / 1
@@ -108,27 +110,27 @@ INFORMATION: CodeSystem/cibmtr-cadsr-vm: CodeSystem: CodeSystems SHOULD have a s
 WARNING: CodeSystem/cibmtr-cadsr-vm: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/ImplementationGuide-cibmtr-reporting.json ==
 == fsh-generated/resources/Medication-Medication-Cyclophosphamide-Example.json ==
-INFORMATION: Medication/Medication-Cyclophosphamide-Example: Medication.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Medication/Medication-Cyclophosphamide-Example: Medication.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Medication-Medication-Etoposide-Example.json ==
-INFORMATION: Medication/Medication-Etoposide-Example: Medication.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Medication/Medication-Etoposide-Example: Medication.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Medication-Medication-GVHD-Prophylaxis-Example.json ==
-INFORMATION: Medication/Medication-GVHD-Prophylaxis-Example: Medication.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Medication/Medication-GVHD-Prophylaxis-Example: Medication.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Medication-Medication-Mobilizing-Agent-Example.json ==
-INFORMATION: Medication/Medication-Mobilizing-Agent-Example: Medication.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Medication/Medication-Mobilizing-Agent-Example: Medication.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Medication-Medication-Peri-Transplant-Example.json ==
-INFORMATION: Medication/Medication-Peri-Transplant-Example: Medication.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Medication/Medication-Peri-Transplant-Example: Medication.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Medication-Medication-Post-HCT-Disease-Therapy-Example.json ==
-INFORMATION: Medication/Medication-Post-HCT-Disease-Therapy-Example: Medication.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Medication/Medication-Post-HCT-Disease-Therapy-Example: Medication.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Medication-Medication-Prep-Regimen-Example.json ==
-INFORMATION: Medication/Medication-Prep-Regimen-Example: Medication.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Medication/Medication-Prep-Regimen-Example: Medication.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Medication-Medication-PriorExposure-Example.json ==
-INFORMATION: Medication/Medication-PriorExposure-Example: Medication.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Medication/Medication-PriorExposure-Example: Medication.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationAdministration-MedicationAdministration-Example1.json ==
-INFORMATION: MedicationAdministration/MedicationAdministration-Example1: MedicationAdministration.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: MedicationAdministration/MedicationAdministration-Example1: MedicationAdministration.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationAdministration-MedicationAdministration-Example2.json ==
-INFORMATION: MedicationAdministration/MedicationAdministration-Example2: MedicationAdministration.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: MedicationAdministration/MedicationAdministration-Example2: MedicationAdministration.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationRequest-MedicationRequest-Etoposide-Example.json ==
-INFORMATION: MedicationRequest/MedicationRequest-Etoposide-Example: MedicationRequest.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/MedicationRequest-Etoposide-Example: MedicationRequest.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-ABOBloodGroupObservationLOINC.json ==
 INFORMATION: Observation/ABOBloodGroupObservationLOINC: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-ABOBloodGroupObservationSNOMED.json ==
@@ -153,6 +155,9 @@ INFORMATION: Observation/CMVIgGAbPresenceLOINC: Observation.meta.security[0]: Co
 INFORMATION: Observation/CMVIgMAbPresenceLOINC: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-CMVIgMAbPresenceSNOMED.json ==
 INFORMATION: Observation/CMVIgMAbPresenceSNOMED: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-Cytogenetics-Example-1.json ==
+INFORMATION: Observation/Cytogenetics-Example-1: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Observation/Cytogenetics-Example-1: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://iscn.karger.com' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-EosinophilsObservation.json ==
 INFORMATION: Observation/EosinophilsObservation: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-HemoglobinObservation.json ==
@@ -181,6 +186,8 @@ INFORMATION: Patient/PatientExample5: Patient.meta.security[0]: Code System URI 
 == fsh-generated/resources/Patient-PatientExample6.json ==
 INFORMATION: Patient/PatientExample6: Patient.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/StructureDefinition-cibmtr-additional-peri-transplant-medication.json ==
+== fsh-generated/resources/StructureDefinition-cibmtr-cytogenetics.json ==
+INFORMATION: StructureDefinition/cibmtr-cytogenetics: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
 == fsh-generated/resources/StructureDefinition-cibmtr-gvhd-prophylaxis-medication.json ==
 == fsh-generated/resources/StructureDefinition-cibmtr-medication.json ==
 == fsh-generated/resources/StructureDefinition-cibmtr-medication-administration.json ==

@@ -217,10 +217,26 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/gvhdtype-valueset"
+          "reference": "ValueSet/gvhd-icd10-codes"
+        },
+        "name": "GVHD ICD-10 Codes",
+        "description": "GVHD ICD-10 Codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/gvhd-sct-codes"
+        },
+        "name": "GVHD SNOMED CT Codes",
+        "description": "GVHD SNOMED CT Codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/gvhd-all-valueset"
         },
         "name": "GVHD Type Value Set",
-        "description": "Permissible values for types of Graft vs Host Disease, from NIH caDSR",
+        "description": "Permissible values for types of Graft vs Host Disease, from SNOMED CT and ICD-10",
         "exampleBoolean": false
       },
       {
@@ -477,22 +493,6 @@
         },
         "name": "Smear morphology panel - Blood (34994-4)",
         "description": "Smear morphology panel - Blood (34994-4)",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/cibmtr-cadsr-cde"
-        },
-        "name": "NIH Common Data Elements for CIBMTR",
-        "description": "NIH Common Data Elements for CIBMTR",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/cibmtr-cadsr-vm"
-        },
-        "name": "NIH Common Data Element Value Meanings for CIBMTR",
-        "description": "NIH Common Data Element Value Meanings for CIBMTR",
         "exampleBoolean": false
       },
       {

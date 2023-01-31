@@ -8,7 +8,7 @@
 
 <http://fhir.nmdp.org/ig/cibmtr-reporting/Observation/CMVIgGAbPresenceLOINC> a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "CMVIgGAbPresenceLOINC"];
+  fhir:Resource.id [ fhir:value "CMVIgGAbPresenceLOINC"]; # 
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables";
@@ -21,12 +21,12 @@
        fhir:Coding.code [ fhir:value "rc_99999" ];
        fhir:Coding.display [ fhir:value "99999 My Transplant Center" ]
      ]
-  ];
+  ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"CMVIgGAbPresenceLOINC\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"CMVIgGAbPresenceLOINC\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cibmtr-obs-priority-variables.html\">CIBMTR Observation Laboratory Results: Priority Variables</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.cibmtr.org/codesystem/transplant-center http://terminology.cibmtr.org/codesystem/transplant-center}\">http://terminology.cibmtr.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#13949-3)</span></p><p><b>subject</b>: <a href=\"Patient-PatientExample6.html\">Patient/PatientExample6</a> \"\"</p><p><b>effective</b>: 2020-07-21 02:17:00+0000</p><p><b>value</b>: Positive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA6576-8)</span></p></div>"
-  ];
-  fhir:Observation.status [ fhir:value "final"];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"CMVIgGAbPresenceLOINC\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;CMVIgGAbPresenceLOINC&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cibmtr-obs-priority-variables.html\">CIBMTR Observation Laboratory Results: Priority Variables</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.cibmtr.org/codesystem/transplant-center http://terminology.cibmtr.org/codesystem/transplant-center}\">http://terminology.cibmtr.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#13949-3)</span></p><p><b>subject</b>: <a href=\"Patient-PatientExample6.html\">Patient/PatientExample6</a> &quot;&quot;</p><p><b>effective</b>: 2020-07-21 14:17:00+0000</p><p><b>value</b>: Positive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA6576-8)</span></p></div>"
+  ]; # 
+  fhir:Observation.status [ fhir:value "final"]; # 
   fhir:Observation.category [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -34,7 +34,7 @@
        fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
        fhir:Coding.code [ fhir:value "laboratory" ]
      ]
-  ];
+  ]; # 
   fhir:Observation.code [
      fhir:CodeableConcept.coding [
        fhir:index 0;
@@ -43,12 +43,12 @@
        fhir:Coding.code [ fhir:value "13949-3" ];
        fhir:Coding.display [ fhir:value "Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay" ]
      ]
-  ];
+  ]; # 
   fhir:Observation.subject [
      fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/Patient/PatientExample6>;
      fhir:Reference.reference [ fhir:value "Patient/PatientExample6" ]
-  ];
-  fhir:Observation.effectiveDateTime [ fhir:value "2020-07-21T14:17:00Z"^^xsd:dateTime];
+  ]; # 
+  fhir:Observation.effectiveDateTime [ fhir:value "2020-07-21T14:17:00Z"^^xsd:dateTime]; # 
   fhir:Observation.valueCodeableConcept [
      fhir:CodeableConcept.coding [
        fhir:index 0;
@@ -57,7 +57,7 @@
        fhir:Coding.code [ fhir:value "LA6576-8" ];
        fhir:Coding.display [ fhir:value "Positive" ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "GVHDTypeValueSet",
+  "id": "gvhd-all-valueset",
+  "title": "GVHD Type Value Set",
+  "description": "Permissible values for types of Graft vs Host Disease, from SNOMED CT and ICD-10",
+  "version": "0.1.5",
+  "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-all-valueset",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-sct-codes"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "GVHDSCTVS",
+  "id": "gvhd-sct-codes",
+  "title": "GVHD SNOMED CT Codes",
+  "description": "GVHD SNOMED CT Codes",
+  "version": "0.1.5",
+  "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-sct-codes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "234646005"
+          }
+        ]
+      }
+    ]
+  }
+}

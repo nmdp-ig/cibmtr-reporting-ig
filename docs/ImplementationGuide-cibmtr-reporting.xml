@@ -11,7 +11,7 @@
   <name value="CIBMTRReporting"/>
   <title value="CIBMTR Reporting Implementation Guide"/>
   <status value="draft"/>
-  <date value="2022-11-10T14:39:35-06:00"/>
+  <date value="2023-01-31T11:27:58-06:00"/>
   <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
   <contact>
     <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -32,6 +32,9 @@
   <license value="Apache-2.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
     <version value="5.0.0"/>
@@ -709,10 +712,32 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/gvhdtype-valueset"/>
+        <reference value="ValueSet/gvhd-icd10-codes"/>
+      </reference>
+      <name value="GVHD ICD-10 Codes"/>
+      <description value="GVHD ICD-10 Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/gvhd-sct-codes"/>
+      </reference>
+      <name value="GVHD SNOMED CT Codes"/>
+      <description value="GVHD SNOMED CT Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/gvhd-all-valueset"/>
       </reference>
       <name value="GVHD Type Value Set"/>
-      <description value="Permissible values for types of Graft vs Host Disease, from NIH caDSR"/>
+      <description value="Permissible values for types of Graft vs Host Disease, from SNOMED CT and ICD-10"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1065,28 +1090,6 @@
       </reference>
       <name value="Smear morphology panel - Blood (34994-4)"/>
       <description value="Smear morphology panel - Blood (34994-4)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cibmtr-cadsr-cde"/>
-      </reference>
-      <name value="NIH Common Data Elements for CIBMTR"/>
-      <description value="NIH Common Data Elements for CIBMTR"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cibmtr-cadsr-vm"/>
-      </reference>
-      <name value="NIH Common Data Element Value Meanings for CIBMTR"/>
-      <description value="NIH Common Data Element Value Meanings for CIBMTR"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -7,7 +7,7 @@
 
 <http://fhir.nmdp.org/ig/cibmtr-reporting/Patient/PatientExample1> a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "PatientExample1"];
+  fhir:Resource.id [ fhir:value "PatientExample1"]; # 
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient";
@@ -20,16 +20,16 @@
        fhir:Coding.code [ fhir:value "rc_00000" ];
        fhir:Coding.display [ fhir:value "00000 Good Health Medical Center" ]
      ]
-  ];
+  ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>John Doe </b> male, DoB Unknown ( id: abc)</p><hr/></div>"
-  ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>John Doe </b> male, DoB Unknown ( id: abc)</p><hr/></div>"
+  ]; # 
   fhir:Patient.identifier [
      fhir:index 0;
      fhir:Identifier.system [ fhir:value "http://example.org/mrn" ];
      fhir:Identifier.value [ fhir:value "abc" ]
-  ];
+  ]; # 
   fhir:Patient.name [
      fhir:index 0;
      fhir:HumanName.family [ fhir:value "Doe" ];
@@ -37,8 +37,8 @@
        fhir:value "John";
        fhir:index 0
      ]
-  ];
-  fhir:Patient.gender [ fhir:value "male"] .
+  ]; # 
+  fhir:Patient.gender [ fhir:value "male"] . # 
 
 # - ontology header ------------------------------------------------------------
 

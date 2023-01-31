@@ -7,18 +7,18 @@
 
 <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cyclophosphamide-vs> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "med-cyclophosphamide-vs"];
+  fhir:Resource.id [ fhir:value "med-cyclophosphamide-vs"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>3002</td><td>cyclophosphamide</td></tr><tr><td>202589</td><td>Cytoxan</td></tr><tr><td>202588</td><td>Endoxana</td></tr><tr><td>1545988</td><td>cyclophosphamide anhydrous</td></tr><tr><td>221085</td><td>cyclophosphamide lyophilized</td></tr><tr><td>1156180</td><td>cyclophosphamide / mannitol Injectable Product</td></tr><tr><td>377238</td><td>cyclophosphamide / mannitol Injectable Solution</td></tr><tr><td>358855</td><td>cyclophosphamide 10 MG</td></tr><tr><td>563185</td><td>cyclophosphamide 10 MG [Endoxana]</td></tr><tr><td>102948</td><td>cyclophosphamide 10 MG Oral Tablet [Endoxana]</td></tr><tr><td>438828</td><td>cyclophosphamide 10 MG/ML</td></tr><tr><td>1734918</td><td>cyclophosphamide 1000 MG</td></tr><tr><td>329664</td><td>cyclophosphamide 20 MG/ML</td></tr><tr><td>2386858</td><td>cyclophosphamide 200 MG/ML</td></tr><tr><td>1734920</td><td>cyclophosphamide 2000 MG</td></tr><tr><td>315746</td><td>cyclophosphamide 25 MG</td></tr><tr><td>571074</td><td>cyclophosphamide 25 MG [Cytoxan]</td></tr><tr><td>210570</td><td>cyclophosphamide 25 MG Oral Tablet [Cytoxan]</td></tr><tr><td>438830</td><td>cyclophosphamide 5 MG/ML</td></tr><tr><td>315747</td><td>cyclophosphamide 50 MG</td></tr><tr><td>571139</td><td>cyclophosphamide 50 MG [Cytoxan]</td></tr><tr><td>564082</td><td>cyclophosphamide 50 MG [Endoxana]</td></tr><tr><td>210639</td><td>cyclophosphamide 50 MG Oral Tablet [Cytoxan]</td></tr><tr><td>105555</td><td>cyclophosphamide 50 MG Oral Tablet [Endoxana]</td></tr><tr><td>1734915</td><td>cyclophosphamide 500 MG</td></tr><tr><td>438831</td><td>cyclophosphamide 7.5 MG/ML</td></tr><tr><td>1156181</td><td>cyclophosphamide Injectable Product</td></tr><tr><td>376666</td><td>cyclophosphamide Injectable Solution</td></tr><tr><td>1734916</td><td>cyclophosphamide Injection</td></tr><tr><td>1437967</td><td>cyclophosphamide Oral Capsule</td></tr><tr><td>1156182</td><td>cyclophosphamide Oral Product</td></tr><tr><td>371664</td><td>cyclophosphamide Oral Tablet</td></tr><tr><td>367922</td><td>cyclophosphamide Oral Tablet [Cytoxan]</td></tr><tr><td>368546</td><td>cyclophosphamide Oral Tablet [Endoxana]</td></tr><tr><td>1156183</td><td>cyclophosphamide Pill</td></tr><tr><td>1174493</td><td>Cytoxan Oral Product</td></tr><tr><td>1174494</td><td>Cytoxan Pill</td></tr><tr><td>1176602</td><td>Endoxana Oral Product</td></tr><tr><td>1176603</td><td>Endoxana Pill</td></tr><tr><td>690313</td><td>cyclophosphamide / mannitol</td></tr></table></li></ul></div>"
-  ];
-  fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cyclophosphamide-vs"];
-  fhir:ValueSet.version [ fhir:value "0.1.5"];
-  fhir:ValueSet.name [ fhir:value "RxNormCyclophosphamideVS"];
-  fhir:ValueSet.title [ fhir:value "RxNorm - Cyclophosphamide"];
-  fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-11-10T14:39:35-06:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"];
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cyclophosphamide-vs"]; # 
+  fhir:ValueSet.version [ fhir:value "0.1.5"]; # 
+  fhir:ValueSet.name [ fhir:value "RxNormCyclophosphamideVS"]; # 
+  fhir:ValueSet.title [ fhir:value "RxNorm - Cyclophosphamide"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.date [ fhir:value "2023-01-31T11:27:58-06:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"]; # 
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ];
@@ -35,8 +35,8 @@
        fhir:ContactPoint.system [ fhir:value "email" ];
        fhir:ContactPoint.value [ fhir:value "bmilius@nmdp.org" ]
      ]
-  ];
-  fhir:ValueSet.description [ fhir:value "RxNorm codes for Cyclophosphamide"];
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "RxNorm codes for Cyclophosphamide"]; # 
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
@@ -203,7 +203,7 @@
          fhir:ValueSet.compose.include.concept.display [ fhir:value "cyclophosphamide / mannitol" ]
        ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

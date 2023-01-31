@@ -1,12 +1,10 @@
 ﻿CIBMTRReporting : Validation Results
 =========================================
 
-err = 0, warn = 46, info = 44
-IG Publisher Version: 1.2.12 Out of date - current version is 1.2.14
-Generated Thu Nov 10 14:41:55 CST 2022. FHIR version 4.0.1 for cibmtr-reporting#0.1.5 (canonical = http://fhir.nmdp.org/ig/cibmtr-reporting)
+err = 0, warn = 46, info = 42
+IG Publisher Version: 1.2.26 Out of date - current version is 1.2.30
+Generated Tue Jan 31 11:30:49 CST 2023. FHIR version 4.0.1 for cibmtr-reporting#0.1.5 (canonical = http://fhir.nmdp.org/ig/cibmtr-reporting)
  Build Errors : 0 / 4 / 0
- /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/CodeSystem-cibmtr-cadsr-cde : 0 / 1 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/CodeSystem-cibmtr-cadsr-vm : 0 / 1 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ImplementationGuide-cibmtr-reporting : 0 / 0 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Medication-Medication-Cyclophosphamide-Example : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/Medication-Medication-Etoposide-Example : 0 / 0 / 2
@@ -66,7 +64,9 @@ Generated Thu Nov 10 14:41:55 CST 2022. FHIR version 4.0.1 for cibmtr-reporting#
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-cibmtr-priority-variables-epic-2021 : 0 / 1 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-differential-unspecified-blood-vs : 0 / 1 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-erythrocyte-morphology-blood-vs : 0 / 1 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-gvhdtype-valueset : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-gvhd-all-valueset : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-gvhd-icd10-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-gvhd-sct-codes : 0 / 1 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-hematopoietic-disorder-vs : 0 / 1 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-leukocyte-morphology-blood-vs : 0 / 1 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build/fsh-generated/resources/ValueSet-manual-differential-blood-vs : 0 / 1 / 1
@@ -99,15 +99,9 @@ Generated Thu Nov 10 14:41:55 CST 2022. FHIR version 4.0.1 for cibmtr-reporting#
 </table>
 == n/a ==
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
-WARNING: 2: The HTML fragment 'cross-version-analysis.xhtml' is not included anywhere in the produced implementation guide
-WARNING: 3: The HTML fragment 'dependency-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
-== fsh-generated/resources/CodeSystem-cibmtr-cadsr-cde.json ==
-INFORMATION: CodeSystem/cibmtr-cadsr-cde: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/cibmtr-cadsr-cde: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
-== fsh-generated/resources/CodeSystem-cibmtr-cadsr-vm.json ==
-INFORMATION: CodeSystem/cibmtr-cadsr-vm: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/cibmtr-cadsr-vm: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/ImplementationGuide-cibmtr-reporting.json ==
 == fsh-generated/resources/Medication-Medication-Cyclophosphamide-Example.json ==
 INFORMATION: Medication/Medication-Cyclophosphamide-Example: Medication.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
@@ -169,25 +163,25 @@ INFORMATION: Observation/MetamyelocytesObservation: Observation.meta.security[0]
 == fsh-generated/resources/Observation-NeutrophilsObservation.json ==
 INFORMATION: Observation/NeutrophilsObservation: Observation.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Patient-PatientExample1.json ==
-INFORMATION: Patient/PatientExample1: Patient.identifier[0]: This element does not match any known slice defined in the profile http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
+INFORMATION: Patient/PatientExample1: Patient.identifier[0]: This element does not match any known slice defined in the profile http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient|0.1.5
 INFORMATION: Patient/PatientExample1: Patient.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Patient-PatientExample2.json ==
-INFORMATION: Patient/PatientExample2: Patient.identifier[0]: This element does not match any known slice defined in the profile http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
+INFORMATION: Patient/PatientExample2: Patient.identifier[0]: This element does not match any known slice defined in the profile http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient|0.1.5
 INFORMATION: Patient/PatientExample2: Patient.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Patient-PatientExample3.json ==
-INFORMATION: Patient/PatientExample3: Patient.identifier[0]: This element does not match any known slice defined in the profile http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
+INFORMATION: Patient/PatientExample3: Patient.identifier[0]: This element does not match any known slice defined in the profile http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient|0.1.5
 INFORMATION: Patient/PatientExample3: Patient.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Patient-PatientExample4.json ==
-INFORMATION: Patient/PatientExample4: Patient.identifier[0]: This element does not match any known slice defined in the profile http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
+INFORMATION: Patient/PatientExample4: Patient.identifier[0]: This element does not match any known slice defined in the profile http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient|0.1.5
 INFORMATION: Patient/PatientExample4: Patient.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Patient-PatientExample5.json ==
-INFORMATION: Patient/PatientExample5: Patient.identifier[0]: This element does not match any known slice defined in the profile http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
+INFORMATION: Patient/PatientExample5: Patient.identifier[0]: This element does not match any known slice defined in the profile http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient|0.1.5
 INFORMATION: Patient/PatientExample5: Patient.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Patient-PatientExample6.json ==
 INFORMATION: Patient/PatientExample6: Patient.meta.security[0]: Code System URI 'http://terminology.cibmtr.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/StructureDefinition-cibmtr-additional-peri-transplant-medication.json ==
 == fsh-generated/resources/StructureDefinition-cibmtr-cytogenetics.json ==
-INFORMATION: StructureDefinition/cibmtr-cytogenetics: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+INFORMATION: StructureDefinition/cibmtr-cytogenetics: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-cibmtr-gvhd-prophylaxis-medication.json ==
 == fsh-generated/resources/StructureDefinition-cibmtr-medication.json ==
 == fsh-generated/resources/StructureDefinition-cibmtr-medication-administration.json ==
@@ -219,8 +213,12 @@ WARNING: ValueSet/cibmtr-priority-variables-epic-2021: ValueSet: The ShareableVa
 WARNING: ValueSet/differential-unspecified-blood-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-erythrocyte-morphology-blood-vs.json ==
 WARNING: ValueSet/erythrocyte-morphology-blood-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
-== fsh-generated/resources/ValueSet-gvhdtype-valueset.json ==
-WARNING: ValueSet/gvhdtype-valueset: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-gvhd-all-valueset.json ==
+WARNING: ValueSet/gvhd-all-valueset: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-gvhd-icd10-codes.json ==
+WARNING: ValueSet/gvhd-icd10-codes: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-gvhd-sct-codes.json ==
+WARNING: ValueSet/gvhd-sct-codes: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-hematopoietic-disorder-vs.json ==
 WARNING: ValueSet/hematopoietic-disorder-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-leukocyte-morphology-blood-vs.json ==

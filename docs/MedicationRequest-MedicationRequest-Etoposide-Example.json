@@ -1,112 +1,96 @@
 {
-  "resourceType": "MedicationRequest",
-  "id": "MedicationRequest-Etoposide-Example",
-  "meta": {
-    "profile": [
-      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-request"
-    ],
-    "security": [
-      {
-        "system": "http://terminology.cibmtr.org/codesystem/transplant-center",
-        "code": "rc_99999",
-        "display": "99999 My Transplant Center"
-      }
-    ]
+  "resourceType" : "MedicationRequest",
+  "id" : "MedicationRequest-Etoposide-Example",
+  "meta" : {
+    "profile" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-request"],
+    "security" : [{
+      "system" : "http://terminology.cibmtr.org/codesystem/transplant-center",
+      "code" : "rc_99999",
+      "display" : "99999 My Transplant Center"
+    }]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"MedicationRequest-Etoposide-Example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest \"MedicationRequest-Etoposide-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cibmtr-medication-request.html\">CIBMTR Medication Request (mcode)</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.cibmtr.org/codesystem/transplant-center http://terminology.cibmtr.org/codesystem/transplant-center}\">http://terminology.cibmtr.org/codesystem/transplant-center</span></p></div><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <a href=\"Medication-Medication-Etoposide-Example.html\">Medication/Medication-Etoposide-Example: etoposide (VEPESID) chemo IVPB</a></p><p><b>subject</b>: <a href=\"Patient-PatientExample6.html\">Patient/PatientExample6</a> \"\"</p><p><b>authoredOn</b>: 2020-07-21 02:17:00+0000</p><p><b>requester</b>: <span>: unknown</span></p><p><b>reasonCode</b>: Cancer (CMS/HCC) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#363346000 \"Malignant neoplastic disease (disorder)\"; <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>#C80.1 \"Malignant (primary) neoplasm, unspecified\")</span></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 68 mg (100 mg/m2 x 0.68 m2 Treatment plan actual BSA), Intravenous, for 60 Minutes, Every 24 hours, First dose on Tue 11/19/13 at 0000, For 5 doses\nGive after CISplatin and  mannitol.</p><p><b>timing</b>: Code: Every 24 hours, Starting 2020-07-22 04:58:05+0000, Count 5 times, Duration 60hours, Do Once per 24 hours, Until 2020-07-22 04:58:05+0000</p><p><b>asNeeded</b>: false</p><p><b>route</b>: Intravenous central route (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#418114005)</span></p></blockquote></div>"
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"MedicationRequest-Etoposide-Example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest &quot;MedicationRequest-Etoposide-Example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cibmtr-medication-request.html\">CIBMTR Medication Request (mcode)</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.cibmtr.org/codesystem/transplant-center http://terminology.cibmtr.org/codesystem/transplant-center}\">http://terminology.cibmtr.org/codesystem/transplant-center</span></p></div><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <a href=\"Medication-Medication-Etoposide-Example.html\">Medication/Medication-Etoposide-Example: etoposide (VEPESID) chemo IVPB</a></p><p><b>subject</b>: <a href=\"Patient-PatientExample6.html\">Patient/PatientExample6</a> &quot;&quot;</p><p><b>authoredOn</b>: 2020-07-21 14:17:00+0000</p><p><b>requester</b>: <span>: unknown</span></p><p><b>reasonCode</b>: Cancer (CMS/HCC) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#363346000 &quot;Malignant neoplastic disease (disorder)&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>#C80.1 &quot;Malignant (primary) neoplasm, unspecified&quot;)</span></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 68 mg (100 mg/m2 x 0.68 m2 Treatment plan actual BSA), Intravenous, for 60 Minutes, Every 24 hours, First dose on Tue 11/19/13 at 0000, For 5 doses\nGive after CISplatin and  mannitol.</p><p><b>timing</b>: Code: Every 24 hours, Starting 2020-07-22 16:58:05+0000, Count 5 times, Duration 60hours, Once per 24 hours, Until 2020-07-22 16:58:05+0000</p><p><b>asNeeded</b>: false</p><p><b>route</b>: Intravenous central route (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#418114005)</span></p></blockquote></div>"
   },
-  "status": "active",
-  "intent": "order",
-  "medicationReference": {
-    "reference": "Medication/Medication-Etoposide-Example",
-    "display": "etoposide (VEPESID) chemo IVPB"
+  "status" : "active",
+  "intent" : "order",
+  "medicationReference" : {
+    "reference" : "Medication/Medication-Etoposide-Example",
+    "display" : "etoposide (VEPESID) chemo IVPB"
   },
-  "subject": {
-    "reference": "Patient/PatientExample6"
+  "subject" : {
+    "reference" : "Patient/PatientExample6"
   },
-  "authoredOn": "2020-07-21T14:17:00Z",
-  "requester": {
-    "extension": [
-      {
-        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-        "valueCode": "unknown"
-      }
-    ],
-    "display": "unknown"
+  "authoredOn" : "2020-07-21T14:17:00Z",
+  "requester" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode" : "unknown"
+    }],
+    "display" : "unknown"
   },
-  "reasonCode": [
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "363346000",
+      "display" : "Malignant neoplastic disease (disorder)"
+    },
     {
-      "coding": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "363346000",
-          "display": "Malignant neoplastic disease (disorder)"
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "code" : "C80.1",
+      "display" : "Malignant (primary) neoplasm, unspecified"
+    }],
+    "text" : "Cancer (CMS/HCC)"
+  }],
+  "dosageInstruction" : [{
+    "text" : "68 mg (100 mg/m2 x 0.68 m2 Treatment plan actual BSA), Intravenous, for 60 Minutes, Every 24 hours, First dose on Tue 11/19/13 at 0000, For 5 doses\nGive after CISplatin and  mannitol.",
+    "timing" : {
+      "repeat" : {
+        "boundsPeriod" : {
+          "start" : "2020-07-22T16:58:05Z",
+          "end" : "2020-07-22T16:58:05Z"
         },
-        {
-          "system": "http://hl7.org/fhir/sid/icd-10-cm",
-          "code": "C80.1",
-          "display": "Malignant (primary) neoplasm, unspecified"
-        }
-      ],
-      "text": "Cancer (CMS/HCC)"
-    }
-  ],
-  "dosageInstruction": [
+        "count" : 5,
+        "duration" : 60,
+        "durationUnit" : "min",
+        "frequency" : 1,
+        "period" : 24,
+        "periodUnit" : "h"
+      },
+      "code" : {
+        "text" : "Every 24 hours"
+      }
+    },
+    "asNeededBoolean" : false,
+    "route" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "418114005",
+        "display" : "Intravenous central route (qualifier value)"
+      }]
+    },
+    "doseAndRate" : [{
+      "type" : {
+        "text" : "admin-amount"
+      },
+      "doseQuantity" : {
+        "value" : 68,
+        "unit" : "milligram",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      }
+    },
     {
-      "text": "68 mg (100 mg/m2 x 0.68 m2 Treatment plan actual BSA), Intravenous, for 60 Minutes, Every 24 hours, First dose on Tue 11/19/13 at 0000, For 5 doses\nGive after CISplatin and  mannitol.",
-      "timing": {
-        "repeat": {
-          "boundsPeriod": {
-            "start": "2020-07-22T16:58:05Z",
-            "end": "2020-07-22T16:58:05Z"
-          },
-          "count": 5,
-          "duration": 60,
-          "durationUnit": "min",
-          "frequency": 1,
-          "period": 24,
-          "periodUnit": "h"
-        },
-        "code": {
-          "text": "Every 24 hours"
-        }
+      "type" : {
+        "text" : "ordered"
       },
-      "asNeededBoolean": false,
-      "route": {
-        "coding": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "418114005",
-            "display": "Intravenous central route (qualifier value)"
-          }
-        ]
-      },
-      "doseAndRate": [
-        {
-          "type": {
-            "text": "admin-amount"
-          },
-          "doseQuantity": {
-            "value": 68,
-            "unit": "milligram",
-            "system": "http://unitsofmeasure.org",
-            "code": "mg"
-          }
-        },
-        {
-          "type": {
-            "text": "ordered"
-          },
-          "doseQuantity": {
-            "value": 100,
-            "unit": "milligram per square meter",
-            "system": "http://unitsofmeasure.org",
-            "code": "mg/m2"
-          }
-        }
-      ]
-    }
-  ]
+      "doseQuantity" : {
+        "value" : 100,
+        "unit" : "milligram per square meter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg/m2"
+      }
+    }]
+  }]
 }

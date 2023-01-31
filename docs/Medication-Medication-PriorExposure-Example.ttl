@@ -7,7 +7,7 @@
 
 <http://fhir.nmdp.org/ig/cibmtr-reporting/Medication/Medication-PriorExposure-Example> a fhir:Medication;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "Medication-PriorExposure-Example"];
+  fhir:Resource.id [ fhir:value "Medication-PriorExposure-Example"]; # 
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prior-exposure-medication";
@@ -20,11 +20,11 @@
        fhir:Coding.code [ fhir:value "rc_99999" ];
        fhir:Coding.display [ fhir:value "99999 My Transplant Center" ]
      ]
-  ];
+  ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"Medication-PriorExposure-Example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication \"Medication-PriorExposure-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cibmtr-prior-exposure-medication.html\">CIBMTR Prior Exposure Medication</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.cibmtr.org/codesystem/transplant-center http://terminology.cibmtr.org/codesystem/transplant-center}\">http://terminology.cibmtr.org/codesystem/transplant-center</span></p></div><p><b>code</b>: mogamulizumab <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#2054068; <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#2054084 \"mogamulizumab Injection [Poteligeo]\"; <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#2054086 \"5 ML mogamulizumab-kpkc 4 MG/ML Injection [Poteligeo]\")</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>mogamulizumab <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#2054068; <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#2054084 \"mogamulizumab Injection [Poteligeo]\"; <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#2054086 \"5 ML mogamulizumab-kpkc 4 MG/ML Injection [Poteligeo]\")</span></td><td>4 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/0.035 milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mL = 'mL')</span></td></tr></table></div>"
-  ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"Medication-PriorExposure-Example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;Medication-PriorExposure-Example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cibmtr-prior-exposure-medication.html\">CIBMTR Prior Exposure Medication</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.cibmtr.org/codesystem/transplant-center http://terminology.cibmtr.org/codesystem/transplant-center}\">http://terminology.cibmtr.org/codesystem/transplant-center</span></p></div><p><b>code</b>: mogamulizumab <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#2054068; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#2054084 &quot;mogamulizumab Injection [Poteligeo]&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#2054086 &quot;5 ML mogamulizumab-kpkc 4 MG/ML Injection [Poteligeo]&quot;)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>mogamulizumab <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#2054068; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#2054084 &quot;mogamulizumab Injection [Poteligeo]&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#2054086 &quot;5 ML mogamulizumab-kpkc 4 MG/ML Injection [Poteligeo]&quot;)</span></td><td>4 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/0.035 milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mL = 'mL')</span></td></tr></table></div>"
+  ]; # 
   fhir:Medication.code [
      fhir:CodeableConcept.coding [
        fhir:index 0;
@@ -43,7 +43,7 @@
        fhir:Coding.display [ fhir:value "5 ML mogamulizumab-kpkc 4 MG/ML Injection [Poteligeo]" ]
      ];
      fhir:CodeableConcept.text [ fhir:value "mogamulizumab" ]
-  ];
+  ]; # 
   fhir:Medication.ingredient [
      fhir:index 0;
      fhir:Medication.ingredient.itemCodeableConcept [
@@ -79,7 +79,7 @@
          fhir:Quantity.code [ fhir:value "mL" ]
        ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

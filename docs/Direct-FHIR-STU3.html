@@ -182,138 +182,138 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   
   <div xmlns="http://www.w3.org/1999/xhtml">
     <a name="using-directfhir-stu3"> </a>
-    <h3>Using the CIBMTR Direct FHIR API</h3>
-    <p> Note: While this IG is focused on FHIR R4, the current Direct FHIR API only supports FHIR
+    <ns0:h3 xmlns:ns0="http://www.w3.org/1999/xhtml">Using the CIBMTR Direct FHIR API</ns0:h3>
+    <ns1:p xmlns:ns1="http://www.w3.org/1999/xhtml"> Note: While this IG is focused on FHIR R4, the current Direct FHIR API only supports FHIR
         STU3 reources. This document describes how to submit FHIR data electronically using
         available CIBMTR REST APIs. Data for each patient is submitted using the HL7 FHIR exchange
         protocol in JSON or XML format. The REST APIs are available for integration into a custom
-        client architecture or for submission using a manual client such as Postman. </p>
+        client architecture or for submission using a manual client such as Postman. </ns1:p>
     <a name="conform-uscore"> </a>
-    <h4>Conformance to the US Core Implementation Guide</h4>
-    <p>In general, FHIR resources should conform to the US Core Implementation Guide and associated
+    <ns2:h4 xmlns:ns2="http://www.w3.org/1999/xhtml">Conformance to the US Core Implementation Guide</ns2:h4>
+    <ns3:p xmlns:ns3="http://www.w3.org/1999/xhtml">In general, FHIR resources should conform to the US Core Implementation Guide and associated
         profiles. The Patient FHIR resource is a special exception in that CIBMTR removes any
         Personally Identifiable Information (PII) from the Patient resource. The Direct FHIR Service
         API can accept multiple different FHIR resource types, however, only lab data for form 2402
         is implemented to fully prepopulate questions on a form. Submitting lab data for form 2402
         only requires implementation of the Observation FHIR resource. Additional data types and
-        form questions will be supported in CY ’21.</p>
+        form questions will be supported in CY ’21.</ns3:p>
     <a name="process-submitting"> </a>
-    <h4>Process for submitting data</h4>
-    <p>The process for submitting production data to CIBMTR includes three sequential steps:</p>
-    <ol>
-        <li>Request CIBMTR Direct FHIR Service API Access Credentials</li>
-        <li>Submit test data using the CIBMTR test API endpoint URLs</li>
-        <li>Submit production data with the CIBMTR production API endpoint URLs</li>
-    </ol>
-    <p>Once electronic data has been submitted via the Direct FHIR Service API, the Data Manager can
+    <ns4:h4 xmlns:ns4="http://www.w3.org/1999/xhtml">Process for submitting data</ns4:h4>
+    <ns5:p xmlns:ns5="http://www.w3.org/1999/xhtml">The process for submitting production data to CIBMTR includes three sequential steps:</ns5:p>
+    <ns6:ol xmlns:ns6="http://www.w3.org/1999/xhtml">
+        <ns7:li xmlns:ns7="http://www.w3.org/1999/xhtml">Request CIBMTR Direct FHIR Service API Access Credentials</ns7:li>
+        <ns8:li xmlns:ns8="http://www.w3.org/1999/xhtml">Submit test data using the CIBMTR test API endpoint URLs</ns8:li>
+        <ns9:li xmlns:ns9="http://www.w3.org/1999/xhtml">Submit production data with the CIBMTR production API endpoint URLs</ns9:li>
+    </ns6:ol>
+    <ns10:p xmlns:ns10="http://www.w3.org/1999/xhtml">Once electronic data has been submitted via the Direct FHIR Service API, the Data Manager can
         login to the FormsNet interface to complete the form. Within the form, there will be
         clarifying contextual questions that provide important information for associating the dates
-        of the labs with the key dates of interest on the form. </p>
+        of the labs with the key dates of interest on the form. </ns10:p>
     <a name="access-credentials"> </a>
-    <h4>Access Credentials</h4>
-    <p>The CIBMTR relationship manager or technical lead can initiate a request for API credentials.
+    <ns11:h4 xmlns:ns11="http://www.w3.org/1999/xhtml">Access Credentials</ns11:h4>
+    <ns12:p xmlns:ns12="http://www.w3.org/1999/xhtml">The CIBMTR relationship manager or technical lead can initiate a request for API credentials.
         CIBMTR uses OAuth2.0/OpenID (OIDC) for authentication and access management. This process
         involves making a request to a third-party authorization server to receive a token. The
         token is then passed to the CIBMTR API URL in the request header. The following information
-        will be provided by CIBMTR and is necessary for requesting an authorization token:</p>
-    <ul>
-        <li>CIBMTR Service Account Username</li>
-        <li>CIBMTR Service Account Password</li>
-        <li>Application Client ID</li>
-        <li>Application Client Secret</li>
-        <li>Application Scope</li>
-    </ul>
-    <p>Different sets of credentials will be provided for the CIBMTR test and production
-        environments.</p>
-    <p>To request an authentication token for the test environment, the third-party authorization
-        server URL is: </p>
-    <p><code>POST https://nmdp.oktapreview.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token </code></p>
-    <p>or:</p>
-    <p><code>POST https://nmdp.oktapreview.com/oauth2/aus3ck6q30qmOdpMb1t7/v1/token </code></p> 
-    <p>To request an
+        will be provided by CIBMTR and is necessary for requesting an authorization token:</ns12:p>
+    <ns13:ul xmlns:ns13="http://www.w3.org/1999/xhtml">
+        <ns14:li xmlns:ns14="http://www.w3.org/1999/xhtml">CIBMTR Service Account Username</ns14:li>
+        <ns15:li xmlns:ns15="http://www.w3.org/1999/xhtml">CIBMTR Service Account Password</ns15:li>
+        <ns16:li xmlns:ns16="http://www.w3.org/1999/xhtml">Application Client ID</ns16:li>
+        <ns17:li xmlns:ns17="http://www.w3.org/1999/xhtml">Application Client Secret</ns17:li>
+        <ns18:li xmlns:ns18="http://www.w3.org/1999/xhtml">Application Scope</ns18:li>
+    </ns13:ul>
+    <ns19:p xmlns:ns19="http://www.w3.org/1999/xhtml">Different sets of credentials will be provided for the CIBMTR test and production
+        environments.</ns19:p>
+    <ns20:p xmlns:ns20="http://www.w3.org/1999/xhtml">To request an authentication token for the test environment, the third-party authorization
+        server URL is: </ns20:p>
+    <ns21:p xmlns:ns21="http://www.w3.org/1999/xhtml"><ns22:code xmlns:ns22="http://www.w3.org/1999/xhtml">POST https://nmdp.oktapreview.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token </ns22:code></ns21:p>
+    <ns23:p xmlns:ns23="http://www.w3.org/1999/xhtml">or:</ns23:p>
+    <ns24:p xmlns:ns24="http://www.w3.org/1999/xhtml"><ns25:code xmlns:ns25="http://www.w3.org/1999/xhtml">POST https://nmdp.oktapreview.com/oauth2/aus3ck6q30qmOdpMb1t7/v1/token </ns25:code></ns24:p> 
+    <ns26:p xmlns:ns26="http://www.w3.org/1999/xhtml">To request an
     authentication token for the production environment, the third-party authorization server URL
-    is:</p> 
-    <p><code> POST https://nmdp.okta.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token </code></p> 
-    <p>or:</p>
-    <p><code>POST https://nmdp.okta.com/oauth2/aus3ck6q30qmOdpMb1t7/v1/token </code></p>
-    <p>The header of the POST request to the authorization server must have an authorization string.
+    is:</ns26:p> 
+    <ns27:p xmlns:ns27="http://www.w3.org/1999/xhtml"><ns28:code xmlns:ns28="http://www.w3.org/1999/xhtml"> POST https://nmdp.okta.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token </ns28:code></ns27:p> 
+    <ns29:p xmlns:ns29="http://www.w3.org/1999/xhtml">or:</ns29:p>
+    <ns30:p xmlns:ns30="http://www.w3.org/1999/xhtml"><ns31:code xmlns:ns31="http://www.w3.org/1999/xhtml">POST https://nmdp.okta.com/oauth2/aus3ck6q30qmOdpMb1t7/v1/token </ns31:code></ns30:p>
+    <ns32:p xmlns:ns32="http://www.w3.org/1999/xhtml">The header of the POST request to the authorization server must have an authorization string.
         The string is constructed by base64 encoding the Application Client ID, a colon, and the
-        Application Client Secret. The encoded string is then appended to the word “Basic ”. </p>
-    <p/>
-    <code>
+        Application Client Secret. The encoded string is then appended to the word “Basic ”. </ns32:p>
+    <ns33:p xmlns:ns33="http://www.w3.org/1999/xhtml"/>
+    <ns34:code xmlns:ns34="http://www.w3.org/1999/xhtml">
         const auth_string = "Basic " + base64("&lt;Application Client ID&gt;" + ":" + "&lt;Application Client Secret&gt;")
-    </code>
-    <p>An example of the header parameters for the POST request to the authorization server is shown
+    </ns34:code>
+    <ns35:p xmlns:ns35="http://www.w3.org/1999/xhtml">An example of the header parameters for the POST request to the authorization server is shown
         in Figure 1. In the figure, the authorization string is blacked out. Notice the space
-        between the base 64 encoded string and the string prefix, “Basic”.</p>
+        between the base 64 encoded string and the string prefix, “Basic”.</ns35:p>
     <a name="fig1"> </a>
-    <img src="dfhir_r3_figure01.png" alt="example of the header parameters for the POST request to the authorization server" width="50%" height="50%" style="border:1px solid black"/>
+    <ns36:img xmlns:ns36="http://www.w3.org/1999/xhtml" src="dfhir_r3_figure01.png" alt="example of the header parameters for the POST request to the authorization server" width="50%" height="50%" style="border:1px solid black"/>
  
-    <p>"FIGURE1" Figure 1: Example header information for the POST request to the authorization
+    <ns37:p xmlns:ns37="http://www.w3.org/1999/xhtml">"FIGURE1" Figure 1: Example header information for the POST request to the authorization
         server Figure 2 shows the required fields in the body of the POST request to the
-        authorization server API. </p>
-    <p>The value for the “username” key should be the CIBMTR Service Account Username provided by
+        authorization server API. </ns37:p>
+    <ns38:p xmlns:ns38="http://www.w3.org/1999/xhtml">The value for the “username” key should be the CIBMTR Service Account Username provided by
         CIBMTR. The value for the “password” key should be the CIBMTR Service Account Password. The
         “grant_type” key and the “scope” key should have the same values as shown in Figure 2. The
         response to the POST request will return a JSON object that includes a base64 encoded token.
-        The token can be a long character string (over 1000 chars).</p>
+        The token can be a long character string (over 1000 chars).</ns38:p>
     
     <a name="fig2"> </a>
-    <img src="dfhir_r3_figure02.png" alt="Example body of the POST request to the authorization server API" width="50%" height="50%" style="border:1px solid black"/>
+    <ns39:img xmlns:ns39="http://www.w3.org/1999/xhtml" src="dfhir_r3_figure02.png" alt="Example body of the POST request to the authorization server API" width="50%" height="50%" style="border:1px solid black"/>
 
-    <p>"FIGURE2" Figure 2: Example body of the POST request to the authorization server API</p>
-    <p>Once the token has been received, a request to the CIBMTR Direct FHIR Service API can be
+    <ns40:p xmlns:ns40="http://www.w3.org/1999/xhtml">"FIGURE2" Figure 2: Example body of the POST request to the authorization server API</ns40:p>
+    <ns41:p xmlns:ns41="http://www.w3.org/1999/xhtml">Once the token has been received, a request to the CIBMTR Direct FHIR Service API can be
         made. Tokens are valid for 30 minutes in the production environment, but last up to 24 hours
         in the test environment. [b]Applications must cache and re-use tokens until they are about
         to expire because Okta rate limits requests for new tokens. One workable strategy is to
-        obtain a new token every 25 minutes.</p>
-    <p>To make a request to the CIBMTR Direct FHIR Backend API, include the token in the header as
+        obtain a new token every 25 minutes.</ns41:p>
+    <ns42:p xmlns:ns42="http://www.w3.org/1999/xhtml">To make a request to the CIBMTR Direct FHIR Backend API, include the token in the header as
         the authorization key value of the request along with the word “Bearer ” in front of it, as
-        shown in shown in Figure 3.</p>
+        shown in shown in Figure 3.</ns42:p>
 
     <a name="fig3"> </a>
-    <img src="dfhir_r3_figure03.png" alt="Example CIBMTR Direct FHIR API request using a bearer authorization token in the header of the request" width="50%" height="50%" style="border:1px solid black"/>
+    <ns43:img xmlns:ns43="http://www.w3.org/1999/xhtml" src="dfhir_r3_figure03.png" alt="Example CIBMTR Direct FHIR API request using a bearer authorization token in the header of the request" width="50%" height="50%" style="border:1px solid black"/>
 
-    <p>"FIGURE3" Figure 3: Example CIBMTR Direct FHIR API request using a bearer authorization token
-        in the header of the request </p>
+    <ns44:p xmlns:ns44="http://www.w3.org/1999/xhtml">"FIGURE3" Figure 3: Example CIBMTR Direct FHIR API request using a bearer authorization token
+        in the header of the request </ns44:p>
     <a name="workflow"> </a>
-    <h4>Recommended Data Submission Workflow</h4>
-    <p>Submitting data to CIBMTR via the Direct FHIR Service API involves a three-step process for
-        each patient:</p>
+    <ns45:h4 xmlns:ns45="http://www.w3.org/1999/xhtml">Recommended Data Submission Workflow</ns45:h4>
+    <ns46:p xmlns:ns46="http://www.w3.org/1999/xhtml">Submitting data to CIBMTR via the Direct FHIR Service API involves a three-step process for
+        each patient:</ns46:p>
     <a name="step1"> </a>
-    <h5>Step 1: Register patient and receive CRID</h5>
-    <p>Register a patient with CIBMTR and receive a CIBMTR Recipient Identifier (CRID) to use as a
+    <ns47:h5 xmlns:ns47="http://www.w3.org/1999/xhtml">Step 1: Register patient and receive CRID</ns47:h5>
+    <ns48:p xmlns:ns48="http://www.w3.org/1999/xhtml">Register a patient with CIBMTR and receive a CIBMTR Recipient Identifier (CRID) to use as a
         patient reference for all subsequent FHIR data submissions. CIBMTR exposes a special service
         API to handle the submission of personally identifiable information (PII). Data submitted
         via the CRID Service API has special protections and exposure within CIBMTR to avoid
         unnecessary handling of PII. For all subsequent FHIR data submissions, the CRID is used to
         identify the patient and any PII is removed from FHIR resources before being stored on
-        CIBMTR FHIR servers.</p>
-    <p>The CRID Service API uses a PUT request at the following case-sensitive endpoint URLs: Test
-        Environment:</p>
-    <code> PUT https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/CRID </code>
-    <p>Production Environment:</p>
-    <code> PUT https://api.nmdp.org/cibmtrehrclientbackend/v1/CRID </code>
-    <p>The authorization key and bearer token must be included in the request as mentioned in the
+        CIBMTR FHIR servers.</ns48:p>
+    <ns49:p xmlns:ns49="http://www.w3.org/1999/xhtml">The CRID Service API uses a PUT request at the following case-sensitive endpoint URLs: Test
+        Environment:</ns49:p>
+    <ns50:code xmlns:ns50="http://www.w3.org/1999/xhtml"> PUT https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/CRID </ns50:code>
+    <ns51:p xmlns:ns51="http://www.w3.org/1999/xhtml">Production Environment:</ns51:p>
+    <ns52:code xmlns:ns52="http://www.w3.org/1999/xhtml"> PUT https://api.nmdp.org/cibmtrehrclientbackend/v1/CRID </ns52:code>
+    <ns53:p xmlns:ns53="http://www.w3.org/1999/xhtml">The authorization key and bearer token must be included in the request as mentioned in the
         previous section. For the body of the PUT request, the following data fields are
-        requested:</p>
-    <p>Five required attributes</p>
-    <ul>
-        <li>CCN (5digit)</li>
-        <li>First and last name</li>
-        <li>Birthdate (YYYY-MM-DD)</li>
-        <li>Gender (M/F)</li>
-    </ul> Optional attributes (possibly present) <ul>
-        <li>SSN (###-###-####)</li>
-        <li>Mother’s maiden name</li>
-        <li>Race (race code)</li>
-        <li>Ethnicity (ethnicity code)</li>
-        <li>NMDP RID</li>
-        <li>EBMT CIC + ID</li>
-        <li>CIBMTR Team + IUBMID</li>
-    </ul>
-    <p>Complete list of payload options for CRID registration</p>
-    <pre> 
+        requested:</ns53:p>
+    <ns54:p xmlns:ns54="http://www.w3.org/1999/xhtml">Five required attributes</ns54:p>
+    <ns55:ul xmlns:ns55="http://www.w3.org/1999/xhtml">
+        <ns56:li xmlns:ns56="http://www.w3.org/1999/xhtml">CCN (5digit)</ns56:li>
+        <ns57:li xmlns:ns57="http://www.w3.org/1999/xhtml">First and last name</ns57:li>
+        <ns58:li xmlns:ns58="http://www.w3.org/1999/xhtml">Birthdate (YYYY-MM-DD)</ns58:li>
+        <ns59:li xmlns:ns59="http://www.w3.org/1999/xhtml">Gender (M/F)</ns59:li>
+    </ns55:ul> Optional attributes (possibly present) <ns60:ul xmlns:ns60="http://www.w3.org/1999/xhtml">
+        <ns61:li xmlns:ns61="http://www.w3.org/1999/xhtml">SSN (###-###-####)</ns61:li>
+        <ns62:li xmlns:ns62="http://www.w3.org/1999/xhtml">Mother’s maiden name</ns62:li>
+        <ns63:li xmlns:ns63="http://www.w3.org/1999/xhtml">Race (race code)</ns63:li>
+        <ns64:li xmlns:ns64="http://www.w3.org/1999/xhtml">Ethnicity (ethnicity code)</ns64:li>
+        <ns65:li xmlns:ns65="http://www.w3.org/1999/xhtml">NMDP RID</ns65:li>
+        <ns66:li xmlns:ns66="http://www.w3.org/1999/xhtml">EBMT CIC + ID</ns66:li>
+        <ns67:li xmlns:ns67="http://www.w3.org/1999/xhtml">CIBMTR Team + IUBMID</ns67:li>
+    </ns60:ul>
+    <ns68:p xmlns:ns68="http://www.w3.org/1999/xhtml">Complete list of payload options for CRID registration</ns68:p>
+    <ns69:pre xmlns:ns69="http://www.w3.org/1999/xhtml"> 
     { "ccn": "string", 
       "patient": { 
           "birthDate": "string", 
@@ -331,276 +331,276 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           "ethnicity": "string" 
         } 
     }
-    </pre>
+    </ns69:pre>
     <a name="race"> </a>
-    <h6>Race Codes</h6>
-    <table>
-        <tr>
-            <th>Race Value Code</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>1002-5</td>
-            <td>American Indian or Alaska Native</td>
-        </tr>
-        <tr>
-            <td>2028-9</td>
-            <td>Asian</td>
-        </tr>
-        <tr>
-            <td>2054-5</td>
-            <td>Black or African American</td>
-        </tr>
-        <tr>
-            <td>2076-8</td>
-            <td>Native Hawaiian or Other Pacific Islander</td>
-        </tr>
-        <tr>
-            <td>2106-3</td>
-            <td>White</td>
-        </tr>
-        <tr>
-            <td>ASKU</td>
-            <td>Not Reported</td>
-        </tr>
-        <tr>
-            <td>UNK</td>
-            <td>Unknown</td>
-        </tr>
-    </table>
+    <ns70:h6 xmlns:ns70="http://www.w3.org/1999/xhtml">Race Codes</ns70:h6>
+    <ns71:table xmlns:ns71="http://www.w3.org/1999/xhtml">
+        <ns72:tr xmlns:ns72="http://www.w3.org/1999/xhtml">
+            <ns73:th xmlns:ns73="http://www.w3.org/1999/xhtml">Race Value Code</ns73:th>
+            <ns74:th xmlns:ns74="http://www.w3.org/1999/xhtml">Description</ns74:th>
+        </ns72:tr>
+        <ns75:tr xmlns:ns75="http://www.w3.org/1999/xhtml">
+            <ns76:td xmlns:ns76="http://www.w3.org/1999/xhtml">1002-5</ns76:td>
+            <ns77:td xmlns:ns77="http://www.w3.org/1999/xhtml">American Indian or Alaska Native</ns77:td>
+        </ns75:tr>
+        <ns78:tr xmlns:ns78="http://www.w3.org/1999/xhtml">
+            <ns79:td xmlns:ns79="http://www.w3.org/1999/xhtml">2028-9</ns79:td>
+            <ns80:td xmlns:ns80="http://www.w3.org/1999/xhtml">Asian</ns80:td>
+        </ns78:tr>
+        <ns81:tr xmlns:ns81="http://www.w3.org/1999/xhtml">
+            <ns82:td xmlns:ns82="http://www.w3.org/1999/xhtml">2054-5</ns82:td>
+            <ns83:td xmlns:ns83="http://www.w3.org/1999/xhtml">Black or African American</ns83:td>
+        </ns81:tr>
+        <ns84:tr xmlns:ns84="http://www.w3.org/1999/xhtml">
+            <ns85:td xmlns:ns85="http://www.w3.org/1999/xhtml">2076-8</ns85:td>
+            <ns86:td xmlns:ns86="http://www.w3.org/1999/xhtml">Native Hawaiian or Other Pacific Islander</ns86:td>
+        </ns84:tr>
+        <ns87:tr xmlns:ns87="http://www.w3.org/1999/xhtml">
+            <ns88:td xmlns:ns88="http://www.w3.org/1999/xhtml">2106-3</ns88:td>
+            <ns89:td xmlns:ns89="http://www.w3.org/1999/xhtml">White</ns89:td>
+        </ns87:tr>
+        <ns90:tr xmlns:ns90="http://www.w3.org/1999/xhtml">
+            <ns91:td xmlns:ns91="http://www.w3.org/1999/xhtml">ASKU</ns91:td>
+            <ns92:td xmlns:ns92="http://www.w3.org/1999/xhtml">Not Reported</ns92:td>
+        </ns90:tr>
+        <ns93:tr xmlns:ns93="http://www.w3.org/1999/xhtml">
+            <ns94:td xmlns:ns94="http://www.w3.org/1999/xhtml">UNK</ns94:td>
+            <ns95:td xmlns:ns95="http://www.w3.org/1999/xhtml">Unknown</ns95:td>
+        </ns93:tr>
+    </ns71:table>
     <a name="ethnicity"> </a>
-    <h6>Ethnicity Codes</h6>
-    <table>
-        <tr>
-            <th>Ethnicity Value Code</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>2135-2</td>
-            <td>Hispanic or Latino</td>
-        </tr>
-        <tr>
-            <td>2186-5</td>
-            <td>Non Hispanic or Latino</td>
-        </tr>
-        <tr>
-            <td>UNK</td>
-            <td>Unknown</td>
-        </tr>
-    </table>
-    <p>The CRID Service API is available as a PUT request. Consequently, submitting the same data
+    <ns96:h6 xmlns:ns96="http://www.w3.org/1999/xhtml">Ethnicity Codes</ns96:h6>
+    <ns97:table xmlns:ns97="http://www.w3.org/1999/xhtml">
+        <ns98:tr xmlns:ns98="http://www.w3.org/1999/xhtml">
+            <ns99:th xmlns:ns99="http://www.w3.org/1999/xhtml">Ethnicity Value Code</ns99:th>
+            <ns100:th xmlns:ns100="http://www.w3.org/1999/xhtml">Description</ns100:th>
+        </ns98:tr>
+        <ns101:tr xmlns:ns101="http://www.w3.org/1999/xhtml">
+            <ns102:td xmlns:ns102="http://www.w3.org/1999/xhtml">2135-2</ns102:td>
+            <ns103:td xmlns:ns103="http://www.w3.org/1999/xhtml">Hispanic or Latino</ns103:td>
+        </ns101:tr>
+        <ns104:tr xmlns:ns104="http://www.w3.org/1999/xhtml">
+            <ns105:td xmlns:ns105="http://www.w3.org/1999/xhtml">2186-5</ns105:td>
+            <ns106:td xmlns:ns106="http://www.w3.org/1999/xhtml">Non Hispanic or Latino</ns106:td>
+        </ns104:tr>
+        <ns107:tr xmlns:ns107="http://www.w3.org/1999/xhtml">
+            <ns108:td xmlns:ns108="http://www.w3.org/1999/xhtml">UNK</ns108:td>
+            <ns109:td xmlns:ns109="http://www.w3.org/1999/xhtml">Unknown</ns109:td>
+        </ns107:tr>
+    </ns97:table>
+    <ns110:p xmlns:ns110="http://www.w3.org/1999/xhtml">The CRID Service API is available as a PUT request. Consequently, submitting the same data
         twice does not re-register the patient, but rather will retrieve the same CRID number
         registered previously. The CRID Service API will attempt to perform partial “fuzzy” matches
         based on data submitted to avoid re-registering the same patient with two different CRID
-        numbers.</p>
-    <p>The response payload of the CRID Service API is a JSON object that contains the CRID number
+        numbers.</ns110:p>
+    <ns111:p xmlns:ns111="http://www.w3.org/1999/xhtml">The response payload of the CRID Service API is a JSON object that contains the CRID number
         (lower pane in Figure 4). The CRID number is then used for all other data references to the
-        registered patient.</p>
-    <p>"FIGURE4"</p>
+        registered patient.</ns111:p>
+    <ns112:p xmlns:ns112="http://www.w3.org/1999/xhtml">"FIGURE4"</ns112:p>
     <a name="step2"> </a>
-    <h5>Step 2: Submit Patient FHIR Resource</h5>
-    <p>The Patient FHIR resource must be submitted before any other FHIR resources3. the Patient
+    <ns113:h5 xmlns:ns113="http://www.w3.org/1999/xhtml">Step 2: Submit Patient FHIR Resource</ns113:h5>
+    <ns114:p xmlns:ns114="http://www.w3.org/1999/xhtml">The Patient FHIR resource must be submitted before any other FHIR resources3. the Patient
         FHIR resource ID is part of the response to the Patient POST request. The resource ID is
-        unique to the 3 http://hl7.org/fhir/STU3/patient.html</p>
+        unique to the 3 http://hl7.org/fhir/STU3/patient.html</ns114:p>
     
     <a name="fig4"> </a>
-    <img src="dfhir_r3_figure04.png" alt="Example CRID registration PUT request with JSON body and response payloads" width="50%" height="50%" style="border:1px solid black"/>
+    <ns115:img xmlns:ns115="http://www.w3.org/1999/xhtml" src="dfhir_r3_figure04.png" alt="Example CRID registration PUT request with JSON body and response payloads" width="50%" height="50%" style="border:1px solid black"/>
 
-    <p>Figure 4: Example CRID registration PUT request with JSON body payload (top pane) and
-        response payload (bottom pane)</p>
-    <p>CIBMTR FHIR server and is used to reference the Patient subject on all subsequently submitted
+    <ns116:p xmlns:ns116="http://www.w3.org/1999/xhtml">Figure 4: Example CRID registration PUT request with JSON body payload (top pane) and
+        response payload (bottom pane)</ns116:p>
+    <ns117:p xmlns:ns117="http://www.w3.org/1999/xhtml">CIBMTR FHIR server and is used to reference the Patient subject on all subsequently submitted
         FHIR resources. The resource ID is assigned by the FHIR server and is different from the
         Patient.identifier section of the FHIR resource. The Direct FHIR Service API uses a POST
-        request to submit a Patient resource at the following case-sensitive endpoint URLs:</p>
-    <table>
-        <tr>
-            <td>Test Environment</td>
-            <td><code>POST
-                https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Patient</code></td>
-        </tr>
-        <tr>
-            <td>Production Environment</td>
-            <td><code>POST https://api.nmdp.org/cibmtrehrclientbackend/v1/Patient</code></td>
-        </tr>
-    </table>
-    <p>The authorization key and bearer token must be included in the request as mentioned in the
+        request to submit a Patient resource at the following case-sensitive endpoint URLs:</ns117:p>
+    <ns118:table xmlns:ns118="http://www.w3.org/1999/xhtml">
+        <ns119:tr xmlns:ns119="http://www.w3.org/1999/xhtml">
+            <ns120:td xmlns:ns120="http://www.w3.org/1999/xhtml">Test Environment</ns120:td>
+            <ns121:td xmlns:ns121="http://www.w3.org/1999/xhtml"><ns122:code xmlns:ns122="http://www.w3.org/1999/xhtml">POST
+                https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Patient</ns122:code></ns121:td>
+        </ns119:tr>
+        <ns123:tr xmlns:ns123="http://www.w3.org/1999/xhtml">
+            <ns124:td xmlns:ns124="http://www.w3.org/1999/xhtml">Production Environment</ns124:td>
+            <ns125:td xmlns:ns125="http://www.w3.org/1999/xhtml"><ns126:code xmlns:ns126="http://www.w3.org/1999/xhtml">POST https://api.nmdp.org/cibmtrehrclientbackend/v1/Patient</ns126:code></ns125:td>
+        </ns123:tr>
+    </ns118:table>
+    <ns127:p xmlns:ns127="http://www.w3.org/1999/xhtml">The authorization key and bearer token must be included in the request as mentioned in the
         previous section. FHIR JSON submissions should also include a “content-type” key in the
         header with value: “application/fhir+json”. The Patient FHIR resource usually contains the
         demographics data for the patient, however, since the demographics data is already submitted
         during the CRID registration process, there are only two primary components necessary in the
-        Patient FHIR resource: </p>
-    <ol>
-        <li>A security label within the “meta” section of the Patient resource must contain the
+        Patient FHIR resource: </ns127:p>
+    <ns128:ol xmlns:ns128="http://www.w3.org/1999/xhtml">
+        <ns129:li xmlns:ns129="http://www.w3.org/1999/xhtml">A security label within the “meta” section of the Patient resource must contain the
             CIBMTR Center Number (CCN) prepended with “rc_” and associated with the codesystem as
-            shown in Figure 5.</li>
-        <li>A CRID identifier reference within the “identifier” section of the Patient resource as
-            shown in Figure 5.</li>
-    </ol>
-    <p>PII information should be avoided as part of the Patient resource. However, the Direct FHIR
+            shown in Figure 5.</ns129:li>
+        <ns130:li xmlns:ns130="http://www.w3.org/1999/xhtml">A CRID identifier reference within the “identifier” section of the Patient resource as
+            shown in Figure 5.</ns130:li>
+    </ns128:ol>
+    <ns131:p xmlns:ns131="http://www.w3.org/1999/xhtml">PII information should be avoided as part of the Patient resource. However, the Direct FHIR
         Service API will remove PII information, including any that might be contained in “text” or
         other sections of the resource before storing it on the FHIR server. The response after
         submitting a Patient resource request, indicates how the Patient resource is represented on
         the CIBMTR FHIR server (see Figure 6). The response JSON object has an “id” that is used to
         reference the Patient resource (circled in red in Figure 6). There is a new security label
         that indicates that the resource has been through a redaction process to remove any PII that
-        may have been submitted with the Patient resource.</p>
+        may have been submitted with the Patient resource.</ns131:p>
 
-    <p><code> GET https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Patient?
+    <ns132:p xmlns:ns132="http://www.w3.org/1999/xhtml"><ns133:code xmlns:ns133="http://www.w3.org/1999/xhtml"> GET https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Patient?
         _security=http://terminology.cibmtr.org/codesystem/transplant-center%7Crc_&lt;CCN&gt;&amp;
-        identifier=&lt;CRID&gt; </code></p>
+        identifier=&lt;CRID&gt; </ns133:code></ns132:p>
 
-    <p> The Patient resource ID is necessary for submitting other FHIR resources to the Direct FHIR
+    <ns134:p xmlns:ns134="http://www.w3.org/1999/xhtml"> The Patient resource ID is necessary for submitting other FHIR resources to the Direct FHIR
         Service API, but if the ID for a Patient resource previously submitted is not known, the
         following GET request can be submitted to the API to retrieve the Patient resource for a
-        given CRID: </p>
-    <p>Where the &lt;CCN&gt; should be replaced with the associated CCN and the &lt;CRID&gt;
-        replaced with the CRID number.</p>
+        given CRID: </ns134:p>
+    <ns135:p xmlns:ns135="http://www.w3.org/1999/xhtml">Where the &lt;CCN&gt; should be replaced with the associated CCN and the &lt;CRID&gt;
+        replaced with the CRID number.</ns135:p>
     
     
     <a name="fig5"> </a>
-    <img src="dfhir_r3_figure05.png" alt="Example POST request to submit a Patient FHIR resource and the required FHIR sections in the body of the request" width="50%" height="50%" style="border:1px solid black"/>
+    <ns136:img xmlns:ns136="http://www.w3.org/1999/xhtml" src="dfhir_r3_figure05.png" alt="Example POST request to submit a Patient FHIR resource and the required FHIR sections in the body of the request" width="50%" height="50%" style="border:1px solid black"/>
 
-    <p>Figure 5: Example POST request to submit a Patient FHIR resource and the required FHIR
-        sections in the body of the request</p>
+    <ns137:p xmlns:ns137="http://www.w3.org/1999/xhtml">Figure 5: Example POST request to submit a Patient FHIR resource and the required FHIR
+        sections in the body of the request</ns137:p>
     
     <a name="fig6"> </a>
-    <img src="dfhir_r3_figure06.png" alt="Example FHIR Patient submission response with the Patient resource ID assigned by the FHIR server" width="50%" height="50%" style="border:1px solid black"/>
+    <ns138:img xmlns:ns138="http://www.w3.org/1999/xhtml" src="dfhir_r3_figure06.png" alt="Example FHIR Patient submission response with the Patient resource ID assigned by the FHIR server" width="50%" height="50%" style="border:1px solid black"/>
 
-    <p>Figure 6: Example FHIR Patient submission response with the Patient resource ID assigned by
-        the FHIR server </p>
+    <ns139:p xmlns:ns139="http://www.w3.org/1999/xhtml">Figure 6: Example FHIR Patient submission response with the Patient resource ID assigned by
+        the FHIR server </ns139:p>
     <a name="step3"> </a>
-    <h5> Step 3: Submit Observation FHIR Resources </h5> The Direct FHIR Service API uses a POST
+    <ns140:h5 xmlns:ns140="http://www.w3.org/1999/xhtml"> Step 3: Submit Observation FHIR Resources </ns140:h5> The Direct FHIR Service API uses a POST
     request to submit an Observation resource at the following case-sensitive endpoint URLs4: Test
-    Environment Production Environment <table>
-        <tr>
-            <td>Test Environment</td>
-            <td><code>POST
-                    https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Observation</code></td>
-        </tr>
-        <tr>
-            <td>Production Environment</td>
-            <td><code>POST https://api.nmdp.org/cibmtrehrclientbackend/v1/Observation</code></td>
-        </tr>
-    </table>
-    <p>The authorization key and bearer token must be included in the request as mentioned in the
+    Environment Production Environment <ns141:table xmlns:ns141="http://www.w3.org/1999/xhtml">
+        <ns142:tr xmlns:ns142="http://www.w3.org/1999/xhtml">
+            <ns143:td xmlns:ns143="http://www.w3.org/1999/xhtml">Test Environment</ns143:td>
+            <ns144:td xmlns:ns144="http://www.w3.org/1999/xhtml"><ns145:code xmlns:ns145="http://www.w3.org/1999/xhtml">POST
+                    https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Observation</ns145:code></ns144:td>
+        </ns142:tr>
+        <ns146:tr xmlns:ns146="http://www.w3.org/1999/xhtml">
+            <ns147:td xmlns:ns147="http://www.w3.org/1999/xhtml">Production Environment</ns147:td>
+            <ns148:td xmlns:ns148="http://www.w3.org/1999/xhtml"><ns149:code xmlns:ns149="http://www.w3.org/1999/xhtml">POST https://api.nmdp.org/cibmtrehrclientbackend/v1/Observation</ns149:code></ns148:td>
+        </ns146:tr>
+    </ns141:table>
+    <ns150:p xmlns:ns150="http://www.w3.org/1999/xhtml">The authorization key and bearer token must be included in the request as mentioned in the
         previous section. FHIR JSON submissions should also include a “content-type” key in the
-        header with value: “application/fhir+json”.</p>
-    <p> CIBMTR is continually expanding support for data types to pre-populate CIBMTR forms.
+        header with value: “application/fhir+json”.</ns150:p>
+    <ns151:p xmlns:ns151="http://www.w3.org/1999/xhtml"> CIBMTR is continually expanding support for data types to pre-populate CIBMTR forms.
         Currently, laboratory values for form 2402 are supported. Laboratory data required to answer
-        the questions on form 2402 are communicated using the Observation FHIR resource. </p>
+        the questions on form 2402 are communicated using the Observation FHIR resource. </ns151:p>
     
        
     <a name="fig7"> </a>
-    <img src="dfhir_r3_figure07.png" alt="Table of labs currently supported by the CIBMTR for form prepopulation" width="50%" height="50%" style="border:1px solid black"/>
+    <ns152:img xmlns:ns152="http://www.w3.org/1999/xhtml" src="dfhir_r3_figure07.png" alt="Table of labs currently supported by the CIBMTR for form prepopulation" width="50%" height="50%" style="border:1px solid black"/>
 
-    <p>Figure 7: Table of labs currently supported by the CIBMTR for form prepopulation </p>
-    <p>An example of an Observation FHIR resource is shown in Figure 8. The basic structure of this
-        FHIR resource is the same for all the different types of labs. Important areas to note:</p>
-    <ul>
-        <li> “meta” Section – This is the metadata section of the resource and includes the same
+    <ns153:p xmlns:ns153="http://www.w3.org/1999/xhtml">Figure 7: Table of labs currently supported by the CIBMTR for form prepopulation </ns153:p>
+    <ns154:p xmlns:ns154="http://www.w3.org/1999/xhtml">An example of an Observation FHIR resource is shown in Figure 8. The basic structure of this
+        FHIR resource is the same for all the different types of labs. Important areas to note:</ns154:p>
+    <ns155:ul xmlns:ns155="http://www.w3.org/1999/xhtml">
+        <ns156:li xmlns:ns156="http://www.w3.org/1999/xhtml"> “meta” Section – This is the metadata section of the resource and includes the same
             security label as defined in the Patient resource. This security label is required and
-            should include the center specific CCN. </li>
-        <li> “category” Section – This section uses the HL7 Observation category code to enable
+            should include the center specific CCN. </ns156:li>
+        <ns157:li xmlns:ns157="http://www.w3.org/1999/xhtml"> “category” Section – This section uses the HL7 Observation category code to enable
             category-based searches. Currently, only data from the “laboratory” category is
-            supported. This section is optional.</li>
-        <li> “code” Section – The clinical concept code for the type of laboratory is included in
+            supported. This section is optional.</ns157:li>
+        <ns158:li xmlns:ns158="http://www.w3.org/1999/xhtml"> “code” Section – The clinical concept code for the type of laboratory is included in
             this section. For laboratory data, the primary clinical vocabulary is LOINC5. LOINC
             codes can have different specific applied concepts depending on a variety of lab
             parameters such as: collection method, measurement method, sub-types, and naming
             conventions. A list of candidate LOINC codes for each of the supported lab types is
             included Figure 7. This list is not comprehensive and choosing the correct code can
             require clinical interpretation, therefore, data managers are encouraged to get
-            clinician review of the selected LOINC code. This section is required. </li>
-        <li> “subject” Section – Each Observation resource must reference the patient associated
+            clinician review of the selected LOINC code. This section is required. </ns158:li>
+        <ns159:li xmlns:ns159="http://www.w3.org/1999/xhtml"> “subject” Section – Each Observation resource must reference the patient associated
             with the lab values. The subject.reference allows the Observation resource to point to
             the Patient using the Patient resource “id” using the “Patient/id” format. This section
-            is required. </li> <li>“effectiveDateTime” – This is a timezone aware datetime format of
-            the date of collection of the lab sample. This section is required. </li> <li>
+            is required. </ns159:li> <ns160:li xmlns:ns160="http://www.w3.org/1999/xhtml">“effectiveDateTime” – This is a timezone aware datetime format of
+            the date of collection of the lab sample. This section is required. </ns160:li> <ns161:li xmlns:ns161="http://www.w3.org/1999/xhtml">
             “valueQuantity” – The actual value of the measured lab is represented here as a
             floating-point number. The unit system and code are also specified. The list of
             preferred units is shown in Figure 7, however the CIBMTR data translation engine will
             convert the units after submission if necessary. The units system and code should be
-            UCUM. This section is required. </li>
-        <li> referenceRange” – If the high and low range for this lab are known, they can be defined
+            UCUM. This section is required. </ns161:li>
+        <ns162:li xmlns:ns162="http://www.w3.org/1999/xhtml"> referenceRange” – If the high and low range for this lab are known, they can be defined
             in this section using the same data format as the valueQuantity section. This section is
-            optional. </li>
-    </ul>
-    <p>To search for all Observation resources on the CIBMTR FHIR server for a given CRID, see the
-        below GET request API URL:</p>
-    <code>GET
-        https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Observation?subject:Patient.identifier=&lt;CRID&gt;</code>
+            optional. </ns162:li>
+    </ns155:ul>
+    <ns163:p xmlns:ns163="http://www.w3.org/1999/xhtml">To search for all Observation resources on the CIBMTR FHIR server for a given CRID, see the
+        below GET request API URL:</ns163:p>
+    <ns164:code xmlns:ns164="http://www.w3.org/1999/xhtml">GET
+        https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Observation?subject:Patient.identifier=&lt;CRID&gt;</ns164:code>
     
     <a name="fig8"> </a>
-    <img src="dfhir_r3_figure08.png" alt="Example POST request for submitting an Observation resource" width="50%" height="50%" style="border:1px solid black"/>
+    <ns165:img xmlns:ns165="http://www.w3.org/1999/xhtml" src="dfhir_r3_figure08.png" alt="Example POST request for submitting an Observation resource" width="50%" height="50%" style="border:1px solid black"/>
 
-    <p>Figure 8: Example POST request for submitting an Observation resource, including the
-        Observation resource format in the body of the request</p>
+    <ns166:p xmlns:ns166="http://www.w3.org/1999/xhtml">Figure 8: Example POST request for submitting an Observation resource, including the
+        Observation resource format in the body of the request</ns166:p>
     <a name="submitting"> </a>
-    <h4> Submitting CRID/FHIR Data Using the Postman Client </h4>
-    <p>The example API calls in this document are taken from the Postman API client. Postman allows
+    <ns167:h4 xmlns:ns167="http://www.w3.org/1999/xhtml"> Submitting CRID/FHIR Data Using the Postman Client </ns167:h4>
+    <ns168:p xmlns:ns168="http://www.w3.org/1999/xhtml">The example API calls in this document are taken from the Postman API client. Postman allows
         a user to manually configure and test connecting to and interacting with different APIs.
         Using Postman is a great way to understand an API, see the responses, and submit limited
         data manually. Once the API is well understood, then a custom client can be implemented
-        programmatically using any number of REST client libraries.</p>
-    <p> Postman includes the concept of a collection of requests. A collection file can be imported
+        programmatically using any number of REST client libraries.</ns168:p>
+    <ns169:p xmlns:ns169="http://www.w3.org/1999/xhtml"> Postman includes the concept of a collection of requests. A collection file can be imported
         into Postman. CIBMTR has a collection of requests that accomplish all the tasks in this user
-        guide. The collection is available upon request. </p>
+        guide. The collection is available upon request. </ns169:p>
    
    
    <a name="fig9"> </a>
-   <img src="dfhir_r3_figure09.png" alt="Example POSTMAN collection of requests available from CIBMTR" width="50%" height="50%" style="border:1px solid black"/>
+   <ns170:img xmlns:ns170="http://www.w3.org/1999/xhtml" src="dfhir_r3_figure09.png" alt="Example POSTMAN collection of requests available from CIBMTR" width="50%" height="50%" style="border:1px solid black"/>
 
-   <p>Figure 9: Example POSTMAN collection of requests available from CIBMTR</p>
-    <p> Postman also includes the option to run a pre-request script before making an API request.
+   <ns171:p xmlns:ns171="http://www.w3.org/1999/xhtml">Figure 9: Example POSTMAN collection of requests available from CIBMTR</ns171:p>
+    <ns172:p xmlns:ns172="http://www.w3.org/1999/xhtml"> Postman also includes the option to run a pre-request script before making an API request.
         The CIBMTR collection includes a pre-request script that can get the authentication token
         automatically each time a request is made. These and other simplifications of the process
         make Postman an excellent tool for exploring, developing, and using the CIBMTR Direct FHIR
-        Service APIs for submitting patient data. </p>
-    <p> NOTE: Requesting a new token for manual requests should not cause Okta to rate-limit these
+        Service APIs for submitting patient data. </ns172:p>
+    <ns173:p xmlns:ns173="http://www.w3.org/1999/xhtml"> NOTE: Requesting a new token for manual requests should not cause Okta to rate-limit these
         requests. However, automated systems must cache and re-use the authentication token to avoid
-        errors. Tokens are valid for 30 minutes in the production environment. </p>
+        errors. Tokens are valid for 30 minutes in the production environment. </ns173:p>
     <a name="faq"> </a>
-    <h4> Frequently Asked Questions </h4>
-    <dl>
-        <dt><b>Can multiple patients be registered at the same time using the CRID Service
-            API?</b></dt>
-        <dd>No, the API currently supports one CRID registration at a time.<br/><br/></dd> 
+    <ns174:h4 xmlns:ns174="http://www.w3.org/1999/xhtml"> Frequently Asked Questions </ns174:h4>
+    <ns175:dl xmlns:ns175="http://www.w3.org/1999/xhtml">
+        <ns176:dt xmlns:ns176="http://www.w3.org/1999/xhtml"><ns177:b xmlns:ns177="http://www.w3.org/1999/xhtml">Can multiple patients be registered at the same time using the CRID Service
+            API?</ns177:b></ns176:dt>
+        <ns178:dd xmlns:ns178="http://www.w3.org/1999/xhtml">No, the API currently supports one CRID registration at a time.<ns179:br xmlns:ns179="http://www.w3.org/1999/xhtml"/><ns180:br xmlns:ns180="http://www.w3.org/1999/xhtml"/></ns178:dd> 
         
-        <dt><b>Can demographic data be changed, augmented, or updated using the CRID Service API?</b></dt>
-        <dd>No, contact CIBMTR to have the demographics data changed for a previously registered
-            CRID<br/><br/></dd> 
+        <ns181:dt xmlns:ns181="http://www.w3.org/1999/xhtml"><ns182:b xmlns:ns182="http://www.w3.org/1999/xhtml">Can demographic data be changed, augmented, or updated using the CRID Service API?</ns182:b></ns181:dt>
+        <ns183:dd xmlns:ns183="http://www.w3.org/1999/xhtml">No, contact CIBMTR to have the demographics data changed for a previously registered
+            CRID<ns184:br xmlns:ns184="http://www.w3.org/1999/xhtml"/><ns185:br xmlns:ns185="http://www.w3.org/1999/xhtml"/></ns183:dd> 
             
-        <dt><b>What can I do if I forget the CRID for a particular patient?</b></dt>
-        <dd>Send the same PUT request to the CRID Service API with the same patient demographic
+        <ns186:dt xmlns:ns186="http://www.w3.org/1999/xhtml"><ns187:b xmlns:ns187="http://www.w3.org/1999/xhtml">What can I do if I forget the CRID for a particular patient?</ns187:b></ns186:dt>
+        <ns188:dd xmlns:ns188="http://www.w3.org/1999/xhtml">Send the same PUT request to the CRID Service API with the same patient demographic
             information and the CRID Service API will return the corresponding CRID number for that
-            patient.<br/><br/></dd>
+            patient.<ns189:br xmlns:ns189="http://www.w3.org/1999/xhtml"/><ns190:br xmlns:ns190="http://www.w3.org/1999/xhtml"/></ns188:dd>
             
-        <dt><b>What are the FHIR resources that are supported by the Direct FHIR Service API?</b></dt>
-        <dd>Patient, Observation<br/><br/></dd> 
+        <ns191:dt xmlns:ns191="http://www.w3.org/1999/xhtml"><ns192:b xmlns:ns192="http://www.w3.org/1999/xhtml">What are the FHIR resources that are supported by the Direct FHIR Service API?</ns192:b></ns191:dt>
+        <ns193:dd xmlns:ns193="http://www.w3.org/1999/xhtml">Patient, Observation<ns194:br xmlns:ns194="http://www.w3.org/1999/xhtml"/><ns195:br xmlns:ns195="http://www.w3.org/1999/xhtml"/></ns193:dd> 
         
-        <dt><b>What forms are currently supported for pre-population?</b></dt>
-        <dd>Currently, only lab data for form 2402 are supported for disease subtypes: MDS, MPN, and
-            PCD<br/><br/></dd> 
+        <ns196:dt xmlns:ns196="http://www.w3.org/1999/xhtml"><ns197:b xmlns:ns197="http://www.w3.org/1999/xhtml">What forms are currently supported for pre-population?</ns197:b></ns196:dt>
+        <ns198:dd xmlns:ns198="http://www.w3.org/1999/xhtml">Currently, only lab data for form 2402 are supported for disease subtypes: MDS, MPN, and
+            PCD<ns199:br xmlns:ns199="http://www.w3.org/1999/xhtml"/><ns200:br xmlns:ns200="http://www.w3.org/1999/xhtml"/></ns198:dd> 
             
-        <dt><b>How will I know if form 2402 was prepopulated with the data I submitted?</b></dt>
-        <dd>If submitted data can prepopulate one of the supported labs in form 2402, then those lab
-            questions will be answered on the form in the standard Formsnet user interface.<br/><br/></dd>
+        <ns201:dt xmlns:ns201="http://www.w3.org/1999/xhtml"><ns202:b xmlns:ns202="http://www.w3.org/1999/xhtml">How will I know if form 2402 was prepopulated with the data I submitted?</ns202:b></ns201:dt>
+        <ns203:dd xmlns:ns203="http://www.w3.org/1999/xhtml">If submitted data can prepopulate one of the supported labs in form 2402, then those lab
+            questions will be answered on the form in the standard Formsnet user interface.<ns204:br xmlns:ns204="http://www.w3.org/1999/xhtml"/><ns205:br xmlns:ns205="http://www.w3.org/1999/xhtml"/></ns203:dd>
                 
-        <dt><b>What if my lab data is not in the preferred unit of measure?</b></dt>
-        <dd>You may choose to perform the unit/value conversion yourself prior to the data
+        <ns206:dt xmlns:ns206="http://www.w3.org/1999/xhtml"><ns207:b xmlns:ns207="http://www.w3.org/1999/xhtml">What if my lab data is not in the preferred unit of measure?</ns207:b></ns206:dt>
+        <ns208:dd xmlns:ns208="http://www.w3.org/1999/xhtml">You may choose to perform the unit/value conversion yourself prior to the data
             submission or submit the data and the CIBMTR data translation engine will attempt to
-            perform the conversion after submission.<br/><br/></dd> 
+            perform the conversion after submission.<ns209:br xmlns:ns209="http://www.w3.org/1999/xhtml"/><ns210:br xmlns:ns210="http://www.w3.org/1999/xhtml"/></ns208:dd> 
             
-        <dt><b>How long does it take for data submitted via Direct FHIR Service API to appear as prepopulated questions on form 2402?</b></dt>
-        <dd>Questions should be populated in less than 10 minutes after submission via the API,
+        <ns211:dt xmlns:ns211="http://www.w3.org/1999/xhtml"><ns212:b xmlns:ns212="http://www.w3.org/1999/xhtml">How long does it take for data submitted via Direct FHIR Service API to appear as prepopulated questions on form 2402?</ns212:b></ns211:dt>
+        <ns213:dd xmlns:ns213="http://www.w3.org/1999/xhtml">Questions should be populated in less than 10 minutes after submission via the API,
             however, contextual questions are required to be answered in the FormsNet user interface
-            in order to provide key dates needed to correctly place the lab data on the form.<br/><br/></dd>
+            in order to provide key dates needed to correctly place the lab data on the form.<ns214:br xmlns:ns214="http://www.w3.org/1999/xhtml"/><ns215:br xmlns:ns215="http://www.w3.org/1999/xhtml"/></ns213:dd>
                 
-        <dt><b>Can the Observation resources be submitted as a FHIR bundle?</b></dt>
-        <dd>Currently, the Direct FHIR Service API cannot accept resources formatted as a bundle,
-            they must be submitted individually<br/><br/></dd> 
+        <ns216:dt xmlns:ns216="http://www.w3.org/1999/xhtml"><ns217:b xmlns:ns217="http://www.w3.org/1999/xhtml">Can the Observation resources be submitted as a FHIR bundle?</ns217:b></ns216:dt>
+        <ns218:dd xmlns:ns218="http://www.w3.org/1999/xhtml">Currently, the Direct FHIR Service API cannot accept resources formatted as a bundle,
+            they must be submitted individually<ns219:br xmlns:ns219="http://www.w3.org/1999/xhtml"/><ns220:br xmlns:ns220="http://www.w3.org/1999/xhtml"/></ns218:dd> 
         
-    </dl>
+    </ns175:dl>
 </div>
 </div>
 </div>  <!-- /inner-wrapper -->
@@ -623,7 +623,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 10, 2022 14:39-0600">2022-11-10</span>
+    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 31, 2023 11:27-0600">2023-01-31</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

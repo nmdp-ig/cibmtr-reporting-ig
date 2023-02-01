@@ -2,6 +2,7 @@ ValueSet: RxNormEtoposideVS
 Id: med-etoposide-vs
 Title: "RxNorm - Etoposide"
 Description: "RxNorm codes for Etoposide"
+* ^experimental = true
 * $RXN#4179	    "etoposide"
 * $RXN#220347	"Toposar"
 * $RXN#203058	"Vepesid"

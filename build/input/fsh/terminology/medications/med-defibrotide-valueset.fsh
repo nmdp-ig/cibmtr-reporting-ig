@@ -2,6 +2,7 @@ ValueSet: RxNormDefibrotideVS
 Id: med-defibrotide-vs
 Title: "RxNorm - Defibrotide"
 Description: "RxNorm codes for Defibrotide"
+* ^experimental = true
 * $RXN#1311089	"defibrotide"
 * $RXN#1746523	"defibrotide sodium"
 * $RXN#1746528	"Defitelio"

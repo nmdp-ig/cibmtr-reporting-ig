@@ -2,6 +2,7 @@ ValueSet: RxNormPrepRegimenVS
 Id: med-prep-regimen-vs
 Title: "RxNorm - Prep Regimen"
 Description: "RxNorm codes for Prep Regimen"
+* ^experimental = true
 * $RXN#1008080	"aspirin / methylprednisolone"
 * $RXN#10473	    "thiotepa"
 * $RXN#105551	"busulfan 2 MG Oral Tablet [Myleran]"

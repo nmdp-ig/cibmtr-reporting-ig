@@ -2,6 +2,7 @@ ValueSet: RxNormPriorExposureVS
 Id: med-prior-exposure-vs
 Title: "RxNorm - Prior Exposure: Potential Study Eligibility"
 Description: "Prior Exposure: Potential Study Eligibility"
+* ^experimental = true
 * $RXN#10473	"thiotepa"
 * $RXN#1156487	"thiotepa Injectable Product"
 * $RXN#1185673	"Mylotarg Injectable Product"

@@ -2,6 +2,7 @@ ValueSet: LeukocyteMorphologyBloodVS
 Id: leukocyte-morphology-blood-vs
 Title: "Leukocyte morphology panel - Blood (58407-8)"
 Description: "Leukocyte morphology panel - Blood (58407-8)"
+* ^experimental = true
 * $LNC#11281-3 "Auer rods [Presence] in Blood by Light microscopy"
 * $LNC#7792-5 "Dohle body [Presence] in Blood by Light microscopy"
 * $LNC#33215-5 "Neutrophils.agranular [Presence] in Blood by Light microscopy"

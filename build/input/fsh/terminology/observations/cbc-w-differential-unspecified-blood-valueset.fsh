@@ -2,6 +2,7 @@ ValueSet: CBCWDifferentialUnspecifiedBloodVS
 Id: cbc-w-differential-unspecified-blood-vs
 Title: "CBC W Differential panel, method unspecified - Blood (69742-5)"
 Description: "CBC W Differential panel, method unspecified - Blood (69742-5)"
+* ^experimental = true
 * $LNC#20570-8 "Hematocrit [Volume Fraction] of Blood"
 * $LNC#26453-1 "Erythrocytes [#/volume] in Blood"
 * $LNC#718-7 "Hemoglobin [Mass/volume] in Blood"

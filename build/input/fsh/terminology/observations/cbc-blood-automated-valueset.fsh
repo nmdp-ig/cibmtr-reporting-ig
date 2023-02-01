@@ -3,6 +3,7 @@ ValueSet: CBCBloodAutomatedVS
 Id: cbc-blood-automated-vs
 Title: "CBC panel - Blood by Automated count (58410-2)"
 Description: "CBC panel - Blood by Automated count (58410-2)"
+* ^experimental = true
 * $LNC#6690-2 "Leukocytes [#/volume] in Blood by Automated count"
 * $LNC#789-8 "Erythrocytes [#/volume] in Blood by Automated count"
 * $LNC#718-7 "Hemoglobin [Mass/volume] in Blood"

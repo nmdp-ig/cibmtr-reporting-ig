@@ -2,6 +2,7 @@ ValueSet: RxNormAdditionalPeriTransplantVS
 Id: med-addition-peri-transplant-vs
 Title: "RxNorm - Additional Drugs in Peri-Transplant Period"
 Description: "RxNorm codes for Additional Drugs in Peri-Transplant Period"
+* ^experimental = true
 * $RXN#1011	    "lymphocyte immune globulin, anti-thymocyte globulin"
 * $RXN#107047	"rabbit anti-human T-lymphocyte globulin 25 MG Injection"
 * $RXN#107050	"rabbit anti-human T-lymphocyte globulin 25 MG Injection [Thymoglobulin]"

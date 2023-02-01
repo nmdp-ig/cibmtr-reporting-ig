@@ -2,6 +2,7 @@ ValueSet: RxNormUrsodiolVS
 Id: med-ursodiol-vs
 Title: "RxNorm - Ursodiol"
 Description: "RxNorm codes for Ursodiol"
+* ^experimental = true
 * $RXN#215007	"Actigall"
 * $RXN#220706	"Urso"
 * $RXN#11065	    "ursodiol"

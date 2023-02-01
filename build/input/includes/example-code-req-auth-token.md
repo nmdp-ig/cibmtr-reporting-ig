@@ -22,7 +22,7 @@ data = {'grant_type':'password',
         'username':serviceAccountUsername, 
         'password':serviceAccountPassword}
 
-r = requests.post('https://nmdp.oktapreview.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token',
+r = requests.post('https://oktapreview.nmdp.org/oauth2/ausaexcazhLhxKnJs0h7/v1/token',
                   auth=HTTPBasicAuth(clientId, clientSecret),
                   data=data,
                   headers=headers)
@@ -44,7 +44,7 @@ clientscope='<Application Scope>'
 auth_string="Basic $(echo -n ${clientId}:${clientSecret}|base64)"
 
 curl -s --location \
---request POST 'https://nmdp.oktapreview.com/oauth2/ausaexcazhlhxknjs0h7/v1/token' \
+--request POST 'https://oktapreview.nmdp.org/oauth2/ausaexcazhLhxKnJs0h7/v1/token' \
 --header 'Accept: application/json' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header "Authorization: ${auth_string}" \

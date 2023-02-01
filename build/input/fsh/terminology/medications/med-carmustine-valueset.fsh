@@ -2,6 +2,7 @@ ValueSet: RxNormCarmustineVS
 Id: med-carmustine-vs
 Title: "RxNorm - Carmustine"
 Description: "RxNorm codes for Carmustine"
+* ^experimental = true
 * $RXN#2105      "carmustine"
 * $RXN#343027    "BiCNU"
 * $RXN#217357	"Gliadel"

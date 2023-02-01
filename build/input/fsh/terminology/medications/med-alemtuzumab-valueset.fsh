@@ -2,6 +2,7 @@ ValueSet: RxNormAlemtuzumabVS
 Id: med-alemtuzumab-vs
 Title: "RxNorm - Alemtuzumab"
 Description: "RxNorm codes for Alemtuzumab"
+* ^experimental = true
 * $RXN#117055	"alemtuzumab"
 * $RXN#284679	"Campath"
 * $RXN#1594659	"Lemtrada"

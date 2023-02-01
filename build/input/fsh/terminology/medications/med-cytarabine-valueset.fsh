@@ -2,6 +2,7 @@ ValueSet: RxNormCytarabineVS
 Id: med-cytarabine-vs
 Title: "RxNorm - Cytarabine"
 Description: "RxNorm codes for Cytarabine"
+* ^experimental = true
 * $RXN#151319	"Alexan"
 * $RXN#3041	    "cytarabine"
 * $RXN#151577	"Cytosar"

@@ -2,7 +2,8 @@ ValueSet: RxNormFludarabineVS
 Id: med-fludarabine-vs
 Title: "RxNorm - Fludarabine"
 Description: "RxNorm codes for Fludarabine"
-* $RXN#24698	    "fludarabine"
+* ^experimental = true
+* $RXN#24698	"fludarabine"
 * $RXN#877487	"Oforta"
 * $RXN#1165043	"fludarabine Injectable Product"
 * $RXN#1740863	"fludarabine Injection"

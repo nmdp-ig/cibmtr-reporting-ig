@@ -194,30 +194,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<h1 id="direct-fhir-endpoints">Direct FHIR Endpoints</h1>
+<h3 id="direct-fhir-endpoints">Direct FHIR Endpoints</h3>
+
+<h4 id="test">Test</h4>
+<p>Used for development of new client software</p>
 
 <table class="grid">
     <thead>
         <tr>
             <th>Service</th>
             <th>HTTP</th>
-            <th>Endpoint(s)</th>
+            <th>Endpoint</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td rowspan="2">Access Credentials</td>
-            <td rowspan="2">POST</td>
-            <td>https://nmdp.okta.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token</td>
+            <td>Access Credentials</td>
+            <td>POST</td>
+            <td>https://oktapreview.nmdp.org/oauth2/ausaexcazhLhxKnJs0h7/v1/token</td>
         </tr>
         <tr>
-            <td>https://nmdp.okta.com/oauth2/aus3ck6q30qmOdpMb1t7/v1/token</td>
-        </tr>
-        <tr>
-            <td colspan="3"><em>Development</em></td>
-        </tr>
-        <tr>
-            <td style="padding-left:10px">Base URL</td>
+            <td>Base URL</td>
             <td></td>
             <td>https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1</td>
         </tr>
@@ -232,11 +229,62 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td>https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1/r4/&lt;resource&gt;<br /><br />
                 <em>(replace &lt;resource&gt; with the FHIR resource, e.g., Patient, Observation, etc)</em></td>
         </tr>
-        <tr style="color:gray">
-            <td colspan="3"><em>Production (not yet supported)</em></td>
+    </tbody>
+</table>
+
+<h4 id="prodtest">ProdTest</h4>
+<p>Used to test production workflows</p>
+
+<table class="grid">
+    <thead>
+        <tr>
+            <th>Service</th>
+            <th>HTTP</th>
+            <th>Endpoint</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Access Credentials</td>
+            <td>POST</td>
+            <td>https://oktapreview.nmdp.org/oauth2/ausaexcazhLhxKnJs0h7/v1/token</td>
+        </tr>
+        <tr>
+            <td>Base URL</td>
+            <td></td>
+            <td>https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1</td>
+        </tr>
+        <tr>
+            <td style="padding-left:20px">CRID Lookup/Assignment</td>
+            <td>PUT</td>
+            <td>https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1/CRID</td>
+        </tr>
+        <tr>
+            <td style="padding-left:20px">FHIR Resources</td>
+            <td><a href="https://hl7.org/fhir/http.html">POST (Create),<br /> PUT (Update),<br /> GET (Read, Search)</a></td>
+            <td>https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1/r4/&lt;resource&gt;<br /><br />
+                <em>(replace &lt;resource&gt; with the FHIR resource, e.g., Patient, Observation, etc)</em></td>
+        </tr>
+    </tbody>
+</table>
+
+<h4 id="production-not-yet-supported">Production (not yet supported)</h4>
+<table class="grid">
+    <thead>
+        <tr>
+            <th>Service</th>
+            <th>HTTP</th>
+            <th>Endpoint</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Access Credentials</td>
+            <td>POST</td>
+            <td>https://okta.nmdp.org/oauth2/aus3ck6q30qmOdpMb1t7/v1/token</td>
         </tr>
         <tr style="color:gray; text-decoration-line: line-through">
-            <td style="padding-left:10px">Base URL</td>
+            <td>Base URL</td>
             <td></td>
             <td>https://api.nmdp.org/cibmtr-fhir-backend/v1</td>
         </tr>
@@ -280,7 +328,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 31, 2023 11:27-0600">2023-01-31</span>
+    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 1, 2023 09:05-0600">2023-02-01</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

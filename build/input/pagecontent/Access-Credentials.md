@@ -8,25 +8,15 @@ A CIBMTR relationship manager or technical lead can initiate a request for API c
 
 Different sets of credentials will be provided for the CIBMTR test and production environments.  
 
-To request an authentication token for the test environment, the third-party authorization server URL is:
+To request an authentication token for any of the test environments, the third-party authorization server URL is:
 ~~~
-POST    https://nmdp.oktapreview.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token
+POST    https://oktapreview.nmdp.org/oauth2/ausaexcazhLhxKnJs0h7/v1/token
 ~~~
-or:
-
-~~~
-POST    https://nmdp.oktapreview.com/oauth2/aus3ck6q30qmOdpMb1t7/v1/token
-~~~
-
 
 To request an authentication token for the production environment, the third-party authorization server URL is: 
 
 ~~~
-POST    https://nmdp.okta.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token
-~~~
-or:
-~~~
-POST    https://nmdp.okta.com/oauth2/aus3ck6q30qmOdpMb1t7/v1/token
+POST    https://okta.nmdp.org/oauth2/aus3ck6q30qmOdpMb1t7/v1/token
 ~~~
 
 The header of the POST request to the authorization server must have an authorization string.  The string is constructed by base64 encoding the Application Client ID, a colon, and the Application Client Secret.  The encoded string is then appended to the word `Basic `.  For example, here is a snippet of psuedocode showing this. 
@@ -34,6 +24,8 @@ The header of the POST request to the authorization server must have an authoriz
 ~~~
 const auth_string = "Basic " + base64("<Application Client ID>" + ":" + "<Application Client Secret>")
 ~~~
+
+***Note: The Application Client ID and Application Secret are different in the production and test environments and are specific to the CIBMTR Service Account.***
 
 An example of the header parameters for the POST request to the authorization server using the Postman API client tool (https://www.postman.com) is shown in Figure 1.  In the figure, the authorization string is blacked out.  Notice the space between the base 64 encoded string and the string prefix, `Basic`.   
 

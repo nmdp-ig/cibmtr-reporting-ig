@@ -2,6 +2,7 @@ ValueSet: PriorityVariables2021
 Id: cibmtr-priority-variables-2021
 Title: "CIBMTR Priority Variables Value Set (FY21)"
 Description: "Priority Variables for CIBMTR (FY21)"
+* ^experimental = false
 * $LNC#26508-2 "Band form neutrophils/100 leukocytes in Blood"
 * $LNC#35332-6 "Band form neutrophils/100 leukocytes in Blood by Automated count"
 * $LNC#764-1 "Band form neutrophils/100 leukocytes in Blood by Manual count"

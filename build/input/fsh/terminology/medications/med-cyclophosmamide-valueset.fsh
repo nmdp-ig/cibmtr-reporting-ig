@@ -2,6 +2,7 @@ ValueSet: RxNormCyclophosphamideVS
 Id: med-cyclophosphamide-vs
 Title: "RxNorm - Cyclophosphamide"
 Description: "RxNorm codes for Cyclophosphamide"
+* ^experimental = true
 * $RXN#3002	    "cyclophosphamide"
 * $RXN#202589	"Cytoxan"
 * $RXN#202588	"Endoxana"

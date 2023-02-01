@@ -2,6 +2,7 @@ ValueSet: RxNormBortezomibVS
 Id: med-bortezomib-vs
 Title: "RxNorm - Bortezomib"
 Description: "RxNorm codes for Bortezomib"
+* ^experimental = true
 * $RXN#358258	"bortezomib"
 * $RXN#356733	"Velcade"
 * $RXN#1804993	"bortezomib 3.5 MG"

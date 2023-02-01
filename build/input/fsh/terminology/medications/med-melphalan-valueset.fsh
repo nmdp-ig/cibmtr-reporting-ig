@@ -2,6 +2,7 @@ ValueSet: RxNormMelphalanVS
 Id: med-melphalan-vs
 Title: "RxNorm - Melphalan"
 Description: "RxNorm codes for Melphalan"
+* ^experimental = true
 * $RXN#6718	    "melphalan"
 * $RXN#151325	"Alkeran"
 * $RXN#1745086	"Evomela"

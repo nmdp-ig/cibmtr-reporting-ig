@@ -2,6 +2,7 @@ ValueSet: AutoDifferentialBloodVS
 Id: auto-differential-blood-vs
 Title: "Auto Differential panel - Blood (57023-4)"
 Description: "Auto Differential panel - Blood (57023-4)"
+* ^experimental = true
 * $LNC#770-8 "Neutrophils/100 leukocytes in Blood by Automated count"
 * $LNC#35332-6 "Band form neutrophils/100 leukocytes in Blood by Automated count"
 * $LNC#19023-1 "Granulocytes/100 leukocytes in Blood by Automated count"

@@ -2,6 +2,7 @@ ValueSet: RxNormRituximabVS
 Id: med-rituximab-vs
 Title: "RxNorm - Rituximab"
 Description: "RxNorm codes for Rituximab"
+* ^experimental = true
 * $RXN#226754	"Rituxan"
 * $RXN#121191	"rituximab"
 // * $RXN#121191	"riTUXimab"

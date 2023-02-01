@@ -2,6 +2,7 @@ ValueSet: RxNormTreosulfanVS
 Id: med-treosulfan-vs
 Title: "RxNorm - Treosulfan"
 Description: "RxNorm codes for Treosulfan"
+* ^experimental = true
 * $RXN#38508	    "treosulfan"
 * $RXN#336841	"treosulfan 250 MG"
 * $RXN#393483	"treosulfan 50 MG/ML"

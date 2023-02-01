@@ -2,6 +2,7 @@ ValueSet: ErythrocyteMorphologyBloodVS
 Id: erythrocyte-morphology-blood-vs
 Title: "Erythrocyte morphology panel - Blood (58408-6)"
 Description: "Erythrocyte morphology panel - Blood (58408-6)"
+* ^experimental = true
 * $LNC#7789-1 "Acanthocytes [Presence] in Blood by Light microscopy"
 * $LNC#702-1 "Anisocytosis [Presence] in Blood by Light microscopy"
 * $LNC#703-9 "Basophilic stippling [Presence] in Blood by Light microscopy"

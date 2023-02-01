@@ -2,6 +2,7 @@ ValueSet: RxNormGVHDProphylaxisVS
 Id: med-gvhd-prophylaxis-vs
 Title: "RxNorm - GVHD Prophylaxis"
 Description: "RxNorm codes for GVHD Prophylaxis"
+* ^experimental = true
 * $RXN#105585	"methotrexate 2.5 MG Oral Tablet"
 * $RXN#105586	"methotrexate 10 MG Oral Tablet"
 * $RXN#105589	"methotrexate 100 MG/ML Injectable Solution"

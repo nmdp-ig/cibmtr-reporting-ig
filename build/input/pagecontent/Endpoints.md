@@ -1,27 +1,24 @@
-# Direct FHIR Endpoints
+### Direct FHIR Endpoints
+
+#### Test 
+Used for development of new client software
 
 <table>
     <thead>
         <tr>
             <th>Service</th>
             <th>HTTP</th>
-            <th>Endpoint(s)</th>
+            <th>Endpoint</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td rowspan="2">Access Credentials</td>
-            <td rowspan="2">POST</td>
-            <td>https://nmdp.okta.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token</td>
+            <td>Access Credentials</td>
+            <td>POST</td>
+            <td>https://oktapreview.nmdp.org/oauth2/ausaexcazhLhxKnJs0h7/v1/token</td>
         </tr>
         <tr>
-            <td>https://nmdp.okta.com/oauth2/aus3ck6q30qmOdpMb1t7/v1/token</td>
-        </tr>
-        <tr>
-            <td colspan="3"><em>Development</em></td>
-        </tr>
-        <tr>
-            <td style="padding-left:10px">Base URL</td>
+            <td>Base URL</td>
             <td></td>
             <td>https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1</td>
         </tr>
@@ -36,11 +33,64 @@
             <td>https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1/r4/&lt;resource&gt;<br/><br />
                 <em>(replace &lt;resource&gt; with the FHIR resource, e.g., Patient, Observation, etc)</em></td>
         </tr>
-        <tr style="color:gray">
-            <td colspan="3"><em>Production (not yet supported)</em></td>
+    </tbody>
+</table>
+{:.grid}
+
+#### ProdTest 
+Used to test production workflows
+
+<table>
+    <thead>
+        <tr>
+            <th>Service</th>
+            <th>HTTP</th>
+            <th>Endpoint</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Access Credentials</td>
+            <td>POST</td>
+            <td>https://oktapreview.nmdp.org/oauth2/ausaexcazhLhxKnJs0h7/v1/token</td>
+        </tr>
+        <tr>
+            <td>Base URL</td>
+            <td></td>
+            <td>https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1</td>
+        </tr>
+        <tr>
+            <td style="padding-left:20px">CRID Lookup/Assignment</td>
+            <td>PUT</td>
+            <td>https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1/CRID</td>
+        </tr>
+        <tr>
+            <td style="padding-left:20px">FHIR Resources</td>
+            <td><a href="https://hl7.org/fhir/http.html">POST (Create),<br /> PUT (Update),<br /> GET (Read, Search)</a></td>
+            <td>https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1/r4/&lt;resource&gt;<br/><br />
+                <em>(replace &lt;resource&gt; with the FHIR resource, e.g., Patient, Observation, etc)</em></td>
+        </tr>
+    </tbody>
+</table>
+{:.grid}
+
+#### Production (not yet supported)
+<table>
+    <thead>
+        <tr>
+            <th>Service</th>
+            <th>HTTP</th>
+            <th>Endpoint</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Access Credentials</td>
+            <td>POST</td>
+            <td>https://okta.nmdp.org/oauth2/aus3ck6q30qmOdpMb1t7/v1/token</td>
         </tr>
         <tr style="color:gray; text-decoration-line: line-through">
-            <td style="padding-left:10px">Base URL</td>
+            <td>Base URL</td>
             <td></td>
             <td>https://api.nmdp.org/cibmtr-fhir-backend/v1</td>
         </tr>

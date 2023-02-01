@@ -2,6 +2,7 @@ ValueSet: DifferentialUnspecifiedBloodVS
 Id: differential-unspecified-blood-vs
 Title: "Differential panel, method unspecified - Blood (69738-3)"
 Description: "Differential panel, method unspecified - Blood (69738-3)"
+* ^experimental = true
 * $LNC#26464-8 "Leukocytes [#/volume] in Blood"
 * $LNC#30180-4 "Basophils/100 leukocytes in Blood"
 * $LNC#26444-0 "Basophils [#/volume] in Blood"

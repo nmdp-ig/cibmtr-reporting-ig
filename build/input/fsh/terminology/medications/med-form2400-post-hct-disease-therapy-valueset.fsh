@@ -2,6 +2,7 @@ ValueSet: RxNormPostHCTDiseaseTherapyPlannedVS
 Id: med-post-hct-disease-therapy-planned-vs
 Title: "RxNorm - Post-HCT Disease Therapy Planned"
 Description: "RxNorm codes for Post-HCT Disease Therapy Planned"
+* ^experimental = true
 * $RXN#10432	    "thalidomide"
 * $RXN#1045401	"dasatinib 140 MG"
 * $RXN#1045402	"dasatinib 140 MG Oral Tablet"

@@ -2,6 +2,7 @@ ValueSet: RxNormMobilizingAgentsVS
 Id: med-mobilizing-agents-vs
 Title: "RxNorm - Mobilizing Agents (auto only)"
 Description: "RxNorm codes for Mobilizing Agents (auto only)"
+* ^experimental = true
 * $RXN#1157967	"rituximab Injectable Product"
 * $RXN#1159651	"filgrastim Injectable Product"
 * $RXN#1159878	"plerixafor Injectable Product"

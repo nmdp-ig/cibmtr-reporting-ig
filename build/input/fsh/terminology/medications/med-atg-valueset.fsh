@@ -2,6 +2,7 @@ ValueSet: RxNormAntiThymocyteGlobulinVS
 Id: med-anti-thymocyte-globulin-vs
 Title: "RxNorm - Anti-Thymocyte Globulin"
 Description: "RxNorm codes for Anti-Thymocyte Globulin"
+* ^experimental = true
 * $RXN#1204	    "ATGAM"
 * $RXN#1011	    "lymphocyte immune globulin, anti-thymocyte globulin"
 * $RXN#225741	"Thymoglobulin"

@@ -2,6 +2,7 @@ ValueSet: RxNormThiotepaVS
 Id: med-thiotepa-vs
 Title: "RxNorm - Thiotepa"
 Description: "RxNorm codes for Thiotepa"
+* ^experimental = true
 * $RXN#1366537	"Tepadina"
 * $RXN#224924	"Thioplex"
 * $RXN#10473	    "thiotepa"

@@ -2,6 +2,7 @@ ValueSet: PriorityVariables2022
 Id: cibmtr-priority-variables-2022
 Title: "CIBMTR Priority Variables Value Set (FY22)"
 Description: "Priority Variables for CIBMTR (FY22)"
+* ^experimental = false
 * $LNC#50190-8	"Iron and Iron binding capacity panel - Serum or Plasma"
 * $LNC#14800-7	"Iron binding capacity [Moles/volume] in Serum or Plasma"
 * $LNC#2500-7	"Iron binding capacity [Mass/volume] in Serum or Plasma"

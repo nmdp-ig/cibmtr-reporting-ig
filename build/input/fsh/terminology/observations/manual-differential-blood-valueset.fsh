@@ -2,6 +2,7 @@ ValueSet: ManualDifferentialBloodVS
 Id: manual-differential-blood-vs
 Title: "Manual Differential panel - Blood (24318-8)"
 Description: "Manual Differential panel - Blood (24318-8)"
+* ^experimental = true
 * include codes from valueset SmearMorphologyBloodVS
 * $LNC#26464-8 "Leukocytes [#/volume] in Blood"
 * $LNC#30180-4 "Basophils/100 leukocytes in Blood"

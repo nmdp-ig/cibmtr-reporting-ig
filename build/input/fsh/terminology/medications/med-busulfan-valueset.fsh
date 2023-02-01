@@ -2,6 +2,7 @@ ValueSet: RxNormBusulfanVS
 Id: med-busulfan-vs
 Title: "RxNorm - Busulfan"
 Description: "RxNorm codes for Busulfan"
+* ^experimental = true
 * $RXN#1828	    "busulfan"
 * $RXN#284676	    "Busulfex"
 * $RXN#203010	    "Myleran"

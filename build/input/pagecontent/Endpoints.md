@@ -15,7 +15,7 @@ Used for development of new client software
         <tr>
             <td>Access Credentials</td>
             <td>POST</td>
-            <td>https://oktapreview.nmdp.org/oauth2/ausaexcazhLhxKnJs0h7/v1/token</td>
+            <td>https://oktapreview.nmdp.org/oauth2/ausaexcazhLhxKnJs0h7/v1/token</td>--cha
         </tr>
         <tr>
             <td>Base URL</td>
@@ -38,7 +38,7 @@ Used for development of new client software
 {:.grid}
 
 #### ProdTest 
-Used to test production workflows
+Used to test production client workflows
 
 <table>
     <thead>
@@ -57,17 +57,17 @@ Used to test production workflows
         <tr>
             <td>Base URL</td>
             <td></td>
-            <td>https://dev-api.nmdp.org/cibmtr-fhir-backend-prodtest/v1</td>
+            <td>https://int-api.nmdp.org/cibmtr-fhir-backend/v1</td>
         </tr>
         <tr>
             <td style="padding-left:20px">CRID Lookup/Assignment</td>
             <td>PUT</td>
-            <td>https://dev-api.nmdp.org/cibmtr-fhir-backend-prodtest/v1/CRID</td>
+            <td>https://int-api.nmdp.org/cibmtr-fhir-backend/v1/CRID</td>
         </tr>
         <tr>
             <td style="padding-left:20px">FHIR Resources</td>
             <td><a href="https://hl7.org/fhir/http.html">POST (Create),<br /> PUT (Update),<br /> GET (Read, Search)</a></td>
-            <td>https://dev-api.nmdp.org/cibmtr-fhir-backend-prodtest/v1/r4/&lt;resource&gt;<br/><br />
+            <td>https://int-api.nmdp.org/cibmtr-fhir-backend/v1/r4/&lt;resource&gt;<br/><br />
                 <em>(replace &lt;resource&gt; with the FHIR resource, e.g., Patient, Observation, etc)</em></td>
         </tr>
     </tbody>

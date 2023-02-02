@@ -1,0 +1,171 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-etoposide-vs> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "med-etoposide-vs"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>4179</td><td>etoposide</td></tr><tr><td>220347</td><td>Toposar</td></tr><tr><td>203058</td><td>Vepesid</td></tr><tr><td>274342</td><td>Etopophos</td></tr><tr><td>451835</td><td>etoposide 10 MG/ML</td></tr><tr><td>329753</td><td>etoposide 100 MG</td></tr><tr><td>564108</td><td>etoposide 100 MG [Vepesid]</td></tr><tr><td>105593</td><td>etoposide 100 MG Oral Capsule [Vepesid]</td></tr><tr><td>315912</td><td>etoposide 20 MG/ML</td></tr><tr><td>567639</td><td>etoposide 20 MG/ML [Toposar]</td></tr><tr><td>567640</td><td>etoposide 20 MG/ML [Vepesid]</td></tr><tr><td>206831</td><td>etoposide 20 MG/ML Injectable Solution [Toposar]</td></tr><tr><td>206832</td><td>etoposide 20 MG/ML Injectable Solution [Vepesid]</td></tr><tr><td>315913</td><td>etoposide 50 MG</td></tr><tr><td>564107</td><td>etoposide 50 MG [Vepesid]</td></tr><tr><td>105592</td><td>etoposide 50 MG Oral Capsule [Vepesid]</td></tr><tr><td>1157928</td><td>etoposide Injectable Product</td></tr><tr><td>376890</td><td>etoposide Injectable Solution</td></tr><tr><td>362881</td><td>etoposide Injectable Solution [Toposar]</td></tr><tr><td>362972</td><td>etoposide Injectable Solution [Vepesid]</td></tr><tr><td>1734339</td><td>etoposide Injection</td></tr><tr><td>372132</td><td>etoposide Oral Capsule</td></tr><tr><td>366233</td><td>etoposide Oral Capsule [Vepesid]</td></tr><tr><td>1157929</td><td>etoposide Oral Product</td></tr><tr><td>1157930</td><td>etoposide Pill</td></tr><tr><td>1178005</td><td>Toposar Injectable Product</td></tr><tr><td>1187877</td><td>Vepesid Injectable Product</td></tr><tr><td>1187878</td><td>Vepesid Oral Product</td></tr><tr><td>1187879</td><td>Vepesid Pill</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-etoposide-vs"]; # 
+  fhir:ValueSet.version [ fhir:value "0.1.5"]; # 
+  fhir:ValueSet.name [ fhir:value "RxNormEtoposideVS"]; # 
+  fhir:ValueSet.title [ fhir:value "RxNorm - Etoposide"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-02T13:14:50-06:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.cibmtr.org" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Bob Milius" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "bmilius@nmdp.org" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "RxNorm codes for Etoposide"]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4179" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "220347" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Toposar" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "203058" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vepesid" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "274342" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Etopophos" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "451835" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide 10 MG/ML" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "329753" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide 100 MG" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "564108" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide 100 MG [Vepesid]" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "105593" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide 100 MG Oral Capsule [Vepesid]" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "315912" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide 20 MG/ML" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "567639" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide 20 MG/ML [Toposar]" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "567640" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide 20 MG/ML [Vepesid]" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "206831" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide 20 MG/ML Injectable Solution [Toposar]" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "206832" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide 20 MG/ML Injectable Solution [Vepesid]" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "315913" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide 50 MG" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "564107" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide 50 MG [Vepesid]" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "105592" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide 50 MG Oral Capsule [Vepesid]" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1157928" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide Injectable Product" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "376890" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide Injectable Solution" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "362881" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide Injectable Solution [Toposar]" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "362972" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide Injectable Solution [Vepesid]" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1734339" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide Injection" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "372132" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide Oral Capsule" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "366233" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide Oral Capsule [Vepesid]" ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1157929" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide Oral Product" ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1157930" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "etoposide Pill" ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1178005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Toposar Injectable Product" ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1187877" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vepesid Injectable Product" ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1187878" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vepesid Oral Product" ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1187879" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vepesid Pill" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-etoposide-vs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,35 +1,25 @@
 {
-  "resourceType": "Patient",
-  "id": "PatientExample1",
-  "meta": {
-    "profile": [
-      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
-    ],
-    "security": [
-      {
-        "system": "http://terminology.cibmtr.org/codesystem/transplant-center",
-        "code": "rc_00000",
-        "display": "00000 Good Health Medical Center"
-      }
-    ]
+  "resourceType" : "Patient",
+  "id" : "PatientExample1",
+  "meta" : {
+    "profile" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"],
+    "security" : [{
+      "system" : "http://terminology.cibmtr.org/codesystem/transplant-center",
+      "code" : "rc_00000",
+      "display" : "00000 Good Health Medical Center"
+    }]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>John Doe </b> male, DoB Unknown ( id: abc)</p></div>"
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>John Doe </b> male, DoB Unknown ( id: abc)</p><hr/></div>"
   },
-  "identifier": [
-    {
-      "system": "http://example.org/mrn",
-      "value": "abc"
-    }
-  ],
-  "name": [
-    {
-      "family": "Doe",
-      "given": [
-        "John"
-      ]
-    }
-  ],
-  "gender": "male"
+  "identifier" : [{
+    "system" : "http://example.org/mrn",
+    "value" : "abc"
+  }],
+  "name" : [{
+    "family" : "Doe",
+    "given" : ["John"]
+  }],
+  "gender" : "male"
 }

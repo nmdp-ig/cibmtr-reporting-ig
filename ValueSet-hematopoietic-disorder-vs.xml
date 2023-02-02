@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="hematopoietic-disorder-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  414027002 (Disorder of hematopoietic structure (disorder))</li></ul></div>
+  </text>
+  <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/hematopoietic-disorder-vs"/>
+  <version value="0.1.5"/>
+  <name value="HematopoieticDisorderVS"/>
+  <title value="Disorders of hematopoietic structure"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2023-02-02T13:14:50-06:00"/>
+  <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
+  <contact>
+    <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.cibmtr.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Milius"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bmilius@nmdp.org"/>
+    </telecom>
+  </contact>
+  <description value="SNOMED: Disorders of hematopoietic structure"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="414027002"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

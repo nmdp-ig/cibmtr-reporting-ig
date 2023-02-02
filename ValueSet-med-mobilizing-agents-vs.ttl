@@ -1,0 +1,867 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "med-mobilizing-agents-vs"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1157967</td><td>rituximab Injectable Product</td></tr><tr><td>1159651</td><td>filgrastim Injectable Product</td></tr><tr><td>1159878</td><td>plerixafor Injectable Product</td></tr><tr><td>1161380</td><td>pegfilgrastim Injectable Product</td></tr><tr><td>1162571</td><td>lenograstim Injectable Product</td></tr><tr><td>1182279</td><td>Neulasta Injectable Product</td></tr><tr><td>1182281</td><td>Neupogen Injectable Product</td></tr><tr><td>1183314</td><td>Mozobil Injectable Product</td></tr><tr><td>1185345</td><td>Rituxan Injectable Product</td></tr><tr><td>121191</td><td>rituximab</td></tr><tr><td>1433764</td><td>tbo-filgrastim</td></tr><tr><td>1433765</td><td>tbo-filgrastim 0.6 MG/ML</td></tr><tr><td>1433768</td><td>0.5 ML tbo-filgrastim 0.6 MG/ML Prefilled Syringe</td></tr><tr><td>1433771</td><td>0.8 ML tbo-filgrastim 0.6 MG/ML Prefilled Syringe</td></tr><tr><td>1440046</td><td>lipegfilgrastim</td></tr><tr><td>1442677</td><td>Granix</td></tr><tr><td>1442678</td><td>tbo-filgrastim 0.6 MG/ML [Granix]</td></tr><tr><td>1442679</td><td>filgrastim Prefilled Syringe [Granix]</td></tr><tr><td>1442680</td><td>Granix Injectable Product</td></tr><tr><td>1442681</td><td>0.5 ML tbo-filgrastim 0.6 MG/ML Prefilled Syringe [Granix]</td></tr><tr><td>1442683</td><td>0.8 ML tbo-filgrastim 0.6 MG/ML Prefilled Syringe [Granix]</td></tr><tr><td>1605064</td><td>filgrastim-sndz</td></tr><tr><td>1605065</td><td>filgrastim-sndz 0.6 MG/ML</td></tr><tr><td>1605066</td><td>0.5 ML filgrastim-sndz 0.6 MG/ML Prefilled Syringe</td></tr><tr><td>1605067</td><td>Zarxio</td></tr><tr><td>1605068</td><td>filgrastim-sndz 0.6 MG/ML [Zarxio]</td></tr><tr><td>1605069</td><td>filgrastim Prefilled Syringe [Zarxio]</td></tr><tr><td>1605070</td><td>Zarxio Injectable Product</td></tr><tr><td>1605071</td><td>0.5 ML filgrastim-sndz 0.6 MG/ML Prefilled Syringe [Zarxio]</td></tr><tr><td>1605074</td><td>0.8 ML filgrastim-sndz 0.6 MG/ML Prefilled Syringe</td></tr><tr><td>1605075</td><td>0.8 ML filgrastim-sndz 0.6 MG/ML Prefilled Syringe [Zarxio]</td></tr><tr><td>1649943</td><td>filgrastim Injection</td></tr><tr><td>1649944</td><td>1 ML filgrastim 0.3 MG/ML Injection</td></tr><tr><td>1649945</td><td>filgrastim Injection [Neupogen]</td></tr><tr><td>1649946</td><td>1 ML filgrastim 0.3 MG/ML Injection [Neupogen]</td></tr><tr><td>1649963</td><td>1.6 ML filgrastim 0.3 MG/ML Injection</td></tr><tr><td>1649964</td><td>1.6 ML filgrastim 0.3 MG/ML Injection [Neupogen]</td></tr><tr><td>1657861</td><td>rituximab Injection</td></tr><tr><td>1657862</td><td>10 ML rituximab 10 MG/ML Injection</td></tr><tr><td>1657863</td><td>rituximab Injection [Rituxan]</td></tr><tr><td>1657864</td><td>10 ML rituximab 10 MG/ML Injection [Rituxan]</td></tr><tr><td>1657867</td><td>50 ML rituximab 10 MG/ML Injection</td></tr><tr><td>1657868</td><td>50 ML rituximab 10 MG/ML Injection [Rituxan]</td></tr><tr><td>1746487</td><td>pegbovigrastim</td></tr><tr><td>1794537</td><td>plerixafor Injection</td></tr><tr><td>1794539</td><td>plerixafor Injection [Mozobil]</td></tr><tr><td>1927881</td><td>rituximab 120 MG/ML</td></tr><tr><td>1927882</td><td>hyaluronidase / rituximab Injectable Product</td></tr><tr><td>1927883</td><td>hyaluronidase / rituximab Injection</td></tr><tr><td>1927884</td><td>hyaluronidase / rituximab</td></tr><tr><td>1927885</td><td>11.7 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection</td></tr><tr><td>1927886</td><td>Rituxan Hycela</td></tr><tr><td>1927887</td><td>hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML [Rituxan Hycela]</td></tr><tr><td>1927888</td><td>hyaluronidase / rituximab Injection [Rituxan Hycela]</td></tr><tr><td>1927889</td><td>Rituxan Hycela Injectable Product</td></tr><tr><td>1927890</td><td>11.7 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection [Rituxan Hycela]</td></tr><tr><td>1927893</td><td>13.4 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection</td></tr><tr><td>1927894</td><td>13.4 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection [Rituxan Hycela]</td></tr><tr><td>2048018</td><td>pegfilgrastim-jmdb</td></tr><tr><td>2048019</td><td>pegfilgrastim-jmdb 10 MG/ML</td></tr><tr><td>2048020</td><td>0.6 ML pegfilgrastim-jmdb 10 MG/ML Prefilled Syringe</td></tr><tr><td>2048021</td><td>Fulphila</td></tr><tr><td>2048022</td><td>pegfilgrastim-jmdb 10 MG/ML [Fulphila]</td></tr><tr><td>2048023</td><td>pegfilgrastim Prefilled Syringe [Fulphila]</td></tr><tr><td>2048024</td><td>Fulphila Injectable Product</td></tr><tr><td>2048025</td><td>0.6 ML pegfilgrastim-jmdb 10 MG/ML Prefilled Syringe [Fulphila]</td></tr><tr><td>2057198</td><td>filgrastim-aafi</td></tr><tr><td>2057199</td><td>filgrastim-aafi 0.6 MG/ML</td></tr><tr><td>2057200</td><td>0.5 ML filgrastim-aafi 0.6 MG/ML Prefilled Syringe</td></tr><tr><td>2057201</td><td>Nivestym</td></tr><tr><td>2057202</td><td>filgrastim-aafi 0.6 MG/ML [Nivestym]</td></tr><tr><td>2057203</td><td>filgrastim Prefilled Syringe [Nivestym]</td></tr><tr><td>2057204</td><td>Nivestym Injectable Product</td></tr><tr><td>2057205</td><td>0.5 ML filgrastim-aafi 0.6 MG/ML Prefilled Syringe [Nivestym]</td></tr><tr><td>2057208</td><td>filgrastim-aafi 0.3 MG/ML</td></tr><tr><td>2057209</td><td>1 ML filgrastim-aafi 0.3 MG/ML Injection</td></tr><tr><td>2057210</td><td>filgrastim-aafi 0.3 MG/ML [Nivestym]</td></tr><tr><td>2057211</td><td>filgrastim Injection [Nivestym]</td></tr><tr><td>2057212</td><td>1 ML filgrastim-aafi 0.3 MG/ML Injection [Nivestym]</td></tr><tr><td>2057215</td><td>0.8 ML filgrastim-aafi 0.6 MG/ML Prefilled Syringe</td></tr><tr><td>2057216</td><td>0.8 ML filgrastim-aafi 0.6 MG/ML Prefilled Syringe [Nivestym]</td></tr><tr><td>2057218</td><td>1.6 ML filgrastim-aafi 0.3 MG/ML Injection</td></tr><tr><td>2057219</td><td>1.6 ML filgrastim-aafi 0.3 MG/ML Injection [Nivestym]</td></tr><tr><td>2101455</td><td>tbo-filgrastim 0.3 MG/ML</td></tr><tr><td>2101456</td><td>1 ML tbo-filgrastim 0.3 MG/ML Injection</td></tr><tr><td>2101457</td><td>tbo-filgrastim 0.3 MG/ML [Granix]</td></tr><tr><td>2101458</td><td>filgrastim Injection [Granix]</td></tr><tr><td>2101459</td><td>1 ML tbo-filgrastim 0.3 MG/ML Injection [Granix]</td></tr><tr><td>2101464</td><td>1.6 ML tbo-filgrastim 0.3 MG/ML Injection</td></tr><tr><td>2101465</td><td>1.6 ML tbo-filgrastim 0.3 MG/ML Injection [Granix]</td></tr><tr><td>2102692</td><td>pegfilgrastim-cbqv</td></tr><tr><td>2102695</td><td>Udenyca</td></tr><tr><td>2102697</td><td>pegfilgrastim Prefilled Syringe [Udenyca]</td></tr><tr><td>2102698</td><td>Udenyca Injectable Product</td></tr><tr><td>2102702</td><td>pegfilgrastim-cbqv 10 MG/ML</td></tr><tr><td>2102703</td><td>0.6 ML pegfilgrastim-cbqv 10 MG/ML Prefilled Syringe</td></tr><tr><td>2102704</td><td>pegfilgrastim-cbqv 10 MG/ML [Udenyca]</td></tr><tr><td>2102705</td><td>0.6 ML pegfilgrastim-cbqv 10 MG/ML Prefilled Syringe [Udenyca]</td></tr><tr><td>2105824</td><td>rituximab-abbs</td></tr><tr><td>2105825</td><td>rituximab-abbs 10 MG/ML</td></tr><tr><td>2105826</td><td>10 ML rituximab-abbs 10 MG/ML Injection</td></tr><tr><td>2105827</td><td>Truxima</td></tr><tr><td>2105828</td><td>rituximab-abbs 10 MG/ML [Truxima]</td></tr><tr><td>2105829</td><td>rituximab Injection [Truxima]</td></tr><tr><td>2105830</td><td>Truxima Injectable Product</td></tr><tr><td>2105831</td><td>10 ML rituximab-abbs 10 MG/ML Injection [Truxima]</td></tr><tr><td>2105834</td><td>50 ML rituximab-abbs 10 MG/ML Injection</td></tr><tr><td>2105835</td><td>50 ML rituximab-abbs 10 MG/ML Injection [Truxima]</td></tr><tr><td>2260702</td><td>pegfilgrastim-bmez</td></tr><tr><td>2260703</td><td>pegfilgrastim-bmez 10 MG/ML</td></tr><tr><td>2260704</td><td>0.6 ML pegfilgrastim-bmez 10 MG/ML Prefilled Syringe</td></tr><tr><td>2260705</td><td>Ziextenzo</td></tr><tr><td>2260706</td><td>pegfilgrastim-bmez 10 MG/ML [Ziextenzo]</td></tr><tr><td>2260707</td><td>pegfilgrastim Prefilled Syringe [Ziextenzo]</td></tr><tr><td>2260708</td><td>Ziextenzo Injectable Product</td></tr><tr><td>2260709</td><td>0.6 ML pegfilgrastim-bmez 10 MG/ML Prefilled Syringe [Ziextenzo]</td></tr><tr><td>226754</td><td>Rituxan</td></tr><tr><td>227304</td><td>Neupogen</td></tr><tr><td>2273510</td><td>rituximab-pvvr</td></tr><tr><td>2273511</td><td>rituximab-pvvr 10 MG/ML</td></tr><tr><td>2273512</td><td>10 ML rituximab-pvvr 10 MG/ML Injection</td></tr><tr><td>2273513</td><td>Ruxience</td></tr><tr><td>2273514</td><td>rituximab-pvvr 10 MG/ML [Ruxience]</td></tr><tr><td>2273515</td><td>rituximab Injection [Ruxience]</td></tr><tr><td>2273516</td><td>Ruxience Injectable Product</td></tr><tr><td>2273517</td><td>10 ML rituximab-pvvr 10 MG/ML Injection [Ruxience]</td></tr><tr><td>2273520</td><td>50 ML rituximab-pvvr 10 MG/ML Injection</td></tr><tr><td>2273521</td><td>50 ML rituximab-pvvr 10 MG/ML Injection [Ruxience]</td></tr><tr><td>2469333</td><td>pegfilgrastim-apgf</td></tr><tr><td>2469334</td><td>pegfilgrastim-apgf 10 MG/ML</td></tr><tr><td>2469335</td><td>0.6 ML pegfilgrastim-apgf 10 MG/ML Prefilled Syringe</td></tr><tr><td>2469336</td><td>Nyvepria</td></tr><tr><td>2469337</td><td>pegfilgrastim-apgf 10 MG/ML [Nyvepria]</td></tr><tr><td>2469338</td><td>pegfilgrastim Prefilled Syringe [Nyvepria]</td></tr><tr><td>2469339</td><td>Nyvepria Injectable Product</td></tr><tr><td>2469340</td><td>0.6 ML pegfilgrastim-apgf 10 MG/ML Prefilled Syringe [Nyvepria]</td></tr><tr><td>2472325</td><td>rituximab-arrx</td></tr><tr><td>2472326</td><td>rituximab-arrx 10 MG/ML</td></tr><tr><td>2472327</td><td>10 ML rituximab-arrx 10 MG/ML Injection</td></tr><tr><td>2472328</td><td>Riabni</td></tr><tr><td>2472329</td><td>rituximab-arrx 10 MG/ML [Riabni]</td></tr><tr><td>2472330</td><td>rituximab Injection [Riabni]</td></tr><tr><td>2472331</td><td>Riabni Injectable Product</td></tr><tr><td>2472332</td><td>10 ML rituximab-arrx 10 MG/ML Injection [Riabni]</td></tr><tr><td>2472335</td><td>50 ML rituximab-arrx 10 MG/ML Injection</td></tr><tr><td>2472336</td><td>50 ML rituximab-arrx 10 MG/ML Injection [Riabni]</td></tr><tr><td>2549330</td><td>pegfilgrastim Injection</td></tr><tr><td>2549331</td><td>0.6 ML pegfilgrastim 10 MG/ML Injection</td></tr><tr><td>2549332</td><td>pegfilgrastim Injection [Neulasta]</td></tr><tr><td>2549333</td><td>0.6 ML pegfilgrastim 10 MG/ML Injection [Neulasta]</td></tr><tr><td>2595942</td><td>filgrastim-ayow</td></tr><tr><td>2595943</td><td>filgrastim-ayow 0.6 MG/ML</td></tr><tr><td>2595944</td><td>0.5 ML filgrastim-ayow 0.6 MG/ML Prefilled Syringe</td></tr><tr><td>2595946</td><td>Releuko</td></tr><tr><td>2595947</td><td>filgrastim-ayow 0.6 MG/ML [Releuko]</td></tr><tr><td>2595948</td><td>Releuko Injectable Product</td></tr><tr><td>2595949</td><td>filgrastim Prefilled Syringe [Releuko]</td></tr><tr><td>2595950</td><td>0.5 ML filgrastim-ayow 0.6 MG/ML Prefilled Syringe [Releuko]</td></tr><tr><td>2595952</td><td>filgrastim-ayow 0.3 MG/ML</td></tr><tr><td>2595953</td><td>1 ML filgrastim-ayow 0.3 MG/ML Injection</td></tr><tr><td>2595955</td><td>filgrastim-ayow 0.3 MG/ML [Releuko]</td></tr><tr><td>2595956</td><td>filgrastim Injection [Releuko]</td></tr><tr><td>2595957</td><td>1 ML filgrastim-ayow 0.3 MG/ML Injection [Releuko]</td></tr><tr><td>2595959</td><td>1.6 ML filgrastim-ayow 0.3 MG/ML Injection</td></tr><tr><td>2595960</td><td>1.6 ML filgrastim-ayow 0.3 MG/ML Injection [Releuko]</td></tr><tr><td>2595961</td><td>0.8 ML filgrastim-ayow 0.6 MG/ML Prefilled Syringe</td></tr><tr><td>2595962</td><td>0.8 ML filgrastim-ayow 0.6 MG/ML Prefilled Syringe [Releuko]</td></tr><tr><td>2602779</td><td>pegfilgrastim-pbbk</td></tr><tr><td>2602780</td><td>pegfilgrastim-pbbk 10 MG/ML</td></tr><tr><td>2602781</td><td>0.6 ML pegfilgrastim-pbbk 10 MG/ML Prefilled Syringe</td></tr><tr><td>2602783</td><td>Fylnetra</td></tr><tr><td>2602784</td><td>pegfilgrastim-pbbk 10 MG/ML [Fylnetra]</td></tr><tr><td>2602785</td><td>Fylnetra Injectable Product</td></tr><tr><td>2602786</td><td>pegfilgrastim Prefilled Syringe [Fylnetra]</td></tr><tr><td>2602787</td><td>0.6 ML pegfilgrastim-pbbk 10 MG/ML Prefilled Syringe [Fylnetra]</td></tr><tr><td>315932</td><td>filgrastim 0.3 MG/ML</td></tr><tr><td>316648</td><td>rituximab 10 MG/ML</td></tr><tr><td>331527</td><td>filgrastim 0.6 MG/ML</td></tr><tr><td>338036</td><td>pegfilgrastim</td></tr><tr><td>350977</td><td>pegfilgrastim 10 MG/ML</td></tr><tr><td>353501</td><td>Neulasta</td></tr><tr><td>567845</td><td>filgrastim 0.3 MG/ML [Neupogen]</td></tr><tr><td>573051</td><td>rituximab 10 MG/ML [Rituxan]</td></tr><tr><td>574887</td><td>filgrastim 0.6 MG/ML [Neupogen]</td></tr><tr><td>575870</td><td>pegfilgrastim 10 MG/ML [Neulasta]</td></tr><tr><td>68442</td><td>filgrastim</td></tr><tr><td>70167</td><td>lenograstim</td></tr><tr><td>727534</td><td>filgrastim Prefilled Syringe</td></tr><tr><td>727535</td><td>0.5 ML filgrastim 0.6 MG/ML Prefilled Syringe</td></tr><tr><td>727536</td><td>filgrastim Prefilled Syringe [Neupogen]</td></tr><tr><td>727537</td><td>0.5 ML filgrastim 0.6 MG/ML Prefilled Syringe [Neupogen]</td></tr><tr><td>727538</td><td>pegfilgrastim Prefilled Syringe</td></tr><tr><td>727539</td><td>0.6 ML pegfilgrastim 10 MG/ML Prefilled Syringe</td></tr><tr><td>727541</td><td>pegfilgrastim Prefilled Syringe [Neulasta]</td></tr><tr><td>727542</td><td>0.6 ML pegfilgrastim 10 MG/ML Prefilled Syringe [Neulasta]</td></tr><tr><td>727544</td><td>0.8 ML filgrastim 0.6 MG/ML Prefilled Syringe</td></tr><tr><td>727545</td><td>0.8 ML filgrastim 0.6 MG/ML Prefilled Syringe [Neupogen]</td></tr><tr><td>733003</td><td>plerixafor</td></tr><tr><td>735381</td><td>Mozobil</td></tr><tr><td>828698</td><td>plerixafor 20 MG/ML</td></tr><tr><td>828700</td><td>1.2 ML plerixafor 20 MG/ML Injection</td></tr><tr><td>828701</td><td>plerixafor 20 MG/ML [Mozobil]</td></tr><tr><td>828703</td><td>1.2 ML plerixafor 20 MG/ML Injection [Mozobil]</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs"]; # 
+  fhir:ValueSet.version [ fhir:value "0.1.5"]; # 
+  fhir:ValueSet.name [ fhir:value "RxNormMobilizingAgentsVS"]; # 
+  fhir:ValueSet.title [ fhir:value "RxNorm - Mobilizing Agents (auto only)"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-02T13:14:50-06:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.cibmtr.org" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Bob Milius" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "bmilius@nmdp.org" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "RxNorm codes for Mobilizing Agents (auto only)"]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1157967" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab Injectable Product" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1159651" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim Injectable Product" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1159878" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "plerixafor Injectable Product" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1161380" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim Injectable Product" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1162571" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenograstim Injectable Product" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1182279" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neulasta Injectable Product" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1182281" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neupogen Injectable Product" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1183314" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mozobil Injectable Product" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1185345" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rituxan Injectable Product" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "121191" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1433764" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "tbo-filgrastim" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1433765" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "tbo-filgrastim 0.6 MG/ML" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1433768" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.5 ML tbo-filgrastim 0.6 MG/ML Prefilled Syringe" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1433771" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.8 ML tbo-filgrastim 0.6 MG/ML Prefilled Syringe" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1440046" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lipegfilgrastim" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442677" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Granix" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442678" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "tbo-filgrastim 0.6 MG/ML [Granix]" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442679" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim Prefilled Syringe [Granix]" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442680" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Granix Injectable Product" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442681" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.5 ML tbo-filgrastim 0.6 MG/ML Prefilled Syringe [Granix]" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1442683" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.8 ML tbo-filgrastim 0.6 MG/ML Prefilled Syringe [Granix]" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1605064" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim-sndz" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1605065" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim-sndz 0.6 MG/ML" ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1605066" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.5 ML filgrastim-sndz 0.6 MG/ML Prefilled Syringe" ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1605067" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Zarxio" ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1605068" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim-sndz 0.6 MG/ML [Zarxio]" ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1605069" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim Prefilled Syringe [Zarxio]" ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1605070" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Zarxio Injectable Product" ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1605071" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.5 ML filgrastim-sndz 0.6 MG/ML Prefilled Syringe [Zarxio]" ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1605074" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.8 ML filgrastim-sndz 0.6 MG/ML Prefilled Syringe" ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1605075" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.8 ML filgrastim-sndz 0.6 MG/ML Prefilled Syringe [Zarxio]" ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1649943" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim Injection" ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1649944" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1 ML filgrastim 0.3 MG/ML Injection" ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1649945" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim Injection [Neupogen]" ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1649946" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1 ML filgrastim 0.3 MG/ML Injection [Neupogen]" ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1649963" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1.6 ML filgrastim 0.3 MG/ML Injection" ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1649964" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1.6 ML filgrastim 0.3 MG/ML Injection [Neupogen]" ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1657861" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab Injection" ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1657862" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "10 ML rituximab 10 MG/ML Injection" ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1657863" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab Injection [Rituxan]" ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1657864" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "10 ML rituximab 10 MG/ML Injection [Rituxan]" ]
+       ], [
+         fhir:index 41;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1657867" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "50 ML rituximab 10 MG/ML Injection" ]
+       ], [
+         fhir:index 42;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1657868" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "50 ML rituximab 10 MG/ML Injection [Rituxan]" ]
+       ], [
+         fhir:index 43;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1746487" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegbovigrastim" ]
+       ], [
+         fhir:index 44;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1794537" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "plerixafor Injection" ]
+       ], [
+         fhir:index 45;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1794539" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "plerixafor Injection [Mozobil]" ]
+       ], [
+         fhir:index 46;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927881" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab 120 MG/ML" ]
+       ], [
+         fhir:index 47;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927882" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "hyaluronidase / rituximab Injectable Product" ]
+       ], [
+         fhir:index 48;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927883" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "hyaluronidase / rituximab Injection" ]
+       ], [
+         fhir:index 49;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927884" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "hyaluronidase / rituximab" ]
+       ], [
+         fhir:index 50;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927885" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "11.7 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection" ]
+       ], [
+         fhir:index 51;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927886" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rituxan Hycela" ]
+       ], [
+         fhir:index 52;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927887" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML [Rituxan Hycela]" ]
+       ], [
+         fhir:index 53;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927888" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "hyaluronidase / rituximab Injection [Rituxan Hycela]" ]
+       ], [
+         fhir:index 54;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927889" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rituxan Hycela Injectable Product" ]
+       ], [
+         fhir:index 55;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927890" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "11.7 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection [Rituxan Hycela]" ]
+       ], [
+         fhir:index 56;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927893" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "13.4 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection" ]
+       ], [
+         fhir:index 57;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1927894" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "13.4 ML hyaluronidase, human recombinant 2000 UNT/ML / rituximab 120 MG/ML Injection [Rituxan Hycela]" ]
+       ], [
+         fhir:index 58;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2048018" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim-jmdb" ]
+       ], [
+         fhir:index 59;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2048019" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim-jmdb 10 MG/ML" ]
+       ], [
+         fhir:index 60;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2048020" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.6 ML pegfilgrastim-jmdb 10 MG/ML Prefilled Syringe" ]
+       ], [
+         fhir:index 61;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2048021" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fulphila" ]
+       ], [
+         fhir:index 62;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2048022" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim-jmdb 10 MG/ML [Fulphila]" ]
+       ], [
+         fhir:index 63;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2048023" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim Prefilled Syringe [Fulphila]" ]
+       ], [
+         fhir:index 64;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2048024" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fulphila Injectable Product" ]
+       ], [
+         fhir:index 65;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2048025" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.6 ML pegfilgrastim-jmdb 10 MG/ML Prefilled Syringe [Fulphila]" ]
+       ], [
+         fhir:index 66;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2057198" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim-aafi" ]
+       ], [
+         fhir:index 67;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2057199" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim-aafi 0.6 MG/ML" ]
+       ], [
+         fhir:index 68;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2057200" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.5 ML filgrastim-aafi 0.6 MG/ML Prefilled Syringe" ]
+       ], [
+         fhir:index 69;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2057201" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nivestym" ]
+       ], [
+         fhir:index 70;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2057202" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim-aafi 0.6 MG/ML [Nivestym]" ]
+       ], [
+         fhir:index 71;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2057203" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim Prefilled Syringe [Nivestym]" ]
+       ], [
+         fhir:index 72;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2057204" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nivestym Injectable Product" ]
+       ], [
+         fhir:index 73;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2057205" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.5 ML filgrastim-aafi 0.6 MG/ML Prefilled Syringe [Nivestym]" ]
+       ], [
+         fhir:index 74;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2057208" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim-aafi 0.3 MG/ML" ]
+       ], [
+         fhir:index 75;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2057209" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1 ML filgrastim-aafi 0.3 MG/ML Injection" ]
+       ], [
+         fhir:index 76;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2057210" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim-aafi 0.3 MG/ML [Nivestym]" ]
+       ], [
+         fhir:index 77;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2057211" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim Injection [Nivestym]" ]
+       ], [
+         fhir:index 78;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2057212" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1 ML filgrastim-aafi 0.3 MG/ML Injection [Nivestym]" ]
+       ], [
+         fhir:index 79;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2057215" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.8 ML filgrastim-aafi 0.6 MG/ML Prefilled Syringe" ]
+       ], [
+         fhir:index 80;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2057216" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.8 ML filgrastim-aafi 0.6 MG/ML Prefilled Syringe [Nivestym]" ]
+       ], [
+         fhir:index 81;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2057218" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1.6 ML filgrastim-aafi 0.3 MG/ML Injection" ]
+       ], [
+         fhir:index 82;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2057219" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1.6 ML filgrastim-aafi 0.3 MG/ML Injection [Nivestym]" ]
+       ], [
+         fhir:index 83;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2101455" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "tbo-filgrastim 0.3 MG/ML" ]
+       ], [
+         fhir:index 84;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2101456" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1 ML tbo-filgrastim 0.3 MG/ML Injection" ]
+       ], [
+         fhir:index 85;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2101457" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "tbo-filgrastim 0.3 MG/ML [Granix]" ]
+       ], [
+         fhir:index 86;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2101458" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim Injection [Granix]" ]
+       ], [
+         fhir:index 87;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2101459" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1 ML tbo-filgrastim 0.3 MG/ML Injection [Granix]" ]
+       ], [
+         fhir:index 88;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2101464" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1.6 ML tbo-filgrastim 0.3 MG/ML Injection" ]
+       ], [
+         fhir:index 89;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2101465" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1.6 ML tbo-filgrastim 0.3 MG/ML Injection [Granix]" ]
+       ], [
+         fhir:index 90;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2102692" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim-cbqv" ]
+       ], [
+         fhir:index 91;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2102695" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Udenyca" ]
+       ], [
+         fhir:index 92;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2102697" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim Prefilled Syringe [Udenyca]" ]
+       ], [
+         fhir:index 93;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2102698" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Udenyca Injectable Product" ]
+       ], [
+         fhir:index 94;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2102702" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim-cbqv 10 MG/ML" ]
+       ], [
+         fhir:index 95;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2102703" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.6 ML pegfilgrastim-cbqv 10 MG/ML Prefilled Syringe" ]
+       ], [
+         fhir:index 96;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2102704" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim-cbqv 10 MG/ML [Udenyca]" ]
+       ], [
+         fhir:index 97;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2102705" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.6 ML pegfilgrastim-cbqv 10 MG/ML Prefilled Syringe [Udenyca]" ]
+       ], [
+         fhir:index 98;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105824" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab-abbs" ]
+       ], [
+         fhir:index 99;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105825" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab-abbs 10 MG/ML" ]
+       ], [
+         fhir:index 100;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105826" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "10 ML rituximab-abbs 10 MG/ML Injection" ]
+       ], [
+         fhir:index 101;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105827" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Truxima" ]
+       ], [
+         fhir:index 102;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105828" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab-abbs 10 MG/ML [Truxima]" ]
+       ], [
+         fhir:index 103;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105829" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab Injection [Truxima]" ]
+       ], [
+         fhir:index 104;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105830" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Truxima Injectable Product" ]
+       ], [
+         fhir:index 105;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105831" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "10 ML rituximab-abbs 10 MG/ML Injection [Truxima]" ]
+       ], [
+         fhir:index 106;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105834" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "50 ML rituximab-abbs 10 MG/ML Injection" ]
+       ], [
+         fhir:index 107;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105835" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "50 ML rituximab-abbs 10 MG/ML Injection [Truxima]" ]
+       ], [
+         fhir:index 108;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2260702" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim-bmez" ]
+       ], [
+         fhir:index 109;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2260703" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim-bmez 10 MG/ML" ]
+       ], [
+         fhir:index 110;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2260704" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.6 ML pegfilgrastim-bmez 10 MG/ML Prefilled Syringe" ]
+       ], [
+         fhir:index 111;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2260705" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ziextenzo" ]
+       ], [
+         fhir:index 112;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2260706" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim-bmez 10 MG/ML [Ziextenzo]" ]
+       ], [
+         fhir:index 113;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2260707" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim Prefilled Syringe [Ziextenzo]" ]
+       ], [
+         fhir:index 114;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2260708" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ziextenzo Injectable Product" ]
+       ], [
+         fhir:index 115;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2260709" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.6 ML pegfilgrastim-bmez 10 MG/ML Prefilled Syringe [Ziextenzo]" ]
+       ], [
+         fhir:index 116;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "226754" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rituxan" ]
+       ], [
+         fhir:index 117;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "227304" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neupogen" ]
+       ], [
+         fhir:index 118;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2273510" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab-pvvr" ]
+       ], [
+         fhir:index 119;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2273511" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab-pvvr 10 MG/ML" ]
+       ], [
+         fhir:index 120;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2273512" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "10 ML rituximab-pvvr 10 MG/ML Injection" ]
+       ], [
+         fhir:index 121;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2273513" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ruxience" ]
+       ], [
+         fhir:index 122;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2273514" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab-pvvr 10 MG/ML [Ruxience]" ]
+       ], [
+         fhir:index 123;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2273515" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab Injection [Ruxience]" ]
+       ], [
+         fhir:index 124;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2273516" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ruxience Injectable Product" ]
+       ], [
+         fhir:index 125;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2273517" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "10 ML rituximab-pvvr 10 MG/ML Injection [Ruxience]" ]
+       ], [
+         fhir:index 126;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2273520" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "50 ML rituximab-pvvr 10 MG/ML Injection" ]
+       ], [
+         fhir:index 127;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2273521" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "50 ML rituximab-pvvr 10 MG/ML Injection [Ruxience]" ]
+       ], [
+         fhir:index 128;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2469333" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim-apgf" ]
+       ], [
+         fhir:index 129;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2469334" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim-apgf 10 MG/ML" ]
+       ], [
+         fhir:index 130;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2469335" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.6 ML pegfilgrastim-apgf 10 MG/ML Prefilled Syringe" ]
+       ], [
+         fhir:index 131;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2469336" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nyvepria" ]
+       ], [
+         fhir:index 132;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2469337" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim-apgf 10 MG/ML [Nyvepria]" ]
+       ], [
+         fhir:index 133;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2469338" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim Prefilled Syringe [Nyvepria]" ]
+       ], [
+         fhir:index 134;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2469339" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nyvepria Injectable Product" ]
+       ], [
+         fhir:index 135;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2469340" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.6 ML pegfilgrastim-apgf 10 MG/ML Prefilled Syringe [Nyvepria]" ]
+       ], [
+         fhir:index 136;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2472325" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab-arrx" ]
+       ], [
+         fhir:index 137;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2472326" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab-arrx 10 MG/ML" ]
+       ], [
+         fhir:index 138;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2472327" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "10 ML rituximab-arrx 10 MG/ML Injection" ]
+       ], [
+         fhir:index 139;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2472328" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Riabni" ]
+       ], [
+         fhir:index 140;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2472329" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab-arrx 10 MG/ML [Riabni]" ]
+       ], [
+         fhir:index 141;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2472330" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab Injection [Riabni]" ]
+       ], [
+         fhir:index 142;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2472331" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Riabni Injectable Product" ]
+       ], [
+         fhir:index 143;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2472332" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "10 ML rituximab-arrx 10 MG/ML Injection [Riabni]" ]
+       ], [
+         fhir:index 144;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2472335" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "50 ML rituximab-arrx 10 MG/ML Injection" ]
+       ], [
+         fhir:index 145;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2472336" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "50 ML rituximab-arrx 10 MG/ML Injection [Riabni]" ]
+       ], [
+         fhir:index 146;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2549330" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim Injection" ]
+       ], [
+         fhir:index 147;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2549331" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.6 ML pegfilgrastim 10 MG/ML Injection" ]
+       ], [
+         fhir:index 148;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2549332" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim Injection [Neulasta]" ]
+       ], [
+         fhir:index 149;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2549333" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.6 ML pegfilgrastim 10 MG/ML Injection [Neulasta]" ]
+       ], [
+         fhir:index 150;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595942" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim-ayow" ]
+       ], [
+         fhir:index 151;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595943" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim-ayow 0.6 MG/ML" ]
+       ], [
+         fhir:index 152;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595944" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.5 ML filgrastim-ayow 0.6 MG/ML Prefilled Syringe" ]
+       ], [
+         fhir:index 153;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595946" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Releuko" ]
+       ], [
+         fhir:index 154;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595947" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim-ayow 0.6 MG/ML [Releuko]" ]
+       ], [
+         fhir:index 155;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595948" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Releuko Injectable Product" ]
+       ], [
+         fhir:index 156;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595949" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim Prefilled Syringe [Releuko]" ]
+       ], [
+         fhir:index 157;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595950" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.5 ML filgrastim-ayow 0.6 MG/ML Prefilled Syringe [Releuko]" ]
+       ], [
+         fhir:index 158;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595952" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim-ayow 0.3 MG/ML" ]
+       ], [
+         fhir:index 159;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595953" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1 ML filgrastim-ayow 0.3 MG/ML Injection" ]
+       ], [
+         fhir:index 160;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595955" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim-ayow 0.3 MG/ML [Releuko]" ]
+       ], [
+         fhir:index 161;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595956" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim Injection [Releuko]" ]
+       ], [
+         fhir:index 162;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595957" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1 ML filgrastim-ayow 0.3 MG/ML Injection [Releuko]" ]
+       ], [
+         fhir:index 163;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595959" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1.6 ML filgrastim-ayow 0.3 MG/ML Injection" ]
+       ], [
+         fhir:index 164;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595960" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1.6 ML filgrastim-ayow 0.3 MG/ML Injection [Releuko]" ]
+       ], [
+         fhir:index 165;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595961" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.8 ML filgrastim-ayow 0.6 MG/ML Prefilled Syringe" ]
+       ], [
+         fhir:index 166;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2595962" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.8 ML filgrastim-ayow 0.6 MG/ML Prefilled Syringe [Releuko]" ]
+       ], [
+         fhir:index 167;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2602779" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim-pbbk" ]
+       ], [
+         fhir:index 168;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2602780" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim-pbbk 10 MG/ML" ]
+       ], [
+         fhir:index 169;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2602781" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.6 ML pegfilgrastim-pbbk 10 MG/ML Prefilled Syringe" ]
+       ], [
+         fhir:index 170;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2602783" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fylnetra" ]
+       ], [
+         fhir:index 171;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2602784" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim-pbbk 10 MG/ML [Fylnetra]" ]
+       ], [
+         fhir:index 172;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2602785" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fylnetra Injectable Product" ]
+       ], [
+         fhir:index 173;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2602786" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim Prefilled Syringe [Fylnetra]" ]
+       ], [
+         fhir:index 174;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2602787" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.6 ML pegfilgrastim-pbbk 10 MG/ML Prefilled Syringe [Fylnetra]" ]
+       ], [
+         fhir:index 175;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "315932" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim 0.3 MG/ML" ]
+       ], [
+         fhir:index 176;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "316648" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab 10 MG/ML" ]
+       ], [
+         fhir:index 177;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "331527" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim 0.6 MG/ML" ]
+       ], [
+         fhir:index 178;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "338036" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim" ]
+       ], [
+         fhir:index 179;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "350977" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim 10 MG/ML" ]
+       ], [
+         fhir:index 180;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "353501" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neulasta" ]
+       ], [
+         fhir:index 181;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "567845" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim 0.3 MG/ML [Neupogen]" ]
+       ], [
+         fhir:index 182;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "573051" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "rituximab 10 MG/ML [Rituxan]" ]
+       ], [
+         fhir:index 183;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "574887" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim 0.6 MG/ML [Neupogen]" ]
+       ], [
+         fhir:index 184;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "575870" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim 10 MG/ML [Neulasta]" ]
+       ], [
+         fhir:index 185;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "68442" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim" ]
+       ], [
+         fhir:index 186;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "70167" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "lenograstim" ]
+       ], [
+         fhir:index 187;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "727534" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim Prefilled Syringe" ]
+       ], [
+         fhir:index 188;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "727535" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.5 ML filgrastim 0.6 MG/ML Prefilled Syringe" ]
+       ], [
+         fhir:index 189;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "727536" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "filgrastim Prefilled Syringe [Neupogen]" ]
+       ], [
+         fhir:index 190;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "727537" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.5 ML filgrastim 0.6 MG/ML Prefilled Syringe [Neupogen]" ]
+       ], [
+         fhir:index 191;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "727538" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim Prefilled Syringe" ]
+       ], [
+         fhir:index 192;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "727539" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.6 ML pegfilgrastim 10 MG/ML Prefilled Syringe" ]
+       ], [
+         fhir:index 193;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "727541" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pegfilgrastim Prefilled Syringe [Neulasta]" ]
+       ], [
+         fhir:index 194;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "727542" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.6 ML pegfilgrastim 10 MG/ML Prefilled Syringe [Neulasta]" ]
+       ], [
+         fhir:index 195;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "727544" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.8 ML filgrastim 0.6 MG/ML Prefilled Syringe" ]
+       ], [
+         fhir:index 196;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "727545" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "0.8 ML filgrastim 0.6 MG/ML Prefilled Syringe [Neupogen]" ]
+       ], [
+         fhir:index 197;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "733003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "plerixafor" ]
+       ], [
+         fhir:index 198;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "735381" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mozobil" ]
+       ], [
+         fhir:index 199;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "828698" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "plerixafor 20 MG/ML" ]
+       ], [
+         fhir:index 200;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "828700" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1.2 ML plerixafor 20 MG/ML Injection" ]
+       ], [
+         fhir:index 201;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "828701" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "plerixafor 20 MG/ML [Mozobil]" ]
+       ], [
+         fhir:index 202;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "828703" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1.2 ML plerixafor 20 MG/ML Injection [Mozobil]" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

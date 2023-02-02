@@ -1,0 +1,140 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/Medication/Medication-Post-HCT-Disease-Therapy-Example> a fhir:Medication;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Medication-Post-HCT-Disease-Therapy-Example"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-post-hct-disease-therapy-planned-medication";
+       fhir:index 0;
+       fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-post-hct-disease-therapy-planned-medication>
+     ];
+     fhir:Meta.security [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.cibmtr.org/codesystem/transplant-center" ];
+       fhir:Coding.code [ fhir:value "rc_99999" ];
+       fhir:Coding.display [ fhir:value "99999 My Transplant Center" ]
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"Medication-Post-HCT-Disease-Therapy-Example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;Medication-Post-HCT-Disease-Therapy-Example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html\">CIBMTR Planned Post-HCT Disease Therapy Medication</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.cibmtr.org/codesystem/transplant-center http://terminology.cibmtr.org/codesystem/transplant-center}\">http://terminology.cibmtr.org/codesystem/transplant-center</span></p></div><p><b>code</b>: blinatumomab <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1597258; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1597260 &quot;blinatumomab Injectable Product&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1597262 &quot;blinatumomab 0.035 MG Injection&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1597267 &quot;blinatumomab 0.035 MG Injection [Blincyto]&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1651249 &quot;blinatumomab 0.035 MG&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1651250 &quot;blinatumomab Injection&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1651252 &quot;blinatumomab 0.035 MG [Blincyto]&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1651253 &quot;blinatumomab Injection [Blincyto]&quot;)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>blinatumomab <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1597258; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1597260 &quot;blinatumomab Injectable Product&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1597262 &quot;blinatumomab 0.035 MG Injection&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1597267 &quot;blinatumomab 0.035 MG Injection [Blincyto]&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1651249 &quot;blinatumomab 0.035 MG&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1651250 &quot;blinatumomab Injection&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1651252 &quot;blinatumomab 0.035 MG [Blincyto]&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1651253 &quot;blinatumomab Injection [Blincyto]&quot;)</span></td><td>0.035 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/0.035 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span></td></tr></table></div>"
+  ]; # 
+  fhir:Medication.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:Coding.code [ fhir:value "1597258" ];
+       fhir:Coding.display [ fhir:value "blinatumomab" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:Coding.code [ fhir:value "1597260" ];
+       fhir:Coding.display [ fhir:value "blinatumomab Injectable Product" ]
+     ], [
+       fhir:index 2;
+       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:Coding.code [ fhir:value "1597262" ];
+       fhir:Coding.display [ fhir:value "blinatumomab 0.035 MG Injection" ]
+     ], [
+       fhir:index 3;
+       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:Coding.code [ fhir:value "1597267" ];
+       fhir:Coding.display [ fhir:value "blinatumomab 0.035 MG Injection [Blincyto]" ]
+     ], [
+       fhir:index 4;
+       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:Coding.code [ fhir:value "1651249" ];
+       fhir:Coding.display [ fhir:value "blinatumomab 0.035 MG" ]
+     ], [
+       fhir:index 5;
+       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:Coding.code [ fhir:value "1651250" ];
+       fhir:Coding.display [ fhir:value "blinatumomab Injection" ]
+     ], [
+       fhir:index 6;
+       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:Coding.code [ fhir:value "1651252" ];
+       fhir:Coding.display [ fhir:value "blinatumomab 0.035 MG [Blincyto]" ]
+     ], [
+       fhir:index 7;
+       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:Coding.code [ fhir:value "1651253" ];
+       fhir:Coding.display [ fhir:value "blinatumomab Injection [Blincyto]" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "blinatumomab" ]
+  ]; # 
+  fhir:Medication.ingredient [
+     fhir:index 0;
+     fhir:Medication.ingredient.itemCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+         fhir:Coding.code [ fhir:value "1597258" ];
+         fhir:Coding.display [ fhir:value "blinatumomab" ]
+       ], [
+         fhir:index 1;
+         fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+         fhir:Coding.code [ fhir:value "1597260" ];
+         fhir:Coding.display [ fhir:value "blinatumomab Injectable Product" ]
+       ], [
+         fhir:index 2;
+         fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+         fhir:Coding.code [ fhir:value "1597262" ];
+         fhir:Coding.display [ fhir:value "blinatumomab 0.035 MG Injection" ]
+       ], [
+         fhir:index 3;
+         fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+         fhir:Coding.code [ fhir:value "1597267" ];
+         fhir:Coding.display [ fhir:value "blinatumomab 0.035 MG Injection [Blincyto]" ]
+       ], [
+         fhir:index 4;
+         fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+         fhir:Coding.code [ fhir:value "1651249" ];
+         fhir:Coding.display [ fhir:value "blinatumomab 0.035 MG" ]
+       ], [
+         fhir:index 5;
+         fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+         fhir:Coding.code [ fhir:value "1651250" ];
+         fhir:Coding.display [ fhir:value "blinatumomab Injection" ]
+       ], [
+         fhir:index 6;
+         fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+         fhir:Coding.code [ fhir:value "1651252" ];
+         fhir:Coding.display [ fhir:value "blinatumomab 0.035 MG [Blincyto]" ]
+       ], [
+         fhir:index 7;
+         fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+         fhir:Coding.code [ fhir:value "1651253" ];
+         fhir:Coding.display [ fhir:value "blinatumomab Injection [Blincyto]" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "blinatumomab" ]
+     ];
+     fhir:Medication.ingredient.strength [
+       fhir:Ratio.numerator [
+         fhir:Quantity.value [ fhir:value "0.035"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "milligram" ];
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Quantity.code [ fhir:value "mg" ]
+       ];
+       fhir:Ratio.denominator [
+         fhir:Quantity.value [ fhir:value "0.035"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "milligram" ];
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Quantity.code [ fhir:value "mg" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/Medication/Medication-Post-HCT-Disease-Therapy-Example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

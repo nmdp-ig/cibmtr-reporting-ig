@@ -1,0 +1,27 @@
+{
+  "resourceType" : "Patient",
+  "id" : "PatientExample6",
+  "meta" : {
+    "profile" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"],
+    "security" : [{
+      "system" : "http://terminology.cibmtr.org/codesystem/transplant-center",
+      "code" : "rc_00000",
+      "display" : "00000 Good Health Medical Center"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b></b> female, DoB Unknown ( id: 123456)</p><hr/></div>"
+  },
+  "identifier" : [{
+    "system" : "http://terminology.cibmtr.org/identifier/CRID",
+    "value" : "123456"
+  }],
+  "name" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode" : "masked"
+    }]
+  }],
+  "gender" : "female"
+}

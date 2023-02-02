@@ -89,17 +89,17 @@ Used to test production client workflows
             <td>POST</td>
             <td>https://okta.nmdp.org/oauth2/aus3ck6q30qmOdpMb1t7/v1/token</td>
         </tr>
-        <tr style="color:gray; text-decoration-line: line-through">
+        <tr>
             <td>Base URL</td>
             <td></td>
             <td>https://api.nmdp.org/cibmtr-fhir-backend/v1</td>
         </tr>
-        <tr style="color:gray; text-decoration-line: line-through">
+        <tr>
             <td style="padding-left:20px">CRID Lookup/Assignment</td>
             <td>PUT</td>
             <td>https://api.nmdp.org/cibmtr-fhir-backend/v1/CRID</td>
         </tr>
-        <tr style="color:gray; text-decoration-line: line-through">
+        <tr>
             <td style="padding-left:20px">FHIR Resources</td>
             <td><a href="https://hl7.org/fhir/http.html">POST (Create),<br /> PUT (Update),<br /> GET (Read, Search)</a></td>
             <td>https://api.nmdp.org/cibmtr-fhir-backend/v1//r4/&lt;resource&gt;<br/><br />

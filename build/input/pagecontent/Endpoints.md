@@ -37,8 +37,8 @@ Used for development of new client software
 </table>
 {:.grid}
 
-#### ProdTest 
-Used to test production client workflows
+#### Production Test 
+Used to test production client workflows with non-production data
 
 <table>
     <thead>
@@ -74,7 +74,7 @@ Used to test production client workflows
 </table>
 {:.grid}
 
-#### Production (not yet supported)
+#### Production
 <table>
     <thead>
         <tr>

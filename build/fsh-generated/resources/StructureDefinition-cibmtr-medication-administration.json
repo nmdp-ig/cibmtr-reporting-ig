@@ -1,16 +1,6 @@
 {
   "resourceType": "StructureDefinition",
   "id": "cibmtr-medication-administration",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Medications"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration",
   "version": "0.1.5",
   "name": "CIBMTR_MedicationAdministration",
@@ -84,7 +74,16 @@
       {
         "id": "MedicationAdministration.meta.security:TransplantCenter.code",
         "path": "MedicationAdministration.meta.security.code",
-        "min": 1
+        "min": 1,
+        "constraint": [
+          {
+            "key": "sec-rc",
+            "severity": "error",
+            "human": "Use transplant center identifier for security tag",
+            "expression": "matches('^rc_[0-9]{5}$')",
+            "source": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration"
+          }
+        ]
       }
     ]
   }

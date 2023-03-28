@@ -7,23 +7,10 @@ Parent:         us-core-patient
 Id:             cibmtr-patient
 Title:          "CIBMTR Patient Profile (us-core)"
 Description:    "CIBMTR Patient Profile for CRID assignment (us-core)"
-// * extension contains http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName 0..1 MS
-// * extension contains MaidenNameExt 0..1 MS
 * extension contains MothersMaidenNameExtension named MaidenNameExt 0..1 MS
 * extension contains BirthSexExtension named BirthSexExt 0..1 MS
 * extension contains PatientBirthPlaceExtension named PatBirthPlaceExt 0..1 MS
-// * extension[PatBirthPlaceExt].valueAddress.city MS
-// * extension[PatBirthPlaceExt].valueAddress.state MS
-// * extension[PatBirthPlaceExt].valueAddress.country MS
-* meta.security ^slicing.discriminator.type = #pattern
-* meta.security ^slicing.discriminator.path = "system"
-* meta.security ^slicing.rules = #open
-* meta.security ^slicing.description = "slicing on meta.security"
-* meta.security contains
-    TransplantCenter 1..1 MS
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code obeys sec-rc
-* meta.security[TransplantCenter].code 1..1
+* insert MetaSecurityRules
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
@@ -51,30 +38,11 @@ Description:    "CIBMTR Patient Profile for CRID assignment (us-core)"
 // Expression: "('http://cibmtr.org/identifier/transplant-center' in identifier.system) or ('http://nmdp.org/identifier/transplant-center' in identifier.system)"
 // Severity: #warning
 
-
-Instance: PatientExample1 
-InstanceOf: http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
-Description: "example using CIBMTR center number"
-Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_00000
-* meta.security[TransplantCenter].display = "00000 Good Health Medical Center"
-* identifier.system = "http://example.org/mrn"
-* identifier.value = "abc"
-* name.given = "John"
-* name.family = "Doe"
-* gender = #male
-// * managingOrganization.identifier.system = "http://cibmtr.org/identifier/transplant-center"
-// * managingOrganization.identifier.value = "456"
-
-
-Instance: PatientExample2
+Instance: PatientExample1
 InstanceOf: http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
 Description: "Patient with CIBMTR CRID"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_00000
-* meta.security[TransplantCenter].display = "00000 Good Health Medical Center"
+* insert MetaSecurityExample
 * identifier[0].system = "http://example.org/mrn"
 * identifier[0].value = "abc"
 * identifier[1].system = "http://terminology.cibmtr.org/identifier/CRID"
@@ -85,14 +53,25 @@ Usage: #example
 // * managingOrganization.identifier.system = "http://cibmtr.org/identifier/transplant-center"
 // * managingOrganization.identifier.value = "456"
 
+Instance: PatientExample2 
+InstanceOf: http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
+Description: "example using CIBMTR center number"
+Usage: #example
+* insert MetaSecurityExample
+* identifier.system = "http://example.org/mrn"
+* identifier.value = "abc"
+* name.given = "John"
+* name.family = "Doe"
+* gender = #male
+// * managingOrganization.identifier.system = "http://cibmtr.org/identifier/transplant-center"
+// * managingOrganization.identifier.value = "456"
+
 
 Instance: PatientExample3
 InstanceOf: http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
 Description: "Patient with MRN and CRID, Race=White, Ethnicity=Unknown"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_00000
-* meta.security[TransplantCenter].display = "00000 Good Health Medical Center"
+* insert MetaSecurityExample
 * identifier[0].system = "http://example.org/mrn"
 * identifier[0].value = "abc"
 * identifier[1].system = "http://terminology.cibmtr.org/identifier/CRID"
@@ -116,9 +95,7 @@ Instance: PatientExample4
 InstanceOf: http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
 Description: "Patient with CRID and MRN, Race=Black or African American, Ethnicity=Unknown"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_00000
-* meta.security[TransplantCenter].display = "00000 Good Health Medical Center"
+* insert MetaSecurityExample
 * identifier[+].system = "http://example.org/mrn"
 * identifier[=].value = "abc"
 * identifier[+].system = "http://terminology.cibmtr.org/identifier/CRID"
@@ -144,9 +121,7 @@ Instance: PatientExample5
 InstanceOf: http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
 Description: "Patient with CRID & MRN, Race=Mixed, Ethnicity=Not Hispanic or Latino"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_00000
-* meta.security[TransplantCenter].display = "00000 Good Health Medical Center"
+* insert MetaSecurityExample
 * identifier[+].system = "http://example.org/mrn"
 * identifier[=].value = "abc"
 * identifier[+].system = "http://terminology.cibmtr.org/identifier/CRID"
@@ -173,9 +148,7 @@ Instance: PatientExample6
 InstanceOf: http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient
 Description: "Patient with CIBMTR CRID"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_00000
-* meta.security[TransplantCenter].display = "00000 Good Health Medical Center"
+* insert MetaSecurityExample
 * identifier[+]
   * system = "http://terminology.cibmtr.org/identifier/CRID"
   * value = "123456"
@@ -192,7 +165,3 @@ Usage: #example
 // * http://nmdp.org/identifier/transplant-center# 
 
 
-Invariant:  sec-rc
-Severity:   #error
-Description: "Use transplant center identifier for security tag"
-Expression: "matches('^rc_[0-9]{5}$')"

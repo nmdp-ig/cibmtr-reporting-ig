@@ -69,7 +69,16 @@
       {
         "id": "Medication.meta.security:TransplantCenter.code",
         "path": "Medication.meta.security.code",
-        "min": 1
+        "min": 1,
+        "constraint": [
+          {
+            "key": "sec-rc",
+            "severity": "error",
+            "human": "Use transplant center identifier for security tag",
+            "expression": "matches('^rc_[0-9]{5}$')",
+            "source": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication"
+          }
+        ]
       }
     ]
   }

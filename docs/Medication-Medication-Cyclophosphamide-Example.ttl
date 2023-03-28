@@ -5,86 +5,73 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/cibmtr-reporting/Medication/Medication-Cyclophosphamide-Example> a fhir:Medication;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "Medication-Cyclophosphamide-Example"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication";
-       fhir:index 0;
+<http://fhir.nmdp.org/ig/cibmtr-reporting/Medication/Medication-Cyclophosphamide-Example> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Medication-Cyclophosphamide-Example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication"^^xsd:anyURI ;
        fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication>
-     ];
-     fhir:Meta.security [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.cibmtr.org/codesystem/transplant-center" ];
-       fhir:Coding.code [ fhir:value "rc_99999" ];
-       fhir:Coding.display [ fhir:value "99999 My Transplant Center" ]
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"Medication-Cyclophosphamide-Example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;Medication-Cyclophosphamide-Example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cibmtr-medication.html\">CIBMTR Medication (us-core)</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.cibmtr.org/codesystem/transplant-center http://terminology.cibmtr.org/codesystem/transplant-center}\">http://terminology.cibmtr.org/codesystem/transplant-center</span></p></div><p><b>code</b>: CYCLOPHOSPHAMIDE 1 G IJ SOLR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#3002 &quot;cyclophosphamide&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1545988 &quot;cyclophosphamide anhydrous&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1734919 &quot;cyclophosphamide 1000 MG Injection&quot;)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>CYCLOPHOSPHAMIDE 1 G IJ SOLR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#3002 &quot;cyclophosphamide&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1545988 &quot;cyclophosphamide anhydrous&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1734919 &quot;cyclophosphamide 1000 MG Injection&quot;)</span></td><td>1 gram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code g = 'g')</span>/1 gram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code g = 'g')</span></td></tr></table></div>"
-  ]; # 
-  fhir:Medication.code [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
-       fhir:Coding.code [ fhir:value "3002" ];
-       fhir:Coding.display [ fhir:value "cyclophosphamide" ]
-     ], [
-       fhir:index 1;
-       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
-       fhir:Coding.code [ fhir:value "1545988" ];
-       fhir:Coding.display [ fhir:value "cyclophosphamide anhydrous" ]
-     ], [
-       fhir:index 2;
-       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
-       fhir:Coding.code [ fhir:value "1734919" ];
-       fhir:Coding.display [ fhir:value "cyclophosphamide 1000 MG Injection" ]
-     ];
-     fhir:CodeableConcept.text [ fhir:value "CYCLOPHOSPHAMIDE 1 G IJ SOLR" ]
-  ]; # 
-  fhir:Medication.ingredient [
-     fhir:index 0;
-     fhir:Medication.ingredient.itemCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
-         fhir:Coding.code [ fhir:value "3002" ];
-         fhir:Coding.display [ fhir:value "cyclophosphamide" ]
-       ], [
-         fhir:index 1;
-         fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
-         fhir:Coding.code [ fhir:value "1545988" ];
-         fhir:Coding.display [ fhir:value "cyclophosphamide anhydrous" ]
-       ], [
-         fhir:index 2;
-         fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
-         fhir:Coding.code [ fhir:value "1734919" ];
-         fhir:Coding.display [ fhir:value "cyclophosphamide 1000 MG Injection" ]
-       ];
-       fhir:CodeableConcept.text [ fhir:value "CYCLOPHOSPHAMIDE 1 G IJ SOLR" ]
-     ];
-     fhir:Medication.ingredient.strength [
-       fhir:Ratio.numerator [
-         fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
-         fhir:Quantity.unit [ fhir:value "gram" ];
-         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
-         fhir:Quantity.code [ fhir:value "g" ]
-       ];
-       fhir:Ratio.denominator [
-         fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
-         fhir:Quantity.unit [ fhir:value "gram" ];
-         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
-         fhir:Quantity.code [ fhir:value "g" ]
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.cibmtr.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "rc_99999" ] ;
+       fhir:display [ fhir:v "99999 My Transplant Center" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"Medication-Cyclophosphamide-Example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;Medication-Cyclophosphamide-Example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cibmtr-medication.html\">CIBMTR Medication (us-core)</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.cibmtr.org/codesystem/transplant-center http://terminology.cibmtr.org/codesystem/transplant-center}\">http://terminology.cibmtr.org/codesystem/transplant-center</span></p></div><p><b>code</b>: CYCLOPHOSPHAMIDE 1 G IJ SOLR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#3002 &quot;cyclophosphamide&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1545988 &quot;cyclophosphamide anhydrous&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1734919 &quot;cyclophosphamide 1000 MG Injection&quot;)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>CYCLOPHOSPHAMIDE 1 G IJ SOLR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#3002 &quot;cyclophosphamide&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1545988 &quot;cyclophosphamide anhydrous&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1734919 &quot;cyclophosphamide 1000 MG Injection&quot;)</span></td><td>1 gram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code g = 'g')</span>/1 gram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code g = 'g')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "3002" ] ;
+       fhir:display [ fhir:v "cyclophosphamide" ]
+     ] [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1545988" ] ;
+       fhir:display [ fhir:v "cyclophosphamide anhydrous" ]
+     ] [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1734919" ] ;
+       fhir:display [ fhir:v "cyclophosphamide 1000 MG Injection" ]
+     ] ) ;
+     fhir:text [ fhir:v "CYCLOPHOSPHAMIDE 1 G IJ SOLR" ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "3002" ] ;
+         fhir:display [ fhir:v "cyclophosphamide" ]
+       ] [
+         fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1545988" ] ;
+         fhir:display [ fhir:v "cyclophosphamide anhydrous" ]
+       ] [
+         fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1734919" ] ;
+         fhir:display [ fhir:v "cyclophosphamide 1000 MG Injection" ]
+       ] ) ;
+       fhir:text [ fhir:v "CYCLOPHOSPHAMIDE 1 G IJ SOLR" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "gram" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "g" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "gram" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "g" ]
        ]
      ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.nmdp.org/ig/cibmtr-reporting/Medication/Medication-Cyclophosphamide-Example.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

@@ -5,203 +5,155 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/erythrocyte-morphology-blood-vs> a fhir:ValueSet;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "erythrocyte-morphology-blood-vs"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/7789-1/\">7789-1</a></td><td>Acanthocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/702-1/\">702-1</a></td><td>Anisocytosis [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/703-9/\">703-9</a></td><td>Basophilic stippling [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/10371-3/\">10371-3</a></td><td>Bite cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/10372-1/\">10372-1</a></td><td>Blister cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/7790-9/\">7790-9</a></td><td>Burr cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/11280-5/\">11280-5</a></td><td>Cabot rings [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/7791-7/\">7791-7</a></td><td>Dacrocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/11274-8/\">11274-8</a></td><td>Elliptocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/49121-7/\">49121-7</a></td><td>Erythrocyte inclusion bodies [Identifier] in Blood</td></tr><tr><td><a href=\"https://loinc.org/10379-6/\">10379-6</a></td><td>Erythrocytes.dual population [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/10373-9/\">10373-9</a></td><td>Fragments [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/716-1/\">716-1</a></td><td>Heinz bodies [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/10374-7/\">10374-7</a></td><td>Helmet cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/7793-3/\">7793-3</a></td><td>Howell-Jolly bodies [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/33249-4/\">33249-4</a></td><td>Hyperchromia [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/728-6/\">728-6</a></td><td>Hypochromia [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/10375-4/\">10375-4</a></td><td>Irregularly contracted cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/738-5/\">738-5</a></td><td>Macrocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/10376-2/\">10376-2</a></td><td>Oval macrocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/741-9/\">741-9</a></td><td>Microcytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/33364-1/\">33364-1</a></td><td>Normochromic [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/33363-3/\">33363-3</a></td><td>Normocytic [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/7794-1/\">7794-1</a></td><td>Normocytic/Normochromic polychromasia [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/774-0/\">774-0</a></td><td>Ovalocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/7795-8/\">7795-8</a></td><td>Pappenheimer bodies [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/10377-0/\">10377-0</a></td><td>Pencil cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/779-9/\">779-9</a></td><td>Poikilocytosis [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/10378-8/\">10378-8</a></td><td>Polychromasia [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/50260-9/\">50260-9</a></td><td>Prekeratocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/33044-9/\">33044-9</a></td><td>Pyknosis [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/7797-4/\">7797-4</a></td><td>Rouleaux [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/800-3/\">800-3</a></td><td>Schistocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/801-1/\">801-1</a></td><td>Sickle cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/802-9/\">802-9</a></td><td>Spherocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/10380-4/\">10380-4</a></td><td>Stomatocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/10381-2/\">10381-2</a></td><td>Target cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/6742-1/\">6742-1</a></td><td>Erythrocyte morphology finding [Identifier] in Blood</td></tr></table></li></ul></div>"
-  ]; # 
-  fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/erythrocyte-morphology-blood-vs"]; # 
-  fhir:ValueSet.version [ fhir:value "0.1.5"]; # 
-  fhir:ValueSet.name [ fhir:value "ErythrocyteMorphologyBloodVS"]; # 
-  fhir:ValueSet.title [ fhir:value "Erythrocyte morphology panel - Blood (58408-6)"]; # 
-  fhir:ValueSet.status [ fhir:value "active"]; # 
-  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean]; # 
-  fhir:ValueSet.date [ fhir:value "2023-02-02T13:14:50-06:00"^^xsd:dateTime]; # 
-  fhir:ValueSet.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"]; # 
-  fhir:ValueSet.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://www.cibmtr.org" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Bob Milius" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "bmilius@nmdp.org" ]
-     ]
-  ]; # 
-  fhir:ValueSet.description [ fhir:value "Erythrocyte morphology panel - Blood (58408-6)"]; # 
-  fhir:ValueSet.compose [
-     fhir:ValueSet.compose.include [
-       fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ];
-       fhir:ValueSet.compose.include.concept [
-         fhir:index 0;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "7789-1" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acanthocytes [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 1;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "702-1" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anisocytosis [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 2;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "703-9" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Basophilic stippling [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 3;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "10371-3" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bite cells [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 4;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "10372-1" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blister cells [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 5;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "7790-9" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Burr cells [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 6;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "11280-5" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cabot rings [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 7;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "7791-7" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dacrocytes [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 8;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "11274-8" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Elliptocytes [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 9;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "49121-7" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrocyte inclusion bodies [Identifier] in Blood" ]
-       ], [
-         fhir:index 10;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "10379-6" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrocytes.dual population [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 11;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "10373-9" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fragments [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 12;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "716-1" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Heinz bodies [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 13;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "10374-7" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Helmet cells [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 14;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "7793-3" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Howell-Jolly bodies [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 15;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "33249-4" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hyperchromia [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 16;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "728-6" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hypochromia [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 17;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "10375-4" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Irregularly contracted cells [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 18;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "738-5" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Macrocytes [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 19;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "10376-2" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oval macrocytes [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 20;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "741-9" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Microcytes [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 21;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "33364-1" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Normochromic [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 22;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "33363-3" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Normocytic [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 23;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "7794-1" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Normocytic/Normochromic polychromasia [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 24;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "774-0" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ovalocytes [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 25;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "7795-8" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pappenheimer bodies [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 26;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "10377-0" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pencil cells [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 27;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "779-9" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Poikilocytosis [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 28;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "10378-8" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Polychromasia [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 29;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "50260-9" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prekeratocytes [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 30;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "33044-9" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pyknosis [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 31;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "7797-4" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rouleaux [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 32;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "800-3" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Schistocytes [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 33;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "801-1" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sickle cells [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 34;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "802-9" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spherocytes [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 35;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "10380-4" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stomatocytes [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 36;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "10381-2" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Target cells [Presence] in Blood by Light microscopy" ]
-       ], [
-         fhir:index 37;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "6742-1" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrocyte morphology finding [Identifier] in Blood" ]
-       ]
-     ]
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/erythrocyte-morphology-blood-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "erythrocyte-morphology-blood-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/7789-1/\">7789-1</a></td><td>Acanthocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/702-1/\">702-1</a></td><td>Anisocytosis [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/703-9/\">703-9</a></td><td>Basophilic stippling [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/10371-3/\">10371-3</a></td><td>Bite cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/10372-1/\">10372-1</a></td><td>Blister cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/7790-9/\">7790-9</a></td><td>Burr cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/11280-5/\">11280-5</a></td><td>Cabot rings [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/7791-7/\">7791-7</a></td><td>Dacrocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/11274-8/\">11274-8</a></td><td>Elliptocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/49121-7/\">49121-7</a></td><td>Erythrocyte inclusion bodies [Identifier] in Blood</td></tr><tr><td><a href=\"https://loinc.org/10379-6/\">10379-6</a></td><td>Erythrocytes.dual population [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/10373-9/\">10373-9</a></td><td>Fragments [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/716-1/\">716-1</a></td><td>Heinz bodies [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/10374-7/\">10374-7</a></td><td>Helmet cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/7793-3/\">7793-3</a></td><td>Howell-Jolly bodies [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/33249-4/\">33249-4</a></td><td>Hyperchromia [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/728-6/\">728-6</a></td><td>Hypochromia [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/10375-4/\">10375-4</a></td><td>Irregularly contracted cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/738-5/\">738-5</a></td><td>Macrocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/10376-2/\">10376-2</a></td><td>Oval macrocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/741-9/\">741-9</a></td><td>Microcytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/33364-1/\">33364-1</a></td><td>Normochromic [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/33363-3/\">33363-3</a></td><td>Normocytic [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/7794-1/\">7794-1</a></td><td>Normocytic/Normochromic polychromasia [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/774-0/\">774-0</a></td><td>Ovalocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/7795-8/\">7795-8</a></td><td>Pappenheimer bodies [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/10377-0/\">10377-0</a></td><td>Pencil cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/779-9/\">779-9</a></td><td>Poikilocytosis [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/10378-8/\">10378-8</a></td><td>Polychromasia [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/50260-9/\">50260-9</a></td><td>Prekeratocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/33044-9/\">33044-9</a></td><td>Pyknosis [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/7797-4/\">7797-4</a></td><td>Rouleaux [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/800-3/\">800-3</a></td><td>Schistocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/801-1/\">801-1</a></td><td>Sickle cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/802-9/\">802-9</a></td><td>Spherocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/10380-4/\">10380-4</a></td><td>Stomatocytes [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/10381-2/\">10381-2</a></td><td>Target cells [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/6742-1/\">6742-1</a></td><td>Erythrocyte morphology finding [Identifier] in Blood</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/erythrocyte-morphology-blood-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.5"] ; # 
+  fhir:name [ fhir:v "ErythrocyteMorphologyBloodVS"] ; # 
+  fhir:title [ fhir:v "Erythrocyte morphology panel - Blood (58408-6)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-03-28T10:36:55-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.cibmtr.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Milius" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bmilius@nmdp.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Erythrocyte morphology panel - Blood (58408-6)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "7789-1" ] ;
+         fhir:display [ fhir:v "Acanthocytes [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "702-1" ] ;
+         fhir:display [ fhir:v "Anisocytosis [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "703-9" ] ;
+         fhir:display [ fhir:v "Basophilic stippling [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "10371-3" ] ;
+         fhir:display [ fhir:v "Bite cells [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "10372-1" ] ;
+         fhir:display [ fhir:v "Blister cells [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "7790-9" ] ;
+         fhir:display [ fhir:v "Burr cells [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "11280-5" ] ;
+         fhir:display [ fhir:v "Cabot rings [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "7791-7" ] ;
+         fhir:display [ fhir:v "Dacrocytes [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "11274-8" ] ;
+         fhir:display [ fhir:v "Elliptocytes [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "49121-7" ] ;
+         fhir:display [ fhir:v "Erythrocyte inclusion bodies [Identifier] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "10379-6" ] ;
+         fhir:display [ fhir:v "Erythrocytes.dual population [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "10373-9" ] ;
+         fhir:display [ fhir:v "Fragments [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "716-1" ] ;
+         fhir:display [ fhir:v "Heinz bodies [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "10374-7" ] ;
+         fhir:display [ fhir:v "Helmet cells [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "7793-3" ] ;
+         fhir:display [ fhir:v "Howell-Jolly bodies [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "33249-4" ] ;
+         fhir:display [ fhir:v "Hyperchromia [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "728-6" ] ;
+         fhir:display [ fhir:v "Hypochromia [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "10375-4" ] ;
+         fhir:display [ fhir:v "Irregularly contracted cells [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "738-5" ] ;
+         fhir:display [ fhir:v "Macrocytes [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "10376-2" ] ;
+         fhir:display [ fhir:v "Oval macrocytes [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "741-9" ] ;
+         fhir:display [ fhir:v "Microcytes [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "33364-1" ] ;
+         fhir:display [ fhir:v "Normochromic [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "33363-3" ] ;
+         fhir:display [ fhir:v "Normocytic [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "7794-1" ] ;
+         fhir:display [ fhir:v "Normocytic/Normochromic polychromasia [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "774-0" ] ;
+         fhir:display [ fhir:v "Ovalocytes [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "7795-8" ] ;
+         fhir:display [ fhir:v "Pappenheimer bodies [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "10377-0" ] ;
+         fhir:display [ fhir:v "Pencil cells [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "779-9" ] ;
+         fhir:display [ fhir:v "Poikilocytosis [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "10378-8" ] ;
+         fhir:display [ fhir:v "Polychromasia [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "50260-9" ] ;
+         fhir:display [ fhir:v "Prekeratocytes [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "33044-9" ] ;
+         fhir:display [ fhir:v "Pyknosis [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "7797-4" ] ;
+         fhir:display [ fhir:v "Rouleaux [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "800-3" ] ;
+         fhir:display [ fhir:v "Schistocytes [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "801-1" ] ;
+         fhir:display [ fhir:v "Sickle cells [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "802-9" ] ;
+         fhir:display [ fhir:v "Spherocytes [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "10380-4" ] ;
+         fhir:display [ fhir:v "Stomatocytes [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "10381-2" ] ;
+         fhir:display [ fhir:v "Target cells [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "6742-1" ] ;
+         fhir:display [ fhir:v "Erythrocyte morphology finding [Identifier] in Blood" ]
+       ] )
+     ] )
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/erythrocyte-morphology-blood-vs.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

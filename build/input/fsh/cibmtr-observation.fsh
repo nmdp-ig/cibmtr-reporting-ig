@@ -1,28 +1,9 @@
-Invariant:  val-1
-Severity: #error
-Description: "If valueQuantity is used, a referenceRange must also be present"
-Expression: "valueQuantity.exists() implies referenceRange.exists()"
-
-Invariant: val-2
-Severity: #error
-Description: "Only allow valueQuantity or valueCodeableConcept"
-Expression: "valueQuantity.exists() or valueCodeableConcept.exists()"
-
-
 Profile:        CIBMTRObservationLab
 Parent:         us-core-observation-lab 
 Id:             cibmtr-observation-lab
 Title:          "CIBMTR Observation Laboratory Results Profile (us-core)"
 Description:    "CIBMTR Observation Laboratory Results Profile (us-core)"
-* meta.security ^slicing.discriminator.type = #pattern
-* meta.security ^slicing.discriminator.path = "system"
-* meta.security ^slicing.rules = #open
-* meta.security ^slicing.description = "slicing on meta.security"
-* meta.security contains
-    TransplantCenter 1..1 MS
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code obeys sec-rc
-* meta.security[TransplantCenter].code 1..1
+* insert MetaSecurityRules
 * effective[x] 1..1
 * value[x] only Quantity or CodeableConcept
 // * obeys val-1
@@ -39,16 +20,15 @@ Instance: LeukocytesObservation
 InstanceOf: cibmtr-observation-lab
 Description: "Leukocytes observation"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * status = #final
 * code.coding = $LNC#26464-8 "Leukocytes [#/volume] in Blood"
 * valueQuantity = $UCUM#10*9/L "billion per liter"
 * valueQuantity.value = 5.2
 * effectiveDateTime = "2020-07-21T14:17:00Z"
-* subject.identifier.system = "http://terminology.cibmtr.org/identifier/CRID"
-* subject.identifier.value = "1234567"
+* subject = Reference(PatientExample6)
+
+// --------------------------------------------------------------------------
 
 Profile:    CIBMTRObsPriorityVariables
 Parent:     cibmtr-observation-lab
@@ -61,98 +41,82 @@ Instance: AlbuminObservation
 InstanceOf: cibmtr-obs-priority-variables
 Description: "Albumin [Mass/volume] in Serum or Plasma"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * status = #final
 * code.coding = $LNC#1751-7 "Albumin [Mass/volume] in Serum or Plasma"
 * valueQuantity = $UCUM#g/dL "gram per deciliter"
 * valueQuantity.value = 5
 * effectiveDateTime = "2020-07-21T14:17:00Z"
-* subject.identifier.system = "http://terminology.cibmtr.org/identifier/CRID"
-* subject.identifier.value = "1234567"
+* subject = Reference(PatientExample6)
+
 
 Instance: NeutrophilsObservation 
 InstanceOf: cibmtr-obs-priority-variables
 Description: "Neutrophils [#/volume] in Cord blood"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * status = #final
 * code.coding = $LNC#74398-9 "Neutrophils [#/volume] in Cord blood"
 * valueQuantity = $UCUM#10*9/L "billion per liter"
 * valueQuantity.value = 7.9
 * effectiveDateTime = "2020-07-21T14:17:00Z"
-* subject.identifier.system = "http://terminology.cibmtr.org/identifier/CRID"
-* subject.identifier.value = "1234567"
+* subject = Reference(PatientExample6)
+
 
 Instance: BasophilsObservation 
 InstanceOf: cibmtr-obs-priority-variables
 Description: "Basophils/100 leukocytes in Blood"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * status = #final
 * code.coding = $LNC#30180-4	"Basophils/100 leukocytes in Blood"
 * valueQuantity = $UCUM#% "percent"
 * valueQuantity.value = 1
 * effectiveDateTime = "2020-07-21T14:17:00Z"
-* subject.identifier.system = "http://terminology.cibmtr.org/identifier/CRID"
-* subject.identifier.value = "1234567"
+* subject = Reference(PatientExample6)
+
 
 Instance: EosinophilsObservation 
 InstanceOf: cibmtr-obs-priority-variables
 Description: "Eosinophils observation, #/volume in Blood"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * status = #final
 * code.coding = $LNC#26449-9	"Eosinophils [#/volume] in Blood"
 * valueQuantity = $UCUM#10*3/uL	"Thousands Per MicroLiter"
 * valueQuantity.value = 0.5
 * effectiveDateTime = "2020-07-21T14:17:00Z"
-* subject.identifier.system = "http://terminology.cibmtr.org/identifier/CRID"
-* subject.identifier.value = "1234567"
+* subject = Reference(PatientExample6)
+
 
 Instance: HemoglobinObservation 
 InstanceOf: cibmtr-obs-priority-variables
 Description: "Hemoglobin [Mass/volume] in Blood"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * status = #final
 * code.coding = $LNC#718-7 "Hemoglobin [Mass/volume] in Blood"
 * valueQuantity = $UCUM#g/dL "gram per deciliter"
 * valueQuantity.value = 15
 * effectiveDateTime = "2020-07-21T14:17:00Z"
-* subject.identifier.system = "http://terminology.cibmtr.org/identifier/CRID"
-* subject.identifier.value = "1234567"
+* subject = Reference(PatientExample6)
 
 Instance: MetamyelocytesObservation 
 InstanceOf: cibmtr-obs-priority-variables
 Description: "Metamyelocytes [Presence] in Blood"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * status = #final
 * code.coding = $LNC#40651-2 "Metamyelocytes [Presence] in Blood"
 * valueCodeableConcept = $LNC#LA9633-4 "Present"
 * effectiveDateTime = "2020-07-21T14:17:00Z"
-* subject.identifier.system = "http://terminology.cibmtr.org/identifier/CRID"
-* subject.identifier.value = "1234567"
+* subject = Reference(PatientExample6)
 
 Instance: ABOBloodGroupObservationLOINC 
 InstanceOf: cibmtr-obs-priority-variables
 Description: "ABO group [Type] in Blood (883-9) with LOINC answer"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * status = #final
 * code.coding = $LNC#883-9 "ABO group [Type] in Blood"
 * valueCodeableConcept = $LNC#LA19710-5 "Group A"
@@ -164,9 +128,7 @@ Instance: ABOBloodGroupObservationSNOMED
 InstanceOf: cibmtr-obs-priority-variables
 Description: "ABO group [Type] in Blood (883-9) with SNOMED answer"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * status = #final
 * code.coding = $LNC#883-9 "ABO group [Type] in Blood"
 * valueCodeableConcept = $SCT#112144000 "Blood group A (finding)"
@@ -177,9 +139,7 @@ Instance: ABORhObservationLOINC
 InstanceOf: cibmtr-obs-priority-variables
 Description: "ABO and Rh group [Type] in Blood (882-1) with LOINC answer"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * status = #final
 * code.coding = $LNC#882-1 "ABO and Rh group [Type] in Blood"
 * valueCodeableConcept = $LNC#LA21321-7 "O Pos"
@@ -191,9 +151,7 @@ Instance: ABORhObservationSNOMED
 InstanceOf: cibmtr-obs-priority-variables
 Description: "ABO and Rh group [Type] in Blood (882-1) with SNOMED CT answer"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * status = #final
 * code.coding = $LNC#882-1 "ABO and Rh group [Type] in Blood"
 * valueCodeableConcept = $SCT#278147001 "Blood group O Rh(D) positive (finding)"
@@ -204,9 +162,7 @@ Instance: CMVIgAbPresenceSNOMED
 InstanceOf: cibmtr-obs-priority-variables
 Description: "Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay (13949-3) with SNOMED CT answer"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * status = #final
 * code.coding = $LNC#13949-3 "Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay"
 * valueCodeableConcept = $SCT#10828004 "Positive (qualifier value)"
@@ -217,9 +173,7 @@ Instance: CMVIgGAbPresenceLOINC
 InstanceOf: cibmtr-obs-priority-variables
 Description: "Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay (13949-3) with LOINC answer"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * status = #final
 * code.coding = $LNC#13949-3 "Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay"
 * valueCodeableConcept = $LNC#LA6576-8 "Positive"
@@ -231,9 +185,7 @@ Instance: CMVIgMAbPresenceLOINC
 InstanceOf: cibmtr-obs-priority-variables
 Description: "Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunoassay (24119-0) with LOINC answer"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * status = #final
 * code.coding = $LNC#24119-0 "Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunoassay"
 * valueCodeableConcept = $LNC#LA15255-5 "Reactive"
@@ -244,9 +196,7 @@ Instance: CMVIgMAbPresenceSNOMED
 InstanceOf: cibmtr-obs-priority-variables
 Description: "Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunoassay (24119-0) with SNOMED answer"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * status = #final
 * code.coding = $LNC#24119-0 "Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunoassay"
 * valueCodeableConcept = $SCT#11214006 "Reactive (qualifier value)"
@@ -259,9 +209,7 @@ Instance: CMVDNAViralLoadCopiesmL
 InstanceOf: cibmtr-obs-priority-variables
 Description: "Cytomegalovirus DNA [#/volume] (viral load) in Bronchoalveolar lavage by NAA with probe detection (49349-4)"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * status = #final
 * code.coding = $LNC#49349-4 "Cytomegalovirus DNA [#/volume] (viral load) in Bronchoalveolar lavage by NAA with probe detection"
 * valueQuantity
@@ -286,15 +234,11 @@ Usage: #example
 * subject = Reference(PatientExample6)
 
 
-// https://www.accessdata.fda.gov/cdrh_docs/pdf11/P110037b.pdf
-// https://ltd.aruplab.com/Tests/Pub/0051813
 Instance: CMVDNAViralLoadIUmL
 InstanceOf: cibmtr-obs-priority-variables
 Description: "Cytomegalovirus DNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection (72493-0)"
 Usage: #example
-* meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * status = #final
 * code.coding = $LNC#72493-0 "Cytomegalovirus DNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection"
 * valueQuantity

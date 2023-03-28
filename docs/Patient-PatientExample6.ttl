@@ -5,45 +5,35 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/cibmtr-reporting/Patient/PatientExample6> a fhir:Patient;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "PatientExample6"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient";
-       fhir:index 0;
+<http://fhir.nmdp.org/ig/cibmtr-reporting/Patient/PatientExample6> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PatientExample6"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"^^xsd:anyURI ;
        fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient>
-     ];
-     fhir:Meta.security [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.cibmtr.org/codesystem/transplant-center" ];
-       fhir:Coding.code [ fhir:value "rc_00000" ];
-       fhir:Coding.display [ fhir:value "00000 Good Health Medical Center" ]
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b></b> female, DoB Unknown ( id: 123456)</p><hr/></div>"
-  ]; # 
-  fhir:Patient.identifier [
-     fhir:index 0;
-     fhir:Identifier.system [ fhir:value "http://terminology.cibmtr.org/identifier/CRID" ];
-     fhir:Identifier.value [ fhir:value "123456" ]
-  ]; # 
-  fhir:Patient.name [
-     fhir:index 0;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/data-absent-reason" ];
-       fhir:Extension.valueCode [ fhir:value "masked" ]
-     ]
-  ]; # 
-  fhir:Patient.gender [ fhir:value "female"] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.nmdp.org/ig/cibmtr-reporting/Patient/PatientExample6.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.cibmtr.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "rc_99999" ] ;
+       fhir:display [ fhir:v "99999 My Transplant Center" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b></b> female, DoB Unknown ( id: 123456)</p><hr/></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://terminology.cibmtr.org/identifier/CRID"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123456" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "masked" ]
+     ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] . # 
 
 # -------------------------------------------------------------------------------------
 

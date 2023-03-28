@@ -18,8 +18,7 @@ Instance: MedicationAdministration-Example1
 InstanceOf: cibmtr-medication-administration
 Description: "Medication - Medication Administration example using medicationReference - Etoposide"
 Usage: #example
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * status = #completed
 * subject = Reference(PatientExample6)
 * effectiveDateTime = "2020-07-22T16:58:05Z"
@@ -42,8 +41,7 @@ Instance: MedicationAdministration-Example2
 InstanceOf: cibmtr-medication-administration
 Description: "Medication - Medication Administration example using medicationCodeableConcept - Etoposide"
 Usage: #example
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * status = #completed
 * subject = Reference(PatientExample6)
 * effectiveDateTime = "2020-07-22T16:58:05Z"
@@ -100,8 +98,7 @@ Instance: Medication-Mobilizing-Agent-Example
 InstanceOf: cibmtr-mobilizing-agent-medication
 Description: "Medication - Mobilizing Agents Example - Pegfilgrastim"
 Usage: #example
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * code
   * coding[+] = $RXN#338036     "pegfilgrastim"
   * coding[+] = $RXN#350977     "pegfilgrastim 10 MG/ML"
@@ -139,8 +136,7 @@ Instance: Medication-Prep-Regimen-Example
 InstanceOf: cibmtr-prep-regimen-medication
 Description: "Medication - Pre-HCT Preparatoive Regimen (Conditioning) Example - Pegfilgrastim"
 Usage: #example
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * code
   * coding[+] = $RXN#3002	    "cyclophosphamide"
   * coding[+] = $RXN#1437967	"cyclophosphamide Oral Capsule"
@@ -179,8 +175,7 @@ Instance: Medication-Peri-Transplant-Example
 InstanceOf: cibmtr-additional-peri-transplant-medication
 Description: "Medication - Additional Peri-Transplant Example - Anti-Thymocyte gGobulin"
 Usage: #example
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * code
   * coding[+] = $RXN#2282515	"lymphocyte immune globulin, anti-thymocyte globulin Injectable Product"
   * coding[+] = $RXN#2282516	"lymphocyte immune globulin, anti-thymocyte globulin Injection"
@@ -220,8 +215,7 @@ Instance: Medication-GVHD-Prophylaxis-Example
 InstanceOf: cibmtr-gvhd-prophylaxis-medication
 Description: "Medication - GVHD Prophylaxis Example - Cyclosporine"
 Usage: #example
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * code
   * coding[+] = $RXN#1156186	"cyclosporine Injectable Product"
   * coding[+] = $RXN#1732364	"cyclosporine Injection"
@@ -262,8 +256,7 @@ Instance: Medication-Post-HCT-Disease-Therapy-Example
 InstanceOf: cibmtr-post-hct-disease-therapy-planned-medication
 Description: "Medication - Post-HCT Disease Therapy Planned Example - Blinatumomab"
 Usage: #example
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * code
   * coding[+] = $RXN#1597258	"blinatumomab"
   * coding[+] = $RXN#1597260	"blinatumomab Injectable Product"
@@ -311,8 +304,7 @@ Instance: Medication-PriorExposure-Example
 InstanceOf: cibmtr-prior-exposure-medication
 Description: "Medication - Prior Exposure: Potential Study Eligibility Example - Mogamulizumab"
 Usage: #example
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * code
   * coding[+] = $RXN#2054068	"mogamulizumab"
   * coding[+] = $RXN#2054084	"mogamulizumab Injection [Poteligeo]"
@@ -342,8 +334,7 @@ Instance: Medication-Cyclophosphamide-Example
 InstanceOf: cibmtr-medication
 Description: "Medication - Cyclophosphamide, 1 G injection"
 Usage: #example
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * code
   * coding[+] = $RXN#3002 "cyclophosphamide"
   * coding[+] = $RXN#1545988 "cyclophosphamide anhydrous"
@@ -373,8 +364,7 @@ Instance: Medication-Etoposide-Example
 InstanceOf: cibmtr-medication
 Description: "Medication - Etoposide (Vepesid) chemo IBPB, 20MG/ML"
 Usage: #example
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * code
   * coding[+] = $RXN#4179 "etoposide"
   * coding[+] = $RXN#310248 "etoposide 20 MG/ML Injectable Solution"
@@ -400,12 +390,12 @@ Usage: #example
       * system = $UCUM
       * code = #mg/ml
 
+
 Instance: MedicationRequest-Etoposide-Example
 InstanceOf: cibmtr-medication-request
 Description: "Medication Request for Etoposide (Vepesid) chemo IBPB, 20MG/ML"
 Usage: #example
-* meta.security[TransplantCenter].code = #rc_99999
-* meta.security[TransplantCenter].display = "99999 My Transplant Center"
+* insert MetaSecurityExample
 * subject = Reference(PatientExample6)
 * status = #active
 * intent = #order

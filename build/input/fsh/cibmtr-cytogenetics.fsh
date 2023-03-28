@@ -15,8 +15,7 @@ Instance: Cytogenetics-Example-1
 InstanceOf: CIBMTRCytogenetics
 Description: "Example of ISCN report"
 // * meta.security[TransplantCenter].system = "http://terminology.cibmtr.org/codesystem/transplant-center"
-* meta.security[TransplantCenter].code = #rc_00000
-* meta.security[TransplantCenter].display = "00000 Good Health Medical Center"
+* insert MetaSecurityExample
 * status = #final
 * subject = Reference(PatientExample1)
 * effectiveDateTime = "2022-05-01"

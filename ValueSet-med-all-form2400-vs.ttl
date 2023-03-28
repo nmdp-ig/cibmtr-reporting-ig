@@ -5,88 +5,68 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-all-form2400-vs> a fhir:ValueSet;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "med-all-form2400-vs"];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-med-addition-peri-transplant-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-addition-peri-transplant-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-gvhd-prophylaxis-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-mobilizing-agents-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-post-hct-disease-therapy-planned-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-post-hct-disease-therapy-planned-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-prep-regimen-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prep-regimen-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-prior-exposure-vs.html\">http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prior-exposure-vs</a></li></ul></div>"
-  ];
-  fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-all-form2400-vs"];
-  fhir:ValueSet.version [ fhir:value "0.1.5"];
-  fhir:ValueSet.name [ fhir:value "RxNormAll2400VS"];
-  fhir:ValueSet.title [ fhir:value "RxNorm - All of Form 2400"];
-  fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-09-08T13:29:45-05:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"];
-  fhir:ValueSet.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://www.cibmtr.org" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Bob Milius" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "bmilius@nmdp.org" ]
-     ]
-  ];
-  fhir:ValueSet.description [ fhir:value "RxNorm codes for all of Form 2400"];
-  fhir:ValueSet.compose [
-     fhir:ValueSet.compose.include [
-       fhir:index 0;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-addition-peri-transplant-vs";
-         fhir:index 0;
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-all-form2400-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "med-all-form2400-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-med-addition-peri-transplant-vs.html\">RxNorm - Additional Drugs in Peri-Transplant Period</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-gvhd-prophylaxis-vs.html\">RxNorm - GVHD Prophylaxis</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-mobilizing-agents-vs.html\">RxNorm - Mobilizing Agents (auto only)</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-post-hct-disease-therapy-planned-vs.html\">RxNorm - Post-HCT Disease Therapy Planned</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-prep-regimen-vs.html\">RxNorm - Prep Regimen</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-med-prior-exposure-vs.html\">RxNorm - Prior Exposure: Potential Study Eligibility</a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-all-form2400-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.5"] ; # 
+  fhir:name [ fhir:v "RxNormAll2400VS"] ; # 
+  fhir:title [ fhir:v "RxNorm - All of Form 2400"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-03-28T10:36:55-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.cibmtr.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Milius" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bmilius@nmdp.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "RxNorm codes for all of Form 2400"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-addition-peri-transplant-vs"^^xsd:anyURI ;
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-addition-peri-transplant-vs>
-       ]
-     ], [
-       fhir:index 1;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs";
-         fhir:index 0;
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs"^^xsd:anyURI ;
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs>
-       ]
-     ], [
-       fhir:index 2;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs";
-         fhir:index 0;
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs"^^xsd:anyURI ;
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs>
-       ]
-     ], [
-       fhir:index 3;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-post-hct-disease-therapy-planned-vs";
-         fhir:index 0;
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-post-hct-disease-therapy-planned-vs"^^xsd:anyURI ;
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-post-hct-disease-therapy-planned-vs>
-       ]
-     ], [
-       fhir:index 4;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prep-regimen-vs";
-         fhir:index 0;
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prep-regimen-vs"^^xsd:anyURI ;
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prep-regimen-vs>
-       ]
-     ], [
-       fhir:index 5;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prior-exposure-vs";
-         fhir:index 0;
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prior-exposure-vs"^^xsd:anyURI ;
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prior-exposure-vs>
-       ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-all-form2400-vs.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+       ] )
+     ] )
+  ] . # 
 
 # -------------------------------------------------------------------------------------
 

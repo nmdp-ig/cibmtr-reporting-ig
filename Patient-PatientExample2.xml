@@ -6,24 +6,20 @@
     <profile value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
     <security>
       <system value="http://terminology.cibmtr.org/codesystem/transplant-center"/>
-      <code value="rc_00000"/>
-      <display value="00000 Good Health Medical Center"/>
+      <code value="rc_99999"/>
+      <display value="99999 My Transplant Center"/>
     </security>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Jane Doe </b> female, DoB Unknown ( id: abc)</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>John Doe </b> male, DoB Unknown ( id: abc)</p><hr/></div>
   </text>
   <identifier>
     <system value="http://example.org/mrn"/>
     <value value="abc"/>
   </identifier>
-  <identifier>
-    <system value="http://terminology.cibmtr.org/identifier/CRID"/>
-    <value value="123456"/>
-  </identifier>
   <name>
     <family value="Doe"/>
-    <given value="Jane"/>
+    <given value="John"/>
   </name>
-  <gender value="female"/>
+  <gender value="male"/>
 </Patient>

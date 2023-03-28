@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"13.78"}
-    h3,h4,h5,h6{--heading-prefix:"13.78"}</style>
+    <style type="text/css">h2{--heading-prefix:"14.80"}
+    h3,h4,h5,h6{--heading-prefix:"14.80"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -119,7 +119,10 @@
         <a href="Bundles.html">Bundles</a>
       </li>
       <li>
-        <a href="Form-2450.html">Form 2450</a>
+        <a href="Form-2450.html">Form 2450: Post-TED</a>
+      </li>
+      <li>
+        <a href="Cytogenetics.html">Cytogenetics - ISCN</a>
       </li>
       <li>
         <a href="Example-Code.html">Example Code Snippets</a>
@@ -184,6 +187,7 @@
   </li>
 
 
+
   
     <li class="active">
       <a href="#">XML</a>
@@ -234,7 +238,7 @@
 
 
 
-  <pre class="xml"><code class="language-xml">
+  <pre class="xml" style="white-space: pre; overflow: hidden"><code class="language-xml">
 
 &lt;<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration">MedicationAdministration</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MedicationAdministration-Example1&quot;/&gt;
@@ -242,14 +246,15 @@
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.security">security</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.nmdp.org/codesystem/transplant-center&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.cibmtr.org/codesystem/transplant-center&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rc_99999&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;99999 My Transplant Center&quot;/&gt;
     &lt;/security&gt;
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;MedicationAdministration-Example1&quot; &lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-cibmtr-medication-administration.html&quot;&gt;CIBMTR Medication Administration (mcode)&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Security Labels: &lt;span title=&quot;{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}&quot;&gt;http://terminology.nmdp.org/codesystem/transplant-center&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: &lt;a href=&quot;Medication-Medication-Etoposide-Example.html&quot;&gt;Medication/Medication-Etoposide-Example&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-PatientExample6.html&quot;&gt;Patient/PatientExample6&lt;/a&gt; &quot;&quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2020-07-22 04:58:05+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonCode&lt;/b&gt;: Cancer (CMS/HCC) &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;https://browser.ihtsdotools.org/&quot;&gt;SNOMED CT&lt;/a&gt;#363346000 &quot;Malignant neoplastic disease (disorder)&quot;; &lt;a href=&quot;http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html&quot;&gt;International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)&lt;/a&gt;#C80.1 &quot;Malignant (primary) neoplasm, unspecified&quot;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;request&lt;/b&gt;: &lt;a href=&quot;MedicationRequest-MedicationRequest-Etoposide-Example.html&quot;&gt;MedicationRequest/MedicationRequest-Etoposide-Example&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Dosages&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Route&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Method&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dose&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Intravenous route &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;https://browser.ihtsdotools.org/&quot;&gt;SNOMED CT&lt;/a&gt;#47625008)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Inject - dosing instruction imperative (qualifier value) &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;https://browser.ihtsdotools.org/&quot;&gt;SNOMED CT&lt;/a&gt;#422145002)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;73 milligram&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM code mg = 'mg')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: MedicationAdministration&lt;/b&gt;&lt;a name=&quot;MedicationAdministration-Example1&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource MedicationAdministration &amp;quot;MedicationAdministration-Example1&amp;quot; &lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-cibmtr-medication-administration.html&quot;&gt;CIBMTR Medication Administration (mcode)&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Security Labels: &lt;span title=&quot;{http://terminology.cibmtr.org/codesystem/transplant-center http://terminology.cibmtr.org/codesystem/transplant-center}&quot;&gt;http://terminology.cibmtr.org/codesystem/transplant-center&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: &lt;a href=&quot;Medication-Medication-Etoposide-Example.html&quot;&gt;Medication/Medication-Etoposide-Example&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-PatientExample6.html&quot;&gt;Patient/PatientExample6&lt;/a&gt; &amp;quot;&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2020-07-22 16:58:05+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonCode&lt;/b&gt;: Cancer (CMS/HCC) &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;https://browser.ihtsdotools.org/&quot;&gt;SNOMED CT&lt;/a&gt;#363346000 &amp;quot;Malignant neoplastic disease (disorder)&amp;quot;; &lt;a href=&quot;http://terminology.hl7.org/5.0.0/CodeSystem-icd10CM.html&quot;&gt;International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)&lt;/a&gt;#C80.1 &amp;quot;Malignant (primary) neoplasm, unspecified&amp;quot;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;request&lt;/b&gt;: &lt;a href=&quot;MedicationRequest-MedicationRequest-Etoposide-Example.html&quot;&gt;MedicationRequest/MedicationRequest-Etoposide-Example&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Dosages&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Route&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Method&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dose&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Intravenous route &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;https://browser.ihtsdotools.org/&quot;&gt;SNOMED CT&lt;/a&gt;#47625008)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Inject - dosing instruction imperative (qualifier value) &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;https://browser.ihtsdotools.org/&quot;&gt;SNOMED CT&lt;/a&gt;#422145002)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;73 milligram&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM code mg = 'mg')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;completed&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.medication[x]">medicationReference</a>&gt;
@@ -327,7 +332,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 8, 2022 13:29-0500">2022-09-08</span>
+    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 28, 2023 10:36-0500">2023-03-28</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -5,86 +5,73 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/cibmtr-reporting/Medication/Medication-Prep-Regimen-Example> a fhir:Medication;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "Medication-Prep-Regimen-Example"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prep-regimen-medication";
-       fhir:index 0;
+<http://fhir.nmdp.org/ig/cibmtr-reporting/Medication/Medication-Prep-Regimen-Example> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Medication-Prep-Regimen-Example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prep-regimen-medication"^^xsd:anyURI ;
        fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prep-regimen-medication>
-     ];
-     fhir:Meta.security [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.nmdp.org/codesystem/transplant-center" ];
-       fhir:Coding.code [ fhir:value "rc_99999" ];
-       fhir:Coding.display [ fhir:value "99999 My Transplant Center" ]
-     ]
-  ];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Medication-Prep-Regimen-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cibmtr-prep-regimen-medication.html\">CIBMTR Prep Regimen Medication</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>code</b>: cyclophosphamide <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#3002; <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1437967 \"cyclophosphamide Oral Capsule\"; <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1437969 \"cyclophosphamide 50 MG Oral Capsule\")</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>cyclophosphamide <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#3002; <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1437967 \"cyclophosphamide Oral Capsule\"; <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1437969 \"cyclophosphamide 50 MG Oral Capsule\")</span></td><td>50 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/50 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span></td></tr></table></div>"
-  ];
-  fhir:Medication.code [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
-       fhir:Coding.code [ fhir:value "3002" ];
-       fhir:Coding.display [ fhir:value "cyclophosphamide" ]
-     ], [
-       fhir:index 1;
-       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
-       fhir:Coding.code [ fhir:value "1437967" ];
-       fhir:Coding.display [ fhir:value "cyclophosphamide Oral Capsule" ]
-     ], [
-       fhir:index 2;
-       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
-       fhir:Coding.code [ fhir:value "1437969" ];
-       fhir:Coding.display [ fhir:value "cyclophosphamide 50 MG Oral Capsule" ]
-     ];
-     fhir:CodeableConcept.text [ fhir:value "cyclophosphamide" ]
-  ];
-  fhir:Medication.ingredient [
-     fhir:index 0;
-     fhir:Medication.ingredient.itemCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
-         fhir:Coding.code [ fhir:value "3002" ];
-         fhir:Coding.display [ fhir:value "cyclophosphamide" ]
-       ], [
-         fhir:index 1;
-         fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
-         fhir:Coding.code [ fhir:value "1437967" ];
-         fhir:Coding.display [ fhir:value "cyclophosphamide Oral Capsule" ]
-       ], [
-         fhir:index 2;
-         fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
-         fhir:Coding.code [ fhir:value "1437969" ];
-         fhir:Coding.display [ fhir:value "cyclophosphamide 50 MG Oral Capsule" ]
-       ];
-       fhir:CodeableConcept.text [ fhir:value "cyclophosphamide" ]
-     ];
-     fhir:Medication.ingredient.strength [
-       fhir:Ratio.numerator [
-         fhir:Quantity.value [ fhir:value "50"^^xsd:decimal ];
-         fhir:Quantity.unit [ fhir:value "milligram" ];
-         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
-         fhir:Quantity.code [ fhir:value "mg" ]
-       ];
-       fhir:Ratio.denominator [
-         fhir:Quantity.value [ fhir:value "50"^^xsd:decimal ];
-         fhir:Quantity.unit [ fhir:value "milligram" ];
-         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
-         fhir:Quantity.code [ fhir:value "mg" ]
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.cibmtr.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "rc_99999" ] ;
+       fhir:display [ fhir:v "99999 My Transplant Center" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"Medication-Prep-Regimen-Example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;Medication-Prep-Regimen-Example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cibmtr-prep-regimen-medication.html\">CIBMTR Prep Regimen Medication</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.cibmtr.org/codesystem/transplant-center http://terminology.cibmtr.org/codesystem/transplant-center}\">http://terminology.cibmtr.org/codesystem/transplant-center</span></p></div><p><b>code</b>: cyclophosphamide <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#3002; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1437967 &quot;cyclophosphamide Oral Capsule&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1437969 &quot;cyclophosphamide 50 MG Oral Capsule&quot;)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>cyclophosphamide <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#3002; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1437967 &quot;cyclophosphamide Oral Capsule&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1437969 &quot;cyclophosphamide 50 MG Oral Capsule&quot;)</span></td><td>50 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/50 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "3002" ] ;
+       fhir:display [ fhir:v "cyclophosphamide" ]
+     ] [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1437967" ] ;
+       fhir:display [ fhir:v "cyclophosphamide Oral Capsule" ]
+     ] [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1437969" ] ;
+       fhir:display [ fhir:v "cyclophosphamide 50 MG Oral Capsule" ]
+     ] ) ;
+     fhir:text [ fhir:v "cyclophosphamide" ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "3002" ] ;
+         fhir:display [ fhir:v "cyclophosphamide" ]
+       ] [
+         fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1437967" ] ;
+         fhir:display [ fhir:v "cyclophosphamide Oral Capsule" ]
+       ] [
+         fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1437969" ] ;
+         fhir:display [ fhir:v "cyclophosphamide 50 MG Oral Capsule" ]
+       ] ) ;
+       fhir:text [ fhir:v "cyclophosphamide" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "50"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "milligram" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "50"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "milligram" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
        ]
      ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.nmdp.org/ig/cibmtr-reporting/Medication/Medication-Prep-Regimen-Example.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

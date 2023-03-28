@@ -5,82 +5,65 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-treosulfan-vs> a fhir:ValueSet;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "med-treosulfan-vs"];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>38508</td><td>treosulfan</td></tr><tr><td>336841</td><td>treosulfan 250 MG</td></tr><tr><td>393483</td><td>treosulfan 50 MG/ML</td></tr><tr><td>1162765</td><td>treosulfan Injectable Product</td></tr><tr><td>377198</td><td>treosulfan Injectable Solution</td></tr><tr><td>374186</td><td>treosulfan Oral Capsule</td></tr><tr><td>1162766</td><td>treosulfan Oral Product</td></tr><tr><td>1162767</td><td>treosulfan Pill</td></tr></table></li></ul></div>"
-  ];
-  fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-treosulfan-vs"];
-  fhir:ValueSet.version [ fhir:value "0.1.5"];
-  fhir:ValueSet.name [ fhir:value "RxNormTreosulfanVS"];
-  fhir:ValueSet.title [ fhir:value "RxNorm - Treosulfan"];
-  fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-09-08T13:29:45-05:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"];
-  fhir:ValueSet.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://www.cibmtr.org" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Bob Milius" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "bmilius@nmdp.org" ]
-     ]
-  ];
-  fhir:ValueSet.description [ fhir:value "RxNorm codes for Treosulfan"];
-  fhir:ValueSet.compose [
-     fhir:ValueSet.compose.include [
-       fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
-       fhir:ValueSet.compose.include.concept [
-         fhir:index 0;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "38508" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "treosulfan" ]
-       ], [
-         fhir:index 1;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "336841" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "treosulfan 250 MG" ]
-       ], [
-         fhir:index 2;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "393483" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "treosulfan 50 MG/ML" ]
-       ], [
-         fhir:index 3;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "1162765" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "treosulfan Injectable Product" ]
-       ], [
-         fhir:index 4;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "377198" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "treosulfan Injectable Solution" ]
-       ], [
-         fhir:index 5;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "374186" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "treosulfan Oral Capsule" ]
-       ], [
-         fhir:index 6;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "1162766" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "treosulfan Oral Product" ]
-       ], [
-         fhir:index 7;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "1162767" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "treosulfan Pill" ]
-       ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-treosulfan-vs.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-treosulfan-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "med-treosulfan-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>38508</td><td>treosulfan</td></tr><tr><td>336841</td><td>treosulfan 250 MG</td></tr><tr><td>393483</td><td>treosulfan 50 MG/ML</td></tr><tr><td>1162765</td><td>treosulfan Injectable Product</td></tr><tr><td>377198</td><td>treosulfan Injectable Solution</td></tr><tr><td>374186</td><td>treosulfan Oral Capsule</td></tr><tr><td>1162766</td><td>treosulfan Oral Product</td></tr><tr><td>1162767</td><td>treosulfan Pill</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-treosulfan-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.5"] ; # 
+  fhir:name [ fhir:v "RxNormTreosulfanVS"] ; # 
+  fhir:title [ fhir:v "RxNorm - Treosulfan"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-03-28T10:36:55-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.cibmtr.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Milius" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bmilius@nmdp.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "RxNorm codes for Treosulfan"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "38508" ] ;
+         fhir:display [ fhir:v "treosulfan" ]
+       ] [
+         fhir:code [ fhir:v "336841" ] ;
+         fhir:display [ fhir:v "treosulfan 250 MG" ]
+       ] [
+         fhir:code [ fhir:v "393483" ] ;
+         fhir:display [ fhir:v "treosulfan 50 MG/ML" ]
+       ] [
+         fhir:code [ fhir:v "1162765" ] ;
+         fhir:display [ fhir:v "treosulfan Injectable Product" ]
+       ] [
+         fhir:code [ fhir:v "377198" ] ;
+         fhir:display [ fhir:v "treosulfan Injectable Solution" ]
+       ] [
+         fhir:code [ fhir:v "374186" ] ;
+         fhir:display [ fhir:v "treosulfan Oral Capsule" ]
+       ] [
+         fhir:code [ fhir:v "1162766" ] ;
+         fhir:display [ fhir:v "treosulfan Oral Product" ]
+       ] [
+         fhir:code [ fhir:v "1162767" ] ;
+         fhir:display [ fhir:v "treosulfan Pill" ]
+       ] )
+     ] )
+  ] . # 
 
 # -------------------------------------------------------------------------------------
 

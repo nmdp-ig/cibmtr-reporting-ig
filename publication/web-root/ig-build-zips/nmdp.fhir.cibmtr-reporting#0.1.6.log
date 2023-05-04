@@ -1,0 +1,472 @@
+FHIR IG Publisher Version 1.3.8 (Git# b97c9154f9fb). Built 2023-05-04T13:45:40.124Z (136 mins old)
+Detected Java version: 11.0.14.1 from /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home on x86_64 (64bit). 4096MB available
+dir = /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig, path = /Users/bmilius/.rbenv/shims:/Users/bmilius/.local/bin:/usr/local/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/bmilius/.rbenv/shims:/Users/bmilius/.local/bin:/usr/local/sbin:/usr/local/mysql/bin:/Users/bmilius/src/amazon/ec2-api-tools-1.6.7.1/bin:/Users/bmilius/bin:/Users/bmilius/bin/edirect:/bin:/usr/local/mysql/bin:/Users/bmilius/src/amazon/ec2-api-tools-1.6.7.1/bin:/Users/bmilius/bin:/Users/bmilius/bin/edirect
+Parameters: -go-publish -source /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build -web /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/publication/web-root -registry /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/publication/ig-registry/fhir-ig-list.json -history /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/publication/ig-history -templates /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/publication/web-root/history-templates
+---------------
+Publication Run: publish /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build to /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/publication/web-root
+Run Number: 1
+Web Layout using the script nmdp.fhir.[code] & http://fhir.nmdp.org/ig/[code]
+Relative directory for IG is '/cibmtr-reporting'
+All checks passed. Do the publication build from /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build and publish to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/web-root/run-20230504/cibmtr-reporting
+Prepare Build space in /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6
+Build IG at /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build: final copy suitable for publication (in /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6)
+FHIR IG Publisher Version 1.3.8 (Git# b97c9154f9fb). Built 2023-05-04T13:45:40.124Z (138 mins old)
+Detected Java version: 11.0.14.1 from /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home on Mac OS X/x86_64 (64bit). 4096MB available
+dir = /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig, path = /Users/bmilius/.rbenv/shims:/Users/bmilius/.local/bin:/usr/local/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/bmilius/.rbenv/shims:/Users/bmilius/.local/bin:/usr/local/sbin:/usr/local/mysql/bin:/Users/bmilius/src/amazon/ec2-api-tools-1.6.7.1/bin:/Users/bmilius/bin:/Users/bmilius/bin/edirect:/bin:/usr/local/mysql/bin:/Users/bmilius/src/amazon/ec2-api-tools-1.6.7.1/bin:/Users/bmilius/bin:/Users/bmilius/bin/edirect
+Parameters: -ig /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6 -resetTx -publish http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.6 -no-exit
+Start Clock @ Thursday, May 4, 2023 at 11:03:57 AM Central Daylight Time (2023-05-04T11:03:57-05:00)
+
+Build FHIR IG from /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6 (00:00.072)
+Build Formal Publication package, intended for http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.6 (00:00.076)
+API keys loaded from /Users/bmilius/.fhir/fhir-settings.json                     (00:00.079)
+Package Cache: /Users/bmilius/.fhir/packages                                     (00:00.087)
+Run Sushi on /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6 (00:00.093)
+Sushi: info  Running SUSHI v2.10.1 (implements FHIR Shorthand specification v2.0.0) (00:01.379)
+Sushi: info  Arguments:                                                          (00:01.383)
+Sushi: info    --require-latest                                                  (00:01.385)
+Sushi: info    --out /private/var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6 (00:01.387)
+Sushi: info    /private/var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6 (00:01.390)
+Sushi: (node:27832) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency (00:02.986)
+Sushi: (Use `node --trace-warnings ...` to show where the warning was created)   (00:02.990)
+Sushi: (node:27832) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency (00:02.993)
+Sushi: info  Using configuration file: /private/var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/sushi-config.yaml (00:03.043)
+Sushi: info  Importing FSH text...                                               (00:03.053)
+Sushi: info  Preprocessed 48 documents with 14 aliases.                          (00:03.184)
+Sushi: info  Imported 55 definitions and 35 instances.                           (00:03.233)
+Sushi: info  Checking local cache for hl7.fhir.uv.tools#current...               (00:03.235)
+Sushi: info  Found hl7.fhir.uv.tools#current in local cache.                     (00:03.284)
+Sushi: info  Loaded package hl7.fhir.uv.tools#current                            (00:04.682)
+Sushi: info  Checking local cache for hl7.terminology.r4#5.0.0...                (00:05.774)
+Sushi: info  Found hl7.terminology.r4#5.0.0 in local cache.                      (00:08.183)
+Sushi: info  Loaded package hl7.terminology.r4#5.0.0                             (00:08.185)
+Sushi: info  Checking local cache for hl7.fhir.us.core#4.0.0...                  (00:08.187)
+Sushi: info  Found hl7.fhir.us.core#4.0.0 in local cache.                        (00:08.302)
+Sushi: info  Loaded package hl7.fhir.us.core#4.0.0                               (00:08.304)
+Sushi: info  Checking local cache for hl7.fhir.us.mcode#2.0.0...                 (00:08.306)
+Sushi: info  Found hl7.fhir.us.mcode#2.0.0 in local cache.                       (00:08.474)
+Sushi: info  Loaded package hl7.fhir.us.mcode#2.0.0                              (00:08.476)
+Sushi: info  Checking local cache for hl7.fhir.uv.genomics-reporting#2.0.0...    (00:08.478)
+Sushi: info  Found hl7.fhir.uv.genomics-reporting#2.0.0 in local cache.          (00:08.549)
+Sushi: info  Loaded package hl7.fhir.uv.genomics-reporting#2.0.0                 (00:08.552)
+Sushi: info  Checking local cache for hl7.fhir.r4.core#4.0.1...                  (00:08.554)
+Sushi: info  Found hl7.fhir.r4.core#4.0.1 in local cache.                        (00:11.149)
+Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                               (00:11.151)
+Sushi: info  Converting FSH to FHIR resources...                                 (00:11.196)
+Sushi: info  Converted 13 FHIR StructureDefinitions.                             (00:11.552)
+Sushi: info  Converted 42 FHIR ValueSets.                                        (00:11.733)
+Sushi: info  Converted 35 FHIR instances.                                        (00:12.822)
+Sushi: info  Exporting FHIR resources as JSON...                                 (00:12.824)
+Sushi: info  Exported 90 FHIR resources as JSON.                                 (00:12.948)
+Sushi: info  Assembling Implementation Guide sources...                          (00:12.950)
+Sushi: info  Generated ImplementationGuide-nmdp.fhir.cibmtr-reporting.json       (00:13.010)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.     (00:13.012)
+Sushi:                                                                           (00:13.015)
+Sushi: ========================= SUSHI RESULTS ===========================       (00:13.017)
+Sushi: |  -------------------------------------------------------------  |       (00:13.019)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |       (00:13.021)
+Sushi: | |-------------------------------------------------------------| |       (00:13.023)
+Sushi: | |      13       |      0       |      0       |       0       | |       (00:13.025)
+Sushi: |  -------------------------------------------------------------  |       (00:13.027)
+Sushi: |  -------------------------------------------------------------  |       (00:13.029)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |       (00:13.031)
+Sushi: | |-------------------------------------------------------------| |       (00:13.034)
+Sushi: | |         42         |         0         |         35         | |       (00:13.037)
+Sushi: |  -------------------------------------------------------------  |       (00:13.039)
+Sushi: |                                                                 |       (00:13.041)
+Sushi: ===================================================================       (00:13.043)
+Sushi: | Tank you very much!                    0 Errors      0 Warnings |       (00:13.045)
+Sushi: ===================================================================       (00:13.047)
+Sushi:                                                                           (00:13.050)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:13.821)
+Load Template from #cibmtr-template                                              (00:14.562)
+ Load Template from fhir.base.template#current                                   (00:14.570)
+
+onLoad.findSpreadsheets:
+
+onLoad.updateIg:
+     [xslt] Processing /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/onLoad-ig-working.xml to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/onLoad-ig-updated.xml
+     [xslt] Loading stylesheet /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/scripts/onLoad.xslt
+
+onLoad.extend:
+
+onLoad:
+Root directory: /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6 (00:21.323)
+Core Package hl7.fhir.r4.core#4.0.1
+.:Terminology Cache is at /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/input-cache/txcache. Clearing now (00:34.751)
+Connect to Terminology Server at http://tx.fhir.org                              (00:34.762)
+Load Package hl7.fhir.pubpack#0.1.4
+Load Package hl7.fhir.xver-extensions#0.0.12
+Load Package hl7.terminology.r4#5.0.0
+Load Package hl7.fhir.uv.bulkdata#1.0.1
+Load Package us.nlm.vsac#0.3.0
+Load Package hl7.fhir.us.core#4.0.0
+Load Package hl7.fhir.us.mcode#2.0.0
+Load Package hl7.fhir.uv.genomics-reporting#2.0.0
+Version mismatch. This IG is version 4.0.1, while the IG 'igtools' is from version 5.0.0 (will try to run anyway) (00:39.023)
+Load Package hl7.fhir.uv.tools#0.1.0
+Initialization complete                                                          (00:42.820)
+Fetch http://fhir.nmdp.org/ig/cibmtr-reporting/package-list.json for version check (00:42.824)
+Load Content                                                                     (00:44.177)
+loadPrePages from FetchedFile[/var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/input/includes] as /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/input/includes
+loadPrePages from FetchedFile[/var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/fsh-generated/includes] as /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/fsh-generated/includes
+loadPrePages from FetchedFile[/var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/input/pagecontent] as /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/input/pagecontent
+Processing Conformance Resources                                                 (00:46.742)
+Generating Snapshots                                                             (00:47.600)
+Propagating status                                                               (00:50.193)
+Generating Narratives                                                            (00:50.196)
+Validating Conformance Resources                                                 (00:54.168)
+Validating Resources                                                             (01:02.925)
+Processing Provenance Records                                                    (01:03.555)
+Generating Outputs in /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/output (01:03.558)
+Run Template                                                                     (01:05.752)
+
+onGenerate.checkVersions:
+     [xslt] Processing /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/onGenerate-ig-working.xml to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/versions.txt
+     [xslt] Loading stylesheet /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/scripts/onGenerate.getVersions.xslt
+
+onGenerate.r5-schemas:
+      [get] Getting: http://build.fhir.org/fhir-single.xsd
+      [get] To: /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/input-cache/schemas/R5/fhir-single.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/fhir-xhtml.xsd
+      [get] To: /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/input-cache/schemas/R5/fhir-xhtml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/xml.xsd
+      [get] To: /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/input-cache/schemas/R5/xml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/xmldsig-core-schema.xsd
+      [get] To: /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/input-cache/schemas/R5/xmldsig-core-schema.xsd
+      [get] Not modified - so not downloaded
+
+onGenerate.r4-schemas:
+      [get] Getting: http://hl7.org/fhir/R4/fhir-single.xsd
+      [get] To: /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/input-cache/schemas/R4/fhir-single.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/fhir-xhtml.xsd
+      [get] To: /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/input-cache/schemas/R4/fhir-xhtml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/xml.xsd
+      [get] To: /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/input-cache/schemas/R4/xml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/xmldsig-core-schema.xsd
+      [get] To: /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/input-cache/schemas/R4/xmldsig-core-schema.xsd
+      [get] Not modified - so not downloaded
+
+onGenerate.r3-schemas:
+
+onGenerate.r2b-schemas:
+
+onGenerate.r2-schemas:
+
+onGenerate.schemas:
+
+onGenerate.data:
+     [xslt] Processing /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/onGenerate-ig-working.xml to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/temp/pages/_data/artifacts.json
+     [xslt] Loading stylesheet /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/scripts/onGenerate.data.xslt
+
+onGenerate.setup:
+
+onGenerate.infoFile:
+     [xslt] Processing /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/onGenerate-ig-working.xml to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/temp/pages/_data/info.json
+     [xslt] Loading stylesheet /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/scripts/onGenerate.genJson.xslt
+
+onGenerate.processIncludes:
+     [copy] Copying 17 files to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/temp/pages/_includes
+
+onGenerate.processIg:
+     [xslt] Processing /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/onGenerate-ig-working.xml to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/onGenerate-ig-working.1.xml
+     [xslt] Loading stylesheet /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/scripts/onGenerate.group.xslt
+     [xslt] Processing /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/onGenerate-ig-working.1.xml to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/onGenerate-ig-updated.xml
+     [xslt] Loading stylesheet /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/scripts/onGenerate.final.xslt
+
+onGenerate.igQa:
+     [xslt] Processing /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/onGenerate-ig-updated.xml to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/ongenerate-validation-igqa.json
+     [xslt] Loading stylesheet /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/scripts/onGenerate.qa.xslt
+
+onGenerate.artifactList:
+     [xslt] Processing /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/onGenerate-ig-updated.xml to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/temp/pages/_includes/artifacts.xml
+     [xslt] Loading stylesheet /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/template/scripts/createArtifactSummary.xslt
+
+check-plantumlfiles:
+
+onGenerate.plantUml.ig:
+
+onGenerate.plantUml.template:
+
+onGenerate.plantUml:
+
+onGenerate.copyDataFiles:
+
+onGenerate.extend:
+
+onGenerate:
+Template Done                                                                    (01:07.777)
+Generating Summary Outputs                                                       (03:27.452)
+Warning @ Unable to read the git branch: not a git repository (or any of the parent directories): .git
+Sending Usage Stats to Server                                                    (04:01.337)
+## Memory (MB): Use = 2267, Free = 121, Total = 2389, Max =4096
+Reclaiming memory...
+## Memory (MB): Use = 2058, Free = 1380, Total = 3439, Max =4096
+Run jekyll: jekyll build --destination "/var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/output" (in folder /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/temp/pages) (04:02.385)
+Jekyll: Source: /private/var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/temp/pages (04:07.004)
+Jekyll: Generating...                                                            (04:07.008)
+Jekyll: done in 16.596 seconds.                                                  (04:23.600)
+Installing nmdp.fhir.cibmtr-reporting#0.1.6 to the package cache
+  Fetching:
+..
+  Installing: .. done.
+Checking Output HTML                                                             (04:28.754)
+found 1461 files                                                                 (04:28.779)
+........................................
+........................................
+  ... 1461 html files, 0 pages invalid xhtml (0%)                                (04:55.582)
+  ... 285029 links, 0 broken links (0%)                                          (04:55.584)
+Build final .zip                                                                 (04:55.587)
+Final .zip built                                                                 (04:58.385)
+Built. Times: loading: 00:02.561, generate: 04:17.413, narrative generation: 00:03.969, realm-rules: 00:00.000, previous-version: 00:00.000, jekyll: 00:21.237, validation: 00:09.360 (#91), template: 00:02.023 (#3) (05:04.157)
+Validation output in /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6/output/qa.html
+Errors: 0, Warnings: 8, Info: 42, Broken Links: 0 (05:04.601)
+Finished                                                                         (05:04.606)
+Done                                                                             (05:04.608)
+Prepare Build space in /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone
+Sending usage stats failed: Operation timed out (Connection timed out)
+Build IG at /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/build: final copy suitable for publication (in /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone) (milestone build)
+FHIR IG Publisher Version 1.3.8 (Git# b97c9154f9fb). Built 2023-05-04T13:45:40.124Z (145 mins old)
+Detected Java version: 11.0.14.1 from /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home on Mac OS X/x86_64 (64bit). 4096MB available
+dir = /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig, path = /Users/bmilius/.rbenv/shims:/Users/bmilius/.local/bin:/usr/local/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/bmilius/.rbenv/shims:/Users/bmilius/.local/bin:/usr/local/sbin:/usr/local/mysql/bin:/Users/bmilius/src/amazon/ec2-api-tools-1.6.7.1/bin:/Users/bmilius/bin:/Users/bmilius/bin/edirect:/bin:/usr/local/mysql/bin:/Users/bmilius/src/amazon/ec2-api-tools-1.6.7.1/bin:/Users/bmilius/bin:/Users/bmilius/bin/edirect
+Parameters: -ig /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone -publish http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.6 -milestone -no-exit
+Start Clock @ Thursday, May 4, 2023 at 11:10:43 AM Central Daylight Time (2023-05-04T11:10:43-05:00)
+
+Build FHIR IG from /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone (00:00.050)
+Build Formal Publication package, intended for http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.6 (00:00.053)
+API keys loaded from /Users/bmilius/.fhir/fhir-settings.json                     (00:00.056)
+Package Cache: /Users/bmilius/.fhir/packages                                     (00:00.058)
+Run Sushi on /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone (00:00.060)
+Sushi: info  Running SUSHI v2.10.1 (implements FHIR Shorthand specification v2.0.0) (00:01.264)
+Sushi: info  Arguments:                                                          (00:01.267)
+Sushi: info    --require-latest                                                  (00:01.269)
+Sushi: info    --out /private/var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone (00:01.272)
+Sushi: info    /private/var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone (00:01.274)
+Sushi: (node:27943) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency (00:02.596)
+Sushi: (Use `node --trace-warnings ...` to show where the warning was created)   (00:02.600)
+Sushi: (node:27943) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency (00:02.603)
+Sushi: info  Using configuration file: /private/var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/sushi-config.yaml (00:02.654)
+Sushi: info  Importing FSH text...                                               (00:02.664)
+Sushi: info  Preprocessed 48 documents with 14 aliases.                          (00:02.795)
+Sushi: info  Imported 55 definitions and 35 instances.                           (00:02.844)
+Sushi: info  Checking local cache for hl7.fhir.uv.tools#current...               (00:02.846)
+Sushi: info  Found hl7.fhir.uv.tools#current in local cache.                     (00:02.894)
+Sushi: info  Loaded package hl7.fhir.uv.tools#current                            (00:04.068)
+Sushi: info  Checking local cache for hl7.terminology.r4#5.0.0...                (00:05.079)
+Sushi: info  Found hl7.terminology.r4#5.0.0 in local cache.                      (00:07.467)
+Sushi: info  Loaded package hl7.terminology.r4#5.0.0                             (00:07.469)
+Sushi: info  Checking local cache for hl7.fhir.us.core#4.0.0...                  (00:07.471)
+Sushi: info  Found hl7.fhir.us.core#4.0.0 in local cache.                        (00:07.593)
+Sushi: info  Loaded package hl7.fhir.us.core#4.0.0                               (00:07.595)
+Sushi: info  Checking local cache for hl7.fhir.us.mcode#2.0.0...                 (00:07.596)
+Sushi: info  Found hl7.fhir.us.mcode#2.0.0 in local cache.                       (00:07.747)
+Sushi: info  Loaded package hl7.fhir.us.mcode#2.0.0                              (00:07.749)
+Sushi: info  Checking local cache for hl7.fhir.uv.genomics-reporting#2.0.0...    (00:07.751)
+Sushi: info  Found hl7.fhir.uv.genomics-reporting#2.0.0 in local cache.          (00:07.802)
+Sushi: info  Loaded package hl7.fhir.uv.genomics-reporting#2.0.0                 (00:07.804)
+Sushi: info  Checking local cache for hl7.fhir.r4.core#4.0.1...                  (00:07.806)
+Sushi: info  Found hl7.fhir.r4.core#4.0.1 in local cache.                        (00:10.251)
+Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                               (00:10.253)
+Sushi: info  Converting FSH to FHIR resources...                                 (00:10.294)
+Sushi: info  Converted 13 FHIR StructureDefinitions.                             (00:10.644)
+Sushi: info  Converted 42 FHIR ValueSets.                                        (00:10.822)
+Sushi: info  Converted 35 FHIR instances.                                        (00:11.858)
+Sushi: info  Exporting FHIR resources as JSON...                                 (00:11.861)
+Sushi: info  Exported 90 FHIR resources as JSON.                                 (00:11.980)
+Sushi: info  Assembling Implementation Guide sources...                          (00:11.982)
+Sushi: info  Generated ImplementationGuide-nmdp.fhir.cibmtr-reporting.json       (00:12.041)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.     (00:12.043)
+Sushi:                                                                           (00:12.045)
+Sushi: ========================= SUSHI RESULTS ===========================       (00:12.047)
+Sushi: |  -------------------------------------------------------------  |       (00:12.049)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |       (00:12.051)
+Sushi: | |-------------------------------------------------------------| |       (00:12.054)
+Sushi: | |      13       |      0       |      0       |       0       | |       (00:12.056)
+Sushi: |  -------------------------------------------------------------  |       (00:12.058)
+Sushi: |  -------------------------------------------------------------  |       (00:12.060)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |       (00:12.063)
+Sushi: | |-------------------------------------------------------------| |       (00:12.066)
+Sushi: | |         42         |         0         |         35         | |       (00:12.068)
+Sushi: |  -------------------------------------------------------------  |       (00:12.070)
+Sushi: |                                                                 |       (00:12.072)
+Sushi: ===================================================================       (00:12.074)
+Sushi: | It doesn't get any betta than this!    0 Errors      0 Warnings |       (00:12.076)
+Sushi: ===================================================================       (00:12.078)
+Sushi:                                                                           (00:12.080)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:12.117)
+Load Template from #cibmtr-template                                              (00:12.181)
+ Load Template from fhir.base.template#current                                   (00:12.188)
+
+onLoad.findSpreadsheets:
+
+onLoad.updateIg:
+     [xslt] Processing /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/onLoad-ig-working.xml to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/onLoad-ig-updated.xml
+     [xslt] Loading stylesheet /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/scripts/onLoad.xslt
+
+onLoad.extend:
+
+onLoad:
+Root directory: /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone (00:17.289)
+Core Package hl7.fhir.r4.core#4.0.1
+.:Terminology Cache is at /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/input-cache/txcache. 3 files in cache (00:28.439)
+Connect to Terminology Server at http://tx.fhir.org                              (00:28.445)
+Load Package hl7.fhir.pubpack#0.1.4
+Load Package hl7.fhir.xver-extensions#0.0.12
+Load Package hl7.terminology.r4#5.0.0
+Load Package hl7.fhir.uv.bulkdata#1.0.1
+Load Package us.nlm.vsac#0.3.0
+Load Package hl7.fhir.us.core#4.0.0
+Load Package hl7.fhir.us.mcode#2.0.0
+Load Package hl7.fhir.uv.genomics-reporting#2.0.0
+Version mismatch. This IG is version 4.0.1, while the IG 'igtools' is from version 5.0.0 (will try to run anyway) (00:32.017)
+Load Package hl7.fhir.uv.tools#0.1.0
+Initialization complete                                                          (00:35.846)
+Fetch http://fhir.nmdp.org/ig/cibmtr-reporting/package-list.json for version check (00:35.849)
+Load Content                                                                     (00:37.047)
+loadPrePages from FetchedFile[/var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/input/includes] as /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/input/includes
+loadPrePages from FetchedFile[/var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/includes] as /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/includes
+loadPrePages from FetchedFile[/var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/input/pagecontent] as /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/input/pagecontent
+Processing Conformance Resources                                                 (00:39.525)
+Generating Snapshots                                                             (00:40.591)
+Propagating status                                                               (00:43.241)
+Generating Narratives                                                            (00:43.243)
+Validating Conformance Resources                                                 (00:58.364)
+Validating Resources                                                             (01:56.933)
+Processing Provenance Records                                                    (02:25.367)
+Generating Outputs in /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/output (02:25.371)
+Run Template                                                                     (02:27.353)
+
+onGenerate.checkVersions:
+     [xslt] Processing /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/onGenerate-ig-working.xml to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/versions.txt
+     [xslt] Loading stylesheet /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/scripts/onGenerate.getVersions.xslt
+
+onGenerate.r5-schemas:
+      [get] Getting: http://build.fhir.org/fhir-single.xsd
+      [get] To: /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/input-cache/schemas/R5/fhir-single.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/fhir-xhtml.xsd
+      [get] To: /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/input-cache/schemas/R5/fhir-xhtml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/xml.xsd
+      [get] To: /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/input-cache/schemas/R5/xml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/xmldsig-core-schema.xsd
+      [get] To: /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/input-cache/schemas/R5/xmldsig-core-schema.xsd
+      [get] Not modified - so not downloaded
+
+onGenerate.r4-schemas:
+      [get] Getting: http://hl7.org/fhir/R4/fhir-single.xsd
+      [get] To: /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/input-cache/schemas/R4/fhir-single.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/fhir-xhtml.xsd
+      [get] To: /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/input-cache/schemas/R4/fhir-xhtml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/xml.xsd
+      [get] To: /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/input-cache/schemas/R4/xml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/xmldsig-core-schema.xsd
+      [get] To: /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/input-cache/schemas/R4/xmldsig-core-schema.xsd
+      [get] Not modified - so not downloaded
+
+onGenerate.r3-schemas:
+
+onGenerate.r2b-schemas:
+
+onGenerate.r2-schemas:
+
+onGenerate.schemas:
+
+onGenerate.data:
+     [xslt] Processing /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/onGenerate-ig-working.xml to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/temp/pages/_data/artifacts.json
+     [xslt] Loading stylesheet /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/scripts/onGenerate.data.xslt
+
+onGenerate.setup:
+
+onGenerate.infoFile:
+     [xslt] Processing /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/onGenerate-ig-working.xml to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/temp/pages/_data/info.json
+     [xslt] Loading stylesheet /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/scripts/onGenerate.genJson.xslt
+
+onGenerate.processIncludes:
+     [copy] Copying 17 files to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/temp/pages/_includes
+
+onGenerate.processIg:
+     [xslt] Processing /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/onGenerate-ig-working.xml to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/onGenerate-ig-working.1.xml
+     [xslt] Loading stylesheet /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/scripts/onGenerate.group.xslt
+     [xslt] Processing /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/onGenerate-ig-working.1.xml to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/onGenerate-ig-updated.xml
+     [xslt] Loading stylesheet /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/scripts/onGenerate.final.xslt
+
+onGenerate.igQa:
+     [xslt] Processing /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/onGenerate-ig-updated.xml to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/ongenerate-validation-igqa.json
+     [xslt] Loading stylesheet /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/scripts/onGenerate.qa.xslt
+
+onGenerate.artifactList:
+     [xslt] Processing /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/onGenerate-ig-updated.xml to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/temp/pages/_includes/artifacts.xml
+     [xslt] Loading stylesheet /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/template/scripts/createArtifactSummary.xslt
+
+check-plantumlfiles:
+
+onGenerate.plantUml.ig:
+
+onGenerate.plantUml.template:
+
+onGenerate.plantUml:
+
+onGenerate.copyDataFiles:
+
+onGenerate.extend:
+
+onGenerate:
+Template Done                                                                    (02:29.436)
+Generating Summary Outputs                                                       (05:03.642)
+Warning @ Unable to read the git branch: not a git repository (or any of the parent directories): .git
+Sending Usage Stats to Server                                                    (05:42.583)
+## Memory (MB): Use = 2282, Free = 1155, Total = 3439, Max =4096
+Reclaiming memory...
+## Memory (MB): Use = 2057, Free = 1382, Total = 3440, Max =4096
+Run jekyll: jekyll build --destination "/var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/output" (in folder /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/temp/pages) (05:43.663)
+Jekyll: Source: /private/var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/temp/pages (05:48.127)
+Jekyll: Generating...                                                            (05:48.132)
+Jekyll: done in 17.521 seconds.                                                  (06:05.647)
+Installing nmdp.fhir.cibmtr-reporting#0.1.6 to the package cache
+  Fetching:
+..
+  Installing: Checking Output HTML                                                             (06:09.330)
+found 1461 files                                                                 (06:09.358)
+........................................
+........................................
+  ... 1461 html files, 0 pages invalid xhtml (0%)                                (06:34.369)
+  ... 285029 links, 0 broken links (0%)                                          (06:34.371)
+Build final .zip                                                                 (06:34.373)
+Final .zip built                                                                 (06:37.112)
+Built. Times: loading: 00:02.471, generate: 06:03.494, narrative generation: 00:15.119, realm-rules: 00:00.000, previous-version: 00:00.000, jekyll: 00:22.007, validation: 01:26.974 (#91), template: 00:02.081 (#3) (06:43.195)
+Validation output in /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/output/qa.html
+Errors: 0, Warnings: 8, Info: 42, Broken Links: 0 (06:43.499)
+Finished                                                                         (06:43.506)
+Done                                                                             (06:43.509)
+Keep a copy of the build directory at /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/web-root/run-20230504/ig-build-zips/nmdp.fhir.cibmtr-reporting#0.1.6.zip
+Sending usage stats failed: Operation timed out (Connection timed out)
+
+ok. All checks passed. Publish v0.1.6 to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/web-root/run-20230504/cibmtr-reporting/0.1.6
+Copy the IG to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/web-root/run-20230504/cibmtr-reporting/0.1.6
+Update /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/web-root/run-20230504/cibmtr-reporting/package-list.json
+Publish Box Statement: This page is part of the CIBMTR Reporting Implementation Guide (v0.1.6: Release Draft) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a>
+  .. 560 files checked, 560 updated
+  .. 185 clones checked, 370 updated
+  .. 91 redirections (91 created/updated)
+This is a milestone release - publish v0.1.6 to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/web-root/run-20230504/cibmtr-reporting
+Publish Box Statement: This page is part of the CIBMTR Reporting Implementation Guide (v0.1.6: Release Draft) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a>
+  .. 560 files checked, 560 updated
+  .. 185 clones checked, 370 updated
+  .. 91 redirections (91 created/updated)
+Check for Files to delete
+  ... 0 files
+Copy to new IG to /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/web-root/run-20230504/cibmtr-reporting
+Update history page at /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/web-root/run-20230504/cibmtr-reporting from /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/publication/ig-history and /Users/bmilius/Documents/src/github-nmdp-ig/cibmtr-reporting-ig/publication/web-root/history-templates
+Build is complete. Copy from /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/web-root/run-20230504
+nmdp.fhir.cibmtr-reporting (http://fhir.nmdp.org/ig/cibmtr-reporting): CIBMTR Reporting Implementation Guide @ https://nmdp-ig.github.io/cibmtr-reporting
+  candidate: Release Draft 0.1.6/4.0.1 @ http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.6

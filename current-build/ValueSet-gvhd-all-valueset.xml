@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="gvhd-all-valueset"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-gvhd-sct-codes.html">GVHD SNOMED CT Codes</a></li><li>Import all the codes that are contained in <a href="ValueSet-gvhd-icd10-codes.html">GVHD ICD-10 Codes</a></li></ul></div>
+  </text>
+  <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-all-valueset"/>
+  <version value="0.1.6"/>
+  <name value="GVHDTypeValueSet"/>
+  <title value="GVHD Type Value Set"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2023-05-04T09:48:28-05:00"/>
+  <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
+  <contact>
+    <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.cibmtr.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Milius"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bmilius@nmdp.org"/>
+    </telecom>
+  </contact>
+  <description value="Permissible values for types of Graft vs Host Disease, from SNOMED CT and ICD-10"/>
+  <compose>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-sct-codes"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -15,7 +15,7 @@ Used for development of new client software
         <tr>
             <td>Access Credentials</td>
             <td>POST</td>
-            <td>https://oktapreview.nmdp.org/oauth2/ausaexcazhLhxKnJs0h7/v1/token</td>--cha
+            <td>https://oktapreview.nmdp.org/oauth2/ausaexcazhLhxKnJs0h7/v1/token</td>
         </tr>
         <tr>
             <td>Base URL</td>

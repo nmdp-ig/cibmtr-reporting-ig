@@ -1,0 +1,141 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-ursodiol-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "med-ursodiol-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>215007</td><td>Actigall</td></tr><tr><td>220706</td><td>Urso</td></tr><tr><td>11065</td><td>ursodiol</td></tr><tr><td>62427</td><td>ursodeoxycholate</td></tr><tr><td>151610</td><td>Destolit</td></tr><tr><td>2477891</td><td>Reltone</td></tr><tr><td>153695</td><td>Urdox</td></tr><tr><td>544268</td><td>Urso Forte</td></tr><tr><td>152480</td><td>Ursofalk</td></tr><tr><td>153628</td><td>Ursogal</td></tr><tr><td>1169904</td><td>Actigall Oral Product</td></tr><tr><td>1169905</td><td>Actigall Pill</td></tr><tr><td>1186788</td><td>Urso Oral Product</td></tr><tr><td>1186789</td><td>Urso Pill</td></tr><tr><td>632296</td><td>ursodeoxycholate Oral Capsule [Actigall]</td></tr><tr><td>632450</td><td>ursodeoxycholate Oral Capsule [Urso]</td></tr><tr><td>632416</td><td>ursodeoxycholate Oral Tablet [Urso]</td></tr><tr><td>858745</td><td>ursodiol 250 MG [Urso]</td></tr><tr><td>858746</td><td>ursodiol 250 MG Oral Capsule [Urso]</td></tr><tr><td>858752</td><td>ursodiol 250 MG Oral Tablet [Urso]</td></tr><tr><td>858748</td><td>ursodiol 300 MG [Actigall]</td></tr><tr><td>858749</td><td>ursodiol 300 MG Oral Capsule [Actigall]</td></tr><tr><td>384895</td><td>ursodiol 100 MG</td></tr><tr><td>360514</td><td>ursodiol 125 MG</td></tr><tr><td>858330</td><td>ursodiol 150 MG</td></tr><tr><td>452499</td><td>ursodiol 200 MG</td></tr><tr><td>360513</td><td>ursodiol 250 MG</td></tr><tr><td>858328</td><td>ursodiol 300 MG</td></tr><tr><td>452500</td><td>ursodiol 400 MG</td></tr><tr><td>452502</td><td>ursodiol 50 MG</td></tr><tr><td>858332</td><td>ursodiol 50 MG/ML</td></tr><tr><td>858732</td><td>ursodiol 500 MG</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-ursodiol-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "RxNormUrsodiolVS"] ; # 
+  fhir:title [ fhir:v "RxNorm - Ursodiol"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-05-04T11:11:22-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.cibmtr.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Milius" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bmilius@nmdp.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "RxNorm codes for Ursodiol"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "215007" ] ;
+         fhir:display [ fhir:v "Actigall" ]
+       ] [
+         fhir:code [ fhir:v "220706" ] ;
+         fhir:display [ fhir:v "Urso" ]
+       ] [
+         fhir:code [ fhir:v "11065" ] ;
+         fhir:display [ fhir:v "ursodiol" ]
+       ] [
+         fhir:code [ fhir:v "62427" ] ;
+         fhir:display [ fhir:v "ursodeoxycholate" ]
+       ] [
+         fhir:code [ fhir:v "151610" ] ;
+         fhir:display [ fhir:v "Destolit" ]
+       ] [
+         fhir:code [ fhir:v "2477891" ] ;
+         fhir:display [ fhir:v "Reltone" ]
+       ] [
+         fhir:code [ fhir:v "153695" ] ;
+         fhir:display [ fhir:v "Urdox" ]
+       ] [
+         fhir:code [ fhir:v "544268" ] ;
+         fhir:display [ fhir:v "Urso Forte" ]
+       ] [
+         fhir:code [ fhir:v "152480" ] ;
+         fhir:display [ fhir:v "Ursofalk" ]
+       ] [
+         fhir:code [ fhir:v "153628" ] ;
+         fhir:display [ fhir:v "Ursogal" ]
+       ] [
+         fhir:code [ fhir:v "1169904" ] ;
+         fhir:display [ fhir:v "Actigall Oral Product" ]
+       ] [
+         fhir:code [ fhir:v "1169905" ] ;
+         fhir:display [ fhir:v "Actigall Pill" ]
+       ] [
+         fhir:code [ fhir:v "1186788" ] ;
+         fhir:display [ fhir:v "Urso Oral Product" ]
+       ] [
+         fhir:code [ fhir:v "1186789" ] ;
+         fhir:display [ fhir:v "Urso Pill" ]
+       ] [
+         fhir:code [ fhir:v "632296" ] ;
+         fhir:display [ fhir:v "ursodeoxycholate Oral Capsule [Actigall]" ]
+       ] [
+         fhir:code [ fhir:v "632450" ] ;
+         fhir:display [ fhir:v "ursodeoxycholate Oral Capsule [Urso]" ]
+       ] [
+         fhir:code [ fhir:v "632416" ] ;
+         fhir:display [ fhir:v "ursodeoxycholate Oral Tablet [Urso]" ]
+       ] [
+         fhir:code [ fhir:v "858745" ] ;
+         fhir:display [ fhir:v "ursodiol 250 MG [Urso]" ]
+       ] [
+         fhir:code [ fhir:v "858746" ] ;
+         fhir:display [ fhir:v "ursodiol 250 MG Oral Capsule [Urso]" ]
+       ] [
+         fhir:code [ fhir:v "858752" ] ;
+         fhir:display [ fhir:v "ursodiol 250 MG Oral Tablet [Urso]" ]
+       ] [
+         fhir:code [ fhir:v "858748" ] ;
+         fhir:display [ fhir:v "ursodiol 300 MG [Actigall]" ]
+       ] [
+         fhir:code [ fhir:v "858749" ] ;
+         fhir:display [ fhir:v "ursodiol 300 MG Oral Capsule [Actigall]" ]
+       ] [
+         fhir:code [ fhir:v "384895" ] ;
+         fhir:display [ fhir:v "ursodiol 100 MG" ]
+       ] [
+         fhir:code [ fhir:v "360514" ] ;
+         fhir:display [ fhir:v "ursodiol 125 MG" ]
+       ] [
+         fhir:code [ fhir:v "858330" ] ;
+         fhir:display [ fhir:v "ursodiol 150 MG" ]
+       ] [
+         fhir:code [ fhir:v "452499" ] ;
+         fhir:display [ fhir:v "ursodiol 200 MG" ]
+       ] [
+         fhir:code [ fhir:v "360513" ] ;
+         fhir:display [ fhir:v "ursodiol 250 MG" ]
+       ] [
+         fhir:code [ fhir:v "858328" ] ;
+         fhir:display [ fhir:v "ursodiol 300 MG" ]
+       ] [
+         fhir:code [ fhir:v "452500" ] ;
+         fhir:display [ fhir:v "ursodiol 400 MG" ]
+       ] [
+         fhir:code [ fhir:v "452502" ] ;
+         fhir:display [ fhir:v "ursodiol 50 MG" ]
+       ] [
+         fhir:code [ fhir:v "858332" ] ;
+         fhir:display [ fhir:v "ursodiol 50 MG/ML" ]
+       ] [
+         fhir:code [ fhir:v "858732" ] ;
+         fhir:display [ fhir:v "ursodiol 500 MG" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

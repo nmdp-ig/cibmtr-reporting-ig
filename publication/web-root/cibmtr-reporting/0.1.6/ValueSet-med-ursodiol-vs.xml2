@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="med-ursodiol-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.nlm.nih.gov/research/umls/rxnorm"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>215007</td><td>Actigall</td></tr><tr><td>220706</td><td>Urso</td></tr><tr><td>11065</td><td>ursodiol</td></tr><tr><td>62427</td><td>ursodeoxycholate</td></tr><tr><td>151610</td><td>Destolit</td></tr><tr><td>2477891</td><td>Reltone</td></tr><tr><td>153695</td><td>Urdox</td></tr><tr><td>544268</td><td>Urso Forte</td></tr><tr><td>152480</td><td>Ursofalk</td></tr><tr><td>153628</td><td>Ursogal</td></tr><tr><td>1169904</td><td>Actigall Oral Product</td></tr><tr><td>1169905</td><td>Actigall Pill</td></tr><tr><td>1186788</td><td>Urso Oral Product</td></tr><tr><td>1186789</td><td>Urso Pill</td></tr><tr><td>632296</td><td>ursodeoxycholate Oral Capsule [Actigall]</td></tr><tr><td>632450</td><td>ursodeoxycholate Oral Capsule [Urso]</td></tr><tr><td>632416</td><td>ursodeoxycholate Oral Tablet [Urso]</td></tr><tr><td>858745</td><td>ursodiol 250 MG [Urso]</td></tr><tr><td>858746</td><td>ursodiol 250 MG Oral Capsule [Urso]</td></tr><tr><td>858752</td><td>ursodiol 250 MG Oral Tablet [Urso]</td></tr><tr><td>858748</td><td>ursodiol 300 MG [Actigall]</td></tr><tr><td>858749</td><td>ursodiol 300 MG Oral Capsule [Actigall]</td></tr><tr><td>384895</td><td>ursodiol 100 MG</td></tr><tr><td>360514</td><td>ursodiol 125 MG</td></tr><tr><td>858330</td><td>ursodiol 150 MG</td></tr><tr><td>452499</td><td>ursodiol 200 MG</td></tr><tr><td>360513</td><td>ursodiol 250 MG</td></tr><tr><td>858328</td><td>ursodiol 300 MG</td></tr><tr><td>452500</td><td>ursodiol 400 MG</td></tr><tr><td>452502</td><td>ursodiol 50 MG</td></tr><tr><td>858332</td><td>ursodiol 50 MG/ML</td></tr><tr><td>858732</td><td>ursodiol 500 MG</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-ursodiol-vs"/>
+  <version value="0.1.6"/>
+  <name value="RxNormUrsodiolVS"/>
+  <title value="RxNorm - Ursodiol"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2023-05-04T11:04:44-05:00"/>
+  <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
+  <contact>
+    <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.cibmtr.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Milius"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bmilius@nmdp.org"/>
+    </telecom>
+  </contact>
+  <description value="RxNorm codes for Ursodiol"/>
+  <compose>
+    <include>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <concept>
+        <code value="215007"/>
+        <display value="Actigall"/>
+      </concept>
+      <concept>
+        <code value="220706"/>
+        <display value="Urso"/>
+      </concept>
+      <concept>
+        <code value="11065"/>
+        <display value="ursodiol"/>
+      </concept>
+      <concept>
+        <code value="62427"/>
+        <display value="ursodeoxycholate"/>
+      </concept>
+      <concept>
+        <code value="151610"/>
+        <display value="Destolit"/>
+      </concept>
+      <concept>
+        <code value="2477891"/>
+        <display value="Reltone"/>
+      </concept>
+      <concept>
+        <code value="153695"/>
+        <display value="Urdox"/>
+      </concept>
+      <concept>
+        <code value="544268"/>
+        <display value="Urso Forte"/>
+      </concept>
+      <concept>
+        <code value="152480"/>
+        <display value="Ursofalk"/>
+      </concept>
+      <concept>
+        <code value="153628"/>
+        <display value="Ursogal"/>
+      </concept>
+      <concept>
+        <code value="1169904"/>
+        <display value="Actigall Oral Product"/>
+      </concept>
+      <concept>
+        <code value="1169905"/>
+        <display value="Actigall Pill"/>
+      </concept>
+      <concept>
+        <code value="1186788"/>
+        <display value="Urso Oral Product"/>
+      </concept>
+      <concept>
+        <code value="1186789"/>
+        <display value="Urso Pill"/>
+      </concept>
+      <concept>
+        <code value="632296"/>
+        <display value="ursodeoxycholate Oral Capsule [Actigall]"/>
+      </concept>
+      <concept>
+        <code value="632450"/>
+        <display value="ursodeoxycholate Oral Capsule [Urso]"/>
+      </concept>
+      <concept>
+        <code value="632416"/>
+        <display value="ursodeoxycholate Oral Tablet [Urso]"/>
+      </concept>
+      <concept>
+        <code value="858745"/>
+        <display value="ursodiol 250 MG [Urso]"/>
+      </concept>
+      <concept>
+        <code value="858746"/>
+        <display value="ursodiol 250 MG Oral Capsule [Urso]"/>
+      </concept>
+      <concept>
+        <code value="858752"/>
+        <display value="ursodiol 250 MG Oral Tablet [Urso]"/>
+      </concept>
+      <concept>
+        <code value="858748"/>
+        <display value="ursodiol 300 MG [Actigall]"/>
+      </concept>
+      <concept>
+        <code value="858749"/>
+        <display value="ursodiol 300 MG Oral Capsule [Actigall]"/>
+      </concept>
+      <concept>
+        <code value="384895"/>
+        <display value="ursodiol 100 MG"/>
+      </concept>
+      <concept>
+        <code value="360514"/>
+        <display value="ursodiol 125 MG"/>
+      </concept>
+      <concept>
+        <code value="858330"/>
+        <display value="ursodiol 150 MG"/>
+      </concept>
+      <concept>
+        <code value="452499"/>
+        <display value="ursodiol 200 MG"/>
+      </concept>
+      <concept>
+        <code value="360513"/>
+        <display value="ursodiol 250 MG"/>
+      </concept>
+      <concept>
+        <code value="858328"/>
+        <display value="ursodiol 300 MG"/>
+      </concept>
+      <concept>
+        <code value="452500"/>
+        <display value="ursodiol 400 MG"/>
+      </concept>
+      <concept>
+        <code value="452502"/>
+        <display value="ursodiol 50 MG"/>
+      </concept>
+      <concept>
+        <code value="858332"/>
+        <display value="ursodiol 50 MG/ML"/>
+      </concept>
+      <concept>
+        <code value="858732"/>
+        <display value="ursodiol 500 MG"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

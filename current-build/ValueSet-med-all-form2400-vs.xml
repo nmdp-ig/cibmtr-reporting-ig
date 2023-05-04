@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="med-all-form2400-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-med-addition-peri-transplant-vs.html">RxNorm - Additional Drugs in Peri-Transplant Period</a></li><li>Import all the codes that are contained in <a href="ValueSet-med-gvhd-prophylaxis-vs.html">RxNorm - GVHD Prophylaxis</a></li><li>Import all the codes that are contained in <a href="ValueSet-med-mobilizing-agents-vs.html">RxNorm - Mobilizing Agents (auto only)</a></li><li>Import all the codes that are contained in <a href="ValueSet-med-post-hct-disease-therapy-planned-vs.html">RxNorm - Post-HCT Disease Therapy Planned</a></li><li>Import all the codes that are contained in <a href="ValueSet-med-prep-regimen-vs.html">RxNorm - Prep Regimen</a></li><li>Import all the codes that are contained in <a href="ValueSet-med-prior-exposure-vs.html">RxNorm - Prior Exposure: Potential Study Eligibility</a></li></ul></div>
+  </text>
+  <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-all-form2400-vs"/>
+  <version value="0.1.6"/>
+  <name value="RxNormAll2400VS"/>
+  <title value="RxNorm - All of Form 2400"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2023-05-04T09:48:28-05:00"/>
+  <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
+  <contact>
+    <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.cibmtr.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Milius"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bmilius@nmdp.org"/>
+    </telecom>
+  </contact>
+  <description value="RxNorm codes for all of Form 2400"/>
+  <compose>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-addition-peri-transplant-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-post-hct-disease-therapy-planned-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prep-regimen-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prior-exposure-vs"/>
+    </include>
+  </compose>
+</ValueSet>

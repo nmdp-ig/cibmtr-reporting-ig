@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>NMDP.FHIR.CIBMTR-REPORTING\Direct FHIR STU 3 - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/cibmtr.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<div id="cibmtr-nav">
+  <a id="cibmtr-logo" no-external="true" href="http://www.cibmtr.org">
+    <!-- <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png" /> -->
+    <img height="80" alt="Visit the CIBMTR website"
+      src="assets/images/cibmtr-logo-header-3.png" />
+  </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.6 - Trial Use 1
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Connection-Guide-R4.html">Connection - R4</a>
+      </li>
+      <li>
+        <a href="Endpoints.html">Endpoints</a>
+      </li>
+      <li>
+        <a href="Access-Credentials.html">Access Credentials</a>
+      </li>
+      <li>
+        <a href="CRID-Assignment.html">CRID Assignment</a>
+      </li>
+      <li>
+        <a href="Laboratory-Observations.html">Lab Observations</a>
+      </li>
+      <li>
+        <a href="Medications.html">Medications</a>
+      </li>
+      <li>
+        <a href="Bundles.html">Bundles</a>
+      </li>
+      <li>
+        <a href="Form-2450.html">Form 2450: Post-TED</a>
+      </li>
+      <li>
+        <a href="Cytogenetics.html">Cytogenetics - ISCN</a>
+      </li>
+      <li>
+        <a href="Example-Code.html">Example Code Snippets</a>
+      </li>
+      <li>
+        <a href="Appendices.html">Appendices</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR (STU3)</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Direct FHIR STU 3</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.6). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Direct FHIR STU 3</h2>
+  
+  
+  
+  <div xmlns="http://www.w3.org/1999/xhtml">
+    <a name="using-directfhir-stu3"> </a>
+    <h3>Using the CIBMTR Direct FHIR API</h3>
+    <p> Note: While this IG is focused on FHIR R4, the current Direct FHIR API only supports FHIR
+        STU3 reources. This document describes how to submit FHIR data electronically using
+        available CIBMTR REST APIs. Data for each patient is submitted using the HL7 FHIR exchange
+        protocol in JSON or XML format. The REST APIs are available for integration into a custom
+        client architecture or for submission using a manual client such as Postman. </p>
+    <a name="conform-uscore"> </a>
+    <h4>Conformance to the US Core Implementation Guide</h4>
+    <p>In general, FHIR resources should conform to the US Core Implementation Guide and associated
+        profiles. The Patient FHIR resource is a special exception in that CIBMTR removes any
+        Personally Identifiable Information (PII) from the Patient resource. The Direct FHIR Service
+        API can accept multiple different FHIR resource types, however, only lab data for form 2402
+        is implemented to fully prepopulate questions on a form. Submitting lab data for form 2402
+        only requires implementation of the Observation FHIR resource. Additional data types and
+        form questions will be supported in CY ’21.</p>
+    <a name="process-submitting"> </a>
+    <h4>Process for submitting data</h4>
+    <p>The process for submitting production data to CIBMTR includes three sequential steps:</p>
+    <ol>
+        <li>Request CIBMTR Direct FHIR Service API Access Credentials</li>
+        <li>Submit test data using the CIBMTR test API endpoint URLs</li>
+        <li>Submit production data with the CIBMTR production API endpoint URLs</li>
+    </ol>
+    <p>Once electronic data has been submitted via the Direct FHIR Service API, the Data Manager can
+        login to the FormsNet interface to complete the form. Within the form, there will be
+        clarifying contextual questions that provide important information for associating the dates
+        of the labs with the key dates of interest on the form. </p>
+    <a name="access-credentials"> </a>
+    <h4>Access Credentials</h4>
+    <p>The CIBMTR relationship manager or technical lead can initiate a request for API credentials.
+        CIBMTR uses OAuth2.0/OpenID (OIDC) for authentication and access management. This process
+        involves making a request to a third-party authorization server to receive a token. The
+        token is then passed to the CIBMTR API URL in the request header. The following information
+        will be provided by CIBMTR and is necessary for requesting an authorization token:</p>
+    <ul>
+        <li>CIBMTR Service Account Username</li>
+        <li>CIBMTR Service Account Password</li>
+        <li>Application Client ID</li>
+        <li>Application Client Secret</li>
+        <li>Application Scope</li>
+    </ul>
+    <p>Different sets of credentials will be provided for the CIBMTR test and production
+        environments.</p>
+    <p>To request an authentication token for the test environment, the third-party authorization
+        server URL is: </p>
+    <p><code>POST https://nmdp.oktapreview.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token </code></p>
+    <p>or:</p>
+    <p><code>POST https://nmdp.oktapreview.com/oauth2/aus3ck6q30qmOdpMb1t7/v1/token </code></p> 
+    <p>To request an
+    authentication token for the production environment, the third-party authorization server URL
+    is:</p> 
+    <p><code> POST https://nmdp.okta.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token </code></p> 
+    <p>or:</p>
+    <p><code>POST https://nmdp.okta.com/oauth2/aus3ck6q30qmOdpMb1t7/v1/token </code></p>
+    <p>The header of the POST request to the authorization server must have an authorization string.
+        The string is constructed by base64 encoding the Application Client ID, a colon, and the
+        Application Client Secret. The encoded string is then appended to the word “Basic ”. </p>
+    <p/>
+    <code>
+        const auth_string = "Basic " + base64("&lt;Application Client ID&gt;" + ":" + "&lt;Application Client Secret&gt;")
+    </code>
+    <p>An example of the header parameters for the POST request to the authorization server is shown
+        in Figure 1. In the figure, the authorization string is blacked out. Notice the space
+        between the base 64 encoded string and the string prefix, “Basic”.</p>
+    <a name="fig1"> </a>
+    <img src="dfhir_r3_figure01.png" alt="example of the header parameters for the POST request to the authorization server" width="50%" height="50%" style="border:1px solid black"/>
+ 
+    <p>"FIGURE1" Figure 1: Example header information for the POST request to the authorization
+        server Figure 2 shows the required fields in the body of the POST request to the
+        authorization server API. </p>
+    <p>The value for the “username” key should be the CIBMTR Service Account Username provided by
+        CIBMTR. The value for the “password” key should be the CIBMTR Service Account Password. The
+        “grant_type” key and the “scope” key should have the same values as shown in Figure 2. The
+        response to the POST request will return a JSON object that includes a base64 encoded token.
+        The token can be a long character string (over 1000 chars).</p>
+    
+    <a name="fig2"> </a>
+    <img src="dfhir_r3_figure02.png" alt="Example body of the POST request to the authorization server API" width="50%" height="50%" style="border:1px solid black"/>
+
+    <p>"FIGURE2" Figure 2: Example body of the POST request to the authorization server API</p>
+    <p>Once the token has been received, a request to the CIBMTR Direct FHIR Service API can be
+        made. Tokens are valid for 30 minutes in the production environment, but last up to 24 hours
+        in the test environment. [b]Applications must cache and re-use tokens until they are about
+        to expire because Okta rate limits requests for new tokens. One workable strategy is to
+        obtain a new token every 25 minutes.</p>
+    <p>To make a request to the CIBMTR Direct FHIR Backend API, include the token in the header as
+        the authorization key value of the request along with the word “Bearer ” in front of it, as
+        shown in shown in Figure 3.</p>
+
+    <a name="fig3"> </a>
+    <img src="dfhir_r3_figure03.png" alt="Example CIBMTR Direct FHIR API request using a bearer authorization token in the header of the request" width="50%" height="50%" style="border:1px solid black"/>
+
+    <p>"FIGURE3" Figure 3: Example CIBMTR Direct FHIR API request using a bearer authorization token
+        in the header of the request </p>
+    <a name="workflow"> </a>
+    <h4>Recommended Data Submission Workflow</h4>
+    <p>Submitting data to CIBMTR via the Direct FHIR Service API involves a three-step process for
+        each patient:</p>
+    <a name="step1"> </a>
+    <h5>Step 1: Register patient and receive CRID</h5>
+    <p>Register a patient with CIBMTR and receive a CIBMTR Recipient Identifier (CRID) to use as a
+        patient reference for all subsequent FHIR data submissions. CIBMTR exposes a special service
+        API to handle the submission of personally identifiable information (PII). Data submitted
+        via the CRID Service API has special protections and exposure within CIBMTR to avoid
+        unnecessary handling of PII. For all subsequent FHIR data submissions, the CRID is used to
+        identify the patient and any PII is removed from FHIR resources before being stored on
+        CIBMTR FHIR servers.</p>
+    <p>The CRID Service API uses a PUT request at the following case-sensitive endpoint URLs: Test
+        Environment:</p>
+    <code> PUT https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/CRID </code>
+    <p>Production Environment:</p>
+    <code> PUT https://api.nmdp.org/cibmtrehrclientbackend/v1/CRID </code>
+    <p>The authorization key and bearer token must be included in the request as mentioned in the
+        previous section. For the body of the PUT request, the following data fields are
+        requested:</p>
+    <p>Five required attributes</p>
+    <ul>
+        <li>CCN (5digit)</li>
+        <li>First and last name</li>
+        <li>Birthdate (YYYY-MM-DD)</li>
+        <li>Gender (M/F)</li>
+    </ul> Optional attributes (possibly present) <ul>
+        <li>SSN (###-###-####)</li>
+        <li>Mother’s maiden name</li>
+        <li>Race (race code)</li>
+        <li>Ethnicity (ethnicity code)</li>
+        <li>NMDP RID</li>
+        <li>EBMT CIC + ID</li>
+        <li>CIBMTR Team + IUBMID</li>
+    </ul>
+    <p>Complete list of payload options for CRID registration</p>
+    <pre> 
+    { "ccn": "string", 
+      "patient": { 
+          "birthDate": "string", 
+          "cibmtrIubmid": "string",
+          "cibmtrTeam": 0, 
+          "ebmtCic": "string", 
+          "ebmtId": "string", 
+          "firstName": "string", 
+          "gender": "string", 
+          "lastName": "string", 
+          "mothersMaidenName": "string", 
+          "nmdpRid": 0, 
+          "ssn": "string", 
+          "race": ["string"], 
+          "ethnicity": "string" 
+        } 
+    }
+    </pre>
+    <a name="race"> </a>
+    <h6>Race Codes</h6>
+    <table>
+        <tr>
+            <th>Race Value Code</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>1002-5</td>
+            <td>American Indian or Alaska Native</td>
+        </tr>
+        <tr>
+            <td>2028-9</td>
+            <td>Asian</td>
+        </tr>
+        <tr>
+            <td>2054-5</td>
+            <td>Black or African American</td>
+        </tr>
+        <tr>
+            <td>2076-8</td>
+            <td>Native Hawaiian or Other Pacific Islander</td>
+        </tr>
+        <tr>
+            <td>2106-3</td>
+            <td>White</td>
+        </tr>
+        <tr>
+            <td>ASKU</td>
+            <td>Not Reported</td>
+        </tr>
+        <tr>
+            <td>UNK</td>
+            <td>Unknown</td>
+        </tr>
+    </table>
+    <a name="ethnicity"> </a>
+    <h6>Ethnicity Codes</h6>
+    <table>
+        <tr>
+            <th>Ethnicity Value Code</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>2135-2</td>
+            <td>Hispanic or Latino</td>
+        </tr>
+        <tr>
+            <td>2186-5</td>
+            <td>Non Hispanic or Latino</td>
+        </tr>
+        <tr>
+            <td>UNK</td>
+            <td>Unknown</td>
+        </tr>
+    </table>
+    <p>The CRID Service API is available as a PUT request. Consequently, submitting the same data
+        twice does not re-register the patient, but rather will retrieve the same CRID number
+        registered previously. The CRID Service API will attempt to perform partial “fuzzy” matches
+        based on data submitted to avoid re-registering the same patient with two different CRID
+        numbers.</p>
+    <p>The response payload of the CRID Service API is a JSON object that contains the CRID number
+        (lower pane in Figure 4). The CRID number is then used for all other data references to the
+        registered patient.</p>
+    <p>"FIGURE4"</p>
+    <a name="step2"> </a>
+    <h5>Step 2: Submit Patient FHIR Resource</h5>
+    <p>The Patient FHIR resource must be submitted before any other FHIR resources3. the Patient
+        FHIR resource ID is part of the response to the Patient POST request. The resource ID is
+        unique to the 3 http://hl7.org/fhir/STU3/patient.html</p>
+    
+    <a name="fig4"> </a>
+    <img src="dfhir_r3_figure04.png" alt="Example CRID registration PUT request with JSON body and response payloads" width="50%" height="50%" style="border:1px solid black"/>
+
+    <p>Figure 4: Example CRID registration PUT request with JSON body payload (top pane) and
+        response payload (bottom pane)</p>
+    <p>CIBMTR FHIR server and is used to reference the Patient subject on all subsequently submitted
+        FHIR resources. The resource ID is assigned by the FHIR server and is different from the
+        Patient.identifier section of the FHIR resource. The Direct FHIR Service API uses a POST
+        request to submit a Patient resource at the following case-sensitive endpoint URLs:</p>
+    <table>
+        <tr>
+            <td>Test Environment</td>
+            <td><code>POST
+                https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Patient</code></td>
+        </tr>
+        <tr>
+            <td>Production Environment</td>
+            <td><code>POST https://api.nmdp.org/cibmtrehrclientbackend/v1/Patient</code></td>
+        </tr>
+    </table>
+    <p>The authorization key and bearer token must be included in the request as mentioned in the
+        previous section. FHIR JSON submissions should also include a “content-type” key in the
+        header with value: “application/fhir+json”. The Patient FHIR resource usually contains the
+        demographics data for the patient, however, since the demographics data is already submitted
+        during the CRID registration process, there are only two primary components necessary in the
+        Patient FHIR resource: </p>
+    <ol>
+        <li>A security label within the “meta” section of the Patient resource must contain the
+            CIBMTR Center Number (CCN) prepended with “rc_” and associated with the codesystem as
+            shown in Figure 5.</li>
+        <li>A CRID identifier reference within the “identifier” section of the Patient resource as
+            shown in Figure 5.</li>
+    </ol>
+    <p>PII information should be avoided as part of the Patient resource. However, the Direct FHIR
+        Service API will remove PII information, including any that might be contained in “text” or
+        other sections of the resource before storing it on the FHIR server. The response after
+        submitting a Patient resource request, indicates how the Patient resource is represented on
+        the CIBMTR FHIR server (see Figure 6). The response JSON object has an “id” that is used to
+        reference the Patient resource (circled in red in Figure 6). There is a new security label
+        that indicates that the resource has been through a redaction process to remove any PII that
+        may have been submitted with the Patient resource.</p>
+
+    <p><code> GET https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Patient?
+        _security=http://terminology.cibmtr.org/codesystem/transplant-center%7Crc_&lt;CCN&gt;&amp;
+        identifier=&lt;CRID&gt; </code></p>
+
+    <p> The Patient resource ID is necessary for submitting other FHIR resources to the Direct FHIR
+        Service API, but if the ID for a Patient resource previously submitted is not known, the
+        following GET request can be submitted to the API to retrieve the Patient resource for a
+        given CRID: </p>
+    <p>Where the &lt;CCN&gt; should be replaced with the associated CCN and the &lt;CRID&gt;
+        replaced with the CRID number.</p>
+    
+    
+    <a name="fig5"> </a>
+    <img src="dfhir_r3_figure05.png" alt="Example POST request to submit a Patient FHIR resource and the required FHIR sections in the body of the request" width="50%" height="50%" style="border:1px solid black"/>
+
+    <p>Figure 5: Example POST request to submit a Patient FHIR resource and the required FHIR
+        sections in the body of the request</p>
+    
+    <a name="fig6"> </a>
+    <img src="dfhir_r3_figure06.png" alt="Example FHIR Patient submission response with the Patient resource ID assigned by the FHIR server" width="50%" height="50%" style="border:1px solid black"/>
+
+    <p>Figure 6: Example FHIR Patient submission response with the Patient resource ID assigned by
+        the FHIR server </p>
+    <a name="step3"> </a>
+    <h5> Step 3: Submit Observation FHIR Resources </h5> The Direct FHIR Service API uses a POST
+    request to submit an Observation resource at the following case-sensitive endpoint URLs4: Test
+    Environment Production Environment <table>
+        <tr>
+            <td>Test Environment</td>
+            <td><code>POST
+                    https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Observation</code></td>
+        </tr>
+        <tr>
+            <td>Production Environment</td>
+            <td><code>POST https://api.nmdp.org/cibmtrehrclientbackend/v1/Observation</code></td>
+        </tr>
+    </table>
+    <p>The authorization key and bearer token must be included in the request as mentioned in the
+        previous section. FHIR JSON submissions should also include a “content-type” key in the
+        header with value: “application/fhir+json”.</p>
+    <p> CIBMTR is continually expanding support for data types to pre-populate CIBMTR forms.
+        Currently, laboratory values for form 2402 are supported. Laboratory data required to answer
+        the questions on form 2402 are communicated using the Observation FHIR resource. </p>
+    
+       
+    <a name="fig7"> </a>
+    <img src="dfhir_r3_figure07.png" alt="Table of labs currently supported by the CIBMTR for form prepopulation" width="50%" height="50%" style="border:1px solid black"/>
+
+    <p>Figure 7: Table of labs currently supported by the CIBMTR for form prepopulation </p>
+    <p>An example of an Observation FHIR resource is shown in Figure 8. The basic structure of this
+        FHIR resource is the same for all the different types of labs. Important areas to note:</p>
+    <ul>
+        <li> “meta” Section – This is the metadata section of the resource and includes the same
+            security label as defined in the Patient resource. This security label is required and
+            should include the center specific CCN. </li>
+        <li> “category” Section – This section uses the HL7 Observation category code to enable
+            category-based searches. Currently, only data from the “laboratory” category is
+            supported. This section is optional.</li>
+        <li> “code” Section – The clinical concept code for the type of laboratory is included in
+            this section. For laboratory data, the primary clinical vocabulary is LOINC5. LOINC
+            codes can have different specific applied concepts depending on a variety of lab
+            parameters such as: collection method, measurement method, sub-types, and naming
+            conventions. A list of candidate LOINC codes for each of the supported lab types is
+            included Figure 7. This list is not comprehensive and choosing the correct code can
+            require clinical interpretation, therefore, data managers are encouraged to get
+            clinician review of the selected LOINC code. This section is required. </li>
+        <li> “subject” Section – Each Observation resource must reference the patient associated
+            with the lab values. The subject.reference allows the Observation resource to point to
+            the Patient using the Patient resource “id” using the “Patient/id” format. This section
+            is required. </li> <li>“effectiveDateTime” – This is a timezone aware datetime format of
+            the date of collection of the lab sample. This section is required. </li> <li>
+            “valueQuantity” – The actual value of the measured lab is represented here as a
+            floating-point number. The unit system and code are also specified. The list of
+            preferred units is shown in Figure 7, however the CIBMTR data translation engine will
+            convert the units after submission if necessary. The units system and code should be
+            UCUM. This section is required. </li>
+        <li> referenceRange” – If the high and low range for this lab are known, they can be defined
+            in this section using the same data format as the valueQuantity section. This section is
+            optional. </li>
+    </ul>
+    <p>To search for all Observation resources on the CIBMTR FHIR server for a given CRID, see the
+        below GET request API URL:</p>
+    <code>GET
+        https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Observation?subject:Patient.identifier=&lt;CRID&gt;</code>
+    
+    <a name="fig8"> </a>
+    <img src="dfhir_r3_figure08.png" alt="Example POST request for submitting an Observation resource" width="50%" height="50%" style="border:1px solid black"/>
+
+    <p>Figure 8: Example POST request for submitting an Observation resource, including the
+        Observation resource format in the body of the request</p>
+    <a name="submitting"> </a>
+    <h4> Submitting CRID/FHIR Data Using the Postman Client </h4>
+    <p>The example API calls in this document are taken from the Postman API client. Postman allows
+        a user to manually configure and test connecting to and interacting with different APIs.
+        Using Postman is a great way to understand an API, see the responses, and submit limited
+        data manually. Once the API is well understood, then a custom client can be implemented
+        programmatically using any number of REST client libraries.</p>
+    <p> Postman includes the concept of a collection of requests. A collection file can be imported
+        into Postman. CIBMTR has a collection of requests that accomplish all the tasks in this user
+        guide. The collection is available upon request. </p>
+   
+   
+   <a name="fig9"> </a>
+   <img src="dfhir_r3_figure09.png" alt="Example POSTMAN collection of requests available from CIBMTR" width="50%" height="50%" style="border:1px solid black"/>
+
+   <p>Figure 9: Example POSTMAN collection of requests available from CIBMTR</p>
+    <p> Postman also includes the option to run a pre-request script before making an API request.
+        The CIBMTR collection includes a pre-request script that can get the authentication token
+        automatically each time a request is made. These and other simplifications of the process
+        make Postman an excellent tool for exploring, developing, and using the CIBMTR Direct FHIR
+        Service APIs for submitting patient data. </p>
+    <p> NOTE: Requesting a new token for manual requests should not cause Okta to rate-limit these
+        requests. However, automated systems must cache and re-use the authentication token to avoid
+        errors. Tokens are valid for 30 minutes in the production environment. </p>
+    <a name="faq"> </a>
+    <h4> Frequently Asked Questions </h4>
+    <dl>
+        <dt><b>Can multiple patients be registered at the same time using the CRID Service
+            API?</b></dt>
+        <dd>No, the API currently supports one CRID registration at a time.<br/><br/></dd> 
+        
+        <dt><b>Can demographic data be changed, augmented, or updated using the CRID Service API?</b></dt>
+        <dd>No, contact CIBMTR to have the demographics data changed for a previously registered
+            CRID<br/><br/></dd> 
+            
+        <dt><b>What can I do if I forget the CRID for a particular patient?</b></dt>
+        <dd>Send the same PUT request to the CRID Service API with the same patient demographic
+            information and the CRID Service API will return the corresponding CRID number for that
+            patient.<br/><br/></dd>
+            
+        <dt><b>What are the FHIR resources that are supported by the Direct FHIR Service API?</b></dt>
+        <dd>Patient, Observation<br/><br/></dd> 
+        
+        <dt><b>What forms are currently supported for pre-population?</b></dt>
+        <dd>Currently, only lab data for form 2402 are supported for disease subtypes: MDS, MPN, and
+            PCD<br/><br/></dd> 
+            
+        <dt><b>How will I know if form 2402 was prepopulated with the data I submitted?</b></dt>
+        <dd>If submitted data can prepopulate one of the supported labs in form 2402, then those lab
+            questions will be answered on the form in the standard Formsnet user interface.<br/><br/></dd>
+                
+        <dt><b>What if my lab data is not in the preferred unit of measure?</b></dt>
+        <dd>You may choose to perform the unit/value conversion yourself prior to the data
+            submission or submit the data and the CIBMTR data translation engine will attempt to
+            perform the conversion after submission.<br/><br/></dd> 
+            
+        <dt><b>How long does it take for data submitted via Direct FHIR Service API to appear as prepopulated questions on form 2402?</b></dt>
+        <dd>Questions should be populated in less than 10 minutes after submission via the API,
+            however, contextual questions are required to be answered in the FormsNet user interface
+            in order to provide key dates needed to correctly place the lab data on the form.<br/><br/></dd>
+                
+        <dt><b>Can the Observation resources be submitted as a FHIR bundle?</b></dt>
+        <dd>Currently, the Direct FHIR Service API cannot accept resources formatted as a bundle,
+            they must be submitted individually<br/><br/></dd> 
+        
+    </dl>
+</div>
+</div>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+if(window.location.hash != "") {
+    $('a[href="' + window.location.hash + '"]').click()
+}
+});
+</script>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.6 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 4, 2023 09:48-0500">2023-05-04</span>
+    <br/>
+    <span style="color: #FFFF77">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+<div id="cibmtr-footer">
+    <p>
+    <br/>HL7&#174;, and FHIR&#174; are the registered trademarks of Health Level Seven International 
+    and their use of these trademarks does not constitute an endorsement by HL7.
+    </p>
+</div>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script>anchors.options.visible = 'hover'
+anchors.add()</script>
+
+<!-- Analytics Below
+================================================== -->
+</body>
+</html>
+

@@ -1,0 +1,879 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-2022> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cibmtr-priority-variables-2022"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/50190-8/\">50190-8</a></td><td>Iron and Iron binding capacity panel - Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/14800-7/\">14800-7</a></td><td>Iron binding capacity [Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/2500-7/\">2500-7</a></td><td>Iron binding capacity [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/22753-8/\">22753-8</a></td><td>Iron binding capacity.unsaturated [Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/2501-5/\">2501-5</a></td><td>Iron binding capacity.unsaturated [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/14801-5/\">14801-5</a></td><td>Iron saturation [Molar fraction] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/2502-3/\">2502-3</a></td><td>Iron saturation [Mass Fraction] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/2498-4/\">2498-4</a></td><td>Iron [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/44326-7/\">44326-7</a></td><td>Iron [Presence] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/14798-3/\">14798-3</a></td><td>Iron [Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/34442-4/\">34442-4</a></td><td>Bilirubin.conjugated/Bilirubin.total in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/35672-5/\">35672-5</a></td><td>Bilirubin.direct/Bilirubin.total in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/14631-6/\">14631-6</a></td><td>Bilirubin.total [Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/1975-2/\">1975-2</a></td><td>Bilirubin.total [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/77137-8/\">77137-8</a></td><td>Bilirubin.total [Moles/volume] in Serum, Plasma or Blood</td></tr><tr><td><a href=\"https://loinc.org/50189-0/\">50189-0</a></td><td>Neonatal bilirubin panel [Mass/volume] - Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/78961-0/\">78961-0</a></td><td>IgG clearance/Albumin clearance [Ratio] in Urine and Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/1754-1/\">1754-1</a></td><td>Albumin [Mass/volume] in Urine</td></tr><tr><td><a href=\"https://loinc.org/1753-3/\">1753-3</a></td><td>Albumin [Presence] in Urine</td></tr><tr><td><a href=\"https://loinc.org/50949-7/\">50949-7</a></td><td>Albumin [Presence] in Urine by Test strip</td></tr><tr><td><a href=\"https://loinc.org/6942-7/\">6942-7</a></td><td>Albumin [Mass/volume] in Urine by Electrophoresis</td></tr><tr><td><a href=\"https://loinc.org/77158-4/\">77158-4</a></td><td>Albumin [Moles/volume] in Urine by Detection limit &lt;= 3.0 mg/L</td></tr><tr><td><a href=\"https://loinc.org/14957-5/\">14957-5</a></td><td>Microalbumin [Mass/volume] in Urine</td></tr><tr><td><a href=\"https://loinc.org/53531-0/\">53531-0</a></td><td>Microalbumin [Mass/volume] in Urine by Detection limit &lt;= 1.0 mg/L</td></tr><tr><td><a href=\"https://loinc.org/11218-5/\">11218-5</a></td><td>Microalbumin [Mass/volume] in Urine by Test strip</td></tr><tr><td><a href=\"https://loinc.org/95232-5/\">95232-5</a></td><td>Microalbumin [Presence] in Urine by Test strip</td></tr><tr><td><a href=\"https://loinc.org/1755-8/\">1755-8</a></td><td>Albumin [Mass/time] in 24 hour Urine</td></tr><tr><td><a href=\"https://loinc.org/89999-7/\">89999-7</a></td><td>Albumin [Mass/volume] in Urine by Detection limit &lt;= 3.0 mg/L</td></tr><tr><td><a href=\"https://loinc.org/9318-7/\">9318-7</a></td><td>Albumin/Creatinine [Mass Ratio] in Urine</td></tr><tr><td><a href=\"https://loinc.org/1916-6/\">1916-6</a></td><td>Aspartate aminotransferase/Alanine aminotransferase [Enzymatic activity ratio] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/16325-3/\">16325-3</a></td><td>Alanine aminotransferase/Aspartate aminotransferase [Enzymatic activity ratio] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/2325-9/\">2325-9</a></td><td>Gamma glutamyl transferase/Aspartate aminotransferase [Enzymatic activity ratio] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/1920-8/\">1920-8</a></td><td>Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/44786-2/\">44786-2</a></td><td>Aspartate aminotransferase [Enzymatic activity/volume] (Maximum value during study) in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/30239-8/\">30239-8</a></td><td>Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P</td></tr><tr><td><a href=\"https://loinc.org/88112-8/\">88112-8</a></td><td>Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by No addition of P-5'-P</td></tr><tr><td><a href=\"https://loinc.org/48136-6/\">48136-6</a></td><td>Aspartate aminotransferase.macromolecular [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/54500-4/\">54500-4</a></td><td>Aspartate aminotransferase.macromolecular/Aspartate aminotransferase.total in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/76625-3/\">76625-3</a></td><td>Alanine aminotransferase [Enzymatic activity/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/16324-6/\">16324-6</a></td><td>Alanine aminotransferase [Enzymatic activity/volume] in Red Blood Cells</td></tr><tr><td><a href=\"https://loinc.org/96586-3/\">96586-3</a></td><td>Alanine aminotransferase [Enzymatic activity/volume] in DBS</td></tr><tr><td><a href=\"https://loinc.org/77144-4/\">77144-4</a></td><td>Alanine aminotransferase [Enzymatic activity/volume] in Serum, Plasma or Blood</td></tr><tr><td><a href=\"https://loinc.org/48134-1/\">48134-1</a></td><td>Alanine aminotransferase.macromolecular [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/1742-6/\">1742-6</a></td><td>Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/1743-4/\">1743-4</a></td><td>Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P</td></tr><tr><td><a href=\"https://loinc.org/1744-2/\">1744-2</a></td><td>Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma by No addition of P-5'-P</td></tr><tr><td><a href=\"https://loinc.org/44785-4/\">44785-4</a></td><td>Alanine aminotransferase [Enzymatic activity/volume] (Maximum value during study) in Serum or Plasma by No addition of P-5'-P</td></tr><tr><td><a href=\"https://loinc.org/14119-2/\">14119-2</a></td><td>Lactate dehydrogenase 1/Lactate dehydrogenase 2 [Enzymatic activity ratio] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/2540-3/\">2540-3</a></td><td>Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/2549-4/\">2549-4</a></td><td>Lactate dehydrogenase 5 [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/2537-9/\">2537-9</a></td><td>Lactate dehydrogenase 1 [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/2543-7/\">2543-7</a></td><td>Lactate dehydrogenase 3 [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/2546-0/\">2546-0</a></td><td>Lactate dehydrogenase 4 [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/14804-9/\">14804-9</a></td><td>Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction</td></tr><tr><td><a href=\"https://loinc.org/14805-6/\">14805-6</a></td><td>Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Pyruvate to lactate reaction</td></tr><tr><td><a href=\"https://loinc.org/2541-1/\">2541-1</a></td><td>Lactate dehydrogenase 3 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation</td></tr><tr><td><a href=\"https://loinc.org/2544-5/\">2544-5</a></td><td>Lactate dehydrogenase 4 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation</td></tr><tr><td><a href=\"https://loinc.org/2547-8/\">2547-8</a></td><td>Lactate dehydrogenase 5 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation</td></tr><tr><td><a href=\"https://loinc.org/2535-3/\">2535-3</a></td><td>Lactate dehydrogenase 1 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation</td></tr><tr><td><a href=\"https://loinc.org/2538-7/\">2538-7</a></td><td>Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation</td></tr><tr><td><a href=\"https://loinc.org/19248-4/\">19248-4</a></td><td>Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma by Electrophoresis</td></tr><tr><td><a href=\"https://loinc.org/93905-8/\">93905-8</a></td><td>ABO group [Type] in Blood--during infancy</td></tr><tr><td><a href=\"https://loinc.org/883-9/\">883-9</a></td><td>ABO group [Type] in Blood</td></tr><tr><td><a href=\"https://loinc.org/14580-5/\">14580-5</a></td><td>ABO group [Type] in Blood from Newborn</td></tr><tr><td><a href=\"https://loinc.org/882-1/\">882-1</a></td><td>ABO and Rh group [Type] in Blood</td></tr><tr><td><a href=\"https://loinc.org/57743-7/\">57743-7</a></td><td>ABO group [Type] in Blood by Confirmatory method</td></tr><tr><td><a href=\"https://loinc.org/51892-8/\">51892-8</a></td><td>ABO group [Type] in Cord blood</td></tr><tr><td><a href=\"https://loinc.org/93906-6/\">93906-6</a></td><td>ABO and Rh group [Type] in Blood--during infancy</td></tr><tr><td><a href=\"https://loinc.org/44086-7/\">44086-7</a></td><td>ABO and Rh group [Interpretation] in Blood from Newborn</td></tr><tr><td><a href=\"https://loinc.org/77397-8/\">77397-8</a></td><td>ABO and Rh group [Type] in Blood by Confirmatory method</td></tr><tr><td><a href=\"https://loinc.org/19057-9/\">19057-9</a></td><td>ABO and Rh group [Type] in Blood from Newborn</td></tr><tr><td><a href=\"https://loinc.org/884-7/\">884-7</a></td><td>ABO and Rh group [Type] in Capillary blood</td></tr><tr><td><a href=\"https://loinc.org/54417-1/\">54417-1</a></td><td>ABO and Rh group [Type] in Blood from Fetus</td></tr><tr><td><a href=\"https://loinc.org/34474-7/\">34474-7</a></td><td>ABO and Rh group [Type] in Cord blood</td></tr><tr><td><a href=\"https://loinc.org/1303-7/\">1303-7</a></td><td>Reverse ABO group [Type]</td></tr><tr><td><a href=\"https://loinc.org/54416-3/\">54416-3</a></td><td>Rh [Type] in Blood from Fetus</td></tr><tr><td><a href=\"https://loinc.org/14906-2/\">14906-2</a></td><td>Rh [Type] in Cord blood</td></tr><tr><td><a href=\"https://loinc.org/13225-8/\">13225-8</a></td><td>Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma --1st specimen</td></tr><tr><td><a href=\"https://loinc.org/16714-8/\">16714-8</a></td><td>Cytomegalovirus Ab [Units/volume] in Serum by Latex agglutination</td></tr><tr><td><a href=\"https://loinc.org/16715-5/\">16715-5</a></td><td>Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma by Immunofluorescence</td></tr><tr><td><a href=\"https://loinc.org/16716-3/\">16716-3</a></td><td>Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma by Immunoassay --2nd specimen</td></tr><tr><td><a href=\"https://loinc.org/22241-4/\">22241-4</a></td><td>Cytomegalovirus Ab [Titer] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/22246-3/\">22246-3</a></td><td>Cytomegalovirus IgG Ab [Titer] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/22247-1/\">22247-1</a></td><td>Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma --2nd specimen</td></tr><tr><td><a href=\"https://loinc.org/22249-7/\">22249-7</a></td><td>Cytomegalovirus IgM Ab [Titer] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/29590-7/\">29590-7</a></td><td>Cytomegalovirus DNA [Mass/volume] (viral load) in Blood by Probe</td></tr><tr><td><a href=\"https://loinc.org/29604-6/\">29604-6</a></td><td>Cytomegalovirus DNA [#/volume] (viral load) in Blood by NAA with probe detection</td></tr><tr><td><a href=\"https://loinc.org/30247-1/\">30247-1</a></td><td>Cytomegalovirus DNA [#/volume] (viral load) in Serum or Plasma by NAA with probe detection</td></tr><tr><td><a href=\"https://loinc.org/32170-3/\">32170-3</a></td><td>Cytomegalovirus Ab [Titer] in Serum or Plasma by Immunofluorescence</td></tr><tr><td><a href=\"https://loinc.org/49349-4/\">49349-4</a></td><td>Cytomegalovirus DNA [#/volume] (viral load) in Bronchoalveolar lavage by NAA with probe detection</td></tr><tr><td><a href=\"https://loinc.org/5121-9/\">5121-9</a></td><td>Cytomegalovirus Ab [Titer] in Serum or Plasma by Latex agglutination</td></tr><tr><td><a href=\"https://loinc.org/5122-7/\">5122-7</a></td><td>Cytomegalovirus Ab [Units/volume] in Serum or Plasma by Immunofluorescence</td></tr><tr><td><a href=\"https://loinc.org/5124-3/\">5124-3</a></td><td>Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma by Immunoassay</td></tr><tr><td><a href=\"https://loinc.org/5125-0/\">5125-0</a></td><td>Cytomegalovirus IgG Ab [Titer] in Serum or Plasma by Immunofluorescence</td></tr><tr><td><a href=\"https://loinc.org/5126-8/\">5126-8</a></td><td>Cytomegalovirus IgM Ab [Units/volume] in Serum or Plasma by Immunoassay</td></tr><tr><td><a href=\"https://loinc.org/5127-6/\">5127-6</a></td><td>Cytomegalovirus IgM Ab [Titer] in Serum or Plasma by Immunofluorescence</td></tr><tr><td><a href=\"https://loinc.org/52976-8/\">52976-8</a></td><td>Cytomegalovirus Ab [Units/volume] in Serum by Complement fixation</td></tr><tr><td><a href=\"https://loinc.org/54206-8/\">54206-8</a></td><td>Cytomegalovirus DNA [Log #/volume] (viral load) in Serum or Plasma by NAA with probe detection</td></tr><tr><td><a href=\"https://loinc.org/72493-0/\">72493-0</a></td><td>Cytomegalovirus DNA [Units/volume] (viral load) in Plasma by NAA with probe detection</td></tr><tr><td><a href=\"https://loinc.org/72494-8/\">72494-8</a></td><td>Cytomegalovirus DNA [log units/volume] (viral load) in Plasma by NAA with probe detection</td></tr><tr><td><a href=\"https://loinc.org/7851-9/\">7851-9</a></td><td>Cytomegalovirus Ab [Units/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/7852-7/\">7852-7</a></td><td>Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/7853-5/\">7853-5</a></td><td>Cytomegalovirus IgM Ab [Units/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/88545-9/\">88545-9</a></td><td>Cytomegalovirus DNA [#/volume] (viral load) in DBS by NAA with probe detection</td></tr><tr><td><a href=\"https://loinc.org/9513-3/\">9513-3</a></td><td>Cytomegalovirus Ab [Titer] in Serum by Complement fixation</td></tr><tr><td><a href=\"https://loinc.org/32791-6/\">32791-6</a></td><td>Cytomegalovirus IgG Ab [Ratio] in Serum or Plasma by Immunoassay --1st specimen/2nd specimen</td></tr><tr><td><a href=\"https://loinc.org/32835-1/\">32835-1</a></td><td>Cytomegalovirus IgG Ab [Ratio] in Serum or Plasma --1st specimen/2nd specimen</td></tr><tr><td><a href=\"https://loinc.org/52984-2/\">52984-2</a></td><td>Cytomegalovirus IgG Ab avidity [Ratio] in Serum or Plasma by Immunoassay</td></tr><tr><td><a href=\"https://loinc.org/78445-4/\">78445-4</a></td><td>Cytomegalovirus IgG Ab avidity [Presence] in Serum or Plasma by Immunoassay</td></tr><tr><td><a href=\"https://loinc.org/67805-2/\">67805-2</a></td><td>Cytomegalovirus Ag [Presence] in Isolate by Immunofluorescence</td></tr><tr><td><a href=\"https://loinc.org/59838-3/\">59838-3</a></td><td>Cytomegalovirus Ab [Presence] in Serum or Plasma by Latex agglutination</td></tr><tr><td><a href=\"https://loinc.org/30325-5/\">30325-5</a></td><td>Cytomegalovirus IgM Ab [Presence] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/13949-3/\">13949-3</a></td><td>Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay</td></tr><tr><td><a href=\"https://loinc.org/22239-8/\">22239-8</a></td><td>Cytomegalovirus Ab [Presence] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/24119-0/\">24119-0</a></td><td>Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunoassay</td></tr><tr><td><a href=\"https://loinc.org/6377-6/\">6377-6</a></td><td>Cytomegalovirus Ag [Presence] in Serum or Plasma by Immunofluorescence</td></tr><tr><td><a href=\"https://loinc.org/6376-8/\">6376-8</a></td><td>Cytomegalovirus Ag [Presence] in Serum or Plasma by Immunoassay</td></tr><tr><td><a href=\"https://loinc.org/5835-4/\">5835-4</a></td><td>Cytomegalovirus [Presence] in Blood by Organism specific culture</td></tr><tr><td><a href=\"https://loinc.org/54164-9/\">54164-9</a></td><td>Cytomegalovirus immediate-early Ag [Presence] in Blood</td></tr><tr><td><a href=\"https://loinc.org/4996-5/\">4996-5</a></td><td>Cytomegalovirus DNA [Presence] in Blood by NAA with probe detection</td></tr><tr><td><a href=\"https://loinc.org/49539-0/\">49539-0</a></td><td>Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunofluorescence</td></tr><tr><td><a href=\"https://loinc.org/43703-8/\">43703-8</a></td><td>Cytomegalovirus [Presence] in Blood by Shell vial culture</td></tr><tr><td><a href=\"https://loinc.org/31795-8/\">31795-8</a></td><td>Cytomegalovirus Ag [Presence] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/30246-3/\">30246-3</a></td><td>Cytomegalovirus DNA [Presence] in Serum or Plasma by NAA with probe detection</td></tr><tr><td><a href=\"https://loinc.org/15377-5/\">15377-5</a></td><td>Cytomegalovirus Ab [Presence] in Serum by Latex agglutination</td></tr><tr><td><a href=\"https://loinc.org/16718-9/\">16718-9</a></td><td>Cytomegalovirus Ag [Presence] in Blood</td></tr><tr><td><a href=\"https://loinc.org/22244-8/\">22244-8</a></td><td>Cytomegalovirus IgG Ab [Presence] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/28008-1/\">28008-1</a></td><td>Cytomegalovirus DNA [Presence] in Blood by Probe with signal amplification</td></tr><tr><td><a href=\"https://loinc.org/20475-0/\">20475-0</a></td><td>Cytomegalovirus IgG Ab [Interpretation] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/87424-8/\">87424-8</a></td><td>Cytomegalovirus IgG and IgM panel - Serum or Plasma Qualitative</td></tr><tr><td><a href=\"https://loinc.org/88535-0/\">88535-0</a></td><td>Cytomegalovirus DNA [Presence] in DBS by NAA with probe detection</td></tr><tr><td><a href=\"https://loinc.org/95184-8/\">95184-8</a></td><td>Cytomegalovirus T-cell immunodeficiency panel - Blood by Flow cytometry (FC)</td></tr><tr><td><a href=\"https://loinc.org/78006-4/\">78006-4</a></td><td>Isotopic Glomerular filtration rate/1.73 sq M [Volume Rate/Area] in Urine and Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/96591-3/\">96591-3</a></td><td>Glomerular filtration rate/1.73 sq M.predicted among blacks [Volume Rate/Area] in DBS</td></tr><tr><td><a href=\"https://loinc.org/69405-9/\">69405-9</a></td><td>Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood</td></tr><tr><td><a href=\"https://loinc.org/96592-1/\">96592-1</a></td><td>Glomerular filtration rate/1.73 sq M.predicted among non-blacks [Volume Rate/Area] in DBS</td></tr><tr><td><a href=\"https://loinc.org/50384-7/\">50384-7</a></td><td>Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (Schwartz)</td></tr><tr><td><a href=\"https://loinc.org/50210-4/\">50210-4</a></td><td>Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Cystatin-based formula</td></tr><tr><td><a href=\"https://loinc.org/62238-1/\">62238-1</a></td><td>Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI)</td></tr><tr><td><a href=\"https://loinc.org/77147-7/\">77147-7</a></td><td>Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)</td></tr><tr><td><a href=\"https://loinc.org/88293-6/\">88293-6</a></td><td>Glomerular filtration rate/1.73 sq M.predicted among blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI)</td></tr><tr><td><a href=\"https://loinc.org/48643-1/\">48643-1</a></td><td>Glomerular filtration rate/1.73 sq M.predicted among blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)</td></tr><tr><td><a href=\"https://loinc.org/50044-7/\">50044-7</a></td><td>Glomerular filtration rate/1.73 sq M.predicted among females [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)</td></tr><tr><td><a href=\"https://loinc.org/70969-1/\">70969-1</a></td><td>Glomerular filtration rate/1.73 sq M.predicted among males [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)</td></tr><tr><td><a href=\"https://loinc.org/88294-4/\">88294-4</a></td><td>Glomerular filtration rate/1.73 sq M.predicted among non-blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI)</td></tr><tr><td><a href=\"https://loinc.org/48642-3/\">48642-3</a></td><td>Glomerular filtration rate/1.73 sq M.predicted among non-blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)</td></tr><tr><td><a href=\"https://loinc.org/87430-5/\">87430-5</a></td><td>Cystatin C and Glomerular filtration rate by Cystatin-based formula panel - Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/45066-8/\">45066-8</a></td><td>Creatinine and Glomerular filtration rate.predicted panel - Serum, Plasma or Blood</td></tr><tr><td><a href=\"https://loinc.org/94677-2/\">94677-2</a></td><td>Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine and Cystatin C-based formula (CKD-EPI)</td></tr><tr><td><a href=\"https://loinc.org/98979-8/\">98979-8</a></td><td>Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI 2021)</td></tr><tr><td><a href=\"https://loinc.org/2164-2/\">2164-2</a></td><td>Creatinine renal clearance in 24 hour Urine and Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/6690-2/\">6690-2</a></td><td>Leukocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/804-5/\">804-5</a></td><td>Leukocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/26464-8/\">26464-8</a></td><td>Leukocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/49498-9/\">49498-9</a></td><td>Leukocytes [#/volume] in Blood by Estimate</td></tr><tr><td><a href=\"https://loinc.org/789-8/\">789-8</a></td><td>Erythrocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/26453-1/\">26453-1</a></td><td>Erythrocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/790-6/\">790-6</a></td><td>Erythrocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/93846-4/\">93846-4</a></td><td>Hemoglobin [Moles/volume] in Venous blood</td></tr><tr><td><a href=\"https://loinc.org/718-7/\">718-7</a></td><td>Hemoglobin [Mass/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/30313-1/\">30313-1</a></td><td>Hemoglobin [Mass/volume] in Arterial blood</td></tr><tr><td><a href=\"https://loinc.org/30350-3/\">30350-3</a></td><td>Hemoglobin [Mass/volume] in Venous blood</td></tr><tr><td><a href=\"https://loinc.org/14775-1/\">14775-1</a></td><td>Hemoglobin [Mass/volume] in Arterial blood by Oximetry</td></tr><tr><td><a href=\"https://loinc.org/30351-1/\">30351-1</a></td><td>Hemoglobin [Mass/volume] in Mixed venous blood</td></tr><tr><td><a href=\"https://loinc.org/20509-6/\">20509-6</a></td><td>Hemoglobin [Mass/volume] in Blood by calculation</td></tr><tr><td><a href=\"https://loinc.org/75928-2/\">75928-2</a></td><td>Hemoglobin [Moles/volume] in Arterial blood</td></tr><tr><td><a href=\"https://loinc.org/55782-7/\">55782-7</a></td><td>Hemoglobin [Mass/volume] in Blood by Oximetry</td></tr><tr><td><a href=\"https://loinc.org/59260-0/\">59260-0</a></td><td>Hemoglobin [Moles/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/76768-1/\">76768-1</a></td><td>Hemoglobin [Mass/volume] in Mixed venous blood by Oximetry</td></tr><tr><td><a href=\"https://loinc.org/76769-9/\">76769-9</a></td><td>Hemoglobin [Mass/volume] in Venous blood by Oximetry</td></tr><tr><td><a href=\"https://loinc.org/4633-4/\">4633-4</a></td><td>Hemoglobin F/Hemoglobin.total in Blood by Kleihauer-Betke method</td></tr><tr><td><a href=\"https://loinc.org/4576-5/\">4576-5</a></td><td>Hemoglobin F/Hemoglobin.total in Blood</td></tr><tr><td><a href=\"https://loinc.org/42246-9/\">42246-9</a></td><td>Hemoglobin F/Hemoglobin.total in Blood by HPLC</td></tr><tr><td><a href=\"https://loinc.org/32682-7/\">32682-7</a></td><td>Hemoglobin F/Hemoglobin.total in Blood by Electrophoresis</td></tr><tr><td><a href=\"https://loinc.org/38524-5/\">38524-5</a></td><td>Hemoglobin F/Hemoglobin.total in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href=\"https://loinc.org/71863-5/\">71863-5</a></td><td>Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by Kleihauer-Betke method</td></tr><tr><td><a href=\"https://loinc.org/71864-3/\">71864-3</a></td><td>Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by HPLC</td></tr><tr><td><a href=\"https://loinc.org/71865-0/\">71865-0</a></td><td>Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by Electrophoresis</td></tr><tr><td><a href=\"https://loinc.org/20570-8/\">20570-8</a></td><td>Hematocrit [Volume Fraction] of Blood</td></tr><tr><td><a href=\"https://loinc.org/31100-1/\">31100-1</a></td><td>Hematocrit [Volume Fraction] of Blood by Impedance</td></tr><tr><td><a href=\"https://loinc.org/4545-0/\">4545-0</a></td><td>Hematocrit [Volume Fraction] of Blood by Centrifugation</td></tr><tr><td><a href=\"https://loinc.org/4544-3/\">4544-3</a></td><td>Hematocrit [Volume Fraction] of Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/42908-4/\">42908-4</a></td><td>Hematocrit [Volume Fraction] of Capillary blood</td></tr><tr><td><a href=\"https://loinc.org/41654-5/\">41654-5</a></td><td>Hematocrit [Volume Fraction] of Venous blood</td></tr><tr><td><a href=\"https://loinc.org/48703-3/\">48703-3</a></td><td>Hematocrit [Volume Fraction] of Blood by Estimated</td></tr><tr><td><a href=\"https://loinc.org/71829-6/\">71829-6</a></td><td>Hematocrit [Pure volume fraction] of Venous blood</td></tr><tr><td><a href=\"https://loinc.org/71831-2/\">71831-2</a></td><td>Hematocrit [Pure volume fraction] of Capillary blood</td></tr><tr><td><a href=\"https://loinc.org/71833-8/\">71833-8</a></td><td>Hematocrit [Pure volume fraction] of Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/26515-7/\">26515-7</a></td><td>Platelets [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/778-1/\">778-1</a></td><td>Platelets [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/777-3/\">777-3</a></td><td>Platelets [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/49497-1/\">49497-1</a></td><td>Platelets [#/volume] in Blood by Estimate</td></tr><tr><td><a href=\"https://loinc.org/28542-9/\">28542-9</a></td><td>Platelet mean volume [Entitic volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/32623-1/\">32623-1</a></td><td>Platelet mean volume [Entitic volume] in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/732-8/\">732-8</a></td><td>Lymphocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/731-0/\">731-0</a></td><td>Lymphocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/26474-7/\">26474-7</a></td><td>Lymphocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/26478-8/\">26478-8</a></td><td>Lymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/736-9/\">736-9</a></td><td>Lymphocytes/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/737-7/\">737-7</a></td><td>Lymphocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/26484-6/\">26484-6</a></td><td>Monocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/742-7/\">742-7</a></td><td>Monocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/743-5/\">743-5</a></td><td>Monocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/5905-5/\">5905-5</a></td><td>Monocytes/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/26485-3/\">26485-3</a></td><td>Monocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/744-3/\">744-3</a></td><td>Monocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/751-8/\">751-8</a></td><td>Neutrophils [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/753-4/\">753-4</a></td><td>Neutrophils [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/26499-4/\">26499-4</a></td><td>Neutrophils [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/770-8/\">770-8</a></td><td>Neutrophils/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/26511-6/\">26511-6</a></td><td>Neutrophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/23761-0/\">23761-0</a></td><td>Neutrophils/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/26508-2/\">26508-2</a></td><td>Band form neutrophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/764-1/\">764-1</a></td><td>Band form neutrophils/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/35332-6/\">35332-6</a></td><td>Band form neutrophils/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/32200-8/\">32200-8</a></td><td>Segmented neutrophils/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/26505-8/\">26505-8</a></td><td>Segmented neutrophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/769-0/\">769-0</a></td><td>Segmented neutrophils/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/709-6/\">709-6</a></td><td>Blasts/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/26446-5/\">26446-5</a></td><td>Blasts/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/707-0/\">707-0</a></td><td>Basophils/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/706-2/\">706-2</a></td><td>Basophils/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/30180-4/\">30180-4</a></td><td>Basophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/712-0/\">712-0</a></td><td>Eosinophils [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/26449-9/\">26449-9</a></td><td>Eosinophils [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/711-2/\">711-2</a></td><td>Eosinophils [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/26450-7/\">26450-7</a></td><td>Eosinophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/713-8/\">713-8</a></td><td>Eosinophils/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/714-6/\">714-6</a></td><td>Eosinophils/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/30458-4/\">30458-4</a></td><td>Plasma cells [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/24103-4/\">24103-4</a></td><td>Plasma cells [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/13047-6/\">13047-6</a></td><td>Plasma cells/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/79426-3/\">79426-3</a></td><td>Plasma cells/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/33855-8/\">33855-8</a></td><td>Promonocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/34926-6/\">34926-6</a></td><td>Promonocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/13599-6/\">13599-6</a></td><td>Promonocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/30466-7/\">30466-7</a></td><td>Promonocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/26523-1/\">26523-1</a></td><td>Promyelocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/781-5/\">781-5</a></td><td>Promyelocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/783-1/\">783-1</a></td><td>Promyelocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/71666-2/\">71666-2</a></td><td>Promyelocytes/Leukocytes [Pure number fraction] in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/26524-9/\">26524-9</a></td><td>Promyelocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/30444-4/\">30444-4</a></td><td>Myeloblasts [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/746-8/\">746-8</a></td><td>Myeloblasts [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/30445-1/\">30445-1</a></td><td>Myeloblasts/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/747-6/\">747-6</a></td><td>Myeloblasts/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/748-4/\">748-4</a></td><td>Myelocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/30446-9/\">30446-9</a></td><td>Myelocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/26498-6/\">26498-6</a></td><td>Myelocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/749-2/\">749-2</a></td><td>Myelocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/71667-0/\">71667-0</a></td><td>Myelocytes/Leukocytes [Pure number fraction] in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/739-3/\">739-3</a></td><td>Metamyelocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/30433-7/\">30433-7</a></td><td>Metamyelocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/740-1/\">740-1</a></td><td>Metamyelocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/28541-1/\">28541-1</a></td><td>Metamyelocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/71668-8/\">71668-8</a></td><td>Metamyelocytes/Leukocytes [Pure number fraction] in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/6746-2/\">6746-2</a></td><td>Prolymphocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/30465-9/\">30465-9</a></td><td>Prolymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/14196-0/\">14196-0</a></td><td>Reticulocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/40665-2/\">40665-2</a></td><td>Reticulocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/60474-4/\">60474-4</a></td><td>Reticulocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/31112-6/\">31112-6</a></td><td>Reticulocytes/100 erythrocytes in Blood by Manual</td></tr><tr><td><a href=\"https://loinc.org/17849-1/\">17849-1</a></td><td>Reticulocytes/100 erythrocytes in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/4679-7/\">4679-7</a></td><td>Reticulocytes/100 erythrocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/1751-7/\">1751-7</a></td><td>Albumin [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/2862-1/\">2862-1</a></td><td>Albumin [Mass/volume] in Serum or Plasma by Electrophoresis</td></tr><tr><td><a href=\"https://loinc.org/61151-7/\">61151-7</a></td><td>Albumin [Mass/volume] in Serum or Plasma by Bromocresol green (BCG) dye binding method</td></tr><tr><td><a href=\"https://loinc.org/61152-5/\">61152-5</a></td><td>Albumin [Mass/volume] in Serum or Plasma by Bromocresol purple (BCP) dye binding method</td></tr><tr><td><a href=\"https://loinc.org/1952-1/\">1952-1</a></td><td>Beta-2-Microglobulin [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/76484-5/\">76484-5</a></td><td>Beta-2-Microglobulin [Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/2276-4/\">2276-4</a></td><td>Ferritin [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/24373-3/\">24373-3</a></td><td>Ferritin [Mass/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/20567-4/\">20567-4</a></td><td>Ferritin [Mass/volume] in Serum or Plasma by Immunoassay</td></tr><tr><td><a href=\"https://loinc.org/11150-0/\">11150-0</a></td><td>Blasts/100 cells in Bone marrow</td></tr><tr><td><a href=\"https://loinc.org/57028-3/\">57028-3</a></td><td>Iron [Mass/mass] in Liver</td></tr><tr><td><a href=\"https://loinc.org/2160-0/\">2160-0</a></td><td>Creatinine [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/14682-9/\">14682-9</a></td><td>Creatinine [Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/77140-2/\">77140-2</a></td><td>Creatinine [Moles/volume] in Serum, Plasma or Blood</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-2022"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "PriorityVariables2022"] ; # 
+  fhir:title [ fhir:v "CIBMTR Priority Variables Value Set (FY22)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-05-04T09:48:28-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.cibmtr.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Milius" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bmilius@nmdp.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Priority Variables for CIBMTR (FY22)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "50190-8" ] ;
+         fhir:display [ fhir:v "Iron and Iron binding capacity panel - Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "14800-7" ] ;
+         fhir:display [ fhir:v "Iron binding capacity [Moles/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "2500-7" ] ;
+         fhir:display [ fhir:v "Iron binding capacity [Mass/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "22753-8" ] ;
+         fhir:display [ fhir:v "Iron binding capacity.unsaturated [Moles/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "2501-5" ] ;
+         fhir:display [ fhir:v "Iron binding capacity.unsaturated [Mass/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "14801-5" ] ;
+         fhir:display [ fhir:v "Iron saturation [Molar fraction] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "2502-3" ] ;
+         fhir:display [ fhir:v "Iron saturation [Mass Fraction] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "2498-4" ] ;
+         fhir:display [ fhir:v "Iron [Mass/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "44326-7" ] ;
+         fhir:display [ fhir:v "Iron [Presence] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "14798-3" ] ;
+         fhir:display [ fhir:v "Iron [Moles/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "34442-4" ] ;
+         fhir:display [ fhir:v "Bilirubin.conjugated/Bilirubin.total in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "35672-5" ] ;
+         fhir:display [ fhir:v "Bilirubin.direct/Bilirubin.total in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "14631-6" ] ;
+         fhir:display [ fhir:v "Bilirubin.total [Moles/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "1975-2" ] ;
+         fhir:display [ fhir:v "Bilirubin.total [Mass/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "77137-8" ] ;
+         fhir:display [ fhir:v "Bilirubin.total [Moles/volume] in Serum, Plasma or Blood" ]
+       ] [
+         fhir:code [ fhir:v "50189-0" ] ;
+         fhir:display [ fhir:v "Neonatal bilirubin panel [Mass/volume] - Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "78961-0" ] ;
+         fhir:display [ fhir:v "IgG clearance/Albumin clearance [Ratio] in Urine and Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "1754-1" ] ;
+         fhir:display [ fhir:v "Albumin [Mass/volume] in Urine" ]
+       ] [
+         fhir:code [ fhir:v "1753-3" ] ;
+         fhir:display [ fhir:v "Albumin [Presence] in Urine" ]
+       ] [
+         fhir:code [ fhir:v "50949-7" ] ;
+         fhir:display [ fhir:v "Albumin [Presence] in Urine by Test strip" ]
+       ] [
+         fhir:code [ fhir:v "6942-7" ] ;
+         fhir:display [ fhir:v "Albumin [Mass/volume] in Urine by Electrophoresis" ]
+       ] [
+         fhir:code [ fhir:v "77158-4" ] ;
+         fhir:display [ fhir:v "Albumin [Moles/volume] in Urine by Detection limit <= 3.0 mg/L" ]
+       ] [
+         fhir:code [ fhir:v "14957-5" ] ;
+         fhir:display [ fhir:v "Microalbumin [Mass/volume] in Urine" ]
+       ] [
+         fhir:code [ fhir:v "53531-0" ] ;
+         fhir:display [ fhir:v "Microalbumin [Mass/volume] in Urine by Detection limit <= 1.0 mg/L" ]
+       ] [
+         fhir:code [ fhir:v "11218-5" ] ;
+         fhir:display [ fhir:v "Microalbumin [Mass/volume] in Urine by Test strip" ]
+       ] [
+         fhir:code [ fhir:v "95232-5" ] ;
+         fhir:display [ fhir:v "Microalbumin [Presence] in Urine by Test strip" ]
+       ] [
+         fhir:code [ fhir:v "1755-8" ] ;
+         fhir:display [ fhir:v "Albumin [Mass/time] in 24 hour Urine" ]
+       ] [
+         fhir:code [ fhir:v "89999-7" ] ;
+         fhir:display [ fhir:v "Albumin [Mass/volume] in Urine by Detection limit <= 3.0 mg/L" ]
+       ] [
+         fhir:code [ fhir:v "9318-7" ] ;
+         fhir:display [ fhir:v "Albumin/Creatinine [Mass Ratio] in Urine" ]
+       ] [
+         fhir:code [ fhir:v "1916-6" ] ;
+         fhir:display [ fhir:v "Aspartate aminotransferase/Alanine aminotransferase [Enzymatic activity ratio] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "16325-3" ] ;
+         fhir:display [ fhir:v "Alanine aminotransferase/Aspartate aminotransferase [Enzymatic activity ratio] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "2325-9" ] ;
+         fhir:display [ fhir:v "Gamma glutamyl transferase/Aspartate aminotransferase [Enzymatic activity ratio] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "1920-8" ] ;
+         fhir:display [ fhir:v "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "44786-2" ] ;
+         fhir:display [ fhir:v "Aspartate aminotransferase [Enzymatic activity/volume] (Maximum value during study) in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "30239-8" ] ;
+         fhir:display [ fhir:v "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P" ]
+       ] [
+         fhir:code [ fhir:v "88112-8" ] ;
+         fhir:display [ fhir:v "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by No addition of P-5'-P" ]
+       ] [
+         fhir:code [ fhir:v "48136-6" ] ;
+         fhir:display [ fhir:v "Aspartate aminotransferase.macromolecular [Enzymatic activity/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "54500-4" ] ;
+         fhir:display [ fhir:v "Aspartate aminotransferase.macromolecular/Aspartate aminotransferase.total in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "76625-3" ] ;
+         fhir:display [ fhir:v "Alanine aminotransferase [Enzymatic activity/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "16324-6" ] ;
+         fhir:display [ fhir:v "Alanine aminotransferase [Enzymatic activity/volume] in Red Blood Cells" ]
+       ] [
+         fhir:code [ fhir:v "96586-3" ] ;
+         fhir:display [ fhir:v "Alanine aminotransferase [Enzymatic activity/volume] in DBS" ]
+       ] [
+         fhir:code [ fhir:v "77144-4" ] ;
+         fhir:display [ fhir:v "Alanine aminotransferase [Enzymatic activity/volume] in Serum, Plasma or Blood" ]
+       ] [
+         fhir:code [ fhir:v "48134-1" ] ;
+         fhir:display [ fhir:v "Alanine aminotransferase.macromolecular [Enzymatic activity/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "1742-6" ] ;
+         fhir:display [ fhir:v "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "1743-4" ] ;
+         fhir:display [ fhir:v "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P" ]
+       ] [
+         fhir:code [ fhir:v "1744-2" ] ;
+         fhir:display [ fhir:v "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma by No addition of P-5'-P" ]
+       ] [
+         fhir:code [ fhir:v "44785-4" ] ;
+         fhir:display [ fhir:v "Alanine aminotransferase [Enzymatic activity/volume] (Maximum value during study) in Serum or Plasma by No addition of P-5'-P" ]
+       ] [
+         fhir:code [ fhir:v "14119-2" ] ;
+         fhir:display [ fhir:v "Lactate dehydrogenase 1/Lactate dehydrogenase 2 [Enzymatic activity ratio] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "2540-3" ] ;
+         fhir:display [ fhir:v "Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "2549-4" ] ;
+         fhir:display [ fhir:v "Lactate dehydrogenase 5 [Enzymatic activity/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "2537-9" ] ;
+         fhir:display [ fhir:v "Lactate dehydrogenase 1 [Enzymatic activity/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "2543-7" ] ;
+         fhir:display [ fhir:v "Lactate dehydrogenase 3 [Enzymatic activity/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "2546-0" ] ;
+         fhir:display [ fhir:v "Lactate dehydrogenase 4 [Enzymatic activity/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "14804-9" ] ;
+         fhir:display [ fhir:v "Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction" ]
+       ] [
+         fhir:code [ fhir:v "14805-6" ] ;
+         fhir:display [ fhir:v "Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Pyruvate to lactate reaction" ]
+       ] [
+         fhir:code [ fhir:v "2541-1" ] ;
+         fhir:display [ fhir:v "Lactate dehydrogenase 3 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation" ]
+       ] [
+         fhir:code [ fhir:v "2544-5" ] ;
+         fhir:display [ fhir:v "Lactate dehydrogenase 4 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation" ]
+       ] [
+         fhir:code [ fhir:v "2547-8" ] ;
+         fhir:display [ fhir:v "Lactate dehydrogenase 5 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation" ]
+       ] [
+         fhir:code [ fhir:v "2535-3" ] ;
+         fhir:display [ fhir:v "Lactate dehydrogenase 1 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation" ]
+       ] [
+         fhir:code [ fhir:v "2538-7" ] ;
+         fhir:display [ fhir:v "Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation" ]
+       ] [
+         fhir:code [ fhir:v "19248-4" ] ;
+         fhir:display [ fhir:v "Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma by Electrophoresis" ]
+       ] [
+         fhir:code [ fhir:v "93905-8" ] ;
+         fhir:display [ fhir:v "ABO group [Type] in Blood--during infancy" ]
+       ] [
+         fhir:code [ fhir:v "883-9" ] ;
+         fhir:display [ fhir:v "ABO group [Type] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "14580-5" ] ;
+         fhir:display [ fhir:v "ABO group [Type] in Blood from Newborn" ]
+       ] [
+         fhir:code [ fhir:v "882-1" ] ;
+         fhir:display [ fhir:v "ABO and Rh group [Type] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "57743-7" ] ;
+         fhir:display [ fhir:v "ABO group [Type] in Blood by Confirmatory method" ]
+       ] [
+         fhir:code [ fhir:v "51892-8" ] ;
+         fhir:display [ fhir:v "ABO group [Type] in Cord blood" ]
+       ] [
+         fhir:code [ fhir:v "93906-6" ] ;
+         fhir:display [ fhir:v "ABO and Rh group [Type] in Blood--during infancy" ]
+       ] [
+         fhir:code [ fhir:v "44086-7" ] ;
+         fhir:display [ fhir:v "ABO and Rh group [Interpretation] in Blood from Newborn" ]
+       ] [
+         fhir:code [ fhir:v "77397-8" ] ;
+         fhir:display [ fhir:v "ABO and Rh group [Type] in Blood by Confirmatory method" ]
+       ] [
+         fhir:code [ fhir:v "19057-9" ] ;
+         fhir:display [ fhir:v "ABO and Rh group [Type] in Blood from Newborn" ]
+       ] [
+         fhir:code [ fhir:v "884-7" ] ;
+         fhir:display [ fhir:v "ABO and Rh group [Type] in Capillary blood" ]
+       ] [
+         fhir:code [ fhir:v "54417-1" ] ;
+         fhir:display [ fhir:v "ABO and Rh group [Type] in Blood from Fetus" ]
+       ] [
+         fhir:code [ fhir:v "34474-7" ] ;
+         fhir:display [ fhir:v "ABO and Rh group [Type] in Cord blood" ]
+       ] [
+         fhir:code [ fhir:v "1303-7" ] ;
+         fhir:display [ fhir:v "Reverse ABO group [Type]" ]
+       ] [
+         fhir:code [ fhir:v "54416-3" ] ;
+         fhir:display [ fhir:v "Rh [Type] in Blood from Fetus" ]
+       ] [
+         fhir:code [ fhir:v "14906-2" ] ;
+         fhir:display [ fhir:v "Rh [Type] in Cord blood" ]
+       ] [
+         fhir:code [ fhir:v "13225-8" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma --1st specimen" ]
+       ] [
+         fhir:code [ fhir:v "16714-8" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus Ab [Units/volume] in Serum by Latex agglutination" ]
+       ] [
+         fhir:code [ fhir:v "16715-5" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma by Immunofluorescence" ]
+       ] [
+         fhir:code [ fhir:v "16716-3" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma by Immunoassay --2nd specimen" ]
+       ] [
+         fhir:code [ fhir:v "22241-4" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus Ab [Titer] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "22246-3" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgG Ab [Titer] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "22247-1" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma --2nd specimen" ]
+       ] [
+         fhir:code [ fhir:v "22249-7" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgM Ab [Titer] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "29590-7" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus DNA [Mass/volume] (viral load) in Blood by Probe" ]
+       ] [
+         fhir:code [ fhir:v "29604-6" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus DNA [#/volume] (viral load) in Blood by NAA with probe detection" ]
+       ] [
+         fhir:code [ fhir:v "30247-1" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus DNA [#/volume] (viral load) in Serum or Plasma by NAA with probe detection" ]
+       ] [
+         fhir:code [ fhir:v "32170-3" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus Ab [Titer] in Serum or Plasma by Immunofluorescence" ]
+       ] [
+         fhir:code [ fhir:v "49349-4" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus DNA [#/volume] (viral load) in Bronchoalveolar lavage by NAA with probe detection" ]
+       ] [
+         fhir:code [ fhir:v "5121-9" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus Ab [Titer] in Serum or Plasma by Latex agglutination" ]
+       ] [
+         fhir:code [ fhir:v "5122-7" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus Ab [Units/volume] in Serum or Plasma by Immunofluorescence" ]
+       ] [
+         fhir:code [ fhir:v "5124-3" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma by Immunoassay" ]
+       ] [
+         fhir:code [ fhir:v "5125-0" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgG Ab [Titer] in Serum or Plasma by Immunofluorescence" ]
+       ] [
+         fhir:code [ fhir:v "5126-8" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgM Ab [Units/volume] in Serum or Plasma by Immunoassay" ]
+       ] [
+         fhir:code [ fhir:v "5127-6" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgM Ab [Titer] in Serum or Plasma by Immunofluorescence" ]
+       ] [
+         fhir:code [ fhir:v "52976-8" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus Ab [Units/volume] in Serum by Complement fixation" ]
+       ] [
+         fhir:code [ fhir:v "54206-8" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus DNA [Log #/volume] (viral load) in Serum or Plasma by NAA with probe detection" ]
+       ] [
+         fhir:code [ fhir:v "72493-0" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus DNA [Units/volume] (viral load) in Plasma by NAA with probe detection" ]
+       ] [
+         fhir:code [ fhir:v "72494-8" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus DNA [log units/volume] (viral load) in Plasma by NAA with probe detection" ]
+       ] [
+         fhir:code [ fhir:v "7851-9" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus Ab [Units/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "7852-7" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "7853-5" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgM Ab [Units/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "88545-9" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus DNA [#/volume] (viral load) in DBS by NAA with probe detection" ]
+       ] [
+         fhir:code [ fhir:v "9513-3" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus Ab [Titer] in Serum by Complement fixation" ]
+       ] [
+         fhir:code [ fhir:v "32791-6" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgG Ab [Ratio] in Serum or Plasma by Immunoassay --1st specimen/2nd specimen" ]
+       ] [
+         fhir:code [ fhir:v "32835-1" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgG Ab [Ratio] in Serum or Plasma --1st specimen/2nd specimen" ]
+       ] [
+         fhir:code [ fhir:v "52984-2" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgG Ab avidity [Ratio] in Serum or Plasma by Immunoassay" ]
+       ] [
+         fhir:code [ fhir:v "78445-4" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgG Ab avidity [Presence] in Serum or Plasma by Immunoassay" ]
+       ] [
+         fhir:code [ fhir:v "67805-2" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus Ag [Presence] in Isolate by Immunofluorescence" ]
+       ] [
+         fhir:code [ fhir:v "59838-3" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus Ab [Presence] in Serum or Plasma by Latex agglutination" ]
+       ] [
+         fhir:code [ fhir:v "30325-5" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgM Ab [Presence] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "13949-3" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay" ]
+       ] [
+         fhir:code [ fhir:v "22239-8" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus Ab [Presence] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "24119-0" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunoassay" ]
+       ] [
+         fhir:code [ fhir:v "6377-6" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus Ag [Presence] in Serum or Plasma by Immunofluorescence" ]
+       ] [
+         fhir:code [ fhir:v "6376-8" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus Ag [Presence] in Serum or Plasma by Immunoassay" ]
+       ] [
+         fhir:code [ fhir:v "5835-4" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus [Presence] in Blood by Organism specific culture" ]
+       ] [
+         fhir:code [ fhir:v "54164-9" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus immediate-early Ag [Presence] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "4996-5" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus DNA [Presence] in Blood by NAA with probe detection" ]
+       ] [
+         fhir:code [ fhir:v "49539-0" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunofluorescence" ]
+       ] [
+         fhir:code [ fhir:v "43703-8" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus [Presence] in Blood by Shell vial culture" ]
+       ] [
+         fhir:code [ fhir:v "31795-8" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus Ag [Presence] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "30246-3" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus DNA [Presence] in Serum or Plasma by NAA with probe detection" ]
+       ] [
+         fhir:code [ fhir:v "15377-5" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus Ab [Presence] in Serum by Latex agglutination" ]
+       ] [
+         fhir:code [ fhir:v "16718-9" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus Ag [Presence] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "22244-8" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgG Ab [Presence] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "28008-1" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus DNA [Presence] in Blood by Probe with signal amplification" ]
+       ] [
+         fhir:code [ fhir:v "20475-0" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgG Ab [Interpretation] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "87424-8" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus IgG and IgM panel - Serum or Plasma Qualitative" ]
+       ] [
+         fhir:code [ fhir:v "88535-0" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus DNA [Presence] in DBS by NAA with probe detection" ]
+       ] [
+         fhir:code [ fhir:v "95184-8" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus T-cell immunodeficiency panel - Blood by Flow cytometry (FC)" ]
+       ] [
+         fhir:code [ fhir:v "78006-4" ] ;
+         fhir:display [ fhir:v "Isotopic Glomerular filtration rate/1.73 sq M [Volume Rate/Area] in Urine and Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "96591-3" ] ;
+         fhir:display [ fhir:v "Glomerular filtration rate/1.73 sq M.predicted among blacks [Volume Rate/Area] in DBS" ]
+       ] [
+         fhir:code [ fhir:v "69405-9" ] ;
+         fhir:display [ fhir:v "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood" ]
+       ] [
+         fhir:code [ fhir:v "96592-1" ] ;
+         fhir:display [ fhir:v "Glomerular filtration rate/1.73 sq M.predicted among non-blacks [Volume Rate/Area] in DBS" ]
+       ] [
+         fhir:code [ fhir:v "50384-7" ] ;
+         fhir:display [ fhir:v "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (Schwartz)" ]
+       ] [
+         fhir:code [ fhir:v "50210-4" ] ;
+         fhir:display [ fhir:v "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Cystatin-based formula" ]
+       ] [
+         fhir:code [ fhir:v "62238-1" ] ;
+         fhir:display [ fhir:v "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI)" ]
+       ] [
+         fhir:code [ fhir:v "77147-7" ] ;
+         fhir:display [ fhir:v "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)" ]
+       ] [
+         fhir:code [ fhir:v "88293-6" ] ;
+         fhir:display [ fhir:v "Glomerular filtration rate/1.73 sq M.predicted among blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI)" ]
+       ] [
+         fhir:code [ fhir:v "48643-1" ] ;
+         fhir:display [ fhir:v "Glomerular filtration rate/1.73 sq M.predicted among blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)" ]
+       ] [
+         fhir:code [ fhir:v "50044-7" ] ;
+         fhir:display [ fhir:v "Glomerular filtration rate/1.73 sq M.predicted among females [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)" ]
+       ] [
+         fhir:code [ fhir:v "70969-1" ] ;
+         fhir:display [ fhir:v "Glomerular filtration rate/1.73 sq M.predicted among males [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)" ]
+       ] [
+         fhir:code [ fhir:v "88294-4" ] ;
+         fhir:display [ fhir:v "Glomerular filtration rate/1.73 sq M.predicted among non-blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI)" ]
+       ] [
+         fhir:code [ fhir:v "48642-3" ] ;
+         fhir:display [ fhir:v "Glomerular filtration rate/1.73 sq M.predicted among non-blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)" ]
+       ] [
+         fhir:code [ fhir:v "87430-5" ] ;
+         fhir:display [ fhir:v "Cystatin C and Glomerular filtration rate by Cystatin-based formula panel - Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "45066-8" ] ;
+         fhir:display [ fhir:v "Creatinine and Glomerular filtration rate.predicted panel - Serum, Plasma or Blood" ]
+       ] [
+         fhir:code [ fhir:v "94677-2" ] ;
+         fhir:display [ fhir:v "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine and Cystatin C-based formula (CKD-EPI)" ]
+       ] [
+         fhir:code [ fhir:v "98979-8" ] ;
+         fhir:display [ fhir:v "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI 2021)" ]
+       ] [
+         fhir:code [ fhir:v "2164-2" ] ;
+         fhir:display [ fhir:v "Creatinine renal clearance in 24 hour Urine and Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "6690-2" ] ;
+         fhir:display [ fhir:v "Leukocytes [#/volume] in Blood by Automated count" ]
+       ] [
+         fhir:code [ fhir:v "804-5" ] ;
+         fhir:display [ fhir:v "Leukocytes [#/volume] in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "26464-8" ] ;
+         fhir:display [ fhir:v "Leukocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "49498-9" ] ;
+         fhir:display [ fhir:v "Leukocytes [#/volume] in Blood by Estimate" ]
+       ] [
+         fhir:code [ fhir:v "789-8" ] ;
+         fhir:display [ fhir:v "Erythrocytes [#/volume] in Blood by Automated count" ]
+       ] [
+         fhir:code [ fhir:v "26453-1" ] ;
+         fhir:display [ fhir:v "Erythrocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "790-6" ] ;
+         fhir:display [ fhir:v "Erythrocytes [#/volume] in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "93846-4" ] ;
+         fhir:display [ fhir:v "Hemoglobin [Moles/volume] in Venous blood" ]
+       ] [
+         fhir:code [ fhir:v "718-7" ] ;
+         fhir:display [ fhir:v "Hemoglobin [Mass/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30313-1" ] ;
+         fhir:display [ fhir:v "Hemoglobin [Mass/volume] in Arterial blood" ]
+       ] [
+         fhir:code [ fhir:v "30350-3" ] ;
+         fhir:display [ fhir:v "Hemoglobin [Mass/volume] in Venous blood" ]
+       ] [
+         fhir:code [ fhir:v "14775-1" ] ;
+         fhir:display [ fhir:v "Hemoglobin [Mass/volume] in Arterial blood by Oximetry" ]
+       ] [
+         fhir:code [ fhir:v "30351-1" ] ;
+         fhir:display [ fhir:v "Hemoglobin [Mass/volume] in Mixed venous blood" ]
+       ] [
+         fhir:code [ fhir:v "20509-6" ] ;
+         fhir:display [ fhir:v "Hemoglobin [Mass/volume] in Blood by calculation" ]
+       ] [
+         fhir:code [ fhir:v "75928-2" ] ;
+         fhir:display [ fhir:v "Hemoglobin [Moles/volume] in Arterial blood" ]
+       ] [
+         fhir:code [ fhir:v "55782-7" ] ;
+         fhir:display [ fhir:v "Hemoglobin [Mass/volume] in Blood by Oximetry" ]
+       ] [
+         fhir:code [ fhir:v "59260-0" ] ;
+         fhir:display [ fhir:v "Hemoglobin [Moles/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "76768-1" ] ;
+         fhir:display [ fhir:v "Hemoglobin [Mass/volume] in Mixed venous blood by Oximetry" ]
+       ] [
+         fhir:code [ fhir:v "76769-9" ] ;
+         fhir:display [ fhir:v "Hemoglobin [Mass/volume] in Venous blood by Oximetry" ]
+       ] [
+         fhir:code [ fhir:v "4633-4" ] ;
+         fhir:display [ fhir:v "Hemoglobin F/Hemoglobin.total in Blood by Kleihauer-Betke method" ]
+       ] [
+         fhir:code [ fhir:v "4576-5" ] ;
+         fhir:display [ fhir:v "Hemoglobin F/Hemoglobin.total in Blood" ]
+       ] [
+         fhir:code [ fhir:v "42246-9" ] ;
+         fhir:display [ fhir:v "Hemoglobin F/Hemoglobin.total in Blood by HPLC" ]
+       ] [
+         fhir:code [ fhir:v "32682-7" ] ;
+         fhir:display [ fhir:v "Hemoglobin F/Hemoglobin.total in Blood by Electrophoresis" ]
+       ] [
+         fhir:code [ fhir:v "38524-5" ] ;
+         fhir:display [ fhir:v "Hemoglobin F/Hemoglobin.total in Blood by Electrophoresis alkaline (pH 8.9)" ]
+       ] [
+         fhir:code [ fhir:v "71863-5" ] ;
+         fhir:display [ fhir:v "Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by Kleihauer-Betke method" ]
+       ] [
+         fhir:code [ fhir:v "71864-3" ] ;
+         fhir:display [ fhir:v "Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by HPLC" ]
+       ] [
+         fhir:code [ fhir:v "71865-0" ] ;
+         fhir:display [ fhir:v "Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by Electrophoresis" ]
+       ] [
+         fhir:code [ fhir:v "20570-8" ] ;
+         fhir:display [ fhir:v "Hematocrit [Volume Fraction] of Blood" ]
+       ] [
+         fhir:code [ fhir:v "31100-1" ] ;
+         fhir:display [ fhir:v "Hematocrit [Volume Fraction] of Blood by Impedance" ]
+       ] [
+         fhir:code [ fhir:v "4545-0" ] ;
+         fhir:display [ fhir:v "Hematocrit [Volume Fraction] of Blood by Centrifugation" ]
+       ] [
+         fhir:code [ fhir:v "4544-3" ] ;
+         fhir:display [ fhir:v "Hematocrit [Volume Fraction] of Blood by Automated count" ]
+       ] [
+         fhir:code [ fhir:v "42908-4" ] ;
+         fhir:display [ fhir:v "Hematocrit [Volume Fraction] of Capillary blood" ]
+       ] [
+         fhir:code [ fhir:v "41654-5" ] ;
+         fhir:display [ fhir:v "Hematocrit [Volume Fraction] of Venous blood" ]
+       ] [
+         fhir:code [ fhir:v "48703-3" ] ;
+         fhir:display [ fhir:v "Hematocrit [Volume Fraction] of Blood by Estimated" ]
+       ] [
+         fhir:code [ fhir:v "71829-6" ] ;
+         fhir:display [ fhir:v "Hematocrit [Pure volume fraction] of Venous blood" ]
+       ] [
+         fhir:code [ fhir:v "71831-2" ] ;
+         fhir:display [ fhir:v "Hematocrit [Pure volume fraction] of Capillary blood" ]
+       ] [
+         fhir:code [ fhir:v "71833-8" ] ;
+         fhir:display [ fhir:v "Hematocrit [Pure volume fraction] of Blood by Automated count" ]
+       ] [
+         fhir:code [ fhir:v "26515-7" ] ;
+         fhir:display [ fhir:v "Platelets [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "778-1" ] ;
+         fhir:display [ fhir:v "Platelets [#/volume] in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "777-3" ] ;
+         fhir:display [ fhir:v "Platelets [#/volume] in Blood by Automated count" ]
+       ] [
+         fhir:code [ fhir:v "49497-1" ] ;
+         fhir:display [ fhir:v "Platelets [#/volume] in Blood by Estimate" ]
+       ] [
+         fhir:code [ fhir:v "28542-9" ] ;
+         fhir:display [ fhir:v "Platelet mean volume [Entitic volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "32623-1" ] ;
+         fhir:display [ fhir:v "Platelet mean volume [Entitic volume] in Blood by Automated count" ]
+       ] [
+         fhir:code [ fhir:v "732-8" ] ;
+         fhir:display [ fhir:v "Lymphocytes [#/volume] in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "731-0" ] ;
+         fhir:display [ fhir:v "Lymphocytes [#/volume] in Blood by Automated count" ]
+       ] [
+         fhir:code [ fhir:v "26474-7" ] ;
+         fhir:display [ fhir:v "Lymphocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26478-8" ] ;
+         fhir:display [ fhir:v "Lymphocytes/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "736-9" ] ;
+         fhir:display [ fhir:v "Lymphocytes/100 leukocytes in Blood by Automated count" ]
+       ] [
+         fhir:code [ fhir:v "737-7" ] ;
+         fhir:display [ fhir:v "Lymphocytes/100 leukocytes in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "26484-6" ] ;
+         fhir:display [ fhir:v "Monocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "742-7" ] ;
+         fhir:display [ fhir:v "Monocytes [#/volume] in Blood by Automated count" ]
+       ] [
+         fhir:code [ fhir:v "743-5" ] ;
+         fhir:display [ fhir:v "Monocytes [#/volume] in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "5905-5" ] ;
+         fhir:display [ fhir:v "Monocytes/100 leukocytes in Blood by Automated count" ]
+       ] [
+         fhir:code [ fhir:v "26485-3" ] ;
+         fhir:display [ fhir:v "Monocytes/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "744-3" ] ;
+         fhir:display [ fhir:v "Monocytes/100 leukocytes in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "751-8" ] ;
+         fhir:display [ fhir:v "Neutrophils [#/volume] in Blood by Automated count" ]
+       ] [
+         fhir:code [ fhir:v "753-4" ] ;
+         fhir:display [ fhir:v "Neutrophils [#/volume] in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "26499-4" ] ;
+         fhir:display [ fhir:v "Neutrophils [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "770-8" ] ;
+         fhir:display [ fhir:v "Neutrophils/100 leukocytes in Blood by Automated count" ]
+       ] [
+         fhir:code [ fhir:v "26511-6" ] ;
+         fhir:display [ fhir:v "Neutrophils/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "23761-0" ] ;
+         fhir:display [ fhir:v "Neutrophils/100 leukocytes in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "26508-2" ] ;
+         fhir:display [ fhir:v "Band form neutrophils/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "764-1" ] ;
+         fhir:display [ fhir:v "Band form neutrophils/100 leukocytes in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "35332-6" ] ;
+         fhir:display [ fhir:v "Band form neutrophils/100 leukocytes in Blood by Automated count" ]
+       ] [
+         fhir:code [ fhir:v "32200-8" ] ;
+         fhir:display [ fhir:v "Segmented neutrophils/100 leukocytes in Blood by Automated count" ]
+       ] [
+         fhir:code [ fhir:v "26505-8" ] ;
+         fhir:display [ fhir:v "Segmented neutrophils/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "769-0" ] ;
+         fhir:display [ fhir:v "Segmented neutrophils/100 leukocytes in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "709-6" ] ;
+         fhir:display [ fhir:v "Blasts/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26446-5" ] ;
+         fhir:display [ fhir:v "Blasts/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "707-0" ] ;
+         fhir:display [ fhir:v "Basophils/100 leukocytes in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "706-2" ] ;
+         fhir:display [ fhir:v "Basophils/100 leukocytes in Blood by Automated count" ]
+       ] [
+         fhir:code [ fhir:v "30180-4" ] ;
+         fhir:display [ fhir:v "Basophils/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "712-0" ] ;
+         fhir:display [ fhir:v "Eosinophils [#/volume] in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "26449-9" ] ;
+         fhir:display [ fhir:v "Eosinophils [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "711-2" ] ;
+         fhir:display [ fhir:v "Eosinophils [#/volume] in Blood by Automated count" ]
+       ] [
+         fhir:code [ fhir:v "26450-7" ] ;
+         fhir:display [ fhir:v "Eosinophils/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "713-8" ] ;
+         fhir:display [ fhir:v "Eosinophils/100 leukocytes in Blood by Automated count" ]
+       ] [
+         fhir:code [ fhir:v "714-6" ] ;
+         fhir:display [ fhir:v "Eosinophils/100 leukocytes in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "30458-4" ] ;
+         fhir:display [ fhir:v "Plasma cells [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "24103-4" ] ;
+         fhir:display [ fhir:v "Plasma cells [#/volume] in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "13047-6" ] ;
+         fhir:display [ fhir:v "Plasma cells/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "79426-3" ] ;
+         fhir:display [ fhir:v "Plasma cells/100 leukocytes in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "33855-8" ] ;
+         fhir:display [ fhir:v "Promonocytes [#/volume] in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "34926-6" ] ;
+         fhir:display [ fhir:v "Promonocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "13599-6" ] ;
+         fhir:display [ fhir:v "Promonocytes/100 leukocytes in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "30466-7" ] ;
+         fhir:display [ fhir:v "Promonocytes/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26523-1" ] ;
+         fhir:display [ fhir:v "Promyelocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "781-5" ] ;
+         fhir:display [ fhir:v "Promyelocytes [#/volume] in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "783-1" ] ;
+         fhir:display [ fhir:v "Promyelocytes/100 leukocytes in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "71666-2" ] ;
+         fhir:display [ fhir:v "Promyelocytes/Leukocytes [Pure number fraction] in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "26524-9" ] ;
+         fhir:display [ fhir:v "Promyelocytes/100 leukocytes in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "30444-4" ] ;
+         fhir:display [ fhir:v "Myeloblasts [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "746-8" ] ;
+         fhir:display [ fhir:v "Myeloblasts [#/volume] in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "30445-1" ] ;
+         fhir:display [ fhir:v "Myeloblasts/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "747-6" ] ;
+         fhir:display [ fhir:v "Myeloblasts/100 leukocytes in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "748-4" ] ;
+         fhir:display [ fhir:v "Myelocytes [#/volume] in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "30446-9" ] ;
+         fhir:display [ fhir:v "Myelocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26498-6" ] ;
+         fhir:display [ fhir:v "Myelocytes/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "749-2" ] ;
+         fhir:display [ fhir:v "Myelocytes/100 leukocytes in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "71667-0" ] ;
+         fhir:display [ fhir:v "Myelocytes/Leukocytes [Pure number fraction] in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "739-3" ] ;
+         fhir:display [ fhir:v "Metamyelocytes [#/volume] in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "30433-7" ] ;
+         fhir:display [ fhir:v "Metamyelocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "740-1" ] ;
+         fhir:display [ fhir:v "Metamyelocytes/100 leukocytes in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "28541-1" ] ;
+         fhir:display [ fhir:v "Metamyelocytes/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "71668-8" ] ;
+         fhir:display [ fhir:v "Metamyelocytes/Leukocytes [Pure number fraction] in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "6746-2" ] ;
+         fhir:display [ fhir:v "Prolymphocytes/100 leukocytes in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "30465-9" ] ;
+         fhir:display [ fhir:v "Prolymphocytes/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "14196-0" ] ;
+         fhir:display [ fhir:v "Reticulocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "40665-2" ] ;
+         fhir:display [ fhir:v "Reticulocytes [#/volume] in Blood by Manual count" ]
+       ] [
+         fhir:code [ fhir:v "60474-4" ] ;
+         fhir:display [ fhir:v "Reticulocytes [#/volume] in Blood by Automated count" ]
+       ] [
+         fhir:code [ fhir:v "31112-6" ] ;
+         fhir:display [ fhir:v "Reticulocytes/100 erythrocytes in Blood by Manual" ]
+       ] [
+         fhir:code [ fhir:v "17849-1" ] ;
+         fhir:display [ fhir:v "Reticulocytes/100 erythrocytes in Blood by Automated count" ]
+       ] [
+         fhir:code [ fhir:v "4679-7" ] ;
+         fhir:display [ fhir:v "Reticulocytes/100 erythrocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "1751-7" ] ;
+         fhir:display [ fhir:v "Albumin [Mass/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "2862-1" ] ;
+         fhir:display [ fhir:v "Albumin [Mass/volume] in Serum or Plasma by Electrophoresis" ]
+       ] [
+         fhir:code [ fhir:v "61151-7" ] ;
+         fhir:display [ fhir:v "Albumin [Mass/volume] in Serum or Plasma by Bromocresol green (BCG) dye binding method" ]
+       ] [
+         fhir:code [ fhir:v "61152-5" ] ;
+         fhir:display [ fhir:v "Albumin [Mass/volume] in Serum or Plasma by Bromocresol purple (BCP) dye binding method" ]
+       ] [
+         fhir:code [ fhir:v "1952-1" ] ;
+         fhir:display [ fhir:v "Beta-2-Microglobulin [Mass/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "76484-5" ] ;
+         fhir:display [ fhir:v "Beta-2-Microglobulin [Moles/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "2276-4" ] ;
+         fhir:display [ fhir:v "Ferritin [Mass/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "24373-3" ] ;
+         fhir:display [ fhir:v "Ferritin [Mass/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "20567-4" ] ;
+         fhir:display [ fhir:v "Ferritin [Mass/volume] in Serum or Plasma by Immunoassay" ]
+       ] [
+         fhir:code [ fhir:v "11150-0" ] ;
+         fhir:display [ fhir:v "Blasts/100 cells in Bone marrow" ]
+       ] [
+         fhir:code [ fhir:v "57028-3" ] ;
+         fhir:display [ fhir:v "Iron [Mass/mass] in Liver" ]
+       ] [
+         fhir:code [ fhir:v "2160-0" ] ;
+         fhir:display [ fhir:v "Creatinine [Mass/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "14682-9" ] ;
+         fhir:display [ fhir:v "Creatinine [Moles/volume] in Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "77140-2" ] ;
+         fhir:display [ fhir:v "Creatinine [Moles/volume] in Serum, Plasma or Blood" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

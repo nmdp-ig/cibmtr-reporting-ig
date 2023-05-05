@@ -199,9 +199,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h3 id="sending-bundles">Sending Bundles</h3>
 
-<p>Multiple FHIR resources can be submitted together in one Bundle FHIR resource.  The CIBMTR Direct FHIR service API supports FHIR transaction bundles.  The process for submitting a transaction Bundle FHIR resource is the same as submitting a single Observation FHIR resource, except for the bundle is sent to <code class="language-plaintext highlighter-rouge">&lt;base URL&gt;/r4</code> for processing (no explicit resource name is appended). If the bundle is sent to the Bundle end point, then it is stored, but not processed.</p>
+<p>Multiple FHIR resources can be submitted together in one Bundle FHIR resource.  The CIBMTR Direct FHIR service API supports FHIR transaction bundles.  The process for submitting a transaction Bundle FHIR resource is the same as submitting a single Observation FHIR resource, except for the bundle is sent to <code class="highlighter-rouge">&lt;base URL&gt;/r4</code> for processing (no explicit resource name is appended). If the bundle is sent to the Bundle end point, then it is stored, but not processed.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST    &lt;base URL&gt;/r4
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST    &lt;base URL&gt;/r4
 </code></pre></div></div>
 
 <p>An example of the structure of a transaction JSON Bundle FHIR resource is shown below.  Each Observation resource is an element of the “entry” array.  To avoid API timeout issues, bundles should be limited to 50 Observations or less.</p>
@@ -262,7 +262,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.6 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 4, 2023 09:48-0500">2023-05-04</span>
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.6 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 4, 2023 21:27-0500">2023-05-04</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

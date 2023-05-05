@@ -205,9 +205,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The client must search for a patient that has been previously registered with CIBMTR, or register a new patient. In either case, the client will receive from the CRID service a CIBMTR Research Identifier (CRID) to be used as a patient resource identifier for all subsequent FHIR data submissions.  CIBMTR exposes a special service API to handle the submission of personally identifiable information (PII).  Data submitted via the externally available CRID API endpoint has special protections and exposure within CIBMTR to avoid unnecessary handling of PII.  For all subsequent FHIR data submissions, the CRID is used to identify the patient and any PII is removed from FHIR resources before being stored on CIBMTR FHIR servers.</p>
 
-<p>The CRID API uses a <code class="language-plaintext highlighter-rouge">PUT</code> request at the following case-sensitive endpoint URLs:</p>
+<p>The CRID API uses a <code class="highlighter-rouge">PUT</code> request at the following case-sensitive endpoint URLs:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PUT    &lt;base URL&gt;/CRID
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PUT    &lt;base URL&gt;/CRID
 </code></pre></div></div>
 
 <p>The authorization key and bearer token must be included in the request as mentioned in the previous section.  For the body of the PUT request, the following data fields are requested:</p>
@@ -319,7 +319,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p>Because the CRID API is available as a <code class="language-plaintext highlighter-rouge">PUT</code> request, submitting the same data twice does not re-register the patient, but rather will retrieve the same CRID number registered previously.   The CRID API will attempt to perform partial “fuzzy” matches based on data submitted to avoid re-registering the same patient with two different CRID numbers.</p>
+<p>Because the CRID API is available as a <code class="highlighter-rouge">PUT</code> request, submitting the same data twice does not re-register the patient, but rather will retrieve the same CRID number registered previously.   The CRID API will attempt to perform partial “fuzzy” matches based on data submitted to avoid re-registering the same patient with two different CRID numbers.</p>
 
 <p>The response payload of the CRID Service API is a JSON object that contains the CRID number (lower pane in Figure).  The CRID number is then used for all other data references to the registered patient.</p>
 
@@ -364,16 +364,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <span class="p">}</span>
 <span class="p">}</span>
 <span class="n">tokenfile</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s">'token.txt'</span><span class="p">)</span>  <span class="c1"># Bearer token was previously captured in token.txt
-</span><span class="n">authstring</span> <span class="o">=</span> <span class="s">'Bearer '</span> <span class="o">+</span> <span class="n">tokenfile</span><span class="p">.</span><span class="n">read_text</span><span class="p">()</span>
+</span><span class="n">authstring</span> <span class="o">=</span> <span class="s">'Bearer '</span> <span class="o">+</span> <span class="n">tokenfile</span><span class="o">.</span><span class="n">read_text</span><span class="p">()</span>
 <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s">'Authorization'</span><span class="p">:</span> <span class="n">authstring</span><span class="p">,</span>
             <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'application/json'</span><span class="p">}</span>
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">put</span><span class="p">(</span><span class="s">'https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1/CRID'</span><span class="p">,</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s">'https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1/CRID'</span><span class="p">,</span>
                     <span class="n">json</span><span class="o">=</span><span class="n">patient</span><span class="p">,</span>
                     <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">r</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">json</span><span class="p">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">(),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">(),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">status_code</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
 </code></pre></div></div>
 
 
@@ -400,7 +400,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.6 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 4, 2023 09:48-0500">2023-05-04</span>
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.6 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 4, 2023 21:27-0500">2023-05-04</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

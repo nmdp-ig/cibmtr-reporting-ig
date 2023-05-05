@@ -201,20 +201,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>A FHIR Patient resource with an identifier containing the CRID must exist on the CIBMTR FHIR server to be used as a subject reference in Observation or other resources. To prevent multiple identical Patient resources from being created, the client must first check to see if it already exists.</p>
 
-<p>To search for Patient resource with a specific CRID, use this <code class="language-plaintext highlighter-rouge">GET</code> request (all one line)</p>
+<p>To search for Patient resource with a specific CRID, use this <code class="highlighter-rouge">GET</code> request (all one line)</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET &lt;base URL&gt;/r4/Patient?
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET &lt;base URL&gt;/r4/Patient?
     _security=http://cibmtr.org/codesystem/transplant-center|rc_&lt;CCN&gt;
     &amp;identifier=http://cibmtr.org/identifier/CRID|&lt;CRID&gt;
 </code></pre></div></div>
 
-<p>If the response shows a searchset result with a <code class="language-plaintext highlighter-rouge">total</code> of 0, then a Patient resource with that CRID has not been created, and a new Patient resource must be created. In this case, proceed to Step 3.</p>
+<p>If the response shows a searchset result with a <code class="highlighter-rouge">total</code> of 0, then a Patient resource with that CRID has not been created, and a new Patient resource must be created. In this case, proceed to Step 3.</p>
 
-<p>If the response shows a <code class="language-plaintext highlighter-rouge">total</code> of one or more, then at least one Patient with that CRID already exists. In this case, skip Step 3, and go on to Step 4. If more than one Patient was found, then it suggests that someone created a Patient without checking to see if it first exists.</p>
+<p>If the response shows a <code class="highlighter-rouge">total</code> of one or more, then at least one Patient with that CRID already exists. In this case, skip Step 3, and go on to Step 4. If more than one Patient was found, then it suggests that someone created a Patient without checking to see if it first exists.</p>
 
-<p>A note about special characters:  The FHIR search parameters sometime include special characters such as the pipe character (“<code class="language-plaintext highlighter-rouge">|</code>”). Often, these need to be replaced with url-encoded character strings. In this case, “<code class="language-plaintext highlighter-rouge">|</code>” is replaced by “<code class="language-plaintext highlighter-rouge">%7C</code>” in the values for the keys.</p>
+<p>A note about special characters:  The FHIR search parameters sometime include special characters such as the pipe character (“<code class="highlighter-rouge">|</code>”). Often, these need to be replaced with url-encoded character strings. In this case, “<code class="highlighter-rouge">|</code>” is replaced by “<code class="highlighter-rouge">%7C</code>” in the values for the keys.</p>
 
-<p>The response below shows one Patient resource, and that resource has an <code class="language-plaintext highlighter-rouge">id</code> of 46986.</p>
+<p>The response below shows one Patient resource, and that resource has an <code class="highlighter-rouge">id</code> of 46986.</p>
 
 <table>
   <thead>
@@ -229,19 +229,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p>The ‘id’ should be used in all <code class="language-plaintext highlighter-rouge">subject.references</code> for all subsequent Observations that are submitted for this Patient. This would have the form of:</p>
+<p>The ‘id’ should be used in all <code class="highlighter-rouge">subject.references</code> for all subsequent Observations that are submitted for this Patient. This would have the form of:</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/&lt;id&gt;"</span><span class="w">
     </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<p>Replace <code class="language-plaintext highlighter-rouge">&lt;id&gt;</code> with the <code class="language-plaintext highlighter-rouge">Patient.id</code> found in the search.</p>
+<p>Replace <code class="highlighter-rouge">&lt;id&gt;</code> with the <code class="highlighter-rouge">Patient.id</code> found in the search.</p>
 
 <p>To drive home the point, the</p>
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">Patient.id</code> is a local server id, and is used as a subject.reference in other FHIR resources.</li>
-  <li><code class="language-plaintext highlighter-rouge">Patient.identifier</code> is a business identifier and the where the CRID is located.</li>
+  <li><code class="highlighter-rouge">Patient.id</code> is a local server id, and is used as a subject.reference in other FHIR resources.</li>
+  <li><code class="highlighter-rouge">Patient.identifier</code> is a business identifier and the where the CRID is located.</li>
 </ul>
 
 <h4 id="step-3-submit-patient-fhir-resource">Step 3: Submit Patient FHIR Resource</h4>
@@ -250,18 +250,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The Direct FHIR Service API uses a POST request to submit a Patient resource at the following case-sensitive endpoint URLs:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST    &lt;base URL&gt;/r4/Patient
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST    &lt;base URL&gt;/r4/Patient
 </code></pre></div></div>
 
-<p>The authorization key and bearer token must be included in the request as mentioned in the previous section.  FHIR JSON submissions should also include a <code class="language-plaintext highlighter-rouge">content-type</code> key in the header with value: <code class="language-plaintext highlighter-rouge">application/fhir+json</code>.</p>
+<p>The authorization key and bearer token must be included in the request as mentioned in the previous section.  FHIR JSON submissions should also include a <code class="highlighter-rouge">content-type</code> key in the header with value: <code class="highlighter-rouge">application/fhir+json</code>.</p>
 
 <h5 id="minimum-patient-resource">Minimum Patient resource</h5>
 <p>The Patient FHIR resource usually contains the demographics data for the patient, however, since the demographics data is already submitted during the CRID registration process, there are only three primary components necessary in the Patient FHIR resource:</p>
 
 <ol>
-  <li>A <code class="language-plaintext highlighter-rouge">security</code> label (describe above) within the <code class="language-plaintext highlighter-rouge">meta</code> section of the Patient resource must contain the CIBMTR Center Number (CCN) prepended with <code class="language-plaintext highlighter-rouge">rc_</code> and associated with the codesystem as shown in Figure 6.</li>
-  <li>A <code class="language-plaintext highlighter-rouge">text.status</code> section that should have the narrative code of <code class="language-plaintext highlighter-rouge">empty</code> if no text narrative is provided.  An example is shown in Figure 6.</li>
-  <li>A CRID identifier reference within the <code class="language-plaintext highlighter-rouge">identifier</code> section of the Patient resource as shown in Figure 6.</li>
+  <li>A <code class="highlighter-rouge">security</code> label (describe above) within the <code class="highlighter-rouge">meta</code> section of the Patient resource must contain the CIBMTR Center Number (CCN) prepended with <code class="highlighter-rouge">rc_</code> and associated with the codesystem as shown in Figure 6.</li>
+  <li>A <code class="highlighter-rouge">text.status</code> section that should have the narrative code of <code class="highlighter-rouge">empty</code> if no text narrative is provided.  An example is shown in Figure 6.</li>
+  <li>A CRID identifier reference within the <code class="highlighter-rouge">identifier</code> section of the Patient resource as shown in Figure 6.</li>
 </ol>
 
 <table>
@@ -277,9 +277,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p>PII information should be avoided as part of the Patient resource.   However, the Direct FHIR service API will remove PII information, including any that might be contained in <code class="language-plaintext highlighter-rouge">text.div</code> or other sections of the resource before storing it on the FHIR server.</p>
+<p>PII information should be avoided as part of the Patient resource.   However, the Direct FHIR service API will remove PII information, including any that might be contained in <code class="highlighter-rouge">text.div</code> or other sections of the resource before storing it on the FHIR server.</p>
 
-<p>The response after submitting a Patient resource request, includes the Patient resource ID in the header of the response (see Figure 7).   The <code class="language-plaintext highlighter-rouge">Location</code> section of the response header includes a URL reference for the Patient resource on the CIBMTR FHIR server and the Patient resource ID is in the URL (circled in red in Figure 7).   The Patient resource ID is necessary for submitting other FHIR resources to the Direct FHIR service API, but if the ID for a Patient resource previously submitted is not known, the following GET request can be submitted to the API to retrieve the Patient resource for a given CRID:</p>
+<p>The response after submitting a Patient resource request, includes the Patient resource ID in the header of the response (see Figure 7).   The <code class="highlighter-rouge">Location</code> section of the response header includes a URL reference for the Patient resource on the CIBMTR FHIR server and the Patient resource ID is in the URL (circled in red in Figure 7).   The Patient resource ID is necessary for submitting other FHIR resources to the Direct FHIR service API, but if the ID for a Patient resource previously submitted is not known, the following GET request can be submitted to the API to retrieve the Patient resource for a given CRID:</p>
 
 <table>
   <thead>
@@ -297,8 +297,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Preferred Patient resource
 While including the CRID identifier, meta.security tag, and empty text element is the bare minimum for creating a Patient resource, we prefer to have some additional data present to help with resource management. These include date of birth, gender, and race &amp; ethnicity information. Race and ethnicity must be reported as described in the FHIR US-Core Implementation Guide:</p>
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-race.html</code></li>
-  <li><code class="language-plaintext highlighter-rouge">https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-ethnicity.html</code></li>
+  <li><code class="highlighter-rouge">https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-race.html</code></li>
+  <li><code class="highlighter-rouge">https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-ethnicity.html</code></li>
 </ul>
 
 <p>See the following for an example that using these elements with data as found for registering for the CRID above.</p>
@@ -436,7 +436,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.6 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 4, 2023 09:48-0500">2023-05-04</span>
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.6 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 4, 2023 21:27-0500">2023-05-04</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

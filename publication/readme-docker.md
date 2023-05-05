@@ -1,19 +1,21 @@
 # Using docker and /etc/hosts to view the published IG
  
 > *** NOTE***
-> This currently doesn't work with fhir.nmdp.org. I keep getting a 
+> fhir.nmdp.org uses HSTS to force use of https
+> If your browser gets a connection refused error, e.g.,
 > > This site can’t be reached
 > > fhir.nmdp.org refused to connect.
->
-> I tried setting up https using the instructions found here:
-> https://dockerwebdev.com/tutorials/docker-php-development/
-> but that didn't help.
+> then you'll need clear the browser's HSTS and cache for fhir.nmdp.orgl
+> The method for doing this is different for each browser. Here's a site
+> that describes how for several different browsers.
+> https://www.clickssl.net/blog/how-to-clear-or-disable-hsts-on-chrome-firefox-safari-and-ie-browsers 
 
-I cread a docker image with PHP/Apache with the published
+
+I created a docker image with PHP/Apache with the published
 IG files that can be viewed locally.
 
 To be able to see published IG, edit the `/etc/hosts` file and add following
-line (MacOS or Linux/Unix)
+line (MacOS or Linux/Unix). See note above re HSTS and browsers.
 ```
 127.0.0.1    fhir.nmdp.org
 ```

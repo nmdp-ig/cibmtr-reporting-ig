@@ -203,7 +203,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </div>
 <h3 id="overview-medication-related-profiles-and-valuesets-for-cibmtr">Overview: Medication-related Profiles and ValueSets for CIBMTR</h3>
-<p>Medication-related FHIR resource may be sent to the CIBMTR Direct FHIR API (see <a href="Connection-Guide-R4.html">R4 connection guide</a>). These profiles are derived from profiles found in the <a href="https://hl7.org/fhir/us/core/">US-Core</a> or <a href="https://hl7.org/fhir/us/mcode/">mCode</a> Implementation Guides. CIBMTR profiles add a requirement for the <code class="language-plaintext highlighter-rouge">meta.security</code> elements to identify your center, and often include bindings to ValueSets for RxNorm codes. They may also require elements previously tagged as optional in the original profiles.</p>
+<p>Medication-related FHIR resource may be sent to the CIBMTR Direct FHIR API (see <a href="Connection-Guide-R4.html">R4 connection guide</a>). These profiles are derived from profiles found in the <a href="https://hl7.org/fhir/us/core/">US-Core</a> or <a href="https://hl7.org/fhir/us/mcode/">mCode</a> Implementation Guides. CIBMTR profiles add a requirement for the <code class="highlighter-rouge">meta.security</code> elements to identify your center, and often include bindings to ValueSets for RxNorm codes. They may also require elements previously tagged as optional in the original profiles.</p>
 
 <p>Medication-related resources include Medication, MedicationRequest, and MedicationAdministration.
 While MedicationRequest and MedicationAdministration are specific for a particular subject, the Medication resource is definitonal and can be reused for different instances, including for different subjects. See figure below</p>
@@ -221,16 +221,16 @@ While MedicationRequest and MedicationAdministration are specific for a particul
   </tbody>
 </table>
 
-<h4 id="medicationreference-vs-medicationcodeableconcept"><code class="language-plaintext highlighter-rouge">medicationReference</code> vs <code class="language-plaintext highlighter-rouge">medicationCodeableConcept</code></h4>
+<h4 id="medicationreference-vs-medicationcodeableconcept"><code class="highlighter-rouge">medicationReference</code> vs <code class="highlighter-rouge">medicationCodeableConcept</code></h4>
 
-<p>Note that both MedicationAdministration and MedicationRequest can refer to a Medication resource through the <code class="language-plaintext highlighter-rouge">medicationReference</code> element. This has the form of</p>
+<p>Note that both MedicationAdministration and MedicationRequest can refer to a Medication resource through the <code class="highlighter-rouge">medicationReference</code> element. This has the form of</p>
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="nl">"medicationReference"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"reference"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Medication/&lt;resource Id&gt;"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 <p>This is useful when you want to be able to re-use the same medication multiple times, or if the medication description is more complex than a simple RxNorm code (e.g., contains multiple ingredients).</p>
 
-<p>Alternative, you might also reference a medication via the <code class="language-plaintext highlighter-rouge">medicationCodeableConcept</code> element. In this case, if the medication can be described as a set of equivalent RxNorm codes (i.e., only one ingredient), the codes may be included inline in the MedicationAdministration or MedicationRequest. Here is an example with multiple RxNorm codes that are effectively equivalent:</p>
+<p>Alternative, you might also reference a medication via the <code class="highlighter-rouge">medicationCodeableConcept</code> element. In this case, if the medication can be described as a set of equivalent RxNorm codes (i.e., only one ingredient), the codes may be included inline in the MedicationAdministration or MedicationRequest. Here is an example with multiple RxNorm codes that are effectively equivalent:</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="nl">"medicationCodeableConcept"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"coding"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -259,7 +259,7 @@ While MedicationRequest and MedicationAdministration are specific for a particul
   </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<h4 id="reasoncode"><code class="language-plaintext highlighter-rouge">reasonCode</code></h4>
+<h4 id="reasoncode"><code class="highlighter-rouge">reasonCode</code></h4>
 <p>Both MedicationAdministration and MedciationRequest provide an element to describe the reason why a medication has been requested or administered. This is often useful to CIBMTR in understanding the context. Reason codes may be entered in as SNOMED or ICD-10 codes, or both if they are equivalent. For example,</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"reasonCode"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -319,8 +319,8 @@ While MedicationRequest and MedicationAdministration are specific for a particul
 
 <h4 id="medicationadmintration">MedicationAdmintration</h4>
 <ul>
-  <li><a href="MedicationAdministration-MedicationAdministration-Example1.html">MedicationAdministration-Example1</a>: Medication Administration example using <code class="language-plaintext highlighter-rouge">medicationReference</code> - Etoposide</li>
-  <li><a href="MedicationAdministration-MedicationAdministration-Example2.html">MedicationAdministration-Example2</a>: Medication Administration example using <code class="language-plaintext highlighter-rouge">medicationCodeableConcept</code> - Etoposide</li>
+  <li><a href="MedicationAdministration-MedicationAdministration-Example1.html">MedicationAdministration-Example1</a>: Medication Administration example using <code class="highlighter-rouge">medicationReference</code> - Etoposide</li>
+  <li><a href="MedicationAdministration-MedicationAdministration-Example2.html">MedicationAdministration-Example2</a>: Medication Administration example using <code class="highlighter-rouge">medicationCodeableConcept</code> - Etoposide</li>
 </ul>
 
 <h4 id="medicationrequest">MedicationRequest</h4>
@@ -369,7 +369,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.6 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 4, 2023 09:48-0500">2023-05-04</span>
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.6 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 4, 2023 21:27-0500">2023-05-04</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

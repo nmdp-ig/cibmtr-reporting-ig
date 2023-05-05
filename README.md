@@ -33,4 +33,3 @@ java -jar ../publisher.jar -ig ig.ini
 * Check `output/qa.html` for errors, warnings. If no errors, proceed to publishing
 
 ## Publishing
-TBD

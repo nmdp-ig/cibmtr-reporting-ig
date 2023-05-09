@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>CIBMTR-REPORTING\Example Code - FHIR v4.0.1</title>
+    <title>NMDP.FHIR.CIBMTR-REPORTING\Example Code - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"9"}
-    h3,h4,h5,h6{--heading-prefix:"9"}</style>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -57,7 +57,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.5 - Trial Use 1
+            <span style="display:inline-block;">0.1.6 - Trial Use 1
 
 
             </span>
@@ -125,6 +125,9 @@
       <li>
         <a href="Example-Code.html">Example Code Snippets</a>
       </li>
+      <li>
+        <a href="Appendices.html">Appendices</a>
+      </li>
     </ul>
   </li>
   <li>
@@ -175,7 +178,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.5). See the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the CIBMTR Reporting Implementation Guide (v0.1.6: Release Draft) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a></p><!--EndReleaseHeader-->
   <h2>Example Code</h2>
   
 
@@ -226,12 +229,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         <span class="s">'username'</span><span class="p">:</span><span class="n">serviceAccountUsername</span><span class="p">,</span> 
         <span class="s">'password'</span><span class="p">:</span><span class="n">serviceAccountPassword</span><span class="p">}</span>
 
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="s">'https://oktapreview.nmdp.org/oauth2/ausaexcazhLhxKnJs0h7/v1/token'</span><span class="p">,</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s">'https://oktapreview.nmdp.org/oauth2/ausaexcazhLhxKnJs0h7/v1/token'</span><span class="p">,</span>
                   <span class="n">auth</span><span class="o">=</span><span class="n">HTTPBasicAuth</span><span class="p">(</span><span class="n">clientId</span><span class="p">,</span> <span class="n">clientSecret</span><span class="p">),</span>
                   <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
                   <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
 
-<span class="n">accessToken</span> <span class="o">=</span> <span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">()[</span><span class="s">"access_token"</span><span class="p">]</span>
+<span class="n">accessToken</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s">"access_token"</span><span class="p">]</span>
 <span class="k">print</span><span class="p">(</span><span class="n">accessToken</span><span class="p">)</span>
 </code></pre></div></div>
 
@@ -286,16 +289,16 @@ curl <span class="nt">-s</span> <span class="nt">--location</span> <span class="
     <span class="p">}</span>
 <span class="p">}</span>
 <span class="n">tokenfile</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s">'token.txt'</span><span class="p">)</span>  <span class="c1"># Bearer token was previously captured in token.txt
-</span><span class="n">authstring</span> <span class="o">=</span> <span class="s">'Bearer '</span> <span class="o">+</span> <span class="n">tokenfile</span><span class="p">.</span><span class="n">read_text</span><span class="p">()</span>
+</span><span class="n">authstring</span> <span class="o">=</span> <span class="s">'Bearer '</span> <span class="o">+</span> <span class="n">tokenfile</span><span class="o">.</span><span class="n">read_text</span><span class="p">()</span>
 <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s">'Authorization'</span><span class="p">:</span> <span class="n">authstring</span><span class="p">,</span>
             <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'application/json'</span><span class="p">}</span>
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">put</span><span class="p">(</span><span class="s">'https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1/CRID'</span><span class="p">,</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s">'https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1/CRID'</span><span class="p">,</span>
                     <span class="n">json</span><span class="o">=</span><span class="n">patient</span><span class="p">,</span>
                     <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">r</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">json</span><span class="p">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">(),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">(),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">status_code</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
 </code></pre></div></div>
 
 <hr />
@@ -317,7 +320,7 @@ curl <span class="nt">-s</span> <span class="nt">--location</span> <span class="
 
 <span class="c1"># Bearer token captured in token.txt
 </span><span class="n">tokenfile</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s">'token.txt'</span><span class="p">)</span>
-<span class="n">authstring</span> <span class="o">=</span> <span class="s">'Bearer '</span> <span class="o">+</span> <span class="n">tokenfile</span><span class="p">.</span><span class="n">read_text</span><span class="p">()</span>
+<span class="n">authstring</span> <span class="o">=</span> <span class="s">'Bearer '</span> <span class="o">+</span> <span class="n">tokenfile</span><span class="o">.</span><span class="n">read_text</span><span class="p">()</span>
 <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s">'Authorization'</span><span class="p">:</span> <span class="n">authstring</span><span class="p">}</span>
 
 <span class="n">identifier</span> <span class="o">=</span> <span class="s">'http://cibmtr.org/identifier/CRID|'</span> <span class="o">+</span> <span class="n">crid</span>
@@ -327,14 +330,14 @@ curl <span class="nt">-s</span> <span class="nt">--location</span> <span class="
     <span class="s">'_security'</span><span class="p">:</span> <span class="n">security</span>
 <span class="p">}</span>
 
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1/r4/Patient'</span><span class="p">,</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1/r4/Patient'</span><span class="p">,</span>
                  <span class="n">params</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span>
                  <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">r</span><span class="p">:</span>
     <span class="c1"># print(json.dumps(r.json(), indent=4))
-</span>    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">text</span><span class="p">)</span>
+</span>    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">status_code</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
 </code></pre></div></div>
 
 <hr />
@@ -351,29 +354,29 @@ curl <span class="nt">-s</span> <span class="nt">--location</span> <span class="
 <span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
 
-<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
-    <span class="n">sys</span><span class="p">.</span><span class="nb">exit</span><span class="p">(</span><span class="s">"Usage: python postPatient.py &lt;FHIR Patient resource json file&gt;"</span><span class="p">)</span>
-<span class="n">fhirjsonfile</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-<span class="n">patientFHIR</span> <span class="o">=</span> <span class="n">fhirjsonfile</span><span class="p">.</span><span class="n">read_text</span><span class="p">()</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="n">sys</span><span class="o">.</span><span class="nb">exit</span><span class="p">(</span><span class="s">"Usage: python postPatient.py &lt;FHIR Patient resource json file&gt;"</span><span class="p">)</span>
+<span class="n">fhirjsonfile</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">patientFHIR</span> <span class="o">=</span> <span class="n">fhirjsonfile</span><span class="o">.</span><span class="n">read_text</span><span class="p">()</span>
 
 <span class="c1"># Bearer token captured in token.txt
 </span><span class="n">tokenfile</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s">'token.txt'</span><span class="p">)</span>
-<span class="n">authstring</span> <span class="o">=</span> <span class="s">'Bearer '</span> <span class="o">+</span> <span class="n">tokenfile</span><span class="p">.</span><span class="n">read_text</span><span class="p">()</span>
+<span class="n">authstring</span> <span class="o">=</span> <span class="s">'Bearer '</span> <span class="o">+</span> <span class="n">tokenfile</span><span class="o">.</span><span class="n">read_text</span><span class="p">()</span>
 <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s">'Authorization'</span><span class="p">:</span> <span class="n">authstring</span><span class="p">,</span>
            <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'application/fhir+json'</span><span class="p">}</span>
 
 
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="s">'https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1/r4/Patient'</span><span class="p">,</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s">'https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1/r4/Patient'</span><span class="p">,</span>
                   <span class="n">data</span><span class="o">=</span><span class="n">patientFHIR</span><span class="p">,</span>
                   <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">r</span><span class="p">:</span>
     <span class="c1"># print(json.dumps(r.json(), indent=4))
-</span>    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">headers</span><span class="p">[</span><span class="s">'Location'</span><span class="p">])</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">text</span><span class="p">)</span>
+</span>    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">headers</span><span class="p">[</span><span class="s">'Location'</span><span class="p">])</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">status_code</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">headers</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">text</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">headers</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 </code></pre></div></div>
 
 <hr />
@@ -391,29 +394,29 @@ note: POSTing an Observation is just like POSTing a Patient. You just need to ch
 <span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
 
-<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
-    <span class="n">sys</span><span class="p">.</span><span class="nb">exit</span><span class="p">(</span><span class="s">"Usage: python postObservation.py &lt;FHIR Observation resource json file&gt;"</span><span class="p">)</span>
-<span class="n">fhirjsonfile</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-<span class="n">observation</span> <span class="o">=</span> <span class="n">fhirjsonfile</span><span class="p">.</span><span class="n">read_text</span><span class="p">()</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="n">sys</span><span class="o">.</span><span class="nb">exit</span><span class="p">(</span><span class="s">"Usage: python postObservation.py &lt;FHIR Observation resource json file&gt;"</span><span class="p">)</span>
+<span class="n">fhirjsonfile</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">observation</span> <span class="o">=</span> <span class="n">fhirjsonfile</span><span class="o">.</span><span class="n">read_text</span><span class="p">()</span>
 
 <span class="c1"># Bearer token captured in token.txt
 </span><span class="n">tokenfile</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s">'token.txt'</span><span class="p">)</span>
-<span class="n">authstring</span> <span class="o">=</span> <span class="s">'Bearer '</span> <span class="o">+</span> <span class="n">tokenfile</span><span class="p">.</span><span class="n">read_text</span><span class="p">()</span>
+<span class="n">authstring</span> <span class="o">=</span> <span class="s">'Bearer '</span> <span class="o">+</span> <span class="n">tokenfile</span><span class="o">.</span><span class="n">read_text</span><span class="p">()</span>
 <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s">'Authorization'</span><span class="p">:</span> <span class="n">authstring</span><span class="p">,</span>
            <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'application/fhir+json'</span><span class="p">}</span>
 
 
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="s">'https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1/r4/Observation'</span><span class="p">,</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s">'https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1/r4/Observation'</span><span class="p">,</span>
                   <span class="n">data</span><span class="o">=</span><span class="n">observation</span><span class="p">,</span>
                   <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">r</span><span class="p">:</span>
     <span class="c1"># print(json.dumps(r.json(), indent=4))
-</span>    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">headers</span><span class="p">[</span><span class="s">'Location'</span><span class="p">])</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">text</span><span class="p">)</span>
+</span>    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">headers</span><span class="p">[</span><span class="s">'Location'</span><span class="p">])</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">status_code</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">headers</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">text</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">headers</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 </code></pre></div></div>
 
 <hr />
@@ -430,15 +433,15 @@ note: POSTing an Observation is just like POSTing a Patient. You just need to ch
 <span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
 
-<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
-    <span class="n">sys</span><span class="p">.</span><span class="nb">exit</span><span class="p">(</span><span class="s">"Usage: python searchObservationCRID.py &lt;CRID&gt;"</span><span class="p">)</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="n">sys</span><span class="o">.</span><span class="nb">exit</span><span class="p">(</span><span class="s">"Usage: python searchObservationCRID.py &lt;CRID&gt;"</span><span class="p">)</span>
 
 <span class="c1"># Bearer token captured in token.txt
 </span><span class="n">tokenfile</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s">'token.txt'</span><span class="p">)</span>
-<span class="n">authstring</span> <span class="o">=</span> <span class="s">'Bearer '</span> <span class="o">+</span> <span class="n">tokenfile</span><span class="p">.</span><span class="n">read_text</span><span class="p">()</span>
+<span class="n">authstring</span> <span class="o">=</span> <span class="s">'Bearer '</span> <span class="o">+</span> <span class="n">tokenfile</span><span class="o">.</span><span class="n">read_text</span><span class="p">()</span>
 <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s">'Authorization'</span><span class="p">:</span> <span class="n">authstring</span><span class="p">}</span>
 
-<span class="n">identifier</span> <span class="o">=</span> <span class="s">'http://cibmtr.org/identifier/CRID|'</span> <span class="o">+</span> <span class="n">sys</span><span class="p">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">identifier</span> <span class="o">=</span> <span class="s">'http://cibmtr.org/identifier/CRID|'</span> <span class="o">+</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 <span class="n">security</span> <span class="o">=</span> <span class="s">'http://cibmtr.org/codesystem/transplant-center|rc_12002'</span>
 
 <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
@@ -446,13 +449,13 @@ note: POSTing an Observation is just like POSTing a Patient. You just need to ch
     <span class="s">'_security'</span><span class="p">:</span> <span class="n">security</span>
 <span class="p">}</span>
 
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1/r4/Observation'</span><span class="p">,</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://dev-api.nmdp.org/cibmtr-fhir-backend-exttest/v1/r4/Observation'</span><span class="p">,</span>
                  <span class="n">params</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span>
                  <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">r</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">json</span><span class="p">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">(),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">(),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">status_code</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
 </code></pre></div></div>
 
 
@@ -479,7 +482,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package cibmtr-reporting#0.1.5 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 28, 2023 10:36-0500">2023-03-28</span>
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.6 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 5, 2023 10:50-0500">2023-05-05</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

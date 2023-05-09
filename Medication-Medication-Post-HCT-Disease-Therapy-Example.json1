@@ -1,0 +1,118 @@
+{
+  "resourceType" : "Medication",
+  "id" : "Medication-Post-HCT-Disease-Therapy-Example",
+  "meta" : {
+    "profile" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-post-hct-disease-therapy-planned-medication"],
+    "security" : [{
+      "system" : "http://terminology.cibmtr.org/codesystem/transplant-center",
+      "code" : "rc_99999",
+      "display" : "99999 My Transplant Center"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"Medication-Post-HCT-Disease-Therapy-Example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;Medication-Post-HCT-Disease-Therapy-Example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html\">CIBMTR Planned Post-HCT Disease Therapy Medication</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.cibmtr.org/codesystem/transplant-center http://terminology.cibmtr.org/codesystem/transplant-center}\">http://terminology.cibmtr.org/codesystem/transplant-center</span></p></div><p><b>code</b>: blinatumomab <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1597258; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1597260 &quot;blinatumomab Injectable Product&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1597262 &quot;blinatumomab 0.035 MG Injection&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1597267 &quot;blinatumomab 0.035 MG Injection [Blincyto]&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1651249 &quot;blinatumomab 0.035 MG&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1651250 &quot;blinatumomab Injection&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1651252 &quot;blinatumomab 0.035 MG [Blincyto]&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1651253 &quot;blinatumomab Injection [Blincyto]&quot;)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>blinatumomab <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1597258; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1597260 &quot;blinatumomab Injectable Product&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1597262 &quot;blinatumomab 0.035 MG Injection&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1597267 &quot;blinatumomab 0.035 MG Injection [Blincyto]&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1651249 &quot;blinatumomab 0.035 MG&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1651250 &quot;blinatumomab Injection&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1651252 &quot;blinatumomab 0.035 MG [Blincyto]&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1651253 &quot;blinatumomab Injection [Blincyto]&quot;)</span></td><td>0.035 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/0.035 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span></td></tr></table></div>"
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "1597258",
+      "display" : "blinatumomab"
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "1597260",
+      "display" : "blinatumomab Injectable Product"
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "1597262",
+      "display" : "blinatumomab 0.035 MG Injection"
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "1597267",
+      "display" : "blinatumomab 0.035 MG Injection [Blincyto]"
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "1651249",
+      "display" : "blinatumomab 0.035 MG"
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "1651250",
+      "display" : "blinatumomab Injection"
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "1651252",
+      "display" : "blinatumomab 0.035 MG [Blincyto]"
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "1651253",
+      "display" : "blinatumomab Injection [Blincyto]"
+    }],
+    "text" : "blinatumomab"
+  },
+  "ingredient" : [{
+    "itemCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code" : "1597258",
+        "display" : "blinatumomab"
+      },
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code" : "1597260",
+        "display" : "blinatumomab Injectable Product"
+      },
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code" : "1597262",
+        "display" : "blinatumomab 0.035 MG Injection"
+      },
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code" : "1597267",
+        "display" : "blinatumomab 0.035 MG Injection [Blincyto]"
+      },
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code" : "1651249",
+        "display" : "blinatumomab 0.035 MG"
+      },
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code" : "1651250",
+        "display" : "blinatumomab Injection"
+      },
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code" : "1651252",
+        "display" : "blinatumomab 0.035 MG [Blincyto]"
+      },
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code" : "1651253",
+        "display" : "blinatumomab Injection [Blincyto]"
+      }],
+      "text" : "blinatumomab"
+    },
+    "strength" : {
+      "numerator" : {
+        "value" : 0.035,
+        "unit" : "milligram",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      },
+      "denominator" : {
+        "value" : 0.035,
+        "unit" : "milligram",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      }
+    }
+  }]
+}

@@ -11,13 +11,13 @@ publisher:
   name: The Medical College of Wisconsin, Inc. and the National Marrow Donor Program
   url: http://www.cibmtr.org
 contact:
-  - name: Bob Milius
+  - name: Jason Brelsford - Peter Johnson
     telecom:
     - system: email
-      value: bmilius@nmdp.org
+      value: jbrelsf2@nmdp.org
 description: How to report HCT data to CIBMTR
 license: Apache-2.0
-version: 0.1.6
+version: 0.1.7
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 4.0.0
@@ -49,11 +49,13 @@ menu:
     "Lab Observations": Laboratory-Observations.html
     "Medications": Medications.html
     "Bundles": Bundles.html
-    "Form 2450: Post-TED": Form-2450.html
     "Cytogenetics - ISCN": Cytogenetics.html
     "Example Code Snippets": Example-Code.html
     "Appendices": Appendices.html
-  Direct FHIR (STU3): CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf
+    Archive: 
+        "Direct FHIR (STU3)": CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf
+        "Form 2450: Post-TED": Form-2450.html
   Artifact Index: artifacts.html
   Support:
     "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html
+  

@@ -1,7 +1,8 @@
 #!/bin/bash
 pubsource=https://github.com/HL7/fhir-ig-publisher/releases/latest/download/
 publisher_jar=publisher.jar
-dlurl=$pubsource$publisher_jar
+#dlurl=$pubsource$publisher_jar
+dlurl=https://github.com/HL7/fhir-ig-publisher/releases/download/1.5.8/publisher.jar
 
 input_cache_path=$PWD/input-cache/
 

@@ -1,6 +1,6 @@
 ### Direct FHIR Endpoints
 
-#### Test 
+<!--#### Test 
 Used for development of new client software
 
 <table>
@@ -35,7 +35,7 @@ Used for development of new client software
         </tr>
     </tbody>
 </table>
-{:.grid}
+{:.grid}-->
 
 #### Production Test 
 Used to test production client workflows with non-production data

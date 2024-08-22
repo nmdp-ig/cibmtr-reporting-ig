@@ -4,9 +4,11 @@
     "url" : "http://fhir.nmdp.org/ig",
     "server" : "apache",
     "org" : "CIBMTR/NMDP",
-    "layout" : {
-      "id" : "nmdp.fhir.[code]",
-      "canonical": "http://fhir.nmdp.org/ig/[code]"
-    }
-  }
+    "index-template":"index.template"
+},
+  "layout-rules" : [{
+    "npm" : "nmdp.fhir.*",
+    "canonical" : "http://fhir.nmdp.org/ig/{3}",
+    "destination" : "/{3}"
+  }]
 }

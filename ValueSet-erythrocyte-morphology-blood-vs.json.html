@@ -1,91 +1,89 @@
-
-
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>NMDP.FHIR.CIBMTR-REPORTING\Erythrocyte morphology panel - Blood (58408-6) - JSON Representation - FHIR v4.0.1</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Erythrocyte morphology panel - Blood (58408-6) - JSON Representation - CIBMTR Reporting Implementation Guide v0.1.7</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link href="fhir.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="fhir.css"/>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
-    <!-- Project extras -->
-    <link href="assets/css/project.css" rel="stylesheet"/>
-    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
-    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
-  	<link href="assets/css/prism.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/cibmtr.css" rel="stylesheet" />
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/cibmtr.css"/>
 
-    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+    <![endif] -->
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
-    <style type="text/css">h2{--heading-prefix:"15.20"}
-    h3,h4,h5,h6{--heading-prefix:"15.20"}</style>
-    <div id="segment-header" class="segment">  <!-- segment-header -->
-      <div class="container">  <!-- container -->
-        <!-- Placeholder for child template header declarations -->
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"15.24"}
+    h3,h4,h5,h6{--heading-prefix:"15.24"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
 
 <div id="cibmtr-nav">
-  <a id="cibmtr-logo" no-external="true" href="http://www.cibmtr.org">
-    <!-- <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png" /> -->
-    <img height="80" alt="Visit the CIBMTR website"
-      src="assets/images/cibmtr-logo-header-3.png" />
+  <a no-external="true" id="cibmtr-logo" href="http://www.cibmtr.org"><a name="l80">​</a>
+      <!-- <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png" /> -->
+    <img src="assets/images/cibmtr-logo-header-3.png" alt="Visit the CIBMTR website" height="80"/>
   </a>
 </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.6 - Trial Use 1
+            <span style="display:inline-block;">0.1.7 - Trial Use 1
 
 
             </span>
           </p>
         </div>
-      </div> <!-- /container -->
-    </div>  <!-- /segment-header -->
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">  <!-- container -->
-        <!-- HEADER CONTENT -->
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-          <!--status-bar-->
+            <!-- status-bar -->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <!-- menu.xml  -->
+                <!-- menu.xml -->
 
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+<ul class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
@@ -144,36 +142,36 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec </a>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec </a>
       </li>
     </ul>
   </li>
 </ul>
-            </div>  <!-- /.nav-collapse -->
-          </div>  <!-- /.container -->
-        </nav>  <!-- /.navbar -->
-      <!-- /HEADER CONTENT -->
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-navbar -->
-    <!--status-bar-->
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
 
-    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
-      <div class="container">  <!-- container -->
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Erythrocyte morphology panel - Blood (58408-6)</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Erythrocyte morphology panel - Blood (58408-6)</b></li>
 
         </ul>
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-breadcrumb -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">  <!-- segment-content -->
-      <div class="container">  <!-- container -->
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the CIBMTR Reporting Implementation Guide (v0.1.6: Release Draft) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a></p><!--EndReleaseHeader-->
+  <!-- ReleaseHeader --><p id="publish-box">This page is part of the CIBMTR Reporting Implementation Guide (v0.1.7: Release Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
 
 
@@ -220,14 +218,15 @@
 
 
 <h2 id="root">: Erythrocyte morphology panel - Blood (58408-6) - JSON Representation</h2>
-  <table class="colsi">
+
+  <table class="colsd">
     <tr>
 
       <td colspan="2">
         
-          Active
+          Draft
           
-            as of 2023-05-05
+            as of 2024-08-23
           
         
       </td>
@@ -236,28 +235,28 @@
   </table>
 
 
-<p><a href="ValueSet-erythrocyte-morphology-blood-vs.json" no-download="true">Raw json</a> | <a href="ValueSet-erythrocyte-morphology-blood-vs.json" download>Download</a></p>
+<p><a href="ValueSet-erythrocyte-morphology-blood-vs.json" no-download="true">Raw json</a> | <a download="null" href="ValueSet-erythrocyte-morphology-blood-vs.json">Download</a></p>
 
-  <!-- insert intro if present -->
+    <!-- insert intro if present -->
   
 
 
 
-  <pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
+  <pre style="white-space: pre; text-wrap: nowrap;" class="json"><code style="white-space: pre; text-wrap: nowrap;" class="language-json">
 {
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "erythrocyte-morphology-blood-vs",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://loinc.org\&quot;&gt;&lt;code&gt;http://loinc.org&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/7789-1/\&quot;&gt;7789-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acanthocytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/702-1/\&quot;&gt;702-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anisocytosis [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/703-9/\&quot;&gt;703-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Basophilic stippling [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/10371-3/\&quot;&gt;10371-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bite cells [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/10372-1/\&quot;&gt;10372-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blister cells [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/7790-9/\&quot;&gt;7790-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Burr cells [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/11280-5/\&quot;&gt;11280-5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cabot rings [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/7791-7/\&quot;&gt;7791-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dacrocytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/11274-8/\&quot;&gt;11274-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Elliptocytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/49121-7/\&quot;&gt;49121-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Erythrocyte inclusion bodies [Identifier] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/10379-6/\&quot;&gt;10379-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Erythrocytes.dual population [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/10373-9/\&quot;&gt;10373-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fragments [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/716-1/\&quot;&gt;716-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Heinz bodies [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/10374-7/\&quot;&gt;10374-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Helmet cells [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/7793-3/\&quot;&gt;7793-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Howell-Jolly bodies [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/33249-4/\&quot;&gt;33249-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hyperchromia [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/728-6/\&quot;&gt;728-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hypochromia [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/10375-4/\&quot;&gt;10375-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irregularly contracted cells [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/738-5/\&quot;&gt;738-5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Macrocytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/10376-2/\&quot;&gt;10376-2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oval macrocytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/741-9/\&quot;&gt;741-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Microcytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/33364-1/\&quot;&gt;33364-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Normochromic [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/33363-3/\&quot;&gt;33363-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Normocytic [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/7794-1/\&quot;&gt;7794-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Normocytic/Normochromic polychromasia [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/774-0/\&quot;&gt;774-0&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ovalocytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/7795-8/\&quot;&gt;7795-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pappenheimer bodies [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/10377-0/\&quot;&gt;10377-0&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pencil cells [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/779-9/\&quot;&gt;779-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Poikilocytosis [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/10378-8/\&quot;&gt;10378-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polychromasia [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/50260-9/\&quot;&gt;50260-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Prekeratocytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/33044-9/\&quot;&gt;33044-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pyknosis [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/7797-4/\&quot;&gt;7797-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rouleaux [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/800-3/\&quot;&gt;800-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Schistocytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/801-1/\&quot;&gt;801-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sickle cells [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/802-9/\&quot;&gt;802-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spherocytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/10380-4/\&quot;&gt;10380-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stomatocytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/10381-2/\&quot;&gt;10381-2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Target cells [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/6742-1/\&quot;&gt;6742-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Erythrocyte morphology finding [Identifier] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p class=\"res-header-id\"&gt;&lt;b&gt;Generated Narrative: ValueSet erythrocyte-morphology-blood-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=\"erythrocyte-morphology-blood-vs\"&gt; &lt;/a&gt;&lt;a name=\"hcerythrocyte-morphology-blood-vs\"&gt; &lt;/a&gt;&lt;a name=\"erythrocyte-morphology-blood-vs-en-US\"&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\"http://loinc.org\"&gt;&lt;code&gt;http://loinc.org&lt;/code&gt;&lt;/a&gt;&lt;table class=\"none\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/7789-1/\"&gt;7789-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acanthocytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/702-1/\"&gt;702-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anisocytosis [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/703-9/\"&gt;703-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Basophilic stippling [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/10371-3/\"&gt;10371-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bite cells [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/10372-1/\"&gt;10372-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blister cells [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/7790-9/\"&gt;7790-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Burr cells [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/11280-5/\"&gt;11280-5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cabot rings [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/7791-7/\"&gt;7791-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dacrocytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/11274-8/\"&gt;11274-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Elliptocytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/49121-7/\"&gt;49121-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Erythrocyte inclusion bodies [Identifier] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/10379-6/\"&gt;10379-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Erythrocytes.dual population [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/10373-9/\"&gt;10373-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fragments [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/716-1/\"&gt;716-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Heinz bodies [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/10374-7/\"&gt;10374-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Helmet cells [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/7793-3/\"&gt;7793-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Howell-Jolly bodies [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/33249-4/\"&gt;33249-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hyperchromia [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/728-6/\"&gt;728-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hypochromia [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/10375-4/\"&gt;10375-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irregularly contracted cells [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/738-5/\"&gt;738-5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Macrocytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/10376-2/\"&gt;10376-2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oval macrocytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/741-9/\"&gt;741-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Microcytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/33364-1/\"&gt;33364-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Normochromic [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/33363-3/\"&gt;33363-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Normocytic [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/7794-1/\"&gt;7794-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Normocytic/Normochromic polychromasia [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/774-0/\"&gt;774-0&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ovalocytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/7795-8/\"&gt;7795-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pappenheimer bodies [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/10377-0/\"&gt;10377-0&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pencil cells [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/779-9/\"&gt;779-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Poikilocytosis [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/10378-8/\"&gt;10378-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polychromasia [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/50260-9/\"&gt;50260-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Prekeratocytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/33044-9/\"&gt;33044-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pyknosis [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/7797-4/\"&gt;7797-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rouleaux [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/800-3/\"&gt;800-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Schistocytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/801-1/\"&gt;801-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sickle cells [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/802-9/\"&gt;802-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spherocytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/10380-4/\"&gt;10380-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stomatocytes [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/10381-2/\"&gt;10381-2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Target cells [Presence] in Blood by Light microscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"https://loinc.org/6742-1/\"&gt;6742-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Erythrocyte morphology finding [Identifier] in Blood&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/erythrocyte-morphology-blood-vs",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.6",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.7",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "ErythrocyteMorphologyBloodVS",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "Erythrocyte morphology panel - Blood (58408-6)",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "draft",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : true,
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2023-05-05T10:50:04-05:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2024-08-23T10:17:11-05:00",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -444,19 +443,19 @@
 }</code></pre>
 
 
-  <!-- insert notes if present -->
+    <!-- insert notes if present -->
   
 
 
 
 </div>
-</div>  <!-- /inner-wrapper -->
-</div>  <!-- /row -->
-</div>  <!-- /container -->
-</div>  <!-- /segment-content -->
+</div>    <!-- /inner-wrapper -->
+</div>    <!-- /row -->
+</div>    <!-- /container -->
+</div>    <!-- /segment-content -->
 
-<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+<script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -465,12 +464,12 @@ if(window.location.hash != "") {
 }
 });
 </script>
-<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-<div class="container">  <!-- container -->
+<div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+<div class="container">    <!-- container -->
 <div class="inner-wrapper">
   <p>
-    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.6 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 5, 2023 10:50-0500">2023-05-05</span>
+    IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.7 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 23, 2024 10:17-0500">2024-08-23</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -479,33 +478,32 @@ if(window.location.hash != "") {
                 
 <div id="cibmtr-footer">
     <p>
-    <br/>HL7&#174;, and FHIR&#174; are the registered trademarks of Health Level Seven International 
+    <br/>HL7&reg;, and FHIR&reg; are the registered trademarks of Health Level Seven International 
     and their use of these trademarks does not constitute an endorsement by HL7.
     </p>
 </div>
     </span>
   </p>
-</div>  <!-- /inner-wrapper -->
-</div>  <!-- /container -->
-</div>  <!-- /segment-footer -->
+</div>    <!-- /inner-wrapper -->
+</div>    <!-- /container -->
+</div>    <!-- /segment-footer -->
 
-<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-<div class="container">  <!-- container -->
-</div>  <!-- /container -->
-</div>  <!-- /segment-post-footer -->
+<div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+<div class="container">    <!-- container -->
+</div>    <!-- /container -->
+</div>    <!-- /segment-post-footer -->
 
-<!-- JS and analytics only. -->
-<!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-<script type="text/javascript" src="assets/js/respond.min.js"> </script>
-<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+<script src="assets/js/respond.min.js" type="text/javascript"> </script>
+<script src="assets/js/anchor.min.js" type="text/javascript"> </script>
 <script>anchors.options.visible = 'hover'
 anchors.add()</script>
 
-<!-- Analytics Below
+  <!-- Analytics Below
 ================================================== -->
 </body>
 </html>
-

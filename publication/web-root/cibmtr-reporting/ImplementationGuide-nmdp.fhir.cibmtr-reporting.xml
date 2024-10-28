@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="nmdp.fhir.cibmtr-reporting"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CIBMTRReporting</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/nmdp.fhir.cibmtr-reporting</pre><div><p>How to report HCT data to CIBMTR</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide nmdp.fhir.cibmtr-reporting</b></p><a name="nmdp.fhir.cibmtr-reporting"> </a><a name="hcnmdp.fhir.cibmtr-reporting"> </a><a name="nmdp.fhir.cibmtr-reporting-en-US"> </a><h2>CIBMTRReporting</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/nmdp.fhir.cibmtr-reporting</pre><div><p>How to report HCT data to CIBMTR</p>
 </div></div>
   </text>
   <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/nmdp.fhir.cibmtr-reporting"/>
-  <version value="0.1.6"/>
+  <version value="0.1.7"/>
   <name value="CIBMTRReporting"/>
   <title value="CIBMTR Reporting Implementation Guide"/>
   <status value="draft"/>
-  <date value="2023-05-05T10:50:04-05:00"/>
+  <date value="2024-08-27T12:23:18-05:00"/>
   <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
   <contact>
     <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -37,7 +37,15 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="5.0.0"/>
+    <version value="6.0.2"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.1.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_us_core">
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
@@ -233,6 +241,14 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueString value="active-tables"/>
       </extension>
       <extension url="value">
@@ -272,7 +288,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#current"/>
+      <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -452,6 +468,14 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueCode value="active-tables"/>
       </extension>
       <extension url="value">
@@ -492,46 +516,123 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cibmtr-cytogenetics"/>
+        <reference value="Observation/ABOBloodGroupObservationLOINC"/>
       </reference>
-      <name value="CIBMTR Cytogenetics Profile"/>
-      <description value="CIBMTR Cytogenetics Profile to capture ISCN"/>
+      <name value="ABOBloodGroupObservationLOINC"/>
+      <description value="ABO group [Type] in Blood (883-9) with LOINC answer"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ABOBloodGroupObservationSNOMED"/>
+      </reference>
+      <name value="ABOBloodGroupObservationSNOMED"/>
+      <description value="ABO group [Type] in Blood (883-9) with SNOMED answer"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ABORhObservationLOINC"/>
+      </reference>
+      <name value="ABORhObservationLOINC"/>
+      <description value="ABO and Rh group [Type] in Blood (882-1) with LOINC answer"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ABORhObservationSNOMED"/>
+      </reference>
+      <name value="ABORhObservationSNOMED"/>
+      <description value="ABO and Rh group [Type] in Blood (882-1) with SNOMED CT answer"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/AlbuminObservation"/>
+      </reference>
+      <name value="AlbuminObservation"/>
+      <description value="Albumin [Mass/volume] in Serum or Plasma"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/auto-differential-blood-vs"/>
+      </reference>
+      <name value="Auto Differential panel - Blood (57023-4)"/>
+      <description value="Auto Differential panel - Blood (57023-4)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cibmtr-obs-priority-variables"/>
+        <reference value="Observation/BasophilsObservation"/>
       </reference>
-      <name value="CIBMTR Observation Laboratory Results: Priority Variables"/>
-      <description value="CIBMTR Observation Laboratory Results: Priority Variables"/>
+      <name value="BasophilsObservation"/>
+      <description value="Basophils/100 leukocytes in Blood"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cbc-blood-automated-vs"/>
+      </reference>
+      <name value="CBC panel - Blood by Automated count (58410-2)"/>
+      <description value="CBC panel - Blood by Automated count (58410-2)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cibmtr-observation-lab"/>
+        <reference value="ValueSet/cbc-w-auto-differential-blood-vs"/>
       </reference>
-      <name value="CIBMTR Observation Laboratory Results Profile (us-core)"/>
-      <description value="CIBMTR Observation Laboratory Results Profile (us-core)"/>
+      <name value="CBC W Auto Differential panel - Blood (57021-8)"/>
+      <description value="CBC W Auto Differential panel - Blood (57021-8)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cibmtr-patient"/>
+        <reference value="ValueSet/cbc-w-differential-unspecified-blood-vs"/>
       </reference>
-      <name value="CIBMTR Patient Profile (us-core)"/>
-      <description value="CIBMTR Patient Profile for CRID assignment (us-core)"/>
+      <name value="CBC W Differential panel, method unspecified - Blood (69742-5)"/>
+      <description value="CBC W Differential panel, method unspecified - Blood (69742-5)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cbc-w-ordered-manual-differential-blood-vs"/>
+      </reference>
+      <name value="CBC W Ordered Manual Differential panel - Blood (57782-5)"/>
+      <description value="CBC W Ordered Manual Differential panel - Blood (57782-5)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -543,6 +644,17 @@
       </reference>
       <name value="CIBMTR Additional Drugs in Peri-Transplant Period"/>
       <description value="CIBMTR Additional Drugs Given in the Peri-Transplant Period. Drugs may be given during the peri-transplant period to prevent transplant-related complications, such as liver injuries or to facilitate engraftment."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cibmtr-cytogenetics"/>
+      </reference>
+      <name value="CIBMTR Cytogenetics Profile"/>
+      <description value="CIBMTR Cytogenetics Profile to capture ISCN"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -605,6 +717,39 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/cibmtr-observation-lab"/>
+      </reference>
+      <name value="CIBMTR Observation Laboratory Results Profile (us-core)"/>
+      <description value="CIBMTR Observation Laboratory Results Profile (us-core)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cibmtr-obs-priority-variables"/>
+      </reference>
+      <name value="CIBMTR Observation Laboratory Results: Priority Variables"/>
+      <description value="CIBMTR Observation Laboratory Results: Priority Variables"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cibmtr-patient"/>
+      </reference>
+      <name value="CIBMTR Patient Profile (us-core)"/>
+      <description value="CIBMTR Patient Profile for CRID assignment (us-core)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/cibmtr-post-hct-disease-therapy-planned-medication"/>
       </reference>
       <name value="CIBMTR Planned Post-HCT Disease Therapy Medication"/>
@@ -638,10 +783,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/auto-differential-blood-vs"/>
+        <reference value="ValueSet/cibmtr-priority-variables-2021"/>
       </reference>
-      <name value="Auto Differential panel - Blood (57023-4)"/>
-      <description value="Auto Differential panel - Blood (57023-4)"/>
+      <name value="CIBMTR Priority Variables Value Set (FY21)"/>
+      <description value="Priority Variables for CIBMTR (FY21)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -649,10 +794,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/cbc-blood-automated-vs"/>
+        <reference value="ValueSet/cibmtr-priority-variables-2022"/>
       </reference>
-      <name value="CBC panel - Blood by Automated count (58410-2)"/>
-      <description value="CBC panel - Blood by Automated count (58410-2)"/>
+      <name value="CIBMTR Priority Variables Value Set (FY22)"/>
+      <description value="Priority Variables for CIBMTR (FY22)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -660,33 +805,88 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/cbc-w-auto-differential-blood-vs"/>
+        <reference value="ValueSet/cibmtr-priority-variables-epic-2021"/>
       </reference>
-      <name value="CBC W Auto Differential panel - Blood (57021-8)"/>
-      <description value="CBC W Auto Differential panel - Blood (57021-8)"/>
+      <name value="CIBMTR Priority Variables Value Set for Epic App (FY21)"/>
+      <description value="Priority Variables for Epic CIBMTR Reporting App (FY21)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="ValueSet/cbc-w-differential-unspecified-blood-vs"/>
+        <reference value="Observation/CMVDNAViralLoadCopiesmL"/>
       </reference>
-      <name value="CBC W Differential panel, method unspecified - Blood (69742-5)"/>
-      <description value="CBC W Differential panel, method unspecified - Blood (69742-5)"/>
-      <exampleBoolean value="false"/>
+      <name value="CMVDNAViralLoadCopiesmL"/>
+      <description value="Cytomegalovirus DNA [#/volume] (viral load) in Bronchoalveolar lavage by NAA with probe detection (49349-4)"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="ValueSet/cbc-w-ordered-manual-differential-blood-vs"/>
+        <reference value="Observation/CMVDNAViralLoadIUmL"/>
       </reference>
-      <name value="CBC W Ordered Manual Differential panel - Blood (57782-5)"/>
-      <description value="CBC W Ordered Manual Differential panel - Blood (57782-5)"/>
-      <exampleBoolean value="false"/>
+      <name value="CMVDNAViralLoadIUmL"/>
+      <description value="Cytomegalovirus DNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection (72493-0)"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/CMVIgAbPresenceSNOMED"/>
+      </reference>
+      <name value="CMVIgAbPresenceSNOMED"/>
+      <description value="Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay (13949-3) with SNOMED CT answer"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/CMVIgGAbPresenceLOINC"/>
+      </reference>
+      <name value="CMVIgGAbPresenceLOINC"/>
+      <description value="Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay (13949-3) with LOINC answer"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/CMVIgMAbPresenceLOINC"/>
+      </reference>
+      <name value="CMVIgMAbPresenceLOINC"/>
+      <description value="Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunoassay (24119-0) with LOINC answer"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/CMVIgMAbPresenceSNOMED"/>
+      </reference>
+      <name value="CMVIgMAbPresenceSNOMED"/>
+      <description value="Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunoassay (24119-0) with SNOMED answer"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Cytogenetics-Example-1"/>
+      </reference>
+      <name value="Cytogenetics-Example-1"/>
+      <description value="Example of ISCN report"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-cytogenetics"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -698,6 +898,28 @@
       <name value="Differential panel, method unspecified - Blood (69738-3)"/>
       <description value="Differential panel, method unspecified - Blood (69738-3)"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/hematopoietic-disorder-vs"/>
+      </reference>
+      <name value="Disorders of hematopoietic structure"/>
+      <description value="SNOMED: Disorders of hematopoietic structure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/EosinophilsObservation"/>
+      </reference>
+      <name value="EosinophilsObservation"/>
+      <description value="Eosinophils observation, #/volume in Blood"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -745,14 +967,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="ValueSet/hematopoietic-disorder-vs"/>
+        <reference value="Observation/HemoglobinObservation"/>
       </reference>
-      <name value="Disorders of hematopoietic structure"/>
-      <description value="SNOMED: Disorders of hematopoietic structure"/>
-      <exampleBoolean value="false"/>
+      <name value="HemoglobinObservation"/>
+      <description value="Hemoglobin [Mass/volume] in Blood"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -767,6 +989,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/LeukocytesObservation"/>
+      </reference>
+      <name value="LeukocytesObservation"/>
+      <description value="Leukocytes observation"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -775,6 +1008,215 @@
       <name value="Manual Differential panel - Blood (24318-8)"/>
       <description value="Manual Differential panel - Blood (24318-8)"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/Medication-Cyclophosphamide-Example"/>
+      </reference>
+      <name value="Medication-Cyclophosphamide-Example"/>
+      <description value="Medication - Cyclophosphamide, 1 G injection"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/Medication-Etoposide-Example"/>
+      </reference>
+      <name value="Medication-Etoposide-Example"/>
+      <description value="Medication - Etoposide (Vepesid) chemo IBPB, 20MG/ML"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/Medication-GVHD-Prophylaxis-Example"/>
+      </reference>
+      <name value="Medication-GVHD-Prophylaxis-Example"/>
+      <description value="Medication - GVHD Prophylaxis Example - Cyclosporine"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-gvhd-prophylaxis-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/Medication-Mobilizing-Agent-Example"/>
+      </reference>
+      <name value="Medication-Mobilizing-Agent-Example"/>
+      <description value="Medication - Mobilizing Agents Example - Pegfilgrastim"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-mobilizing-agent-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/Medication-Peri-Transplant-Example"/>
+      </reference>
+      <name value="Medication-Peri-Transplant-Example"/>
+      <description value="Medication - Additional Peri-Transplant Example - Anti-Thymocyte gGobulin"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-additional-peri-transplant-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/Medication-Post-HCT-Disease-Therapy-Example"/>
+      </reference>
+      <name value="Medication-Post-HCT-Disease-Therapy-Example"/>
+      <description value="Medication - Post-HCT Disease Therapy Planned Example - Blinatumomab"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-post-hct-disease-therapy-planned-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/Medication-Prep-Regimen-Example"/>
+      </reference>
+      <name value="Medication-Prep-Regimen-Example"/>
+      <description value="Medication - Pre-HCT Preparatoive Regimen (Conditioning) Example - Pegfilgrastim"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prep-regimen-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/Medication-PriorExposure-Example"/>
+      </reference>
+      <name value="Medication-PriorExposure-Example"/>
+      <description value="Medication - Prior Exposure: Potential Study Eligibility Example - Mogamulizumab"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prior-exposure-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/MedicationAdministration-Example1"/>
+      </reference>
+      <name value="MedicationAdministration-Example1"/>
+      <description value="Medication - Medication Administration example using medicationReference - Etoposide"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/MedicationAdministration-Example2"/>
+      </reference>
+      <name value="MedicationAdministration-Example2"/>
+      <description value="Medication - Medication Administration example using medicationCodeableConcept - Etoposide"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/MedicationRequest-Etoposide-Example"/>
+      </reference>
+      <name value="MedicationRequest-Etoposide-Example"/>
+      <description value="Medication Request for Etoposide (Vepesid) chemo IBPB, 20MG/ML"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MetamyelocytesObservation"/>
+      </reference>
+      <name value="MetamyelocytesObservation"/>
+      <description value="Metamyelocytes [Presence] in Blood"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/NeutrophilsObservation"/>
+      </reference>
+      <name value="NeutrophilsObservation"/>
+      <description value="Neutrophils [#/volume] in Cord blood"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PatientExample1"/>
+      </reference>
+      <name value="PatientExample1"/>
+      <description value="Patient with CIBMTR CRID"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PatientExample2"/>
+      </reference>
+      <name value="PatientExample2"/>
+      <description value="example using CIBMTR center number"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PatientExample3"/>
+      </reference>
+      <name value="PatientExample3"/>
+      <description value="Patient with MRN and CRID, Race=White, Ethnicity=Unknown"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PatientExample4"/>
+      </reference>
+      <name value="PatientExample4"/>
+      <description value="Patient with CRID and MRN, Race=Black or African American, Ethnicity=Unknown"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PatientExample5"/>
+      </reference>
+      <name value="PatientExample5"/>
+      <description value="Patient with CRID &amp; MRN, Race=Mixed, Ethnicity=Not Hispanic or Latino"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PatientExample6"/>
+      </reference>
+      <name value="PatientExample6"/>
+      <description value="Patient with CIBMTR CRID"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -796,39 +1238,6 @@
       </reference>
       <name value="Presence Answer List"/>
       <description value="Permissible values for presence"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/cibmtr-priority-variables-2021"/>
-      </reference>
-      <name value="CIBMTR Priority Variables Value Set (FY21)"/>
-      <description value="Priority Variables for CIBMTR (FY21)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/cibmtr-priority-variables-2022"/>
-      </reference>
-      <name value="CIBMTR Priority Variables Value Set (FY22)"/>
-      <description value="Priority Variables for CIBMTR (FY22)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/cibmtr-priority-variables-epic-2021"/>
-      </reference>
-      <name value="CIBMTR Priority Variables Value Set for Epic App (FY21)"/>
-      <description value="Priority Variables for Epic CIBMTR Reporting App (FY21)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1078,17 +1487,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/snomed-myelodysplastic-diseases-vs"/>
-      </reference>
-      <name value="SNOMED Myelodysplastic Diseases"/>
-      <description value="The myelodysplastic syndromes (MDS) are a group of clonal hematopoietic stem cell diseases characterized by cytopenia(s), dysplasia (abnormal growth or development leading to an alteration in size, shape, and organization of the cell) in one or more of the major myeloid cell lines (WBC, RBC, and/or platelets), ineffective hematopoiesis, and an increased risk of developing acute myelogenous leukemia (AML). MDS occurs primarily in older adults, with a median age of 70 years. The majority of recipients present with symptoms related to cytopenias. Most recipients present with anemia requiring RBC transfusions."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/smear-morphology-blood-vs"/>
       </reference>
       <name value="Smear morphology panel - Blood (34994-4)"/>
@@ -1097,388 +1495,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="Observation/ABOBloodGroupObservationLOINC"/>
+        <reference value="ValueSet/snomed-myelodysplastic-diseases-vs"/>
       </reference>
-      <name value="ABOBloodGroupObservationLOINC"/>
-      <description value="ABO group [Type] in Blood (883-9) with LOINC answer"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ABOBloodGroupObservationSNOMED"/>
-      </reference>
-      <name value="ABOBloodGroupObservationSNOMED"/>
-      <description value="ABO group [Type] in Blood (883-9) with SNOMED answer"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ABORhObservationLOINC"/>
-      </reference>
-      <name value="ABORhObservationLOINC"/>
-      <description value="ABO and Rh group [Type] in Blood (882-1) with LOINC answer"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ABORhObservationSNOMED"/>
-      </reference>
-      <name value="ABORhObservationSNOMED"/>
-      <description value="ABO and Rh group [Type] in Blood (882-1) with SNOMED CT answer"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/AlbuminObservation"/>
-      </reference>
-      <name value="AlbuminObservation"/>
-      <description value="Albumin [Mass/volume] in Serum or Plasma"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/BasophilsObservation"/>
-      </reference>
-      <name value="BasophilsObservation"/>
-      <description value="Basophils/100 leukocytes in Blood"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/CMVDNAViralLoadCopiesmL"/>
-      </reference>
-      <name value="CMVDNAViralLoadCopiesmL"/>
-      <description value="Cytomegalovirus DNA [#/volume] (viral load) in Bronchoalveolar lavage by NAA with probe detection (49349-4)"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/CMVDNAViralLoadIUmL"/>
-      </reference>
-      <name value="CMVDNAViralLoadIUmL"/>
-      <description value="Cytomegalovirus DNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection (72493-0)"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/CMVIgAbPresenceSNOMED"/>
-      </reference>
-      <name value="CMVIgAbPresenceSNOMED"/>
-      <description value="Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay (13949-3) with SNOMED CT answer"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/CMVIgGAbPresenceLOINC"/>
-      </reference>
-      <name value="CMVIgGAbPresenceLOINC"/>
-      <description value="Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay (13949-3) with LOINC answer"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/CMVIgMAbPresenceLOINC"/>
-      </reference>
-      <name value="CMVIgMAbPresenceLOINC"/>
-      <description value="Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunoassay (24119-0) with LOINC answer"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/CMVIgMAbPresenceSNOMED"/>
-      </reference>
-      <name value="CMVIgMAbPresenceSNOMED"/>
-      <description value="Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunoassay (24119-0) with SNOMED answer"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Cytogenetics-Example-1"/>
-      </reference>
-      <name value="Cytogenetics-Example-1"/>
-      <description value="Example of ISCN report"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-cytogenetics"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/EosinophilsObservation"/>
-      </reference>
-      <name value="EosinophilsObservation"/>
-      <description value="Eosinophils observation, #/volume in Blood"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/HemoglobinObservation"/>
-      </reference>
-      <name value="HemoglobinObservation"/>
-      <description value="Hemoglobin [Mass/volume] in Blood"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/LeukocytesObservation"/>
-      </reference>
-      <name value="LeukocytesObservation"/>
-      <description value="Leukocytes observation"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Medication"/>
-      </extension>
-      <reference>
-        <reference value="Medication/Medication-Cyclophosphamide-Example"/>
-      </reference>
-      <name value="Medication-Cyclophosphamide-Example"/>
-      <description value="Medication - Cyclophosphamide, 1 G injection"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Medication"/>
-      </extension>
-      <reference>
-        <reference value="Medication/Medication-Etoposide-Example"/>
-      </reference>
-      <name value="Medication-Etoposide-Example"/>
-      <description value="Medication - Etoposide (Vepesid) chemo IBPB, 20MG/ML"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Medication"/>
-      </extension>
-      <reference>
-        <reference value="Medication/Medication-GVHD-Prophylaxis-Example"/>
-      </reference>
-      <name value="Medication-GVHD-Prophylaxis-Example"/>
-      <description value="Medication - GVHD Prophylaxis Example - Cyclosporine"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-gvhd-prophylaxis-medication"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Medication"/>
-      </extension>
-      <reference>
-        <reference value="Medication/Medication-Mobilizing-Agent-Example"/>
-      </reference>
-      <name value="Medication-Mobilizing-Agent-Example"/>
-      <description value="Medication - Mobilizing Agents Example - Pegfilgrastim"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-mobilizing-agent-medication"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Medication"/>
-      </extension>
-      <reference>
-        <reference value="Medication/Medication-Peri-Transplant-Example"/>
-      </reference>
-      <name value="Medication-Peri-Transplant-Example"/>
-      <description value="Medication - Additional Peri-Transplant Example - Anti-Thymocyte gGobulin"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-additional-peri-transplant-medication"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Medication"/>
-      </extension>
-      <reference>
-        <reference value="Medication/Medication-Post-HCT-Disease-Therapy-Example"/>
-      </reference>
-      <name value="Medication-Post-HCT-Disease-Therapy-Example"/>
-      <description value="Medication - Post-HCT Disease Therapy Planned Example - Blinatumomab"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-post-hct-disease-therapy-planned-medication"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Medication"/>
-      </extension>
-      <reference>
-        <reference value="Medication/Medication-Prep-Regimen-Example"/>
-      </reference>
-      <name value="Medication-Prep-Regimen-Example"/>
-      <description value="Medication - Pre-HCT Preparatoive Regimen (Conditioning) Example - Pegfilgrastim"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prep-regimen-medication"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Medication"/>
-      </extension>
-      <reference>
-        <reference value="Medication/Medication-PriorExposure-Example"/>
-      </reference>
-      <name value="Medication-PriorExposure-Example"/>
-      <description value="Medication - Prior Exposure: Potential Study Eligibility Example - Mogamulizumab"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prior-exposure-medication"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationAdministration"/>
-      </extension>
-      <reference>
-        <reference value="MedicationAdministration/MedicationAdministration-Example1"/>
-      </reference>
-      <name value="MedicationAdministration-Example1"/>
-      <description value="Medication - Medication Administration example using medicationReference - Etoposide"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationAdministration"/>
-      </extension>
-      <reference>
-        <reference value="MedicationAdministration/MedicationAdministration-Example2"/>
-      </reference>
-      <name value="MedicationAdministration-Example2"/>
-      <description value="Medication - Medication Administration example using medicationCodeableConcept - Etoposide"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationRequest"/>
-      </extension>
-      <reference>
-        <reference value="MedicationRequest/MedicationRequest-Etoposide-Example"/>
-      </reference>
-      <name value="MedicationRequest-Etoposide-Example"/>
-      <description value="Medication Request for Etoposide (Vepesid) chemo IBPB, 20MG/ML"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-request"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/MetamyelocytesObservation"/>
-      </reference>
-      <name value="MetamyelocytesObservation"/>
-      <description value="Metamyelocytes [Presence] in Blood"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/NeutrophilsObservation"/>
-      </reference>
-      <name value="NeutrophilsObservation"/>
-      <description value="Neutrophils [#/volume] in Cord blood"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/PatientExample1"/>
-      </reference>
-      <name value="PatientExample1"/>
-      <description value="Patient with CIBMTR CRID"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/PatientExample2"/>
-      </reference>
-      <name value="PatientExample2"/>
-      <description value="example using CIBMTR center number"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/PatientExample3"/>
-      </reference>
-      <name value="PatientExample3"/>
-      <description value="Patient with MRN and CRID, Race=White, Ethnicity=Unknown"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/PatientExample4"/>
-      </reference>
-      <name value="PatientExample4"/>
-      <description value="Patient with CRID and MRN, Race=Black or African American, Ethnicity=Unknown"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/PatientExample5"/>
-      </reference>
-      <name value="PatientExample5"/>
-      <description value="Patient with CRID &amp; MRN, Race=Mixed, Ethnicity=Not Hispanic or Latino"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/PatientExample6"/>
-      </reference>
-      <name value="PatientExample6"/>
-      <description value="Patient with CIBMTR CRID"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
+      <name value="SNOMED Myelodysplastic Diseases"/>
+      <description value="The myelodysplastic syndromes (MDS) are a group of clonal hematopoietic stem cell diseases characterized by cytopenia(s), dysplasia (abnormal growth or development leading to an alteration in size, shape, and organization of the cell) in one or more of the major myeloid cell lines (WBC, RBC, and/or platelets), ineffective hematopoiesis, and an increased risk of developing acute myelogenous leukemia (AML). MDS occurs primarily in older adults, with a median age of 70 years. The majority of recipients present with symptoms related to cytopenias. Most recipients present with anemia requiring RBC transfusions."/>
+      <exampleBoolean value="false"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

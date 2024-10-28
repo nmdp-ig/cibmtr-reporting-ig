@@ -9,15 +9,15 @@
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "nmdp.fhir.cibmtr-reporting"] ; # 
   fhir:text [
-     fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CIBMTRReporting</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/nmdp.fhir.cibmtr-reporting</pre><div><p>How to report HCT data to CIBMTR</p>\n</div></div>"
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide nmdp.fhir.cibmtr-reporting</b></p><a name=\"nmdp.fhir.cibmtr-reporting\"> </a><a name=\"hcnmdp.fhir.cibmtr-reporting\"> </a><a name=\"nmdp.fhir.cibmtr-reporting-en-US\"> </a><h2>CIBMTRReporting</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/nmdp.fhir.cibmtr-reporting</pre><div><p>How to report HCT data to CIBMTR</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/nmdp.fhir.cibmtr-reporting"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:version [ fhir:v "0.1.7"] ; # 
   fhir:name [ fhir:v "CIBMTRReporting"] ; # 
   fhir:title [ fhir:v "CIBMTR Reporting Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-05-05T10:50:04-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-08-27T12:23:18-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ] ;
@@ -47,7 +47,19 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "5.0.0" ]
+     fhir:version [ fhir:v "6.0.2" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "5.1.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_us_core" ] ;
      fhir:uri [
@@ -275,6 +287,15 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "active-tables" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
@@ -319,7 +340,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
@@ -521,6 +542,15 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "active-tables" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
@@ -565,666 +595,6 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] ) ;
      fhir:resource ( [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-cytogenetics> ;
-         fhir:reference [ fhir:v "StructureDefinition/cibmtr-cytogenetics" ]
-       ] ;
-       fhir:name [ fhir:v "CIBMTR Cytogenetics Profile" ] ;
-       fhir:description [ fhir:v "CIBMTR Cytogenetics Profile to capture ISCN" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables> ;
-         fhir:reference [ fhir:v "StructureDefinition/cibmtr-obs-priority-variables" ]
-       ] ;
-       fhir:name [ fhir:v "CIBMTR Observation Laboratory Results: Priority Variables" ] ;
-       fhir:description [ fhir:v "CIBMTR Observation Laboratory Results: Priority Variables" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab> ;
-         fhir:reference [ fhir:v "StructureDefinition/cibmtr-observation-lab" ]
-       ] ;
-       fhir:name [ fhir:v "CIBMTR Observation Laboratory Results Profile (us-core)" ] ;
-       fhir:description [ fhir:v "CIBMTR Observation Laboratory Results Profile (us-core)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient> ;
-         fhir:reference [ fhir:v "StructureDefinition/cibmtr-patient" ]
-       ] ;
-       fhir:name [ fhir:v "CIBMTR Patient Profile (us-core)" ] ;
-       fhir:description [ fhir:v "CIBMTR Patient Profile for CRID assignment (us-core)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-additional-peri-transplant-medication> ;
-         fhir:reference [ fhir:v "StructureDefinition/cibmtr-additional-peri-transplant-medication" ]
-       ] ;
-       fhir:name [ fhir:v "CIBMTR Additional Drugs in Peri-Transplant Period" ] ;
-       fhir:description [ fhir:v "CIBMTR Additional Drugs Given in the Peri-Transplant Period. Drugs may be given during the peri-transplant period to prevent transplant-related complications, such as liver injuries or to facilitate engraftment." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-gvhd-prophylaxis-medication> ;
-         fhir:reference [ fhir:v "StructureDefinition/cibmtr-gvhd-prophylaxis-medication" ]
-       ] ;
-       fhir:name [ fhir:v "CIBMTR GVHD Prophylaxis Medication" ] ;
-       fhir:description [ fhir:v "CIBMTR GVHD Prophylaxis Medication" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication> ;
-         fhir:reference [ fhir:v "StructureDefinition/cibmtr-medication" ]
-       ] ;
-       fhir:name [ fhir:v "CIBMTR Medication (us-core)" ] ;
-       fhir:description [ fhir:v "CIBMTR Medication (us-core)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration> ;
-         fhir:reference [ fhir:v "StructureDefinition/cibmtr-medication-administration" ]
-       ] ;
-       fhir:name [ fhir:v "CIBMTR Medication Administration (mcode)" ] ;
-       fhir:description [ fhir:v "CIBMTR Medication Administration (mcode)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-request> ;
-         fhir:reference [ fhir:v "StructureDefinition/cibmtr-medication-request" ]
-       ] ;
-       fhir:name [ fhir:v "CIBMTR Medication Request (mcode)" ] ;
-       fhir:description [ fhir:v "CIBMTR Medication Request (mcode)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-mobilizing-agent-medication> ;
-         fhir:reference [ fhir:v "StructureDefinition/cibmtr-mobilizing-agent-medication" ]
-       ] ;
-       fhir:name [ fhir:v "CIBMTR Mobilizing Agents Medication" ] ;
-       fhir:description [ fhir:v "CIBMTR Mobilizing Agents (auto only) Medication" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-post-hct-disease-therapy-planned-medication> ;
-         fhir:reference [ fhir:v "StructureDefinition/cibmtr-post-hct-disease-therapy-planned-medication" ]
-       ] ;
-       fhir:name [ fhir:v "CIBMTR Planned Post-HCT Disease Therapy Medication" ] ;
-       fhir:description [ fhir:v "CIBMTR Planned Post-HCT Disease Therapy Medication" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prep-regimen-medication> ;
-         fhir:reference [ fhir:v "StructureDefinition/cibmtr-prep-regimen-medication" ]
-       ] ;
-       fhir:name [ fhir:v "CIBMTR Prep Regimen Medication" ] ;
-       fhir:description [ fhir:v "CIBMTR Pre-HCT Preparative Regimen (Conditioning) Medication" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prior-exposure-medication> ;
-         fhir:reference [ fhir:v "StructureDefinition/cibmtr-prior-exposure-medication" ]
-       ] ;
-       fhir:name [ fhir:v "CIBMTR Prior Exposure Medication" ] ;
-       fhir:description [ fhir:v "CIBMTR Prior Exposure: Potential Study Eligibility Medication" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/auto-differential-blood-vs> ;
-         fhir:reference [ fhir:v "ValueSet/auto-differential-blood-vs" ]
-       ] ;
-       fhir:name [ fhir:v "Auto Differential panel - Blood (57023-4)" ] ;
-       fhir:description [ fhir:v "Auto Differential panel - Blood (57023-4)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-blood-automated-vs> ;
-         fhir:reference [ fhir:v "ValueSet/cbc-blood-automated-vs" ]
-       ] ;
-       fhir:name [ fhir:v "CBC panel - Blood by Automated count (58410-2)" ] ;
-       fhir:description [ fhir:v "CBC panel - Blood by Automated count (58410-2)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-auto-differential-blood-vs> ;
-         fhir:reference [ fhir:v "ValueSet/cbc-w-auto-differential-blood-vs" ]
-       ] ;
-       fhir:name [ fhir:v "CBC W Auto Differential panel - Blood (57021-8)" ] ;
-       fhir:description [ fhir:v "CBC W Auto Differential panel - Blood (57021-8)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-differential-unspecified-blood-vs> ;
-         fhir:reference [ fhir:v "ValueSet/cbc-w-differential-unspecified-blood-vs" ]
-       ] ;
-       fhir:name [ fhir:v "CBC W Differential panel, method unspecified - Blood (69742-5)" ] ;
-       fhir:description [ fhir:v "CBC W Differential panel, method unspecified - Blood (69742-5)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-ordered-manual-differential-blood-vs> ;
-         fhir:reference [ fhir:v "ValueSet/cbc-w-ordered-manual-differential-blood-vs" ]
-       ] ;
-       fhir:name [ fhir:v "CBC W Ordered Manual Differential panel - Blood (57782-5)" ] ;
-       fhir:description [ fhir:v "CBC W Ordered Manual Differential panel - Blood (57782-5)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/differential-unspecified-blood-vs> ;
-         fhir:reference [ fhir:v "ValueSet/differential-unspecified-blood-vs" ]
-       ] ;
-       fhir:name [ fhir:v "Differential panel, method unspecified - Blood (69738-3)" ] ;
-       fhir:description [ fhir:v "Differential panel, method unspecified - Blood (69738-3)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/erythrocyte-morphology-blood-vs> ;
-         fhir:reference [ fhir:v "ValueSet/erythrocyte-morphology-blood-vs" ]
-       ] ;
-       fhir:name [ fhir:v "Erythrocyte morphology panel - Blood (58408-6)" ] ;
-       fhir:description [ fhir:v "Erythrocyte morphology panel - Blood (58408-6)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes> ;
-         fhir:reference [ fhir:v "ValueSet/gvhd-icd10-codes" ]
-       ] ;
-       fhir:name [ fhir:v "GVHD ICD-10 Codes" ] ;
-       fhir:description [ fhir:v "GVHD ICD-10 Codes" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-sct-codes> ;
-         fhir:reference [ fhir:v "ValueSet/gvhd-sct-codes" ]
-       ] ;
-       fhir:name [ fhir:v "GVHD SNOMED CT Codes" ] ;
-       fhir:description [ fhir:v "GVHD SNOMED CT Codes" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-all-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/gvhd-all-valueset" ]
-       ] ;
-       fhir:name [ fhir:v "GVHD Type Value Set" ] ;
-       fhir:description [ fhir:v "Permissible values for types of Graft vs Host Disease, from SNOMED CT and ICD-10" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/hematopoietic-disorder-vs> ;
-         fhir:reference [ fhir:v "ValueSet/hematopoietic-disorder-vs" ]
-       ] ;
-       fhir:name [ fhir:v "Disorders of hematopoietic structure" ] ;
-       fhir:description [ fhir:v "SNOMED: Disorders of hematopoietic structure" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/leukocyte-morphology-blood-vs> ;
-         fhir:reference [ fhir:v "ValueSet/leukocyte-morphology-blood-vs" ]
-       ] ;
-       fhir:name [ fhir:v "Leukocyte morphology panel - Blood (58407-8)" ] ;
-       fhir:description [ fhir:v "Leukocyte morphology panel - Blood (58407-8)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/manual-differential-blood-vs> ;
-         fhir:reference [ fhir:v "ValueSet/manual-differential-blood-vs" ]
-       ] ;
-       fhir:name [ fhir:v "Manual Differential panel - Blood (24318-8)" ] ;
-       fhir:description [ fhir:v "Manual Differential panel - Blood (24318-8)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/platelet-morphology-blood-vs> ;
-         fhir:reference [ fhir:v "ValueSet/platelet-morphology-blood-vs" ]
-       ] ;
-       fhir:name [ fhir:v "Platelet morphology panel - Blood (58406-0)" ] ;
-       fhir:description [ fhir:v "Platelet morphology panel - Blood (58406-0)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/presence-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/presence-valueset" ]
-       ] ;
-       fhir:name [ fhir:v "Presence Answer List" ] ;
-       fhir:description [ fhir:v "Permissible values for presence" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-2021> ;
-         fhir:reference [ fhir:v "ValueSet/cibmtr-priority-variables-2021" ]
-       ] ;
-       fhir:name [ fhir:v "CIBMTR Priority Variables Value Set (FY21)" ] ;
-       fhir:description [ fhir:v "Priority Variables for CIBMTR (FY21)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-2022> ;
-         fhir:reference [ fhir:v "ValueSet/cibmtr-priority-variables-2022" ]
-       ] ;
-       fhir:name [ fhir:v "CIBMTR Priority Variables Value Set (FY22)" ] ;
-       fhir:description [ fhir:v "Priority Variables for CIBMTR (FY22)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-epic-2021> ;
-         fhir:reference [ fhir:v "ValueSet/cibmtr-priority-variables-epic-2021" ]
-       ] ;
-       fhir:name [ fhir:v "CIBMTR Priority Variables Value Set for Epic App (FY21)" ] ;
-       fhir:description [ fhir:v "Priority Variables for Epic CIBMTR Reporting App (FY21)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-addition-peri-transplant-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-addition-peri-transplant-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - Additional Drugs in Peri-Transplant Period" ] ;
-       fhir:description [ fhir:v "RxNorm codes for Additional Drugs in Peri-Transplant Period" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-alemtuzumab-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-alemtuzumab-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - Alemtuzumab" ] ;
-       fhir:description [ fhir:v "RxNorm codes for Alemtuzumab" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-all-form2400-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-all-form2400-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - All of Form 2400" ] ;
-       fhir:description [ fhir:v "RxNorm codes for all of Form 2400" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-anti-thymocyte-globulin-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-anti-thymocyte-globulin-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - Anti-Thymocyte Globulin" ] ;
-       fhir:description [ fhir:v "RxNorm codes for Anti-Thymocyte Globulin" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-bortezomib-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-bortezomib-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - Bortezomib" ] ;
-       fhir:description [ fhir:v "RxNorm codes for Bortezomib" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-busulfan-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - Busulfan" ] ;
-       fhir:description [ fhir:v "RxNorm codes for Busulfan" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-carmustine-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-carmustine-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - Carmustine" ] ;
-       fhir:description [ fhir:v "RxNorm codes for Carmustine" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cyclophosphamide-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-cyclophosphamide-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - Cyclophosphamide" ] ;
-       fhir:description [ fhir:v "RxNorm codes for Cyclophosphamide" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cytarabine-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-cytarabine-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - Cytarabine" ] ;
-       fhir:description [ fhir:v "RxNorm codes for Cytarabine" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-defibrotide-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-defibrotide-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - Defibrotide" ] ;
-       fhir:description [ fhir:v "RxNorm codes for Defibrotide" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-etoposide-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-etoposide-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - Etoposide" ] ;
-       fhir:description [ fhir:v "RxNorm codes for Etoposide" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-fludarabine-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-fludarabine-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - Fludarabine" ] ;
-       fhir:description [ fhir:v "RxNorm codes for Fludarabine" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-gvhd-prophylaxis-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - GVHD Prophylaxis" ] ;
-       fhir:description [ fhir:v "RxNorm codes for GVHD Prophylaxis" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-melphalan-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-melphalan-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - Melphalan" ] ;
-       fhir:description [ fhir:v "RxNorm codes for Melphalan" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-mobilizing-agents-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - Mobilizing Agents (auto only)" ] ;
-       fhir:description [ fhir:v "RxNorm codes for Mobilizing Agents (auto only)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-post-hct-disease-therapy-planned-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-post-hct-disease-therapy-planned-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - Post-HCT Disease Therapy Planned" ] ;
-       fhir:description [ fhir:v "RxNorm codes for Post-HCT Disease Therapy Planned" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prep-regimen-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-prep-regimen-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - Prep Regimen" ] ;
-       fhir:description [ fhir:v "RxNorm codes for Prep Regimen" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prior-exposure-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-prior-exposure-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - Prior Exposure: Potential Study Eligibility" ] ;
-       fhir:description [ fhir:v "Prior Exposure: Potential Study Eligibility" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-rituximab-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-rituximab-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - Rituximab" ] ;
-       fhir:description [ fhir:v "RxNorm codes for Rituximab" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-thiotepa-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-thiotepa-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - Thiotepa" ] ;
-       fhir:description [ fhir:v "RxNorm codes for Thiotepa" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-treosulfan-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-treosulfan-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - Treosulfan" ] ;
-       fhir:description [ fhir:v "RxNorm codes for Treosulfan" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-ursodiol-vs> ;
-         fhir:reference [ fhir:v "ValueSet/med-ursodiol-vs" ]
-       ] ;
-       fhir:name [ fhir:v "RxNorm - Ursodiol" ] ;
-       fhir:description [ fhir:v "RxNorm codes for Ursodiol" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/snomed-myelodysplastic-diseases-vs> ;
-         fhir:reference [ fhir:v "ValueSet/snomed-myelodysplastic-diseases-vs" ]
-       ] ;
-       fhir:name [ fhir:v "SNOMED Myelodysplastic Diseases" ] ;
-       fhir:description [ fhir:v "The myelodysplastic syndromes (MDS) are a group of clonal hematopoietic stem cell diseases characterized by cytopenia(s), dysplasia (abnormal growth or development leading to an alteration in size, shape, and organization of the cell) in one or more of the major myeloid cell lines (WBC, RBC, and/or platelets), ineffective hematopoiesis, and an increased risk of developing acute myelogenous leukemia (AML). MDS occurs primarily in older adults, with a median age of 70 years. The majority of recipients present with symptoms related to cytopenias. Most recipients present with anemia requiring RBC transfusions." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/smear-morphology-blood-vs> ;
-         fhir:reference [ fhir:v "ValueSet/smear-morphology-blood-vs" ]
-       ] ;
-       fhir:name [ fhir:v "Smear morphology panel - Blood (34994-4)" ] ;
-       fhir:description [ fhir:v "Smear morphology panel - Blood (34994-4)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Observation" ]
@@ -1302,6 +672,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/auto-differential-blood-vs> ;
+         fhir:reference [ fhir:v "ValueSet/auto-differential-blood-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Auto Differential panel - Blood (57023-4)" ] ;
+       fhir:description [ fhir:v "Auto Differential panel - Blood (57023-4)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
@@ -1314,6 +696,246 @@
          fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"^^xsd:anyURI ;
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-blood-automated-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cbc-blood-automated-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CBC panel - Blood by Automated count (58410-2)" ] ;
+       fhir:description [ fhir:v "CBC panel - Blood by Automated count (58410-2)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-auto-differential-blood-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cbc-w-auto-differential-blood-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CBC W Auto Differential panel - Blood (57021-8)" ] ;
+       fhir:description [ fhir:v "CBC W Auto Differential panel - Blood (57021-8)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-differential-unspecified-blood-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cbc-w-differential-unspecified-blood-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CBC W Differential panel, method unspecified - Blood (69742-5)" ] ;
+       fhir:description [ fhir:v "CBC W Differential panel, method unspecified - Blood (69742-5)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-ordered-manual-differential-blood-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cbc-w-ordered-manual-differential-blood-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CBC W Ordered Manual Differential panel - Blood (57782-5)" ] ;
+       fhir:description [ fhir:v "CBC W Ordered Manual Differential panel - Blood (57782-5)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-additional-peri-transplant-medication> ;
+         fhir:reference [ fhir:v "StructureDefinition/cibmtr-additional-peri-transplant-medication" ]
+       ] ;
+       fhir:name [ fhir:v "CIBMTR Additional Drugs in Peri-Transplant Period" ] ;
+       fhir:description [ fhir:v "CIBMTR Additional Drugs Given in the Peri-Transplant Period. Drugs may be given during the peri-transplant period to prevent transplant-related complications, such as liver injuries or to facilitate engraftment." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-cytogenetics> ;
+         fhir:reference [ fhir:v "StructureDefinition/cibmtr-cytogenetics" ]
+       ] ;
+       fhir:name [ fhir:v "CIBMTR Cytogenetics Profile" ] ;
+       fhir:description [ fhir:v "CIBMTR Cytogenetics Profile to capture ISCN" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-gvhd-prophylaxis-medication> ;
+         fhir:reference [ fhir:v "StructureDefinition/cibmtr-gvhd-prophylaxis-medication" ]
+       ] ;
+       fhir:name [ fhir:v "CIBMTR GVHD Prophylaxis Medication" ] ;
+       fhir:description [ fhir:v "CIBMTR GVHD Prophylaxis Medication" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication> ;
+         fhir:reference [ fhir:v "StructureDefinition/cibmtr-medication" ]
+       ] ;
+       fhir:name [ fhir:v "CIBMTR Medication (us-core)" ] ;
+       fhir:description [ fhir:v "CIBMTR Medication (us-core)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration> ;
+         fhir:reference [ fhir:v "StructureDefinition/cibmtr-medication-administration" ]
+       ] ;
+       fhir:name [ fhir:v "CIBMTR Medication Administration (mcode)" ] ;
+       fhir:description [ fhir:v "CIBMTR Medication Administration (mcode)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-request> ;
+         fhir:reference [ fhir:v "StructureDefinition/cibmtr-medication-request" ]
+       ] ;
+       fhir:name [ fhir:v "CIBMTR Medication Request (mcode)" ] ;
+       fhir:description [ fhir:v "CIBMTR Medication Request (mcode)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-mobilizing-agent-medication> ;
+         fhir:reference [ fhir:v "StructureDefinition/cibmtr-mobilizing-agent-medication" ]
+       ] ;
+       fhir:name [ fhir:v "CIBMTR Mobilizing Agents Medication" ] ;
+       fhir:description [ fhir:v "CIBMTR Mobilizing Agents (auto only) Medication" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab> ;
+         fhir:reference [ fhir:v "StructureDefinition/cibmtr-observation-lab" ]
+       ] ;
+       fhir:name [ fhir:v "CIBMTR Observation Laboratory Results Profile (us-core)" ] ;
+       fhir:description [ fhir:v "CIBMTR Observation Laboratory Results Profile (us-core)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables> ;
+         fhir:reference [ fhir:v "StructureDefinition/cibmtr-obs-priority-variables" ]
+       ] ;
+       fhir:name [ fhir:v "CIBMTR Observation Laboratory Results: Priority Variables" ] ;
+       fhir:description [ fhir:v "CIBMTR Observation Laboratory Results: Priority Variables" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/cibmtr-patient" ]
+       ] ;
+       fhir:name [ fhir:v "CIBMTR Patient Profile (us-core)" ] ;
+       fhir:description [ fhir:v "CIBMTR Patient Profile for CRID assignment (us-core)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-post-hct-disease-therapy-planned-medication> ;
+         fhir:reference [ fhir:v "StructureDefinition/cibmtr-post-hct-disease-therapy-planned-medication" ]
+       ] ;
+       fhir:name [ fhir:v "CIBMTR Planned Post-HCT Disease Therapy Medication" ] ;
+       fhir:description [ fhir:v "CIBMTR Planned Post-HCT Disease Therapy Medication" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prep-regimen-medication> ;
+         fhir:reference [ fhir:v "StructureDefinition/cibmtr-prep-regimen-medication" ]
+       ] ;
+       fhir:name [ fhir:v "CIBMTR Prep Regimen Medication" ] ;
+       fhir:description [ fhir:v "CIBMTR Pre-HCT Preparative Regimen (Conditioning) Medication" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prior-exposure-medication> ;
+         fhir:reference [ fhir:v "StructureDefinition/cibmtr-prior-exposure-medication" ]
+       ] ;
+       fhir:name [ fhir:v "CIBMTR Prior Exposure Medication" ] ;
+       fhir:description [ fhir:v "CIBMTR Prior Exposure: Potential Study Eligibility Medication" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-2021> ;
+         fhir:reference [ fhir:v "ValueSet/cibmtr-priority-variables-2021" ]
+       ] ;
+       fhir:name [ fhir:v "CIBMTR Priority Variables Value Set (FY21)" ] ;
+       fhir:description [ fhir:v "Priority Variables for CIBMTR (FY21)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-2022> ;
+         fhir:reference [ fhir:v "ValueSet/cibmtr-priority-variables-2022" ]
+       ] ;
+       fhir:name [ fhir:v "CIBMTR Priority Variables Value Set (FY22)" ] ;
+       fhir:description [ fhir:v "Priority Variables for CIBMTR (FY22)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-epic-2021> ;
+         fhir:reference [ fhir:v "ValueSet/cibmtr-priority-variables-epic-2021" ]
+       ] ;
+       fhir:name [ fhir:v "CIBMTR Priority Variables Value Set for Epic App (FY21)" ] ;
+       fhir:description [ fhir:v "Priority Variables for Epic CIBMTR Reporting App (FY21)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1422,6 +1044,30 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/differential-unspecified-blood-vs> ;
+         fhir:reference [ fhir:v "ValueSet/differential-unspecified-blood-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Differential panel, method unspecified - Blood (69738-3)" ] ;
+       fhir:description [ fhir:v "Differential panel, method unspecified - Blood (69738-3)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/hematopoietic-disorder-vs> ;
+         fhir:reference [ fhir:v "ValueSet/hematopoietic-disorder-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Disorders of hematopoietic structure" ] ;
+       fhir:description [ fhir:v "SNOMED: Disorders of hematopoietic structure" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
@@ -1434,6 +1080,54 @@
          fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"^^xsd:anyURI ;
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/erythrocyte-morphology-blood-vs> ;
+         fhir:reference [ fhir:v "ValueSet/erythrocyte-morphology-blood-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Erythrocyte morphology panel - Blood (58408-6)" ] ;
+       fhir:description [ fhir:v "Erythrocyte morphology panel - Blood (58408-6)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes> ;
+         fhir:reference [ fhir:v "ValueSet/gvhd-icd10-codes" ]
+       ] ;
+       fhir:name [ fhir:v "GVHD ICD-10 Codes" ] ;
+       fhir:description [ fhir:v "GVHD ICD-10 Codes" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-sct-codes> ;
+         fhir:reference [ fhir:v "ValueSet/gvhd-sct-codes" ]
+       ] ;
+       fhir:name [ fhir:v "GVHD SNOMED CT Codes" ] ;
+       fhir:description [ fhir:v "GVHD SNOMED CT Codes" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-all-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/gvhd-all-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "GVHD Type Value Set" ] ;
+       fhir:description [ fhir:v "Permissible values for types of Graft vs Host Disease, from SNOMED CT and ICD-10" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1452,6 +1146,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/leukocyte-morphology-blood-vs> ;
+         fhir:reference [ fhir:v "ValueSet/leukocyte-morphology-blood-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Leukocyte morphology panel - Blood (58407-8)" ] ;
+       fhir:description [ fhir:v "Leukocyte morphology panel - Blood (58407-8)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
@@ -1464,6 +1170,18 @@
          fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab"^^xsd:anyURI ;
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/manual-differential-blood-vs> ;
+         fhir:reference [ fhir:v "ValueSet/manual-differential-blood-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Manual Differential panel - Blood (24318-8)" ] ;
+       fhir:description [ fhir:v "Manual Differential panel - Blood (24318-8)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1749,6 +1467,318 @@
          fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"^^xsd:anyURI ;
          fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/platelet-morphology-blood-vs> ;
+         fhir:reference [ fhir:v "ValueSet/platelet-morphology-blood-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Platelet morphology panel - Blood (58406-0)" ] ;
+       fhir:description [ fhir:v "Platelet morphology panel - Blood (58406-0)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/presence-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/presence-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "Presence Answer List" ] ;
+       fhir:description [ fhir:v "Permissible values for presence" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-addition-peri-transplant-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-addition-peri-transplant-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - Additional Drugs in Peri-Transplant Period" ] ;
+       fhir:description [ fhir:v "RxNorm codes for Additional Drugs in Peri-Transplant Period" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-alemtuzumab-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-alemtuzumab-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - Alemtuzumab" ] ;
+       fhir:description [ fhir:v "RxNorm codes for Alemtuzumab" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-all-form2400-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-all-form2400-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - All of Form 2400" ] ;
+       fhir:description [ fhir:v "RxNorm codes for all of Form 2400" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-anti-thymocyte-globulin-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-anti-thymocyte-globulin-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - Anti-Thymocyte Globulin" ] ;
+       fhir:description [ fhir:v "RxNorm codes for Anti-Thymocyte Globulin" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-bortezomib-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-bortezomib-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - Bortezomib" ] ;
+       fhir:description [ fhir:v "RxNorm codes for Bortezomib" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-busulfan-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - Busulfan" ] ;
+       fhir:description [ fhir:v "RxNorm codes for Busulfan" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-carmustine-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-carmustine-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - Carmustine" ] ;
+       fhir:description [ fhir:v "RxNorm codes for Carmustine" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cyclophosphamide-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-cyclophosphamide-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - Cyclophosphamide" ] ;
+       fhir:description [ fhir:v "RxNorm codes for Cyclophosphamide" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cytarabine-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-cytarabine-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - Cytarabine" ] ;
+       fhir:description [ fhir:v "RxNorm codes for Cytarabine" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-defibrotide-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-defibrotide-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - Defibrotide" ] ;
+       fhir:description [ fhir:v "RxNorm codes for Defibrotide" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-etoposide-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-etoposide-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - Etoposide" ] ;
+       fhir:description [ fhir:v "RxNorm codes for Etoposide" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-fludarabine-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-fludarabine-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - Fludarabine" ] ;
+       fhir:description [ fhir:v "RxNorm codes for Fludarabine" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-gvhd-prophylaxis-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - GVHD Prophylaxis" ] ;
+       fhir:description [ fhir:v "RxNorm codes for GVHD Prophylaxis" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-melphalan-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-melphalan-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - Melphalan" ] ;
+       fhir:description [ fhir:v "RxNorm codes for Melphalan" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-mobilizing-agents-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - Mobilizing Agents (auto only)" ] ;
+       fhir:description [ fhir:v "RxNorm codes for Mobilizing Agents (auto only)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-post-hct-disease-therapy-planned-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-post-hct-disease-therapy-planned-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - Post-HCT Disease Therapy Planned" ] ;
+       fhir:description [ fhir:v "RxNorm codes for Post-HCT Disease Therapy Planned" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prep-regimen-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-prep-regimen-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - Prep Regimen" ] ;
+       fhir:description [ fhir:v "RxNorm codes for Prep Regimen" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prior-exposure-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-prior-exposure-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - Prior Exposure: Potential Study Eligibility" ] ;
+       fhir:description [ fhir:v "Prior Exposure: Potential Study Eligibility" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-rituximab-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-rituximab-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - Rituximab" ] ;
+       fhir:description [ fhir:v "RxNorm codes for Rituximab" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-thiotepa-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-thiotepa-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - Thiotepa" ] ;
+       fhir:description [ fhir:v "RxNorm codes for Thiotepa" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-treosulfan-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-treosulfan-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - Treosulfan" ] ;
+       fhir:description [ fhir:v "RxNorm codes for Treosulfan" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-ursodiol-vs> ;
+         fhir:reference [ fhir:v "ValueSet/med-ursodiol-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RxNorm - Ursodiol" ] ;
+       fhir:description [ fhir:v "RxNorm codes for Ursodiol" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/smear-morphology-blood-vs> ;
+         fhir:reference [ fhir:v "ValueSet/smear-morphology-blood-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Smear morphology panel - Blood (34994-4)" ] ;
+       fhir:description [ fhir:v "Smear morphology panel - Blood (34994-4)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/snomed-myelodysplastic-diseases-vs> ;
+         fhir:reference [ fhir:v "ValueSet/snomed-myelodysplastic-diseases-vs" ]
+       ] ;
+       fhir:name [ fhir:v "SNOMED Myelodysplastic Diseases" ] ;
+       fhir:description [ fhir:v "The myelodysplastic syndromes (MDS) are a group of clonal hematopoietic stem cell diseases characterized by cytopenia(s), dysplasia (abnormal growth or development leading to an alteration in size, shape, and organization of the cell) in one or more of the major myeloid cell lines (WBC, RBC, and/or platelets), ineffective hematopoiesis, and an increased risk of developing acute myelogenous leukemia (AML). MDS occurs primarily in older adults, with a median age of 70 years. The majority of recipients present with symptoms related to cytopenias. Most recipients present with anemia requiring RBC transfusions." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
        fhir:extension ( [

@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>NMDP.FHIR.CIBMTR-REPORTING\RxNorm - Prior Exposure: Potential Study Eligibility - JSON Representation - FHIR v4.0.1</title>
+    <title>RxNorm - Prior Exposure: Potential Study Eligibility - JSON Representation - CIBMTR Reporting Implementation Guide v0.1.7</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -32,16 +32,17 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"15.49"}
     h3,h4,h5,h6{--heading-prefix:"15.49"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -52,14 +53,14 @@
   <a id="cibmtr-logo" no-external="true" href="http://www.cibmtr.org">
     <!-- <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png" /> -->
     <img height="80" alt="Visit the CIBMTR website"
-      src="assets/images/cibmtr-logo-header-3.png" />
+      src="assets/images/CIBMTR_Logo_Color_2024.png" />
   </a>
 </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.6 - Trial Use 1
+            <span style="display:inline-block;">0.1.7 - Trial Use 1
 
 
             </span>
@@ -173,7 +174,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the CIBMTR Reporting Implementation Guide (v0.1.6: Release Draft) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the CIBMTR Reporting Implementation Guide (v0.1.7: Release Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -220,14 +221,15 @@
 
 
 <h2 id="root">: RxNorm - Prior Exposure: Potential Study Eligibility - JSON Representation</h2>
-  <table class="colsi">
+
+  <table class="colsd">
     <tr>
 
       <td colspan="2">
         
-          Active
+          Draft
           
-            as of 2023-05-05
+            as of 2024-08-27
           
         
       </td>
@@ -243,21 +245,21 @@
 
 
 
-  <pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
+  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">
 {
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "med-prior-exposure-vs",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://www.nlm.nih.gov/research/umls/rxnorm\&quot;&gt;&lt;code&gt;http://www.nlm.nih.gov/research/umls/rxnorm&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10473&lt;/td&gt;&lt;td&gt;thiotepa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1156487&lt;/td&gt;&lt;td&gt;thiotepa Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1185673&lt;/td&gt;&lt;td&gt;Mylotarg Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1294580&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1294581&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin 1 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1294582&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1294583&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin Injectable Solution&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1294584&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin 1 MG/ML Injectable Solution&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1366537&lt;/td&gt;&lt;td&gt;Tepadina&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1597258&lt;/td&gt;&lt;td&gt;blinatumomab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1597260&lt;/td&gt;&lt;td&gt;blinatumomab Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1597262&lt;/td&gt;&lt;td&gt;blinatumomab 0.035 MG Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1597263&lt;/td&gt;&lt;td&gt;Blincyto&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1597266&lt;/td&gt;&lt;td&gt;Blincyto Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1597267&lt;/td&gt;&lt;td&gt;blinatumomab 0.035 MG Injection [Blincyto]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1651249&lt;/td&gt;&lt;td&gt;blinatumomab 0.035 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1651250&lt;/td&gt;&lt;td&gt;blinatumomab Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1651252&lt;/td&gt;&lt;td&gt;blinatumomab 0.035 MG [Blincyto]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1651253&lt;/td&gt;&lt;td&gt;blinatumomab Injection [Blincyto]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1660002&lt;/td&gt;&lt;td&gt;thiotepa 100 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1660003&lt;/td&gt;&lt;td&gt;thiotepa Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1660004&lt;/td&gt;&lt;td&gt;thiotepa 100 MG Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1660008&lt;/td&gt;&lt;td&gt;thiotepa 15 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1660009&lt;/td&gt;&lt;td&gt;thiotepa 15 MG Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1919206&lt;/td&gt;&lt;td&gt;thiotepa 100 MG [Tepadina]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1919207&lt;/td&gt;&lt;td&gt;thiotepa Injection [Tepadina]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1919208&lt;/td&gt;&lt;td&gt;Tepadina Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1919209&lt;/td&gt;&lt;td&gt;thiotepa 100 MG Injection [Tepadina]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1919210&lt;/td&gt;&lt;td&gt;thiotepa 15 MG [Tepadina]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1919211&lt;/td&gt;&lt;td&gt;thiotepa 15 MG Injection [Tepadina]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942950&lt;/td&gt;&lt;td&gt;inotuzumab ozogamicin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942951&lt;/td&gt;&lt;td&gt;inotuzumab ozogamicin 0.9 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942952&lt;/td&gt;&lt;td&gt;inotuzumab ozogamicin Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942953&lt;/td&gt;&lt;td&gt;inotuzumab ozogamicin Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942954&lt;/td&gt;&lt;td&gt;inotuzumab ozogamicin 0.9 MG Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942955&lt;/td&gt;&lt;td&gt;Besponsa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942956&lt;/td&gt;&lt;td&gt;inotuzumab ozogamicin 0.9 MG [Besponsa]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942957&lt;/td&gt;&lt;td&gt;inotuzumab ozogamicin Injection [Besponsa]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942958&lt;/td&gt;&lt;td&gt;Besponsa Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942959&lt;/td&gt;&lt;td&gt;inotuzumab ozogamicin 0.9 MG Injection [Besponsa]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1944699&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin 4.5 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1944700&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1944701&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin 4.5 MG Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1944702&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin 4.5 MG [Mylotarg]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1944703&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin Injection [Mylotarg]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1944704&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin 4.5 MG Injection [Mylotarg]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054068&lt;/td&gt;&lt;td&gt;mogamulizumab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054077&lt;/td&gt;&lt;td&gt;mogamulizumab-kpkc&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054078&lt;/td&gt;&lt;td&gt;mogamulizumab-kpkc 4 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054079&lt;/td&gt;&lt;td&gt;mogamulizumab Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054080&lt;/td&gt;&lt;td&gt;mogamulizumab Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054081&lt;/td&gt;&lt;td&gt;5 ML mogamulizumab-kpkc 4 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054082&lt;/td&gt;&lt;td&gt;Poteligeo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054083&lt;/td&gt;&lt;td&gt;mogamulizumab-kpkc 4 MG/ML [Poteligeo]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054084&lt;/td&gt;&lt;td&gt;mogamulizumab Injection [Poteligeo]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054085&lt;/td&gt;&lt;td&gt;Poteligeo Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054086&lt;/td&gt;&lt;td&gt;5 ML mogamulizumab-kpkc 4 MG/ML Injection [Poteligeo]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;261585&lt;/td&gt;&lt;td&gt;Mylotarg&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet med-prior-exposure-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;med-prior-exposure-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcmed-prior-exposure-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;med-prior-exposure-vs-en-US\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://www.nlm.nih.gov/research/umls/rxnorm\&quot;&gt;&lt;code&gt;http://www.nlm.nih.gov/research/umls/rxnorm&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10473&lt;/td&gt;&lt;td&gt;thiotepa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1156487&lt;/td&gt;&lt;td&gt;thiotepa Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1185673&lt;/td&gt;&lt;td&gt;Mylotarg Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1294580&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1294581&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin 1 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1294582&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1294583&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin Injectable Solution&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1294584&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin 1 MG/ML Injectable Solution&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1366537&lt;/td&gt;&lt;td&gt;Tepadina&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1597258&lt;/td&gt;&lt;td&gt;blinatumomab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1597260&lt;/td&gt;&lt;td&gt;blinatumomab Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1597262&lt;/td&gt;&lt;td&gt;blinatumomab 0.035 MG Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1597263&lt;/td&gt;&lt;td&gt;Blincyto&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1597266&lt;/td&gt;&lt;td&gt;Blincyto Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1597267&lt;/td&gt;&lt;td&gt;blinatumomab 0.035 MG Injection [Blincyto]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1651249&lt;/td&gt;&lt;td&gt;blinatumomab 0.035 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1651250&lt;/td&gt;&lt;td&gt;blinatumomab Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1651252&lt;/td&gt;&lt;td&gt;blinatumomab 0.035 MG [Blincyto]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1651253&lt;/td&gt;&lt;td&gt;blinatumomab Injection [Blincyto]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1660002&lt;/td&gt;&lt;td&gt;thiotepa 100 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1660003&lt;/td&gt;&lt;td&gt;thiotepa Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1660004&lt;/td&gt;&lt;td&gt;thiotepa 100 MG Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1660008&lt;/td&gt;&lt;td&gt;thiotepa 15 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1660009&lt;/td&gt;&lt;td&gt;thiotepa 15 MG Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1919206&lt;/td&gt;&lt;td&gt;thiotepa 100 MG [Tepadina]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1919207&lt;/td&gt;&lt;td&gt;thiotepa Injection [Tepadina]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1919208&lt;/td&gt;&lt;td&gt;Tepadina Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1919209&lt;/td&gt;&lt;td&gt;thiotepa 100 MG Injection [Tepadina]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1919210&lt;/td&gt;&lt;td&gt;thiotepa 15 MG [Tepadina]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1919211&lt;/td&gt;&lt;td&gt;thiotepa 15 MG Injection [Tepadina]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942950&lt;/td&gt;&lt;td&gt;inotuzumab ozogamicin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942951&lt;/td&gt;&lt;td&gt;inotuzumab ozogamicin 0.9 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942952&lt;/td&gt;&lt;td&gt;inotuzumab ozogamicin Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942953&lt;/td&gt;&lt;td&gt;inotuzumab ozogamicin Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942954&lt;/td&gt;&lt;td&gt;inotuzumab ozogamicin 0.9 MG Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942955&lt;/td&gt;&lt;td&gt;Besponsa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942956&lt;/td&gt;&lt;td&gt;inotuzumab ozogamicin 0.9 MG [Besponsa]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942957&lt;/td&gt;&lt;td&gt;inotuzumab ozogamicin Injection [Besponsa]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942958&lt;/td&gt;&lt;td&gt;Besponsa Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1942959&lt;/td&gt;&lt;td&gt;inotuzumab ozogamicin 0.9 MG Injection [Besponsa]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1944699&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin 4.5 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1944700&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1944701&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin 4.5 MG Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1944702&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin 4.5 MG [Mylotarg]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1944703&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin Injection [Mylotarg]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1944704&lt;/td&gt;&lt;td&gt;gemtuzumab ozogamicin 4.5 MG Injection [Mylotarg]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054068&lt;/td&gt;&lt;td&gt;mogamulizumab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054077&lt;/td&gt;&lt;td&gt;mogamulizumab-kpkc&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054078&lt;/td&gt;&lt;td&gt;mogamulizumab-kpkc 4 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054079&lt;/td&gt;&lt;td&gt;mogamulizumab Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054080&lt;/td&gt;&lt;td&gt;mogamulizumab Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054081&lt;/td&gt;&lt;td&gt;5 ML mogamulizumab-kpkc 4 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054082&lt;/td&gt;&lt;td&gt;Poteligeo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054083&lt;/td&gt;&lt;td&gt;mogamulizumab-kpkc 4 MG/ML [Poteligeo]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054084&lt;/td&gt;&lt;td&gt;mogamulizumab Injection [Poteligeo]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054085&lt;/td&gt;&lt;td&gt;Poteligeo Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2054086&lt;/td&gt;&lt;td&gt;5 ML mogamulizumab-kpkc 4 MG/ML Injection [Poteligeo]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;261585&lt;/td&gt;&lt;td&gt;Mylotarg&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prior-exposure-vs",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.6",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.7",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "RxNormPriorExposureVS",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "RxNorm - Prior Exposure: Potential Study Eligibility",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "draft",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : true,
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2023-05-05T10:50:04-05:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2024-08-27T12:23:18-05:00",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -550,7 +552,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.6 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 5, 2023 10:50-0500">2023-05-05</span>
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.7 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 27, 2024 12:23-0500">2024-08-27</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

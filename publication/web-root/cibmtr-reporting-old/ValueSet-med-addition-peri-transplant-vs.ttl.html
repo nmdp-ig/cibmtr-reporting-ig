@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>RxNorm - Additional Drugs in Peri-Transplant Period - TTL Representation - CIBMTR Reporting Implementation Guide v0.1.7</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/cibmtr.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"15.32"}
+    h3,h4,h5,h6{--heading-prefix:"15.32"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+<div id="cibmtr-nav">
+  <a no-external="true" id="cibmtr-logo" href="http://www.cibmtr.org"><a name="l80">​</a>
+      <!-- <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png" /> -->
+    <img src="assets/images/cibmtr-logo-header-3.png" alt="Visit the CIBMTR website" height="80"/>
+  </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.7 - Trial Use 1
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Connection-Guide-R4.html">Connection - R4</a>
+      </li>
+      <li>
+        <a href="Endpoints.html">Endpoints</a>
+      </li>
+      <li>
+        <a href="Access-Credentials.html">Access Credentials</a>
+      </li>
+      <li>
+        <a href="CRID-Assignment.html">CRID Assignment</a>
+      </li>
+      <li>
+        <a href="Laboratory-Observations.html">Lab Observations</a>
+      </li>
+      <li>
+        <a href="Medications.html">Medications</a>
+      </li>
+      <li>
+        <a href="Bundles.html">Bundles</a>
+      </li>
+      <li>
+        <a href="Form-2450.html">Form 2450: Post-TED</a>
+      </li>
+      <li>
+        <a href="Cytogenetics.html">Cytogenetics - ISCN</a>
+      </li>
+      <li>
+        <a href="Example-Code.html">Example Code Snippets</a>
+      </li>
+      <li>
+        <a href="Appendices.html">Appendices</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR (STU3)</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>RxNorm - Additional Drugs in Peri-Transplant Period</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box">This page is part of the CIBMTR Reporting Implementation Guide (v0.1.7: Release Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-med-addition-peri-transplant-vs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-med-addition-peri-transplant-vs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-med-addition-peri-transplant-vs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: RxNorm - Additional Drugs in Peri-Transplant Period - TTL Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2024-08-27
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-med-addition-peri-transplant-vs.ttl" no-download="true">Raw ttl</a> | <a download="null" href="ValueSet-med-addition-peri-transplant-vs.ttl">Download</a></p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <pre style="white-space: pre; overflow: hidden" class="rdf"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:ValueSet ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "med-addition-peri-transplant-vs"] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "generated" ] ;
+fhir:div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p class=\"res-header-id\"&gt;&lt;b&gt;Generated Narrative: ValueSet med-addition-peri-transplant-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=\"med-addition-peri-transplant-vs\"&gt; &lt;/a&gt;&lt;a name=\"hcmed-addition-peri-transplant-vs\"&gt; &lt;/a&gt;&lt;a name=\"med-addition-peri-transplant-vs-en-US\"&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"&gt;&lt;code&gt;http://www.nlm.nih.gov/research/umls/rxnorm&lt;/code&gt;&lt;/a&gt;&lt;table class=\"none\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1011&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;107047&lt;/td&gt;&lt;td&gt;rabbit anti-human T-lymphocyte globulin 25 MG Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;107050&lt;/td&gt;&lt;td&gt;rabbit anti-human T-lymphocyte globulin 25 MG Injection [Thymoglobulin]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;11065&lt;/td&gt;&lt;td&gt;ursodiol&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1164265&lt;/td&gt;&lt;td&gt;alemtuzumab Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1165939&lt;/td&gt;&lt;td&gt;ATGAM Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;117055&lt;/td&gt;&lt;td&gt;alemtuzumab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1172298&lt;/td&gt;&lt;td&gt;Campath Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1177887&lt;/td&gt;&lt;td&gt;Thymoglobulin Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1204&lt;/td&gt;&lt;td&gt;ATGAM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1311089&lt;/td&gt;&lt;td&gt;defibrotide&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1594657&lt;/td&gt;&lt;td&gt;alemtuzumab 10 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1594658&lt;/td&gt;&lt;td&gt;1.2 ML alemtuzumab 10 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1594659&lt;/td&gt;&lt;td&gt;Lemtrada&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1594660&lt;/td&gt;&lt;td&gt;alemtuzumab 10 MG/ML [Lemtrada]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1594662&lt;/td&gt;&lt;td&gt;Lemtrada Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1594663&lt;/td&gt;&lt;td&gt;1.2 ML alemtuzumab 10 MG/ML Injection [Lemtrada]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1656628&lt;/td&gt;&lt;td&gt;alemtuzumab 30 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1656629&lt;/td&gt;&lt;td&gt;alemtuzumab Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1656631&lt;/td&gt;&lt;td&gt;alemtuzumab 30 MG/ML [Campath]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1656632&lt;/td&gt;&lt;td&gt;alemtuzumab Injection [Campath]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1656637&lt;/td&gt;&lt;td&gt;alemtuzumab Injection [Lemtrada]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746523&lt;/td&gt;&lt;td&gt;defibrotide sodium&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746524&lt;/td&gt;&lt;td&gt;defibrotide sodium 80 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746525&lt;/td&gt;&lt;td&gt;defibrotide Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746526&lt;/td&gt;&lt;td&gt;defibrotide Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746527&lt;/td&gt;&lt;td&gt;2.5 ML defibrotide sodium 80 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746528&lt;/td&gt;&lt;td&gt;Defitelio&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746529&lt;/td&gt;&lt;td&gt;defibrotide sodium 80 MG/ML [Defitelio]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746530&lt;/td&gt;&lt;td&gt;defibrotide Injection [Defitelio]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746531&lt;/td&gt;&lt;td&gt;Defitelio Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746532&lt;/td&gt;&lt;td&gt;2.5 ML defibrotide sodium 80 MG/ML Injection [Defitelio]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1788946&lt;/td&gt;&lt;td&gt;defibrotide, bovine lung&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;197906&lt;/td&gt;&lt;td&gt;5 ML lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;206289&lt;/td&gt;&lt;td&gt;5 ML lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML Injection [ATGAM]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;225741&lt;/td&gt;&lt;td&gt;Thymoglobulin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282514&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282515&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282516&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282518&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML [ATGAM]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282519&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin Injection [ATGAM]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282525&lt;/td&gt;&lt;td&gt;rabbit anti-human T-lymphocyte globulin 25 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282527&lt;/td&gt;&lt;td&gt;rabbit anti-human T-lymphocyte globulin 25 MG [Thymoglobulin]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282528&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin Injection [Thymoglobulin]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2376942&lt;/td&gt;&lt;td&gt;ursodiol 400 MG Oral Capsule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2477892&lt;/td&gt;&lt;td&gt;ursodiol 200 MG [Reltone]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2477896&lt;/td&gt;&lt;td&gt;ursodiol 200 MG Oral Capsule [Reltone]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2477897&lt;/td&gt;&lt;td&gt;ursodiol 400 MG [Reltone]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2477898&lt;/td&gt;&lt;td&gt;ursodiol 400 MG Oral Capsule [Reltone]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;284679&lt;/td&gt;&lt;td&gt;Campath&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;360513&lt;/td&gt;&lt;td&gt;ursodiol 250 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;412174&lt;/td&gt;&lt;td&gt;ursodiol 200 MG Oral Capsule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;452499&lt;/td&gt;&lt;td&gt;ursodiol 200 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;452500&lt;/td&gt;&lt;td&gt;ursodiol 400 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;828265&lt;/td&gt;&lt;td&gt;1 ML alemtuzumab 30 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;828267&lt;/td&gt;&lt;td&gt;1 ML alemtuzumab 30 MG/ML Injection [Campath]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858328&lt;/td&gt;&lt;td&gt;ursodiol 300 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858329&lt;/td&gt;&lt;td&gt;ursodiol 300 MG Oral Tablet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858330&lt;/td&gt;&lt;td&gt;ursodiol 150 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858332&lt;/td&gt;&lt;td&gt;ursodiol 50 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858333&lt;/td&gt;&lt;td&gt;ursodiol 50 MG/ML Oral Suspension&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858335&lt;/td&gt;&lt;td&gt;ursodiol 150 MG Oral Tablet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858732&lt;/td&gt;&lt;td&gt;ursodiol 500 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858733&lt;/td&gt;&lt;td&gt;ursodiol 500 MG Oral Tablet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858734&lt;/td&gt;&lt;td&gt;ursodiol 500 MG [Urso Forte]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858735&lt;/td&gt;&lt;td&gt;ursodiol 500 MG Oral Tablet [Urso Forte]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858744&lt;/td&gt;&lt;td&gt;ursodiol 250 MG Oral Capsule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858745&lt;/td&gt;&lt;td&gt;ursodiol 250 MG [Urso]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858747&lt;/td&gt;&lt;td&gt;ursodiol 300 MG Oral Capsule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858748&lt;/td&gt;&lt;td&gt;ursodiol 300 MG [Actigall]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858749&lt;/td&gt;&lt;td&gt;ursodiol 300 MG Oral Capsule [Actigall]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858751&lt;/td&gt;&lt;td&gt;ursodiol 250 MG Oral Tablet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858752&lt;/td&gt;&lt;td&gt;ursodiol 250 MG Oral Tablet [Urso]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;91601&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin, equine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;973&lt;/td&gt;&lt;td&gt;antilymphocyte immunoglobulin&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-addition-peri-transplant-vs"^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "0.1.7"] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "RxNormAdditionalPeriTransplantVS"] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "RxNorm - Additional Drugs in Peri-Transplant Period"] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "draft"] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> "true"^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> "2024-08-27T10:27:06-05:00"^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ] ;
+    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "url" ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "http://www.cibmtr.org" ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Bob Milius" ] ;
+    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "email" ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "bmilius@nmdp.org" ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> "RxNorm codes for Additional Drugs in Peri-Transplant Period"] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">fhir:compose</a> [
+    ( <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:include</a> [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+      ( <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:concept</a> [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1011" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "lymphocyte immune globulin, anti-thymocyte globulin" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "107047" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "rabbit anti-human T-lymphocyte globulin 25 MG Injection" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "107050" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "rabbit anti-human T-lymphocyte globulin 25 MG Injection [Thymoglobulin]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "11065" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1164265" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "alemtuzumab Injectable Product" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1165939" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ATGAM Injectable Product" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "117055" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "alemtuzumab" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1172298" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Campath Injectable Product" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1177887" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Thymoglobulin Injectable Product" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1204" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ATGAM" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1311089" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "defibrotide" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1594657" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "alemtuzumab 10 MG/ML" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1594658" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "1.2 ML alemtuzumab 10 MG/ML Injection" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1594659" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Lemtrada" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1594660" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "alemtuzumab 10 MG/ML [Lemtrada]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1594662" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Lemtrada Injectable Product" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1594663" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "1.2 ML alemtuzumab 10 MG/ML Injection [Lemtrada]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1656628" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "alemtuzumab 30 MG/ML" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1656629" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "alemtuzumab Injection" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1656631" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "alemtuzumab 30 MG/ML [Campath]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1656632" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "alemtuzumab Injection [Campath]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1656637" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "alemtuzumab Injection [Lemtrada]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1746523" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "defibrotide sodium" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1746524" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "defibrotide sodium 80 MG/ML" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1746525" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "defibrotide Injectable Product" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1746526" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "defibrotide Injection" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1746527" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "2.5 ML defibrotide sodium 80 MG/ML Injection" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1746528" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Defitelio" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1746529" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "defibrotide sodium 80 MG/ML [Defitelio]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1746530" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "defibrotide Injection [Defitelio]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1746531" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Defitelio Injectable Product" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1746532" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "2.5 ML defibrotide sodium 80 MG/ML Injection [Defitelio]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1788946" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "defibrotide, bovine lung" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "197906" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "5 ML lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML Injection" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "206289" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "5 ML lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML Injection [ATGAM]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "225741" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Thymoglobulin" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "2282514" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "2282515" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "lymphocyte immune globulin, anti-thymocyte globulin Injectable Product" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "2282516" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "lymphocyte immune globulin, anti-thymocyte globulin Injection" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "2282518" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML [ATGAM]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "2282519" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "lymphocyte immune globulin, anti-thymocyte globulin Injection [ATGAM]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "2282525" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "rabbit anti-human T-lymphocyte globulin 25 MG" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "2282527" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "rabbit anti-human T-lymphocyte globulin 25 MG [Thymoglobulin]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "2282528" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "lymphocyte immune globulin, anti-thymocyte globulin Injection [Thymoglobulin]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "2376942" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 400 MG Oral Capsule" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "2477892" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 200 MG [Reltone]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "2477896" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 200 MG Oral Capsule [Reltone]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "2477897" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 400 MG [Reltone]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "2477898" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 400 MG Oral Capsule [Reltone]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "284679" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Campath" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "360513" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 250 MG" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "412174" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 200 MG Oral Capsule" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "452499" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 200 MG" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "452500" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 400 MG" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "828265" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "1 ML alemtuzumab 30 MG/ML Injection" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "828267" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "1 ML alemtuzumab 30 MG/ML Injection [Campath]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "858328" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 300 MG" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "858329" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 300 MG Oral Tablet" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "858330" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 150 MG" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "858332" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 50 MG/ML" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "858333" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 50 MG/ML Oral Suspension" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "858335" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 150 MG Oral Tablet" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "858732" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 500 MG" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "858733" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 500 MG Oral Tablet" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "858734" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 500 MG [Urso Forte]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "858735" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 500 MG Oral Tablet [Urso Forte]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "858744" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 250 MG Oral Capsule" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "858745" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 250 MG [Urso]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "858747" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 300 MG Oral Capsule" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "858748" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 300 MG [Actigall]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "858749" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 300 MG Oral Capsule [Actigall]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "858751" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 250 MG Oral Tablet" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "858752" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ursodiol 250 MG Oral Tablet [Urso]" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "91601" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "lymphocyte immune globulin, anti-thymocyte globulin, equine" ]       ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "973" ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "antilymphocyte immunoglobulin" ]       ] )     ] )
+  ] . # 
+
+</code></pre>
+
+
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+</div>    <!-- /inner-wrapper -->
+</div>    <!-- /row -->
+</div>    <!-- /container -->
+</div>    <!-- /segment-content -->
+
+<script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+if(window.location.hash != "") {
+    $('a[href="' + window.location.hash + '"]').click()
+}
+});
+</script>
+<div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+<div class="container">    <!-- container -->
+<div class="inner-wrapper">
+  <p>
+    IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.7 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 27, 2024 10:27-0500">2024-08-27</span>
+    <br/>
+    <span style="color: #FFFF77">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+<div id="cibmtr-footer">
+    <p>
+    <br/>HL7&reg;, and FHIR&reg; are the registered trademarks of Health Level Seven International 
+    and their use of these trademarks does not constitute an endorsement by HL7.
+    </p>
+</div>
+    </span>
+  </p>
+</div>    <!-- /inner-wrapper -->
+</div>    <!-- /container -->
+</div>    <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+<div class="container">    <!-- container -->
+</div>    <!-- /container -->
+</div>    <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+<script src="assets/js/respond.min.js" type="text/javascript"> </script>
+<script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+<script>anchors.options.visible = 'hover'
+anchors.add()</script>
+
+  <!-- Analytics Below
+================================================== -->
+</body>
+</html>

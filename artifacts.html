@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - CIBMTR Reporting Implementation Guide v0.1.7</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/cibmtr.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"15"}
+    h3,h4,h5,h6{--heading-prefix:"15.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<div id="cibmtr-nav">
+  <a id="cibmtr-logo" no-external="true" href="http://www.cibmtr.org">
+    <!-- <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png" /> -->
+    <img height="80" alt="Visit the CIBMTR website"
+      src="assets/images/CIBMTR_Logo_Color_2024.png" />
+  </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.7 - Trial Use 1
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Connection-Guide-R4.html">Connection - R4</a>
+      </li>
+      <li>
+        <a href="Endpoints.html">Endpoints</a>
+      </li>
+      <li>
+        <a href="Access-Credentials.html">Access Credentials</a>
+      </li>
+      <li>
+        <a href="CRID-Assignment.html">CRID Assignment</a>
+      </li>
+      <li>
+        <a href="Laboratory-Observations.html">Lab Observations</a>
+      </li>
+      <li>
+        <a href="Medications.html">Medications</a>
+      </li>
+      <li>
+        <a href="Bundles.html">Bundles</a>
+      </li>
+      <li>
+        <a href="Form-2450.html">Form 2450: Post-TED</a>
+      </li>
+      <li>
+        <a href="Cytogenetics.html">Cytogenetics - ISCN</a>
+      </li>
+      <li>
+        <a href="Example-Code.html">Example Code Snippets</a>
+      </li>
+      <li>
+        <a href="Appendices.html">Appendices</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR (STU3)</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the CIBMTR Reporting Implementation Guide (v0.1.7: Release Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#3">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cibmtr-additional-peri-transplant-medication.html"
+                  title="StructureDefinition/cibmtr-additional-peri-transplant-medication">CIBMTR Additional Drugs in Peri-Transplant Period</a>
+            </td>
+            <td>
+<p>CIBMTR Additional Drugs Given in the Peri-Transplant Period. Drugs may be given during the peri-transplant period to prevent transplant-related complications, such as liver injuries or to facilitate engraftment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cibmtr-cytogenetics.html"
+                  title="StructureDefinition/cibmtr-cytogenetics">CIBMTR Cytogenetics Profile</a>
+            </td>
+            <td>
+<p>CIBMTR Cytogenetics Profile to capture ISCN</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html"
+                  title="StructureDefinition/cibmtr-gvhd-prophylaxis-medication">CIBMTR GVHD Prophylaxis Medication</a>
+            </td>
+            <td>
+<p>CIBMTR GVHD Prophylaxis Medication</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cibmtr-medication.html"
+                  title="StructureDefinition/cibmtr-medication">CIBMTR Medication (us-core)</a>
+            </td>
+            <td>
+<p>CIBMTR Medication (us-core)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cibmtr-medication-administration.html"
+                  title="StructureDefinition/cibmtr-medication-administration">CIBMTR Medication Administration (mcode)</a>
+            </td>
+            <td>
+<p>CIBMTR Medication Administration (mcode)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cibmtr-medication-request.html"
+                  title="StructureDefinition/cibmtr-medication-request">CIBMTR Medication Request (mcode)</a>
+            </td>
+            <td>
+<p>CIBMTR Medication Request (mcode)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cibmtr-mobilizing-agent-medication.html"
+                  title="StructureDefinition/cibmtr-mobilizing-agent-medication">CIBMTR Mobilizing Agents Medication</a>
+            </td>
+            <td>
+<p>CIBMTR Mobilizing Agents (auto only) Medication</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cibmtr-observation-lab.html"
+                  title="StructureDefinition/cibmtr-observation-lab">CIBMTR Observation Laboratory Results Profile (us-core)</a>
+            </td>
+            <td>
+<p>CIBMTR Observation Laboratory Results Profile (us-core)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cibmtr-obs-priority-variables.html"
+                  title="StructureDefinition/cibmtr-obs-priority-variables">CIBMTR Observation Laboratory Results: Priority Variables</a>
+            </td>
+            <td>
+<p>CIBMTR Observation Laboratory Results: Priority Variables</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cibmtr-patient.html"
+                  title="StructureDefinition/cibmtr-patient">CIBMTR Patient Profile (us-core)</a>
+            </td>
+            <td>
+<p>CIBMTR Patient Profile for CRID assignment (us-core)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html"
+                  title="StructureDefinition/cibmtr-post-hct-disease-therapy-planned-medication">CIBMTR Planned Post-HCT Disease Therapy Medication</a>
+            </td>
+            <td>
+<p>CIBMTR Planned Post-HCT Disease Therapy Medication</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cibmtr-prep-regimen-medication.html"
+                  title="StructureDefinition/cibmtr-prep-regimen-medication">CIBMTR Prep Regimen Medication</a>
+            </td>
+            <td>
+<p>CIBMTR Pre-HCT Preparative Regimen (Conditioning) Medication</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cibmtr-prior-exposure-medication.html"
+                  title="StructureDefinition/cibmtr-prior-exposure-medication">CIBMTR Prior Exposure Medication</a>
+            </td>
+            <td>
+<p>CIBMTR Prior Exposure: Potential Study Eligibility Medication</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-auto-differential-blood-vs.html"
+                  title="ValueSet/auto-differential-blood-vs">Auto Differential panel - Blood (57023-4)</a>
+            </td>
+            <td>
+<p>Auto Differential panel - Blood (57023-4)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-cbc-w-auto-differential-blood-vs.html"
+                  title="ValueSet/cbc-w-auto-differential-blood-vs">CBC W Auto Differential panel - Blood (57021-8)</a>
+            </td>
+            <td>
+<p>CBC W Auto Differential panel - Blood (57021-8)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-cbc-w-differential-unspecified-blood-vs.html"
+                  title="ValueSet/cbc-w-differential-unspecified-blood-vs">CBC W Differential panel, method unspecified - Blood (69742-5)</a>
+            </td>
+            <td>
+<p>CBC W Differential panel, method unspecified - Blood (69742-5)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-cbc-w-ordered-manual-differential-blood-vs.html"
+                  title="ValueSet/cbc-w-ordered-manual-differential-blood-vs">CBC W Ordered Manual Differential panel - Blood (57782-5)</a>
+            </td>
+            <td>
+<p>CBC W Ordered Manual Differential panel - Blood (57782-5)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-cbc-blood-automated-vs.html"
+                  title="ValueSet/cbc-blood-automated-vs">CBC panel - Blood by Automated count (58410-2)</a>
+            </td>
+            <td>
+<p>CBC panel - Blood by Automated count (58410-2)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-cibmtr-priority-variables-2021.html"
+                  title="ValueSet/cibmtr-priority-variables-2021">CIBMTR Priority Variables Value Set (FY21)</a>
+            </td>
+            <td>
+<p>Priority Variables for CIBMTR (FY21)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-cibmtr-priority-variables-2022.html"
+                  title="ValueSet/cibmtr-priority-variables-2022">CIBMTR Priority Variables Value Set (FY22)</a>
+            </td>
+            <td>
+<p>Priority Variables for CIBMTR (FY22)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-cibmtr-priority-variables-epic-2021.html"
+                  title="ValueSet/cibmtr-priority-variables-epic-2021">CIBMTR Priority Variables Value Set for Epic App (FY21)</a>
+            </td>
+            <td>
+<p>Priority Variables for Epic CIBMTR Reporting App (FY21)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-differential-unspecified-blood-vs.html"
+                  title="ValueSet/differential-unspecified-blood-vs">Differential panel, method unspecified - Blood (69738-3)</a>
+            </td>
+            <td>
+<p>Differential panel, method unspecified - Blood (69738-3)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-hematopoietic-disorder-vs.html"
+                  title="ValueSet/hematopoietic-disorder-vs">Disorders of hematopoietic structure</a>
+            </td>
+            <td>
+<p>SNOMED: Disorders of hematopoietic structure</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-erythrocyte-morphology-blood-vs.html"
+                  title="ValueSet/erythrocyte-morphology-blood-vs">Erythrocyte morphology panel - Blood (58408-6)</a>
+            </td>
+            <td>
+<p>Erythrocyte morphology panel - Blood (58408-6)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-gvhd-icd10-codes.html" title="ValueSet/gvhd-icd10-codes">GVHD ICD-10 Codes</a>
+            </td>
+            <td>
+<p>GVHD ICD-10 Codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-gvhd-sct-codes.html" title="ValueSet/gvhd-sct-codes">GVHD SNOMED CT Codes</a>
+            </td>
+            <td>
+<p>GVHD SNOMED CT Codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-gvhd-all-valueset.html"
+                  title="ValueSet/gvhd-all-valueset">GVHD Type Value Set</a>
+            </td>
+            <td>
+<p>Permissible values for types of Graft vs Host Disease, from SNOMED CT and ICD-10</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-leukocyte-morphology-blood-vs.html"
+                  title="ValueSet/leukocyte-morphology-blood-vs">Leukocyte morphology panel - Blood (58407-8)</a>
+            </td>
+            <td>
+<p>Leukocyte morphology panel - Blood (58407-8)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-manual-differential-blood-vs.html"
+                  title="ValueSet/manual-differential-blood-vs">Manual Differential panel - Blood (24318-8)</a>
+            </td>
+            <td>
+<p>Manual Differential panel - Blood (24318-8)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-platelet-morphology-blood-vs.html"
+                  title="ValueSet/platelet-morphology-blood-vs">Platelet morphology panel - Blood (58406-0)</a>
+            </td>
+            <td>
+<p>Platelet morphology panel - Blood (58406-0)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-presence-valueset.html"
+                  title="ValueSet/presence-valueset">Presence Answer List</a>
+            </td>
+            <td>
+<p>Permissible values for presence</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-addition-peri-transplant-vs.html"
+                  title="ValueSet/med-addition-peri-transplant-vs">RxNorm - Additional Drugs in Peri-Transplant Period</a>
+            </td>
+            <td>
+<p>RxNorm codes for Additional Drugs in Peri-Transplant Period</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-alemtuzumab-vs.html"
+                  title="ValueSet/med-alemtuzumab-vs">RxNorm - Alemtuzumab</a>
+            </td>
+            <td>
+<p>RxNorm codes for Alemtuzumab</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-all-form2400-vs.html"
+                  title="ValueSet/med-all-form2400-vs">RxNorm - All of Form 2400</a>
+            </td>
+            <td>
+<p>RxNorm codes for all of Form 2400</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-anti-thymocyte-globulin-vs.html"
+                  title="ValueSet/med-anti-thymocyte-globulin-vs">RxNorm - Anti-Thymocyte Globulin</a>
+            </td>
+            <td>
+<p>RxNorm codes for Anti-Thymocyte Globulin</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-bortezomib-vs.html"
+                  title="ValueSet/med-bortezomib-vs">RxNorm - Bortezomib</a>
+            </td>
+            <td>
+<p>RxNorm codes for Bortezomib</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-busulfan-vs.html" title="ValueSet/med-busulfan-vs">RxNorm - Busulfan</a>
+            </td>
+            <td>
+<p>RxNorm codes for Busulfan</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-carmustine-vs.html"
+                  title="ValueSet/med-carmustine-vs">RxNorm - Carmustine</a>
+            </td>
+            <td>
+<p>RxNorm codes for Carmustine</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-cyclophosphamide-vs.html"
+                  title="ValueSet/med-cyclophosphamide-vs">RxNorm - Cyclophosphamide</a>
+            </td>
+            <td>
+<p>RxNorm codes for Cyclophosphamide</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-cytarabine-vs.html"
+                  title="ValueSet/med-cytarabine-vs">RxNorm - Cytarabine</a>
+            </td>
+            <td>
+<p>RxNorm codes for Cytarabine</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-defibrotide-vs.html"
+                  title="ValueSet/med-defibrotide-vs">RxNorm - Defibrotide</a>
+            </td>
+            <td>
+<p>RxNorm codes for Defibrotide</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-etoposide-vs.html" title="ValueSet/med-etoposide-vs">RxNorm - Etoposide</a>
+            </td>
+            <td>
+<p>RxNorm codes for Etoposide</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-fludarabine-vs.html"
+                  title="ValueSet/med-fludarabine-vs">RxNorm - Fludarabine</a>
+            </td>
+            <td>
+<p>RxNorm codes for Fludarabine</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-gvhd-prophylaxis-vs.html"
+                  title="ValueSet/med-gvhd-prophylaxis-vs">RxNorm - GVHD Prophylaxis</a>
+            </td>
+            <td>
+<p>RxNorm codes for GVHD Prophylaxis</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-melphalan-vs.html" title="ValueSet/med-melphalan-vs">RxNorm - Melphalan</a>
+            </td>
+            <td>
+<p>RxNorm codes for Melphalan</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-mobilizing-agents-vs.html"
+                  title="ValueSet/med-mobilizing-agents-vs">RxNorm - Mobilizing Agents (auto only)</a>
+            </td>
+            <td>
+<p>RxNorm codes for Mobilizing Agents (auto only)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-post-hct-disease-therapy-planned-vs.html"
+                  title="ValueSet/med-post-hct-disease-therapy-planned-vs">RxNorm - Post-HCT Disease Therapy Planned</a>
+            </td>
+            <td>
+<p>RxNorm codes for Post-HCT Disease Therapy Planned</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-prep-regimen-vs.html"
+                  title="ValueSet/med-prep-regimen-vs">RxNorm - Prep Regimen</a>
+            </td>
+            <td>
+<p>RxNorm codes for Prep Regimen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-prior-exposure-vs.html"
+                  title="ValueSet/med-prior-exposure-vs">RxNorm - Prior Exposure: Potential Study Eligibility</a>
+            </td>
+            <td>
+<p>Prior Exposure: Potential Study Eligibility</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-rituximab-vs.html" title="ValueSet/med-rituximab-vs">RxNorm - Rituximab</a>
+            </td>
+            <td>
+<p>RxNorm codes for Rituximab</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-thiotepa-vs.html" title="ValueSet/med-thiotepa-vs">RxNorm - Thiotepa</a>
+            </td>
+            <td>
+<p>RxNorm codes for Thiotepa</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-treosulfan-vs.html"
+                  title="ValueSet/med-treosulfan-vs">RxNorm - Treosulfan</a>
+            </td>
+            <td>
+<p>RxNorm codes for Treosulfan</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-med-ursodiol-vs.html" title="ValueSet/med-ursodiol-vs">RxNorm - Ursodiol</a>
+            </td>
+            <td>
+<p>RxNorm codes for Ursodiol</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-snomed-myelodysplastic-diseases-vs.html"
+                  title="ValueSet/snomed-myelodysplastic-diseases-vs">SNOMED Myelodysplastic Diseases</a>
+            </td>
+            <td>
+<p>The myelodysplastic syndromes (MDS) are a group of clonal hematopoietic stem cell diseases characterized by cytopenia(s), dysplasia (abnormal growth or development leading to an alteration in size, shape, and organization of the cell) in one or more of the major myeloid cell lines (WBC, RBC, and/or platelets), ineffective hematopoiesis, and an increased risk of developing acute myelogenous leukemia (AML). MDS occurs primarily in older adults, with a median age of 70 years. The majority of recipients present with symptoms related to cytopenias. Most recipients present with anemia requiring RBC transfusions.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-smear-morphology-blood-vs.html"
+                  title="ValueSet/smear-morphology-blood-vs">Smear morphology panel - Blood (34994-4)</a>
+            </td>
+            <td>
+<p>Smear morphology panel - Blood (34994-4)</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ABOBloodGroupObservationLOINC.html"
+                  title="Observation/ABOBloodGroupObservationLOINC">ABOBloodGroupObservationLOINC</a>
+            </td>
+            <td>
+<p>ABO group [Type] in Blood (883-9) with LOINC answer</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ABOBloodGroupObservationSNOMED.html"
+                  title="Observation/ABOBloodGroupObservationSNOMED">ABOBloodGroupObservationSNOMED</a>
+            </td>
+            <td>
+<p>ABO group [Type] in Blood (883-9) with SNOMED answer</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ABORhObservationLOINC.html"
+                  title="Observation/ABORhObservationLOINC">ABORhObservationLOINC</a>
+            </td>
+            <td>
+<p>ABO and Rh group [Type] in Blood (882-1) with LOINC answer</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ABORhObservationSNOMED.html"
+                  title="Observation/ABORhObservationSNOMED">ABORhObservationSNOMED</a>
+            </td>
+            <td>
+<p>ABO and Rh group [Type] in Blood (882-1) with SNOMED CT answer</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-AlbuminObservation.html"
+                  title="Observation/AlbuminObservation">AlbuminObservation</a>
+            </td>
+            <td>
+<p>Albumin [Mass/volume] in Serum or Plasma</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-BasophilsObservation.html"
+                  title="Observation/BasophilsObservation">BasophilsObservation</a>
+            </td>
+            <td>
+<p>Basophils/100 leukocytes in Blood</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CMVDNAViralLoadCopiesmL.html"
+                  title="Observation/CMVDNAViralLoadCopiesmL">CMVDNAViralLoadCopiesmL</a>
+            </td>
+            <td>
+<p>Cytomegalovirus DNA [#/volume] (viral load) in Bronchoalveolar lavage by NAA with probe detection (49349-4)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CMVDNAViralLoadIUmL.html"
+                  title="Observation/CMVDNAViralLoadIUmL">CMVDNAViralLoadIUmL</a>
+            </td>
+            <td>
+<p>Cytomegalovirus DNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection (72493-0)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CMVIgAbPresenceSNOMED.html"
+                  title="Observation/CMVIgAbPresenceSNOMED">CMVIgAbPresenceSNOMED</a>
+            </td>
+            <td>
+<p>Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay (13949-3) with SNOMED CT answer</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CMVIgGAbPresenceLOINC.html"
+                  title="Observation/CMVIgGAbPresenceLOINC">CMVIgGAbPresenceLOINC</a>
+            </td>
+            <td>
+<p>Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay (13949-3) with LOINC answer</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CMVIgMAbPresenceLOINC.html"
+                  title="Observation/CMVIgMAbPresenceLOINC">CMVIgMAbPresenceLOINC</a>
+            </td>
+            <td>
+<p>Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunoassay (24119-0) with LOINC answer</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CMVIgMAbPresenceSNOMED.html"
+                  title="Observation/CMVIgMAbPresenceSNOMED">CMVIgMAbPresenceSNOMED</a>
+            </td>
+            <td>
+<p>Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunoassay (24119-0) with SNOMED answer</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Cytogenetics-Example-1.html"
+                  title="Observation/Cytogenetics-Example-1">Cytogenetics-Example-1</a>
+            </td>
+            <td>
+<p>Example of ISCN report</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-EosinophilsObservation.html"
+                  title="Observation/EosinophilsObservation">EosinophilsObservation</a>
+            </td>
+            <td>
+<p>Eosinophils observation, #/volume in Blood</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-HeightObservation.html"
+                  title="Observation/HeightObservation">Height Observation</a>
+            </td>
+            <td>
+<p>Example of a patient's height observation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-HemoglobinObservation.html"
+                  title="Observation/HemoglobinObservation">HemoglobinObservation</a>
+            </td>
+            <td>
+<p>Hemoglobin [Mass/volume] in Blood</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-LeukocytesObservation.html"
+                  title="Observation/LeukocytesObservation">LeukocytesObservation</a>
+            </td>
+            <td>
+<p>Leukocytes observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-Medication-Cyclophosphamide-Example.html"
+                  title="Medication/Medication-Cyclophosphamide-Example">Medication-Cyclophosphamide-Example</a>
+            </td>
+            <td>
+<p>Medication - Cyclophosphamide, 1 G injection</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-Medication-Etoposide-Example.html"
+                  title="Medication/Medication-Etoposide-Example">Medication-Etoposide-Example</a>
+            </td>
+            <td>
+<p>Medication - Etoposide (Vepesid) chemo IBPB, 20MG/ML</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-Medication-GVHD-Prophylaxis-Example.html"
+                  title="Medication/Medication-GVHD-Prophylaxis-Example">Medication-GVHD-Prophylaxis-Example</a>
+            </td>
+            <td>
+<p>Medication - GVHD Prophylaxis Example - Cyclosporine</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-Medication-Mobilizing-Agent-Example.html"
+                  title="Medication/Medication-Mobilizing-Agent-Example">Medication-Mobilizing-Agent-Example</a>
+            </td>
+            <td>
+<p>Medication - Mobilizing Agents Example - Pegfilgrastim</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-Medication-Peri-Transplant-Example.html"
+                  title="Medication/Medication-Peri-Transplant-Example">Medication-Peri-Transplant-Example</a>
+            </td>
+            <td>
+<p>Medication - Additional Peri-Transplant Example - Anti-Thymocyte gGobulin</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-Medication-Post-HCT-Disease-Therapy-Example.html"
+                  title="Medication/Medication-Post-HCT-Disease-Therapy-Example">Medication-Post-HCT-Disease-Therapy-Example</a>
+            </td>
+            <td>
+<p>Medication - Post-HCT Disease Therapy Planned Example - Blinatumomab</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-Medication-Prep-Regimen-Example.html"
+                  title="Medication/Medication-Prep-Regimen-Example">Medication-Prep-Regimen-Example</a>
+            </td>
+            <td>
+<p>Medication - Pre-HCT Preparatoive Regimen (Conditioning) Example - Pegfilgrastim</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-Medication-PriorExposure-Example.html"
+                  title="Medication/Medication-PriorExposure-Example">Medication-PriorExposure-Example</a>
+            </td>
+            <td>
+<p>Medication - Prior Exposure: Potential Study Eligibility Example - Mogamulizumab</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationAdministration-MedicationAdministration-Example1.html"
+                  title="MedicationAdministration/MedicationAdministration-Example1">MedicationAdministration-Example1</a>
+            </td>
+            <td>
+<p>Medication - Medication Administration example using medicationReference - Etoposide</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationAdministration-MedicationAdministration-Example2.html"
+                  title="MedicationAdministration/MedicationAdministration-Example2">MedicationAdministration-Example2</a>
+            </td>
+            <td>
+<p>Medication - Medication Administration example using medicationCodeableConcept - Etoposide</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-MedicationRequest-Etoposide-Example.html"
+                  title="MedicationRequest/MedicationRequest-Etoposide-Example">MedicationRequest-Etoposide-Example</a>
+            </td>
+            <td>
+<p>Medication Request for Etoposide (Vepesid) chemo IBPB, 20MG/ML</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MetamyelocytesObservation.html"
+                  title="Observation/MetamyelocytesObservation">MetamyelocytesObservation</a>
+            </td>
+            <td>
+<p>Metamyelocytes [Presence] in Blood</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-NeutrophilsObservation.html"
+                  title="Observation/NeutrophilsObservation">NeutrophilsObservation</a>
+            </td>
+            <td>
+<p>Neutrophils [#/volume] in Cord blood</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PatientExample1.html" title="Patient/PatientExample1">PatientExample1</a>
+            </td>
+            <td>
+<p>Patient with CIBMTR CRID</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PatientExample2.html" title="Patient/PatientExample2">PatientExample2</a>
+            </td>
+            <td>
+<p>example using CIBMTR center number</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PatientExample3.html" title="Patient/PatientExample3">PatientExample3</a>
+            </td>
+            <td>
+<p>Patient with MRN and CRID, Race=White, Ethnicity=Unknown</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PatientExample4.html" title="Patient/PatientExample4">PatientExample4</a>
+            </td>
+            <td>
+<p>Patient with CRID and MRN, Race=Black or African American, Ethnicity=Unknown</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PatientExample5.html" title="Patient/PatientExample5">PatientExample5</a>
+            </td>
+            <td>
+<p>Patient with CRID &amp; MRN, Race=Mixed, Ethnicity=Not Hispanic or Latino</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PatientExample6.html" title="Patient/PatientExample6">PatientExample6</a>
+            </td>
+            <td>
+<p>Patient with CIBMTR CRID</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-WeightObservation.html"
+                  title="Observation/WeightObservation">Weight Observation</a>
+            </td>
+            <td>
+<p>Example of a patient's weight observation.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+if(window.location.hash != "") {
+    $('a[href="' + window.location.hash + '"]').click()
+}
+});
+</script>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.7 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 22, 2024 12:33-0600">2024-11-22</span>
+    <br/>
+    <span style="color: #FFFF77">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+<div id="cibmtr-footer">
+    <p>
+    <br/>HL7&#174;, and FHIR&#174; are the registered trademarks of Health Level Seven International 
+    and their use of these trademarks does not constitute an endorsement by HL7.
+    </p>
+</div>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script>anchors.options.visible = 'hover'
+anchors.add()</script>
+
+<!-- Analytics Below
+================================================== -->
+</body>
+</html>
+

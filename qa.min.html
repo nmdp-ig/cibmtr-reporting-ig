@@ -1,0 +1,625 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 0, errors = 2, warn = 26, info = 10-->
+<head>
+  <title>CIBMTRReporting : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for CIBMTRReporting</h1>
+ <p>Generated Fri Nov 22 12:35:32 CST 2024, FHIR version 4.0.1 for nmdp.fhir.cibmtr-reporting#0.1.7 (canonical = <a href="http://fhir.nmdp.org/ig/cibmtr-reporting">http://fhir.nmdp.org/ig/cibmtr-reporting</a> (<a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.6.20, which is out of date. The current version is v1.7.5 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = nmdp.fhir.cibmtr-reporting, Canonical = http://fhir.nmdp.org/ig/cibmtr-reporting</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Publication Request:</td><td><table class="grid">
+ <tr><td>package-id</d><td>nmdp.fhir.cibmtr-reporting</td></tr>
+ <tr><td>version</d><td>0.1.7</td></tr>
+ <tr><td>path</d><td>http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.7</td></tr>
+ <tr><td>Pub-Mode</d><td>milestone</td></tr>
+ <tr><td>status</d><td>draft</td></tr>
+ <tr><td>Release-Label</d><td>Trial Use 1</td></tr>
+ <tr><td>sequence</d><td>Release</td></tr>
+ <tr><td>desc</d><td>How to report hematopoietic cell transplantation (HCT) and other cellular therapy data to CIBMTR</td></tr>
+ <tr><td>category</d><td>Research</td></tr>
+ <tr><td>title</d><td>CIBMTR Reporting Implementation Guide</td></tr>
+ <tr><td>introduction</d><td>The [Center for International Blood &amp;amp; Marrow Transplant Research® (CIBMTR®)] CIBMTR is a collaborative resource of data and experts supporting research in cellular therapies to improve patient outcomes. The CIBMTR facilitates critical observational and interventional research through scientific and statistical expertise, a large network of transplant centers, and a unique and extensive clinical outcomes database. This IG describes how to report these data to CIBMTR.</td></tr>
+ <tr><td>ci-build</d><td>http://nmdp-ig.github.io/cibmtr-reporting-ig</td></tr>
+</table>
+<ul><li>Error fetching package-list from http://fhir.nmdp.org/ig/cibmtr-reporting: Read timed out <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>This IG is not yet published at all, so there must be "first" : true in the publication request <img src="icon-error.gif" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> nmdp.fhir.cibmtr-reporting</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.7</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.nmdp.org/ig/cibmtr-reporting</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.1.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.us.core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core/STU4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 7.0.0</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4Xu3LMQoAIBADwftr/v8GtdbqEAthAtMspJJUx9rYW8ftHwAA+NcRAAAAXplLq0BWj/rZigAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.bulkdata</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.1 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/bulkdata</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/bulkdata/STU1.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 2.0.0</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> us.nlm.vsac</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.3.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.org/packages/us.nlm.vsac</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.org/packages/us.nlm.vsac</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 0.20.0</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.us.mcode</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/mcode</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/mcode/STU2</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 3.0.0</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.us.core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core/STU4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">see above. Latest Release is 7.0.0</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.genomics-reporting</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/genomics-reporting</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/genomics-reporting/STU2</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: cibmtr-template#0.1.7 -&gt; fhir.base.template#current. Tools: 0.1.0</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/valueset-common-tags.html">CommonTags</a>
+ (13 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (13 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-status.html">Medication Status Codes</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (21 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-form-codes.html">SNOMEDCTFormCodes</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R4/substance.html">Substance</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/devicerequest.html">DeviceRequest</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/nutritionorder.html">NutritionOrder</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/imagingstudy.html">ImagingStudy</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-category.html">ObservationCategoryCodes</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>
+ (34 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/devicemetric.html">DeviceMetric</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-referencerange-meaning.html">ObservationReferenceRangeMeaningCodes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html">ObservationReferenceRangeAppliesToCodes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/molecularsequence.html">MolecularSequence</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/media.html">Media</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-admin-status.html">MedicationAdministration Status Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html">SNOMEDCTReasonMedicationNotGivenCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-admin-category.html">MedicationAdministration Category Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-med-admin-perform-function.html">MedicationAdministration Performer Function Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-approach-site-codes.html">SNOMEDCTAnatomicalStructureForAdministrationSiteCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-route-codes.html">SNOMEDCTRouteCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-administration-method-codes.html">SNOMEDCTAdministrationMethodCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-status.html">medicationrequest Status</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-status-reason.html">medicationRequest Status Reason Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-intent.html">medicationRequest Intent</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-category.html">medicationRequest Category Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-request-priority.html">RequestPriority</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-performer-role.html">ProcedurePerformerRoleCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-course-of-therapy.html">medicationRequest Course of Therapy Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/coverage.html">Coverage</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/claimresponse.html">ClaimResponse</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html">SNOMEDCTAdditionalDosageInstructions</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html">SNOMEDCTMedicationAsNeededReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-dose-rate-type.html">DoseAndRateType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/detectedissue.html">DetectedIssue</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-methods.html">ObservationMethods</a>
+ (2 uses)
+  </li>
+  <li>
+hl7.fhir.us.mcode#2.0.0:     <a href="http://hl7.org/fhir/us/mcode/STU2/ImplementationGuide-hl7.fhir.us.mcode.html">MinimalCommonOncologyDataElements</a>
+ (1 uses)
+  </li>
+  <li>
+hl7.fhir.uv.extensions.r4#5.1.0:     <a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-elementdefinition-type-must-support.html">TypeMustSupport</a>
+ (19 uses)
+  </li>
+  <li>
+hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
+ (92 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://fhir.nmdp.org/ig/cibmtr-reporting (Problem #1 with package-list.json at http://fhir.nmdp.org/ig/cibmtr-reporting: Read timed out)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Summary:</td><td> errors = 2, warn = 26, info = 10, broken links = 0</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-ABOBloodGroupObservationLOINC"><b>/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-ABOBloodGroupObservationLOINC</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-ABOBloodGroupObservationSNOMED"><b>/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-ABOBloodGroupObservationSNOMED</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-ABORhObservationLOINC"><b>/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-ABORhObservationLOINC</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-ABORhObservationSNOMED"><b>/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-ABORhObservationSNOMED</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-AlbuminObservation"><b>/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-AlbuminObservation</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-BasophilsObservation"><b>/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-BasophilsObservation</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-CMVDNAViralLoadCopiesmL"><b>/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVDNAViralLoadCopiesmL</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-CMVDNAViralLoadIUmL"><b>/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVDNAViralLoadIUmL</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-CMVIgAbPresenceSNOMED"><b>/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVIgAbPresenceSNOMED</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-CMVIgGAbPresenceLOINC"><b>/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVIgGAbPresenceLOINC</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-CMVIgMAbPresenceLOINC"><b>/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVIgMAbPresenceLOINC</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-CMVIgMAbPresenceSNOMED"><b>/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVIgMAbPresenceSNOMED</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-Cytogenetics-Example-1"><b>/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-Cytogenetics-Example-1</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-EosinophilsObservation"><b>/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-EosinophilsObservation</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-HeightObservation"><b>/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-HeightObservation</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-HemoglobinObservation"><b>/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-HemoglobinObservation</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-LeukocytesObservation"><b>/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-LeukocytesObservation</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-MetamyelocytesObservation"><b>/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-MetamyelocytesObservation</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-NeutrophilsObservation"><b>/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-NeutrophilsObservation</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-WeightObservation"><b>/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-WeightObservation</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/Access-Credentials&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/script at Line 350, column 2</b></td><td><b>warning</b></td><td title=""><b>The &lt;script&gt; containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 569 other files)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/Access-Credentials&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/script at Line 393, column 2</b></td><td><b>warning</b></td><td title=""><b>The &lt;script&gt; containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 569 other files)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/Medication-Medication-Cyclophosphamide-Example&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/script at Line 239, column 2</b></td><td><b>warning</b></td><td title=""><b>The &lt;script&gt; containing the javascript 'try { var currentTab'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 195 other files)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-ABOBloodGroupObservationLOINC"> </a>
+<h2><a href="Observation-ABOBloodGroupObservationLOINC.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-ABOBloodGroupObservationLOINC.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cibmtr-obs-priority-variables.html">CIBMTR Observation Laboratory Results: Priority Variables</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-ABOBloodGroupObservationSNOMED"> </a>
+<h2><a href="Observation-ABOBloodGroupObservationSNOMED.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-ABOBloodGroupObservationSNOMED.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cibmtr-obs-priority-variables.html">CIBMTR Observation Laboratory Results: Priority Variables</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-ABORhObservationLOINC"> </a>
+<h2><a href="Observation-ABORhObservationLOINC.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-ABORhObservationLOINC.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cibmtr-obs-priority-variables.html">CIBMTR Observation Laboratory Results: Priority Variables</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-ABORhObservationSNOMED"> </a>
+<h2><a href="Observation-ABORhObservationSNOMED.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-ABORhObservationSNOMED.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cibmtr-obs-priority-variables.html">CIBMTR Observation Laboratory Results: Priority Variables</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-AlbuminObservation"> </a>
+<h2><a href="Observation-AlbuminObservation.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-AlbuminObservation.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cibmtr-obs-priority-variables.html">CIBMTR Observation Laboratory Results: Priority Variables</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-BasophilsObservation"> </a>
+<h2><a href="Observation-BasophilsObservation.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-BasophilsObservation.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cibmtr-obs-priority-variables.html">CIBMTR Observation Laboratory Results: Priority Variables</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-CMVDNAViralLoadCopiesmL"> </a>
+<h2><a href="Observation-CMVDNAViralLoadCopiesmL.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVDNAViralLoadCopiesmL.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cibmtr-obs-priority-variables.html">CIBMTR Observation Laboratory Results: Priority Variables</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation&#8203;.value&#8203;.ofType(Quantity) (l36&#8203;/c4)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS"><b>UCUM Codes that contain human readable annotations like {copies} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation&#8203;.referenceRange[0]&#8203;.low (l44&#8203;/c8)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS"><b>UCUM Codes that contain human readable annotations like {copies} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation&#8203;.referenceRange[0]&#8203;.high (l50&#8203;/c8)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS"><b>UCUM Codes that contain human readable annotations like {copies} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-CMVDNAViralLoadIUmL"> </a>
+<h2><a href="Observation-CMVDNAViralLoadIUmL.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVDNAViralLoadIUmL.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cibmtr-obs-priority-variables.html">CIBMTR Observation Laboratory Results: Priority Variables</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-CMVIgAbPresenceSNOMED"> </a>
+<h2><a href="Observation-CMVIgAbPresenceSNOMED.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVIgAbPresenceSNOMED.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cibmtr-obs-priority-variables.html">CIBMTR Observation Laboratory Results: Priority Variables</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-CMVIgGAbPresenceLOINC"> </a>
+<h2><a href="Observation-CMVIgGAbPresenceLOINC.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVIgGAbPresenceLOINC.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cibmtr-obs-priority-variables.html">CIBMTR Observation Laboratory Results: Priority Variables</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-CMVIgMAbPresenceLOINC"> </a>
+<h2><a href="Observation-CMVIgMAbPresenceLOINC.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVIgMAbPresenceLOINC.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cibmtr-obs-priority-variables.html">CIBMTR Observation Laboratory Results: Priority Variables</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-CMVIgMAbPresenceSNOMED"> </a>
+<h2><a href="Observation-CMVIgMAbPresenceSNOMED.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVIgMAbPresenceSNOMED.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cibmtr-obs-priority-variables.html">CIBMTR Observation Laboratory Results: Priority Variables</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-Cytogenetics-Example-1"> </a>
+<h2><a href="Observation-Cytogenetics-Example-1.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-Cytogenetics-Example-1.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cibmtr-cytogenetics.html">CIBMTR Cytogenetics Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation&#8203;.component[0]&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.system (l46&#8203;/c8)</b></td><td><b>information</b></td><td><b>A definition for CodeSystem 'https://iscn.karger.com' could not be found, so the code cannot be validated</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-EosinophilsObservation"> </a>
+<h2><a href="Observation-EosinophilsObservation.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-EosinophilsObservation.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cibmtr-obs-priority-variables.html">CIBMTR Observation Laboratory Results: Priority Variables</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-HeightObservation"> </a>
+<h2><a href="Observation-HeightObservation.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-HeightObservation.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cibmtr-obs-priority-variables.html">CIBMTR Observation Laboratory Results: Priority Variables</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Observation.category[0] (l17/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodyheight|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl21" class="flip" onclick="flip('l21')">Show Reasoning</span><div id="l21" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/StructureDefinition/bodyheight|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Observation.category[0]: discriminator = true and ('vital-signs' in coding.code) and ('http://terminology.hl7.org/CodeSystem/observation-category' in coding.system)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Observation.category:VSCat': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/bodyheight|4.0.1). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-HemoglobinObservation"> </a>
+<h2><a href="Observation-HemoglobinObservation.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-HemoglobinObservation.json</a> <span id="svi16" class="toggle" onclick="toggle('vi16')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi16')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi16"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cibmtr-obs-priority-variables.html">CIBMTR Observation Laboratory Results: Priority Variables</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-LeukocytesObservation"> </a>
+<h2><a href="Observation-LeukocytesObservation.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-LeukocytesObservation.json</a> <span id="svi17" class="toggle" onclick="toggle('vi17')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi17')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi17"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cibmtr-observation-lab.html">CIBMTR Observation Laboratory Results Profile (us-core)</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-MetamyelocytesObservation"> </a>
+<h2><a href="Observation-MetamyelocytesObservation.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-MetamyelocytesObservation.json</a> <span id="svi18" class="toggle" onclick="toggle('vi18')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi18')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi18"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cibmtr-obs-priority-variables.html">CIBMTR Observation Laboratory Results: Priority Variables</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-NeutrophilsObservation"> </a>
+<h2><a href="Observation-NeutrophilsObservation.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-NeutrophilsObservation.json</a> <span id="svi19" class="toggle" onclick="toggle('vi19')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi19')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi19"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cibmtr-obs-priority-variables.html">CIBMTR Observation Laboratory Results: Priority Variables</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_private_var_folders_vr_1mgn66dn5tz180kb0v445r6r0000gp_T_nmdp.fhir.cibmtr-reporting_0.1.6-milestone_fsh-generated_resources_Observation-WeightObservation"> </a>
+<h2><a href="Observation-WeightObservation.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-WeightObservation.json</a> <span id="svi20" class="toggle" onclick="toggle('vi20')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi20')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi20"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cibmtr-obs-priority-variables.html">CIBMTR Observation Laboratory Results: Priority Variables</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Observation.category[0] (l17/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl28" class="flip" onclick="flip('l28')">Show Reasoning</span><div id="l28" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Observation.category[0]: discriminator = true and ('vital-signs' in coding.code) and ('http://terminology.hl7.org/CodeSystem/observation-category' in coding.system)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Observation.category:VSCat': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="All_observations_should_have_a_performer"> </a>
+<h2>All_observations_should_have_a_performer</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-ABOBloodGroupObservationLOINC.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-ABOBloodGroupObservationLOINC.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-ABOBloodGroupObservationSNOMED.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-ABOBloodGroupObservationSNOMED.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-ABORhObservationLOINC.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-ABORhObservationLOINC.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-ABORhObservationSNOMED.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-ABORhObservationSNOMED.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-AlbuminObservation.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-AlbuminObservation.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-BasophilsObservation.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-BasophilsObservation.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-CMVDNAViralLoadCopiesmL.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVDNAViralLoadCopiesmL.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-CMVDNAViralLoadIUmL.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVDNAViralLoadIUmL.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-CMVIgAbPresenceSNOMED.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVIgAbPresenceSNOMED.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-CMVIgGAbPresenceLOINC.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVIgGAbPresenceLOINC.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-CMVIgMAbPresenceLOINC.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVIgMAbPresenceLOINC.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-CMVIgMAbPresenceSNOMED.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVIgMAbPresenceSNOMED.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-Cytogenetics-Example-1.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-Cytogenetics-Example-1.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-EosinophilsObservation.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-EosinophilsObservation.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-HeightObservation.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-HeightObservation.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-HemoglobinObservation.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-HemoglobinObservation.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-LeukocytesObservation.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-LeukocytesObservation.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-MetamyelocytesObservation.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-MetamyelocytesObservation.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-NeutrophilsObservation.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-NeutrophilsObservation.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-WeightObservation.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-WeightObservation.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-CMVDNAViralLoadCopiesmL.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVDNAViralLoadCopiesmL.json</a></td><td><b>UCUM Codes that contain human readable annotations like {copies} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-CMVDNAViralLoadCopiesmL.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVDNAViralLoadCopiesmL.json</a></td><td><b>UCUM Codes that contain human readable annotations like {copies} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-CMVDNAViralLoadCopiesmL.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-CMVDNAViralLoadCopiesmL.json</a></td><td><b>UCUM Codes that contain human readable annotations like {copies} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_Minimum_SLICE"> </a>
+<h2>Validation_VAL_Profile_Minimum_SLICE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-HeightObservation.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-HeightObservation.json</a></td><td><b>Slice 'Observation.category:VSCat': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/bodyheight|4.0.1). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-WeightObservation.html">/private/var/folders/vr/1mgn66dn5tz180kb0v445r6r0000gp/T/nmdp.fhir.cibmtr-reporting#0.1.6-milestone/fsh-generated/resources/Observation-WeightObservation.json</a></td><td><b>Slice 'Observation.category:VSCat': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+</table>
+</body>
+</html>

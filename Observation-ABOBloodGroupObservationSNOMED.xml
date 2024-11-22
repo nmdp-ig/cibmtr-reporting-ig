@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ABOBloodGroupObservationSNOMED"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"/>
+    <security>
+      <system value="http://terminology.cibmtr.org/codesystem/transplant-center"/>
+      <code value="rc_99999"/>
+      <display value="99999 My Transplant Center"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ABOBloodGroupObservationSNOMED</b></p><a name="ABOBloodGroupObservationSNOMED"> </a><a name="hcABOBloodGroupObservationSNOMED"> </a><a name="ABOBloodGroupObservationSNOMED-en-US"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 883-9}">ABO group [Type] in Blood</span></p><p><b>subject</b>: <a href="Patient-PatientExample6.html"> Female, DoB Unknown ( http://terminology.cibmtr.org/identifier/CRID#123456)</a></p><p><b>effective</b>: 2020-07-21 14:17:00+0000</p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 112144000}">Blood group A (finding)</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="883-9"/>
+      <display value="ABO group [Type] in Blood"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/PatientExample6"/>
+  </subject>
+  <effectiveDateTime value="2020-07-21T14:17:00Z"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="112144000"/>
+      <display value="Blood group A (finding)"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/smear-morphology-blood-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "smear-morphology-blood-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet smear-morphology-blood-vs</b></p><a name=\"smear-morphology-blood-vs\"> </a><a name=\"hcsmear-morphology-blood-vs\"> </a><a name=\"smear-morphology-blood-vs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/9317-9/\">9317-9</a></td><td>Platelet adequacy [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/18280-8/\">18280-8</a></td><td>Background stain [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/32778-3/\">32778-3</a></td><td>Fibrin strands [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/5909-7/\">5909-7</a></td><td>Blood smear finding [Identifier] in Blood by Light microscopy</td></tr></table></li><li>Import all the codes that are contained in <a href=\"ValueSet-erythrocyte-morphology-blood-vs.html\">Erythrocyte morphology panel - Blood (58408-6)</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-leukocyte-morphology-blood-vs.html\">Leukocyte morphology panel - Blood (58407-8)</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-platelet-morphology-blood-vs.html\">Platelet morphology panel - Blood (58406-0)</a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/smear-morphology-blood-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.7"] ; # 
+  fhir:name [ fhir:v "SmearMorphologyBloodVS"] ; # 
+  fhir:title [ fhir:v "Smear morphology panel - Blood (34994-4)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-27T10:27:06-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.cibmtr.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Milius" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bmilius@nmdp.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Smear morphology panel - Blood (34994-4)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "9317-9" ] ;
+         fhir:display [ fhir:v "Platelet adequacy [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "18280-8" ] ;
+         fhir:display [ fhir:v "Background stain [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "32778-3" ] ;
+         fhir:display [ fhir:v "Fibrin strands [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "5909-7" ] ;
+         fhir:display [ fhir:v "Blood smear finding [Identifier] in Blood by Light microscopy" ]
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/erythrocyte-morphology-blood-vs"^^xsd:anyURI ;
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/erythrocyte-morphology-blood-vs>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/leukocyte-morphology-blood-vs"^^xsd:anyURI ;
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/leukocyte-morphology-blood-vs>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/platelet-morphology-blood-vs"^^xsd:anyURI ;
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/platelet-morphology-blood-vs>
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

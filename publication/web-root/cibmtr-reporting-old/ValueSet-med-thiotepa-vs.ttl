@@ -1,0 +1,102 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-thiotepa-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "med-thiotepa-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet med-thiotepa-vs</b></p><a name=\"med-thiotepa-vs\"> </a><a name=\"hcmed-thiotepa-vs\"> </a><a name=\"med-thiotepa-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1366537</td><td>Tepadina</td></tr><tr><td>224924</td><td>Thioplex</td></tr><tr><td>10473</td><td>thiotepa</td></tr><tr><td>1919208</td><td>Tepadina Injectable Product</td></tr><tr><td>1177866</td><td>Thioplex Injectable Product</td></tr><tr><td>340261</td><td>thiotepa 10.4 MG/ML</td></tr><tr><td>575228</td><td>thiotepa 10.4 MG/ML [Thioplex]</td></tr><tr><td>318248</td><td>thiotepa 10.4 MG/ML Injectable Solution [Thioplex]</td></tr><tr><td>1660002</td><td>thiotepa 100 MG</td></tr><tr><td>1919206</td><td>thiotepa 100 MG [Tepadina]</td></tr><tr><td>1919209</td><td>thiotepa 100 MG Injection [Tepadina]</td></tr><tr><td>1660008</td><td>thiotepa 15 MG</td></tr><tr><td>1919210</td><td>thiotepa 15 MG [Tepadina]</td></tr><tr><td>1919211</td><td>thiotepa 15 MG Injection [Tepadina]</td></tr><tr><td>1156487</td><td>thiotepa Injectable Product</td></tr><tr><td>375319</td><td>thiotepa Injectable Solution</td></tr><tr><td>363194</td><td>thiotepa Injectable Solution [Thioplex]</td></tr><tr><td>1660003</td><td>thiotepa Injection</td></tr><tr><td>1919207</td><td>thiotepa Injection [Tepadina]</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-thiotepa-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.7"] ; # 
+  fhir:name [ fhir:v "RxNormThiotepaVS"] ; # 
+  fhir:title [ fhir:v "RxNorm - Thiotepa"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-27T10:27:06-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.cibmtr.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Milius" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bmilius@nmdp.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "RxNorm codes for Thiotepa"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "1366537" ] ;
+         fhir:display [ fhir:v "Tepadina" ]
+       ] [
+         fhir:code [ fhir:v "224924" ] ;
+         fhir:display [ fhir:v "Thioplex" ]
+       ] [
+         fhir:code [ fhir:v "10473" ] ;
+         fhir:display [ fhir:v "thiotepa" ]
+       ] [
+         fhir:code [ fhir:v "1919208" ] ;
+         fhir:display [ fhir:v "Tepadina Injectable Product" ]
+       ] [
+         fhir:code [ fhir:v "1177866" ] ;
+         fhir:display [ fhir:v "Thioplex Injectable Product" ]
+       ] [
+         fhir:code [ fhir:v "340261" ] ;
+         fhir:display [ fhir:v "thiotepa 10.4 MG/ML" ]
+       ] [
+         fhir:code [ fhir:v "575228" ] ;
+         fhir:display [ fhir:v "thiotepa 10.4 MG/ML [Thioplex]" ]
+       ] [
+         fhir:code [ fhir:v "318248" ] ;
+         fhir:display [ fhir:v "thiotepa 10.4 MG/ML Injectable Solution [Thioplex]" ]
+       ] [
+         fhir:code [ fhir:v "1660002" ] ;
+         fhir:display [ fhir:v "thiotepa 100 MG" ]
+       ] [
+         fhir:code [ fhir:v "1919206" ] ;
+         fhir:display [ fhir:v "thiotepa 100 MG [Tepadina]" ]
+       ] [
+         fhir:code [ fhir:v "1919209" ] ;
+         fhir:display [ fhir:v "thiotepa 100 MG Injection [Tepadina]" ]
+       ] [
+         fhir:code [ fhir:v "1660008" ] ;
+         fhir:display [ fhir:v "thiotepa 15 MG" ]
+       ] [
+         fhir:code [ fhir:v "1919210" ] ;
+         fhir:display [ fhir:v "thiotepa 15 MG [Tepadina]" ]
+       ] [
+         fhir:code [ fhir:v "1919211" ] ;
+         fhir:display [ fhir:v "thiotepa 15 MG Injection [Tepadina]" ]
+       ] [
+         fhir:code [ fhir:v "1156487" ] ;
+         fhir:display [ fhir:v "thiotepa Injectable Product" ]
+       ] [
+         fhir:code [ fhir:v "375319" ] ;
+         fhir:display [ fhir:v "thiotepa Injectable Solution" ]
+       ] [
+         fhir:code [ fhir:v "363194" ] ;
+         fhir:display [ fhir:v "thiotepa Injectable Solution [Thioplex]" ]
+       ] [
+         fhir:code [ fhir:v "1660003" ] ;
+         fhir:display [ fhir:v "thiotepa Injection" ]
+       ] [
+         fhir:code [ fhir:v "1919207" ] ;
+         fhir:display [ fhir:v "thiotepa Injection [Tepadina]" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

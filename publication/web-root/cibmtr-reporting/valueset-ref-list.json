@@ -1,0 +1,440 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/auto-differential-blood-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "AutoDifferentialBloodVS",
+      "title" : "Auto Differential panel - Blood (57023-4)",
+      "description" : "Auto Differential panel - Blood (57023-4)",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "ValueSet-cbc-w-auto-differential-blood-vs.html" : "CBC W Auto Differential panel - Blood (57021-8)"
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-blood-automated-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "CBCBloodAutomatedVS",
+      "title" : "CBC panel - Blood by Automated count (58410-2)",
+      "description" : "CBC panel - Blood by Automated count (58410-2)",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "ValueSet-cbc-w-ordered-manual-differential-blood-vs.html" : "CBC W Ordered Manual Differential panel - Blood (57782-5)",
+      "ValueSet-cbc-w-auto-differential-blood-vs.html" : "CBC W Auto Differential panel - Blood (57021-8)"
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-auto-differential-blood-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "CBCWAutoDifferentialBloodVS",
+      "title" : "CBC W Auto Differential panel - Blood (57021-8)",
+      "description" : "CBC W Auto Differential panel - Blood (57021-8)",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-differential-unspecified-blood-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "CBCWDifferentialUnspecifiedBloodVS",
+      "title" : "CBC W Differential panel, method unspecified - Blood (69742-5)",
+      "description" : "CBC W Differential panel, method unspecified - Blood (69742-5)",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-ordered-manual-differential-blood-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "CBCWOrderedManualDifferentialBloodVS",
+      "title" : "CBC W Ordered Manual Differential panel - Blood (57782-5)",
+      "description" : "CBC W Ordered Manual Differential panel - Blood (57782-5)",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-2021",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "PriorityVariables2021",
+      "title" : "CIBMTR Priority Variables Value Set (FY21)",
+      "description" : "Priority Variables for CIBMTR (FY21)",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-2022",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "PriorityVariables2022",
+      "title" : "CIBMTR Priority Variables Value Set (FY22)",
+      "description" : "Priority Variables for CIBMTR (FY22)",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-cibmtr-obs-priority-variables.html" : "CIBMTR Observation Laboratory Results: Priority Variables"
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-epic-2021",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "PriorityVariablesEpic2021",
+      "title" : "CIBMTR Priority Variables Value Set for Epic App (FY21)",
+      "description" : "Priority Variables for Epic CIBMTR Reporting App (FY21)",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/differential-unspecified-blood-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "DifferentialUnspecifiedBloodVS",
+      "title" : "Differential panel, method unspecified - Blood (69738-3)",
+      "description" : "Differential panel, method unspecified - Blood (69738-3)",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "ValueSet-cbc-w-differential-unspecified-blood-vs.html" : "CBC W Differential panel, method unspecified - Blood (69742-5)"
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/erythrocyte-morphology-blood-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "ErythrocyteMorphologyBloodVS",
+      "title" : "Erythrocyte morphology panel - Blood (58408-6)",
+      "description" : "Erythrocyte morphology panel - Blood (58408-6)",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "ValueSet-smear-morphology-blood-vs.html" : "Smear morphology panel - Blood (34994-4)"
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-all-valueset",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "GVHDTypeValueSet",
+      "title" : "GVHD Type Value Set",
+      "description" : "Permissible values for types of Graft vs Host Disease, from SNOMED CT and ICD-10",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "GVHDICD10VS",
+      "title" : "GVHD ICD-10 Codes",
+      "description" : "GVHD ICD-10 Codes",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm"],
+      "uses" : {
+      },
+      "ValueSet-gvhd-all-valueset.html" : "GVHD Type Value Set"
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-sct-codes",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "GVHDSCTVS",
+      "title" : "GVHD SNOMED CT Codes",
+      "description" : "GVHD SNOMED CT Codes",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "ValueSet-gvhd-all-valueset.html" : "GVHD Type Value Set"
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/hematopoietic-disorder-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "HematopoieticDisorderVS",
+      "title" : "Disorders of hematopoietic structure",
+      "description" : "SNOMED: Disorders of hematopoietic structure",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/leukocyte-morphology-blood-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "LeukocyteMorphologyBloodVS",
+      "title" : "Leukocyte morphology panel - Blood (58407-8)",
+      "description" : "Leukocyte morphology panel - Blood (58407-8)",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "ValueSet-smear-morphology-blood-vs.html" : "Smear morphology panel - Blood (34994-4)"
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/manual-differential-blood-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "ManualDifferentialBloodVS",
+      "title" : "Manual Differential panel - Blood (24318-8)",
+      "description" : "Manual Differential panel - Blood (24318-8)",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "ValueSet-cbc-w-ordered-manual-differential-blood-vs.html" : "CBC W Ordered Manual Differential panel - Blood (57782-5)"
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-addition-peri-transplant-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormAdditionalPeriTransplantVS",
+      "title" : "RxNorm - Additional Drugs in Peri-Transplant Period",
+      "description" : "RxNorm codes for Additional Drugs in Peri-Transplant Period",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"],
+      "uses" : {
+      },
+      "StructureDefinition-cibmtr-additional-peri-transplant-medication.html" : "CIBMTR Additional Drugs in Peri-Transplant Period",
+      "ValueSet-med-all-form2400-vs.html" : "RxNorm - All of Form 2400"
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-alemtuzumab-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormAlemtuzumabVS",
+      "title" : "RxNorm - Alemtuzumab",
+      "description" : "RxNorm codes for Alemtuzumab",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-all-form2400-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormAll2400VS",
+      "title" : "RxNorm - All of Form 2400",
+      "description" : "RxNorm codes for all of Form 2400",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-anti-thymocyte-globulin-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormAntiThymocyteGlobulinVS",
+      "title" : "RxNorm - Anti-Thymocyte Globulin",
+      "description" : "RxNorm codes for Anti-Thymocyte Globulin",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-bortezomib-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormBortezomibVS",
+      "title" : "RxNorm - Bortezomib",
+      "description" : "RxNorm codes for Bortezomib",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormBusulfanVS",
+      "title" : "RxNorm - Busulfan",
+      "description" : "RxNorm codes for Busulfan",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-carmustine-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormCarmustineVS",
+      "title" : "RxNorm - Carmustine",
+      "description" : "RxNorm codes for Carmustine",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cyclophosphamide-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormCyclophosphamideVS",
+      "title" : "RxNorm - Cyclophosphamide",
+      "description" : "RxNorm codes for Cyclophosphamide",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cytarabine-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormCytarabineVS",
+      "title" : "RxNorm - Cytarabine",
+      "description" : "RxNorm codes for Cytarabine",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-defibrotide-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormDefibrotideVS",
+      "title" : "RxNorm - Defibrotide",
+      "description" : "RxNorm codes for Defibrotide",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-etoposide-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormEtoposideVS",
+      "title" : "RxNorm - Etoposide",
+      "description" : "RxNorm codes for Etoposide",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-fludarabine-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormFludarabineVS",
+      "title" : "RxNorm - Fludarabine",
+      "description" : "RxNorm codes for Fludarabine",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormGVHDProphylaxisVS",
+      "title" : "RxNorm - GVHD Prophylaxis",
+      "description" : "RxNorm codes for GVHD Prophylaxis",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"],
+      "uses" : {
+      },
+      "StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html" : "CIBMTR GVHD Prophylaxis Medication",
+      "ValueSet-med-all-form2400-vs.html" : "RxNorm - All of Form 2400"
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-melphalan-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormMelphalanVS",
+      "title" : "RxNorm - Melphalan",
+      "description" : "RxNorm codes for Melphalan",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormMobilizingAgentsVS",
+      "title" : "RxNorm - Mobilizing Agents (auto only)",
+      "description" : "RxNorm codes for Mobilizing Agents (auto only)",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"],
+      "uses" : {
+      },
+      "ValueSet-med-all-form2400-vs.html" : "RxNorm - All of Form 2400",
+      "StructureDefinition-cibmtr-mobilizing-agent-medication.html" : "CIBMTR Mobilizing Agents Medication"
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-post-hct-disease-therapy-planned-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormPostHCTDiseaseTherapyPlannedVS",
+      "title" : "RxNorm - Post-HCT Disease Therapy Planned",
+      "description" : "RxNorm codes for Post-HCT Disease Therapy Planned",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"],
+      "uses" : {
+      },
+      "ValueSet-med-all-form2400-vs.html" : "RxNorm - All of Form 2400",
+      "StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html" : "CIBMTR Planned Post-HCT Disease Therapy Medication"
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prep-regimen-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormPrepRegimenVS",
+      "title" : "RxNorm - Prep Regimen",
+      "description" : "RxNorm codes for Prep Regimen",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"],
+      "uses" : {
+      },
+      "ValueSet-med-all-form2400-vs.html" : "RxNorm - All of Form 2400",
+      "StructureDefinition-cibmtr-prep-regimen-medication.html" : "CIBMTR Prep Regimen Medication"
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prior-exposure-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormPriorExposureVS",
+      "title" : "RxNorm - Prior Exposure: Potential Study Eligibility",
+      "description" : "Prior Exposure: Potential Study Eligibility",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"],
+      "uses" : {
+      },
+      "ValueSet-med-all-form2400-vs.html" : "RxNorm - All of Form 2400",
+      "StructureDefinition-cibmtr-prior-exposure-medication.html" : "CIBMTR Prior Exposure Medication"
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-rituximab-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormRituximabVS",
+      "title" : "RxNorm - Rituximab",
+      "description" : "RxNorm codes for Rituximab",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-thiotepa-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormThiotepaVS",
+      "title" : "RxNorm - Thiotepa",
+      "description" : "RxNorm codes for Thiotepa",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-treosulfan-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormTreosulfanVS",
+      "title" : "RxNorm - Treosulfan",
+      "description" : "RxNorm codes for Treosulfan",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-ursodiol-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "RxNormUrsodiolVS",
+      "title" : "RxNorm - Ursodiol",
+      "description" : "RxNorm codes for Ursodiol",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/platelet-morphology-blood-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "PlateletMorphologyBloodVS",
+      "title" : "Platelet morphology panel - Blood (58406-0)",
+      "description" : "Platelet morphology panel - Blood (58406-0)",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "ValueSet-smear-morphology-blood-vs.html" : "Smear morphology panel - Blood (34994-4)"
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/presence-valueset",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "PresenceValueSet",
+      "title" : "Presence Answer List",
+      "description" : "Permissible values for presence",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/smear-morphology-blood-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "SmearMorphologyBloodVS",
+      "title" : "Smear morphology panel - Blood (34994-4)",
+      "description" : "Smear morphology panel - Blood (34994-4)",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "ValueSet-manual-differential-blood-vs.html" : "Manual Differential panel - Blood (24318-8)"
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/snomed-myelodysplastic-diseases-vs",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "SNOMEDMyelodysplasticDiseasesVS",
+      "title" : "SNOMED Myelodysplastic Diseases",
+      "description" : "The myelodysplastic syndromes (MDS) are a group of clonal hematopoietic stem cell diseases characterized by cytopenia(s), dysplasia (abnormal growth or development leading to an alteration in size, shape, and organization of the cell) in one or more of the major myeloid cell lines (WBC, RBC, and/or platelets), ineffective hematopoiesis, and an increased risk of developing acute myelogenous leukemia (AML). MDS occurs primarily in older adults, with a median age of 70 years. The majority of recipients present with symptoms related to cytopenias. Most recipients present with anemia requiring RBC transfusions.",
+      "systems" : ["http://snomed.info/sct"]
+    }
+  ]
+}

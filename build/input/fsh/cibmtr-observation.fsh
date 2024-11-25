@@ -262,3 +262,43 @@ Usage: #example
     * code = #[IU]/mL
 * effectiveDateTime = "2020-07-21T14:17:00Z"
 * subject = Reference(PatientExample6)
+
+
+// Profile: WeightObservation
+// Parent: Observation
+// Id: weight-observation
+// Title: "Weight Observation"
+// Description: "Profile for capturing a patient's weight as an observation."
+// * insert MetaSecurityExample
+// * status = #final
+// * code.coding = $LNC#29463-7 "Body weight"
+// * valueQuantity = $UCUM#kg "kilogram"
+// * valueQuantity.value = 70.5 // Example weight in kilograms
+// * effectiveDateTime = "2020-07-21T14:17:00Z"
+// * subject = Reference(PatientExample6)
+
+Instance: HeightObservation
+InstanceOf: cibmtr-obs-priority-variables
+Title: "Height Observation"
+Description: "Example of a patient's height observation."
+Usage: #example
+* insert MetaSecurityExample
+* status = #final
+* code.coding = $LNC#8302-2 "Body height"
+* valueQuantity = $UCUM#cm "centimeter"
+* valueQuantity.value = 175
+* effectiveDateTime = "2020-07-21T14:17:00Z"
+* subject = Reference(PatientExample6)
+
+Instance: WeightObservation
+InstanceOf: cibmtr-obs-priority-variables
+Title: "Weight Observation"
+Description: "Example of a patient's weight observation."
+Usage: #example
+* insert MetaSecurityExample
+* status = #final
+* code.coding = $LNC#29463-7 "Body weight"
+* valueQuantity = $UCUM#kg "kilogram"
+* valueQuantity.value = 70.5
+* effectiveDateTime = "2020-07-21T14:17:00Z"
+* subject = Reference(PatientExample6)

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="med-carmustine-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet med-carmustine-vs</b></p><a name="med-carmustine-vs"> </a><a name="hcmed-carmustine-vs"> </a><a name="med-carmustine-vs-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.nlm.nih.gov/research/umls/rxnorm"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>2105</td><td>carmustine</td></tr><tr><td>343027</td><td>BiCNU</td></tr><tr><td>217357</td><td>Gliadel</td></tr><tr><td>1173621</td><td>BiCNU Injectable Product</td></tr><tr><td>1729367</td><td>carmustine 100 MG</td></tr><tr><td>1729370</td><td>carmustine 100 MG [BiCNU]</td></tr><tr><td>105552</td><td>carmustine 100 MG Injection [BiCNU]</td></tr><tr><td>337509</td><td>carmustine 3.3 MG/ML</td></tr><tr><td>564079</td><td>carmustine 3.3 MG/ML [BiCNU]</td></tr><tr><td>596881</td><td>carmustine 3.3 MG/ML Injectable Solution [BiCNU]</td></tr><tr><td>340520</td><td>carmustine 7.7 MG</td></tr><tr><td>378774</td><td>carmustine Drug Implant</td></tr><tr><td>1151413</td><td>carmustine Drug Implant Product</td></tr><tr><td>1151727</td><td>carmustine Injectable Product</td></tr><tr><td>370496</td><td>carmustine Injectable Solution</td></tr><tr><td>491188</td><td>carmustine Injectable Solution [BiCNU]</td></tr><tr><td>1729368</td><td>carmustine Injection</td></tr><tr><td>1729371</td><td>carmustine Injection [BiCNU]</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-carmustine-vs"/>
+  <version value="0.1.7"/>
+  <name value="RxNormCarmustineVS"/>
+  <title value="RxNorm - Carmustine"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-08-27T10:27:06-05:00"/>
+  <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
+  <contact>
+    <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.cibmtr.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Milius"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bmilius@nmdp.org"/>
+    </telecom>
+  </contact>
+  <description value="RxNorm codes for Carmustine"/>
+  <compose>
+    <include>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <concept>
+        <code value="2105"/>
+        <display value="carmustine"/>
+      </concept>
+      <concept>
+        <code value="343027"/>
+        <display value="BiCNU"/>
+      </concept>
+      <concept>
+        <code value="217357"/>
+        <display value="Gliadel"/>
+      </concept>
+      <concept>
+        <code value="1173621"/>
+        <display value="BiCNU Injectable Product"/>
+      </concept>
+      <concept>
+        <code value="1729367"/>
+        <display value="carmustine 100 MG"/>
+      </concept>
+      <concept>
+        <code value="1729370"/>
+        <display value="carmustine 100 MG [BiCNU]"/>
+      </concept>
+      <concept>
+        <code value="105552"/>
+        <display value="carmustine 100 MG Injection [BiCNU]"/>
+      </concept>
+      <concept>
+        <code value="337509"/>
+        <display value="carmustine 3.3 MG/ML"/>
+      </concept>
+      <concept>
+        <code value="564079"/>
+        <display value="carmustine 3.3 MG/ML [BiCNU]"/>
+      </concept>
+      <concept>
+        <code value="596881"/>
+        <display value="carmustine 3.3 MG/ML Injectable Solution [BiCNU]"/>
+      </concept>
+      <concept>
+        <code value="340520"/>
+        <display value="carmustine 7.7 MG"/>
+      </concept>
+      <concept>
+        <code value="378774"/>
+        <display value="carmustine Drug Implant"/>
+      </concept>
+      <concept>
+        <code value="1151413"/>
+        <display value="carmustine Drug Implant Product"/>
+      </concept>
+      <concept>
+        <code value="1151727"/>
+        <display value="carmustine Injectable Product"/>
+      </concept>
+      <concept>
+        <code value="370496"/>
+        <display value="carmustine Injectable Solution"/>
+      </concept>
+      <concept>
+        <code value="491188"/>
+        <display value="carmustine Injectable Solution [BiCNU]"/>
+      </concept>
+      <concept>
+        <code value="1729368"/>
+        <display value="carmustine Injection"/>
+      </concept>
+      <concept>
+        <code value="1729371"/>
+        <display value="carmustine Injection [BiCNU]"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

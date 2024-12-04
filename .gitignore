@@ -5,25 +5,30 @@
 
 **/Thumbs.db
 
+
 # **/build/output
 # **/build/input-cache
 # **/build/temp
 # **/build/template
 # **/build/fsh-generated
 
-# **/publisher.jar
-# **/validator_cli.jar
-# **/org.hl7.fhir.publisher.jar
-# **/org.hl7.fhir.validator.jar
-
-# **/ig-registry
-# **/ig-history
-# **/fhir-ig-history-template
-# **/cibmtr-ig-history-template
-**/publication/web-root/cibmtr-reporting-old
+# Ignore specific files and directories
+**/publication/web-root/cibmtr-reporting/qa-tx.html
 **/build/input-cache/publisher.jar
 **/build/output/qa-tx.html
-
+**/publication/web-root/cibmtr-reporting-old
+**/publication/web-root/ig-build-zips
 **/web-root/ig-build-zips/*.zip
 **/apache
 **/ssl
+
+# Ignore build-related directories
+**/build/input-cache
+**/build/output
+**/build/temp
+
+# Ignore history/registry directories
+**/ig-registry
+**/ig-history
+**/fhir-ig-history-template
+**/cibmtr-ig-history-template

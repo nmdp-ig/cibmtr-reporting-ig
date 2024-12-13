@@ -14,7 +14,9 @@ sudo apt install openjdk-22-jre-headless
 * Local copies of
     * https://github.com/FHIR/ig-registry
     * https://github.com/HL7/fhir-ig-history-template
-
+* Ruby Gem
+* Jekyll
+  
 The instructions below assume `publisher`, `fhir-ig-template-base`, and `ig-registry` are found in the parent directory.
 
 ## Building the IG

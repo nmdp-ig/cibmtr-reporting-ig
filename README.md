@@ -1,7 +1,10 @@
 # CIBMTR Reporting Implementation Guide
 
 ## Prerequisties
-* Min Java JRE 22
+* Min Java JRE 22  
+```
+sudo apt install openjdk-22-jre-headless
+```
 * FHIR IG Publisher
   * documentation: https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation
 * Sushi

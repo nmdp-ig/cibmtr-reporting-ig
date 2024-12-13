@@ -1,11 +1,12 @@
 # CIBMTR Reporting Implementation Guide
 
 ## Prerequisties
+* Java 17
 * FHIR IG Publisher
-  * current version: https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
   * documentation: https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation
 * Sushi
-  * Installation - https://fshschool.org/docs/sushi/installation/
+  * Installation - https://fshschool.org/docs/sushi/installation/ will most likely need to run under "sudo"
+     * sudo npm install -g fsh-sushi
   * Learn how to use FSH - https://fshschool.org/
 * Local copies of
     * https://github.com/FHIR/ig-registry
@@ -55,6 +56,8 @@ version: 0.1.6
 ```
 java -jar build/input-cache/publisher.jar -generate-package-registry publication/web-root/cibmtr-reporting
 ```
+
+
 * Update ig-history and ig-registry
   * https://github.com/FHIR/ig-registry
   * https://github.com/HL7/fhir-ig-history-template

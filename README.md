@@ -60,7 +60,21 @@ java -jar build/input-cache/publisher.jar -generate-package-registry publication
   * https://github.com/HL7/fhir-ig-history-template
 * Place these directories in the publication path
 
-
+* Verify that publication-request.json "first": false,
+* Update web-root/cibmtr-reporting/package-list.json  Increment the version: and path: to next version of publication
+```
+    {
+      "version" : "0.1.7",
+      "path" : "http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.7",
+      "status" : "draft",
+      "sequence" : "Release",
+      "fhirversion" : "4.0.1",
+      "date" : "2024-12-13",
+      "current" : true,
+      "desc" : "How to report hematopoietic cell transplantation (HCT) and other cellular therapy data to CIBMTR"
+    }
+  ],
+```
 * Run the publisher from the root of the project.  ie. /localpath/cibmtr-reporting-ig
 ```
 java -jar ../publisher.jar -ig ig.ini

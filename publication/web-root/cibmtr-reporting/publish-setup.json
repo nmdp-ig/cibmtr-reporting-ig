@@ -1,0 +1,14 @@
+{
+    "website" : {
+      "style" : "fhir.layout",
+      "url" : "http://fhir.nmdp.org/ig",
+      "server" : "apache",
+      "org" : "CIBMTR/NMDP",
+      "index-template":"index.template"
+  },
+    "layout-rules" : [{
+      "npm" : "nmdp.fhir.*",
+      "canonical" : "http://fhir.nmdp.org/ig/{3}",
+      "destination" : "/{3}"
+    }]
+  }

@@ -1,7 +1,7 @@
 # CIBMTR Reporting Implementation Guide
 
 ## Prerequisties
-* Min Java JRE 22  
+* Min Java JRE 22, Min for Ubuntu LTS Java JRE 21  
 ```
 sudo apt install openjdk-22-jre-headless
 ```

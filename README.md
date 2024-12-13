@@ -81,6 +81,8 @@ java -jar build/input-cache/publisher.jar -generate-package-registry publication
     }
   ],
 ```
+* Create directory to support new version
+ * Place in publication/web-root/cibmtr-reporting/0.1.7
 * Run the publisher from the root of the project.  ie. /localpath/cibmtr-reporting-ig
 ```
 java -jar ../publisher.jar -ig ig.ini

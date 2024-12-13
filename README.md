@@ -1,7 +1,7 @@
 # CIBMTR Reporting Implementation Guide
 
 ## Prerequisties
-* Java 17
+* Min Java JRE 22
 * FHIR IG Publisher
   * documentation: https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation
 * Sushi

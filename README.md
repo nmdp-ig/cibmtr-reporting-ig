@@ -26,10 +26,49 @@ cd cibmtr-reporting-ig/build
 version: 0.1.6
 ...etc...
 ```
-* Run the publisher
+
+* Get the publisher
+```
+* Change directory to build dir.  
+* Run the _updatePublisher.sh or .bat
+* Run the _genOnce.sh or .bat
+
+* Place the publish-setup.json publication/web-root/cibmtr-reporting
+```
+{
+  "website" : {
+    "style" : "fhir.layout",
+    "url" : "http://fhir.nmdp.org/ig",
+    "server" : "apache",
+    "org" : "CIBMTR/NMDP",
+    "index-template":"index.template"
+},
+  "layout-rules" : [{
+    "npm" : "nmdp.fhir.*",
+    "canonical" : "http://fhir.nmdp.org/ig/{3}",
+    "destination" : "/{3}"
+  }]
+}
+
+```
+* Generate the package registry
+```
+java -jar build/input-cache/publisher.jar -generate-package-registry publication/web-root/cibmtr-reporting
+```
+* Update ig-history and ig-registry
+  * https://github.com/FHIR/ig-registry
+  * https://github.com/HL7/fhir-ig-history-template
+* Place these directories in the publication path
+
+
+* Run the publisher from the root of the project.  ie. /localpath/cibmtr-reporting-ig
 ```
 java -jar ../publisher.jar -ig ig.ini
 ```
 * Check `output/qa.html` for errors, warnings. If no errors, proceed to publishing
 
-## Publishing
+## Publishing the final version from root of project
+```
+java -jar build/input-cache/publisher.jar -go-publish -source build -web publication/web-root -registry publication/ig-registry/fhir-ig-list.json -history publication/ig-history -templates publication/web-root/history-templates -resetTxErrors
+```
+

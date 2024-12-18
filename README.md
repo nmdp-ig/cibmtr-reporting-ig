@@ -21,16 +21,6 @@ git clone https://github.com/nmdp-ig/cibmtr-reporting-ig
 cd cibmtr-reporting-ig/build
 ```
 * Edit version of the IG in `sushi-config.yaml` as needed (line 20), e.g.,
-```
-...etc...
-version: 0.1.6
-...etc...
-```
-* Run the publisher
-```
-java -jar ../publisher.jar -ig ig.ini
-```
-* Check `output/qa.html` for errors, warnings. If no errors, proceed to publishing
 
 ## Publishing
 

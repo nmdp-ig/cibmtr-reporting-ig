@@ -31,12 +31,12 @@ Clone the repository
 Create new branch from main
 
 *Run:
-_updatePublisher.sh the publisher.jar
-_genOnce.sh
+ * _updatePublisher.sh the publisher.jar
+ * _genOnce.sh
 
 * Download the IG History and IG Registry and extract to the cibmtr-reporting-ig/publication.  Rename the extracted directories to ig-history and ig-registry.
-https://github.com/FHIR/ig-registry
-https://github.com/HL7/fhir-ig-history-template
+ * https://github.com/FHIR/ig-registry
+ * https://github.com/HL7/fhir-ig-history-template
 
 * Build/publication-request.json first to false.
 * Update this file with correct version and path
@@ -58,26 +58,19 @@ https://github.com/HL7/fhir-ig-history-template
 
 
 * Update or verify sushi-config.yaml.  Increase version number.
-```
-“version: 0.1.8”
+ * “version: 0.1.8”
 
 * ig.ini should have line 3 
-```
-template = #cibmtr-template
+ * template = #cibmtr-template
 
 * Update package-registry or generate. java -jar build/input-cache/publisher.jar -generate-package-registry publication/web-root
 
 * Update build/template/versions.txt with the new ig number Example (0.1.8)
-
-```
-igVersion=0.1.8
+ * igVersion=0.1.8
 
 * Run “sushi build .”  in cibmtr-reporting-ig/build dir. Check errors.
 
-```
-“java -jar  build/input-cache/publisher.jar -ig cibmtr-reporting-ig/build/ig.ini -resetTxErrors”
+ * “java -jar  build/input-cache/publisher.jar -ig cibmtr-reporting-ig/build/ig.ini -resetTxErrors”
 
 * Add new directory to  publication/web-root/cibmtr-reporting/0.1.8 for new version.  Example (0.1.8)
-
-```
-“java -jar build/input-cache/publisher.jar -go-publish -source build -web publication/web-root -registry publication/ig-registry/fhir-ig-list.json -history publication/ig-history -templates publication/web-root/history-templates -resetTxErrors”
+ * “java -jar build/input-cache/publisher.jar -go-publish -source build -web publication/web-root -registry publication/ig-registry/fhir-ig-list.json -history publication/ig-history -templates publication/web-root/history-templates -resetTxErrors”

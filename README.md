@@ -30,11 +30,11 @@ Clone the repository
 
 Create new branch from main
 
-## Run:
+*Run:
 _updatePublisher.sh the publisher.jar
 _genOnce.sh
 
-## Download the IG History and IG Registry and extract to the cibmtr-reporting-ig/publication.  Rename the extracted directories to ig-history and ig-registry.
+* Download the IG History and IG Registry and extract to the cibmtr-reporting-ig/publication.  Rename the extracted directories to ig-history and ig-registry.
 https://github.com/FHIR/ig-registry
 https://github.com/HL7/fhir-ig-history-template
 

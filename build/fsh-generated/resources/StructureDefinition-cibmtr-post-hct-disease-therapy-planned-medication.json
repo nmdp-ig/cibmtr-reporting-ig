@@ -1,0 +1,27 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cibmtr-post-hct-disease-therapy-planned-medication",
+  "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-post-hct-disease-therapy-planned-medication",
+  "name": "CIBMTR_PostHCTDiseaseTherapyPlannedMedication",
+  "title": "CIBMTR Planned Post-HCT Disease Therapy Medication",
+  "status": "draft",
+  "description": "CIBMTR Planned Post-HCT Disease Therapy Medication",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Medication",
+  "baseDefinition": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Medication.code.coding",
+        "path": "Medication.code.coding",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-post-hct-disease-therapy-planned-vs"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "resourceType": "Medication",
+  "id": "Medication-GVHD-Prophylaxis-Example",
+  "meta": {
+    "security": [
+      {
+        "system": "http://terminology.cibmtr.org/codesystem/transplant-center",
+        "code": "rc_99999",
+        "display": "99999 My Transplant Center"
+      }
+    ],
+    "profile": [
+      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-gvhd-prophylaxis-medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "1156186",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "cyclosporine Injectable Product"
+      },
+      {
+        "code": "1732364",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "cyclosporine Injection"
+      },
+      {
+        "code": "1732366",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "cyclosporine Injection [Sandimmune]"
+      },
+      {
+        "code": "212844",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "5 ML cyclosporine 50 MG/ML Injection [Sandimmune]"
+      }
+    ],
+    "text": "cyclosporine injection"
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "1156186",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "cyclosporine Injectable Product"
+          },
+          {
+            "code": "1732364",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "cyclosporine Injection"
+          },
+          {
+            "code": "1732366",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "cyclosporine Injection [Sandimmune]"
+          },
+          {
+            "code": "212844",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "5 ML cyclosporine 50 MG/ML Injection [Sandimmune]"
+          }
+        ],
+        "text": "cyclosporine injection"
+      },
+      "strength": {
+        "numerator": {
+          "value": 50,
+          "unit": "milligram",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg"
+        },
+        "denominator": {
+          "value": 1,
+          "unit": "milliliter",
+          "system": "http://unitsofmeasure.org",
+          "code": "mL"
+        }
+      }
+    }
+  ]
+}

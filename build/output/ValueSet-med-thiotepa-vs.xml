@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="med-thiotepa-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet med-thiotepa-vs</b></p><a name="med-thiotepa-vs"> </a><a name="hcmed-thiotepa-vs"> </a><a name="med-thiotepa-vs-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.nlm.nih.gov/research/umls/rxnorm"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1366537</td><td>Tepadina</td></tr><tr><td>224924</td><td>Thioplex</td></tr><tr><td>10473</td><td>thiotepa</td></tr><tr><td>1919208</td><td>Tepadina Injectable Product</td></tr><tr><td>1177866</td><td>Thioplex Injectable Product</td></tr><tr><td>340261</td><td>thiotepa 10.4 MG/ML</td></tr><tr><td>575228</td><td>thiotepa 10.4 MG/ML [Thioplex]</td></tr><tr><td>318248</td><td>thiotepa 10.4 MG/ML Injectable Solution [Thioplex]</td></tr><tr><td>1660002</td><td>thiotepa 100 MG</td></tr><tr><td>1919206</td><td>thiotepa 100 MG [Tepadina]</td></tr><tr><td>1919209</td><td>thiotepa 100 MG Injection [Tepadina]</td></tr><tr><td>1660008</td><td>thiotepa 15 MG</td></tr><tr><td>1919210</td><td>thiotepa 15 MG [Tepadina]</td></tr><tr><td>1919211</td><td>thiotepa 15 MG Injection [Tepadina]</td></tr><tr><td>1156487</td><td>thiotepa Injectable Product</td></tr><tr><td>375319</td><td>thiotepa Injectable Solution</td></tr><tr><td>363194</td><td>thiotepa Injectable Solution [Thioplex]</td></tr><tr><td>1660003</td><td>thiotepa Injection</td></tr><tr><td>1919207</td><td>thiotepa Injection [Tepadina]</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-thiotepa-vs"/>
+  <version value="0.1.8"/>
+  <name value="RxNormThiotepaVS"/>
+  <title value="RxNorm - Thiotepa"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-02-18T15:55:04-06:00"/>
+  <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
+  <contact>
+    <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.cibmtr.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Milius"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bmilius@nmdp.org"/>
+    </telecom>
+  </contact>
+  <description value="RxNorm codes for Thiotepa"/>
+  <compose>
+    <include>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <concept>
+        <code value="1366537"/>
+        <display value="Tepadina"/>
+      </concept>
+      <concept>
+        <code value="224924"/>
+        <display value="Thioplex"/>
+      </concept>
+      <concept>
+        <code value="10473"/>
+        <display value="thiotepa"/>
+      </concept>
+      <concept>
+        <code value="1919208"/>
+        <display value="Tepadina Injectable Product"/>
+      </concept>
+      <concept>
+        <code value="1177866"/>
+        <display value="Thioplex Injectable Product"/>
+      </concept>
+      <concept>
+        <code value="340261"/>
+        <display value="thiotepa 10.4 MG/ML"/>
+      </concept>
+      <concept>
+        <code value="575228"/>
+        <display value="thiotepa 10.4 MG/ML [Thioplex]"/>
+      </concept>
+      <concept>
+        <code value="318248"/>
+        <display value="thiotepa 10.4 MG/ML Injectable Solution [Thioplex]"/>
+      </concept>
+      <concept>
+        <code value="1660002"/>
+        <display value="thiotepa 100 MG"/>
+      </concept>
+      <concept>
+        <code value="1919206"/>
+        <display value="thiotepa 100 MG [Tepadina]"/>
+      </concept>
+      <concept>
+        <code value="1919209"/>
+        <display value="thiotepa 100 MG Injection [Tepadina]"/>
+      </concept>
+      <concept>
+        <code value="1660008"/>
+        <display value="thiotepa 15 MG"/>
+      </concept>
+      <concept>
+        <code value="1919210"/>
+        <display value="thiotepa 15 MG [Tepadina]"/>
+      </concept>
+      <concept>
+        <code value="1919211"/>
+        <display value="thiotepa 15 MG Injection [Tepadina]"/>
+      </concept>
+      <concept>
+        <code value="1156487"/>
+        <display value="thiotepa Injectable Product"/>
+      </concept>
+      <concept>
+        <code value="375319"/>
+        <display value="thiotepa Injectable Solution"/>
+      </concept>
+      <concept>
+        <code value="363194"/>
+        <display value="thiotepa Injectable Solution [Thioplex]"/>
+      </concept>
+      <concept>
+        <code value="1660003"/>
+        <display value="thiotepa Injection"/>
+      </concept>
+      <concept>
+        <code value="1919207"/>
+        <display value="thiotepa Injection [Tepadina]"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,354 @@
+FHIR IG Publisher Version 1.8.13 (Git# e89cdedc7f58). Built 2025-02-17T04:21:57.376Z (41 hours old)
+Detected Java version: 22.0.1 from C:\Program Files\Java\jdk-22 on amd64 (64bit). 20000MB available
+dir = C:\Users\eren\Desktop\DirectFhirIG\0219, path = C:\Python312\Scripts\;C:\Python312\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\eGVmAgent\bin;C:\eGVmAgent\lib;C:\Program Files\Java\jdk-22\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\PolicyPak\;;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Ruby33-x64\bin;C:\Users\eren\AppData\Local\Microsoft\WindowsApps;C:\Users\eren\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\eren\AppData\Local\Programs\Git\cmd;C:\Users\eren\AppData\Roaming\npm
+Parameters: -go-publish -source build -web publication/web-root -registry publication/ig-registry/fhir-ig-list.json -history publication/ig-history -templates publication/web-root/history-templates -resetTxErrors
+---------------
+Publication Run: publish build to publication/web-root
+Relative directory for IG is '\cibmtr-reporting'
+===== Web Publication Run Details ===============================
+ Source IG: nmdp.fhir.cibmtr-reporting#0.1.8 : http://fhir.nmdp.org/ig/cibmtr-reporting (R4) from build
+All checks passed. Do the publication build from C:\Users\eren\Desktop\DirectFhirIG\0219\build and publish to C:\Users\eren\AppData\Local\Temp\web-root\run-20250218\cibmtr-reporting
+Prepare Build space in C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8
+Build IG at C:\Users\eren\Desktop\DirectFhirIG\0219\build: final copy suitable for publication (in C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8)
+FHIR IG Publisher Version 1.8.13 (Git# e89cdedc7f58). Built 2025-02-17T04:21:57.376Z (41 hours old) 
+Detected Java version: 22.0.1 from C:\Program Files\Java\jdk-22 on Windows 11/amd64 (64bit). 20000MB available
+dir = C:\Users\eren\Desktop\DirectFhirIG\0219, path = C:\Python312\Scripts\;C:\Python312\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\eGVmAgent\bin;C:\eGVmAgent\lib;C:\Program Files\Java\jdk-22\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\PolicyPak\;;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Ruby33-x64\bin;C:\Users\eren\AppData\Local\Microsoft\WindowsApps;C:\Users\eren\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\eren\AppData\Local\Programs\Git\cmd;C:\Users\eren\AppData\Roaming\npm
+Parameters: -ig C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8 -resetTx -publish http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.8 -no-exit
+Start Clock @ Tuesday, February 18, 2025, 4:12:42 PM Central Standard Time (2025-02-18T16:12:42-06:00)
+                                                                                                    
+Build FHIR IG from C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8                 (00:00.177 / 00:00.177, 64Mb)
+Build Formal Publication package, intended for http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.8        (00:00.004 / 00:00.181, 64Mb)
+API keys loaded from C:\Users\eren\.fhir\fhir-settings.json                                          (00:00.001 / 00:00.182, 64Mb)
+Package Cache: C:\Users\eren\.fhir\packages                                                          (00:00.002 / 00:00.185, 65Mb)
+Run Sushi on C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8                       (00:00.002 / 00:00.188, 65Mb)
+Sushi: info  Running SUSHI v3.14.0 (implements FHIR Shorthand specification v3.0.0)                  (00:03.311 / 00:03.499, 67Mb)
+Sushi: info  Arguments:                                                                              (00:00.001 / 00:03.501, 67Mb)
+Sushi: info    --require-latest                                                                      (00:00.001 / 00:03.502, 67Mb)
+Sushi: info    --out C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8               (00:00.000 / 00:03.503, 67Mb)
+Sushi: info    C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8                     (00:00.000 / 00:03.504, 67Mb)
+Sushi: info  Using configuration file: C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8\sushi-config.yaml (00:02.804 / 00:06.308, 67Mb)
+Sushi: info  Importing FSH text...                                                                   (00:00.126 / 00:06.435, 67Mb)
+Sushi: info  Preprocessed 50 documents with 14 aliases.                                              (00:00.207 / 00:06.642, 67Mb)
+Sushi: info  Imported 59 definitions and 37 instances.                                               (00:00.095 / 00:06.738, 67Mb)
+Sushi: info  Loaded virtual package sushi-r5forR4#1.0.0 with 7 resources                             (00:00.158 / 00:06.897, 67Mb)
+Sushi: info  Resolved hl7.fhir.uv.tools.r4#latest to concrete version 0.3.0                          (00:00.680 / 00:07.577, 67Mb)
+Sushi: info  Loaded hl7.fhir.uv.tools.r4#0.3.0 with 75 resources                                     (00:00.188 / 00:07.766, 67Mb)
+Sushi: info  Resolved hl7.terminology.r4#latest to concrete version 6.2.0                            (00:00.132 / 00:07.898, 67Mb)
+Sushi: info  Loaded hl7.terminology.r4#6.2.0 with 4323 resources                                     (00:05.496 / 00:13.395, 67Mb)
+Sushi: info  Resolved hl7.fhir.uv.extensions.r4#latest to concrete version 5.2.0                     (00:00.133 / 00:13.528, 67Mb)
+Sushi: info  Loaded hl7.fhir.uv.extensions.r4#5.2.0 with 759 resources                               (00:01.235 / 00:14.763, 67Mb)
+Sushi: info  Loaded hl7.fhir.us.core#7.0.0 with 211 resources                                        (00:00.400 / 00:15.164, 67Mb)
+Sushi: info  Loaded hl7.fhir.us.mcode#2.0.0 with 153 resources                                       (00:00.307 / 00:15.472, 67Mb)
+Sushi: info  Loaded hl7.fhir.uv.genomics-reporting#2.0.0 with 50 resources                           (00:00.222 / 00:15.695, 67Mb)
+Sushi: info  Loaded hl7.fhir.r4.core#4.0.1 with 4581 resources                                       (00:05.064 / 00:20.759, 67Mb)
+Sushi: info  Loaded virtual package sushi-local#LOCAL with 0 resources                               (00:00.009 / 00:20.769, 67Mb)
+Sushi: info  Converting FSH to FHIR resources...                                                     (00:00.023 / 00:20.793, 67Mb)
+Sushi: info  Converted 16 FHIR StructureDefinitions.                                                 (00:00.594 / 00:21.387, 67Mb)
+Sushi: info  Converted 43 FHIR ValueSets.                                                            (00:00.447 / 00:21.835, 67Mb)
+Sushi: info  Converted 37 FHIR instances.                                                            (00:02.021 / 00:23.856, 67Mb)
+Sushi: info  Exporting FHIR resources as JSON...                                                     (00:00.001 / 00:23.858, 67Mb)
+Sushi: info  Exported 96 FHIR resources as JSON.                                                     (00:00.154 / 00:24.012, 67Mb)
+Sushi: info  Assembling Implementation Guide sources...                                              (00:00.003 / 00:24.015, 67Mb)
+Sushi: info  Generated ImplementationGuide-nmdp.fhir.cibmtr-reporting.json                           (00:00.056 / 00:24.072, 67Mb)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.                         (00:00.001 / 00:24.074, 67Mb)
+Sushi: ========================= SUSHI RESULTS ===========================                           (00:00.001 / 00:24.075, 67Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.001 / 00:24.076, 67Mb)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |                           (00:00.000 / 00:24.077, 67Mb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.002 / 00:24.079, 67Mb)
+Sushi: | |      16       |      0       |      0       |       0       | |                           (00:00.001 / 00:24.080, 67Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:24.081, 67Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:24.082, 67Mb)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |                           (00:00.001 / 00:24.084, 67Mb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:24.085, 67Mb)
+Sushi: | |         43         |         0         |         37         | |                           (00:00.001 / 00:24.086, 67Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.001 / 00:24.087, 67Mb)
+Sushi: |                                                                 |                           (00:00.001 / 00:24.088, 67Mb)
+Sushi: ===================================================================                           (00:00.001 / 00:24.089, 67Mb)
+Sushi: | You've proven any-fin is possible.     0 Errors      0 Warnings |                           (00:00.001 / 00:24.090, 67Mb)
+Sushi: ===================================================================                           (00:00.001 / 00:24.091, 67Mb)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:00.553 / 00:24.645, 68Mb)
+Load Template from #cibmtr-template                                                                  (00:00.524 / 00:25.169, 34Mb)
+ Load Template from fhir.base.template#current                                                       (00:00.011 / 00:25.180, 35Mb)
+Root directory: C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8                    (00:05.411 / 00:30.592, 103Mb)
+Terminology Cache is at C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8\input-cache\txcache. Clearing now (00:02.815 / 00:33.408, 138Mb)
+Core Package hl7.fhir.r4.core#4.0.1
+Running Terminology Log: C:\Users\eren\AppData\Local\Temp\ohfu-fhir-ig-16435773035098936246.log
+Connect to Terminology Server at http://tx.fhir.org                                                  (00:03.728 / 00:37.136, 189Mb)
+Load Package hl7.fhir.pubpack#0.2.1
+Load Package hl7.fhir.xver-extensions#0.1.0
+Load Package hl7.terminology.r4#6.2.0
+Load Package hl7.fhir.uv.extensions.r4#5.2.0
+Load Package hl7.terminology.r4#5.5.0
+Load Package hl7.fhir.uv.smart-app-launch#2.0.0
+Load Package us.nlm.vsac#0.18.0
+Ignore Dependency on Core FHIR hl7.fhir.r4.examples#4.0.1, from package 'hl7.fhir.uv.sdc#3.0.0'      (00:16.601 / 00:53.738, 749Mb)
+Load Package hl7.fhir.uv.sdc#3.0.0
+Load Package us.cdc.phinvads#0.12.0
+Load Package hl7.fhir.uv.extensions.r4#5.1.0
+Load Package hl7.fhir.us.core#7.0.0
+Load Package hl7.fhir.uv.bulkdata#1.0.1
+Load Package us.nlm.vsac#0.3.0
+Load Package hl7.fhir.us.core#4.0.0
+Load Package hl7.fhir.us.mcode#2.0.0
+Load Package hl7.fhir.uv.genomics-reporting#2.0.0
+Load Package hl7.fhir.uv.tools.r4#0.3.0
+Load R5 Specials
+Initialization complete                                                                              (00:09.753 / 01:03.491, 935Mb)
+Load Content                                                                                         (00:00.001 / 01:03.493, 935Mb)
+Using en-US as the default narrative language. (no language information in Implementation Guide)     (00:00.090 / 01:03.583, 951Mb)
+Process Loaded Resources                                                                             (00:01.120 / 01:04.704, 655Mb)
+Generating Snapshots                                                                                 (00:00.408 / 01:05.112, 759Mb)
+loadPrePages from FetchedFile[C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8\input\includes] as C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8\input\includes
+loadPrePages from FetchedFile[C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8\fsh-generated\includes] as C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8\fsh-generated\includes
+loadPrePages from FetchedFile[C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8\input\pagecontent] as C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8\input\pagecontent
+Fetch http://fhir.nmdp.org/ig/cibmtr-reporting/package-list.json for version check                   (00:01.026 / 01:06.139, 970Mb)
+Processing Conformance Resources                                                                     (00:15.082 / 01:21.221, 970Mb)
+Checking Language                                                                                    (00:00.001 / 01:21.222, 970Mb)
+Load Dependency Info                                                                                 (00:00.002 / 01:21.225, 970Mb)
+Load Info                                                                                            (00:00.003 / 01:21.228, 970Mb)
+Load Paths                                                                                           (00:00.001 / 01:21.230, 972Mb)
+Check R4 / R4B                                                                                       (00:00.001 / 01:21.231, 972Mb)
+Assign Comparison Ids                                                                                (00:00.042 / 01:21.273, 988Mb)
+Propagating status                                                                                   (00:00.046 / 01:21.320, 988Mb)
+Generating Narratives                                                                                (00:00.004 / 01:21.324, 988Mb)
+Validating Conformance Resources                                                                     (00:13.414 / 01:34.739, 905Mb)
+Check profiles & code systems                                                                        (00:59.058 / 02:33.797, 1Gb)
+Check realm rules                                                                                    (00:00.004 / 02:33.802, 1Gb)
+Previous Version Comparison                                                                          (00:00.000 / 02:33.802, 1Gb)
+Validating Resources                                                                                 (00:00.069 / 02:33.872, 1Gb)
+Processing Provenance Records                                                                        (02:03.721 / 04:37.594, 1Gb)
+Generating Outputs in C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8\output       (00:00.001 / 04:37.595, 1Gb)
+Warning @ Unable to read the git branch: not a git repository (or any of the parent directories): .git
+Warning @ Unable to read the git source: not a git repository (or any of the parent directories): .git
+Generate Native Outputs                                                                              (00:00.400 / 04:37.995, 1Gb)
+Run Template                                                                                         (00:09.578 / 04:47.574, 1Gb)
+Generate HTML Outputs                                                                                (00:01.048 / 04:48.622, 1Gb)
+Generate Spreadsheets                                                                                (03:05.258 / 07:53.881, 9Gb)
+Generate Summaries                                                                                   (00:07.742 / 08:01.623, 8Gb)
+Generating Summary Outputs                                                                           (00:00.001 / 08:01.624, 8Gb)
+DB Cumulative Time invested: 00:00:26.963
+Sending Usage Stats to Server                                                                        (00:44.207 / 08:45.848, 8Gb)
+## Memory (MB): Use = 8210, Free = 4221, Total = 12432, Max = 20000                                  (00:00.034 / 08:45.867, 8Gb)
+Reclaiming memory...                                                                                 (00:00.001 / 08:45.868, 8Gb)
+## Memory (MB): Use = 7204, Free = 5227, Total = 12432, Max = 20000                                  (00:15.219 / 09:01.091, 7Gb)
+Run jekyll: jekyll build --destination "C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8\output" (in folder C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8\temp\pages) (00:00.086 / 09:01.173, 7Gb)
+Due to a known issue, Jekyll errors are lost between Java and Ruby in windows systems.               (00:00.029 / 09:01.202, 7Gb)
+If the build process hangs at this point, you have to go to a                                        (00:00.004 / 09:01.207, 7Gb)
+command prompt, and then run these two commands:                                                     (00:00.011 / 09:01.220, 7Gb)
+                                                                                                     (00:00.006 / 09:01.225, 7Gb)
+cd C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8\temp\pages                      (00:00.007 / 09:01.233, 7Gb)
+jekyll build --destination "C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8\output" (00:00.015 / 09:01.248, 7Gb)
+                                                                                                     (00:00.007 / 09:01.256, 7Gb)
+and then investigate why Jekyll has failed                                                           (00:00.003 / 09:01.260, 7Gb)
+Troubleshooting Note: usual cases for Jekyll to fail are:                                            (00:00.004 / 09:01.264, 7Gb)
+* A failure to produce a fragment that is already logged in the output above                         (00:00.016 / 09:01.281, 7Gb)
+* A reference to a manually edited file that hasn't been provided                                    (00:00.011 / 09:01.292, 7Gb)
+Sending usage stats failed: Connection timed out: connect
+Jekyll: Source: C:/Users/eren/AppData/Local/Temp/nmdp.fhir.cibmtr-reporting#0.1.8/temp/pages         (00:09.310 / 09:10.603, 7Gb)
+Jekyll: Generating...                                                                                (00:00.001 / 09:10.604, 7Gb)
+Jekyll: done in 63.315 seconds.                                                                      (01:03.313 / 10:13.918, 7Gb)
+
+Installing nmdp.fhir.cibmtr-reporting#0.1.8
+Checking Output HTML                                                                                 (00:08.425 / 10:22.344, 8Gb)
+found 1582 files                                                                                     (00:00.054 / 10:22.398, 8Gb)
+........................................
+........................................
+  ... 1582 html files, 0 pages invalid xhtml (0%)                                                    (00:38.215 / 11:00.614, 10Gb)
+  ... 342812 links, 0 broken links (0%)                                                              (00:00.002 / 11:00.616, 10Gb)
+Generate fragment-usage-analysis.csv                                                                 (00:00.001 / 11:00.617, 10Gb)
+Build final .zip                                                                                     (00:00.008 / 11:00.626, 10Gb)
+Final .zip built                                                                                     (00:03.838 / 11:04.464, 10Gb)
+Built. Times: loading: 00:17.726, generate: 10:31.579, narrative generation: 00:13.413, realm-rules: 00:00.000, previous-version: 00:00.000, jekyll: 01:13.097, validation: 03:02.771 (#97), template: 00:01.404 (#3) (00:55.087 / 11:59.552, 7Gb)
+Generating QA                                                                                        (00:00.004 / 11:59.556, 7Gb)
+Internal error in location for message: 'Error @1, 1: Premature ExpressionNode termination at unexpected token ":"', loc = 'C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8\output\Access-Credentials.html#/ht', err = 'The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the H'
+Internal error in location for message: 'Error @1, 1: Premature ExpressionNode termination at unexpected token ":"', loc = 'C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8\output\Access-Credentials.html#/ht', err = 'The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the H'
+Internal error in location for message: 'Error @1, 1: Premature ExpressionNode termination at unexpected token ":"', loc = 'C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8\output\Medication-Medication-Cyclo', err = 'The <script> containing the javascript 'try { var currentTab'... is illegal and not allowed on the H'
+Validation output in C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8\output\qa.html
+Errors: 0, Warnings: 47, Info: 58, Broken Links: 0 (00:01.205 / 12:00.761, 8Gb)
+Finished. Max Memory Used = 10Gb. Log file saved in C:\Users\eren\AppData\Local\Temp\fhir-ig-publisher-tmp.log (00:00.023 / 12:00.785, 8Gb)
+Prepare Build space in C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone
+Build IG at C:\Users\eren\Desktop\DirectFhirIG\0219\build: final copy suitable for publication (in C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone) (milestone build)
+FHIR IG Publisher Version 1.8.13 (Git# e89cdedc7f58). Built 2025-02-17T04:21:57.376Z (42 hours old) 
+Detected Java version: 22.0.1 from C:\Program Files\Java\jdk-22 on Windows 11/amd64 (64bit). 20000MB available
+dir = C:\Users\eren\Desktop\DirectFhirIG\0219, path = C:\Python312\Scripts\;C:\Python312\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\eGVmAgent\bin;C:\eGVmAgent\lib;C:\Program Files\Java\jdk-22\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\PolicyPak\;;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Ruby33-x64\bin;C:\Users\eren\AppData\Local\Microsoft\WindowsApps;C:\Users\eren\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\eren\AppData\Local\Programs\Git\cmd;C:\Users\eren\AppData\Roaming\npm
+Parameters: -ig C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone -publish http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.8 -milestone -no-exit
+Start Clock @ Tuesday, February 18, 2025, 4:25:42 PM Central Standard Time (2025-02-18T16:25:42-06:00)
+                                                                                                    
+Build FHIR IG from C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone       (00:00.069 / 00:00.069, 8Gb)
+Build Formal Publication package, intended for http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.8        (00:00.005 / 00:00.074, 8Gb)
+API keys loaded from C:\Users\eren\.fhir\fhir-settings.json                                          (00:00.043 / 00:00.117, 8Gb)
+Package Cache: C:\Users\eren\.fhir\packages                                                          (00:00.001 / 00:00.119, 8Gb)
+Run Sushi on C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone             (00:00.001 / 00:00.120, 8Gb)
+Sushi: info  Running SUSHI v3.14.0 (implements FHIR Shorthand specification v3.0.0)                  (00:03.669 / 00:03.790, 8Gb)
+Sushi: info  Arguments:                                                                              (00:00.001 / 00:03.791, 8Gb)
+Sushi: info    --require-latest                                                                      (00:00.000 / 00:03.792, 8Gb)
+Sushi: info    --out C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone     (00:00.000 / 00:03.793, 8Gb)
+Sushi: info    C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone           (00:00.001 / 00:03.794, 8Gb)
+Sushi: info  Using configuration file: C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone\sushi-config.yaml (00:02.876 / 00:06.671, 8Gb)
+Sushi: info  Importing FSH text...                                                                   (00:00.120 / 00:06.791, 8Gb)
+Sushi: info  Preprocessed 50 documents with 14 aliases.                                              (00:00.219 / 00:07.011, 8Gb)
+Sushi: info  Imported 59 definitions and 37 instances.                                               (00:00.089 / 00:07.101, 8Gb)
+Sushi: info  Loaded virtual package sushi-r5forR4#1.0.0 with 7 resources                             (00:00.145 / 00:07.247, 8Gb)
+Sushi: info  Resolved hl7.fhir.uv.tools.r4#latest to concrete version 0.3.0                          (00:00.669 / 00:07.916, 8Gb)
+Sushi: info  Loaded hl7.fhir.uv.tools.r4#0.3.0 with 75 resources                                     (00:00.173 / 00:08.090, 8Gb)
+Sushi: info  Resolved hl7.terminology.r4#latest to concrete version 6.2.0                            (00:00.130 / 00:08.221, 8Gb)
+Sushi: info  Loaded hl7.terminology.r4#6.2.0 with 4323 resources                                     (00:05.582 / 00:13.803, 8Gb)
+Sushi: info  Resolved hl7.fhir.uv.extensions.r4#latest to concrete version 5.2.0                     (00:00.130 / 00:13.934, 8Gb)
+Sushi: info  Loaded hl7.fhir.uv.extensions.r4#5.2.0 with 759 resources                               (00:01.388 / 00:15.322, 8Gb)
+Sushi: info  Loaded hl7.fhir.us.core#7.0.0 with 211 resources                                        (00:00.448 / 00:15.770, 8Gb)
+Sushi: info  Loaded hl7.fhir.us.mcode#2.0.0 with 153 resources                                       (00:00.326 / 00:16.097, 8Gb)
+Sushi: info  Loaded hl7.fhir.uv.genomics-reporting#2.0.0 with 50 resources                           (00:00.135 / 00:16.232, 8Gb)
+Sushi: info  Loaded hl7.fhir.r4.core#4.0.1 with 4581 resources                                       (00:05.285 / 00:21.517, 8Gb)
+Sushi: info  Loaded virtual package sushi-local#LOCAL with 0 resources                               (00:00.007 / 00:21.524, 8Gb)
+Sushi: info  Converting FSH to FHIR resources...                                                     (00:00.031 / 00:21.555, 8Gb)
+Sushi: info  Converted 16 FHIR StructureDefinitions.                                                 (00:00.622 / 00:22.178, 8Gb)
+Sushi: info  Converted 43 FHIR ValueSets.                                                            (00:00.453 / 00:22.631, 8Gb)
+Sushi: info  Converted 37 FHIR instances.                                                            (00:01.987 / 00:24.618, 8Gb)
+Sushi: info  Exporting FHIR resources as JSON...                                                     (00:00.001 / 00:24.619, 8Gb)
+Sushi: info  Exported 96 FHIR resources as JSON.                                                     (00:00.165 / 00:24.785, 8Gb)
+Sushi: info  Assembling Implementation Guide sources...                                              (00:00.003 / 00:24.789, 8Gb)
+Sushi: info  Generated ImplementationGuide-nmdp.fhir.cibmtr-reporting.json                           (00:00.081 / 00:24.870, 8Gb)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.                         (00:00.001 / 00:24.871, 8Gb)
+Sushi: ========================= SUSHI RESULTS ===========================                           (00:00.000 / 00:24.872, 8Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:24.873, 8Gb)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |                           (00:00.000 / 00:24.873, 8Gb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:24.874, 8Gb)
+Sushi: | |      16       |      0       |      0       |       0       | |                           (00:00.000 / 00:24.875, 8Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.001 / 00:24.876, 8Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:24.877, 8Gb)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |                           (00:00.000 / 00:24.878, 8Gb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:24.879, 8Gb)
+Sushi: | |         43         |         0         |         37         | |                           (00:00.000 / 00:24.880, 8Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:24.880, 8Gb)
+Sushi: |                                                                 |                           (00:00.000 / 00:24.881, 8Gb)
+Sushi: ===================================================================                           (00:00.001 / 00:24.882, 8Gb)
+Sushi: | Swish! Nothing but fishnet.            0 Errors      0 Warnings |                           (00:00.000 / 00:24.883, 8Gb)
+Sushi: ===================================================================                           (00:00.000 / 00:24.884, 8Gb)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:00.083 / 00:24.967, 8Gb)
+Load Template from #cibmtr-template                                                                  (00:00.075 / 00:25.042, 8Gb)
+ Load Template from fhir.base.template#current                                                       (00:00.023 / 00:25.066, 8Gb)
+Root directory: C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone          (00:09.101 / 00:34.167, 8Gb)
+Terminology Cache is at C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone\input-cache\txcache. 22 files in cache (00:02.898 / 00:37.065, 8Gb)
+Core Package hl7.fhir.r4.core#4.0.1
+Running Terminology Log: C:\Users\eren\AppData\Local\Temp\ohfu-fhir-ig-16133240172219290772.log
+Connect to Terminology Server at http://tx.fhir.org                                                  (00:20.301 / 00:57.366, 8Gb)
+Load Package hl7.fhir.pubpack#0.2.1
+Load Package hl7.fhir.xver-extensions#0.1.0
+Load Package hl7.terminology.r4#6.2.0
+Load Package hl7.fhir.uv.extensions.r4#5.2.0
+Load Package hl7.terminology.r4#5.5.0
+Load Package hl7.fhir.uv.smart-app-launch#2.0.0
+Load Package us.nlm.vsac#0.18.0
+Ignore Dependency on Core FHIR hl7.fhir.r4.examples#4.0.1, from package 'hl7.fhir.uv.sdc#3.0.0'      (00:17.903 / 01:15.270, 10Gb)
+Load Package hl7.fhir.uv.sdc#3.0.0
+Load Package us.cdc.phinvads#0.12.0
+Load Package hl7.fhir.uv.extensions.r4#5.1.0
+Load Package hl7.fhir.us.core#7.0.0
+Load Package hl7.fhir.uv.bulkdata#1.0.1
+Load Package us.nlm.vsac#0.3.0
+Load Package hl7.fhir.us.core#4.0.0
+Load Package hl7.fhir.us.mcode#2.0.0
+Load Package hl7.fhir.uv.genomics-reporting#2.0.0
+Load Package hl7.fhir.uv.tools.r4#0.3.0
+Load R5 Specials
+Initialization complete                                                                              (00:14.596 / 01:29.867, 7Gb)
+Load Content                                                                                         (00:00.001 / 01:29.868, 7Gb)
+Using en-US as the default narrative language. (no language information in Implementation Guide)     (00:00.089 / 01:29.958, 7Gb)
+Process Loaded Resources                                                                             (00:01.304 / 01:31.262, 7Gb)
+Generating Snapshots                                                                                 (00:00.474 / 01:31.737, 7Gb)
+loadPrePages from FetchedFile[C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone\input\includes] as C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone\input\includes
+loadPrePages from FetchedFile[C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone\fsh-generated\includes] as C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone\fsh-generated\includes
+loadPrePages from FetchedFile[C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone\input\pagecontent] as C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone\input\pagecontent
+Fetch http://fhir.nmdp.org/ig/cibmtr-reporting/package-list.json for version check                   (00:01.005 / 01:32.743, 7Gb)
+Processing Conformance Resources                                                                     (00:15.091 / 01:47.834, 7Gb)
+Checking Language                                                                                    (00:00.001 / 01:47.835, 7Gb)
+Load Dependency Info                                                                                 (00:00.002 / 01:47.838, 7Gb)
+Load Info                                                                                            (00:00.001 / 01:47.839, 7Gb)
+Load Paths                                                                                           (00:00.001 / 01:47.841, 7Gb)
+Check R4 / R4B                                                                                       (00:00.001 / 01:47.842, 7Gb)
+Assign Comparison Ids                                                                                (00:00.116 / 01:47.958, 7Gb)
+Propagating status                                                                                   (00:00.001 / 01:47.960, 7Gb)
+Generating Narratives                                                                                (00:00.017 / 01:47.977, 7Gb)
+Validating Conformance Resources                                                                     (00:04.743 / 01:52.721, 7Gb)
+Check profiles & code systems                                                                        (00:12.188 / 02:04.910, 8Gb)
+Check realm rules                                                                                    (00:00.009 / 02:04.919, 8Gb)
+Previous Version Comparison                                                                          (00:00.006 / 02:04.925, 8Gb)
+Validating Resources                                                                                 (00:00.104 / 02:05.030, 8Gb)
+Processing Provenance Records                                                                        (00:01.074 / 02:06.105, 8Gb)
+Generating Outputs in C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone\output (00:00.001 / 02:06.106, 8Gb)
+Warning @ Unable to read the git branch: not a git repository (or any of the parent directories): .git
+Warning @ Unable to read the git source: not a git repository (or any of the parent directories): .git
+Generate Native Outputs                                                                              (00:01.025 / 02:07.132, 8Gb)
+Run Template                                                                                         (00:10.606 / 02:17.738, 8Gb)
+Generate HTML Outputs                                                                                (00:02.499 / 02:20.238, 8Gb)
+Generate Spreadsheets                                                                                (03:21.333 / 05:41.571, 8Gb)
+Generate Summaries                                                                                   (00:04.363 / 05:45.935, 8Gb)
+Generating Summary Outputs                                                                           (00:00.001 / 05:45.936, 8Gb)
+DB Cumulative Time invested: 00:00:26.125
+Sending Usage Stats to Server                                                                        (00:42.021 / 06:27.958, 8Gb)
+## Memory (MB): Use = 8842, Free = 7525, Total = 16368, Max = 20000                                  (00:00.003 / 06:27.961, 8Gb)
+Reclaiming memory...                                                                                 (00:00.001 / 06:27.962, 8Gb)
+## Memory (MB): Use = 7191, Free = 9176, Total = 16368, Max = 20000                                  (00:06.625 / 06:34.588, 7Gb)
+Run jekyll: jekyll build --destination "C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone\output" (in folder C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone\temp\pages) (00:00.011 / 06:34.599, 7Gb)
+Due to a known issue, Jekyll errors are lost between Java and Ruby in windows systems.               (00:00.005 / 06:34.605, 7Gb)
+If the build process hangs at this point, you have to go to a                                        (00:00.001 / 06:34.606, 7Gb)
+command prompt, and then run these two commands:                                                     (00:00.001 / 06:34.607, 7Gb)
+                                                                                                     (00:00.008 / 06:34.616, 7Gb)
+cd C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone\temp\pages            (00:00.008 / 06:34.624, 7Gb)
+jekyll build --destination "C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone\output" (00:00.004 / 06:34.629, 7Gb)
+                                                                                                     (00:00.007 / 06:34.636, 7Gb)
+and then investigate why Jekyll has failed                                                           (00:00.003 / 06:34.640, 7Gb)
+Troubleshooting Note: usual cases for Jekyll to fail are:                                            (00:00.002 / 06:34.644, 7Gb)
+* A failure to produce a fragment that is already logged in the output above                         (00:00.005 / 06:34.648, 7Gb)
+* A reference to a manually edited file that hasn't been provided                                    (00:00.002 / 06:34.650, 7Gb)
+Jekyll: Source: C:/Users/eren/AppData/Local/Temp/nmdp.fhir.cibmtr-reporting#0.1.8-milestone/temp/pages (00:03.242 / 06:37.892, 7Gb)
+Jekyll: Generating...                                                                                (00:00.001 / 06:37.894, 7Gb)
+Sending usage stats failed: Connection timed out: connect
+Jekyll: done in 56.839 seconds.                                                                      (00:56.838 / 07:34.732, 7Gb)
+
+Installing nmdp.fhir.cibmtr-reporting#0.1.8
+Checking Output HTML                                                                                 (00:05.223 / 07:39.955, 7Gb)
+found 1582 files                                                                                     (00:00.058 / 07:40.014, 7Gb)
+........................................
+........................................
+  ... 1582 html files, 0 pages invalid xhtml (0%)                                                    (00:31.529 / 08:11.544, 8Gb)
+  ... 342812 links, 0 broken links (0%)                                                              (00:00.003 / 08:11.547, 8Gb)
+Generate fragment-usage-analysis.csv                                                                 (00:00.008 / 08:11.555, 8Gb)
+Build final .zip                                                                                     (00:00.010 / 08:11.566, 8Gb)
+Final .zip built                                                                                     (00:03.632 / 08:15.199, 8Gb)
+Built. Times: loading: 00:17.965, generate: 07:12.995, narrative generation: 00:04.740, realm-rules: 00:00.006, previous-version: 00:00.000, jekyll: 01:00.289, validation: 00:13.228 (#97), template: 00:02.782 (#3) (00:45.636 / 09:00.836, 9Gb)
+Generating QA                                                                                        (00:00.001 / 09:00.838, 9Gb)
+Internal error in location for message: 'Error @1, 1: Premature ExpressionNode termination at unexpected token ":"', loc = 'C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone\output\Access-Credential', err = 'The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the H'
+Internal error in location for message: 'Error @1, 1: Premature ExpressionNode termination at unexpected token ":"', loc = 'C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone\output\Access-Credential', err = 'The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the H'
+Internal error in location for message: 'Error @1, 1: Premature ExpressionNode termination at unexpected token ":"', loc = 'C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone\output\Medication-Medica', err = 'The <script> containing the javascript 'try { var currentTab'... is illegal and not allowed on the H'
+Validation output in C:\Users\eren\AppData\Local\Temp\nmdp.fhir.cibmtr-reporting#0.1.8-milestone\output\qa.html
+Errors: 0, Warnings: 47, Info: 58, Broken Links: 0 (00:00.775 / 09:01.613, 10Gb)
+Finished. Max Memory Used = 10Gb. Log file saved in C:\Users\eren\AppData\Local\Temp\fhir-ig-publisher-tmp.log (00:00.115 / 09:01.728, 10Gb)
+Keep a copy of the build directory at C:\Users\eren\AppData\Local\Temp\web-root\run-20250218\ig-build-zips\nmdp.fhir.cibmtr-reporting#0.1.8.zip
+
+ok. All checks passed. Publish v0.1.8 to C:\Users\eren\AppData\Local\Temp\web-root\run-20250218\cibmtr-reporting\0.1.8
+Copy the IG to C:\Users\eren\AppData\Local\Temp\web-root\run-20250218\cibmtr-reporting\0.1.8
+Update C:\Users\eren\AppData\Local\Temp\web-root\run-20250218\cibmtr-reporting\package-list.json
+Publish Box Statement: This page is part of the CIBMTR Reporting Implementation Guide (v0.1.8: Release Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a>
+  .. 604 files checked, 604 updated
+  .. 197 clones checked, 394 updated
+  .. 97 redirections (97 created/updated)
+This is a milestone release - publish v0.1.8 to C:\Users\eren\AppData\Local\Temp\web-root\run-20250218\cibmtr-reporting
+Update publish box for version 0.1.7 @ http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.7
+Publish Box Statement: This page is part of the CIBMTR Reporting Implementation Guide (v0.1.7: Release Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. The current version which supersedes this version is <a no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting{{fn}}">0.1.8</a>.  For a full list of available versions, see the <a no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a>
+  .. 0 files checked, 0 updated
+  .. 0 clones checked, 0 updated
+Building download for C:\Users\eren\AppData\Local\Temp\web-root\run-20250218\cibmtr-reporting\0.1.7 url = http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.7, canonical = http://fhir.nmdp.org/ig/cibmtr-reporting
+  
+ ..Finished
+Publish Box Statement: This page is part of the CIBMTR Reporting Implementation Guide (v0.1.8: Release Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a>
+  .. 604 files checked, 604 updated
+  .. 197 clones checked, 394 updated
+  .. 97 redirections (97 created/updated)
+Check for Files to delete
+  ... 0 files
+Copy to new IG to C:\Users\eren\AppData\Local\Temp\web-root\run-20250218\cibmtr-reporting
+nmdp.fhir.cibmtr-reporting (http://fhir.nmdp.org/ig/cibmtr-reporting): CIBMTR Reporting Implementation Guide @ http://nmdp-ig.github.io/cibmtr-reporting-ig
+  candidate: Release Draft 0.1.8/4.0.1 @ http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.8
+Build is complete. Copy from C:\Users\eren\AppData\Local\Temp\web-root\run-20250218
+Update history page at C:\Users\eren\AppData\Local\Temp\web-root\run-20250218\cibmtr-reporting from C:\Users\eren\Desktop\DirectFhirIG\0219\publication\ig-history and publication/web-root/history-templates

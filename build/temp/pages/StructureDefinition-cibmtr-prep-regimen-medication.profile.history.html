@@ -1,0 +1,21 @@
+---
+---
+<!-- get modelType -->
+{% include fragment-modelType.html id='cibmtr-prep-regimen-medication' %}
+
+{% include fragment-pagebegin.html %}
+
+<div style="counter-reset: section 10" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-profile-navtabs.html type='StructureDefinition' id='cibmtr-prep-regimen-medication' active='history' %}
+
+  <a name="root"> </a>
+  <h2 id="root">{{modelType}}: CIBMTR_PrepRegimenMedication - Change History</h2>
+{% include fragment-simpletable.html %}
+  <p>Changes in the cibmtr-prep-regimen-medication {{modelType | downcase}}.</p>
+
+  {%include StructureDefinition-cibmtr-prep-regimen-medication-history.xhtml%}
+
+</div>
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}

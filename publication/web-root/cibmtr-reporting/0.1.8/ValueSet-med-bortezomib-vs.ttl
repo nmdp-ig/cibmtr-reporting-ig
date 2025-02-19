@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-bortezomib-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "med-bortezomib-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet med-bortezomib-vs</b></p><a name=\"med-bortezomib-vs\"> </a><a name=\"hcmed-bortezomib-vs\"> </a><a name=\"med-bortezomib-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>358258</td><td>bortezomib</td></tr><tr><td>356733</td><td>Velcade</td></tr><tr><td>1804993</td><td>bortezomib 3.5 MG</td></tr><tr><td>1804996</td><td>bortezomib 3.5 MG [Velcade]</td></tr><tr><td>402244</td><td>bortezomib 3.5 MG Injection [Velcade]</td></tr><tr><td>1163075</td><td>bortezomib Injectable Product</td></tr><tr><td>1804994</td><td>bortezomib Injection</td></tr><tr><td>1804997</td><td>bortezomib Injection [Velcade]</td></tr><tr><td>1187756</td><td>Velcade Injectable Product</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-bortezomib-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "RxNormBortezomibVS"] ; # 
+  fhir:title [ fhir:v "RxNorm - Bortezomib"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2025-02-18T16:12:42-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.cibmtr.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Milius" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bmilius@nmdp.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "RxNorm codes for Bortezomib"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "358258" ] ;
+         fhir:display [ fhir:v "bortezomib" ]
+       ] [
+         fhir:code [ fhir:v "356733" ] ;
+         fhir:display [ fhir:v "Velcade" ]
+       ] [
+         fhir:code [ fhir:v "1804993" ] ;
+         fhir:display [ fhir:v "bortezomib 3.5 MG" ]
+       ] [
+         fhir:code [ fhir:v "1804996" ] ;
+         fhir:display [ fhir:v "bortezomib 3.5 MG [Velcade]" ]
+       ] [
+         fhir:code [ fhir:v "402244" ] ;
+         fhir:display [ fhir:v "bortezomib 3.5 MG Injection [Velcade]" ]
+       ] [
+         fhir:code [ fhir:v "1163075" ] ;
+         fhir:display [ fhir:v "bortezomib Injectable Product" ]
+       ] [
+         fhir:code [ fhir:v "1804994" ] ;
+         fhir:display [ fhir:v "bortezomib Injection" ]
+       ] [
+         fhir:code [ fhir:v "1804997" ] ;
+         fhir:display [ fhir:v "bortezomib Injection [Velcade]" ]
+       ] [
+         fhir:code [ fhir:v "1187756" ] ;
+         fhir:display [ fhir:v "Velcade Injectable Product" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

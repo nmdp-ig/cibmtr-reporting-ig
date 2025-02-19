@@ -1,0 +1,84 @@
+{
+  "resourceType": "Medication",
+  "id": "Medication-Etoposide-Example",
+  "meta": {
+    "security": [
+      {
+        "system": "http://terminology.cibmtr.org/codesystem/transplant-center",
+        "code": "rc_99999",
+        "display": "99999 My Transplant Center"
+      }
+    ],
+    "profile": [
+      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "4179",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "etoposide"
+      },
+      {
+        "code": "310248",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "etoposide 20 MG/ML Injectable Solution"
+      },
+      {
+        "code": "362972",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "etoposide Injectable Solution [Vepesid]"
+      },
+      {
+        "code": "206832",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "etoposide 20 MG/ML Injectable Solution [Vepesid]"
+      }
+    ],
+    "text": "ETOPOSIDE 20 MG/ML IV SOLN"
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "4179",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "etoposide"
+          },
+          {
+            "code": "310248",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "etoposide 20 MG/ML Injectable Solution"
+          },
+          {
+            "code": "362972",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "etoposide Injectable Solution [Vepesid]"
+          },
+          {
+            "code": "206832",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "etoposide 20 MG/ML Injectable Solution [Vepesid]"
+          }
+        ],
+        "text": "ETOPOSIDE 20 MG/ML IV SOLN"
+      },
+      "strength": {
+        "numerator": {
+          "value": 20,
+          "unit": "milligram per milliliter",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/ml"
+        },
+        "denominator": {
+          "value": 20,
+          "unit": "milligram per milliliter",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/ml"
+        }
+      }
+    }
+  ]
+}

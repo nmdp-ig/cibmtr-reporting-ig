@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>NMDP.FHIR.CIBMTR-REPORTING\RxNorm - Additional Drugs in Peri-Transplant Period - JSON Representation - FHIR v4.0.1</title>
+    <title>RxNorm - Additional Drugs in Peri-Transplant Period - JSON Representation - CIBMTR Reporting Implementation Guide v0.1.8</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -20,6 +20,7 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/cibmtr.css" rel="stylesheet" />
 
@@ -32,20 +33,22 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
-    <style type="text/css">h2{--heading-prefix:"15.32"}
-    h3,h4,h5,h6{--heading-prefix:"15.32"}</style>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"16.36"}
+    h3,h4,h5,h6{--heading-prefix:"16.36"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
+
         <!-- Placeholder for child template header declarations -->
 
 <div id="cibmtr-nav">
@@ -59,7 +62,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.6 - Trial Use 1
+            <span style="display:inline-block;">0.1.8 - Trial Use 1
 
 
             </span>
@@ -114,6 +117,9 @@
       </li>
       <li>
         <a href="Medications.html">Medications</a>
+      </li>
+      <li>
+        <a href="Vital-Signs.html">Vital Signs</a>
       </li>
       <li>
         <a href="Bundles.html">Bundles</a>
@@ -173,7 +179,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the CIBMTR Reporting Implementation Guide (v0.1.6: Release Draft) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the CIBMTR Reporting Implementation Guide (v0.1.8: Release Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -220,14 +226,15 @@
 
 
 <h2 id="root">: RxNorm - Additional Drugs in Peri-Transplant Period - JSON Representation</h2>
-  <table class="colsi">
+
+  <table class="colsd">
     <tr>
 
       <td colspan="2">
         
-          Active
+          Draft
           
-            as of 2023-05-05
+            as of 2025-02-18
           
         
       </td>
@@ -243,21 +250,20 @@
 
 
 
-  <pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
-{
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "med-addition-peri-transplant-vs",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://www.nlm.nih.gov/research/umls/rxnorm\&quot;&gt;&lt;code&gt;http://www.nlm.nih.gov/research/umls/rxnorm&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1011&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;107047&lt;/td&gt;&lt;td&gt;rabbit anti-human T-lymphocyte globulin 25 MG Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;107050&lt;/td&gt;&lt;td&gt;rabbit anti-human T-lymphocyte globulin 25 MG Injection [Thymoglobulin]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;11065&lt;/td&gt;&lt;td&gt;ursodiol&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1164265&lt;/td&gt;&lt;td&gt;alemtuzumab Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1165939&lt;/td&gt;&lt;td&gt;ATGAM Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;117055&lt;/td&gt;&lt;td&gt;alemtuzumab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1172298&lt;/td&gt;&lt;td&gt;Campath Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1177887&lt;/td&gt;&lt;td&gt;Thymoglobulin Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1204&lt;/td&gt;&lt;td&gt;ATGAM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1311089&lt;/td&gt;&lt;td&gt;defibrotide&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1594657&lt;/td&gt;&lt;td&gt;alemtuzumab 10 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1594658&lt;/td&gt;&lt;td&gt;1.2 ML alemtuzumab 10 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1594659&lt;/td&gt;&lt;td&gt;Lemtrada&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1594660&lt;/td&gt;&lt;td&gt;alemtuzumab 10 MG/ML [Lemtrada]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1594662&lt;/td&gt;&lt;td&gt;Lemtrada Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1594663&lt;/td&gt;&lt;td&gt;1.2 ML alemtuzumab 10 MG/ML Injection [Lemtrada]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1656628&lt;/td&gt;&lt;td&gt;alemtuzumab 30 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1656629&lt;/td&gt;&lt;td&gt;alemtuzumab Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1656631&lt;/td&gt;&lt;td&gt;alemtuzumab 30 MG/ML [Campath]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1656632&lt;/td&gt;&lt;td&gt;alemtuzumab Injection [Campath]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1656637&lt;/td&gt;&lt;td&gt;alemtuzumab Injection [Lemtrada]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746523&lt;/td&gt;&lt;td&gt;defibrotide sodium&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746524&lt;/td&gt;&lt;td&gt;defibrotide sodium 80 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746525&lt;/td&gt;&lt;td&gt;defibrotide Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746526&lt;/td&gt;&lt;td&gt;defibrotide Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746527&lt;/td&gt;&lt;td&gt;2.5 ML defibrotide sodium 80 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746528&lt;/td&gt;&lt;td&gt;Defitelio&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746529&lt;/td&gt;&lt;td&gt;defibrotide sodium 80 MG/ML [Defitelio]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746530&lt;/td&gt;&lt;td&gt;defibrotide Injection [Defitelio]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746531&lt;/td&gt;&lt;td&gt;Defitelio Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746532&lt;/td&gt;&lt;td&gt;2.5 ML defibrotide sodium 80 MG/ML Injection [Defitelio]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1788946&lt;/td&gt;&lt;td&gt;defibrotide, bovine lung&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;197906&lt;/td&gt;&lt;td&gt;5 ML lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;206289&lt;/td&gt;&lt;td&gt;5 ML lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML Injection [ATGAM]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;225741&lt;/td&gt;&lt;td&gt;Thymoglobulin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282514&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282515&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282516&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282518&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML [ATGAM]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282519&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin Injection [ATGAM]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282525&lt;/td&gt;&lt;td&gt;rabbit anti-human T-lymphocyte globulin 25 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282527&lt;/td&gt;&lt;td&gt;rabbit anti-human T-lymphocyte globulin 25 MG [Thymoglobulin]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282528&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin Injection [Thymoglobulin]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2376942&lt;/td&gt;&lt;td&gt;ursodiol 400 MG Oral Capsule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2477892&lt;/td&gt;&lt;td&gt;ursodiol 200 MG [Reltone]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2477896&lt;/td&gt;&lt;td&gt;ursodiol 200 MG Oral Capsule [Reltone]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2477897&lt;/td&gt;&lt;td&gt;ursodiol 400 MG [Reltone]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2477898&lt;/td&gt;&lt;td&gt;ursodiol 400 MG Oral Capsule [Reltone]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;284679&lt;/td&gt;&lt;td&gt;Campath&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;360513&lt;/td&gt;&lt;td&gt;ursodiol 250 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;412174&lt;/td&gt;&lt;td&gt;ursodiol 200 MG Oral Capsule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;452499&lt;/td&gt;&lt;td&gt;ursodiol 200 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;452500&lt;/td&gt;&lt;td&gt;ursodiol 400 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;828265&lt;/td&gt;&lt;td&gt;1 ML alemtuzumab 30 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;828267&lt;/td&gt;&lt;td&gt;1 ML alemtuzumab 30 MG/ML Injection [Campath]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858328&lt;/td&gt;&lt;td&gt;ursodiol 300 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858329&lt;/td&gt;&lt;td&gt;ursodiol 300 MG Oral Tablet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858330&lt;/td&gt;&lt;td&gt;ursodiol 150 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858332&lt;/td&gt;&lt;td&gt;ursodiol 50 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858333&lt;/td&gt;&lt;td&gt;ursodiol 50 MG/ML Oral Suspension&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858335&lt;/td&gt;&lt;td&gt;ursodiol 150 MG Oral Tablet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858732&lt;/td&gt;&lt;td&gt;ursodiol 500 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858733&lt;/td&gt;&lt;td&gt;ursodiol 500 MG Oral Tablet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858734&lt;/td&gt;&lt;td&gt;ursodiol 500 MG [Urso Forte]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858735&lt;/td&gt;&lt;td&gt;ursodiol 500 MG Oral Tablet [Urso Forte]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858744&lt;/td&gt;&lt;td&gt;ursodiol 250 MG Oral Capsule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858745&lt;/td&gt;&lt;td&gt;ursodiol 250 MG [Urso]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858747&lt;/td&gt;&lt;td&gt;ursodiol 300 MG Oral Capsule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858748&lt;/td&gt;&lt;td&gt;ursodiol 300 MG [Actigall]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858749&lt;/td&gt;&lt;td&gt;ursodiol 300 MG Oral Capsule [Actigall]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858751&lt;/td&gt;&lt;td&gt;ursodiol 250 MG Oral Tablet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858752&lt;/td&gt;&lt;td&gt;ursodiol 250 MG Oral Tablet [Urso]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;91601&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin, equine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;973&lt;/td&gt;&lt;td&gt;antilymphocyte immunoglobulin&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet med-addition-peri-transplant-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;med-addition-peri-transplant-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcmed-addition-peri-transplant-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;med-addition-peri-transplant-vs-en-US\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://www.nlm.nih.gov/research/umls/rxnorm\&quot;&gt;&lt;code&gt;http://www.nlm.nih.gov/research/umls/rxnorm&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1011&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;107047&lt;/td&gt;&lt;td&gt;rabbit anti-human T-lymphocyte globulin 25 MG Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;107050&lt;/td&gt;&lt;td&gt;rabbit anti-human T-lymphocyte globulin 25 MG Injection [Thymoglobulin]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;11065&lt;/td&gt;&lt;td&gt;ursodiol&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1164265&lt;/td&gt;&lt;td&gt;alemtuzumab Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1165939&lt;/td&gt;&lt;td&gt;ATGAM Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;117055&lt;/td&gt;&lt;td&gt;alemtuzumab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1172298&lt;/td&gt;&lt;td&gt;Campath Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1177887&lt;/td&gt;&lt;td&gt;Thymoglobulin Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1204&lt;/td&gt;&lt;td&gt;ATGAM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1311089&lt;/td&gt;&lt;td&gt;defibrotide&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1594657&lt;/td&gt;&lt;td&gt;alemtuzumab 10 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1594658&lt;/td&gt;&lt;td&gt;1.2 ML alemtuzumab 10 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1594659&lt;/td&gt;&lt;td&gt;Lemtrada&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1594660&lt;/td&gt;&lt;td&gt;alemtuzumab 10 MG/ML [Lemtrada]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1594662&lt;/td&gt;&lt;td&gt;Lemtrada Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1594663&lt;/td&gt;&lt;td&gt;1.2 ML alemtuzumab 10 MG/ML Injection [Lemtrada]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1656628&lt;/td&gt;&lt;td&gt;alemtuzumab 30 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1656629&lt;/td&gt;&lt;td&gt;alemtuzumab Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1656631&lt;/td&gt;&lt;td&gt;alemtuzumab 30 MG/ML [Campath]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1656632&lt;/td&gt;&lt;td&gt;alemtuzumab Injection [Campath]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1656637&lt;/td&gt;&lt;td&gt;alemtuzumab Injection [Lemtrada]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746523&lt;/td&gt;&lt;td&gt;defibrotide sodium&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746524&lt;/td&gt;&lt;td&gt;defibrotide sodium 80 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746525&lt;/td&gt;&lt;td&gt;defibrotide Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746526&lt;/td&gt;&lt;td&gt;defibrotide Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746527&lt;/td&gt;&lt;td&gt;2.5 ML defibrotide sodium 80 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746528&lt;/td&gt;&lt;td&gt;Defitelio&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746529&lt;/td&gt;&lt;td&gt;defibrotide sodium 80 MG/ML [Defitelio]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746530&lt;/td&gt;&lt;td&gt;defibrotide Injection [Defitelio]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746531&lt;/td&gt;&lt;td&gt;Defitelio Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1746532&lt;/td&gt;&lt;td&gt;2.5 ML defibrotide sodium 80 MG/ML Injection [Defitelio]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1788946&lt;/td&gt;&lt;td&gt;defibrotide, bovine lung&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;197906&lt;/td&gt;&lt;td&gt;5 ML lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;206289&lt;/td&gt;&lt;td&gt;5 ML lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML Injection [ATGAM]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;225741&lt;/td&gt;&lt;td&gt;Thymoglobulin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282514&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282515&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282516&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282518&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML [ATGAM]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282519&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin Injection [ATGAM]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282525&lt;/td&gt;&lt;td&gt;rabbit anti-human T-lymphocyte globulin 25 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282527&lt;/td&gt;&lt;td&gt;rabbit anti-human T-lymphocyte globulin 25 MG [Thymoglobulin]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2282528&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin Injection [Thymoglobulin]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2376942&lt;/td&gt;&lt;td&gt;ursodiol 400 MG Oral Capsule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2477892&lt;/td&gt;&lt;td&gt;ursodiol 200 MG [Reltone]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2477896&lt;/td&gt;&lt;td&gt;ursodiol 200 MG Oral Capsule [Reltone]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2477897&lt;/td&gt;&lt;td&gt;ursodiol 400 MG [Reltone]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2477898&lt;/td&gt;&lt;td&gt;ursodiol 400 MG Oral Capsule [Reltone]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;284679&lt;/td&gt;&lt;td&gt;Campath&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;360513&lt;/td&gt;&lt;td&gt;ursodiol 250 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;412174&lt;/td&gt;&lt;td&gt;ursodiol 200 MG Oral Capsule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;452499&lt;/td&gt;&lt;td&gt;ursodiol 200 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;452500&lt;/td&gt;&lt;td&gt;ursodiol 400 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;828265&lt;/td&gt;&lt;td&gt;1 ML alemtuzumab 30 MG/ML Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;828267&lt;/td&gt;&lt;td&gt;1 ML alemtuzumab 30 MG/ML Injection [Campath]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858328&lt;/td&gt;&lt;td&gt;ursodiol 300 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858329&lt;/td&gt;&lt;td&gt;ursodiol 300 MG Oral Tablet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858330&lt;/td&gt;&lt;td&gt;ursodiol 150 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858332&lt;/td&gt;&lt;td&gt;ursodiol 50 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858333&lt;/td&gt;&lt;td&gt;ursodiol 50 MG/ML Oral Suspension&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858335&lt;/td&gt;&lt;td&gt;ursodiol 150 MG Oral Tablet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858732&lt;/td&gt;&lt;td&gt;ursodiol 500 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858733&lt;/td&gt;&lt;td&gt;ursodiol 500 MG Oral Tablet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858734&lt;/td&gt;&lt;td&gt;ursodiol 500 MG [Urso Forte]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858735&lt;/td&gt;&lt;td&gt;ursodiol 500 MG Oral Tablet [Urso Forte]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858744&lt;/td&gt;&lt;td&gt;ursodiol 250 MG Oral Capsule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858745&lt;/td&gt;&lt;td&gt;ursodiol 250 MG [Urso]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858747&lt;/td&gt;&lt;td&gt;ursodiol 300 MG Oral Capsule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858748&lt;/td&gt;&lt;td&gt;ursodiol 300 MG [Actigall]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858749&lt;/td&gt;&lt;td&gt;ursodiol 300 MG Oral Capsule [Actigall]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858751&lt;/td&gt;&lt;td&gt;ursodiol 250 MG Oral Tablet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;858752&lt;/td&gt;&lt;td&gt;ursodiol 250 MG Oral Tablet [Urso]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;91601&lt;/td&gt;&lt;td&gt;lymphocyte immune globulin, anti-thymocyte globulin, equine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;973&lt;/td&gt;&lt;td&gt;antilymphocyte immunoglobulin&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-addition-peri-transplant-vs",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.6",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.8",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "RxNormAdditionalPeriTransplantVS",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "RxNorm - Additional Drugs in Peri-Transplant Period",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "draft",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : true,
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2023-05-05T10:50:04-05:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2025-02-18T16:25:42-06:00",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -618,7 +624,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.6 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 5, 2023 10:50-0500">2023-05-05</span>
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.8 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 18, 2025 16:27-0600">2025-02-18</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

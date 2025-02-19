@@ -1,0 +1,45 @@
+{
+  "resourceType": "Observation",
+  "id": "BodyHeight",
+  "meta": {
+    "security": [
+      {
+        "system": "http://terminology.cibmtr.org/codesystem/transplant-center",
+        "code": "rc_99999",
+        "display": "99999 My Transplant Center"
+      }
+    ],
+    "profile": [
+      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-vital-signs-height"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8302-2"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
+    }
+  ],
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "[in_i]",
+    "unit": "in",
+    "value": 65.89999999999999
+  },
+  "status": "final",
+  "effectiveDateTime": "2020-07-21T14:17:00Z",
+  "subject": {
+    "reference": "Patient/PatientExample6"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "VitalSigns",
+  "id": "vital-signs",
+  "title": "CIBMTR Vital Signs Value Set",
+  "description": "CIBMTR Vital Signs Value Set",
+  "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/vital-signs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "29463-7",
+            "display": "Body weight Patient Mass Pt Qn"
+          },
+          {
+            "code": "8302-2",
+            "display": "Body height Patient Len Pt Qn"
+          }
+        ]
+      }
+    ]
+  }
+}

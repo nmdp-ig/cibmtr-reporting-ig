@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="snomed-myelodysplastic-diseases-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet snomed-myelodysplastic-diseases-vs</b></p><a name="snomed-myelodysplastic-diseases-vs"> </a><a name="hcsnomed-myelodysplastic-diseases-vs"> </a><a name="snomed-myelodysplastic-diseases-vs-en-US"> </a><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a 109995007 (Myelodysplastic syndrome (clinical))</li></ul></div>
+  </text>
+  <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/snomed-myelodysplastic-diseases-vs"/>
+  <version value="0.1.8"/>
+  <name value="SNOMEDMyelodysplasticDiseasesVS"/>
+  <title value="SNOMED Myelodysplastic Diseases"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-02-18T16:12:42-06:00"/>
+  <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
+  <contact>
+    <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.cibmtr.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Milius"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bmilius@nmdp.org"/>
+    </telecom>
+  </contact>
+  <description value="The myelodysplastic syndromes (MDS) are a group of clonal hematopoietic stem cell diseases characterized by cytopenia(s), dysplasia (abnormal growth or development leading to an alteration in size, shape, and organization of the cell) in one or more of the major myeloid cell lines (WBC, RBC, and/or platelets), ineffective hematopoiesis, and an increased risk of developing acute myelogenous leukemia (AML). MDS occurs primarily in older adults, with a median age of 70 years. The majority of recipients present with symptoms related to cytopenias. Most recipients present with anemia requiring RBC transfusions."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="109995007"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

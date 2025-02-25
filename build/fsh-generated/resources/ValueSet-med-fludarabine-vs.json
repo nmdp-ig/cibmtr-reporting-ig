@@ -1,0 +1,63 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "RxNormFludarabineVS",
+  "id": "med-fludarabine-vs",
+  "title": "RxNorm - Fludarabine",
+  "description": "RxNorm codes for Fludarabine",
+  "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-fludarabine-vs",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "concept": [
+          {
+            "code": "24698",
+            "display": "fludarabine"
+          },
+          {
+            "code": "877487",
+            "display": "Oforta"
+          },
+          {
+            "code": "1165043",
+            "display": "fludarabine Injectable Product"
+          },
+          {
+            "code": "1740863",
+            "display": "fludarabine Injection"
+          },
+          {
+            "code": "828708",
+            "display": "fludarabine Oral Capsule"
+          },
+          {
+            "code": "1165044",
+            "display": "fludarabine Oral Product"
+          },
+          {
+            "code": "393413",
+            "display": "fludarabine Oral Tablet"
+          },
+          {
+            "code": "828705",
+            "display": "fludarabine phosphate 10 MG"
+          },
+          {
+            "code": "328431",
+            "display": "fludarabine phosphate 25 MG/ML"
+          },
+          {
+            "code": "1740862",
+            "display": "fludarabine phosphate 50 MG"
+          },
+          {
+            "code": "1165045",
+            "display": "fludarabine Pill"
+          }
+        ]
+      }
+    ]
+  }
+}

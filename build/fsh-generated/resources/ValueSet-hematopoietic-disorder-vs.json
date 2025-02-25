@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "HematopoieticDisorderVS",
+  "id": "hematopoietic-disorder-vs",
+  "title": "Disorders of hematopoietic structure",
+  "description": "SNOMED: Disorders of hematopoietic structure",
+  "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/hematopoietic-disorder-vs",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "414027002"
+          }
+        ]
+      }
+    ]
+  }
+}

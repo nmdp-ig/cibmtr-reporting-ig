@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.6/Observation-AlbuminObservation.json2');
+  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.8/Observation-AlbuminObservation.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.6/Observation-AlbuminObservation.json1');
+  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.8/Observation-AlbuminObservation.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.6/Observation-AlbuminObservation.json');
+  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.8/Observation-AlbuminObservation.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.6/Observation-AlbuminObservation.xml2');
+  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.8/Observation-AlbuminObservation.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.6/Observation-AlbuminObservation.xml1');
+  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.8/Observation-AlbuminObservation.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.6/Observation-AlbuminObservation.html');
+  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.8/Observation-AlbuminObservation.html');
 else 
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.6/Observation-AlbuminObservation.xml');
+  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.8/Observation-AlbuminObservation.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

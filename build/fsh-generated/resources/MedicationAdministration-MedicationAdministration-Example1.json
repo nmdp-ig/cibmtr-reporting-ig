@@ -1,0 +1,70 @@
+{
+  "resourceType": "MedicationAdministration",
+  "id": "MedicationAdministration-Example1",
+  "meta": {
+    "security": [
+      {
+        "system": "http://terminology.cibmtr.org/codesystem/transplant-center",
+        "code": "rc_99999",
+        "display": "99999 My Transplant Center"
+      }
+    ],
+    "profile": [
+      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration"
+    ]
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/PatientExample6"
+  },
+  "effectiveDateTime": "2020-07-22T16:58:05Z",
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "code": "363346000",
+          "system": "http://snomed.info/sct",
+          "display": "Malignant neoplastic disease (disorder)"
+        },
+        {
+          "code": "C80.1",
+          "system": "http://hl7.org/fhir/sid/icd-10-cm",
+          "display": "Malignant (primary) neoplasm, unspecified"
+        }
+      ],
+      "text": "Cancer (CMS/HCC)"
+    }
+  ],
+  "request": {
+    "reference": "MedicationRequest/MedicationRequest-Etoposide-Example"
+  },
+  "medicationReference": {
+    "reference": "Medication/Medication-Etoposide-Example"
+  },
+  "dosage": {
+    "dose": {
+      "value": 73,
+      "unit": "milligram",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg"
+    },
+    "route": {
+      "coding": [
+        {
+          "code": "47625008",
+          "system": "http://snomed.info/sct",
+          "display": "Intravenous route"
+        }
+      ]
+    },
+    "method": {
+      "coding": [
+        {
+          "code": "422145002",
+          "system": "http://snomed.info/sct",
+          "display": "Inject - dosing instruction imperative (qualifier value)"
+        }
+      ]
+    }
+  }
+}

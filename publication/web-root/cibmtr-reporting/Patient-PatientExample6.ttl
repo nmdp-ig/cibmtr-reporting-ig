@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -21,7 +22,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b></b> female, DoB Unknown ( id: 123456)</p><hr/></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient PatientExample6</b></p><a name=\"PatientExample6\"> </a><a name=\"hcPatientExample6\"> </a><a name=\"PatientExample6-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"> Female, DoB Unknown ( http://terminology.cibmtr.org/identifier/CRID#123456)</p><hr/></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://terminology.cibmtr.org/identifier/CRID"^^xsd:anyURI ] ;
@@ -30,7 +31,10 @@
   fhir:name ( [
      fhir:extension ( [
        fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "masked" ]
+       fhir:value [
+         a fhir:code ;
+         fhir:v "masked"
+       ]
      ] )
   ] ) ; # 
   fhir:gender [ fhir:v "female"] . # 

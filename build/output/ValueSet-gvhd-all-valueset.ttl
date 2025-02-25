@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-all-valueset> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "gvhd-all-valueset"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet gvhd-all-valueset</b></p><a name=\"gvhd-all-valueset\"> </a><a name=\"hcgvhd-all-valueset\"> </a><a name=\"gvhd-all-valueset-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-gvhd-sct-codes.html\">GVHD SNOMED CT Codes</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-gvhd-icd10-codes.html\">GVHD ICD-10 Codes</a></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-all-valueset"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "GVHDTypeValueSet"] ; # 
+  fhir:title [ fhir:v "GVHD Type Value Set"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2025-02-18T15:55:04-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.cibmtr.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Milius" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bmilius@nmdp.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Permissible values for types of Graft vs Host Disease, from SNOMED CT and ICD-10"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-sct-codes"^^xsd:anyURI ;
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-sct-codes>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes"^^xsd:anyURI ;
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes>
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

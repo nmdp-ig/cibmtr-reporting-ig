@@ -1,0 +1,39 @@
+---
+---
+<!-- get modelType -->
+{% include fragment-modelType.html id='cibmtr-mobilizing-agent-medication' %}
+
+{% assign format = page.path | split: '.html'| first | split: '.' | last %}
+
+{% if format == 'xml' %}
+{% assign section = '7' %}
+{% elsif format == 'json' %}
+{% assign section = '8' %}
+{% else %}
+{% assign section = '9' %}
+{% endif %}
+
+{% include fragment-pagebegin.html %}
+<div style="counter-reset: section {{section}}" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-profile-navtabs.html type='StructureDefinition' id='cibmtr-mobilizing-agent-medication' active=format %}
+
+<a name="root"> </a>
+<h2 id="root">{{modelType}}: CIBMTR_MobilizingAgentMedication - {{format | upcase}} Profile</h2>
+{% include fragment-simpletable.html %}
+
+<p>{{format | upcase}} representation of the cibmtr-mobilizing-agent-medication {{modelType | downcase }}.</p>
+
+<p><a href="StructureDefinition-cibmtr-mobilizing-agent-medication.{{format}}" no-download="true">Raw {{format}}</a> | <a href="StructureDefinition-cibmtr-mobilizing-agent-medication.{{format}}" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  {% include fragment-intro.html type='StructureDefinition' id='cibmtr-mobilizing-agent-medication' %}
+
+  {%include StructureDefinition-cibmtr-mobilizing-agent-medication-{{format}}-html.xhtml%}
+
+  <!-- insert notes if present -->
+  {% include fragment-notes.html type='StructureDefinition' id='cibmtr-mobilizing-agent-medication' %}
+
+</div>
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}

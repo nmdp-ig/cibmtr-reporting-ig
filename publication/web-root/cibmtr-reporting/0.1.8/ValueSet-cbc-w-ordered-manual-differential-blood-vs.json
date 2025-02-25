@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cbc-w-ordered-manual-differential-blood-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet cbc-w-ordered-manual-differential-blood-vs</b></p><a name=\"cbc-w-ordered-manual-differential-blood-vs\"> </a><a name=\"hccbc-w-ordered-manual-differential-blood-vs\"> </a><a name=\"cbc-w-ordered-manual-differential-blood-vs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-cbc-blood-automated-vs.html\">CBC panel - Blood by Automated count (58410-2)</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-manual-differential-blood-vs.html\">Manual Differential panel - Blood (24318-8)</a></li></ul></div>"
+  },
+  "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-ordered-manual-differential-blood-vs",
+  "version" : "0.1.8",
+  "name" : "CBCWOrderedManualDifferentialBloodVS",
+  "title" : "CBC W Ordered Manual Differential panel - Blood (57782-5)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-02-18T16:12:42-06:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
+  "description" : "CBC W Ordered Manual Differential panel - Blood (57782-5)",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-blood-automated-vs"]
+    },
+    {
+      "valueSet" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/manual-differential-blood-vs"]
+    }]
+  }
+}

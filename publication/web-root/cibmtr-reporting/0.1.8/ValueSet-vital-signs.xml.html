@@ -1,0 +1,365 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>CIBMTR Vital Signs Value Set - XML Representation - CIBMTR Reporting Implementation Guide v0.1.8</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/cibmtr.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"16.25"}
+    h3,h4,h5,h6{--heading-prefix:"16.25"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="cibmtr-nav">
+  <a id="cibmtr-logo" no-external="true" href="http://www.cibmtr.org">
+    <!-- <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png" /> -->
+    <img height="80" alt="Visit the CIBMTR website"
+      src="assets/images/cibmtr-logo-header-3.png" />
+  </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.8 - Trial Use 1
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Connection-Guide-R4.html">Connection - R4</a>
+      </li>
+      <li>
+        <a href="Endpoints.html">Endpoints</a>
+      </li>
+      <li>
+        <a href="Access-Credentials.html">Access Credentials</a>
+      </li>
+      <li>
+        <a href="CRID-Assignment.html">CRID Assignment</a>
+      </li>
+      <li>
+        <a href="Laboratory-Observations.html">Lab Observations</a>
+      </li>
+      <li>
+        <a href="Medications.html">Medications</a>
+      </li>
+      <li>
+        <a href="Vital-Signs.html">Vital Signs</a>
+      </li>
+      <li>
+        <a href="Bundles.html">Bundles</a>
+      </li>
+      <li>
+        <a href="Form-2450.html">Form 2450: Post-TED</a>
+      </li>
+      <li>
+        <a href="Cytogenetics.html">Cytogenetics - ISCN</a>
+      </li>
+      <li>
+        <a href="Example-Code.html">Example Code Snippets</a>
+      </li>
+      <li>
+        <a href="Appendices.html">Appendices</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR (STU3)</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CIBMTR Vital Signs Value Set</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">This page is part of the CIBMTR Reporting Implementation Guide (v0.1.8: Release Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-vital-signs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-vital-signs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-vital-signs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: CIBMTR Vital Signs Value Set - XML Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2025-02-18
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-vital-signs.xml" no-download="true">Raw xml</a> | <a href="ValueSet-vital-signs.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">ValueSet</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;vital-signs&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet vital-signs&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;vital-signs&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcvital-signs&quot;&gt; &lt;/a&gt;&lt;a name=&quot;vital-signs-en-US&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;http://loinc.org&quot;&gt;&lt;code&gt;http://loinc.org&lt;/code&gt;&lt;/a&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://loinc.org/29463-7/&quot;&gt;29463-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Body weight Patient Mass Pt Qn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://loinc.org/8302-2/&quot;&gt;8302-2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Body height Patient Len Pt Qn&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/vital-signs&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.1.8&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;VitalSigns&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CIBMTR Vital Signs Value Set&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-02-18T16:12:42-06:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The Medical College of Wisconsin, Inc. and the National Marrow Donor Program&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>
+          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The Medical College of Wisconsin, Inc. and the National Marrow Donor Program&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;http://www.cibmtr.org&quot;/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Bob Milius&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;bmilius@nmdp.org&quot;/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;CIBMTR Vital Signs Value Set&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;29463-7&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Body weight Patient Mass Pt Qn&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;8302-2&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Body height Patient Len Pt Qn&quot;/&gt;
+      &lt;/concept&gt;
+    &lt;/include&gt;
+  &lt;/compose&gt;
+&lt;/ValueSet&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+if(window.location.hash != "") {
+    $('a[href="' + window.location.hash + '"]').click()
+}
+});
+</script>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.8 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 18, 2025 16:13-0600">2025-02-18</span>
+    <br/>
+    <span style="color: #FFFF77">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+<div id="cibmtr-footer">
+    <p>
+    <br/>HL7&#174;, and FHIR&#174; are the registered trademarks of Health Level Seven International 
+    and their use of these trademarks does not constitute an endorsement by HL7.
+    </p>
+</div>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script>anchors.options.visible = 'hover'
+anchors.add()</script>
+
+<!-- Analytics Below
+================================================== -->
+</body>
+</html>
+

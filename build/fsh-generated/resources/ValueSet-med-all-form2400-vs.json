@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "RxNormAll2400VS",
+  "id": "med-all-form2400-vs",
+  "title": "RxNorm - All of Form 2400",
+  "description": "RxNorm codes for all of Form 2400",
+  "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-all-form2400-vs",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-addition-peri-transplant-vs"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-post-hct-disease-therapy-planned-vs"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prep-regimen-vs"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prior-exposure-vs"
+        ]
+      }
+    ]
+  }
+}

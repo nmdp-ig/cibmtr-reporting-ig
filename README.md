@@ -1,4 +1,6 @@
 # CIBMTR Reporting Implementation Guide
+* Build exists with github actions to build and publish the main branch.  Can be viewed here:
+  * https://nmdp-ig.github.io/cibmtr-reporting-ig/
 
 ## Prerequisties
 * Min Java JRE 22, Min for Ubuntu LTS Java JRE 21  

@@ -3,13 +3,10 @@
     "style" : "fhir.layout",
     "url" : "http://fhir.nmdp.org/ig",
     "server" : "apache",
-    "org" : "NMDP",
-    "index-template":"index.template",
-    "clone-xml-json": "true"
-  },
-  "layout-rules" : [{
-    "npm" : "nmdp.fhir.*",
-    "canonical" : "http://fhir.nmdp.org/ig/{3}",
-    "destination" : "/{3}"
-  }]
+    "org" : "CIBMTR/NMDP",
+    "layout" : {
+      "id" : "nmdp.fhir.[code]",
+      "canonical": "http://fhir.nmdp.org/ig/[code]"
+    }
+  }
 }

@@ -55,8 +55,6 @@ Guidance on connecting to and sending data to the Direct FHIR API is found in th
   * Description of how to send lab values in FHIR Observations.
 * [Medications]
   * Description of how to send medication-related FHIR resources 
-* [Vital Signs]
-  * Description of how to send vital sign values in FHIR resources 
 * [Bundles]
   * How to send a FHIR bundle containing multiple FHIR Resources
 * [Example code]
@@ -78,14 +76,11 @@ Guidance on connecting to and sending data to the Direct FHIR API is found in th
     * [GVHD Prophylaxis Medication]
     * [Planned Post-HCT Disease Therapy Medication]
     * [Prior Exposure Medication]
-* [CIBMTR Vital Signs] - derived from US-Core
-    * [CIBMTR Vital Signs-Height] - derived from US-Core
-    * [CIBMTR Vital Signs-Weight] - derived from US-Core
- 
+
+
 #### ValueSets
-* LOINC
-  * [CIBMTR Priority Variables for FY22] - LOINC (used with Observation)
-  * [LOINC Codes used in Vital Signs]
+* LOINC (used with Observation)
+  * [CIBMTR Priority Variables for FY22]
 * RxNorm (used in medication-related resources)
   * [Mobilizing Agents (auto only)]
   * [Prep Regimen]

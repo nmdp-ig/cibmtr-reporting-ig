@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -11,14 +10,14 @@
   fhir:id [ fhir:v "cibmtr-obs-priority-variables"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition cibmtr-obs-priority-variables</b></p><a name=\"cibmtr-obs-priority-variables\"> </a><a name=\"hccibmtr-obs-priority-variables\"> </a><a name=\"cibmtr-obs-priority-variables-en-US\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cibmtr-obs-priority-variables-definitions.html#Observation\">Observation</a><a name=\"Observation\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-cibmtr-observation-lab.html\">CIBMTRObservationLab</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Measurements and simple assertions</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cibmtr-obs-priority-variables-definitions.html#Observation.code\">code</a><a name=\"Observation.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cibmtr-obs-priority-variables-definitions.html#Observation.code.coding\">coding</a><a name=\"Observation.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-cibmtr-priority-variables-2022.html\" title=\"http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-2022\">CIBMTR Priority Variables Value Set (FY22)</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cibmtr-obs-priority-variables-definitions.html#Observation\">Observation</a><a name=\"Observation\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-cibmtr-observation-lab.html\">CIBMTRObservationLab</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Measurements and simple assertions</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cibmtr-obs-priority-variables-definitions.html#Observation.code\">code</a><a name=\"Observation.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cibmtr-obs-priority-variables-definitions.html#Observation.code.coding\">coding</a><a name=\"Observation.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-cibmtr-priority-variables-2022.html\">CIBMTR Priority Variables Value Set (FY22)</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
   fhir:name [ fhir:v "CIBMTRObsPriorityVariables"] ; # 
   fhir:title [ fhir:v "CIBMTR Observation Laboratory Results: Priority Variables"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-02-18T16:25:42-06:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-05-05T10:50:04-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ] ;
@@ -69,18 +68,11 @@
   ] ; # 
   fhir:derivation [ fhir:v "constraint"] ; # 
   fhir:snapshot [
-     fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:string ;
-         fhir:v "0.1.8"
-       ]
-     ] ) ;
      fhir:element ( [
        fhir:id [ fhir:v "Observation" ] ;
        fhir:path [ fhir:v "Observation" ] ;
        fhir:short [ fhir:v "Measurements and simple assertions" ] ;
-       fhir:definition [ fhir:v "Measurements and simple assertions made about a patient, device or other subject." ] ;
+       fhir:definition [ fhir:v "This profile is  created to meet the 2015 Edition Common Clinical Data Set 'Laboratory test(s) and Laboratory value(s)/result(s)' requirements." ] ;
        fhir:comment [ fhir:v "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc." ] ;
        fhir:alias ( [ fhir:v "Vital Signs" ] [ fhir:v "Measurement" ] [ fhir:v "Results" ] [ fhir:v "Tests" ] ) ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -133,16 +125,10 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:boolean ;
-             fhir:v "true"^^xsd:boolean
-           ]
+           fhir:value [ fhir:v "true"^^xsd:boolean ]
          ] [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:markdown ;
-             fhir:v "When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a human readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time."
-           ]
+           fhir:value [ fhir:v "When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a human readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time." ]
          ] ) ;
          fhir:key [ fhir:v "dom-6" ] ;
          fhir:severity [ fhir:v "warning" ] ;
@@ -180,8 +166,8 @@
          fhir:expression [ fhir:v "(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())" ] ;
          fhir:xpath [ fhir:v "exists(f:component) or exists(f:hasMember) or exists(f:*[starts-with(local-name(.), 'value')]) or exists(f:dataAbsentReason)" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result>
+           fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
@@ -202,6 +188,9 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Observation[classCode=OBS, moodCode=EVN]" ]
+       ] [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Observation" ]
        ] )
      ] [
        fhir:id [ fhir:v "Observation.id" ] ;
@@ -219,10 +208,7 @@
        fhir:type ( [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:url ;
-             fhir:v "id"^^xsd:anyURI
-           ]
+           fhir:value [ fhir:v "id"^^xsd:anyURI ]
          ] ) ;
          fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
        ] ) ;
@@ -254,7 +240,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
      ] [
@@ -273,10 +258,7 @@
        fhir:type ( [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
-           ]
+           fhir:value [ fhir:v "string"^^xsd:anyURI ]
          ] ) ;
          fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
        ] ) ;
@@ -370,7 +352,7 @@
      ] [
        fhir:id [ fhir:v "Observation.meta.lastUpdated" ] ;
        fhir:path [ fhir:v "Observation.meta.lastUpdated" ] ;
-       fhir:short [ fhir:v "When the resource last changed" ] ;
+       fhir:short [ fhir:v "When the resource version last changed" ] ;
        fhir:definition [ fhir:v "When the resource last changed - e.g. when the version changed." ] ;
        fhir:comment [ fhir:v "This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant. This is equivalent to the HTTP Last-Modified and SHOULD have the same value on a [read](http://hl7.org/fhir/R4/http.html#read) interaction." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -394,7 +376,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
      ] [
@@ -499,10 +480,10 @@
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:string ;
-             fhir:v "SecurityLabels"
-           ]
+           fhir:value [ fhir:v "SecurityLabels" ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "true"^^xsd:boolean ]
          ] ) ;
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "Security Labels from the Healthcare Privacy and Security Classification System." ] ;
@@ -545,10 +526,10 @@
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:string ;
-             fhir:v "SecurityLabels"
-           ]
+           fhir:value [ fhir:v "SecurityLabels" ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "true"^^xsd:boolean ]
          ] ) ;
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "Security Labels from the Healthcare Privacy and Security Classification System." ] ;
@@ -573,10 +554,7 @@
        fhir:type ( [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
-           ]
+           fhir:value [ fhir:v "string"^^xsd:anyURI ]
          ] ) ;
          fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
        ] ) ;
@@ -655,10 +633,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "uri"^^xsd:anyURI ]
        ] ) ;
-       fhir:pattern [
-         a fhir:uri ;
-         fhir:v "http://terminology.cibmtr.org/codesystem/transplant-center"^^xsd:anyURI
-       ] ;
+       fhir:pattern [ fhir:v "http://terminology.cibmtr.org/codesystem/transplant-center"^^xsd:anyURI ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -773,10 +748,7 @@
        fhir:id [ fhir:v "Observation.meta.security:TransplantCenter.display" ] ;
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
-         ]
+         fhir:value [ fhir:v "true"^^xsd:boolean ]
        ] ) ;
        fhir:path [ fhir:v "Observation.meta.security.display" ] ;
        fhir:short [ fhir:v "Representation defined by the system" ] ;
@@ -887,10 +859,7 @@
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:string ;
-             fhir:v "Tags"
-           ]
+           fhir:value [ fhir:v "Tags" ]
          ] ) ;
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "Codes that represent various types of tags, commonly workflow-related; e.g. \"Needs review by Dr. Jones\"." ] ;
@@ -962,16 +931,15 @@
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet"^^xsd:anyURI ] ;
            fhir:value [
-             a fhir:canonical ;
              fhir:v "http://hl7.org/fhir/ValueSet/all-languages"^^xsd:anyURI ;
              fhir:link <http://hl7.org/fhir/ValueSet/all-languages>
            ]
          ] [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:string ;
-             fhir:v "Language"
-           ]
+           fhir:value [ fhir:v "Language" ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "true"^^xsd:boolean ]
          ] ) ;
          fhir:strength [ fhir:v "preferred" ] ;
          fhir:description [ fhir:v "A human language." ] ;
@@ -1291,10 +1259,7 @@
        fhir:id [ fhir:v "Observation.status" ] ;
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "default: final"
-         ]
+         fhir:value [ fhir:v "default: final" ]
        ] ) ;
        fhir:path [ fhir:v "Observation.status" ] ;
        fhir:short [ fhir:v "registered | preliminary | final | amended +" ] ;
@@ -1327,18 +1292,10 @@
        fhir:isModifierReason [ fhir:v "This element is labeled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid" ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:binding [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:string ;
-             fhir:v "ObservationStatus"
-           ]
-         ] ) ;
          fhir:strength [ fhir:v "required" ] ;
-         fhir:description [ fhir:v "Codes providing the status of an observation." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/observation-status|4.0.1"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/observation-status|4.0.1>
+           fhir:v "http://hl7.org/fhir/ValueSet/observation-status"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/observation-status>
          ]
        ] ;
        fhir:mapping ( [
@@ -1356,6 +1313,9 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "status  Amended & Final are differentiated by whether it is the subject of a ControlAct event with a type of \"revise\"" ]
+       ] [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Observation.status" ]
        ] )
      ] [
        fhir:id [ fhir:v "Observation.category" ] ;
@@ -1398,10 +1358,7 @@
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:string ;
-             fhir:v "ObservationCategory"
-           ]
+           fhir:value [ fhir:v "ObservationCategory" ]
          ] ) ;
          fhir:strength [ fhir:v "preferred" ] ;
          fhir:description [ fhir:v "Codes for high level observation categories." ] ;
@@ -1416,12 +1373,15 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".outboundRelationship[typeCode=\"COMP].target[classCode=\"LIST\", moodCode=\"EVN\"].code" ]
+       ] [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Observation.category" ]
        ] )
      ] [
-       fhir:id [ fhir:v "Observation.category:us-core" ] ;
+       fhir:id [ fhir:v "Observation.category:Laboratory" ] ;
        fhir:path [ fhir:v "Observation.category" ] ;
-       fhir:sliceName [ fhir:v "us-core" ] ;
-       fhir:short [ fhir:v "Classification of type of observation" ] ;
+       fhir:sliceName [ fhir:v "Laboratory" ] ;
+       fhir:short [ fhir:v "Classification of  type of observation" ] ;
        fhir:definition [ fhir:v "A code that classifies the general type of observation being made." ] ;
        fhir:comment [ fhir:v "In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set." ] ;
        fhir:requirements [ fhir:v "Used for filtering what observations are retrieved and displayed." ] ;
@@ -1457,11 +1417,15 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:description [ fhir:v "Note that other codes are permitted, see [Required Bindings When Slicing by Value Sets](http://hl7.org/fhir/us/core/STU7/general-requirements.html#required-bindings-when-slicing-by-valuesets)" ] ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "ObservationCategory" ]
+         ] ) ;
+         fhir:strength [ fhir:v "preferred" ] ;
+         fhir:description [ fhir:v "Codes for high level observation categories." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-result-observation-category"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-result-observation-category>
+           fhir:v "http://hl7.org/fhir/ValueSet/observation-category"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/observation-category>
          ]
        ] ;
        fhir:mapping ( [
@@ -1478,10 +1442,10 @@
        fhir:id [ fhir:v "Observation.code" ] ;
        fhir:path [ fhir:v "Observation.code" ] ;
        fhir:short [ fhir:v "Laboratory Test Name" ] ;
-       fhir:definition [ fhir:v "The name of the clinical test or procedure performed on a patient.  A LOINC **SHALL** be used if the concept is present in LOINC." ] ;
-       fhir:comment [ fhir:v "The typical patterns for codes are:  1)  a LOINC code either as a translation from a \"local\" code or as a primary code, or 2)  a local code only if no suitable LOINC exists,  or 3)  both the local and the LOINC translation.   Systems SHALL be capable of sending the local code if one exists.  When using LOINC , Use either the SHORTNAME or LONG_COMMON_NAME field for the display." ] ;
+       fhir:definition [ fhir:v "The test that was performed.  A LOINC **SHALL** be used if the concept is present in LOINC." ] ;
+       fhir:comment [ fhir:v "The typical patterns for codes are:  1)  a LOINC code either as a  translation from a \"local\" code or as a primary code, or 2)  a local code only if no suitable LOINC exists,  or 3)  both the local and the LOINC translation.   Systems SHALL be capable of sending the local code if one exists.  When using LOINC , Use either the SHORTNAME or LONG_COMMON_NAME field for the display." ] ;
        fhir:requirements [ fhir:v "Knowing what kind of observation is being made is essential to understanding the observation." ] ;
-       fhir:alias ( [ fhir:v "Name" ] ) ;
+       fhir:alias ( [ fhir:v "Name" ] [ fhir:v "Test Name" ] [ fhir:v "Observation Identifer" ] ) ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -1508,10 +1472,10 @@
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:binding [
          fhir:strength [ fhir:v "extensible" ] ;
-         fhir:description [ fhir:v "Laboratory LOINC Codes" ] ;
+         fhir:description [ fhir:v "LOINC codes" ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/us/core/ValueSet/us-core-laboratory-test-codes"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/ValueSet/us-core-laboratory-test-codes>
+           fhir:v "http://hl7.org/fhir/ValueSet/observation-codes"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/observation-codes>
          ]
        ] ;
        fhir:mapping ( [
@@ -1552,10 +1516,7 @@
        fhir:type ( [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
-           ]
+           fhir:value [ fhir:v "string"^^xsd:anyURI ]
          ] ) ;
          fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
        ] ) ;
@@ -1668,10 +1629,7 @@
        fhir:id [ fhir:v "Observation.code.text" ] ;
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
-         ]
+         fhir:value [ fhir:v "true"^^xsd:boolean ]
        ] ) ;
        fhir:path [ fhir:v "Observation.code.text" ] ;
        fhir:short [ fhir:v "Plain text representation of the concept" ] ;
@@ -1729,44 +1687,7 @@
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient> ;
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-             fhir:value [
-               a fhir:boolean ;
-               fhir:v "true"^^xsd:boolean
-             ]
-           ] )
-         ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Group"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Group> ;
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-             fhir:value [
-               a fhir:boolean ;
-               fhir:v "false"^^xsd:boolean
-             ]
-           ] )
-         ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Device"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Device> ;
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-             fhir:value [
-               a fhir:boolean ;
-               fhir:v "false"^^xsd:boolean
-             ]
-           ] )
-         ] [
-           fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-location> ;
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-             fhir:value [
-               a fhir:boolean ;
-               fhir:v "false"^^xsd:boolean
-             ]
-           ] )
+           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1798,9 +1719,16 @@
        ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.subject" ]
+       ] [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Observation.subject" ]
        ] )
      ] [
        fhir:id [ fhir:v "Observation.focus" ] ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "trial-use" ]
+       ] ) ;
        fhir:path [ fhir:v "Observation.focus" ] ;
        fhir:short [ fhir:v "What the observation is about, when it is not about the subject of record" ] ;
        fhir:definition [ fhir:v "The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus observations in a mother's record.  The focus of an observation could also be an existing condition,  an intervention, the subject's diet,  another observation of the subject,  or a body structure such as tumor or implanted device.   An example use case would be using the Observation resource to capture whether the mother is trained to change her child's tracheostomy tube. In this example, the child is the patient of record and the mother is the focus." ] ;
@@ -1848,7 +1776,7 @@
      ] [
        fhir:id [ fhir:v "Observation.encounter" ] ;
        fhir:path [ fhir:v "Observation.encounter" ] ;
-       fhir:short [ fhir:v "Encounter associated with Observation" ] ;
+       fhir:short [ fhir:v "Healthcare event during which this observation is made" ] ;
        fhir:definition [ fhir:v "The healthcare event  (e.g. a patient and healthcare provider interaction) during which this observation is made." ] ;
        fhir:comment [ fhir:v "This will typically be the encounter the event occurred within, but some events may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter (e.g. pre-admission laboratory tests)." ] ;
        fhir:requirements [ fhir:v "For some observations it may be important to know the link between an observation and a particular encounter." ] ;
@@ -1863,8 +1791,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Encounter"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Encounter>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1878,7 +1806,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
@@ -1898,7 +1825,7 @@
        fhir:id [ fhir:v "Observation.effective[x]" ] ;
        fhir:path [ fhir:v "Observation.effective[x]" ] ;
        fhir:short [ fhir:v "Clinically relevant time/time-period for observation" ] ;
-       fhir:definition [ fhir:v "The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the \"physiologically relevant time\". This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself." ] ;
+       fhir:definition [ fhir:v "For lab tests this is the specimen collection date.  For Ask at Order Entry Questions (AOE)'s this is the date the question was asked." ] ;
        fhir:comment [ fhir:v "At least a date should be present unless this observation is a historical report.  For recording imprecise or \"fuzzy\" times (For example, a blood glucose measurement taken \"after breakfast\") use the [Timing](http://hl7.org/fhir/R4/datatypes.html#timing) datatype which allow the measurement to be tied to regular life events." ] ;
        fhir:requirements [ fhir:v "Knowing when an observation was deemed true is important to its relevance as well as determining trends." ] ;
        fhir:alias ( [ fhir:v "Occurrence" ] ) ;
@@ -1912,10 +1839,7 @@
        fhir:type ( [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:boolean ;
-             fhir:v "true"^^xsd:boolean
-           ]
+           fhir:value [ fhir:v "true"^^xsd:boolean ]
          ] ) ;
          fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
        ] [
@@ -1940,11 +1864,11 @@
          fhir:key [ fhir:v "us-core-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Datetime must be at least to day." ] ;
-         fhir:expression [ fhir:v "$this is dateTime implies $this.toString().length() >= 10" ] ;
-         fhir:xpath [ fhir:v "f:matches(effectiveDateTime,/\\d{4}\\d{2}\\d{2}(T\\d{2}:\\d{2}:\\d{2}(\\.\\d{3})?(Z|[-+]\\d{2}:\\d{2})?)?$/)" ] ;
+         fhir:expression [ fhir:v "Observation.effectiveDateTime.exists() implies Observation.effectiveDateTime.toString().length() >= 8" ] ;
+         fhir:xpath [ fhir:v "f:matches(effectiveDateTime,/\\d{4}-[01]\\d-[0-3]\\dT[0-2]\\d:[0-5]\\d([+-][0-2]\\d:[0-5]\\d|Z)/)" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result>
+           fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
@@ -1962,6 +1886,9 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "effectiveTime" ]
+       ] [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Observation.effective[x]" ]
        ] )
      ] [
        fhir:id [ fhir:v "Observation.issued" ] ;
@@ -2080,31 +2007,13 @@
        fhir:type ( [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:boolean ;
-             fhir:v "true"^^xsd:boolean
-           ]
-         ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:boolean ;
-             fhir:v "true"^^xsd:boolean
-           ]
+           fhir:value [ fhir:v "true"^^xsd:boolean ]
          ] ) ;
          fhir:code [ fhir:v "Quantity"^^xsd:anyURI ]
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:boolean ;
-             fhir:v "true"^^xsd:boolean
-           ]
-         ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:boolean ;
-             fhir:v "true"^^xsd:boolean
-           ]
+           fhir:value [ fhir:v "true"^^xsd:boolean ]
          ] ) ;
          fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
        ] ) ;
@@ -2120,28 +2029,25 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
-         fhir:key [ fhir:v "us-core-3" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "SHALL use UCUM for coded quantity units." ] ;
-         fhir:expression [ fhir:v "ofType(Quantity).system.empty() or ofType(Quantity).system = 'http://unitsofmeasure.org'" ] ;
-         fhir:xpath [ fhir:v "not(exists(f:valueQuantity/f:system) ) or f:valueQuantity/f:system[@value='http://unitsofmeasure.org']" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result>
-         ]
-       ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:boolean ;
-             fhir:v "true"^^xsd:boolean
-           ]
+           fhir:value [ fhir:v "true"^^xsd:boolean ]
          ] ) ;
          fhir:key [ fhir:v "us-core-4" ] ;
          fhir:severity [ fhir:v "warning" ] ;
          fhir:human [ fhir:v "SHOULD use Snomed CT for coded Results" ] ;
-         fhir:expression [ fhir:v "ofType(CodeableConcept).coding.system.empty() or (ofType(CodeableConcept).coding.system contains 'http://snomed.info/sct')" ] ;
-         fhir:xpath [ fhir:v "not(exists(f:valueCodeableConcept/f:coding/f:system) ) or f:valueCodeableConcept/f:coding/f:system[@value='http://snomed.info/sct']" ] ;
+         fhir:expression [ fhir:v "valueCodeableConcept.coding.system.empty() or valueCodeableConcept.coding.system = 'http://snomed.info/sct'" ] ;
+         fhir:xpath [ fhir:v "not(exists(f:valueCodeableConcept/f:coding/f:system) ) or  f:valueCodeableConcept/f:coding/f:system[@value='http://snomed.info/sct']" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab>
+         ]
+       ] [
+         fhir:key [ fhir:v "us-core-3" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "SHALL use UCUM for coded quantity units." ] ;
+         fhir:expression [ fhir:v "valueQuantity.system.empty() or valueQuantity.system = 'http://unitsofmeasure.org'" ] ;
+         fhir:xpath [ fhir:v "not(exists(f:valueQuantity/f:system) ) or  f:valueQuantity/f:system[@value='http://unitsofmeasure.org']" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab>
@@ -2199,15 +2105,7 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:binding [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:string ;
-             fhir:v "ObservationValueAbsentReason"
-           ]
-         ] ) ;
          fhir:strength [ fhir:v "extensible" ] ;
-         fhir:description [ fhir:v "Codes specifying why the result (`Observation.value[x]`) is missing." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/data-absent-reason"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/ValueSet/data-absent-reason>
@@ -2219,13 +2117,16 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "value.nullFlavor" ]
+       ] [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Observation.dataAbsentReason" ]
        ] )
      ] [
        fhir:id [ fhir:v "Observation.interpretation" ] ;
        fhir:path [ fhir:v "Observation.interpretation" ] ;
-       fhir:short [ fhir:v "Result interpretation" ] ;
+       fhir:short [ fhir:v "High, low, normal, etc." ] ;
        fhir:definition [ fhir:v "A categorical assessment of an observation value.  For example, high, low, normal." ] ;
-       fhir:comment [ fhir:v "Categorical assessment of a laboratory value, often in relation to a test's reference range. Examples include but are not limited to high, low, critical, and normal." ] ;
+       fhir:comment [ fhir:v "Historically used for laboratory results (known as 'abnormal flag' ),  its use extends to other use cases where coded interpretations  are relevant.  Often reported as one or more simple compact codes this element is often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result." ] ;
        fhir:requirements [ fhir:v "For some results, particularly numeric results, an interpretation is necessary to fully understand the significance of a result." ] ;
        fhir:alias ( [ fhir:v "Abnormal Flag" ] ) ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -2249,12 +2150,15 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:binding [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "ObservationInterpretation" ]
+         ] ) ;
          fhir:strength [ fhir:v "extensible" ] ;
-         fhir:description [ fhir:v "Observation Interpretation Codes" ] ;
+         fhir:description [ fhir:v "Codes identifying interpretations of observations." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/observation-interpretation"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/ValueSet/observation-interpretation>
@@ -2342,10 +2246,7 @@
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:string ;
-             fhir:v "BodySite"
-           ]
+           fhir:value [ fhir:v "BodySite" ]
          ] ) ;
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "Codes describing anatomical locations. May include laterality." ] ;
@@ -2400,10 +2301,7 @@
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:string ;
-             fhir:v "ObservationMethod"
-           ]
+           fhir:value [ fhir:v "ObservationMethod" ]
          ] ) ;
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "Methods for simple observations." ] ;
@@ -2435,8 +2333,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Specimen"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Specimen>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2450,7 +2348,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
@@ -2518,9 +2415,9 @@
      ] [
        fhir:id [ fhir:v "Observation.referenceRange" ] ;
        fhir:path [ fhir:v "Observation.referenceRange" ] ;
-       fhir:short [ fhir:v "Result reference range" ] ;
+       fhir:short [ fhir:v "Provides guide for interpretation" ] ;
        fhir:definition [ fhir:v "Guidance on how to interpret the value by comparison to a normal or recommended range.  Multiple reference ranges are interpreted as an \"OR\".   In other words, to represent two distinct target populations, two `referenceRange` elements would be used." ] ;
-       fhir:comment [ fhir:v "Upper and lower limit of test values expected for a designated population of individuals. Reference range values may differ by patient characteristics, laboratory test manufacturer and laboratory test performer." ] ;
+       fhir:comment [ fhir:v "Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this might not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties." ] ;
        fhir:requirements [ fhir:v "Knowing what values are considered \"normal\" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
@@ -2532,7 +2429,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "BackboneElement"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "us-core-22" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -2550,20 +2446,10 @@
          fhir:expression [ fhir:v "low.exists() or high.exists() or text.exists()" ] ;
          fhir:xpath [ fhir:v "(exists(f:low) or exists(f:high)or exists(f:text))" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
-         ]
-       ] [
-         fhir:key [ fhir:v "us-core-22" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "SHALL use UCUM for coded quantity units." ] ;
-         fhir:expression [ fhir:v "(low.system.empty() or low.system = 'http://unitsofmeasure.org') and (high.system.empty() or high.system = 'http://unitsofmeasure.org')" ] ;
-         fhir:source [
            fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
@@ -2589,10 +2475,7 @@
        fhir:type ( [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
-           ]
+           fhir:value [ fhir:v "string"^^xsd:anyURI ]
          ] ) ;
          fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
        ] ) ;
@@ -2805,10 +2688,7 @@
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:string ;
-             fhir:v "ObservationRangeMeaning"
-           ]
+           fhir:value [ fhir:v "ObservationRangeMeaning" ]
          ] ) ;
          fhir:strength [ fhir:v "preferred" ] ;
          fhir:description [ fhir:v "Code for the meaning of a reference range." ] ;
@@ -2860,10 +2740,7 @@
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:string ;
-             fhir:v "ObservationRangeType"
-           ]
+           fhir:value [ fhir:v "ObservationRangeType" ]
          ] ) ;
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "Codes identifying the population the reference range applies to." ] ;
@@ -3104,10 +2981,7 @@
        fhir:type ( [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
-           ]
+           fhir:value [ fhir:v "string"^^xsd:anyURI ]
          ] ) ;
          fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
        ] ) ;
@@ -3240,10 +3114,7 @@
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:string ;
-             fhir:v "ObservationCode"
-           ]
+           fhir:value [ fhir:v "ObservationCode" ]
          ] ) ;
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "Codes identifying names of simple observations." ] ;
@@ -3362,10 +3233,7 @@
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:string ;
-             fhir:v "ObservationValueAbsentReason"
-           ]
+           fhir:value [ fhir:v "ObservationValueAbsentReason" ]
          ] ) ;
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "Codes specifying why the result (`Observation.value[x]`) is missing." ] ;
@@ -3415,10 +3283,7 @@
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:string ;
-             fhir:v "ObservationInterpretation"
-           ]
+           fhir:value [ fhir:v "ObservationInterpretation" ]
          ] ) ;
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "Codes identifying interpretations of observations." ] ;

@@ -42,7 +42,6 @@
 [CRID Assignment]: CRID-Assignment.html
 [Laboratory Observations]: Laboratory-Observations.html
 [Medications]: Medications.html
-[Vital Signs]: Vital-Signs.html
 [Bundles]: Bundles.html
 [Example code]: Example-Code.html
 [CIBMTR Patient]: StructureDefinition-cibmtr-patient.html
@@ -50,9 +49,6 @@
 [Laboratory Observation for Priority Variables]: StructureDefinition-cibmtr-obs-priority-variables.html 
 [MedicationRequest]: StructureDefinition-cibmtr-medication-request.html
 [Medication]: StructureDefinition-cibmtr-medication.html
-[CIBMTR Vital Signs]: StructureDefinition-cibmtr-vital-signs.html
-[CIBMTR Vital Signs-Height]: StructureDefinition-cibmtr-vital-signs-height.html
-[CIBMTR Vital Signs-Weight]: StructureDefinition-cibmtr-vital-signs-weight.html
 [Mobilizing Agent Medication]: StructureDefinition-cibmtr-mobilizing-agent-medication.html
 [Preprative Regimen Medications]: StructureDefinition-cibmtr-prep-regimen-medication.html
 [Additional Drugs in Peri-Transplant Period]: StructureDefinition-cibmtr-additional-peri-transplant-medication.html
@@ -60,7 +56,6 @@
 [Planned Post-HCT Disease Therapy Medication]: StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html
 [Prior Exposure Medication]: StructureDefinition-cibmtr-prior-exposure-medication.html
 [CIBMTR Priority Variables for FY22]: ValueSet-cibmtr-priority-variables-2022.html
-[LOINC Codes used in Vital Signs]: ValueSet-vital-signs.html
 [Mobilizing Agents (auto only)]: ValueSet-med-mobilizing-agents-vs.html
 [Prep Regimen]: ValueSet-med-prep-regimen-vs.html
 [Additional Drugs in Peri-Transplant Period]: ValueSet-med-addition-peri-transplant-vs.html
@@ -69,8 +64,6 @@
 [Prior Exposure: Potential Study Eligibility]: ValueSet-med-prior-exposure-vs.html
 [All Form 2400 Medications]: ValueSet-med-all-form2400-vs.html
 [US-Core Laboratory Observation]: https://hl7.org/fhir/us/core/StructureDefinition-us-core-observation-lab.html
-[US-Core Laboratory Vital Signs]: https://hl7.org/fhir/us/core/StructureDefinition-us-core-vital-signs.html
-[FHIR core specification vital signs table]: https://hl7.org/fhir/R4/observation-vitalsigns.html#vitals-table.html
 
 [Medication-Cyclophosphamide-Example]: Medication-Medication-Cyclophosphamide-Example.html
 [Medication-Etoposide-Example]: Medication-Medication-Etoposide-Example.html
@@ -83,7 +76,6 @@
 [MedicationAdministration-Example1]: MedicationAdministration-MedicationAdministration-Example1.html
 [MedicationAdministration-Example2]: MedicationAdministration-MedicationAdministration-Example2.html
 [MedicationRequest-Etoposide-Example]: MedicationRequest-MedicationRequest-Etoposide-Example.html
-[Vital Signs Example-Height Measurement Prep Regimen]: Observation-HeightMeasurementPrepRegimen.html
 
 [Form 2450 manual]: https://www.cibmtr.org/manuals/fim/1/en/topic/2450
 [Survival]: https://www.cibmtr.org/manuals/fim/1/en/topic/q1-7-100-day-report-only

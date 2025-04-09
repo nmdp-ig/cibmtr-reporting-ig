@@ -1,0 +1,68 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "med-treosulfan-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet med-treosulfan-vs</b></p><a name=\"med-treosulfan-vs\"> </a><a name=\"hcmed-treosulfan-vs\"> </a><a name=\"med-treosulfan-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>38508</td><td>treosulfan</td></tr><tr><td>336841</td><td>treosulfan 250 MG</td></tr><tr><td>393483</td><td>treosulfan 50 MG/ML</td></tr><tr><td>1162765</td><td>treosulfan Injectable Product</td></tr><tr><td>377198</td><td>treosulfan Injectable Solution</td></tr><tr><td>374186</td><td>treosulfan Oral Capsule</td></tr><tr><td>1162766</td><td>treosulfan Oral Product</td></tr><tr><td>1162767</td><td>treosulfan Pill</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-treosulfan-vs",
+  "version" : "0.1.8",
+  "name" : "RxNormTreosulfanVS",
+  "title" : "RxNorm - Treosulfan",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-02-18T16:12:42-06:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
+  "description" : "RxNorm codes for Treosulfan",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "38508",
+        "display" : "treosulfan"
+      },
+      {
+        "code" : "336841",
+        "display" : "treosulfan 250 MG"
+      },
+      {
+        "code" : "393483",
+        "display" : "treosulfan 50 MG/ML"
+      },
+      {
+        "code" : "1162765",
+        "display" : "treosulfan Injectable Product"
+      },
+      {
+        "code" : "377198",
+        "display" : "treosulfan Injectable Solution"
+      },
+      {
+        "code" : "374186",
+        "display" : "treosulfan Oral Capsule"
+      },
+      {
+        "code" : "1162766",
+        "display" : "treosulfan Oral Product"
+      },
+      {
+        "code" : "1162767",
+        "display" : "treosulfan Pill"
+      }]
+    }]
+  }
+}

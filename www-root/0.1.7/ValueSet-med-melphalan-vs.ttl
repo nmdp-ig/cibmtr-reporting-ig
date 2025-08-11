@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-melphalan-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "med-melphalan-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet med-melphalan-vs</b></p><a name=\"med-melphalan-vs\"> </a><a name=\"hcmed-melphalan-vs\"> </a><a name=\"med-melphalan-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>6718</td><td>melphalan</td></tr><tr><td>151325</td><td>Alkeran</td></tr><tr><td>1745086</td><td>Evomela</td></tr><tr><td>317646</td><td>melphalan 2 MG</td></tr><tr><td>332190</td><td>melphalan 5 MG</td></tr><tr><td>1740948</td><td>melphalan 50 MG</td></tr><tr><td>446276</td><td>melphalan Extended Release Oral Tablet</td></tr><tr><td>1159787</td><td>melphalan Injectable Product</td></tr><tr><td>1740949</td><td>melphalan Injection</td></tr><tr><td>1159788</td><td>melphalan Oral Product</td></tr><tr><td>372756</td><td>melphalan Oral Tablet</td></tr><tr><td>1159789</td><td>melphalan Pill</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-melphalan-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.7"] ; # 
+  fhir:name [ fhir:v "RxNormMelphalanVS"] ; # 
+  fhir:title [ fhir:v "RxNorm - Melphalan"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-22T12:15:56-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.cibmtr.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Milius" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bmilius@nmdp.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "RxNorm codes for Melphalan"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "6718" ] ;
+         fhir:display [ fhir:v "melphalan" ]
+       ] [
+         fhir:code [ fhir:v "151325" ] ;
+         fhir:display [ fhir:v "Alkeran" ]
+       ] [
+         fhir:code [ fhir:v "1745086" ] ;
+         fhir:display [ fhir:v "Evomela" ]
+       ] [
+         fhir:code [ fhir:v "317646" ] ;
+         fhir:display [ fhir:v "melphalan 2 MG" ]
+       ] [
+         fhir:code [ fhir:v "332190" ] ;
+         fhir:display [ fhir:v "melphalan 5 MG" ]
+       ] [
+         fhir:code [ fhir:v "1740948" ] ;
+         fhir:display [ fhir:v "melphalan 50 MG" ]
+       ] [
+         fhir:code [ fhir:v "446276" ] ;
+         fhir:display [ fhir:v "melphalan Extended Release Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "1159787" ] ;
+         fhir:display [ fhir:v "melphalan Injectable Product" ]
+       ] [
+         fhir:code [ fhir:v "1740949" ] ;
+         fhir:display [ fhir:v "melphalan Injection" ]
+       ] [
+         fhir:code [ fhir:v "1159788" ] ;
+         fhir:display [ fhir:v "melphalan Oral Product" ]
+       ] [
+         fhir:code [ fhir:v "372756" ] ;
+         fhir:display [ fhir:v "melphalan Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "1159789" ] ;
+         fhir:display [ fhir:v "melphalan Pill" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

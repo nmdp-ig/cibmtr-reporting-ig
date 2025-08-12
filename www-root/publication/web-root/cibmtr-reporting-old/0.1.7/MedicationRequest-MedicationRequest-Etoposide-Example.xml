@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="MedicationRequest-Etoposide-Example"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-request"/>
+    <security>
+      <system value="http://terminology.cibmtr.org/codesystem/transplant-center"/>
+      <code value="rc_99999"/>
+      <display value="99999 My Transplant Center"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationRequest MedicationRequest-Etoposide-Example</b></p><a name="MedicationRequest-Etoposide-Example"> </a><a name="hcMedicationRequest-Etoposide-Example"> </a><a name="MedicationRequest-Etoposide-Example-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>medication</b>: <a href="Medication-Medication-Etoposide-Example.html">etoposide (VEPESID) chemo IVPB</a></p><p><b>subject</b>: <a href="Patient-PatientExample6.html"> Female, DoB Unknown ( http://terminology.cibmtr.org/identifier/CRID#123456)</a></p><p><b>authoredOn</b>: 2020-07-21 14:17:00+0000</p><p><b>requester</b>: unknown</p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 363346000}, {http://hl7.org/fhir/sid/icd-10-cm C80.1}">Cancer (CMS/HCC)</span></p><blockquote><p><b>dosageInstruction</b></p></blockquote></div>
+  </text>
+  <status value="active"/>
+  <intent value="order"/>
+  <medicationReference>
+    <reference value="Medication/Medication-Etoposide-Example"/>
+    <display value="etoposide (VEPESID) chemo IVPB"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/PatientExample6"/>
+  </subject>
+  <authoredOn value="2020-07-21T14:17:00Z"/>
+  <requester>
+    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+      <valueCode value="unknown"/>
+    </extension>
+    <display value="unknown"/>
+  </requester>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="363346000"/>
+      <display value="Malignant neoplastic disease (disorder)"/>
+    </coding>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <code value="C80.1"/>
+      <display value="Malignant (primary) neoplasm, unspecified"/>
+    </coding>
+    <text value="Cancer (CMS/HCC)"/>
+  </reasonCode>
+  <dosageInstruction>
+    <text value="68 mg (100 mg/m2 x 0.68 m2 Treatment plan actual BSA), Intravenous, for 60 Minutes, Every 24 hours, First dose on Tue 11/19/13 at 0000, For 5 doses&#xA;Give after CISplatin and  mannitol."/>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2020-07-22T16:58:05Z"/>
+          <end value="2020-07-22T16:58:05Z"/>
+        </boundsPeriod>
+        <count value="5"/>
+        <duration value="60"/>
+        <durationUnit value="min"/>
+        <frequency value="1"/>
+        <period value="24"/>
+        <periodUnit value="h"/>
+      </repeat>
+      <code>
+        <text value="Every 24 hours"/>
+      </code>
+    </timing>
+    <asNeededBoolean value="false"/>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="418114005"/>
+        <display value="Intravenous central route (qualifier value)"/>
+      </coding>
+    </route>
+    <doseAndRate>
+      <type>
+        <text value="admin-amount"/>
+      </type>
+      <doseQuantity>
+        <value value="68"/>
+        <unit value="milligram"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </doseQuantity>
+    </doseAndRate>
+    <doseAndRate>
+      <type>
+        <text value="ordered"/>
+      </type>
+      <doseQuantity>
+        <value value="100"/>
+        <unit value="milligram per square meter"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/m2"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+</MedicationRequest>

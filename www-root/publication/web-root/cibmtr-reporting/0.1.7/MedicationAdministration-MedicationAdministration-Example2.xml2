@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationAdministration xmlns="http://hl7.org/fhir">
+  <id value="MedicationAdministration-Example2"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration"/>
+    <security>
+      <system value="http://terminology.cibmtr.org/codesystem/transplant-center"/>
+      <code value="rc_99999"/>
+      <display value="99999 My Transplant Center"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationAdministration MedicationAdministration-Example2</b></p><a name="MedicationAdministration-Example2"> </a><a name="hcMedicationAdministration-Example2"> </a><a name="MedicationAdministration-Example2-en-US"> </a><p><b>status</b>: Completed</p><p><b>medication</b>: <span title="Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 4179}, {http://www.nlm.nih.gov/research/umls/rxnorm 310248}, {http://www.nlm.nih.gov/research/umls/rxnorm 362972}, {http://www.nlm.nih.gov/research/umls/rxnorm 206832}">ETOPOSIDE 20 MG/ML IV SOLN</span></p><p><b>subject</b>: <a href="Patient-PatientExample6.html"> Female, DoB Unknown ( http://terminology.cibmtr.org/identifier/CRID#123456)</a></p><p><b>effective</b>: 2020-07-22 16:58:05+0000</p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 363346000}, {http://hl7.org/fhir/sid/icd-10-cm C80.1}">Cancer (CMS/HCC)</span></p><p><b>request</b>: <a href="MedicationRequest-MedicationRequest-Etoposide-Example.html">MedicationRequest: status = active; intent = order; medication[x] = -&gt;etoposide (VEPESID) chemo IVPB; authoredOn = 2020-07-21 14:17:00+0000; reasonCode = Malignant neoplastic disease (disorder)</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Route</b></td><td><b>Method</b></td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 47625008}">Intravenous route</span></td><td><span title="Codes:{http://snomed.info/sct 422145002}">Inject - dosing instruction imperative (qualifier value)</span></td><td>73 milligram<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></div>
+  </text>
+  <status value="completed"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="4179"/>
+      <display value="etoposide"/>
+    </coding>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="310248"/>
+      <display value="etoposide 20 MG/ML Injectable Solution"/>
+    </coding>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="362972"/>
+      <display value="etoposide Injectable Solution [Vepesid]"/>
+    </coding>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="206832"/>
+      <display value="etoposide 20 MG/ML Injectable Solution [Vepesid]"/>
+    </coding>
+    <text value="ETOPOSIDE 20 MG/ML IV SOLN"/>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/PatientExample6"/>
+  </subject>
+  <effectiveDateTime value="2020-07-22T16:58:05Z"/>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="363346000"/>
+      <display value="Malignant neoplastic disease (disorder)"/>
+    </coding>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <code value="C80.1"/>
+      <display value="Malignant (primary) neoplasm, unspecified"/>
+    </coding>
+    <text value="Cancer (CMS/HCC)"/>
+  </reasonCode>
+  <request>
+    <reference value="MedicationRequest/MedicationRequest-Etoposide-Example"/>
+  </request>
+  <dosage>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="47625008"/>
+        <display value="Intravenous route"/>
+      </coding>
+    </route>
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="422145002"/>
+        <display value="Inject - dosing instruction imperative (qualifier value)"/>
+      </coding>
+    </method>
+    <dose>
+      <value value="73"/>
+      <unit value="milligram"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mg"/>
+    </dose>
+  </dosage>
+</MedicationAdministration>

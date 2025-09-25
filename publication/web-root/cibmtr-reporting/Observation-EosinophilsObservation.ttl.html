@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>EosinophilsObservation - TTL Representation - CIBMTR Reporting Implementation Guide v0.1.8</title>
+    <title>EosinophilsObservation - TTL Representation - CIBMTR Reporting Implementation Guide v0.1.9</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -33,10 +33,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -44,8 +44,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"16.75"}
-    h3,h4,h5,h6{--heading-prefix:"16.75"}</style>
+    <style type="text/css">h2{--heading-prefix:"17.76"}
+    h3,h4,h5,h6{--heading-prefix:"17.76"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -62,7 +62,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.8 - Trial Use 1
+            <span style="display:inline-block;">0.1.9 - Trial Use 1
 
 
             </span>
@@ -110,7 +110,13 @@
         <a href="Access-Credentials.html">Access Credentials</a>
       </li>
       <li>
-        <a href="CRID-Assignment.html">CRID Assignment</a>
+        <a href="CRID-Assignment_Non-FHIR.html">CRID Assignment_Non-FHIR API</a>
+      </li>
+      <li>
+        <a href="CRID-Assignment_FHIR.html">CRID Assignment_FHIR API</a>
+      </li>
+      <li>
+        <a href="Patient.html">Patient</a>
       </li>
       <li>
         <a href="Laboratory-Observations.html">Lab Observations</a>
@@ -179,7 +185,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the CIBMTR Reporting Implementation Guide (v0.1.8: Release Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the CIBMTR Reporting Implementation Guide (v0.1.9: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -259,7 +265,7 @@
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation EosinophilsObservation&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;EosinophilsObservation\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcEosinophilsObservation\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;EosinophilsObservation-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;Laboratory&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 26449-9}\&quot;&gt;Eosinophils [#/volume] in Blood&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-PatientExample6.html\&quot;&gt; Female, DoB Unknown ( http://terminology.cibmtr.org/identifier/CRID#123456)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2020-07-21 14:17:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 0.5 Thousands Per MicroLiter&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  code10*3/uL = '10*3/uL')&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation EosinophilsObservation&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;EosinophilsObservation\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcEosinophilsObservation\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cibmtr-obs-priority-variables.html\&quot;&gt;CIBMTR Observation Laboratory Results: Priority Variables&lt;/a&gt;&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Security Label: 99999 My Transplant Center (Details: transplant-center code rc_99999 = '99999 My Transplant Center')&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;Laboratory&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 26449-9}\&quot;&gt;Eosinophils [#/volume] in Blood&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-PatientExample6.html\&quot;&gt; Female, DoB Unknown ( http://terminology.cibmtr.org/identifier/CRID#123456)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2020-07-21 14:17:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 0.5 Thousands Per MicroLiter&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  code10*3/uL = '10*3/uL')&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.category">fhir:category</a> ( [
@@ -283,7 +289,7 @@ a loinc:26449-9 ;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">fhir:value</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">a</a> fhir:Quantity ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:v</a> &quot;0.5&quot;^^xsd:decimal ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:v</a> 0.5 ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Thousands Per MicroLiter&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;10*3/uL&quot; ]
@@ -319,7 +325,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.8 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 18, 2025 16:27-0600">2025-02-18</span>
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.9 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 19, 2025 15:08-0500">2025-09-19</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

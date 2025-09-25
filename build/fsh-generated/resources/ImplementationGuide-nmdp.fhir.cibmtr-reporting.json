@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "nmdp.fhir.cibmtr-reporting",
   "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/nmdp.fhir.cibmtr-reporting",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "name": "CIBMTRReporting",
   "title": "CIBMTR Reporting Implementation Guide",
   "status": "draft",
@@ -36,7 +36,7 @@
   "dependsOn": [
     {
       "packageId": "hl7.fhir.us.core",
-      "version": "7.0.0",
+      "version": "8.0.0",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "id": "hl7_fhir_us_core"
     },
@@ -237,6 +237,14 @@
         },
         "name": "CIBMTR Patient Profile (us-core)",
         "description": "CIBMTR Patient Profile for CRID assignment (us-core)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/patient"
+        },
+        "name": "CIBMTR Patient Value Set",
+        "description": "CIBMTR Patient Value Set",
         "exampleBoolean": false
       },
       {
@@ -855,8 +863,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "CRID-Assignment.html",
-          "title": "CRID Assignment",
+          "nameUrl": "CRID-Assignment_FHIR.html",
+          "title": "CRID Assignment FHIR",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "CRID-Assignment_Non-FHIR.html",
+          "title": "CRID Assignment Non FHIR",
           "generation": "markdown"
         },
         {

@@ -49,8 +49,13 @@ Guidance on connecting to and sending data to the Direct FHIR API is found in th
   * A table of API endpoint to get access tokens, assign a CRID, and submit FHIR resources to development and production work
 * [Access Credentials]
   * Steps to request security tokens necessary for any interaction with the API
-* [CRID Assignment]
-  * How to assign a CRID for Patient. This uses a non-FHIR API to submit patient demographic data to CIBMTR. The service will either match an existing patient, or create a new one if no match is found. The CRID is returned to the client.
+* CRID Assignment
+  * [CRID Assignment_Non-FHIR API]
+      * Description of how to assign a CRID for Patient. This uses a non-FHIR API to submit patient demographic data to CIBMTR. The service will either match an existing patient, or create a new one if no match is found. The CRID is returned to the client.
+  * [CRID Assignment_FHIR API]
+      * Description of how to assign a CRID for Patient. This uses a FHIR API to submit patient demographic data to CIBMTR. 
+* [Patient]
+  * Description of how to send patient information in FHIR resources 
 * [Laboratory Observations]
   * Description of how to send lab values in FHIR Observations.
 * [Medications]

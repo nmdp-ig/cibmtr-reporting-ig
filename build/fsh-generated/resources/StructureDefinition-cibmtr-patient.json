@@ -74,22 +74,6 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.extension:BirthSexExt",
-        "path": "Patient.extension",
-        "sliceName": "BirthSexExt",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
         "id": "Patient.extension:PatBirthPlaceExt",
         "path": "Patient.extension",
         "sliceName": "PatBirthPlaceExt",
@@ -100,6 +84,22 @@
             "code": "Extension",
             "profile": [
               "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:AncestryExt",
+        "path": "Patient.extension",
+        "sliceName": "AncestryExt",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/observation-geneticsAncestry"
             ]
           }
         ],

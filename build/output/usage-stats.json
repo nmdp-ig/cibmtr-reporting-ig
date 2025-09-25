@@ -1,6 +1,6 @@
 {
   "package": "nmdp.fhir.cibmtr-reporting",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
@@ -79,6 +79,9 @@
       "StructureDefinition.snapshot.element.type",
       "StructureDefinition.snapshot.element.type.targetProfile"
     ],
+    "http://hl7.org/fhir/StructureDefinition/observation-geneticsAncestry": [
+      "Patient"
+    ],
     "http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding": [
       "Observation"
     ],
@@ -116,13 +119,10 @@
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
     ],
-    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
-      "Patient"
-    ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
       "Patient"
     ],
-    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity": [
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-interpreter-needed": [
       "Patient"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [

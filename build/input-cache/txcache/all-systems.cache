@@ -26,8 +26,8 @@ v: {
   "display" : "Malignant tumour",
   "code" : "C80.1",
   "system" : "http://hl7.org/fhir/sid/icd-10-cm",
-  "version" : "http://snomed.info/sct/900000000000207008/version/20240801",
-  "server" : "http://tx.fhir.org/r4",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
+  "server" : "https://tx.fhir.org/r4",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -53,7 +53,7 @@ v: {
   "code" : "min",
   "system" : "http://unitsofmeasure.org",
   "version" : "2.2",
-  "server" : "http://tx.fhir.org/r4",
+  "server" : "https://tx.fhir.org/r4",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -79,7 +79,7 @@ v: {
   "code" : "h",
   "system" : "http://unitsofmeasure.org",
   "version" : "2.2",
-  "server" : "http://tx.fhir.org/r4",
+  "server" : "https://tx.fhir.org/r4",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -105,7 +105,7 @@ v: {
   "code" : "[in_i]",
   "system" : "http://unitsofmeasure.org",
   "version" : "2.2",
-  "server" : "http://tx.fhir.org/r4",
+  "server" : "https://tx.fhir.org/r4",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -131,7 +131,7 @@ v: {
   "code" : "kg",
   "system" : "http://unitsofmeasure.org",
   "version" : "2.2",
-  "server" : "http://tx.fhir.org/r4",
+  "server" : "https://tx.fhir.org/r4",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -162,9 +162,9 @@ v: {
 v: {
   "code" : "Texas",
   "severity" : "error",
-  "error" : "The provided code '#Texas' was not found in the value set 'urn:uuid:77c7cf9f-7e8a-4a54-a15b-830cbb013bfb'; The System URI could not be determined for the code 'Texas' in the ValueSet 'urn:uuid:77c7cf9f-7e8a-4a54-a15b-830cbb013bfb'",
+  "error" : "The provided code '#Texas' was not found in the value set 'urn:uuid:8e881ca8-431d-4067-8ce6-8c4f18b6cc02'; The System URI could not be determined for the code 'Texas' in the ValueSet 'urn:uuid:8e881ca8-431d-4067-8ce6-8c4f18b6cc02'",
   "class" : "UNKNOWN",
-  "server" : "http://tx.fhir.org/r4",
+  "server" : "https://tx.fhir.org/r4",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome",
@@ -175,7 +175,7 @@ v: {
     },
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
-      "valueUrl" : "http://tx.fhir.org/r4"
+      "valueUrl" : "https://tx.fhir.org/r4"
     }],
     "severity" : "error",
     "code" : "not-found",
@@ -184,7 +184,7 @@ v: {
         "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
         "code" : "cannot-infer"
       }],
-      "text" : "The System URI could not be determined for the code 'Texas' in the ValueSet 'urn:uuid:77c7cf9f-7e8a-4a54-a15b-830cbb013bfb'"
+      "text" : "The System URI could not be determined for the code 'Texas' in the ValueSet 'urn:uuid:8e881ca8-431d-4067-8ce6-8c4f18b6cc02'"
     },
     "location" : ["code"],
     "expression" : ["code"]
@@ -196,7 +196,7 @@ v: {
     },
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
-      "valueUrl" : "http://tx.fhir.org/r4"
+      "valueUrl" : "https://tx.fhir.org/r4"
     }],
     "severity" : "error",
     "code" : "code-invalid",
@@ -205,7 +205,7 @@ v: {
         "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
         "code" : "not-in-vs"
       }],
-      "text" : "The provided code '#Texas' was not found in the value set 'urn:uuid:77c7cf9f-7e8a-4a54-a15b-830cbb013bfb'"
+      "text" : "The provided code '#Texas' was not found in the value set 'urn:uuid:8e881ca8-431d-4067-8ce6-8c4f18b6cc02'"
     },
     "location" : ["code"],
     "expression" : ["code"]

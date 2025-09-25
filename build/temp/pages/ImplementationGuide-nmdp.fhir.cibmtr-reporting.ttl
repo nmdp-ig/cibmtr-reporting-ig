@@ -11,14 +11,14 @@
   fhir:id [ fhir:v "nmdp.fhir.cibmtr-reporting"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide nmdp.fhir.cibmtr-reporting</b></p><a name=\"nmdp.fhir.cibmtr-reporting\"> </a><a name=\"hcnmdp.fhir.cibmtr-reporting\"> </a><a name=\"nmdp.fhir.cibmtr-reporting-en-US\"> </a><h2>CIBMTRReporting</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/nmdp.fhir.cibmtr-reporting</pre><div><p>How to report HCT data to CIBMTR</p>\n</div></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide nmdp.fhir.cibmtr-reporting</b></p><a name=\"nmdp.fhir.cibmtr-reporting\"> </a><a name=\"hcnmdp.fhir.cibmtr-reporting\"> </a><h2>CIBMTRReporting</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/nmdp.fhir.cibmtr-reporting</pre><div><p>How to report HCT data to CIBMTR</p>\n</div></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/nmdp.fhir.cibmtr-reporting"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:version [ fhir:v "0.1.9"] ; # 
   fhir:name [ fhir:v "CIBMTRReporting"] ; # 
   fhir:title [ fhir:v "CIBMTR Reporting Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-02-18T15:55:04-06:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-19T15:08:00-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ] ;
@@ -51,7 +51,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.2.0" ]
+     fhir:version [ fhir:v "6.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -66,7 +66,7 @@
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "5.2.0" ]
+     fhir:version [ fhir:v "5.3.0-ballot-tc1" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_us_core" ] ;
      fhir:uri [
@@ -74,7 +74,7 @@
        fhir:link <http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.us.core" ] ;
-     fhir:version [ fhir:v "7.0.0" ]
+     fhir:version [ fhir:v "8.0.0" ]
   ] [
      fhir:id [ fhir:v "mcode" ] ;
      fhir:uri [
@@ -517,7 +517,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.3.0"
+         fhir:v "hl7.fhir.uv.tools.r4#0.7.0"
        ]
      ] [
        fhir:extension ( [
@@ -1051,7 +1051,7 @@
        fhir:description [ fhir:v "Auto Differential panel - Blood (57023-4)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1126,7 +1126,7 @@
        fhir:description [ fhir:v "CBC panel - Blood by Automated count (58410-2)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1144,7 +1144,7 @@
        fhir:description [ fhir:v "CBC W Auto Differential panel - Blood (57021-8)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1162,7 +1162,7 @@
        fhir:description [ fhir:v "CBC W Differential panel, method unspecified - Blood (69742-5)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1180,7 +1180,7 @@
        fhir:description [ fhir:v "CBC W Ordered Manual Differential panel - Blood (57782-5)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1198,7 +1198,7 @@
        fhir:description [ fhir:v "CIBMTR Additional Drugs Given in the Peri-Transplant Period. Drugs may be given during the peri-transplant period to prevent transplant-related complications, such as liver injuries or to facilitate engraftment." ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1216,7 +1216,7 @@
        fhir:description [ fhir:v "CIBMTR Cytogenetics Profile to capture ISCN" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1234,7 +1234,7 @@
        fhir:description [ fhir:v "CIBMTR GVHD Prophylaxis Medication" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1252,7 +1252,7 @@
        fhir:description [ fhir:v "CIBMTR Medication (us-core)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1270,7 +1270,7 @@
        fhir:description [ fhir:v "CIBMTR Medication Administration (mcode)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1288,7 +1288,7 @@
        fhir:description [ fhir:v "CIBMTR Medication Request (mcode)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1306,7 +1306,7 @@
        fhir:description [ fhir:v "CIBMTR Mobilizing Agents (auto only) Medication" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1324,7 +1324,7 @@
        fhir:description [ fhir:v "CIBMTR Observation Laboratory Results Profile (us-core)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1342,7 +1342,7 @@
        fhir:description [ fhir:v "CIBMTR Observation Laboratory Results: Priority Variables" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1360,7 +1360,25 @@
        fhir:description [ fhir:v "CIBMTR Patient Profile for CRID assignment (us-core)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/patient> ;
+         fhir:reference [ fhir:v "ValueSet/patient" ]
+       ] ;
+       fhir:name [ fhir:v "CIBMTR Patient Value Set" ] ;
+       fhir:description [ fhir:v "CIBMTR Patient Value Set" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1378,7 +1396,7 @@
        fhir:description [ fhir:v "CIBMTR Planned Post-HCT Disease Therapy Medication" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1396,7 +1414,7 @@
        fhir:description [ fhir:v "CIBMTR Pre-HCT Preparative Regimen (Conditioning) Medication" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1414,7 +1432,7 @@
        fhir:description [ fhir:v "CIBMTR Prior Exposure: Potential Study Eligibility Medication" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1432,7 +1450,7 @@
        fhir:description [ fhir:v "Priority Variables for CIBMTR (FY21)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1450,7 +1468,7 @@
        fhir:description [ fhir:v "Priority Variables for CIBMTR (FY22)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1468,7 +1486,7 @@
        fhir:description [ fhir:v "Priority Variables for Epic CIBMTR Reporting App (FY21)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1486,7 +1504,7 @@
        fhir:description [ fhir:v "CIBMTR Vital Signs Results Profile (us-core)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1504,7 +1522,7 @@
        fhir:description [ fhir:v "CIBMTR Vital Signs Value Set" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1522,7 +1540,7 @@
        fhir:description [ fhir:v "CIBMTR Vital Signs-Height Profile (us-core)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1540,7 +1558,7 @@
        fhir:description [ fhir:v "CIBMTR Vital Signs-Weight Profile (us-core)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1691,7 +1709,7 @@
        fhir:description [ fhir:v "Differential panel, method unspecified - Blood (69738-3)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1709,7 +1727,7 @@
        fhir:description [ fhir:v "SNOMED: Disorders of hematopoietic structure" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1746,7 +1764,7 @@
        fhir:description [ fhir:v "Erythrocyte morphology panel - Blood (58408-6)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1764,7 +1782,7 @@
        fhir:description [ fhir:v "GVHD ICD-10 Codes" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1782,7 +1800,7 @@
        fhir:description [ fhir:v "GVHD SNOMED CT Codes" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1800,7 +1818,7 @@
        fhir:description [ fhir:v "Permissible values for types of Graft vs Host Disease, from SNOMED CT and ICD-10" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1837,7 +1855,7 @@
        fhir:description [ fhir:v "Leukocyte morphology panel - Blood (58407-8)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1874,7 +1892,7 @@
        fhir:description [ fhir:v "Manual Differential panel - Blood (24318-8)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2253,7 +2271,7 @@
        fhir:description [ fhir:v "Platelet morphology panel - Blood (58406-0)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2271,7 +2289,7 @@
        fhir:description [ fhir:v "Permissible values for presence" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2289,7 +2307,7 @@
        fhir:description [ fhir:v "RxNorm codes for Additional Drugs in Peri-Transplant Period" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2307,7 +2325,7 @@
        fhir:description [ fhir:v "RxNorm codes for Alemtuzumab" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2325,7 +2343,7 @@
        fhir:description [ fhir:v "RxNorm codes for all of Form 2400" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2343,7 +2361,7 @@
        fhir:description [ fhir:v "RxNorm codes for Anti-Thymocyte Globulin" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2361,7 +2379,7 @@
        fhir:description [ fhir:v "RxNorm codes for Bortezomib" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2379,7 +2397,7 @@
        fhir:description [ fhir:v "RxNorm codes for Busulfan" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2397,7 +2415,7 @@
        fhir:description [ fhir:v "RxNorm codes for Carmustine" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2415,7 +2433,7 @@
        fhir:description [ fhir:v "RxNorm codes for Cyclophosphamide" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2433,7 +2451,7 @@
        fhir:description [ fhir:v "RxNorm codes for Cytarabine" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2451,7 +2469,7 @@
        fhir:description [ fhir:v "RxNorm codes for Defibrotide" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2469,7 +2487,7 @@
        fhir:description [ fhir:v "RxNorm codes for Etoposide" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2487,7 +2505,7 @@
        fhir:description [ fhir:v "RxNorm codes for Fludarabine" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2505,7 +2523,7 @@
        fhir:description [ fhir:v "RxNorm codes for GVHD Prophylaxis" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2523,7 +2541,7 @@
        fhir:description [ fhir:v "RxNorm codes for Melphalan" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2541,7 +2559,7 @@
        fhir:description [ fhir:v "RxNorm codes for Mobilizing Agents (auto only)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2559,7 +2577,7 @@
        fhir:description [ fhir:v "RxNorm codes for Post-HCT Disease Therapy Planned" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2577,7 +2595,7 @@
        fhir:description [ fhir:v "RxNorm codes for Prep Regimen" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2595,7 +2613,7 @@
        fhir:description [ fhir:v "Prior Exposure: Potential Study Eligibility" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2613,7 +2631,7 @@
        fhir:description [ fhir:v "RxNorm codes for Rituximab" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2631,7 +2649,7 @@
        fhir:description [ fhir:v "RxNorm codes for Thiotepa" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2649,7 +2667,7 @@
        fhir:description [ fhir:v "RxNorm codes for Treosulfan" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2667,7 +2685,7 @@
        fhir:description [ fhir:v "RxNorm codes for Ursodiol" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2685,7 +2703,7 @@
        fhir:description [ fhir:v "Smear morphology panel - Blood (34994-4)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2703,7 +2721,7 @@
        fhir:description [ fhir:v "The myelodysplastic syndromes (MDS) are a group of clonal hematopoietic stem cell diseases characterized by cytopenia(s), dysplasia (abnormal growth or development leading to an alteration in size, shape, and organization of the cell) in one or more of the major myeloid cell lines (WBC, RBC, and/or platelets), ineffective hematopoiesis, and an increased risk of developing acute myelogenous leukemia (AML). MDS occurs primarily in older adults, with a median age of 70 years. The majority of recipients present with symptoms related to cytopenias. Most recipients present with anemia requiring RBC transfusions." ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] ) ;
      fhir:page [
@@ -2795,14 +2813,28 @@
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
            fhir:value [
              a fhir:url ;
-             fhir:v "CRID-Assignment.html"^^xsd:anyURI
+             fhir:v "CRID-Assignment_FHIR.html"^^xsd:anyURI
            ]
          ] ) ;
          fhir:name [
            a fhir:url ;
-           fhir:v "CRID-Assignment.html"^^xsd:anyURI
+           fhir:v "CRID-Assignment_FHIR.html"^^xsd:anyURI
          ] ;
-         fhir:title [ fhir:v "CRID Assignment" ] ;
+         fhir:title [ fhir:v "CRID Assignment FHIR" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "CRID-Assignment_Non-FHIR.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "CRID-Assignment_Non-FHIR.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "CRID Assignment Non FHIR" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

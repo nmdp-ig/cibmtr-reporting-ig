@@ -21,6 +21,7 @@
 [CIBMTRObservationLab]: StructureDefinition-cibmtr-observation-lab.html
 [CIBMTRObsPriorityVariables]: StructureDefinition-cibmtr-obs-priority-variables.html
 [CIBMTRPatient]: StructureDefinition-cibmtr-patient.html
+[Patient]: ValueSet-patient.html
 [CIBMTR_PostHCTDiseaseTherapyPlannedMedication]: StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html
 [CIBMTR_PrepRegimenMedication]: StructureDefinition-cibmtr-prep-regimen-medication.html
 [CIBMTR_PriorExposureMedication]: StructureDefinition-cibmtr-prior-exposure-medication.html

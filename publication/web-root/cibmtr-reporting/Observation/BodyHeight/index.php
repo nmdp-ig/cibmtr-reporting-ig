@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.8/Observation-BodyHeight.json2');
+  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.9/Observation-BodyHeight.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.8/Observation-BodyHeight.json1');
+  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.9/Observation-BodyHeight.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.8/Observation-BodyHeight.json');
+  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.9/Observation-BodyHeight.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.8/Observation-BodyHeight.xml2');
+  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.9/Observation-BodyHeight.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.8/Observation-BodyHeight.xml1');
+  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.9/Observation-BodyHeight.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.8/Observation-BodyHeight.html');
+  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.9/Observation-BodyHeight.html');
 else 
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.8/Observation-BodyHeight.xml');
+  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.9/Observation-BodyHeight.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

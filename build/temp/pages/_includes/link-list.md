@@ -39,7 +39,9 @@
 [Connecting and Access]: Connection-Guide-R4.html
 [API Endpoints]: Endpoints.html
 [Access Credentials]: Access-Credentials.html
-[CRID Assignment]: CRID-Assignment.html
+[CRID Assignment_Non-FHIR API]: CRID-Assignment_Non-FHIR.html
+[CRID Assignment_FHIR API]:CRID-Assignment_FHIR.html
+[Patient]: Patient.html
 [Laboratory Observations]: Laboratory-Observations.html
 [Medications]: Medications.html
 [Vital Signs]: Vital-Signs.html

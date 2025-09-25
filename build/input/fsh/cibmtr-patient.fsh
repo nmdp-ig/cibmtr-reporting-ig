@@ -1,6 +1,7 @@
 Alias: MothersMaidenNameExtension = http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName
 Alias: BirthSexExtension = http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex
 Alias: PatientBirthPlaceExtension = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
+//Alias: AncestryExtension = http://build.fhir.org/ig/HL7/fhir-extensions/StructureDefinition/observation-geneticsAncestry
 
 Profile:        CIBMTRPatient
 Parent:         us-core-patient 
@@ -8,8 +9,9 @@ Id:             cibmtr-patient
 Title:          "CIBMTR Patient Profile (us-core)"
 Description:    "CIBMTR Patient Profile for CRID assignment (us-core)"
 * extension contains MothersMaidenNameExtension named MaidenNameExt 0..1 MS
-* extension contains BirthSexExtension named BirthSexExt 0..1 MS
+//* extension contains BirthSexExtension named BirthSexExt 0..1 MS
 * extension contains PatientBirthPlaceExtension named PatBirthPlaceExt 0..1 MS
+* extension contains Ancestry named AncestryExt 0..1 MS
 * insert MetaSecurityRules
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "system"

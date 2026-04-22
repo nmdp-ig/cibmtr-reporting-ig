@@ -1,0 +1,88 @@
+# Build CIBMTR Reporting IG with SUSHI + IG Publisher, deploy to GitHub Pages
+# Preview at: https://nmdp-ig.github.io/cibmtr-reporting-ig/
+#
+# Setup (one-time):
+#   Settings > Pages > Source: GitHub Actions
+#   Settings > Actions > General > Workflow permissions: Read and write
+
+name: Build & Publish IG
+
+on:
+  push:
+    branches: [main, deploy-ready, deploy-ready-dev]
+  pull_request:
+    branches: [main, deploy-ready]
+  workflow_dispatch:
+
+concurrency:
+  group: "pages-${{ github.ref }}"
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: build
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install SUSHI
+        run: npm install -g fsh-sushi
+        working-directory: .
+
+      - name: Run SUSHI
+        run: sushi .
+
+      - name: Download IG Publisher
+        run: |
+          mkdir -p input-cache
+          curl -L -o input-cache/publisher.jar \
+            https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
+
+      - name: Build IG
+        run: java -Xmx8g -jar input-cache/publisher.jar publisher -ig ig.ini
+
+      - name: Upload QA artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ig-output
+          path: |
+            build/output/
+            !build/output/package.tgz
+          retention-days: 14
+
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/output/
+
+  deploy:
+    needs: build
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

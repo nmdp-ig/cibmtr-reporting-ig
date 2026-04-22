@@ -38,6 +38,15 @@ jobs:
           distribution: temurin
           java-version: 17
 
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+
+      - name: Install Jekyll
+        run: gem install jekyll
+        working-directory: .
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:

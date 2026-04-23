@@ -120,7 +120,7 @@ jobs:
             cp publication/web-root/publish-setup.json publication/web-root/cibmtr-reporting/publish-setup.json
           # Copy package-list AFTER output overlay (output/ has its own single-version one)
           cp build/package-list.json publication/web-root/cibmtr-reporting/package-list.json 2>/dev/null || true
-          java -Xmx4g -jar build/input-cache/publisher.jar \
+          echo "y" | java -Xmx4g -jar build/input-cache/publisher.jar \
             -publish-update \
             -folder publication/web-root/cibmtr-reporting \
             -registry ig-registry/fhir-ig-list.json \

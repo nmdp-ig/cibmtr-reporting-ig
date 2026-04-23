@@ -29,13 +29,15 @@ Usage: #example
 * subject = Reference(PatientExample6)
 
 // --------------------------------------------------------------------------
+Alias: $LabPriorityVariables = https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.7/expansion
 
-Profile:    CIBMTRObsPriorityVariables
-Parent:     cibmtr-observation-lab
-Id:         cibmtr-obs-priority-variables
-Title:      "CIBMTR Observation Laboratory Results: Priority Variables"
-Description:    "CIBMTR Observation Laboratory Results: Priority Variables"
-* code.coding from PriorityVariables2022 (extensible)
+
+Profile: CIBMTRObsPriorityVariables
+Parent: cibmtr-observation-lab
+Id: cibmtr-obs-priority-variables
+Title: "CIBMTR Observation Laboratory Results: Priority Variables"
+Description: "CIBMTR Observation Laboratory Results: Priority Variables"
+* code.coding from $LabPriorityVariables (extensible)
 
 Instance: AlbuminObservation 
 InstanceOf: cibmtr-obs-priority-variables

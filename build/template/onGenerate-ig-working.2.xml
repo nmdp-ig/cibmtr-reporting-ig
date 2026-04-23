@@ -17,11 +17,11 @@
       </div>
    </text>
    <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/nmdp.fhir.cibmtr-reporting"/>
-   <version value="0.1.9"/>
+   <version value="0.1.10"/>
    <name value="CIBMTRReporting"/>
    <title value="CIBMTR Reporting Implementation Guide"/>
    <status value="draft"/>
-   <date value="2025-09-19T15:08:00-05:00"/>
+   <date value="2026-04-23T10:10:52-05:00"/>
    <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
    <contact>
       <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -47,7 +47,7 @@
       </extension>
       <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
       <packageId value="hl7.terminology.r4"/>
-      <version value="6.5.0"/>
+      <version value="7.1.0"/>
    </dependsOn>
    <dependsOn id="hl7ext">
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -55,7 +55,7 @@
       </extension>
       <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
       <packageId value="hl7.fhir.uv.extensions.r4"/>
-      <version value="5.3.0-ballot-tc1"/>
+      <version value="5.2.0"/>
    </dependsOn>
    <dependsOn id="hl7_fhir_us_core">
       <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
@@ -298,7 +298,7 @@
          </extension>
       </extension>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-         <valueCode value="hl7.fhir.uv.tools.r4#0.7.0"/>
+         <valueCode value="hl7.fhir.uv.tools.r4#0.9.0"/>
       </extension>
       <grouping id="-req-actordefinition">
          <name value="Requirements: Actor Definitions"/>
@@ -813,6 +813,24 @@
             <valueInteger value="999999999"/>
          </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-patient.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/patient"/>
+         </reference>
+         <name value="CIBMTR Patient Ancestry Value Set"/>
+         <description value="US Core Race Categories (Intensional).&#xD;&#xA;1.&#xA;This value set is used by me"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -825,24 +843,6 @@
          <description value="CIBMTR Patient Profile for CRID assignment (us-core)"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="ValueSet"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="ValueSet-patient.html"/>
-         </extension>
-         <reference>
-            <reference value="ValueSet/patient"/>
-         </reference>
-         <name value="CIBMTR Patient Value Set"/>
-         <description value="CIBMTR Patient Value Set"/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-term-valueset"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -957,6 +957,24 @@
             <valueInteger value="999999999"/>
          </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-cibmtr-cs-vitalsigns.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/cibmtr-cs-vitalsigns"/>
+         </reference>
+         <name value="CIBMTR Vital Signs Concept Set"/>
+         <description value="CIBMTR Vital Signs Concept Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -965,8 +983,7 @@
          <reference>
             <reference value="StructureDefinition/cibmtr-vital-signs"/>
          </reference>
-         <name value="CIBMTR Vital Signs Results Profile (us-core)"/>
-         <description value="CIBMTR Vital Signs Results Profile (us-core)"/>
+         <name value="CIBMTR Vital Signs Results Profile (US Core)"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -2211,14 +2228,6 @@
             </extension>
             <nameUrl value="CRID-Assignment_FHIR.html"/>
             <title value="CRID Assignment FHIR"/>
-            <generation value="markdown"/>
-         </page>
-         <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-               <valueUrl value="CRID-Assignment_Non-FHIR.html"/>
-            </extension>
-            <nameUrl value="CRID-Assignment_Non-FHIR.html"/>
-            <title value="CRID Assignment Non FHIR"/>
             <generation value="markdown"/>
          </page>
          <page>

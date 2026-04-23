@@ -85,13 +85,13 @@ Description:    "CIBMTR Medication Request (mcode)"
 // * insert MetaSecurityRules
 
 // -------------------------------------------------------------------------------- 
-
+Alias: $MedMobilizingAgents = https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.2/expansion
 Profile:        CIBMTR_MobilizingAgentMedication
 Parent:         cibmtr-medication
 Id:             cibmtr-mobilizing-agent-medication
 Title:          "CIBMTR Mobilizing Agents Medication"
 Description:    "CIBMTR Mobilizing Agents (auto only) Medication"
-* code.coding from RxNormMobilizingAgentsVS (extensible)
+* code.coding from $MedMobilizingAgents (extensible)
 
 
 Instance: Medication-Mobilizing-Agent-Example
@@ -123,13 +123,13 @@ Usage: #example
       * code = #mL
 
 // -------------------------------------------------------------------------------- 
-
+Alias: $MedPrepRegimen = https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.6/expansion
 Profile:        CIBMTR_PrepRegimenMedication
 Parent:         cibmtr-medication
 Id:             cibmtr-prep-regimen-medication
 Title:          "CIBMTR Prep Regimen Medication"
 Description:    "CIBMTR Pre-HCT Preparative Regimen (Conditioning) Medication"
-* code.coding from RxNormPrepRegimenVS (extensible)
+* code.coding from $MedPrepRegimen  (extensible)
 
 
 Instance: Medication-Prep-Regimen-Example
@@ -161,14 +161,14 @@ Usage: #example
       * code = #mg
 
 // -------------------------------------------------------------------------------- 
-
+Alias: $MedAdditionalPeriTransplant = https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.4/expansion
 
 Profile:        CIBMTR_AdditionalPeriTransplantMedication
 Parent:         cibmtr-medication
 Id:             cibmtr-additional-peri-transplant-medication
 Title:          "CIBMTR Additional Drugs in Peri-Transplant Period"
 Description:    "CIBMTR Additional Drugs Given in the Peri-Transplant Period. Drugs may be given during the peri-transplant period to prevent transplant-related complications, such as liver injuries or to facilitate engraftment."
-* code.coding from RxNormAdditionalPeriTransplantVS (extensible)
+* code.coding from $MedAdditionalPeriTransplant (extensible)
 
 
 Instance: Medication-Peri-Transplant-Example
@@ -202,14 +202,14 @@ Usage: #example
       * code = #mL
 
 // -------------------------------------------------------------------------------- 
-
+Alias: $MedGVHDProphylaxis = https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.8/expansion
 
 Profile:        CIBMTR_GVHDProphylaxisMedication
 Parent:         cibmtr-medication
 Id:             cibmtr-gvhd-prophylaxis-medication
 Title:          "CIBMTR GVHD Prophylaxis Medication"
 Description:    "CIBMTR GVHD Prophylaxis Medication"
-* code.coding from RxNormGVHDProphylaxisVS (extensible)
+* code.coding from $MedGVHDProphylaxis (extensible)
 
 Instance: Medication-GVHD-Prophylaxis-Example
 InstanceOf: cibmtr-gvhd-prophylaxis-medication
@@ -242,14 +242,14 @@ Usage: #example
       * code = #mL
 
 // -------------------------------------------------------------------------------- 
-
+Alias: $MedPostHCTDiseaseTherapyPlanned = https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.9/expansion
 
 Profile:        CIBMTR_PostHCTDiseaseTherapyPlannedMedication
 Parent:         cibmtr-medication
 Id:             cibmtr-post-hct-disease-therapy-planned-medication
 Title:          "CIBMTR Planned Post-HCT Disease Therapy Medication"
 Description:    "CIBMTR Planned Post-HCT Disease Therapy Medication"
-* code.coding from RxNormPostHCTDiseaseTherapyPlannedVS (extensible)
+* code.coding from $MedPostHCTDiseaseTherapyPlanned (extensible)
 
 
 Instance: Medication-Post-HCT-Disease-Therapy-Example
@@ -291,13 +291,13 @@ Usage: #example
       * code = #mg
 
 // -------------------------------------------------------------------------------- 
-
+Alias: $MedPriorExposure = https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.10/expansion
 Profile:        CIBMTR_PriorExposureMedication
 Parent:         cibmtr-medication
 Id:             cibmtr-prior-exposure-medication
 Title:          "CIBMTR Prior Exposure Medication"
 Description:    "CIBMTR Prior Exposure: Potential Study Eligibility Medication"
-* code.coding from RxNormPriorExposureVS (extensible)
+* code.coding from $MedPriorExposure (extensible)
 
 
 Instance: Medication-PriorExposure-Example

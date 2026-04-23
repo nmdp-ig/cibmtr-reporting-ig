@@ -12,33 +12,48 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication"^^xsd:anyURI ;
-       fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication>
+       fhir:l <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication>
      ] ) ;
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.cibmtr.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.cibmtr.org/codesystem/transplant-center"^^xsd:anyURI ;
+         fhir:l <http://terminology.cibmtr.org/codesystem/transplant-center>
+       ] ;
        fhir:code [ fhir:v "rc_99999" ] ;
        fhir:display [ fhir:v "99999 My Transplant Center" ]
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication Medication-Etoposide-Example</b></p><a name=\"Medication-Etoposide-Example\"> </a><a name=\"hcMedication-Etoposide-Example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cibmtr-medication.html\">CIBMTR Medication (us-core)</a></p><p style=\"margin-bottom: 0px\">Security Label: 99999 My Transplant Center (Details: transplant-center code rc_99999 = '99999 My Transplant Center')</p></div><p><b>code</b>: <span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 4179}, {http://www.nlm.nih.gov/research/umls/rxnorm 310248}, {http://www.nlm.nih.gov/research/umls/rxnorm 362972}, {http://www.nlm.nih.gov/research/umls/rxnorm 206832}\">ETOPOSIDE 20 MG/ML IV SOLN</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 4179}, {http://www.nlm.nih.gov/research/umls/rxnorm 310248}, {http://www.nlm.nih.gov/research/umls/rxnorm 362972}, {http://www.nlm.nih.gov/research/umls/rxnorm 206832}\">ETOPOSIDE 20 MG/ML IV SOLN</span></td><td>20 milligram per milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/ml = 'mg/ml')</span>/20 milligram per milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/ml = 'mg/ml')</span></td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication Medication-Etoposide-Example</b></p><a name=\"Medication-Etoposide-Example\"> </a><a name=\"hcMedication-Etoposide-Example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cibmtr-medication.html\">CIBMTR Medication (us-core)</a></p><p style=\"margin-bottom: 0px\">Security Label: 99999 My Transplant Center (Details: transplant-center code rc_99999 = '99999 My Transplant Center')</p></div><p><b>code</b>: <span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 4179}, {http://www.nlm.nih.gov/research/umls/rxnorm 310248}, {http://www.nlm.nih.gov/research/umls/rxnorm 362972}, {http://www.nlm.nih.gov/research/umls/rxnorm 206832}\">ETOPOSIDE 20 MG/ML IV SOLN</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 4179}, {http://www.nlm.nih.gov/research/umls/rxnorm 310248}, {http://www.nlm.nih.gov/research/umls/rxnorm 362972}, {http://www.nlm.nih.gov/research/umls/rxnorm 206832}\">ETOPOSIDE 20 MG/ML IV SOLN</span></td><td>20 milligram per milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/ml = 'mg/ml')</span>/20 milligram per milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/ml = 'mg/ml')</span></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ;
+         fhir:l <http://www.nlm.nih.gov/research/umls/rxnorm>
+       ] ;
        fhir:code [ fhir:v "4179" ] ;
        fhir:display [ fhir:v "etoposide" ]
      ] [
-       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ;
+         fhir:l <http://www.nlm.nih.gov/research/umls/rxnorm>
+       ] ;
        fhir:code [ fhir:v "310248" ] ;
        fhir:display [ fhir:v "etoposide 20 MG/ML Injectable Solution" ]
      ] [
-       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ;
+         fhir:l <http://www.nlm.nih.gov/research/umls/rxnorm>
+       ] ;
        fhir:code [ fhir:v "362972" ] ;
        fhir:display [ fhir:v "etoposide Injectable Solution [Vepesid]" ]
      ] [
-       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ;
+         fhir:l <http://www.nlm.nih.gov/research/umls/rxnorm>
+       ] ;
        fhir:code [ fhir:v "206832" ] ;
        fhir:display [ fhir:v "etoposide 20 MG/ML Injectable Solution [Vepesid]" ]
      ] ) ;
@@ -48,19 +63,31 @@
      fhir:item [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ;
+           fhir:l <http://www.nlm.nih.gov/research/umls/rxnorm>
+         ] ;
          fhir:code [ fhir:v "4179" ] ;
          fhir:display [ fhir:v "etoposide" ]
        ] [
-         fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ;
+           fhir:l <http://www.nlm.nih.gov/research/umls/rxnorm>
+         ] ;
          fhir:code [ fhir:v "310248" ] ;
          fhir:display [ fhir:v "etoposide 20 MG/ML Injectable Solution" ]
        ] [
-         fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ;
+           fhir:l <http://www.nlm.nih.gov/research/umls/rxnorm>
+         ] ;
          fhir:code [ fhir:v "362972" ] ;
          fhir:display [ fhir:v "etoposide Injectable Solution [Vepesid]" ]
        ] [
-         fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ;
+           fhir:l <http://www.nlm.nih.gov/research/umls/rxnorm>
+         ] ;
          fhir:code [ fhir:v "206832" ] ;
          fhir:display [ fhir:v "etoposide 20 MG/ML Injectable Solution [Vepesid]" ]
        ] ) ;
@@ -70,13 +97,19 @@
        fhir:numerator [
          fhir:value [ fhir:v "20"^^xsd:decimal ] ;
          fhir:unit [ fhir:v "milligram per milliliter" ] ;
-         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:l <http://unitsofmeasure.org>
+         ] ;
          fhir:code [ fhir:v "mg/ml" ]
        ] ;
        fhir:denominator [
          fhir:value [ fhir:v "20"^^xsd:decimal ] ;
          fhir:unit [ fhir:v "milligram per milliliter" ] ;
-         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:l <http://unitsofmeasure.org>
+         ] ;
          fhir:code [ fhir:v "mg/ml" ]
        ]
      ]

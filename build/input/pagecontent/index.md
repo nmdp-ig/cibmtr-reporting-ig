@@ -49,11 +49,8 @@ Guidance on connecting to and sending data to the Direct FHIR API is found in th
   * A table of API endpoint to get access tokens, assign a CRID, and submit FHIR resources to development and production work
 * [Access Credentials]
   * Steps to request security tokens necessary for any interaction with the API
-* CRID Assignment
-  * [CRID Assignment_Non-FHIR API]
-      * Description of how to assign a CRID for Patient. This uses a non-FHIR API to submit patient demographic data to CIBMTR. The service will either match an existing patient, or create a new one if no match is found. The CRID is returned to the client.
-  * [CRID Assignment_FHIR API]
-      * Description of how to assign a CRID for Patient. This uses a FHIR API to submit patient demographic data to CIBMTR. 
+* [CRID Assignment_FHIR API]
+  * Description of how to assign a CRID for Patient. This uses a FHIR API to submit patient demographic data to CIBMTR. 
 * [Patient]
   * Description of how to send patient information in FHIR resources 
 * [Laboratory Observations]
@@ -88,10 +85,10 @@ Guidance on connecting to and sending data to the Direct FHIR API is found in th
     * [CIBMTR Vital Signs-Weight] - derived from US-Core
  
 #### ValueSets
-* LOINC
-  * [CIBMTR Priority Variables for FY22] - LOINC (used with Observation)
-  * [LOINC Codes used in Vital Signs]
-* RxNorm (used in medication-related resources)
+* Observation Resource
+  * Laboratory Observation resource [CIBMTR Priority Variables for FY22] 
+  * Vital Signs Observation resource [Vital Signs Value Set]
+* Medication Resource
   * [Mobilizing Agents (auto only)]
   * [Prep Regimen]
   * [Additional Drugs in Peri-Transplant Period]

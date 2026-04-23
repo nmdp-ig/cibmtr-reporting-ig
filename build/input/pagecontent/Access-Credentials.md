@@ -48,6 +48,28 @@ Once the token has been received, a request to the CIBMTR Direct FHIR service AP
 
 To make a request to the CIBMTR Direct FHIR Backend API, include the token in the header as the authorization key value of the request along with the word `Bearer ` in front of it, as shown in Figure 3.
 
+### Token Expiration 
+
+Access tokens used for the CIBMTR Direct FHIR API are valid for a limited duration defined in the token response. The validity period is determined by the expires_in field returned at the time of token issuance (e.g., "expires_in": 1800 indicates a validity of 1800 seconds). The expires_in value should be used to determine token validity and manage when to request a new token.
+
+Token lifetimes can differ between environments. The production environment often enforces shorter expiration periods than non-production environments. As a result, processes that complete successfully in test environments can encounter token expiration in production, even when processing the same data.
+
+For long-running processes, a valid token needs to be used for all requests. If data transmission exceeds the token’s validity period, the token is considered expired, and a new token is required before submitting additional data.
+
+Requesting a new token before the current token expires, based on the expires_in value, helps prevent interruptions during active data transmission.
+
+If requests are submitted using an expired token, the server can reject those requests due to token expiration. In such cases, a new token is required before data submission can resume.
+
+**Token Response Example**
+~~~ json
+{
+    "token_type": "Bearer",
+    "expires_in": 86400,
+    "access_token": "jwt-type-token",
+    "scope": "your-scope-for-the-app"
+} 
+~~~
+
 ### Example Code
 
 #### Request Authorization Token

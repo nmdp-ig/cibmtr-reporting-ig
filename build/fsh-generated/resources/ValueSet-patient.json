@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "Patient",
+  "id": "patient",
+  "title": "CIBMTR Patient Ancestry Value Set",
+  "description": "US Core Race Categories (Intensional).\r\n1.\nThis value set is used by me",
+  "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/patient",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "3141-9",
+            "display": "Body weight Patient Mass Pt Qn Measured"
+          },
+          {
+            "code": "8352-7",
+            "display": "Clothing worn during measure Patient Type Pt Nom"
+          },
+          {
+            "code": "8361-8",
+            "display": "Body position with respect to gravity Patient Type Pt Nom"
+          }
+        ]
+      }
+    ]
+  }
+}

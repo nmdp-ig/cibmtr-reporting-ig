@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/auto-differential-blood-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "AutoDifferentialBloodVS",
       "title" : "Auto Differential panel - Blood (57023-4)",
@@ -14,7 +14,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-blood-automated-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "CBCBloodAutomatedVS",
       "title" : "CBC panel - Blood by Automated count (58410-2)",
@@ -27,7 +27,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-auto-differential-blood-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "CBCWAutoDifferentialBloodVS",
       "title" : "CBC W Auto Differential panel - Blood (57021-8)",
@@ -36,7 +36,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-differential-unspecified-blood-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "CBCWDifferentialUnspecifiedBloodVS",
       "title" : "CBC W Differential panel, method unspecified - Blood (69742-5)",
@@ -45,7 +45,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-ordered-manual-differential-blood-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "CBCWOrderedManualDifferentialBloodVS",
       "title" : "CBC W Ordered Manual Differential panel - Blood (57782-5)",
@@ -53,8 +53,16 @@
       "systems" : ["http://loinc.org"]
     },
     {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-cs-vitalsigns",
+      "version" : "0.1.10",
+      "status" : "active",
+      "name" : "CIBMTRConceptSet_VitalSigns",
+      "title" : "CIBMTR Vital Signs Concept Set",
+      "description" : "CIBMTR Vital Signs Concept Set"
+    },
+    {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-2021",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "PriorityVariables2021",
       "title" : "CIBMTR Priority Variables Value Set (FY21)",
@@ -63,19 +71,16 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-2022",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "PriorityVariables2022",
       "title" : "CIBMTR Priority Variables Value Set (FY22)",
       "description" : "Priority Variables for CIBMTR (FY22)",
-      "systems" : ["http://loinc.org"],
-      "uses" : {
-      },
-      "StructureDefinition-cibmtr-obs-priority-variables.html" : "CIBMTR Observation Laboratory Results: Priority Variables"
+      "systems" : ["http://loinc.org"]
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-epic-2021",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "PriorityVariablesEpic2021",
       "title" : "CIBMTR Priority Variables Value Set for Epic App (FY21)",
@@ -84,7 +89,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/differential-unspecified-blood-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "DifferentialUnspecifiedBloodVS",
       "title" : "Differential panel, method unspecified - Blood (69738-3)",
@@ -96,7 +101,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/erythrocyte-morphology-blood-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "ErythrocyteMorphologyBloodVS",
       "title" : "Erythrocyte morphology panel - Blood (58408-6)",
@@ -108,7 +113,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-all-valueset",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "GVHDTypeValueSet",
       "title" : "GVHD Type Value Set",
@@ -117,7 +122,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "GVHDICD10VS",
       "title" : "GVHD ICD-10 Codes",
@@ -129,7 +134,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-sct-codes",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "GVHDSCTVS",
       "title" : "GVHD SNOMED CT Codes",
@@ -141,7 +146,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/hematopoietic-disorder-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "HematopoieticDisorderVS",
       "title" : "Disorders of hematopoietic structure",
@@ -150,7 +155,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/leukocyte-morphology-blood-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "LeukocyteMorphologyBloodVS",
       "title" : "Leukocyte morphology panel - Blood (58407-8)",
@@ -162,7 +167,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/manual-differential-blood-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "ManualDifferentialBloodVS",
       "title" : "Manual Differential panel - Blood (24318-8)",
@@ -174,7 +179,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-addition-peri-transplant-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormAdditionalPeriTransplantVS",
       "title" : "RxNorm - Additional Drugs in Peri-Transplant Period",
@@ -182,12 +187,11 @@
       "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-additional-peri-transplant-medication.html" : "CIBMTR Additional Drugs in Peri-Transplant Period",
       "ValueSet-med-all-form2400-vs.html" : "RxNorm - All of Form 2400"
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-alemtuzumab-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormAlemtuzumabVS",
       "title" : "RxNorm - Alemtuzumab",
@@ -196,7 +200,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-all-form2400-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormAll2400VS",
       "title" : "RxNorm - All of Form 2400",
@@ -205,7 +209,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-anti-thymocyte-globulin-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormAntiThymocyteGlobulinVS",
       "title" : "RxNorm - Anti-Thymocyte Globulin",
@@ -214,7 +218,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-bortezomib-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormBortezomibVS",
       "title" : "RxNorm - Bortezomib",
@@ -223,7 +227,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormBusulfanVS",
       "title" : "RxNorm - Busulfan",
@@ -232,7 +236,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-carmustine-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormCarmustineVS",
       "title" : "RxNorm - Carmustine",
@@ -241,7 +245,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cyclophosphamide-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormCyclophosphamideVS",
       "title" : "RxNorm - Cyclophosphamide",
@@ -250,7 +254,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cytarabine-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormCytarabineVS",
       "title" : "RxNorm - Cytarabine",
@@ -259,7 +263,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-defibrotide-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormDefibrotideVS",
       "title" : "RxNorm - Defibrotide",
@@ -268,7 +272,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-etoposide-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormEtoposideVS",
       "title" : "RxNorm - Etoposide",
@@ -277,7 +281,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-fludarabine-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormFludarabineVS",
       "title" : "RxNorm - Fludarabine",
@@ -286,7 +290,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormGVHDProphylaxisVS",
       "title" : "RxNorm - GVHD Prophylaxis",
@@ -294,12 +298,11 @@
       "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html" : "CIBMTR GVHD Prophylaxis Medication",
       "ValueSet-med-all-form2400-vs.html" : "RxNorm - All of Form 2400"
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-melphalan-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormMelphalanVS",
       "title" : "RxNorm - Melphalan",
@@ -308,7 +311,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormMobilizingAgentsVS",
       "title" : "RxNorm - Mobilizing Agents (auto only)",
@@ -316,12 +319,11 @@
       "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-mobilizing-agent-medication.html" : "CIBMTR Mobilizing Agents Medication",
       "ValueSet-med-all-form2400-vs.html" : "RxNorm - All of Form 2400"
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-post-hct-disease-therapy-planned-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormPostHCTDiseaseTherapyPlannedVS",
       "title" : "RxNorm - Post-HCT Disease Therapy Planned",
@@ -329,12 +331,11 @@
       "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html" : "CIBMTR Planned Post-HCT Disease Therapy Medication",
       "ValueSet-med-all-form2400-vs.html" : "RxNorm - All of Form 2400"
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prep-regimen-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormPrepRegimenVS",
       "title" : "RxNorm - Prep Regimen",
@@ -342,12 +343,11 @@
       "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-prep-regimen-medication.html" : "CIBMTR Prep Regimen Medication",
       "ValueSet-med-all-form2400-vs.html" : "RxNorm - All of Form 2400"
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prior-exposure-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormPriorExposureVS",
       "title" : "RxNorm - Prior Exposure: Potential Study Eligibility",
@@ -355,12 +355,11 @@
       "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-prior-exposure-medication.html" : "CIBMTR Prior Exposure Medication",
       "ValueSet-med-all-form2400-vs.html" : "RxNorm - All of Form 2400"
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-rituximab-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormRituximabVS",
       "title" : "RxNorm - Rituximab",
@@ -369,7 +368,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-thiotepa-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormThiotepaVS",
       "title" : "RxNorm - Thiotepa",
@@ -378,7 +377,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-treosulfan-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormTreosulfanVS",
       "title" : "RxNorm - Treosulfan",
@@ -387,7 +386,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-ursodiol-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "RxNormUrsodiolVS",
       "title" : "RxNorm - Ursodiol",
@@ -396,16 +395,16 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/patient",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "Patient",
-      "title" : "CIBMTR Patient Value Set",
-      "description" : "CIBMTR Patient Value Set",
+      "title" : "CIBMTR Patient Ancestry Value Set",
+      "description" : "US Core Race Categories (Intensional).\r\n1.\nThis value set is used by me",
       "systems" : ["http://loinc.org"]
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/platelet-morphology-blood-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "PlateletMorphologyBloodVS",
       "title" : "Platelet morphology panel - Blood (58406-0)",
@@ -417,7 +416,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/presence-valueset",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "PresenceValueSet",
       "title" : "Presence Answer List",
@@ -426,7 +425,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/smear-morphology-blood-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "SmearMorphologyBloodVS",
       "title" : "Smear morphology panel - Blood (34994-4)",
@@ -438,7 +437,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/snomed-myelodysplastic-diseases-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "SNOMEDMyelodysplasticDiseasesVS",
       "title" : "SNOMED Myelodysplastic Diseases",
@@ -447,15 +446,12 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/vital-signs",
-      "version" : "0.1.9",
+      "version" : "0.1.10",
       "status" : "draft",
       "name" : "VitalSigns",
       "title" : "CIBMTR Vital Signs Value Set",
       "description" : "CIBMTR Vital Signs Value Set",
-      "systems" : ["http://loinc.org"],
-      "uses" : {
-      },
-      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (us-core)"
+      "systems" : ["http://loinc.org"]
     }
   ]
 }

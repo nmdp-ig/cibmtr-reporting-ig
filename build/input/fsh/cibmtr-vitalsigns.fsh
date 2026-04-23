@@ -1,12 +1,23 @@
-Profile:        CIBMTRVitalSignsVariables
-Parent:         us-core-vital-signs 
-Id:             cibmtr-vital-signs
-Title:          "CIBMTR Vital Signs Results Profile (us-core)"
-Description:    "CIBMTR Vital Signs Results Profile (us-core)"
+Alias: $VSAC-CIBMTR-VitalSigns = https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.1/expansion
+
+ValueSet: CIBMTRConceptSet_VitalSigns
+Id: cibmtr-cs-vitalsigns
+Title: "CIBMTR Vital Signs Concept Set"
+Description: "CIBMTR Vital Signs Concept Set"
+* ^status = #active
+* ^experimental = false
+
+
+
+
+Profile: CIBMTRVitalSignsVariables
+Parent: us-core-vital-signs
+Id: cibmtr-vital-signs
+Title: "CIBMTR Vital Signs Results Profile (US Core)"
 * insert MetaSecurityRules
 * effective[x] 1..1
-* value[x] only Quantity or CodeableConcept
-* code.coding from VitalSigns (extensible)
+* value[x] only Quantity
+* code from $VSAC-CIBMTR-VitalSigns (extensible)
 
 
 // --------------------------------------------------------------------------

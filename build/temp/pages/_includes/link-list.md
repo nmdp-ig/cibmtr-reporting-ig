@@ -61,15 +61,16 @@
 [GVHD Prophylaxis Medication]: StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html
 [Planned Post-HCT Disease Therapy Medication]: StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html
 [Prior Exposure Medication]: StructureDefinition-cibmtr-prior-exposure-medication.html
-[CIBMTR Priority Variables for FY22]: ValueSet-cibmtr-priority-variables-2022.html
-[LOINC Codes used in Vital Signs]: ValueSet-vital-signs.html
-[Mobilizing Agents (auto only)]: ValueSet-med-mobilizing-agents-vs.html
-[Prep Regimen]: ValueSet-med-prep-regimen-vs.html
-[Additional Drugs in Peri-Transplant Period]: ValueSet-med-addition-peri-transplant-vs.html
-[GVHD Prophylaxis]: ValueSet-med-gvhd-prophylaxis-vs.html
-[Post-HCT Disease Therapy Planned]: ValueSet-med-post-hct-disease-therapy-planned-vs.html
-[Prior Exposure: Potential Study Eligibility]: ValueSet-med-prior-exposure-vs.html
-[All Form 2400 Medications]: ValueSet-med-all-form2400-vs.html
+[CIBMTR Priority Variables for FY22]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.7/expansion/Latest
+[Vital Signs Value Set]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.1/expansion/Latest
+[Patient Ancestry Value Set]: ValueSet-patient.html
+[Mobilizing Agents (auto only)]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.2/expansion/Latest
+[Prep Regimen]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.6/expansion/Latest
+[Additional Drugs in Peri-Transplant Period]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.4/expansion/Latest
+[GVHD Prophylaxis]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.8/expansion/Latest
+[Post-HCT Disease Therapy Planned]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.9/expansion/Latest
+[Prior Exposure: Potential Study Eligibility]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.10/expansion/Latest
+[All Form 2400 Medications]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.11/expansion/Latest
 [US-Core Laboratory Observation]: https://hl7.org/fhir/us/core/StructureDefinition-us-core-observation-lab.html
 [US-Core Laboratory Vital Signs]: https://hl7.org/fhir/us/core/StructureDefinition-us-core-vital-signs.html
 [FHIR core specification vital signs table]: https://hl7.org/fhir/R4/observation-vitalsigns.html#vitals-table.html

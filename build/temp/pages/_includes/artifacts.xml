@@ -131,9 +131,9 @@
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-cibmtr-vital-signs.html"
-                  title="StructureDefinition/cibmtr-vital-signs">CIBMTR Vital Signs Results Profile (us-core)</a>
+                  title="StructureDefinition/cibmtr-vital-signs">CIBMTR Vital Signs Results Profile (US Core)</a>
             </td>
-            <td>{% capture desc %}CIBMTR Vital Signs Results Profile (us-core){% endcapture %}
+            <td>{% capture desc %}{% endcapture %}
 {{ desc | markdownify}}</td>
          </tr>
          <tr>
@@ -201,9 +201,11 @@
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-patient.html" title="ValueSet/patient">CIBMTR Patient Value Set</a>
+               <a href="ValueSet-patient.html" title="ValueSet/patient">CIBMTR Patient Ancestry Value Set</a>
             </td>
-            <td>{% capture desc %}CIBMTR Patient Value Set{% endcapture %}
+            <td>{% capture desc %}US Core Race Categories (Intensional).&#xD;
+1.
+This value set is used by me{% endcapture %}
 {{ desc | markdownify}}</td>
          </tr>
          <tr>
@@ -228,6 +230,14 @@
                   title="ValueSet/cibmtr-priority-variables-epic-2021">CIBMTR Priority Variables Value Set for Epic App (FY21)</a>
             </td>
             <td>{% capture desc %}Priority Variables for Epic CIBMTR Reporting App (FY21){% endcapture %}
+{{ desc | markdownify}}</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-cibmtr-cs-vitalsigns.html"
+                  title="ValueSet/cibmtr-cs-vitalsigns">CIBMTR Vital Signs Concept Set</a>
+            </td>
+            <td>{% capture desc %}CIBMTR Vital Signs Concept Set{% endcapture %}
 {{ desc | markdownify}}</td>
          </tr>
          <tr>

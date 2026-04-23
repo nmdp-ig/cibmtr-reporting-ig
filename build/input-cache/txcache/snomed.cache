@@ -9,7 +9,7 @@
     "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
   },
   {
-    "name" : "displayLanguage",
+    "name" : "defaultDisplayLanguage",
     "valueCode" : "en-US"
   }]
 }}####
@@ -19,6 +19,7 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
   "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \"[http://snomed.info/sct#234646005 (\"undefined\")]\"\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \"http://snomed.info/sct#234646005\"\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at Coding\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \"234646005\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -36,7 +37,7 @@ v: {
     "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
   },
   {
-    "name" : "displayLanguage",
+    "name" : "defaultDisplayLanguage",
     "valueCode" : "en-US"
   }]
 }}####
@@ -46,6 +47,7 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
   "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \"[http://snomed.info/sct#414027002 (\"undefined\")]\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \"http://snomed.info/sct#414027002\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at Coding\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \"414027002\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -53,7 +55,7 @@ v: {
 
 }
 -------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
+{"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
     "inactive" : false,
@@ -76,17 +78,17 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:475439ae-4605-40ab-bd54-c501fbfb5582",
-    "timestamp" : "2025-09-19T20:09:23.283Z",
+    "identifier" : "urn:uuid:e7d5f607-5c0e-4a7b-a515-5a9b7c4d5690",
+    "timestamp" : "2026-04-22T09:06:37.972Z",
     "total" : 2,
     "offset" : 0,
     "parameter" : [{
-      "name" : "displayLanguage",
-      "valueCode" : "en-US"
+      "name" : "excludeNested",
+      "valueBoolean" : false
     },
     {
-      "name" : "excludeNested",
-      "valueBoolean" : true
+      "name" : "includeDefinition",
+      "valueBoolean" : false
     },
     {
       "name" : "offset",
@@ -98,10 +100,6 @@ e: {
     },
     {
       "name" : "used-codesystem",
-      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
-    },
-    {
-      "name" : "version",
       "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
     }],
     "contains" : [{
@@ -129,7 +127,7 @@ e: {
     "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
   },
   {
-    "name" : "displayLanguage",
+    "name" : "defaultDisplayLanguage",
     "valueCode" : "en-US"
   }]
 }}####
@@ -139,6 +137,7 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
   "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \"[http://snomed.info/sct#109995007 (\"undefined\")]\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \"http://snomed.info/sct#109995007\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at Coding\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \"109995007\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -156,7 +155,7 @@ v: {
     "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
   },
   {
-    "name" : "displayLanguage",
+    "name" : "defaultDisplayLanguage",
     "valueCode" : "en-US"
   }]
 }}####
@@ -166,6 +165,7 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
   "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \"[http://snomed.info/sct#234646005 (\"undefined\")]\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \"http://snomed.info/sct#234646005\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at Coding\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \"234646005\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -183,7 +183,7 @@ v: {
     "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
   },
   {
-    "name" : "displayLanguage",
+    "name" : "defaultDisplayLanguage",
     "valueCode" : "en-US"
   }]
 }}####
@@ -193,6 +193,7 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
   "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \"[http://snomed.info/sct#414027002 (\"undefined\")]\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \"http://snomed.info/sct#414027002\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at Coding\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \"414027002\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -202,15 +203,16 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://snomed.info/sct",
-  "code" : "52101004"
-}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "code" : "52101004",
+  "display" : "Present"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"true", "versionFlexible":"true", "profile": {
   "resourceType" : "Parameters",
   "parameter" : [{
     "name" : "x-system-cache-id",
     "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
   },
   {
-    "name" : "displayLanguage",
+    "name" : "defaultDisplayLanguage",
     "valueCode" : "en-US"
   }]
 }}####
@@ -220,6 +222,7 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
   "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \"[http://snomed.info/sct#52101004 (\"Present\")]\"\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \"http://snomed.info/sct#52101004\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at Coding\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \"52101004\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -229,15 +232,16 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://snomed.info/sct",
-  "code" : "2667000"
-}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "code" : "2667000",
+  "display" : "Absent"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"true", "versionFlexible":"true", "profile": {
   "resourceType" : "Parameters",
   "parameter" : [{
     "name" : "x-system-cache-id",
     "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
   },
   {
-    "name" : "displayLanguage",
+    "name" : "defaultDisplayLanguage",
     "valueCode" : "en-US"
   }]
 }}####
@@ -264,7 +268,7 @@ v: {
     "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
   },
   {
-    "name" : "displayLanguage",
+    "name" : "defaultDisplayLanguage",
     "valueCode" : "en-US"
   }]
 }}####
@@ -274,6 +278,7 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
   "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \"[http://snomed.info/sct#109995007 (\"undefined\")]\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \"http://snomed.info/sct#109995007\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at Coding\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \"109995007\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -282,17 +287,19 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "47625008",
-  "display" : "Intravenous route"
-}, "valueSet" :null, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "47625008",
+    "display" : "Intravenous route"
+  }]
+}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
   "resourceType" : "Parameters",
   "parameter" : [{
     "name" : "x-system-cache-id",
     "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
   },
   {
-    "name" : "displayLanguage",
+    "name" : "defaultDisplayLanguage",
     "valueCode" : "en-US"
   }]
 }}####
@@ -302,6 +309,7 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
   "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \"[http://snomed.info/sct#47625008 (\"Intravenous route\")]\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \"http://snomed.info/sct#47625008\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \"47625008\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -310,17 +318,19 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "422145002",
-  "display" : "Inject - dosing instruction imperative (qualifier value)"
-}, "valueSet" :null, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "422145002",
+    "display" : "Inject - dosing instruction imperative (qualifier value)"
+  }]
+}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
   "resourceType" : "Parameters",
   "parameter" : [{
     "name" : "x-system-cache-id",
     "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
   },
   {
-    "name" : "displayLanguage",
+    "name" : "defaultDisplayLanguage",
     "valueCode" : "en-US"
   }]
 }}####
@@ -330,6 +340,7 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
   "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \"[http://snomed.info/sct#422145002 (\"Inject - dosing instruction imperative (qualifier value)\")]\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \"http://snomed.info/sct#422145002\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \"422145002\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -338,17 +349,19 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "418114005",
-  "display" : "Intravenous central route (qualifier value)"
-}, "valueSet" :null, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "418114005",
+    "display" : "Intravenous central route (qualifier value)"
+  }]
+}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
   "resourceType" : "Parameters",
   "parameter" : [{
     "name" : "x-system-cache-id",
     "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
   },
   {
-    "name" : "displayLanguage",
+    "name" : "defaultDisplayLanguage",
     "valueCode" : "en-US"
   }]
 }}####
@@ -358,6 +371,7 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
   "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \"[http://snomed.info/sct#418114005 (\"Intravenous central route (qualifier value)\")]\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \"http://snomed.info/sct#418114005\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \"418114005\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -366,26 +380,29 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "112144000",
-  "display" : "Blood group A (finding)"
-}, "valueSet" :null, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "112144000",
+    "display" : "Blood group A (finding)"
+  }]
+}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
   "resourceType" : "Parameters",
   "parameter" : [{
     "name" : "x-system-cache-id",
     "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
   },
   {
-    "name" : "displayLanguage",
+    "name" : "defaultDisplayLanguage",
     "valueCode" : "en-US"
   }]
 }}####
 v: {
-  "display" : "Blood group A",
+  "display" : "Blood group A (ABO blood group)",
   "code" : "112144000",
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
   "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \"[http://snomed.info/sct#112144000 (\"Blood group A (finding)\")]\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \"http://snomed.info/sct#112144000\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \"112144000\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -394,17 +411,19 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "278147001",
-  "display" : "Blood group O Rh(D) positive (finding)"
-}, "valueSet" :null, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "278147001",
+    "display" : "Blood group O Rh(D) positive (finding)"
+  }]
+}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
   "resourceType" : "Parameters",
   "parameter" : [{
     "name" : "x-system-cache-id",
     "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
   },
   {
-    "name" : "displayLanguage",
+    "name" : "defaultDisplayLanguage",
     "valueCode" : "en-US"
   }]
 }}####
@@ -414,6 +433,7 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
   "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \"[http://snomed.info/sct#278147001 (\"Blood group O Rh(D) positive (finding)\")]\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \"http://snomed.info/sct#278147001\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \"278147001\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -422,17 +442,19 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "10828004",
-  "display" : "Positive (qualifier value)"
-}, "valueSet" :null, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "10828004",
+    "display" : "Positive (qualifier value)"
+  }]
+}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
   "resourceType" : "Parameters",
   "parameter" : [{
     "name" : "x-system-cache-id",
     "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
   },
   {
-    "name" : "displayLanguage",
+    "name" : "defaultDisplayLanguage",
     "valueCode" : "en-US"
   }]
 }}####
@@ -442,6 +464,7 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
   "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \"[http://snomed.info/sct#10828004 (\"Positive (qualifier value)\")]\"\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \"http://snomed.info/sct#10828004\"\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \"10828004\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -450,17 +473,19 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "11214006",
-  "display" : "Reactive (qualifier value)"
-}, "valueSet" :null, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "11214006",
+    "display" : "Reactive (qualifier value)"
+  }]
+}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
   "resourceType" : "Parameters",
   "parameter" : [{
     "name" : "x-system-cache-id",
     "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
   },
   {
-    "name" : "displayLanguage",
+    "name" : "defaultDisplayLanguage",
     "valueCode" : "en-US"
   }]
 }}####
@@ -470,34 +495,7 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
   "server" : "https://tx.fhir.org/r4",
-  "unknown-systems" : "",
-  "issues" : {
-  "resourceType" : "OperationOutcome"
-}
-
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "426329006",
-  "display" : "Fluorescence in situ hybridization"
-}, "valueSet" :null, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
-  "resourceType" : "Parameters",
-  "parameter" : [{
-    "name" : "x-system-cache-id",
-    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
-  },
-  {
-    "name" : "displayLanguage",
-    "valueCode" : "en-US"
-  }]
-}}####
-v: {
-  "display" : "Fluorescence in situ hybridization (procedure)",
-  "code" : "426329006",
-  "system" : "http://snomed.info/sct",
-  "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
-  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \"[http://snomed.info/sct#11214006 (\"Reactive (qualifier value)\")]\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \"http://snomed.info/sct#11214006\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \"11214006\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -529,15 +527,16 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:f78a2212-3e8f-417e-81f6-19ca565f0448",
-    "timestamp" : "2025-09-19T20:14:38.433Z",
+    "identifier" : "urn:uuid:c2364253-ed9f-4aac-bbd5-cec816eac11b",
+    "timestamp" : "2026-04-22T09:10:26.600Z",
+    "total" : 18,
     "offset" : 0,
     "parameter" : [{
-      "name" : "displayLanguage",
-      "valueCode" : "en-US"
+      "name" : "excludeNested",
+      "valueBoolean" : false
     },
     {
-      "name" : "excludeNested",
+      "name" : "includeDefinition",
       "valueBoolean" : false
     },
     {
@@ -551,10 +550,6 @@ e: {
     {
       "name" : "used-codesystem",
       "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
-    },
-    {
-      "name" : "version",
-      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -564,37 +559,37 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "402355000",
-      "display" : "Acute graft-versus-host disease (disorder)"
+      "display" : "Acute graft-versus-host disease"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "402356004",
-      "display" : "Chronic graft-versus-host disease (disorder)"
+      "display" : "Chronic graft-versus-host disease"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "402357008",
-      "display" : "Lichenoid chronic graft-versus-host disease (disorder)"
+      "display" : "Lichenoid chronic graft-versus-host disease"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "402358003",
-      "display" : "Sclerodermoid chronic graft-versus-host disease (disorder)"
+      "display" : "Sclerodermoid chronic graft-versus-host disease"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "402360001",
-      "display" : "Materno-fetal graft-versus-host disease (disorder)"
+      "display" : "Materno-fetal graft-versus-host disease"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "444547006",
-      "display" : "Graft versus host disease of skin (disorder)"
+      "display" : "Cutaneous graft-versus-host disease"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "762618008",
-      "display" : "Bronchiolitis obliterans syndrome due to and after lung transplantation (disorder)"
+      "display" : "Bronchiolitis obliterans syndrome due to and after lung transplantation"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -604,7 +599,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "1144907001",
-      "display" : "Late acute graft-versus-host disease (disorder)"
+      "display" : "Late acute graft-versus-host disease"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -614,7 +609,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "1144963000",
-      "display" : "Acute on chronic graft-versus-host disease (disorder)"
+      "display" : "Acute on chronic graft-versus-host disease"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -624,7 +619,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "1268379007",
-      "display" : "Graft versus host disease of intestine (disorder)"
+      "display" : "Graft versus host disease of intestine"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -634,17 +629,17 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "128621000119106",
-      "display" : "Acute on chronic graft versus host disease following transplant of kidney (disorder)"
+      "display" : "Acute on chronic graft versus host disease following transplant of kidney"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "128641000119100",
-      "display" : "Acute graft-versus-host disease following transplant of kidney (disorder)"
+      "display" : "Acute graft-versus-host disease following transplant of kidney"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "128651000119103",
-      "display" : "Graft-versus-host disease following transplant of kidney (disorder)"
+      "display" : "Graft-versus-host disease following transplant of kidney"
     }]
   }
 },
@@ -675,15 +670,16 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:f6e6a4e2-2112-4536-a718-5451cae343cd",
-    "timestamp" : "2025-09-19T20:14:39.308Z",
+    "identifier" : "urn:uuid:49bd5006-555d-49f2-a349-e25a200f3eeb",
+    "timestamp" : "2026-04-22T09:10:27.928Z",
+    "total" : 1509,
     "offset" : 0,
     "parameter" : [{
-      "name" : "displayLanguage",
-      "valueCode" : "en-US"
+      "name" : "excludeNested",
+      "valueBoolean" : false
     },
     {
-      "name" : "excludeNested",
+      "name" : "includeDefinition",
       "valueBoolean" : false
     },
     {
@@ -697,15 +693,11 @@ e: {
     {
       "name" : "used-codesystem",
       "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
-    },
-    {
-      "name" : "version",
-      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
       "code" : "414027002",
-      "display" : "Disorder of hematopoietic structure (disorder)"
+      "display" : "Disorder of hematopoietic structure"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -720,7 +712,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "1551001",
-      "display" : "Osteomyelitis of femur (disorder)"
+      "display" : "Osteomyelitis of femur"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -1250,7 +1242,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "49498000",
-      "display" : "Mesenteric adenitis caused by Pasteurella multocida (disorder)"
+      "display" : "Mesenteric adenitis caused by Pasteurella multocida"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -2915,7 +2907,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "109998009",
-      "display" : "Myelodysplastic syndrome with ring sideroblasts and single lineage dysplasia (disorder)"
+      "display" : "Myelodysplastic syndrome with ring sideroblasts and single lineage dysplasia"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -3010,7 +3002,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "111590001",
-      "display" : "Disorder of lymphoid system (disorder)"
+      "display" : "Disorder of lymphoid system"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -4100,7 +4092,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "129642004",
-      "display" : "Chronic idiopathic immunoneutropenia in adult (disorder)"
+      "display" : "Chronic idiopathic immunoneutropenia in adult"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -4410,7 +4402,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "188662007",
-      "display" : "Mast cell malignancy of lymph nodes of head and neck (disorder)"
+      "display" : "Mast cell malignancy of lymph nodes of head and neck"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -4540,7 +4532,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "191382009",
-      "display" : "Chronic congestive splenomegaly (disorder)"
+      "display" : "Chronic congestive splenomegaly"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -4710,7 +4702,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "203166007",
-      "display" : "Acute osteomyelitis of ulna (disorder)"
+      "display" : "Acute osteomyelitis of ulna"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -4740,12 +4732,12 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "203172007",
-      "display" : "Acute osteomyelitis of tibia (disorder)"
+      "display" : "Acute osteomyelitis of tibia"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "203173002",
-      "display" : "Acute osteomyelitis of fibula (disorder)"
+      "display" : "Acute osteomyelitis of fibula"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -4775,7 +4767,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "203184009",
-      "display" : "Chronic osteomyelitis of shoulder (disorder)"
+      "display" : "Chronic osteomyelitis of shoulder"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -4790,7 +4782,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "203189004",
-      "display" : "Chronic osteomyelitis of lower leg (disorder)"
+      "display" : "Chronic osteomyelitis of lower leg"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -5115,7 +5107,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "240142002",
-      "display" : "Acute osteomyelitis of foot (disorder)"
+      "display" : "Acute osteomyelitis of foot"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -5285,7 +5277,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "268019002",
-      "display" : "Chronic osteomyelitis of ankle and/or foot (disorder)"
+      "display" : "Chronic osteomyelitis of ankle and/or foot"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -5330,12 +5322,12 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "275486007",
-      "display" : "Chronic disease of tonsil (disorder)"
+      "display" : "Chronic disease of tonsil"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "275487003",
-      "display" : "Chronic disease of adenoid (disorder)"
+      "display" : "Chronic adenoid disease"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -5420,7 +5412,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "277597005",
-      "display" : "Myelodysplastic syndrome with isolated del(5q) (disorder)"
+      "display" : "5q minus syndrome"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -5620,7 +5612,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "314214009",
-      "display" : "Chronic osteomyelitis of tibia (disorder)"
+      "display" : "Chronic osteomyelitis of tibia"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -5685,22 +5677,22 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "371012000",
-      "display" : "Acute lymphoblastic leukemia, transitional pre-B-cell (disorder)"
+      "display" : "Acute lymphoblastic leukaemia, transitional pre-B-cell"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "371551001",
-      "display" : "Osteomyelitis of upper limb (disorder)"
+      "display" : "Osteomyelitis of upper limb"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "372020000",
-      "display" : "Primary malignant neoplasm of tonsil (disorder)"
+      "display" : "Primary malignant neoplasm of tonsil"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "373422007",
-      "display" : "Diarrhea-negative hemolytic uremic syndrome (disorder)"
+      "display" : "Endemic haemolytic uraemic syndrome"
     }]
   }
 },
@@ -5730,17 +5722,17 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:3ed6ab1d-e0c6-4e78-8055-9b6b3cad752b",
-    "timestamp" : "2025-09-19T20:15:07.767Z",
+    "identifier" : "urn:uuid:0b4e3ec2-33d6-4194-9904-ac7d5f8816ab",
+    "timestamp" : "2026-04-22T09:11:01.184Z",
     "total" : 2,
     "offset" : 0,
     "parameter" : [{
-      "name" : "displayLanguage",
-      "valueCode" : "en-US"
-    },
-    {
       "name" : "excludeNested",
       "valueBoolean" : true
+    },
+    {
+      "name" : "includeDefinition",
+      "valueBoolean" : false
     },
     {
       "name" : "offset",
@@ -5752,10 +5744,6 @@ e: {
     },
     {
       "name" : "used-codesystem",
-      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
-    },
-    {
-      "name" : "version",
       "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
     }],
     "contains" : [{
@@ -5797,15 +5785,16 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:873c367a-ce88-4b9c-a30f-b305da353d78",
-    "timestamp" : "2025-09-19T20:15:08.396Z",
+    "identifier" : "urn:uuid:ed4789cf-7d35-48a3-a0bc-816cedf1d00b",
+    "timestamp" : "2026-04-22T09:11:02.245Z",
+    "total" : 15,
     "offset" : 0,
     "parameter" : [{
-      "name" : "displayLanguage",
-      "valueCode" : "en-US"
+      "name" : "excludeNested",
+      "valueBoolean" : false
     },
     {
-      "name" : "excludeNested",
+      "name" : "includeDefinition",
       "valueBoolean" : false
     },
     {
@@ -5819,10 +5808,6 @@ e: {
     {
       "name" : "used-codesystem",
       "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
-    },
-    {
-      "name" : "version",
-      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -5832,12 +5817,12 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "109998009",
-      "display" : "Myelodysplastic syndrome with ring sideroblasts and single lineage dysplasia (disorder)"
+      "display" : "Myelodysplastic syndrome with ring sideroblasts and single lineage dysplasia"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "277597005",
-      "display" : "Myelodysplastic syndrome with isolated del(5q) (disorder)"
+      "display" : "5q minus syndrome"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -5862,17 +5847,17 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "705061009",
-      "display" : "Childhood myelodysplastic syndrome (disorder)"
+      "display" : "Childhood myelodysplastic syndrome"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "721304007",
-      "display" : "Refractory thrombocytopenia (disorder)"
+      "display" : "Refractory thrombocytopenia"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "1177173001",
-      "display" : "Congenital progressive bone marrow failure, B-cell immunodeficiency, skeletal dysplasia syndrome (disorder)"
+      "display" : "MYSM1 deficiency"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -5882,22 +5867,22 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "1260268001",
-      "display" : "Myelodysplastic syndrome with low blasts (disorder)"
+      "display" : "Myelodysplastic syndrome with low blasts"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "1260270005",
-      "display" : "Hypoplastic myelodysplastic syndrome (disorder)"
+      "display" : "Hypoplastic myelodysplastic syndrome"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "1260406003",
-      "display" : "Myelodysplastic neoplasm with biallelic TP53 inactivation (disorder)"
+      "display" : "Myelodysplastic neoplasm with biallelic TP53 inactivation"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "1264416003",
-      "display" : "Unclassifiable myelodysplastic syndrome (disorder)"
+      "display" : "Unclassifiable myelodysplastic syndrome"
     }]
   }
 },

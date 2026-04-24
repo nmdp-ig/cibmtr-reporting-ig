@@ -1,0 +1,207 @@
+# Build CIBMTR Reporting IG with SUSHI + IG Publisher + go-publish,
+# deploy to GitHub Pages and commit publication artifacts to deploy-ready branch.
+#
+# Preview at: https://nmdp-ig.github.io/cibmtr-reporting-ig/
+#
+# Setup (one-time):
+#   Settings > Pages > Source: GitHub Actions
+#   Settings > Actions > General > Workflow permissions: Read and write
+
+name: Build & Publish IG
+
+on:
+  push:
+    branches: [main, "feature/**"]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: "pages-${{ github.ref }}"
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: build
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+
+      - name: Install Jekyll
+        run: gem install jekyll
+        working-directory: .
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install SUSHI
+        run: npm install -g fsh-sushi
+        working-directory: .
+
+      - name: Run SUSHI
+        run: sushi .
+
+      - name: Download IG Publisher
+        run: |
+          mkdir -p input-cache
+          curl -L -o input-cache/publisher.jar \
+            https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
+
+      # Extract version and canonical from sushi-config.yaml
+      - name: Get IG metadata
+        id: meta
+        run: |
+          VERSION=$(grep '^version:' sushi-config.yaml | awk '{print $2}')
+          CANONICAL=$(grep '^canonical:' sushi-config.yaml | awk '{print $2}')
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "canonical=$CANONICAL" >> $GITHUB_OUTPUT
+          echo "Building $CANONICAL version $VERSION"
+
+      # Standard build with -publish flag for publication URLs
+      - name: Build IG
+        run: |
+          java -Xmx8g -jar input-cache/publisher.jar publisher \
+            -ig ig.ini \
+            -publish ${{ steps.meta.outputs.canonical }}/${{ steps.meta.outputs.version }}
+
+      # Clone dependencies for go-publish
+      - name: Setup publication dependencies
+        working-directory: .
+        run: |
+          git clone --depth 1 https://github.com/HL7/fhir-ig-history-template.git fhir-ig-history-template
+          git clone --depth 1 https://github.com/FHIR/ig-registry.git ig-registry
+
+      # Prepare web-root for publication
+      - name: Prepare web-root
+        working-directory: .
+        run: |
+          mkdir -p publication/web-root/cibmtr-reporting
+
+          # Pull existing versioned directories from deploy-ready (preserves old versions)
+          git clone --single-branch --branch deploy-ready --depth 1 \
+            https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git \
+            /tmp/existing-deploy 2>/dev/null || true
+          if [ -d /tmp/existing-deploy/publication/web-root/cibmtr-reporting ]; then
+            # Copy only versioned directories (0.x.x) from existing deploy
+            for dir in /tmp/existing-deploy/publication/web-root/cibmtr-reporting/0.*/; do
+              if [ -d "$dir" ]; then
+                cp -r "$dir" publication/web-root/cibmtr-reporting/
+              fi
+            done
+          fi
+
+          # Copy history template (provides history.html, history.js, etc.)
+          cp -r fhir-ig-history-template/* publication/web-root/cibmtr-reporting/ 2>/dev/null || true
+          # Overlay IG output on top (rendered files take precedence over template placeholders)
+          cp -r build/output/* publication/web-root/cibmtr-reporting/
+          # Copy output to versioned directory
+          mkdir -p publication/web-root/cibmtr-reporting/${{ steps.meta.outputs.version }}
+          cp -r build/output/* publication/web-root/cibmtr-reporting/${{ steps.meta.outputs.version }}/
+
+      # Run publish-update to generate history and package registry
+      - name: Run publish-update
+        working-directory: .
+        run: |
+          cp build/publish-setup.json publication/web-root/cibmtr-reporting/publish-setup.json
+          # Must copy AFTER the output overlay since build/output/ has its own single-version package-list.json
+          cp build/package-list.json publication/web-root/cibmtr-reporting/package-list.json
+          echo "y" | java -Xmx4g -jar build/input-cache/publisher.jar \
+            -publish-update \
+            -folder publication/web-root/cibmtr-reporting \
+            -registry ig-registry/fhir-ig-list.json \
+            -history fhir-ig-history-template
+        continue-on-error: true
+
+      # Apply CIBMTR theme to history page (which uses its own CSS from the history template)
+      - name: Apply CIBMTR theme to history page
+        working-directory: .
+        run: |
+          # Copy CIBMTR CSS to assets-hist so history.html can reference it
+          mkdir -p publication/web-root/cibmtr-reporting/assets-hist/css
+          cp build/cibmtr-template/content/assets/css/cibmtr.css publication/web-root/cibmtr-reporting/assets-hist/css/cibmtr.css
+          # Inject CIBMTR CSS link into history.html
+          if [ -f publication/web-root/cibmtr-reporting/history.html ]; then
+            sed -i 's|</head>|<link href="assets-hist/css/cibmtr.css" rel="stylesheet"/>\n</head>|' publication/web-root/cibmtr-reporting/history.html
+            # Fix pageJSON: replace the embedded package-list data with our full version list
+            PAGEJSON=$(cat build/package-list.json | tr -d '\n' | sed "s/'/\\\\'/g")
+            sed -i "s|var pageJSON = '.*';|var pageJSON = '${PAGEJSON}';|" publication/web-root/cibmtr-reporting/history.html
+          fi
+
+      # Stash publication output before switching branches
+      - name: Stash publication output
+        working-directory: .
+        run: cp -r publication/web-root/cibmtr-reporting /tmp/pub-output
+
+      - name: Upload QA artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ig-output
+          path: |
+            build/output/qa.html
+            build/output/qa.json
+            build/output/qa.txt
+          retention-days: 30
+
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: publication/web-root/cibmtr-reporting/
+
+      # Commit publication artifacts to deploy-ready branch
+      - name: Commit to deploy-ready
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: |
+          # Use a fresh clone to avoid any large files from the build
+          cd /tmp
+          git clone --depth 1 https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git deploy-repo || \
+            git init deploy-repo
+          cd deploy-repo
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Create orphan branch with only publication output
+          git checkout --orphan deploy-ready
+          git rm -rf . 2>/dev/null || true
+          find . -not -path './.git/*' -not -name '.git' -delete 2>/dev/null || true
+
+          mkdir -p publication/web-root
+          cp -r /tmp/pub-output publication/web-root/cibmtr-reporting
+
+          git add -A
+          git commit -m "Publication build from ${{ github.sha }} (v${{ steps.meta.outputs.version }})"
+          git push https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git deploy-ready --force
+
+  deploy:
+    needs: build
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

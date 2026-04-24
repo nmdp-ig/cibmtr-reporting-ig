@@ -132,19 +132,30 @@ jobs:
             -history fhir-ig-history-template
         continue-on-error: true
 
-      # Apply CIBMTR theme to history page (which uses its own CSS from the history template)
+      # Apply CIBMTR theme and fix history page JS/CSS
       - name: Apply CIBMTR theme to history page
         working-directory: .
         run: |
+          WEBROOT=publication/web-root/cibmtr-reporting
+
           # Copy CIBMTR CSS to assets-hist so history.html can reference it
-          mkdir -p publication/web-root/cibmtr-reporting/assets-hist/css
-          cp build/cibmtr-template/content/assets/css/cibmtr.css publication/web-root/cibmtr-reporting/assets-hist/css/cibmtr.css
-          # Inject CIBMTR CSS link into history.html
-          if [ -f publication/web-root/cibmtr-reporting/history.html ]; then
-            sed -i 's|</head>|<link href="assets-hist/css/cibmtr.css" rel="stylesheet"/>\n</head>|' publication/web-root/cibmtr-reporting/history.html
+          mkdir -p $WEBROOT/assets-hist/css
+          cp build/cibmtr-template/content/assets/css/cibmtr.css $WEBROOT/assets-hist/css/cibmtr.css
+
+          if [ -f $WEBROOT/history.html ]; then
+            # Inject CIBMTR CSS link
+            sed -i 's|</head>|<link href="assets-hist/css/cibmtr.css" rel="stylesheet"/>\n</head>|' $WEBROOT/history.html
+
+            # Download HL7 history JS locally (GitHub Pages CSP blocks external scripts)
+            curl -sL -o $WEBROOT/history-cm.js https://hl7.org/fhir/history-cm.js
+            curl -sL -o $WEBROOT/history.js https://hl7.org/fhir/history.js
+            # Rewrite history.html to use local JS instead of remote HL7 URLs
+            sed -i 's|https://hl7.org/fhir/history-cm.js|history-cm.js|g' $WEBROOT/history.html
+            sed -i 's|https://hl7.org/fhir/history.js|history.js|g' $WEBROOT/history.html
+
             # Fix pageJSON: replace the embedded package-list data with our full version list
             PAGEJSON=$(cat build/package-list.json | tr -d '\n' | sed "s/'/\\\\'/g")
-            sed -i "s|var pageJSON = '.*';|var pageJSON = '${PAGEJSON}';|" publication/web-root/cibmtr-reporting/history.html
+            sed -i "s|var pageJSON = '.*';|var pageJSON = '${PAGEJSON}';|" $WEBROOT/history.html
           fi
 
       # Stash publication output before switching branches

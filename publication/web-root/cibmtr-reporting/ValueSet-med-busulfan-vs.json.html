@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>RxNorm - Busulfan - JSON Representation - CIBMTR Reporting Implementation Guide v0.1.9</title>
+    <title>RxNorm - Busulfan - JSON Representation - CIBMTR Reporting Implementation Guide v0.1.11</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -44,17 +44,86 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"17.42"}
-    h3,h4,h5,h6{--heading-prefix:"17.42"}</style>
+    <style type="text/css">h2{--heading-prefix:"17.46"}
+    h3,h4,h5,h6{--heading-prefix:"17.46"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
         <!-- Placeholder for child template header declarations -->
 
+
+<style>
+/* ===== GLOBAL FONT (match IG clean style) ===== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== HEADER AREA ===== */
+#cibmtr-nav {
+  /*display: flex;
+  align-items: center; */
+  justify-content: space-between;
+  padding: 15px 30px;     /* ↑↓ 15px, ←→ 30px */
+  margin-bottom: 5px;
+}
+
+/* ===== LOGO ===== */
+#cibmtr-logo img {
+  display: block;
+  height: 70px;
+  margin-right: 20px;
+}
+
+/* ===== TITLE AREA ===== */
+.ig-title {
+  margin-top: 25px;  
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.ig-title h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #0b3d5c;
+  margin: 10px 0 0 0;
+}
+
+.ig-title p {
+  margin: 25px 0 0 0;
+  font-size: 16px;
+  color: #333;
+}
+
+
+/* ===== NAV BAR SPACING ===== */
+.navbar {
+  margin-top: 2px;
+}
+
+/* ===== YELLOW INFO BOX (FHIR IG banner) ===== */
+.alert, .ig-note {
+  padding: 18px 24px !important;
+  margin: 20px 0 !important;
+  border: 2px solid #c8b68a !important;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+/* ===== PAGE TITLE ===== */
+h1 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+</style>
+
+
+<!-- ===== HEADER HTML ===== -->
 <div id="cibmtr-nav">
+<!--div id="cibmtr-nav" style="padding: 16px 0 16px 16px;">-->
+<!--div id="cibmtr-nav">-->
   <a id="cibmtr-logo" no-external="true" href="http://www.cibmtr.org">
     <!-- <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png" /> -->
-    <img height="80" alt="Visit the CIBMTR website"
+    <img height="70" alt="Visit the CIBMTR website"
       src="assets/images/cibmtr-logo-header-3.png" />
   </a>
 </div>
@@ -62,7 +131,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.9 - Trial Use 1
+            <span style="display:inline-block;">0.1.11 - Trial Use 1
 
 
             </span>
@@ -110,9 +179,6 @@
         <a href="Access-Credentials.html">Access Credentials</a>
       </li>
       <li>
-        <a href="CRID-Assignment_Non-FHIR.html">CRID Assignment_Non-FHIR API</a>
-      </li>
-      <li>
         <a href="CRID-Assignment_FHIR.html">CRID Assignment_FHIR API</a>
       </li>
       <li>
@@ -122,10 +188,10 @@
         <a href="Laboratory-Observations.html">Lab Observations</a>
       </li>
       <li>
-        <a href="Medications.html">Medications</a>
+        <a href="StructureDefinition-cibmtr-medications.html">Medications</a>
       </li>
       <li>
-        <a href="Vital-Signs.html">Vital Signs</a>
+        <a href="StructureDefinition-cibmtr-vital-signs.html">Vital Signs</a>
       </li>
       <li>
         <a href="Bundles.html">Bundles</a>
@@ -185,7 +251,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the CIBMTR Reporting Implementation Guide (v0.1.9: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the CIBMTR Reporting Implementation Guide (v0.1.11: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -240,7 +306,7 @@
         
           Draft
           
-            as of 2025-09-19
+            as of 2026-06-10
           
         
       </td>
@@ -256,20 +322,20 @@
 
 
 
-  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "med-busulfan-vs",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
+  "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">id</a>" : "med-busulfan-vs",
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet med-busulfan-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;med-busulfan-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcmed-busulfan-vs\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://www.nlm.nih.gov/research/umls/rxnorm\&quot;&gt;&lt;code&gt;http://www.nlm.nih.gov/research/umls/rxnorm&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1828&lt;/td&gt;&lt;td&gt;busulfan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;284676&lt;/td&gt;&lt;td&gt;Busulfex&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;203010&lt;/td&gt;&lt;td&gt;Myleran&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;284425&lt;/td&gt;&lt;td&gt;10 ML busulfan 6 MG/ML Injection [Busulfex]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;332701&lt;/td&gt;&lt;td&gt;busulfan 0.5 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;564077&lt;/td&gt;&lt;td&gt;busulfan 0.5 MG [Myleran]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;105550&lt;/td&gt;&lt;td&gt;busulfan 0.5 MG Oral Tablet [Myleran]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;317620&lt;/td&gt;&lt;td&gt;busulfan 2 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;564078&lt;/td&gt;&lt;td&gt;busulfan 2 MG [Myleran]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;105551&lt;/td&gt;&lt;td&gt;busulfan 2 MG Oral Tablet [Myleran]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;315503&lt;/td&gt;&lt;td&gt;busulfan 6 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;574864&lt;/td&gt;&lt;td&gt;busulfan 6 MG/ML [Busulfex]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1729356&lt;/td&gt;&lt;td&gt;busulfan 6 MG/ML Injection [Busulfex]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1151374&lt;/td&gt;&lt;td&gt;busulfan Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1729351&lt;/td&gt;&lt;td&gt;busulfan Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1729353&lt;/td&gt;&lt;td&gt;busulfan Injection [Busulfex]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1151375&lt;/td&gt;&lt;td&gt;busulfan Oral Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;371165&lt;/td&gt;&lt;td&gt;busulfan Oral Tablet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;368542&lt;/td&gt;&lt;td&gt;busulfan Oral Tablet [Myleran]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1151376&lt;/td&gt;&lt;td&gt;busulfan Pill&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1168702&lt;/td&gt;&lt;td&gt;Busulfex Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1185666&lt;/td&gt;&lt;td&gt;Myleran Oral Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1185667&lt;/td&gt;&lt;td&gt;Myleran Pill&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet med-busulfan-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;med-busulfan-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcmed-busulfan-vs\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://www.nlm.nih.gov/research/umls/rxnorm\&quot;&gt;&lt;code&gt;http://www.nlm.nih.gov/research/umls/rxnorm&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; version Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1828&lt;/td&gt;&lt;td&gt;busulfan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;284676&lt;/td&gt;&lt;td&gt;Busulfex&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;203010&lt;/td&gt;&lt;td&gt;Myleran&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;284425&lt;/td&gt;&lt;td&gt;10 ML busulfan 6 MG/ML Injection [Busulfex]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;332701&lt;/td&gt;&lt;td&gt;busulfan 0.5 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;564077&lt;/td&gt;&lt;td&gt;busulfan 0.5 MG [Myleran]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;105550&lt;/td&gt;&lt;td&gt;busulfan 0.5 MG Oral Tablet [Myleran]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;317620&lt;/td&gt;&lt;td&gt;busulfan 2 MG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;564078&lt;/td&gt;&lt;td&gt;busulfan 2 MG [Myleran]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;105551&lt;/td&gt;&lt;td&gt;busulfan 2 MG Oral Tablet [Myleran]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;315503&lt;/td&gt;&lt;td&gt;busulfan 6 MG/ML&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;574864&lt;/td&gt;&lt;td&gt;busulfan 6 MG/ML [Busulfex]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1729356&lt;/td&gt;&lt;td&gt;busulfan 6 MG/ML Injection [Busulfex]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1151374&lt;/td&gt;&lt;td&gt;busulfan Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1729351&lt;/td&gt;&lt;td&gt;busulfan Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1729353&lt;/td&gt;&lt;td&gt;busulfan Injection [Busulfex]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1151375&lt;/td&gt;&lt;td&gt;busulfan Oral Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;371165&lt;/td&gt;&lt;td&gt;busulfan Oral Tablet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;368542&lt;/td&gt;&lt;td&gt;busulfan Oral Tablet [Myleran]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1151376&lt;/td&gt;&lt;td&gt;busulfan Pill&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1168702&lt;/td&gt;&lt;td&gt;Busulfex Injectable Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1185666&lt;/td&gt;&lt;td&gt;Myleran Oral Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1185667&lt;/td&gt;&lt;td&gt;Myleran Pill&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.9",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.11",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "RxNormBusulfanVS",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "RxNorm - Busulfan",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "draft",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : true,
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2025-09-19T15:08:00-05:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2026-06-10T07:35:08-05:00",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -422,7 +488,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.9 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 19, 2025 15:08-0500">2025-09-19</span>
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.11 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 10, 2026 07:35-0500">2026-06-10</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

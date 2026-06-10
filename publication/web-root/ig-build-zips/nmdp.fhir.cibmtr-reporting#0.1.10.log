@@ -1,0 +1,131 @@
+FHIR IG Publisher Version 2.0.29 (Git# 826a7eb003d6). Built 2025-12-17T01:19:30.102Z (127 days old)
+Detected Java version: 22.0.1 from C:\Program Files\Java\jdk-22 on amd64 (64bit). 6144MB available
+dir = D:\IG\0326_V10_Copy2, path = C:\Users\eren\AppData\Local\Programs\Microsoft VS Code;C:\Python312\Scripts\;C:\Python312\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-22\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\Program Files\Docker\Docker\resources\bin;C:\DEVAPPS\Oracle-SQLDeveloper-18.4.0-376.1900-x64;C:\Program Files\PolicyPak\;C:\PROGRA~1\eGVmAgent\bin;C:\PROGRA~1\eGVmAgent\lib;C:\Program Files\nodejs\;C:\Ruby33-x64\bin;C:\Users\eren\AppData\Local\Microsoft\WindowsApps;C:\Users\eren\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\eren\AppData\Local\Programs\Git\cmd;C:\Users\eren\AppData\Roaming\npm
+Parameters: -go-publish -source build -web publication/web-root -registry publication/ig-registry/fhir-ig-list.json -history publication/ig-history -templates publication/web-root/history-templates -resetTxErrors
+---------------
+Publication Run: publish build to publication/web-root
+Relative directory for IG is '\cibmtr-reporting'
+===== Web Publication Run Details ===============================
+ Source IG: nmdp.fhir.cibmtr-reporting#0.1.10 : http://fhir.nmdp.org/ig/cibmtr-reporting (R4) from build
+All checks passed. Do the publication build from D:\IG\0326_V10_Copy2\build and publish to C:\Users\eren\AppData\Local\Temp\web-root\run-20260423\cibmtr-reporting
+Prepare Build space in C:\Users\eren\AppData\Local\Temp\ig-builds\nmdp.fhir.cibmtr-reporting#0.1.10
+Build IG at D:\IG\0326_V10_Copy2\build: final copy suitable for publication (in C:\Users\eren\AppData\Local\Temp\ig-builds\nmdp.fhir.cibmtr-reporting#0.1.10)
+FHIR IG Publisher Version 2.0.29 (Git# 826a7eb003d6). Built 2025-12-17T01:19:30.102Z (127 days old) 
+Detected Java version: 22.0.1 from C:\Program Files\Java\jdk-22 on Windows 11/amd64 (64bit). 6144MB available
+dir = D:\IG\0326_V10_Copy2, path = C:\Users\eren\AppData\Local\Programs\Microsoft VS Code;C:\Python312\Scripts\;C:\Python312\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-22\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\Program Files\Docker\Docker\resources\bin;C:\DEVAPPS\Oracle-SQLDeveloper-18.4.0-376.1900-x64;C:\Program Files\PolicyPak\;C:\PROGRA~1\eGVmAgent\bin;C:\PROGRA~1\eGVmAgent\lib;C:\Program Files\nodejs\;C:\Ruby33-x64\bin;C:\Users\eren\AppData\Local\Microsoft\WindowsApps;C:\Users\eren\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\eren\AppData\Local\Programs\Git\cmd;C:\Users\eren\AppData\Roaming\npm
+Parameters: -publish http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.10 -no-exit -ig C:\Users\eren\AppData\Local\Temp\ig-builds\nmdp.fhir.cibmtr-reporting#0.1.10 -resetTx
+Character encoding = UTF-8 / UTF-8                                                                  
+Start Clock @ Thursday, April 23, 2026, 10:29:10 AM Central Daylight Time (2026-04-23T10:29:10-05:00)
+                                                                                                    
+Build FHIR IG from C:\Users\eren\AppData\Local\Temp\ig-builds\nmdp.fhir.cibmtr-reporting#0.1.10      (00:00.070 / 00:00.071, 34Mb)
+Build Formal Publication package, intended for http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.10       (00:00.004 / 00:00.075, 34Mb)
+API keys loaded from C:\Users\eren\.fhir\fhir-settings.json                                          (00:00.001 / 00:00.076, 34Mb)
+Package Cache: C:\Users\eren\.fhir\packages                                                          (00:00.003 / 00:00.080, 34Mb)
+Run Sushi on C:\Users\eren\AppData\Local\Temp\ig-builds\nmdp.fhir.cibmtr-reporting#0.1.10            (00:00.006 / 00:00.086, 34Mb)
+Sushi: info  Running SUSHI v3.17.0 (implements FHIR Shorthand specification v3.0.0)                  (00:01.034 / 00:01.121, 37Mb)
+Sushi: info  Arguments:                                                                              (00:00.001 / 00:01.122, 37Mb)
+Sushi: info    --require-latest                                                                      (00:00.001 / 00:01.123, 37Mb)
+Sushi: info    --out C:\Users\eren\AppData\Local\Temp\ig-builds\nmdp.fhir.cibmtr-reporting#0.1.10    (00:00.001 / 00:01.124, 37Mb)
+Sushi: info    C:\Users\eren\AppData\Local\Temp\ig-builds\nmdp.fhir.cibmtr-reporting#0.1.10          (00:00.001 / 00:01.126, 37Mb)
+Sushi: npm warn Unknown user config "scripts-prepend-node-path". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options. (00:01.040 / 00:02.166, 37Mb)
+Sushi: npm warn Unknown user config "scripts-prepend-node-path". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+error Current SUSHI version (3.17.0) is not the latest version. Upgrade to the latest version (3.19.0) or run SUSHI again without the --require-latest flag. (00:00.001 / 00:02.168, 37Mb)
+Sushi couldn't be run. Complete output from running Sushi :                                          (00:00.034 / 00:02.203, 37Mb)
+Note: Check that Sushi is installed correctly ("npm install -g fsh-sushi". On windows, get npm from https://www.npmjs.com/get-npm) (00:00.002 / 00:02.205, 37Mb)
+Exception: Process exited with an error: 1 (Exit value: 1)                                           (00:00.001 / 00:02.206, 37Mb)
+Publishing Content Failed: Process exited with an error: 1 (Exit value: 1)                           (00:00.001 / 00:02.207, 37Mb)
+                                                                                                     (00:00.001 / 00:02.208, 37Mb)
+Use -? to get command line help                                                                      (00:00.001 / 00:02.209, 37Mb)
+                                                                                                     (00:00.001 / 00:02.210, 37Mb)
+Stack Dump (for debugging):                                                                          (00:00.001 / 00:02.211, 37Mb)
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.hl7.fhir.igtools.publisher.FSHRunner.runFsh(FSHRunner.java:78)
+	at org.hl7.fhir.igtools.publisher.PublisherIGLoader.initialize(PublisherIGLoader.java:143)
+	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:222)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:1594)
+	at org.hl7.fhir.igtools.web.PublicationProcess.runBuild(PublicationProcess.java:1103)
+	at org.hl7.fhir.igtools.web.PublicationProcess.doPublish(PublicationProcess.java:559)
+	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner2(PublicationProcess.java:467)
+	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner(PublicationProcess.java:283)
+	at org.hl7.fhir.igtools.web.PublicationProcess.publish(PublicationProcess.java:143)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:1335)
+Prepare Build space in C:\Users\eren\AppData\Local\Temp\ig-builds\nmdp.fhir.cibmtr-reporting#0.1.10-milestone
+Build IG at D:\IG\0326_V10_Copy2\build: final copy suitable for publication (in C:\Users\eren\AppData\Local\Temp\ig-builds\nmdp.fhir.cibmtr-reporting#0.1.10-milestone) (milestone build)
+FHIR IG Publisher Version 2.0.29 (Git# 826a7eb003d6). Built 2025-12-17T01:19:30.102Z (127 days old) 
+Detected Java version: 22.0.1 from C:\Program Files\Java\jdk-22 on Windows 11/amd64 (64bit). 6144MB available
+dir = D:\IG\0326_V10_Copy2, path = C:\Users\eren\AppData\Local\Programs\Microsoft VS Code;C:\Python312\Scripts\;C:\Python312\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-22\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\Program Files\Docker\Docker\resources\bin;C:\DEVAPPS\Oracle-SQLDeveloper-18.4.0-376.1900-x64;C:\Program Files\PolicyPak\;C:\PROGRA~1\eGVmAgent\bin;C:\PROGRA~1\eGVmAgent\lib;C:\Program Files\nodejs\;C:\Ruby33-x64\bin;C:\Users\eren\AppData\Local\Microsoft\WindowsApps;C:\Users\eren\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\eren\AppData\Local\Programs\Git\cmd;C:\Users\eren\AppData\Roaming\npm
+Parameters: -publish http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.10 -no-exit -ig C:\Users\eren\AppData\Local\Temp\ig-builds\nmdp.fhir.cibmtr-reporting#0.1.10-milestone -milestone
+Character encoding = UTF-8 / UTF-8                                                                  
+Start Clock @ Thursday, April 23, 2026, 10:29:48 AM Central Daylight Time (2026-04-23T10:29:48-05:00)
+                                                                                                    
+Build FHIR IG from C:\Users\eren\AppData\Local\Temp\ig-builds\nmdp.fhir.cibmtr-reporting#0.1.10-milestone (00:00.004 / 00:00.004, 160Mb)
+Build Formal Publication package, intended for http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.10       (00:00.002 / 00:00.007, 160Mb)
+API keys loaded from C:\Users\eren\.fhir\fhir-settings.json                                          (00:00.001 / 00:00.008, 160Mb)
+Package Cache: C:\Users\eren\.fhir\packages                                                          (00:00.001 / 00:00.009, 160Mb)
+Run Sushi on C:\Users\eren\AppData\Local\Temp\ig-builds\nmdp.fhir.cibmtr-reporting#0.1.10-milestone  (00:00.024 / 00:00.034, 160Mb)
+Sushi: info  Running SUSHI v3.17.0 (implements FHIR Shorthand specification v3.0.0)                  (00:00.873 / 00:00.907, 162Mb)
+Sushi: info  Arguments:                                                                              (00:00.001 / 00:00.908, 162Mb)
+Sushi: info    --require-latest                                                                      (00:00.001 / 00:00.909, 162Mb)
+Sushi: info    --out C:\Users\eren\AppData\Local\Temp\ig-builds\nmdp.fhir.cibmtr-reporting#0.1.10-milestone (00:00.000 / 00:00.910, 162Mb)
+Sushi: info    C:\Users\eren\AppData\Local\Temp\ig-builds\nmdp.fhir.cibmtr-reporting#0.1.10-milestone (00:00.000 / 00:00.911, 162Mb)
+Sushi: npm warn Unknown user config "scripts-prepend-node-path". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options. (00:00.917 / 00:01.829, 162Mb)
+Sushi: npm warn Unknown user config "scripts-prepend-node-path". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+error Current SUSHI version (3.17.0) is not the latest version. Upgrade to the latest version (3.19.0) or run SUSHI again without the --require-latest flag. (00:00.001 / 00:01.830, 162Mb)
+Sushi couldn't be run. Complete output from running Sushi :                                          (00:00.018 / 00:01.848, 162Mb)
+Note: Check that Sushi is installed correctly ("npm install -g fsh-sushi". On windows, get npm from https://www.npmjs.com/get-npm) (00:00.022 / 00:01.870, 162Mb)
+Exception: Process exited with an error: 1 (Exit value: 1)                                           (00:00.026 / 00:01.897, 162Mb)
+Publishing Content Failed: Process exited with an error: 1 (Exit value: 1)                           (00:00.005 / 00:01.902, 162Mb)
+                                                                                                     (00:00.001 / 00:01.904, 162Mb)
+Use -? to get command line help                                                                      (00:00.002 / 00:01.907, 162Mb)
+                                                                                                     (00:00.001 / 00:01.908, 162Mb)
+Stack Dump (for debugging):                                                                          (00:00.022 / 00:01.931, 162Mb)
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.hl7.fhir.igtools.publisher.FSHRunner.runFsh(FSHRunner.java:78)
+	at org.hl7.fhir.igtools.publisher.PublisherIGLoader.initialize(PublisherIGLoader.java:143)
+	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:222)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:1594)
+	at org.hl7.fhir.igtools.web.PublicationProcess.runBuild(PublicationProcess.java:1103)
+	at org.hl7.fhir.igtools.web.PublicationProcess.doPublish(PublicationProcess.java:564)
+	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner2(PublicationProcess.java:467)
+	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner(PublicationProcess.java:283)
+	at org.hl7.fhir.igtools.web.PublicationProcess.publish(PublicationProcess.java:143)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:1335)
+Keep a copy of the build directory at C:\Users\eren\AppData\Local\Temp\web-root\run-20260423\ig-build-zips\nmdp.fhir.cibmtr-reporting#0.1.10.zip
+
+ok. All checks passed. Publish v0.1.10 to C:\Users\eren\AppData\Local\Temp\web-root\run-20260423\cibmtr-reporting\0.1.10
+Copy the IG to C:\Users\eren\AppData\Local\Temp\web-root\run-20260423\cibmtr-reporting\0.1.10
+Update C:\Users\eren\AppData\Local\Temp\web-root\run-20260423\cibmtr-reporting\package-list.json
+Publish Box Statement: This page is part of the CIBMTR Reporting Implementation Guide (v0.1.10: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a>
+  .. 616 files checked, 616 updated
+  .. 201 clones checked, 402 updated
+  .. 99 redirections (99 created/updated)
+This is a milestone release - publish v0.1.10 to C:\Users\eren\AppData\Local\Temp\web-root\run-20260423\cibmtr-reporting
+Update publish box for version 0.1.9 @ http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.9
+Publish Box Statement: This page is part of the CIBMTR Reporting Implementation Guide (v0.1.9: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. The current version which supersedes this version is <a data-no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting{{fn}}">0.1.10</a>.  For a full list of available versions, see the <a data-no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a>
+  .. 611 files checked, 0 updated
+  .. 199 clones checked, 0 updated
+Update publish box for version 0.1.8 @ http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.8
+Publish Box Statement: This page is part of the CIBMTR Reporting Implementation Guide (v0.1.8: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. The current version which supersedes this version is <a data-no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting{{fn}}">0.1.10</a>.  For a full list of available versions, see the <a data-no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a>
+  .. 612 files checked, 0 updated
+  .. 199 clones checked, 0 updated
+Update publish box for version 0.1.6 @ http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.6
+Publish Box Statement: This page is part of the CIBMTR Reporting Implementation Guide (v0.1.6: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. The current version which supersedes this version is <a data-no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting{{fn}}">0.1.10</a>.  For a full list of available versions, see the <a data-no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a>
+  .. 560 files checked, 0 updated
+  .. 185 clones checked, 0 updated
+Publish Box Statement: This page is part of the CIBMTR Reporting Implementation Guide (v0.1.10: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a>
+  .. 616 files checked, 616 updated
+  .. 201 clones checked, 402 updated
+  .. 99 redirections (99 created/updated)
+Check for Files to delete
+  ... 0 files
+Copy to new IG C:\Users\eren\AppData\Local\Temp\web-root\run-20260423\cibmtr-reporting
+nmdp.fhir.cibmtr-reporting (http://fhir.nmdp.org/ig/cibmtr-reporting): CIBMTR Reporting Implementation Guide @ http://nmdp-ig.github.io/cibmtr-reporting-ig
+  release: Release 0.1.10/4.0.1 @ http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.10
+Build is complete. Copy from C:\Users\eren\AppData\Local\Temp\web-root\run-20260423
+Update history page at C:\Users\eren\AppData\Local\Temp\web-root\run-20260423\cibmtr-reporting from D:\IG\0326_V10_Copy2\publication\ig-history and publication/web-root/history-templates

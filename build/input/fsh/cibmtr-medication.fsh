@@ -67,13 +67,21 @@ Usage: #example
 
 // -------------------------------------------------------------------------------- 
 
+Profile:        CIBMTR_Medications
+Parent:         mcode-cancer-related-medication-request
+Id:             cibmtr-medications
+Title:          "CIBMTR Medication Related (mcode)"
+* insert MetaSecurityRules
+* authoredOn 1..1
+// -------------------------------------------------------------------------------- 
+
 Profile:        CIBMTR_MedicationRequest
 Parent:         mcode-cancer-related-medication-request
 Id:             cibmtr-medication-request
 Title:          "CIBMTR Medication Request (mcode)"
 Description:    "CIBMTR Medication Request (mcode)"
 * insert MetaSecurityRules
-
+* authoredOn 1..1
 // -------------------------------------------------------------------------------- 
 
 

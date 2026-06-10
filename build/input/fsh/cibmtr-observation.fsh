@@ -2,7 +2,6 @@ Profile:        CIBMTRObservationLab
 Parent:         us-core-observation-lab 
 Id:             cibmtr-observation-lab
 Title:          "CIBMTR Observation Laboratory Results Profile (us-core)"
-Description:    "CIBMTR Observation Laboratory Results Profile (us-core)"
 * insert MetaSecurityRules
 * effective[x] 1..1
 * value[x] only Quantity or CodeableConcept

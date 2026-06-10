@@ -17,11 +17,11 @@
       </div>
    </text>
    <url value="http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/nmdp.fhir.cibmtr-reporting"/>
-   <version value="0.1.9"/>
+   <version value="0.1.11"/>
    <name value="CIBMTRReporting"/>
    <title value="CIBMTR Reporting Implementation Guide"/>
    <status value="draft"/>
-   <date value="2025-09-19T15:08:00-05:00"/>
+   <date value="2026-06-10T07:35:08-05:00"/>
    <publisher value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
    <contact>
       <name value="The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"/>
@@ -47,7 +47,7 @@
       </extension>
       <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
       <packageId value="hl7.terminology.r4"/>
-      <version value="6.5.0"/>
+      <version value="7.1.0"/>
    </dependsOn>
    <dependsOn id="hl7ext">
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -55,7 +55,7 @@
       </extension>
       <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
       <packageId value="hl7.fhir.uv.extensions.r4"/>
-      <version value="5.3.0-ballot-tc1"/>
+      <version value="5.3.0"/>
    </dependsOn>
    <dependsOn id="hl7_fhir_us_core">
       <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
@@ -65,7 +65,7 @@
    <dependsOn id="mcode">
       <uri value="http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode"/>
       <packageId value="hl7.fhir.us.mcode"/>
-      <version value="2.0.0"/>
+      <version value="4.0.0"/>
    </dependsOn>
    <dependsOn id="hl7_fhir_uv_genomics_reporting">
       <uri value="http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting"/>
@@ -298,15 +298,23 @@
          </extension>
       </extension>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-         <valueCode value="hl7.fhir.uv.tools.r4#0.7.0"/>
+         <valueCode value="hl7.fhir.uv.tools.r4#0.9.0"/>
       </extension>
       <grouping id="-str-profile">
          <name value="Structures: Resource Profiles"/>
          <description value="These define constraints on FHIR resources for systems conforming to this implementation guide."/>
       </grouping>
+      <grouping id="-str-extension">
+         <name value="Structures: Extension Definitions"/>
+         <description value="These define constraints on FHIR data types for systems conforming to this implementation guide."/>
+      </grouping>
       <grouping id="-term-valueset">
          <name value="Terminology: Value Sets"/>
          <description value="These define sets of codes used by systems conforming to this implementation guide."/>
+      </grouping>
+      <grouping id="-term-codesystem">
+         <name value="Terminology: Code Systems"/>
+         <description value="These define new code systems used by systems conforming to this implementation guide."/>
       </grouping>
       <grouping id="-ex-example">
          <name value="Example: Example Instances"/>
@@ -410,6 +418,23 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-cibmtr-medications.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/cibmtr-medications"/>
+         </reference>
+         <name value="CIBMTR Medication Related (mcode)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="StructureDefinition-cibmtr-medication-request.html"/>
          </extension>
          <reference>
@@ -452,7 +477,6 @@
             <reference value="StructureDefinition/cibmtr-observation-lab"/>
          </reference>
          <name value="CIBMTR Observation Laboratory Results Profile (us-core)"/>
-         <description value="CIBMTR Observation Laboratory Results Profile (us-core)"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -488,7 +512,6 @@
             <reference value="StructureDefinition/cibmtr-patient"/>
          </reference>
          <name value="CIBMTR Patient Profile (us-core)"/>
-         <description value="CIBMTR Patient Profile for CRID assignment (us-core)"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -559,8 +582,7 @@
          <reference>
             <reference value="StructureDefinition/cibmtr-vital-signs"/>
          </reference>
-         <name value="CIBMTR Vital Signs Results Profile (us-core)"/>
-         <description value="CIBMTR Vital Signs Results Profile (us-core)"/>
+         <name value="CIBMTR Vital Signs Results Profile (US Core)"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -599,6 +621,24 @@
          <description value="CIBMTR Vital Signs-Weight Profile (us-core)"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-cibmtr-ancestry.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/cibmtr-ancestry"/>
+         </reference>
+         <name value="CIBMTR Ancestry Extension"/>
+         <description value="Container extension holding US Core Race plus CIBMTR ancestry codes."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -698,13 +738,31 @@
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-cibmtr-ancestry-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/cibmtr-ancestry-vs"/>
+         </reference>
+         <name value="CIBMTR Ancestry ValueSet"/>
+         <description value="A value set for CIBMTR ancestry information."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="ValueSet-patient.html"/>
          </extension>
          <reference>
             <reference value="ValueSet/patient"/>
          </reference>
-         <name value="CIBMTR Patient Value Set"/>
-         <description value="CIBMTR Patient Value Set"/>
+         <name value="CIBMTR Patient Ancestry Value Set"/>
+         <description value="US Core Race Categories (Intensional).&#xD;&#xA;1.&#xA;This value set is used by me"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -759,6 +817,24 @@
          </reference>
          <name value="CIBMTR Priority Variables Value Set for Epic App (FY21)"/>
          <description value="Priority Variables for Epic CIBMTR Reporting App (FY21)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-cibmtr-cs-vitalsigns.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/cibmtr-cs-vitalsigns"/>
+         </reference>
+         <name value="CIBMTR Vital Signs Concept Set"/>
+         <description value="CIBMTR Vital Signs Concept Set"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -1391,6 +1467,24 @@
          <description value="Smear morphology panel - Blood (34994-4)"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-cibmtr-ancestry-cs.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/cibmtr-ancestry-cs"/>
+         </reference>
+         <name value="CIBMTR Ancestry CodeSystem"/>
+         <description value="A code system for CIBMTR ancestry information."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -2223,6 +2317,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="StructureDefinition-cibmtr-medications.html"/>
+               <title value="CIBMTR Medication Related (mcode)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="StructureDefinition-cibmtr-medication-request.html"/>
                <title value="CIBMTR Medication Request (mcode)"/>
                <generation value="generated"/>
@@ -2264,7 +2363,7 @@
             </page>
             <page>
                <nameUrl value="StructureDefinition-cibmtr-vital-signs.html"/>
-               <title value="CIBMTR Vital Signs Results Profile (us-core)"/>
+               <title value="CIBMTR Vital Signs Results Profile (US Core)"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -2275,6 +2374,11 @@
             <page>
                <nameUrl value="StructureDefinition-cibmtr-vital-signs-weight.html"/>
                <title value="CIBMTR Vital Signs-Weight Profile (us-core)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-cibmtr-ancestry.html"/>
+               <title value="CIBMTR Ancestry Extension"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -2303,8 +2407,13 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="ValueSet-cibmtr-ancestry-vs.html"/>
+               <title value="CIBMTR Ancestry ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="ValueSet-patient.html"/>
-               <title value="CIBMTR Patient Value Set"/>
+               <title value="CIBMTR Patient Ancestry Value Set"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -2320,6 +2429,11 @@
             <page>
                <nameUrl value="ValueSet-cibmtr-priority-variables-epic-2021.html"/>
                <title value="CIBMTR Priority Variables Value Set for Epic App (FY21)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-cibmtr-cs-vitalsigns.html"/>
+               <title value="CIBMTR Vital Signs Concept Set"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -2495,6 +2609,11 @@
             <page>
                <nameUrl value="ValueSet-snomed-myelodysplastic-diseases-vs.html"/>
                <title value="SNOMED Myelodysplastic Diseases"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-cibmtr-ancestry-cs.html"/>
+               <title value="CIBMTR Ancestry CodeSystem"/>
                <generation value="generated"/>
             </page>
             <page>

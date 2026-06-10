@@ -12,15 +12,16 @@
       "sources" : ["2.16.840.1.113762.1.4.1010.4"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-prior-exposure-medication.html" : "CIBMTR Prior Exposure Medication",
-      "StructureDefinition-cibmtr-medication-administration.html" : "CIBMTR Medication Administration (mcode)",
-      "StructureDefinition-cibmtr-medication.html" : "CIBMTR Medication (us-core)",
       "StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html" : "CIBMTR Planned Post-HCT Disease Therapy Medication",
-      "StructureDefinition-cibmtr-prep-regimen-medication.html" : "CIBMTR Prep Regimen Medication",
-      "StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html" : "CIBMTR GVHD Prophylaxis Medication",
-      "StructureDefinition-cibmtr-additional-peri-transplant-medication.html" : "CIBMTR Additional Drugs in Peri-Transplant Period",
       "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
-      "StructureDefinition-cibmtr-mobilizing-agent-medication.html" : "CIBMTR Mobilizing Agents Medication"
+      "StructureDefinition-cibmtr-medication.html" : "CIBMTR Medication (us-core)",
+      "StructureDefinition-cibmtr-prep-regimen-medication.html" : "CIBMTR Prep Regimen Medication",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)",
+      "StructureDefinition-cibmtr-medication-administration.html" : "CIBMTR Medication Administration (mcode)",
+      "StructureDefinition-cibmtr-prior-exposure-medication.html" : "CIBMTR Prior Exposure Medication",
+      "StructureDefinition-cibmtr-mobilizing-agent-medication.html" : "CIBMTR Mobilizing Agents Medication",
+      "StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html" : "CIBMTR GVHD Prophylaxis Medication",
+      "StructureDefinition-cibmtr-additional-peri-transplant-medication.html" : "CIBMTR Additional Drugs in Peri-Transplant Period"
     },
     {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62",
@@ -34,13 +35,13 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.62"],
       "uses" : {
       },
+      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)",
       "StructureDefinition-cibmtr-vital-signs-weight.html" : "CIBMTR Vital Signs-Weight Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)"
+      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (US Core)"
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/auto-differential-blood-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "AutoDifferentialBloodVS",
       "title" : "Auto Differential panel - Blood (57023-4)",
@@ -52,7 +53,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-blood-automated-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "CBCBloodAutomatedVS",
       "title" : "CBC panel - Blood by Automated count (58410-2)",
@@ -60,12 +61,12 @@
       "systems" : ["http://loinc.org"],
       "uses" : {
       },
-      "ValueSet-cbc-w-auto-differential-blood-vs.html" : "CBC W Auto Differential panel - Blood (57021-8)",
-      "ValueSet-cbc-w-ordered-manual-differential-blood-vs.html" : "CBC W Ordered Manual Differential panel - Blood (57782-5)"
+      "ValueSet-cbc-w-ordered-manual-differential-blood-vs.html" : "CBC W Ordered Manual Differential panel - Blood (57782-5)",
+      "ValueSet-cbc-w-auto-differential-blood-vs.html" : "CBC W Auto Differential panel - Blood (57021-8)"
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-auto-differential-blood-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "CBCWAutoDifferentialBloodVS",
       "title" : "CBC W Auto Differential panel - Blood (57021-8)",
@@ -74,7 +75,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-differential-unspecified-blood-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "CBCWDifferentialUnspecifiedBloodVS",
       "title" : "CBC W Differential panel, method unspecified - Blood (69742-5)",
@@ -83,7 +84,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-ordered-manual-differential-blood-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "CBCWOrderedManualDifferentialBloodVS",
       "title" : "CBC W Ordered Manual Differential panel - Blood (57782-5)",
@@ -91,8 +92,16 @@
       "systems" : ["http://loinc.org"]
     },
     {
+      "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-cs-vitalsigns",
+      "version" : "0.1.11",
+      "status" : "active",
+      "name" : "CIBMTRConceptSet_VitalSigns",
+      "title" : "CIBMTR Vital Signs Concept Set",
+      "description" : "CIBMTR Vital Signs Concept Set"
+    },
+    {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-2021",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "PriorityVariables2021",
       "title" : "CIBMTR Priority Variables Value Set (FY21)",
@@ -101,7 +110,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-2022",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "PriorityVariables2022",
       "title" : "CIBMTR Priority Variables Value Set (FY22)",
@@ -113,7 +122,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-epic-2021",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "PriorityVariablesEpic2021",
       "title" : "CIBMTR Priority Variables Value Set for Epic App (FY21)",
@@ -122,7 +131,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/differential-unspecified-blood-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "DifferentialUnspecifiedBloodVS",
       "title" : "Differential panel, method unspecified - Blood (69738-3)",
@@ -134,7 +143,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/erythrocyte-morphology-blood-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "ErythrocyteMorphologyBloodVS",
       "title" : "Erythrocyte morphology panel - Blood (58408-6)",
@@ -146,7 +155,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-all-valueset",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "GVHDTypeValueSet",
       "title" : "GVHD Type Value Set",
@@ -155,7 +164,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "GVHDICD10VS",
       "title" : "GVHD ICD-10 Codes",
@@ -167,7 +176,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-sct-codes",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "GVHDSCTVS",
       "title" : "GVHD SNOMED CT Codes",
@@ -179,7 +188,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/hematopoietic-disorder-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "HematopoieticDisorderVS",
       "title" : "Disorders of hematopoietic structure",
@@ -188,7 +197,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/leukocyte-morphology-blood-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "LeukocyteMorphologyBloodVS",
       "title" : "Leukocyte morphology panel - Blood (58407-8)",
@@ -200,7 +209,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/manual-differential-blood-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "ManualDifferentialBloodVS",
       "title" : "Manual Differential panel - Blood (24318-8)",
@@ -212,7 +221,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-addition-peri-transplant-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormAdditionalPeriTransplantVS",
       "title" : "RxNorm - Additional Drugs in Peri-Transplant Period",
@@ -220,12 +229,12 @@
       "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-additional-peri-transplant-medication.html" : "CIBMTR Additional Drugs in Peri-Transplant Period",
-      "ValueSet-med-all-form2400-vs.html" : "RxNorm - All of Form 2400"
+      "ValueSet-med-all-form2400-vs.html" : "RxNorm - All of Form 2400",
+      "StructureDefinition-cibmtr-additional-peri-transplant-medication.html" : "CIBMTR Additional Drugs in Peri-Transplant Period"
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-alemtuzumab-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormAlemtuzumabVS",
       "title" : "RxNorm - Alemtuzumab",
@@ -234,7 +243,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-all-form2400-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormAll2400VS",
       "title" : "RxNorm - All of Form 2400",
@@ -243,7 +252,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-anti-thymocyte-globulin-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormAntiThymocyteGlobulinVS",
       "title" : "RxNorm - Anti-Thymocyte Globulin",
@@ -252,7 +261,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-bortezomib-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormBortezomibVS",
       "title" : "RxNorm - Bortezomib",
@@ -261,7 +270,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormBusulfanVS",
       "title" : "RxNorm - Busulfan",
@@ -270,7 +279,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-carmustine-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormCarmustineVS",
       "title" : "RxNorm - Carmustine",
@@ -279,7 +288,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cyclophosphamide-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormCyclophosphamideVS",
       "title" : "RxNorm - Cyclophosphamide",
@@ -288,7 +297,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-cytarabine-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormCytarabineVS",
       "title" : "RxNorm - Cytarabine",
@@ -297,7 +306,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-defibrotide-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormDefibrotideVS",
       "title" : "RxNorm - Defibrotide",
@@ -306,7 +315,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-etoposide-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormEtoposideVS",
       "title" : "RxNorm - Etoposide",
@@ -315,7 +324,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-fludarabine-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormFludarabineVS",
       "title" : "RxNorm - Fludarabine",
@@ -324,7 +333,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormGVHDProphylaxisVS",
       "title" : "RxNorm - GVHD Prophylaxis",
@@ -332,12 +341,12 @@
       "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html" : "CIBMTR GVHD Prophylaxis Medication",
-      "ValueSet-med-all-form2400-vs.html" : "RxNorm - All of Form 2400"
+      "ValueSet-med-all-form2400-vs.html" : "RxNorm - All of Form 2400",
+      "StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html" : "CIBMTR GVHD Prophylaxis Medication"
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-melphalan-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormMelphalanVS",
       "title" : "RxNorm - Melphalan",
@@ -346,7 +355,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormMobilizingAgentsVS",
       "title" : "RxNorm - Mobilizing Agents (auto only)",
@@ -354,12 +363,12 @@
       "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-mobilizing-agent-medication.html" : "CIBMTR Mobilizing Agents Medication",
-      "ValueSet-med-all-form2400-vs.html" : "RxNorm - All of Form 2400"
+      "ValueSet-med-all-form2400-vs.html" : "RxNorm - All of Form 2400",
+      "StructureDefinition-cibmtr-mobilizing-agent-medication.html" : "CIBMTR Mobilizing Agents Medication"
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-post-hct-disease-therapy-planned-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormPostHCTDiseaseTherapyPlannedVS",
       "title" : "RxNorm - Post-HCT Disease Therapy Planned",
@@ -372,7 +381,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prep-regimen-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormPrepRegimenVS",
       "title" : "RxNorm - Prep Regimen",
@@ -385,7 +394,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prior-exposure-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormPriorExposureVS",
       "title" : "RxNorm - Prior Exposure: Potential Study Eligibility",
@@ -393,12 +402,12 @@
       "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-prior-exposure-medication.html" : "CIBMTR Prior Exposure Medication",
-      "ValueSet-med-all-form2400-vs.html" : "RxNorm - All of Form 2400"
+      "ValueSet-med-all-form2400-vs.html" : "RxNorm - All of Form 2400",
+      "StructureDefinition-cibmtr-prior-exposure-medication.html" : "CIBMTR Prior Exposure Medication"
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-rituximab-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormRituximabVS",
       "title" : "RxNorm - Rituximab",
@@ -407,7 +416,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-thiotepa-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormThiotepaVS",
       "title" : "RxNorm - Thiotepa",
@@ -416,7 +425,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-treosulfan-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormTreosulfanVS",
       "title" : "RxNorm - Treosulfan",
@@ -425,7 +434,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-ursodiol-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "RxNormUrsodiolVS",
       "title" : "RxNorm - Ursodiol",
@@ -434,16 +443,16 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/patient",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "Patient",
-      "title" : "CIBMTR Patient Value Set",
-      "description" : "CIBMTR Patient Value Set",
+      "title" : "CIBMTR Patient Ancestry Value Set",
+      "description" : "US Core Race Categories (Intensional).\r\n1.\nThis value set is used by me",
       "systems" : ["http://loinc.org"]
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/platelet-morphology-blood-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "PlateletMorphologyBloodVS",
       "title" : "Platelet morphology panel - Blood (58406-0)",
@@ -455,7 +464,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/presence-valueset",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "PresenceValueSet",
       "title" : "Presence Answer List",
@@ -464,7 +473,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/smear-morphology-blood-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "SmearMorphologyBloodVS",
       "title" : "Smear morphology panel - Blood (34994-4)",
@@ -476,7 +485,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/snomed-myelodysplastic-diseases-vs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "SNOMEDMyelodysplasticDiseasesVS",
       "title" : "SNOMED Myelodysplastic Diseases",
@@ -485,15 +494,12 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/vital-signs",
-      "version" : "0.1.9",
+      "version" : "0.1.11",
       "status" : "draft",
       "name" : "VitalSigns",
       "title" : "CIBMTR Vital Signs Value Set",
       "description" : "CIBMTR Vital Signs Value Set",
-      "systems" : ["http://loinc.org"],
-      "uses" : {
-      },
-      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (us-core)"
+      "systems" : ["http://loinc.org"]
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/additional-instruction-codes",
@@ -507,7 +513,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.95"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)"
+      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-type",
@@ -549,8 +556,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.97"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-medication-administration.html" : "CIBMTR Medication Administration (mcode)",
-      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)"
+      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)",
+      "StructureDefinition-cibmtr-medication-administration.html" : "CIBMTR Medication Administration (mcode)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -578,8 +586,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.346"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-medication-administration.html" : "CIBMTR Medication Administration (mcode)",
-      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)"
+      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)",
+      "StructureDefinition-cibmtr-medication-administration.html" : "CIBMTR Medication Administration (mcode)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -593,12 +602,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile",
+      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)",
       "StructureDefinition-cibmtr-obs-priority-variables.html" : "CIBMTR Observation Laboratory Results: Priority Variables",
       "StructureDefinition-cibmtr-vital-signs-weight.html" : "CIBMTR Vital Signs-Weight Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (us-core)",
       "StructureDefinition-cibmtr-observation-lab.html" : "CIBMTR Observation Laboratory Results Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)"
+      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (US Core)",
+      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/common-tags",
@@ -612,22 +621,23 @@
       "sources" : ["2.16.840.1.113883.4.642.3.79"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-prior-exposure-medication.html" : "CIBMTR Prior Exposure Medication",
-      "StructureDefinition-cibmtr-medication-administration.html" : "CIBMTR Medication Administration (mcode)",
-      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile",
+      "StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html" : "CIBMTR Planned Post-HCT Disease Therapy Medication",
+      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medication.html" : "CIBMTR Medication (us-core)",
       "StructureDefinition-cibmtr-patient.html" : "CIBMTR Patient Profile (us-core)",
       "StructureDefinition-cibmtr-prep-regimen-medication.html" : "CIBMTR Prep Regimen Medication",
-      "StructureDefinition-cibmtr-medication.html" : "CIBMTR Medication (us-core)",
-      "StructureDefinition-cibmtr-obs-priority-variables.html" : "CIBMTR Observation Laboratory Results: Priority Variables",
       "StructureDefinition-cibmtr-vital-signs-weight.html" : "CIBMTR Vital Signs-Weight Profile (us-core)",
-      "StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html" : "CIBMTR Planned Post-HCT Disease Therapy Medication",
-      "StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html" : "CIBMTR GVHD Prophylaxis Medication",
-      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (us-core)",
-      "StructureDefinition-cibmtr-additional-peri-transplant-medication.html" : "CIBMTR Additional Drugs in Peri-Transplant Period",
-      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)",
       "StructureDefinition-cibmtr-observation-lab.html" : "CIBMTR Observation Laboratory Results Profile (us-core)",
+      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (US Core)",
+      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile",
+      "StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html" : "CIBMTR GVHD Prophylaxis Medication",
+      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)",
+      "StructureDefinition-cibmtr-obs-priority-variables.html" : "CIBMTR Observation Laboratory Results: Priority Variables",
+      "StructureDefinition-cibmtr-medication-administration.html" : "CIBMTR Medication Administration (mcode)",
+      "StructureDefinition-cibmtr-prior-exposure-medication.html" : "CIBMTR Prior Exposure Medication",
       "StructureDefinition-cibmtr-mobilizing-agent-medication.html" : "CIBMTR Mobilizing Agents Medication",
-      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)"
+      "StructureDefinition-cibmtr-additional-peri-transplant-medication.html" : "CIBMTR Additional Drugs in Peri-Transplant Period"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
@@ -669,12 +679,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile",
+      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)",
       "StructureDefinition-cibmtr-obs-priority-variables.html" : "CIBMTR Observation Laboratory Results: Priority Variables",
       "StructureDefinition-cibmtr-vital-signs-weight.html" : "CIBMTR Vital Signs-Weight Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (us-core)",
       "StructureDefinition-cibmtr-observation-lab.html" : "CIBMTR Observation Laboratory Results Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)"
+      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (US Core)",
+      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/dose-rate-type",
@@ -688,7 +698,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.981"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)"
+      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -730,22 +741,23 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-prior-exposure-medication.html" : "CIBMTR Prior Exposure Medication",
-      "StructureDefinition-cibmtr-medication-administration.html" : "CIBMTR Medication Administration (mcode)",
-      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile",
+      "StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html" : "CIBMTR Planned Post-HCT Disease Therapy Medication",
+      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medication.html" : "CIBMTR Medication (us-core)",
       "StructureDefinition-cibmtr-patient.html" : "CIBMTR Patient Profile (us-core)",
       "StructureDefinition-cibmtr-prep-regimen-medication.html" : "CIBMTR Prep Regimen Medication",
-      "StructureDefinition-cibmtr-medication.html" : "CIBMTR Medication (us-core)",
-      "StructureDefinition-cibmtr-obs-priority-variables.html" : "CIBMTR Observation Laboratory Results: Priority Variables",
       "StructureDefinition-cibmtr-vital-signs-weight.html" : "CIBMTR Vital Signs-Weight Profile (us-core)",
-      "StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html" : "CIBMTR Planned Post-HCT Disease Therapy Medication",
-      "StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html" : "CIBMTR GVHD Prophylaxis Medication",
-      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (us-core)",
-      "StructureDefinition-cibmtr-additional-peri-transplant-medication.html" : "CIBMTR Additional Drugs in Peri-Transplant Period",
-      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)",
       "StructureDefinition-cibmtr-observation-lab.html" : "CIBMTR Observation Laboratory Results Profile (us-core)",
+      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (US Core)",
+      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile",
+      "StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html" : "CIBMTR GVHD Prophylaxis Medication",
+      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)",
+      "StructureDefinition-cibmtr-obs-priority-variables.html" : "CIBMTR Observation Laboratory Results: Priority Variables",
+      "StructureDefinition-cibmtr-medication-administration.html" : "CIBMTR Medication Administration (mcode)",
+      "StructureDefinition-cibmtr-prior-exposure-medication.html" : "CIBMTR Prior Exposure Medication",
       "StructureDefinition-cibmtr-mobilizing-agent-medication.html" : "CIBMTR Mobilizing Agents Medication",
-      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)"
+      "StructureDefinition-cibmtr-additional-peri-transplant-medication.html" : "CIBMTR Additional Drugs in Peri-Transplant Period"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -838,7 +850,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.96"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)"
+      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-form-codes",
@@ -852,13 +865,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.374"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-prior-exposure-medication.html" : "CIBMTR Prior Exposure Medication",
-      "StructureDefinition-cibmtr-medication.html" : "CIBMTR Medication (us-core)",
       "StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html" : "CIBMTR Planned Post-HCT Disease Therapy Medication",
+      "StructureDefinition-cibmtr-medication.html" : "CIBMTR Medication (us-core)",
       "StructureDefinition-cibmtr-prep-regimen-medication.html" : "CIBMTR Prep Regimen Medication",
+      "StructureDefinition-cibmtr-prior-exposure-medication.html" : "CIBMTR Prior Exposure Medication",
+      "StructureDefinition-cibmtr-mobilizing-agent-medication.html" : "CIBMTR Mobilizing Agents Medication",
       "StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html" : "CIBMTR GVHD Prophylaxis Medication",
-      "StructureDefinition-cibmtr-additional-peri-transplant-medication.html" : "CIBMTR Additional Drugs in Peri-Transplant Period",
-      "StructureDefinition-cibmtr-mobilizing-agent-medication.html" : "CIBMTR Mobilizing Agents Medication"
+      "StructureDefinition-cibmtr-additional-peri-transplant-medication.html" : "CIBMTR Additional Drugs in Peri-Transplant Period"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-status",
@@ -872,13 +885,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.376"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-prior-exposure-medication.html" : "CIBMTR Prior Exposure Medication",
-      "StructureDefinition-cibmtr-medication.html" : "CIBMTR Medication (us-core)",
       "StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html" : "CIBMTR Planned Post-HCT Disease Therapy Medication",
+      "StructureDefinition-cibmtr-medication.html" : "CIBMTR Medication (us-core)",
       "StructureDefinition-cibmtr-prep-regimen-medication.html" : "CIBMTR Prep Regimen Medication",
+      "StructureDefinition-cibmtr-prior-exposure-medication.html" : "CIBMTR Prior Exposure Medication",
+      "StructureDefinition-cibmtr-mobilizing-agent-medication.html" : "CIBMTR Mobilizing Agents Medication",
       "StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html" : "CIBMTR GVHD Prophylaxis Medication",
-      "StructureDefinition-cibmtr-additional-peri-transplant-medication.html" : "CIBMTR Additional Drugs in Peri-Transplant Period",
-      "StructureDefinition-cibmtr-mobilizing-agent-medication.html" : "CIBMTR Mobilizing Agents Medication"
+      "StructureDefinition-cibmtr-additional-peri-transplant-medication.html" : "CIBMTR Additional Drugs in Peri-Transplant Period"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-category",
@@ -894,7 +907,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1322"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)"
+      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy",
@@ -910,7 +924,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1326"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)"
+      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-intent",
@@ -924,7 +939,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1321"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)"
+      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status",
@@ -938,23 +954,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1320"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status-reason",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "medicationRequest Status Reason Codes",
-      "title" : "Medication request  status  reason  codes",
-      "description" : "MedicationRequest Status Reason Codes",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.1324"],
-      "sources" : ["2.16.840.1.113883.4.642.3.1324"],
-      "uses" : {
-      },
-      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)"
+      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/name-use",
@@ -982,12 +983,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile",
+      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)",
       "StructureDefinition-cibmtr-obs-priority-variables.html" : "CIBMTR Observation Laboratory Results: Priority Variables",
       "StructureDefinition-cibmtr-vital-signs-weight.html" : "CIBMTR Vital Signs-Weight Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (us-core)",
       "StructureDefinition-cibmtr-observation-lab.html" : "CIBMTR Observation Laboratory Results Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)"
+      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (US Core)",
+      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -1001,9 +1002,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile",
       "StructureDefinition-cibmtr-obs-priority-variables.html" : "CIBMTR Observation Laboratory Results: Priority Variables",
-      "StructureDefinition-cibmtr-observation-lab.html" : "CIBMTR Observation Laboratory Results Profile (us-core)"
+      "StructureDefinition-cibmtr-observation-lab.html" : "CIBMTR Observation Laboratory Results Profile (us-core)",
+      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -1019,12 +1020,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile",
+      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)",
       "StructureDefinition-cibmtr-obs-priority-variables.html" : "CIBMTR Observation Laboratory Results: Priority Variables",
       "StructureDefinition-cibmtr-vital-signs-weight.html" : "CIBMTR Vital Signs-Weight Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (us-core)",
       "StructureDefinition-cibmtr-observation-lab.html" : "CIBMTR Observation Laboratory Results Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)"
+      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (US Core)",
+      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -1038,11 +1039,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
+      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)",
       "StructureDefinition-cibmtr-obs-priority-variables.html" : "CIBMTR Observation Laboratory Results: Priority Variables",
       "StructureDefinition-cibmtr-vital-signs-weight.html" : "CIBMTR Vital Signs-Weight Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (us-core)",
       "StructureDefinition-cibmtr-observation-lab.html" : "CIBMTR Observation Laboratory Results Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)"
+      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (US Core)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -1056,12 +1057,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile",
+      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)",
       "StructureDefinition-cibmtr-obs-priority-variables.html" : "CIBMTR Observation Laboratory Results: Priority Variables",
       "StructureDefinition-cibmtr-vital-signs-weight.html" : "CIBMTR Vital Signs-Weight Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (us-core)",
       "StructureDefinition-cibmtr-observation-lab.html" : "CIBMTR Observation Laboratory Results Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)"
+      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (US Core)",
+      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -1089,7 +1090,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.433"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)"
+      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
@@ -1103,23 +1105,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.59"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile",
+      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)",
       "StructureDefinition-cibmtr-vital-signs-weight.html" : "CIBMTR Vital Signs-Weight Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/reason-medication-not-given-codes",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "SNOMEDCTReasonMedicationNotGivenCodes",
-      "title" : "SNOMED CT Reason Medication Not Given Codes",
-      "description" : "This value set includes all medication refused, medication not administered, and non-administration of necessary drug or medicine codes from SNOMED CT - provided as an exemplar value set.",
-      "systems" : ["http://snomed.info/sct"],
-      "oids" : ["2.16.840.1.113883.4.642.3.342"],
-      "sources" : ["2.16.840.1.113883.4.642.3.342"],
-      "uses" : {
-      },
-      "StructureDefinition-cibmtr-medication-administration.html" : "CIBMTR Medication Administration (mcode)"
+      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -1136,12 +1124,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile",
+      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)",
       "StructureDefinition-cibmtr-obs-priority-variables.html" : "CIBMTR Observation Laboratory Results: Priority Variables",
       "StructureDefinition-cibmtr-vital-signs-weight.html" : "CIBMTR Vital Signs-Weight Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (us-core)",
       "StructureDefinition-cibmtr-observation-lab.html" : "CIBMTR Observation Laboratory Results Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)"
+      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (US Core)",
+      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -1157,12 +1145,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile",
+      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)",
       "StructureDefinition-cibmtr-obs-priority-variables.html" : "CIBMTR Observation Laboratory Results: Priority Variables",
       "StructureDefinition-cibmtr-vital-signs-weight.html" : "CIBMTR Vital Signs-Weight Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (us-core)",
       "StructureDefinition-cibmtr-observation-lab.html" : "CIBMTR Observation Laboratory Results Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)"
+      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (US Core)",
+      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-priority",
@@ -1176,7 +1164,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.115"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)"
+      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/route-codes",
@@ -1190,8 +1179,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.98"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-medication-administration.html" : "CIBMTR Medication Administration (mcode)",
-      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)"
+      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)",
+      "StructureDefinition-cibmtr-medication-administration.html" : "CIBMTR Medication Administration (mcode)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -1211,22 +1201,23 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-prior-exposure-medication.html" : "CIBMTR Prior Exposure Medication",
-      "StructureDefinition-cibmtr-medication-administration.html" : "CIBMTR Medication Administration (mcode)",
-      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile",
+      "StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html" : "CIBMTR Planned Post-HCT Disease Therapy Medication",
+      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medication.html" : "CIBMTR Medication (us-core)",
       "StructureDefinition-cibmtr-patient.html" : "CIBMTR Patient Profile (us-core)",
       "StructureDefinition-cibmtr-prep-regimen-medication.html" : "CIBMTR Prep Regimen Medication",
-      "StructureDefinition-cibmtr-medication.html" : "CIBMTR Medication (us-core)",
-      "StructureDefinition-cibmtr-obs-priority-variables.html" : "CIBMTR Observation Laboratory Results: Priority Variables",
       "StructureDefinition-cibmtr-vital-signs-weight.html" : "CIBMTR Vital Signs-Weight Profile (us-core)",
-      "StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html" : "CIBMTR Planned Post-HCT Disease Therapy Medication",
-      "StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html" : "CIBMTR GVHD Prophylaxis Medication",
-      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (us-core)",
-      "StructureDefinition-cibmtr-additional-peri-transplant-medication.html" : "CIBMTR Additional Drugs in Peri-Transplant Period",
-      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)",
       "StructureDefinition-cibmtr-observation-lab.html" : "CIBMTR Observation Laboratory Results Profile (us-core)",
+      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (US Core)",
+      "StructureDefinition-cibmtr-cytogenetics.html" : "CIBMTR Cytogenetics Profile",
+      "StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html" : "CIBMTR GVHD Prophylaxis Medication",
+      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)",
+      "StructureDefinition-cibmtr-obs-priority-variables.html" : "CIBMTR Observation Laboratory Results: Priority Variables",
+      "StructureDefinition-cibmtr-medication-administration.html" : "CIBMTR Medication Administration (mcode)",
+      "StructureDefinition-cibmtr-prior-exposure-medication.html" : "CIBMTR Prior Exposure Medication",
       "StructureDefinition-cibmtr-mobilizing-agent-medication.html" : "CIBMTR Mobilizing Agents Medication",
-      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)"
+      "StructureDefinition-cibmtr-additional-peri-transplant-medication.html" : "CIBMTR Additional Drugs in Peri-Transplant Period"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/ucum-bodylength",
@@ -1257,6 +1248,19 @@
       "StructureDefinition-cibmtr-vital-signs-weight.html" : "CIBMTR Vital Signs-Weight Profile (us-core)"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/ucum-common",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Common UCUM units",
+      "title" : null,
+      "description" : "Commonly encountered UCUM units (for purposes of helping populate look ups.",
+      "systems" : ["http://unitsofmeasure.org"],
+      "uses" : {
+      },
+      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/ucum-vitals-common",
       "version" : "4.0.1",
       "status" : "draft",
@@ -1268,9 +1272,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.955"],
       "uses" : {
       },
+      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)",
       "StructureDefinition-cibmtr-vital-signs-weight.html" : "CIBMTR Vital Signs-Weight Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (us-core)",
-      "StructureDefinition-cibmtr-vital-signs-height.html" : "CIBMTR Vital Signs-Height Profile (us-core)"
+      "StructureDefinition-cibmtr-vital-signs.html" : "CIBMTR Vital Signs Results Profile (US Core)"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-result-observation-category",
@@ -1304,7 +1308,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/us/mcode/ValueSet/mcode-cancer-disorder-vs",
-      "version" : "2.0.0",
+      "version" : "4.0.0",
       "status" : "active",
       "name" : "CancerDisorderVS",
       "title" : "Cancer Disorder Value Set",
@@ -1314,10 +1318,29 @@
         "http://terminology.hl7.org/CodeSystem/icd-o-3",
         "http://snomed.info/sct"
       ],
+      "oids" : ["2.16.840.1.113883.4.642.40.15.48.17"],
+      "sources" : ["2.16.840.1.113883.4.642.40.15.48.17"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-medication-administration.html" : "CIBMTR Medication Administration (mcode)",
-      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)"
+      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)",
+      "StructureDefinition-cibmtr-medication-administration.html" : "CIBMTR Medication Administration (mcode)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/mcode/ValueSet/mcode-treatment-termination-reason-vs",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "TreatmentTerminationReasonVS",
+      "title" : "Treatment Termination Reason Value Set",
+      "description" : "Values used to describe the reasons for stopping a treatment or episode of care. Includes code for 'treatment completed' as well as codes for unplanned (early) stoppage. Applies to medications and other treatments that take place over a period of time, such as radiation treatments.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.40.15.48.91"],
+      "sources" : ["2.16.840.1.113883.4.642.40.15.48.91"],
+      "uses" : {
+      },
+      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)",
+      "StructureDefinition-cibmtr-medication-administration.html" : "CIBMTR Medication Administration (mcode)"
     },
     {
       "url" : "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/dna-change-type-vs",
@@ -1530,7 +1553,8 @@
       "sources" : ["2.16.840.1.113883.1.11.16621"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)"
+      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason",
@@ -1544,7 +1568,17 @@
       "sources" : ["2.16.840.1.113883.1.11.19377"],
       "uses" : {
       },
-      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)"
+      "StructureDefinition-cibmtr-medication-request.html" : "CIBMTR Medication Request (mcode)",
+      "StructureDefinition-cibmtr-medications.html" : "CIBMTR Medication Related (mcode)"
+    },
+    {
+      "url" : "https://termservices.nmdp.org/atlas/#/conceptset/136/expression",
+      "version" : "0.1.11",
+      "status" : "draft",
+      "name" : "CIBMTRAncestryValueset",
+      "title" : "CIBMTR Ancestry ValueSet",
+      "description" : "A value set for CIBMTR ancestry information.",
+      "systems" : ["http://example.org/fhir/CodeSystem/cibmtr-ancestry"]
     }
   ]
 }

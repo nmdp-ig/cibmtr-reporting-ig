@@ -29,28 +29,168 @@ const auth_string = "Basic " + base64("<Application Client ID>" + ":" + "<Applic
 
 An example of the header parameters for the POST request to the authorization server using the Postman API client tool (https://www.postman.com) is shown in Figure 1.  In the figure, the authorization string is blacked out.  Notice the space between the base 64 encoded string and the string prefix, `Basic`.   
 
-|![Figure 1](dfhir_r3_figure01.png){: width="50%"} |
-|:--:|
-| <i>Figure 1: Example header information for the POST request to the authorization server</i>|
+<details class="fig-toggle">
+<summary><u>Figure 1</u></summary>
+
+<div style="text-align:center; width:100%; margin-top:10px;">
+
+<img src="dfhir_r3_figure01.png" style="width:50%;">
+<div style="margin-top:8px;">
+<i>Figure 1: Example header information for the POST request to the authorization server</i>
+</div>
+
+</div>
+
+</details>
+<style>
+.fig-toggle summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.fig-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.fig-toggle summary::before {
+  content: "> ";
+}
+
+.fig-toggle[open] summary::before {
+  content: "∨ ";
+}
+</style>
+<br>
 
 
 Figure 2 below shows the required fields in the body of the POST request to the authorization server API. The value for the `username` key is the CIBMTR Service Account Username provided by CIBMTR.   The value for the `password` key is the CIBMTR Service Account Password.  The `grant_type` key and the `scope` key have the same values as shown in Figure 2.  The response to the POST request will return a JSON object that includes a base64 encoded token.  The token can be a long character string (over 1000 chars). 
 
-|![Figure 2](dfhir_r3_figure02.png){: width="50%"}|
-|:--:|
-| <i>Figure 2: Required POST fields to submit for the authorization token.</i>|
+<details class="fig-toggle">
+<summary><u>Figure 2</u></summary>
+
+<div style="text-align:center; width:100%; margin-top:10px;">
+
+<img src="dfhir_r3_figure02.png" style="width:50%;">
+<div style="margin-top:8px;">
+<i>Figure 2: Required POST fields to submit for the authorization token.</i>
+</div>
+
+</div>
+
+</details>
+<style>
+.fig-toggle summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.fig-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.fig-toggle summary::before {
+  content: "> ";
+}
+
+.fig-toggle[open] summary::before {
+  content: "∨ ";
+}
+</style>
+<br>
 
 Once the token has been received, a request to the CIBMTR Direct FHIR service API can be made. Tokens are valid for 30 minutes in the production environment, but last up to 24 hours in the test environment.  Applications must cache and re-use tokens until they are about to expire because Okta rate limits requests for new tokens. One workable strategy is to obtain a new token every 25 minutes. 
 
-|![Figure 3](dfhir_r3_figure03.png){: width="50%"}|
-|:--:|
-| <i>Figure 3: Example CIBMTR Direct FHIR API request using a bearer authorization token in the header of the request.</i>|
+<details class="fig-toggle">
+<summary><u>Figure 3 </u></summary>
+
+<div style="text-align:center; width:100%; margin-top:10px;">
+
+<img src="dfhir_r3_figure03.png" style="width:50%;">
+<div style="margin-top:8px;">
+<i>Figure 3: Example CIBMTR Direct FHIR API request using a bearer authorization token in the header of the request.</i>
+</div>
+
+</div>
+
+</details>
+<style>
+.fig-toggle summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.fig-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.fig-toggle summary::before {
+  content: "> ";
+}
+
+.fig-toggle[open] summary::before {
+  content: "∨ ";
+}
+</style>
+<br>
 
 To make a request to the CIBMTR Direct FHIR Backend API, include the token in the header as the authorization key value of the request along with the word `Bearer ` in front of it, as shown in Figure 3.
+
+### Token Expiration 
+
+Access tokens used for the CIBMTR Direct FHIR API are valid for a limited duration defined in the token response. The validity period is determined by the expires_in field returned at the time of token issuance (e.g., "expires_in": 1800 indicates a validity of 1800 seconds). The expires_in value should be used to determine token validity and manage when to request a new token.
+
+Token lifetimes can differ between environments. The production environment often enforces shorter expiration periods than non-production environments. As a result, processes that complete successfully in test environments can encounter token expiration in production, even when processing the same data.
+
+For long-running processes, a valid token needs to be used for all requests. If data transmission exceeds the token’s validity period, the token is considered expired, and a new token is required before submitting additional data.
+
+Requesting a new token before the current token expires, based on the expires_in value, helps prevent interruptions during active data transmission.
+
+If requests are submitted using an expired token, the server can reject those requests due to token expiration. In such cases, a new token is required before data submission can resume.
+
+<details class="fig-toggle">
+<summary><u>Token Response Example</u></summary>
+<pre><code class="language-json">
+{
+    "token_type": "Bearer",
+    "expires_in": 86400,
+    "access_token": "jwt-type-token",
+    "scope": "your-scope-for-the-app"
+} 
+</code></pre>
+</details>
+<style>
+.fig-toggle summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.fig-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.fig-toggle summary::before {
+  content: "> ";
+}
+
+.fig-toggle[open] summary::before {
+  content: "∨ ";
+}
+</style>
+<br>
 
 ### Example Code
 
 #### Request Authorization Token
 {% include example-code-req-auth-token.md %}
 
+<details>
+<summary><u>Request Authorization Token</u></summary>
+
+<div style="margin-top:10px;">
+
+{% include example-code-req-auth-token.md %}
+
+</div>
+
+</details>
 {% include link-list.md %}

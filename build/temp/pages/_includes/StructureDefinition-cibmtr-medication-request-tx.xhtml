@@ -1,42 +1,370 @@
 {% raw %}<h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>MedicationRequest.meta.security</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Security Labels from the Healthcare Privacy and Security Classification System."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-labels.html">All Security Labels</a><div><code>http://hl7.org/fhir/ValueSet/security-labels</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/security-labels"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>MedicationRequest.meta.security:TransplantCenter</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Security Labels from the Healthcare Privacy and Security Classification System."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-labels.html">All Security Labels</a><div><code>http://hl7.org/fhir/ValueSet/security-labels</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/security-labels"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>MedicationRequest.meta.tag</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes that represent various types of tags, commonly workflow-related; e.g. &quot;Needs review by Dr. Jones&quot;."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-common-tags.html">CommonTags</a><div><code>http://hl7.org/fhir/ValueSet/common-tags</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/common-tags"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>MedicationRequest.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="A human language."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><div><code>http://hl7.org/fhir/ValueSet/languages</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/languages"></button></div><div>From the FHIR Standard</div><table class="grid">
+<table class="list" data-fhir="generated-heirarchy">
   <tr>
-    <td style="font-size: 11px">
-      <b>Additional Bindings</b>
+    <td>
+      <b>Path</b>
     </td>
-    <td style="font-size: 11px">Purpose</td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
   </tr>
   <tr>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
+    <td>MedicationRequest.meta.​security</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
     </td>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a>
+    <td title="Security Labels from the Healthcare Privacy and Security Classification System.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-labels.html">SecurityLabels</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-labels|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
     </td>
   </tr>
-</table>
-</td></tr>
-<tr><td>MedicationRequest.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="A code specifying the state of the prescribing event. Describes the lifecycle of the prescription."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medicationrequest-status.html">medicationrequest Status</a><div><code>http://hl7.org/fhir/ValueSet/medicationrequest-status</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/medicationrequest-status"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>MedicationRequest.statusReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Identifies the reasons for a given status."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medicationrequest-status-reason.html">medicationRequest Status Reason Codes</a><div><code>http://hl7.org/fhir/ValueSet/medicationrequest-status-reason</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/medicationrequest-status-reason"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>MedicationRequest.intent</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The kind of medication order."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medicationrequest-intent.html">medicationRequest Intent</a><div><code>http://hl7.org/fhir/ValueSet/medicationrequest-intent</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/medicationrequest-intent"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>MedicationRequest.category</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="The type of medication order."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medicationrequest-category.html">medicationRequest Category Codes</a><div><code>http://hl7.org/fhir/ValueSet/medicationrequest-category</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/medicationrequest-category"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>MedicationRequest.priority</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Identifies the level of importance to be assigned to actioning the request."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-request-priority.html">RequestPriority</a><div><code>http://hl7.org/fhir/ValueSet/request-priority|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/request-priority|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>MedicationRequest.medication[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1010.4/expansion">MedicationClinicalDrug <img src="external.png" alt="."/></a><div><code>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4"></button></div><div>From <a href="https://vsac.nlm.nih.gov">https://vsac.nlm.nih.gov</a></div></td></tr>
-<tr><td>MedicationRequest.performerType</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Identifies the type of individual that is desired to administer the medication."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-performer-role.html">ProcedurePerformerRoleCodes</a><div><code>http://hl7.org/fhir/ValueSet/performer-role</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/performer-role"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>MedicationRequest.reasonCode</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/us/mcode/STU2/ValueSet-mcode-cancer-disorder-vs.html">CancerDisorderVS</a><div><code>http://hl7.org/fhir/us/mcode/ValueSet/mcode-cancer-disorder-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/us/mcode/ValueSet/mcode-cancer-disorder-vs"></button></div></td></tr>
-<tr><td>MedicationRequest.courseOfTherapyType</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Identifies the overall pattern of medication administratio."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medicationrequest-course-of-therapy.html">medicationRequest Course of Therapy Codes</a><div><code>http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>MedicationRequest.dosageInstruction.additionalInstruction</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="A coded concept identifying additional instructions such as &quot;take with water&quot; or &quot;avoid operating heavy machinery&quot;."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html">SNOMEDCTAdditionalDosageInstructions</a><div><code>http://hl7.org/fhir/ValueSet/additional-instruction-codes</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/additional-instruction-codes"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>MedicationRequest.dosageInstruction.asNeeded[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="A coded concept identifying the precondition that should be met or evaluated prior to consuming or administering a medication dose.  For example &quot;pain&quot;, &quot;30 minutes prior to sexual intercourse&quot;, &quot;on flare-up&quot; etc."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html">SNOMEDCTMedicationAsNeededReasonCodes</a><div><code>http://hl7.org/fhir/ValueSet/medication-as-needed-reason</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/medication-as-needed-reason"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>MedicationRequest.dosageInstruction.site</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="A coded concept describing the site location the medicine enters into or onto the body."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-approach-site-codes.html">SNOMEDCTAnatomicalStructureForAdministrationSiteCodes</a><div><code>http://hl7.org/fhir/ValueSet/approach-site-codes</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/approach-site-codes"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>MedicationRequest.dosageInstruction.route</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="A coded concept describing the route or physiological path of administration of a therapeutic agent into or onto the body of a subject."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-route-codes.html">SNOMEDCTRouteCodes</a><div><code>http://hl7.org/fhir/ValueSet/route-codes</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/route-codes"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>MedicationRequest.dosageInstruction.method</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="A coded concept describing the technique by which the medicine is administered."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-administration-method-codes.html">SNOMEDCTAdministrationMethodCodes</a><div><code>http://hl7.org/fhir/ValueSet/administration-method-codes</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/administration-method-codes"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>MedicationRequest.dosageInstruction.doseAndRate.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="The kind of dose or rate specified."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-dose-rate-type.html">DoseAndRateType</a><div><code>http://hl7.org/fhir/ValueSet/dose-rate-type</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/dose-rate-type"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>MedicationRequest.substitution.allowed[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Identifies the type of substitution allowed."><a style="opacity: 1.0" href="http://terminology.hl7.org/5.5.0/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html">ActSubstanceAdminSubstitutionCode</a><div><code>http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode"></button></div></td></tr>
-<tr><td>MedicationRequest.substitution.reason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="A coded concept describing the reason that a different medication should (or should not) be substituted from what was prescribed."><a style="opacity: 1.0" href="http://terminology.hl7.org/5.5.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html">SubstanceAdminSubstitutionReason</a><div><code>http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason"></button></div></td></tr>
+  <tr>
+    <td>MedicationRequest.meta.​security:TransplantCenter</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="Security Labels from the Healthcare Privacy and Security Classification System.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-labels.html">SecurityLabels</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-labels|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.meta.​tag</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="Codes that represent various types of tags, commonly workflow-related; e.g. &quot;Needs review by Dr. Jones&quot;.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-common-tags.html">Common Tags</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/common-tags|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.language</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td title="A human language.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">Common Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.status</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="A code specifying the state of the prescribing event. Describes the lifecycle of the prescription.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medicationrequest-status.html">Medicationrequest  status</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/medicationrequest-status" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.statusReason</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/us/mcode/STU4/ValueSet-mcode-treatment-termination-reason-vs.html">Treatment Termination Reason Value Set</a>
+      <button data-clipboard-text="http://hl7.org/fhir/us/mcode/ValueSet/mcode-treatment-termination-reason-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 4.0.0, the version found through the package references">&#x1F4E6;4.0.0</td>
+    <td>
+      <a href="http://hl7.org/fhir/us/mcode/STU4">minimal Common Oncology Data Elements  v4.0</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.intent</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="The kind of medication order.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medicationrequest-intent.html">Medication request  intent</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/medicationrequest-intent" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.category</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="A coded concept identifying the category of medication request.  For example, where the medication is to be consumed or administered, or the type of medication treatment.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medicationrequest-category.html">Medication request  category  codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/medicationrequest-category" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.category:us-core</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="The type of medication order. Note that other codes are permitted, see [Required Bindings When Slicing by Value Sets](http://hl7.org/fhir/us/core/general-requirements.html#required-bindings-when-slicing-by-valuesets)">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medicationrequest-category.html">Medication request  category  codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/medicationrequest-category" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.priority</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Identifies the level of importance to be assigned to actioning the request.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-request-priority.html">Request priority</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/request-priority|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.medication[x]</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1010.4/expansion">Medication Clinical Drug</a>
+      <button data-clipboard-text="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4" title="Click to copy URL" class="btn-copy"></button>
+      <img src="external.png" alt="."/>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 20240606, the version found through the package references">&#x1F4E6;20240606</td>
+    <td>
+      <a href="http://fhir.org/packages/us.nlm.vsac">VSAC v0.23</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.performerType</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="Identifies the type of individual that is desired to administer the medication.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-performer-role.html">Procedure Performer Role Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/performer-role" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.reasonCode</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/us/mcode/STU4/ValueSet-mcode-cancer-disorder-vs.html">Cancer Disorder Value Set</a>
+      <button data-clipboard-text="http://hl7.org/fhir/us/mcode/ValueSet/mcode-cancer-disorder-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 4.0.0, the version found through the package references">&#x1F4E6;4.0.0</td>
+    <td>
+      <a href="http://hl7.org/fhir/us/mcode/STU4">minimal Common Oncology Data Elements  v4.0</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.courseOfTherapyType</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="Identifies the overall pattern of medication administratio.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medicationrequest-course-of-therapy.html">Medication request  course of  therapy  codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.dosageInstruction.​additionalInstruction</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="A coded concept identifying additional instructions such as &quot;take with water&quot; or &quot;avoid operating heavy machinery&quot;.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html">SNOMED CT Additional Dosage Instructions</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/additional-instruction-codes" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.dosageInstruction.​asNeeded[x]</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="A coded concept identifying the precondition that should be met or evaluated prior to consuming or administering a medication dose.  For example &quot;pain&quot;, &quot;30 minutes prior to sexual intercourse&quot;, &quot;on flare-up&quot; etc.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html">SNOMED CT Medication As Needed Reason Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/medication-as-needed-reason" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.dosageInstruction.​site</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="A coded concept describing the site location the medicine enters into or onto the body.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-approach-site-codes.html">SNOMED CT Anatomical Structure for Administration Site Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/approach-site-codes" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.dosageInstruction.​route</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="A coded concept describing the route or physiological path of administration of a therapeutic agent into or onto the body of a subject.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-route-codes.html">SNOMED CT Route Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/route-codes" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.dosageInstruction.​method</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="A coded concept describing the technique by which the medicine is administered.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-administration-method-codes.html">SNOMED CT Administration Method Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/administration-method-codes" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.dosageInstruction.​doseAndRate.type</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="The kind of dose or rate specified.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-dose-rate-type.html">DoseAndRateType</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/dose-rate-type" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.dosageInstruction.​doseAndRate.dose[x]</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-ucum-common.html">Common UCUM units</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/ucum-common" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.substitution.​allowed[x]</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="Identifies the type of substitution allowed.">
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.1.0/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html">ActSubstanceAdminSubstitutionCode</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 3.0.0, the version found through the package references">&#x1F4E6;3.0.0</td>
+    <td>
+      <a href="http://terminology.hl7.org/7.1.0">THO v7.1</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.substitution.​reason</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="A coded concept describing the reason that a different medication should (or should not) be substituted from what was prescribed.">
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.1.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html">SubstanceAdminSubstitutionReason</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 3.0.0, the version found through the package references">&#x1F4E6;3.0.0</td>
+    <td>
+      <a href="http://terminology.hl7.org/7.1.0">THO v7.1</a>
+    </td>
+  </tr>
 </table>
 {% endraw %}

@@ -12,7 +12,7 @@ This FHIR Implementation Guide (IG) describes how to report transplant-related d
 ### Introduction
   
 The [Center for International Blood &amp; Marrow Transplant Research® (CIBMTR®)]
-is a research collaboration between the [National Marrow Donor Program® (NMDP)/Be The Match®]
+is a research collaboration between the [NMDP]
 and the [Medical College of Wisconsin (MCW)]. 
 The CIBMTR collaborates with the global scientific community to advance hematopoietic cell 
 transplantation (HCT) and other cellular therapy worldwide to increase survival and enrich 
@@ -40,7 +40,7 @@ focusing on a set of variables that have been identified as a priority for the C
 begun describing how medication-related resources may be reported, specifically in the context of [CIBMTR Form 2400 (Pre-TED)]. Future versions of this IG will include
 other FHIR resources such as Condition, Procedure, Encounter, EpisdoeOfCare, etc.
   
-### Guidance
+### Implementation Guidance and Profiles
 Guidance on connecting to and sending data to the Direct FHIR API is found in the links below.
 
 * [Connecting and Access]
@@ -49,32 +49,26 @@ Guidance on connecting to and sending data to the Direct FHIR API is found in th
   * A table of API endpoint to get access tokens, assign a CRID, and submit FHIR resources to development and production work
 * [Access Credentials]
   * Steps to request security tokens necessary for any interaction with the API
-* CRID Assignment
-  * [CRID Assignment_Non-FHIR API]
-      * Description of how to assign a CRID for Patient. This uses a non-FHIR API to submit patient demographic data to CIBMTR. The service will either match an existing patient, or create a new one if no match is found. The CRID is returned to the client.
-  * [CRID Assignment_FHIR API]
-      * Description of how to assign a CRID for Patient. This uses a FHIR API to submit patient demographic data to CIBMTR. 
-* [Patient]
+* [CRID Assignment_FHIR API]
+  * Description of how to assign a CRID for a patient using a FHIR API to submit patient demographic data to CIBMTR.
+* [CIBMTR Patient]
   * Description of how to send patient information in FHIR resources 
-* [Laboratory Observations]
+* [CIBMTR Laboratory Observations]
   * Description of how to send lab values in FHIR Observations.
-* [Medications]
+* [CIBMTR Medications]
   * Description of how to send medication-related FHIR resources 
-* [Vital Signs]
+* [CIBMTR Vital Signs]
   * Description of how to send vital sign values in FHIR resources 
 * [Bundles]
   * How to send a FHIR bundle containing multiple FHIR Resources
 * [Example code]
   * Example code, mostly in Python for now
 
-### Highlighted Artifacts
+### CIBMTR Program-Specific Profiles
 
-#### Profiles
-
-* [CIBMTR Patient] - derived from US-Core
-* [Laboratory Observation Results] - derived from US-Core
+* Laboratory Observation Profile
   * [Laboratory Observation for Priority Variables] - derived from the general CIBMTR lab Observation, but bound to the FY2022 priority ValueSet
-* Medication-related Profiles
+* Medication Profile
   * [MedicationRequest] - derived from mCode
   * [Medication] - derived from US-Core
     * [Mobilizing Agent Medication]
@@ -83,15 +77,15 @@ Guidance on connecting to and sending data to the Direct FHIR API is found in th
     * [GVHD Prophylaxis Medication]
     * [Planned Post-HCT Disease Therapy Medication]
     * [Prior Exposure Medication]
-* [CIBMTR Vital Signs] - derived from US-Core
+* Vital Signs Profile
     * [CIBMTR Vital Signs-Height] - derived from US-Core
     * [CIBMTR Vital Signs-Weight] - derived from US-Core
  
-#### ValueSets
-* LOINC
-  * [CIBMTR Priority Variables for FY22] - LOINC (used with Observation)
-  * [LOINC Codes used in Vital Signs]
-* RxNorm (used in medication-related resources)
+### ValueSets
+* Observation Resource
+  * Laboratory Observation resource [CIBMTR Priority Variables for FY22] 
+  * Vital Signs Observation resource [Vital Signs Value Set]
+* Medication Resource
   * [Mobilizing Agents (auto only)]
   * [Prep Regimen]
   * [Additional Drugs in Peri-Transplant Period]

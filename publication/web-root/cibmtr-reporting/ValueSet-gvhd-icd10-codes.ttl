@@ -11,15 +11,18 @@
   fhir:id [ fhir:v "gvhd-icd10-codes"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet gvhd-icd10-codes</b></p><a name=\"gvhd-icd10-codes\"> </a><a name=\"hcgvhd-icd10-codes\"> </a><ul><li>Include codes from<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a> where concept  is-a D89.81 (Graft-versus-host disease)</li></ul></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet gvhd-icd10-codes</b></p><a name=\"gvhd-icd10-codes\"> </a><a name=\"hcgvhd-icd10-codes\"> </a><ul><li>Include codes from<a href=\"http://terminology.hl7.org/6.4.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a D89.81 (Graft-versus-host disease)</li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.9"] ; # 
+  fhir:url [
+     fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes"^^xsd:anyURI ;
+     fhir:l <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.11"] ; # 
   fhir:name [ fhir:v "GVHDICD10VS"] ; # 
   fhir:title [ fhir:v "GVHD ICD-10 Codes"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v true] ; # 
-  fhir:date [ fhir:v "2025-09-19T15:08:00-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-10T07:35:08-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ] ;
@@ -37,7 +40,10 @@
   fhir:description [ fhir:v "GVHD ICD-10 Codes"] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/sid/icd-10-cm>
+       ] ;
        fhir:filter ( [
          fhir:property [ fhir:v "concept" ] ;
          fhir:op [ fhir:v "is-a" ] ;

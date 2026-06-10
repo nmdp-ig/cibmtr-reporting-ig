@@ -5,7 +5,6 @@
   "name": "CIBMTRPatient",
   "title": "CIBMTR Patient Profile (us-core)",
   "status": "draft",
-  "description": "CIBMTR Patient Profile for CRID assignment (us-core)",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -84,22 +83,6 @@
             "code": "Extension",
             "profile": [
               "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.extension:AncestryExt",
-        "path": "Patient.extension",
-        "sliceName": "AncestryExt",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/observation-geneticsAncestry"
             ]
           }
         ],

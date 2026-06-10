@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "nmdp.fhir.cibmtr-reporting",
   "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/nmdp.fhir.cibmtr-reporting",
-  "version": "0.1.9",
+  "version": "0.1.11",
   "name": "CIBMTRReporting",
   "title": "CIBMTR Reporting Implementation Guide",
   "status": "draft",
@@ -44,7 +44,7 @@
       "id": "mcode",
       "packageId": "hl7.fhir.us.mcode",
       "uri": "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode",
-      "version": "2.0.0"
+      "version": "4.0.0"
     },
     {
       "packageId": "hl7.fhir.uv.genomics-reporting",
@@ -169,6 +169,30 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/cibmtr-ancestry-cs"
+        },
+        "name": "CIBMTR Ancestry CodeSystem",
+        "description": "A code system for CIBMTR ancestry information.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cibmtr-ancestry"
+        },
+        "name": "CIBMTR Ancestry Extension",
+        "description": "Container extension holding US Core Race plus CIBMTR ancestry codes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/cibmtr-ancestry-vs"
+        },
+        "name": "CIBMTR Ancestry ValueSet",
+        "description": "A value set for CIBMTR ancestry information.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cibmtr-cytogenetics"
         },
         "name": "CIBMTR Cytogenetics Profile",
@@ -201,6 +225,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cibmtr-medications"
+        },
+        "name": "CIBMTR Medication Related (mcode)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cibmtr-medication-request"
         },
         "name": "CIBMTR Medication Request (mcode)",
@@ -220,7 +251,6 @@
           "reference": "StructureDefinition/cibmtr-observation-lab"
         },
         "name": "CIBMTR Observation Laboratory Results Profile (us-core)",
-        "description": "CIBMTR Observation Laboratory Results Profile (us-core)",
         "exampleBoolean": false
       },
       {
@@ -233,18 +263,17 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cibmtr-patient"
+          "reference": "ValueSet/patient"
         },
-        "name": "CIBMTR Patient Profile (us-core)",
-        "description": "CIBMTR Patient Profile for CRID assignment (us-core)",
+        "name": "CIBMTR Patient Ancestry Value Set",
+        "description": "US Core Race Categories (Intensional).\r\n1.\nThis value set is used by me",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/patient"
+          "reference": "StructureDefinition/cibmtr-patient"
         },
-        "name": "CIBMTR Patient Value Set",
-        "description": "CIBMTR Patient Value Set",
+        "name": "CIBMTR Patient Profile (us-core)",
         "exampleBoolean": false
       },
       {
@@ -297,10 +326,17 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/cibmtr-cs-vitalsigns"
+        },
+        "name": "CIBMTR Vital Signs Concept Set",
+        "description": "CIBMTR Vital Signs Concept Set",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cibmtr-vital-signs"
         },
-        "name": "CIBMTR Vital Signs Results Profile (us-core)",
-        "description": "CIBMTR Vital Signs Results Profile (us-core)",
+        "name": "CIBMTR Vital Signs Results Profile (US Core)",
         "exampleBoolean": false
       },
       {

@@ -1,6 +1,17 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://example.org/fhir/CodeSystem/cibmtr-ancestry",
+      "version" : "0.1.11",
+      "status" : "draft",
+      "name" : "CIBMTRAncestryCodeSystem",
+      "title" : "CIBMTR Ancestry CodeSystem",
+      "description" : "A code system for CIBMTR ancestry information.",
+      "uses" : {
+      },
+      "ValueSet-cibmtr-ancestry-vs.html" : "CIBMTR Ancestry ValueSet"
+    },
+    {
       "url" : "http://hl7.org/fhir/sid/icd-10-cm",
       "version" : "2.0.1",
       "status" : "active",
@@ -23,20 +34,20 @@
       "uses" : {
       },
       "ValueSet-cibmtr-priority-variables-epic-2021.html" : "CIBMTR Priority Variables Value Set for Epic App (FY21)",
-      "ValueSet-manual-differential-blood-vs.html" : "Manual Differential panel - Blood (24318-8)",
-      "ValueSet-vital-signs.html" : "CIBMTR Vital Signs Value Set",
-      "ValueSet-erythrocyte-morphology-blood-vs.html" : "Erythrocyte morphology panel - Blood (58408-6)",
-      "ValueSet-patient.html" : "CIBMTR Patient Value Set",
-      "ValueSet-cibmtr-priority-variables-2022.html" : "CIBMTR Priority Variables Value Set (FY22)",
-      "ValueSet-auto-differential-blood-vs.html" : "Auto Differential panel - Blood (57023-4)",
-      "ValueSet-presence-valueset.html" : "Presence Answer List",
-      "ValueSet-platelet-morphology-blood-vs.html" : "Platelet morphology panel - Blood (58406-0)",
       "ValueSet-cbc-blood-automated-vs.html" : "CBC panel - Blood by Automated count (58410-2)",
-      "ValueSet-cibmtr-priority-variables-2021.html" : "CIBMTR Priority Variables Value Set (FY21)",
-      "ValueSet-cbc-w-differential-unspecified-blood-vs.html" : "CBC W Differential panel, method unspecified - Blood (69742-5)",
-      "ValueSet-differential-unspecified-blood-vs.html" : "Differential panel, method unspecified - Blood (69738-3)",
+      "ValueSet-platelet-morphology-blood-vs.html" : "Platelet morphology panel - Blood (58406-0)",
       "ValueSet-smear-morphology-blood-vs.html" : "Smear morphology panel - Blood (34994-4)",
-      "ValueSet-leukocyte-morphology-blood-vs.html" : "Leukocyte morphology panel - Blood (58407-8)"
+      "ValueSet-erythrocyte-morphology-blood-vs.html" : "Erythrocyte morphology panel - Blood (58408-6)",
+      "ValueSet-vital-signs.html" : "CIBMTR Vital Signs Value Set",
+      "ValueSet-cibmtr-priority-variables-2022.html" : "CIBMTR Priority Variables Value Set (FY22)",
+      "ValueSet-patient.html" : "CIBMTR Patient Ancestry Value Set",
+      "ValueSet-cibmtr-priority-variables-2021.html" : "CIBMTR Priority Variables Value Set (FY21)",
+      "ValueSet-leukocyte-morphology-blood-vs.html" : "Leukocyte morphology panel - Blood (58407-8)",
+      "ValueSet-presence-valueset.html" : "Presence Answer List",
+      "ValueSet-differential-unspecified-blood-vs.html" : "Differential panel, method unspecified - Blood (69738-3)",
+      "ValueSet-cbc-w-differential-unspecified-blood-vs.html" : "CBC W Differential panel, method unspecified - Blood (69742-5)",
+      "ValueSet-auto-differential-blood-vs.html" : "Auto Differential panel - Blood (57023-4)",
+      "ValueSet-manual-differential-blood-vs.html" : "Manual Differential panel - Blood (24318-8)"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -48,10 +59,10 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
+      "ValueSet-presence-valueset.html" : "Presence Answer List",
       "ValueSet-hematopoietic-disorder-vs.html" : "Disorders of hematopoietic structure",
       "ValueSet-gvhd-sct-codes.html" : "GVHD SNOMED CT Codes",
-      "ValueSet-snomed-myelodysplastic-diseases-vs.html" : "SNOMED Myelodysplastic Diseases",
-      "ValueSet-presence-valueset.html" : "Presence Answer List"
+      "ValueSet-snomed-myelodysplastic-diseases-vs.html" : "SNOMED Myelodysplastic Diseases"
     },
     {
       "url" : "http://www.nlm.nih.gov/research/umls/rxnorm",
@@ -63,27 +74,27 @@
       "oids" : ["2.16.840.1.113883.6.88"],
       "uses" : {
       },
-      "ValueSet-med-mobilizing-agents-vs.html" : "RxNorm - Mobilizing Agents (auto only)",
-      "ValueSet-med-treosulfan-vs.html" : "RxNorm - Treosulfan",
       "ValueSet-med-addition-peri-transplant-vs.html" : "RxNorm - Additional Drugs in Peri-Transplant Period",
-      "ValueSet-med-anti-thymocyte-globulin-vs.html" : "RxNorm - Anti-Thymocyte Globulin",
-      "ValueSet-med-bortezomib-vs.html" : "RxNorm - Bortezomib",
-      "ValueSet-med-ursodiol-vs.html" : "RxNorm - Ursodiol",
-      "ValueSet-med-etoposide-vs.html" : "RxNorm - Etoposide",
       "ValueSet-med-fludarabine-vs.html" : "RxNorm - Fludarabine",
-      "ValueSet-med-post-hct-disease-therapy-planned-vs.html" : "RxNorm - Post-HCT Disease Therapy Planned",
-      "ValueSet-med-busulfan-vs.html" : "RxNorm - Busulfan",
-      "ValueSet-med-prior-exposure-vs.html" : "RxNorm - Prior Exposure: Potential Study Eligibility",
-      "ValueSet-med-cytarabine-vs.html" : "RxNorm - Cytarabine",
       "ValueSet-med-thiotepa-vs.html" : "RxNorm - Thiotepa",
-      "ValueSet-med-gvhd-prophylaxis-vs.html" : "RxNorm - GVHD Prophylaxis",
-      "ValueSet-med-carmustine-vs.html" : "RxNorm - Carmustine",
-      "ValueSet-med-prep-regimen-vs.html" : "RxNorm - Prep Regimen",
-      "ValueSet-med-cyclophosphamide-vs.html" : "RxNorm - Cyclophosphamide",
-      "ValueSet-med-melphalan-vs.html" : "RxNorm - Melphalan",
-      "ValueSet-med-defibrotide-vs.html" : "RxNorm - Defibrotide",
       "ValueSet-med-rituximab-vs.html" : "RxNorm - Rituximab",
-      "ValueSet-med-alemtuzumab-vs.html" : "RxNorm - Alemtuzumab"
+      "ValueSet-med-carmustine-vs.html" : "RxNorm - Carmustine",
+      "ValueSet-med-cytarabine-vs.html" : "RxNorm - Cytarabine",
+      "ValueSet-med-defibrotide-vs.html" : "RxNorm - Defibrotide",
+      "ValueSet-med-alemtuzumab-vs.html" : "RxNorm - Alemtuzumab",
+      "ValueSet-med-cyclophosphamide-vs.html" : "RxNorm - Cyclophosphamide",
+      "ValueSet-med-treosulfan-vs.html" : "RxNorm - Treosulfan",
+      "ValueSet-med-anti-thymocyte-globulin-vs.html" : "RxNorm - Anti-Thymocyte Globulin",
+      "ValueSet-med-gvhd-prophylaxis-vs.html" : "RxNorm - GVHD Prophylaxis",
+      "ValueSet-med-mobilizing-agents-vs.html" : "RxNorm - Mobilizing Agents (auto only)",
+      "ValueSet-med-ursodiol-vs.html" : "RxNorm - Ursodiol",
+      "ValueSet-med-post-hct-disease-therapy-planned-vs.html" : "RxNorm - Post-HCT Disease Therapy Planned",
+      "ValueSet-med-melphalan-vs.html" : "RxNorm - Melphalan",
+      "ValueSet-med-busulfan-vs.html" : "RxNorm - Busulfan",
+      "ValueSet-med-etoposide-vs.html" : "RxNorm - Etoposide",
+      "ValueSet-med-prep-regimen-vs.html" : "RxNorm - Prep Regimen",
+      "ValueSet-med-prior-exposure-vs.html" : "RxNorm - Prior Exposure: Potential Study Eligibility",
+      "ValueSet-med-bortezomib-vs.html" : "RxNorm - Bortezomib"
     }
   ]
 }

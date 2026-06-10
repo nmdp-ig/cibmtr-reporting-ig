@@ -15,7 +15,7 @@
     "basepath" : "StructureDefinition-cibmtr-medication.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Sep 19 15:08:00 CDT 2025",
+    "date" : "Wed Jun 10 07:35:08 CDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
@@ -29,8 +29,45 @@
     },
     "obligations" : false
   },
-  "cibmtr-cytogenetics" : {
+  "cibmtr-ancestry" : {
     "index" : 1,
+    "url" : "http://example.org/fhir/StructureDefinition/cibmtr-ancestry",
+    "name" : "CIBMTRAncestryContainer",
+    "title" : "CIBMTR Ancestry Extension",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-cibmtr-ancestry.html",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Extension",
+    "basename" : "Extension",
+    "basepath" : "http://hl7.org/fhir/R4/extensibility.html#Extension",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Wed Jun 10 07:35:08 CDT 2026",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Container extension holding US Core Race plus CIBMTR ancestry codes.",
+    "descriptionlang" : {
+    },
+    "obligations" : false,
+    "contexts" : [
+      {
+        "type" : "Element ID",
+        "expression" : "Patient"
+      }
+    ],
+    "extension-contexts" : ["Patient"]
+  },
+  "cibmtr-cytogenetics" : {
+    "index" : 2,
     "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-cytogenetics",
     "name" : "CIBMTRCytogenetics",
     "title" : "CIBMTR Cytogenetics Profile",
@@ -45,7 +82,7 @@
     "basepath" : "http://hl7.org/fhir/uv/genomics-reporting/STU2/StructureDefinition-variant.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Sep 19 15:08:00 CDT 2025",
+    "date" : "Wed Jun 10 07:35:08 CDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
@@ -60,7 +97,7 @@
     "obligations" : false
   },
   "cibmtr-gvhd-prophylaxis-medication" : {
-    "index" : 2,
+    "index" : 3,
     "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-gvhd-prophylaxis-medication",
     "name" : "CIBMTR_GVHDProphylaxisMedication",
     "title" : "CIBMTR GVHD Prophylaxis Medication",
@@ -75,7 +112,7 @@
     "basepath" : "StructureDefinition-cibmtr-medication.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Sep 19 15:08:00 CDT 2025",
+    "date" : "Wed Jun 10 07:35:08 CDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
@@ -90,7 +127,7 @@
     "obligations" : false
   },
   "cibmtr-medication-administration" : {
-    "index" : 3,
+    "index" : 4,
     "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration",
     "name" : "CIBMTR_MedicationAdministration",
     "title" : "CIBMTR Medication Administration (mcode)",
@@ -102,10 +139,10 @@
     "type" : "MedicationAdministration",
     "base" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration",
     "basename" : "CancerRelatedMedicationAdministration",
-    "basepath" : "http://hl7.org/fhir/us/mcode/STU2/StructureDefinition-mcode-cancer-related-medication-administration.html",
+    "basepath" : "http://hl7.org/fhir/us/mcode/STU4/StructureDefinition-mcode-cancer-related-medication-administration.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Sep 19 15:08:00 CDT 2025",
+    "date" : "Wed Jun 10 07:35:08 CDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
@@ -120,7 +157,7 @@
     "obligations" : false
   },
   "cibmtr-medication-request" : {
-    "index" : 4,
+    "index" : 5,
     "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-request",
     "name" : "CIBMTR_MedicationRequest",
     "title" : "CIBMTR Medication Request (mcode)",
@@ -132,10 +169,10 @@
     "type" : "MedicationRequest",
     "base" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-request",
     "basename" : "CancerRelatedMedicationRequest",
-    "basepath" : "http://hl7.org/fhir/us/mcode/STU2/StructureDefinition-mcode-cancer-related-medication-request.html",
+    "basepath" : "http://hl7.org/fhir/us/mcode/STU4/StructureDefinition-mcode-cancer-related-medication-request.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Sep 19 15:08:00 CDT 2025",
+    "date" : "Wed Jun 10 07:35:08 CDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
@@ -150,7 +187,7 @@
     "obligations" : false
   },
   "cibmtr-medication" : {
-    "index" : 5,
+    "index" : 6,
     "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication",
     "name" : "CIBMTR_Medication",
     "title" : "CIBMTR Medication (us-core)",
@@ -165,7 +202,7 @@
     "basepath" : "http://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-medication.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Sep 19 15:08:00 CDT 2025",
+    "date" : "Wed Jun 10 07:35:08 CDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
@@ -179,8 +216,38 @@
     },
     "obligations" : false
   },
+  "cibmtr-medications" : {
+    "index" : 7,
+    "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medications",
+    "name" : "CIBMTR_Medications",
+    "title" : "CIBMTR Medication Related (mcode)",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-cibmtr-medications.html",
+    "kind" : "resource",
+    "type" : "MedicationRequest",
+    "base" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-request",
+    "basename" : "CancerRelatedMedicationRequest",
+    "basepath" : "http://hl7.org/fhir/us/mcode/STU4/StructureDefinition-mcode-cancer-related-medication-request.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Wed Jun 10 07:35:08 CDT 2026",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
   "cibmtr-mobilizing-agent-medication" : {
-    "index" : 6,
+    "index" : 8,
     "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-mobilizing-agent-medication",
     "name" : "CIBMTR_MobilizingAgentMedication",
     "title" : "CIBMTR Mobilizing Agents Medication",
@@ -195,7 +262,7 @@
     "basepath" : "StructureDefinition-cibmtr-medication.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Sep 19 15:08:00 CDT 2025",
+    "date" : "Wed Jun 10 07:35:08 CDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
@@ -210,7 +277,7 @@
     "obligations" : false
   },
   "cibmtr-obs-priority-variables" : {
-    "index" : 7,
+    "index" : 9,
     "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables",
     "name" : "CIBMTRObsPriorityVariables",
     "title" : "CIBMTR Observation Laboratory Results: Priority Variables",
@@ -225,7 +292,7 @@
     "basepath" : "StructureDefinition-cibmtr-observation-lab.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Sep 19 15:08:00 CDT 2025",
+    "date" : "Wed Jun 10 07:35:08 CDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
@@ -240,7 +307,7 @@
     "obligations" : false
   },
   "cibmtr-observation-lab" : {
-    "index" : 8,
+    "index" : 10,
     "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab",
     "name" : "CIBMTRObservationLab",
     "title" : "CIBMTR Observation Laboratory Results Profile (us-core)",
@@ -255,7 +322,7 @@
     "basepath" : "http://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-observation-lab.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Sep 19 15:08:00 CDT 2025",
+    "date" : "Wed Jun 10 07:35:08 CDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
@@ -264,13 +331,13 @@
     "copyright" : null,
     "copyrightlang" : {
     },
-    "description" : "CIBMTR Observation Laboratory Results Profile (us-core)",
+    "description" : "",
     "descriptionlang" : {
     },
     "obligations" : false
   },
   "cibmtr-patient" : {
-    "index" : 9,
+    "index" : 11,
     "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient",
     "name" : "CIBMTRPatient",
     "title" : "CIBMTR Patient Profile (us-core)",
@@ -285,7 +352,7 @@
     "basepath" : "http://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-patient.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Sep 19 15:08:00 CDT 2025",
+    "date" : "Wed Jun 10 07:35:08 CDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
@@ -294,13 +361,13 @@
     "copyright" : null,
     "copyrightlang" : {
     },
-    "description" : "CIBMTR Patient Profile for CRID assignment (us-core)",
+    "description" : "",
     "descriptionlang" : {
     },
     "obligations" : false
   },
   "cibmtr-post-hct-disease-therapy-planned-medication" : {
-    "index" : 10,
+    "index" : 12,
     "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-post-hct-disease-therapy-planned-medication",
     "name" : "CIBMTR_PostHCTDiseaseTherapyPlannedMedication",
     "title" : "CIBMTR Planned Post-HCT Disease Therapy Medication",
@@ -315,7 +382,7 @@
     "basepath" : "StructureDefinition-cibmtr-medication.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Sep 19 15:08:00 CDT 2025",
+    "date" : "Wed Jun 10 07:35:08 CDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
@@ -330,7 +397,7 @@
     "obligations" : false
   },
   "cibmtr-prep-regimen-medication" : {
-    "index" : 11,
+    "index" : 13,
     "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prep-regimen-medication",
     "name" : "CIBMTR_PrepRegimenMedication",
     "title" : "CIBMTR Prep Regimen Medication",
@@ -345,7 +412,7 @@
     "basepath" : "StructureDefinition-cibmtr-medication.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Sep 19 15:08:00 CDT 2025",
+    "date" : "Wed Jun 10 07:35:08 CDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
@@ -360,7 +427,7 @@
     "obligations" : false
   },
   "cibmtr-prior-exposure-medication" : {
-    "index" : 12,
+    "index" : 14,
     "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prior-exposure-medication",
     "name" : "CIBMTR_PriorExposureMedication",
     "title" : "CIBMTR Prior Exposure Medication",
@@ -375,7 +442,7 @@
     "basepath" : "StructureDefinition-cibmtr-medication.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Sep 19 15:08:00 CDT 2025",
+    "date" : "Wed Jun 10 07:35:08 CDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
@@ -390,7 +457,7 @@
     "obligations" : false
   },
   "cibmtr-vital-signs-height" : {
-    "index" : 13,
+    "index" : 15,
     "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-vital-signs-height",
     "name" : "CIBMTRVitalSignsHeight",
     "title" : "CIBMTR Vital Signs-Height Profile (us-core)",
@@ -405,7 +472,7 @@
     "basepath" : "http://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-body-height.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Sep 19 15:08:00 CDT 2025",
+    "date" : "Wed Jun 10 07:35:08 CDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
@@ -420,7 +487,7 @@
     "obligations" : false
   },
   "cibmtr-vital-signs-weight" : {
-    "index" : 14,
+    "index" : 16,
     "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-vital-signs-weight",
     "name" : "CIBMTRVitalSignsWeight",
     "title" : "CIBMTR Vital Signs-Weight Profile (us-core)",
@@ -435,7 +502,7 @@
     "basepath" : "http://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-body-weight.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Sep 19 15:08:00 CDT 2025",
+    "date" : "Wed Jun 10 07:35:08 CDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
@@ -450,10 +517,10 @@
     "obligations" : false
   },
   "cibmtr-vital-signs" : {
-    "index" : 15,
+    "index" : 17,
     "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-vital-signs",
     "name" : "CIBMTRVitalSignsVariables",
-    "title" : "CIBMTR Vital Signs Results Profile (us-core)",
+    "title" : "CIBMTR Vital Signs Results Profile (US Core)",
     "uml" : false,
     "titlelang" : {
     },
@@ -465,7 +532,7 @@
     "basepath" : "http://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-vital-signs.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Sep 19 15:08:00 CDT 2025",
+    "date" : "Wed Jun 10 07:35:08 CDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
@@ -474,7 +541,7 @@
     "copyright" : null,
     "copyrightlang" : {
     },
-    "description" : "CIBMTR Vital Signs Results Profile (us-core)",
+    "description" : "",
     "descriptionlang" : {
     },
     "obligations" : false

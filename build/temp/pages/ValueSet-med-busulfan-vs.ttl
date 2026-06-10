@@ -11,15 +11,18 @@
   fhir:id [ fhir:v "med-busulfan-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet med-busulfan-vs</b></p><a name=\"med-busulfan-vs\"> </a><a name=\"hcmed-busulfan-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1828</td><td>busulfan</td></tr><tr><td>284676</td><td>Busulfex</td></tr><tr><td>203010</td><td>Myleran</td></tr><tr><td>284425</td><td>10 ML busulfan 6 MG/ML Injection [Busulfex]</td></tr><tr><td>332701</td><td>busulfan 0.5 MG</td></tr><tr><td>564077</td><td>busulfan 0.5 MG [Myleran]</td></tr><tr><td>105550</td><td>busulfan 0.5 MG Oral Tablet [Myleran]</td></tr><tr><td>317620</td><td>busulfan 2 MG</td></tr><tr><td>564078</td><td>busulfan 2 MG [Myleran]</td></tr><tr><td>105551</td><td>busulfan 2 MG Oral Tablet [Myleran]</td></tr><tr><td>315503</td><td>busulfan 6 MG/ML</td></tr><tr><td>574864</td><td>busulfan 6 MG/ML [Busulfex]</td></tr><tr><td>1729356</td><td>busulfan 6 MG/ML Injection [Busulfex]</td></tr><tr><td>1151374</td><td>busulfan Injectable Product</td></tr><tr><td>1729351</td><td>busulfan Injection</td></tr><tr><td>1729353</td><td>busulfan Injection [Busulfex]</td></tr><tr><td>1151375</td><td>busulfan Oral Product</td></tr><tr><td>371165</td><td>busulfan Oral Tablet</td></tr><tr><td>368542</td><td>busulfan Oral Tablet [Myleran]</td></tr><tr><td>1151376</td><td>busulfan Pill</td></tr><tr><td>1168702</td><td>Busulfex Injectable Product</td></tr><tr><td>1185666</td><td>Myleran Oral Product</td></tr><tr><td>1185667</td><td>Myleran Pill</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet med-busulfan-vs</b></p><a name=\"med-busulfan-vs\"> </a><a name=\"hcmed-busulfan-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1828</td><td>busulfan</td></tr><tr><td>284676</td><td>Busulfex</td></tr><tr><td>203010</td><td>Myleran</td></tr><tr><td>284425</td><td>10 ML busulfan 6 MG/ML Injection [Busulfex]</td></tr><tr><td>332701</td><td>busulfan 0.5 MG</td></tr><tr><td>564077</td><td>busulfan 0.5 MG [Myleran]</td></tr><tr><td>105550</td><td>busulfan 0.5 MG Oral Tablet [Myleran]</td></tr><tr><td>317620</td><td>busulfan 2 MG</td></tr><tr><td>564078</td><td>busulfan 2 MG [Myleran]</td></tr><tr><td>105551</td><td>busulfan 2 MG Oral Tablet [Myleran]</td></tr><tr><td>315503</td><td>busulfan 6 MG/ML</td></tr><tr><td>574864</td><td>busulfan 6 MG/ML [Busulfex]</td></tr><tr><td>1729356</td><td>busulfan 6 MG/ML Injection [Busulfex]</td></tr><tr><td>1151374</td><td>busulfan Injectable Product</td></tr><tr><td>1729351</td><td>busulfan Injection</td></tr><tr><td>1729353</td><td>busulfan Injection [Busulfex]</td></tr><tr><td>1151375</td><td>busulfan Oral Product</td></tr><tr><td>371165</td><td>busulfan Oral Tablet</td></tr><tr><td>368542</td><td>busulfan Oral Tablet [Myleran]</td></tr><tr><td>1151376</td><td>busulfan Pill</td></tr><tr><td>1168702</td><td>Busulfex Injectable Product</td></tr><tr><td>1185666</td><td>Myleran Oral Product</td></tr><tr><td>1185667</td><td>Myleran Pill</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.9"] ; # 
+  fhir:url [
+     fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs"^^xsd:anyURI ;
+     fhir:l <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.11"] ; # 
   fhir:name [ fhir:v "RxNormBusulfanVS"] ; # 
   fhir:title [ fhir:v "RxNorm - Busulfan"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v true] ; # 
-  fhir:date [ fhir:v "2025-09-19T15:08:00-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-10T07:35:08-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ] ;
@@ -37,7 +40,10 @@
   fhir:description [ fhir:v "RxNorm codes for Busulfan"] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ;
+         fhir:l <http://www.nlm.nih.gov/research/umls/rxnorm>
+       ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "1828" ] ;
          fhir:display [ fhir:v "busulfan" ]

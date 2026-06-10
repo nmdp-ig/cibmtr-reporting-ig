@@ -1,8 +1,66 @@
 {
   "package": "nmdp.fhir.cibmtr-reporting",
-  "version": "0.1.9",
+  "version": "0.1.11",
   "fhirVersion": "4.0.1",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://example.org/fhir/StructureDefinition/cibmtr-ancestry",
+      "title": "CIBMTR Ancestry Extension",
+      "types": [
+        "Coding",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    }
+  ],
   "profiles": {
     "Medication": [
       {
@@ -21,7 +79,7 @@
     "Observation": [
       {
         "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-vital-signs",
-        "title": "CIBMTR Vital Signs Results Profile (us-core)"
+        "title": "CIBMTR Vital Signs Results Profile (US Core)"
       },
       {
         "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-vital-signs-height",
@@ -42,6 +100,10 @@
       {
         "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-request",
         "title": "CIBMTR Medication Request (mcode)"
+      },
+      {
+        "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medications",
+        "title": "CIBMTR Medication Related (mcode)"
       }
     ],
     "Patient": [
@@ -78,9 +140,6 @@
       "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type",
       "StructureDefinition.snapshot.element.type.targetProfile"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/observation-geneticsAncestry": [
-      "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding": [
       "Observation"
@@ -126,6 +185,7 @@
       "Patient"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Extension",
       "Patient"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex": [
@@ -137,11 +197,11 @@
     "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent": [
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-normalization-basis": [
       "MedicationAdministration",
       "MedicationRequest"
     ],
-    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-treatment-termination-reason": [
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent": [
       "MedicationAdministration",
       "MedicationRequest"
     ]

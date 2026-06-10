@@ -24,7 +24,7 @@
 [HL7 Fast Healthcare Interoperability Resources&#174; (FHIR&#174;)]: http://hl7.org/fhir
 [Medical College of Wisconsin (MCW)]: https://www.mcw.edu
 [Center for International Blood &amp; Marrow Transplant Research® (CIBMTR®)]: https://www.cibmtr.org
-[National Marrow Donor Program® (NMDP)/Be The Match®]: https://bethematch.org
+[NMDP]: https://www.nmdp.org/
 [NMDP/Be The Match]: https://bethematch.org
 [Direct FHIR for STU3 Guide]: CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf
 [A Growable Network Information System (AGNIS)]: https://www.cibmtr.org/DataManagement/SystemApplications/AGNIS/Pages/default.aspx
@@ -42,8 +42,8 @@
 [CRID Assignment_Non-FHIR API]: CRID-Assignment_Non-FHIR.html
 [CRID Assignment_FHIR API]:CRID-Assignment_FHIR.html
 [Patient]: Patient.html
-[Laboratory Observations]: Laboratory-Observations.html
-[Medications]: Medications.html
+[CIBMTR Laboratory Observations]: StructureDefinition-cibmtr-observation-lab.html
+[CIBMTR Medications]: StructureDefinition-cibmtr-medications.html
 [Vital Signs]: Vital-Signs.html
 [Bundles]: Bundles.html
 [Example code]: Example-Code.html
@@ -61,15 +61,16 @@
 [GVHD Prophylaxis Medication]: StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html
 [Planned Post-HCT Disease Therapy Medication]: StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.html
 [Prior Exposure Medication]: StructureDefinition-cibmtr-prior-exposure-medication.html
-[CIBMTR Priority Variables for FY22]: ValueSet-cibmtr-priority-variables-2022.html
-[LOINC Codes used in Vital Signs]: ValueSet-vital-signs.html
-[Mobilizing Agents (auto only)]: ValueSet-med-mobilizing-agents-vs.html
-[Prep Regimen]: ValueSet-med-prep-regimen-vs.html
-[Additional Drugs in Peri-Transplant Period]: ValueSet-med-addition-peri-transplant-vs.html
-[GVHD Prophylaxis]: ValueSet-med-gvhd-prophylaxis-vs.html
-[Post-HCT Disease Therapy Planned]: ValueSet-med-post-hct-disease-therapy-planned-vs.html
-[Prior Exposure: Potential Study Eligibility]: ValueSet-med-prior-exposure-vs.html
-[All Form 2400 Medications]: ValueSet-med-all-form2400-vs.html
+[CIBMTR Priority Variables for FY22]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.7/expansion/Latest
+[Vital Signs Value Set]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.1/expansion/Latest
+[Patient Ancestry Value Set]: ValueSet-patient.html
+[Mobilizing Agents (auto only)]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.2/expansion/Latest
+[Prep Regimen]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.6/expansion/Latest
+[Additional Drugs in Peri-Transplant Period]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.4/expansion/Latest
+[GVHD Prophylaxis]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.8/expansion/Latest
+[Post-HCT Disease Therapy Planned]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.9/expansion/Latest
+[Prior Exposure: Potential Study Eligibility]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.10/expansion/Latest
+[All Form 2400 Medications]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.11/expansion/Latest
 [US-Core Laboratory Observation]: https://hl7.org/fhir/us/core/StructureDefinition-us-core-observation-lab.html
 [US-Core Laboratory Vital Signs]: https://hl7.org/fhir/us/core/StructureDefinition-us-core-vital-signs.html
 [FHIR core specification vital signs table]: https://hl7.org/fhir/R4/observation-vitalsigns.html#vitals-table.html

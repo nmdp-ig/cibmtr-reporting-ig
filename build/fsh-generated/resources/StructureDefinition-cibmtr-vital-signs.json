@@ -3,9 +3,8 @@
   "id": "cibmtr-vital-signs",
   "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-vital-signs",
   "name": "CIBMTRVitalSignsVariables",
-  "title": "CIBMTR Vital Signs Results Profile (us-core)",
+  "title": "CIBMTR Vital Signs Results Profile (US Core)",
   "status": "draft",
-  "description": "CIBMTR Vital Signs Results Profile (us-core)",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -58,11 +57,11 @@
         ]
       },
       {
-        "id": "Observation.code.coding",
-        "path": "Observation.code.coding",
+        "id": "Observation.code",
+        "path": "Observation.code",
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/vital-signs"
+          "valueSet": "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.1/expansion"
         }
       },
       {
@@ -77,9 +76,6 @@
                 "valueBoolean": true
               }
             ]
-          },
-          {
-            "code": "CodeableConcept"
           }
         ]
       }

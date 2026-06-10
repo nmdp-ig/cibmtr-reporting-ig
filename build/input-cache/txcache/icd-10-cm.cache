@@ -9,7 +9,7 @@
     "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
   },
   {
-    "name" : "displayLanguage",
+    "name" : "defaultDisplayLanguage",
     "valueCode" : "en-US"
   }]
 }}####
@@ -17,8 +17,9 @@ v: {
   "display" : "Graft-versus-host disease",
   "code" : "D89.81",
   "system" : "http://hl7.org/fhir/sid/icd-10-cm",
-  "version" : "2024",
+  "version" : "2026-04-01",
   "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://hl7.org/fhir/sid/icd-10-cm/vs|2026-04-01: Validate \"[http://hl7.org/fhir/sid/icd-10-cm#D89.81 (\"undefined\")]\"\n0ms http://hl7.org/fhir/sid/icd-10-cm/vs|2026-04-01: Check \"http://hl7.org/fhir/sid/icd-10-cm#D89.81\"\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2026-04-01: CodeSystem found: http://hl7.org/fhir/sid/icd-10-cm|2026-04-01 for http://hl7.org/fhir/sid/icd-10-cm|2026-04-01\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2026-04-01: check code in (http://hl7.org/fhir/sid/icd-10-cm) at Coding\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2026-04-01: Code \"D89.81\" found in http://hl7.org/fhir/sid/icd-10-cm|2026-04-01",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -36,7 +37,7 @@ v: {
     "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
   },
   {
-    "name" : "displayLanguage",
+    "name" : "defaultDisplayLanguage",
     "valueCode" : "en-US"
   }]
 }}####
@@ -44,8 +45,9 @@ v: {
   "display" : "Graft-versus-host disease",
   "code" : "D89.81",
   "system" : "http://hl7.org/fhir/sid/icd-10-cm",
-  "version" : "2024",
+  "version" : "2026-04-01",
   "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2026-04-01: Validate \"[http://hl7.org/fhir/sid/icd-10-cm#D89.81 (\"undefined\")]\"\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2026-04-01: Check \"http://hl7.org/fhir/sid/icd-10-cm#D89.81\"\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2026-04-01: CodeSystem found: http://hl7.org/fhir/sid/icd-10-cm|2026-04-01 for http://hl7.org/fhir/sid/icd-10-cm|2026-04-01\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2026-04-01: check code in (http://hl7.org/fhir/sid/icd-10-cm) at Coding\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2026-04-01: Code \"D89.81\" found in http://hl7.org/fhir/sid/icd-10-cm|2026-04-01",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
@@ -73,16 +75,16 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:819ff6a9-dea6-4191-b579-5a63616dc202",
-    "timestamp" : "2025-09-19T20:14:38.661Z",
+    "identifier" : "urn:uuid:097fbc8a-7236-4bf3-aca2-efba437ca58e",
+    "timestamp" : "2026-06-10T12:39:58.368Z",
     "total" : 5,
     "offset" : 0,
     "parameter" : [{
-      "name" : "displayLanguage",
-      "valueCode" : "en-US"
+      "name" : "excludeNested",
+      "valueBoolean" : false
     },
     {
-      "name" : "excludeNested",
+      "name" : "includeDefinition",
       "valueBoolean" : false
     },
     {
@@ -95,14 +97,11 @@ e: {
     },
     {
       "name" : "used-codesystem",
-      "valueUri" : "http://hl7.org/fhir/sid/icd-10-cm|2024"
-    },
-    {
-      "name" : "version",
-      "valueUri" : "http://hl7.org/fhir/sid/icd-10-cm|2024"
+      "valueUri" : "http://hl7.org/fhir/sid/icd-10-cm|2026-04-01"
     }],
     "contains" : [{
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "D89.81",
       "display" : "Graft-versus-host disease",
       "contains" : [{

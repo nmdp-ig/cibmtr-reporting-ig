@@ -17,14 +17,14 @@ contact:
       value: bmilius@nmdp.org
 description: How to report HCT data to CIBMTR
 license: Apache-2.0
-version: 0.1.9
+version: 0.1.11
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 8.0.0
   hl7.fhir.us.mcode:
     id: mcode
     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
-    version: 2.0.0
+    version: 4.0.0
   hl7.fhir.uv.genomics-reporting: 2.0.0
 parameters:
   show-inherited-invariants: false
@@ -45,12 +45,11 @@ menu:
     "Connection - R4": Connection-Guide-R4.html
     "Endpoints": Endpoints.html
     "Access Credentials": Access-Credentials.html
-    "CRID Assignment_Non-FHIR API": CRID-Assignment_Non-FHIR.html
     "CRID Assignment_FHIR API": CRID-Assignment_FHIR.html
     "Patient": Patient.html
     "Lab Observations": Laboratory-Observations.html
-    "Medications": Medications.html
-    "Vital Signs": Vital-Signs.html
+    "Medications": StructureDefinition-cibmtr-medications.html
+    "Vital Signs": StructureDefinition-cibmtr-vital-signs.html
     "Bundles": Bundles.html
     "Form 2450: Post-TED": Form-2450.html
     "Cytogenetics - ISCN": Cytogenetics.html

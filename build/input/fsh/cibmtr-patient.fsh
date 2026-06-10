@@ -1,17 +1,75 @@
+// ======================================================
+// Aliases
+// ======================================================
+Alias: $us-core-race = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
 Alias: MothersMaidenNameExtension = http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName
 Alias: BirthSexExtension = http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex
 Alias: PatientBirthPlaceExtension = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
-//Alias: AncestryExtension = http://build.fhir.org/ig/HL7/fhir-extensions/StructureDefinition/observation-geneticsAncestry
 
+// Choose a base canonical that matches your IG.
+// Replace http://example.org/fhir with your real canonical if you have one.
+Alias: $CIBMTRAncestryVS = https://termservices.nmdp.org/atlas/#/conceptset/136/expression
+Alias: $CIBMTRAncestryCS = http://example.org/fhir/CodeSystem/cibmtr-ancestry
+Alias: $CIBMTRAncestryContainer = http://example.org/fhir/StructureDefinition/cibmtr-ancestry
+
+// ======================================================
+// Terminology artifacts
+// ======================================================
+CodeSystem: CIBMTRAncestryCodeSystem
+Id: cibmtr-ancestry-cs
+Title: "CIBMTR Ancestry CodeSystem"
+Description: "A code system for CIBMTR ancestry information."
+* ^url = $CIBMTRAncestryCS
+* #foo "Foo"
+
+ValueSet: CIBMTRAncestryValueset
+Id: cibmtr-ancestry-vs
+Title: "CIBMTR Ancestry ValueSet"
+Description: "A value set for CIBMTR ancestry information."
+* ^url = $CIBMTRAncestryVS
+* include codes from system CIBMTRAncestryCodeSystem
+
+
+Extension: CIBMTRAncestryContainer
+Id: cibmtr-ancestry
+Title: "CIBMTR Ancestry Extension"
+Description: "Container extension holding US Core Race plus CIBMTR ancestry codes."
+* ^url = $CIBMTRAncestryContainer
+* ^context.type = #element
+* ^context.expression = "Patient"
+
+// Container extension => no value, only subextensions
+* value[x] 0..0
+
+// Slice child extensions by url
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+
+// Child #1: nested US Core Race extension
+* extension contains $us-core-race named usCoreRace 0..1 MS
+* extension[usCoreRace].url = $us-core-race (exactly)
+* extension[usCoreRace].value[x] 0..0
+
+// Child #2: CIBMTR ancestry codes (repeatable)
+* extension contains cibmtrAncestry 0..* MS
+* extension[cibmtrAncestry].url = "cibmtrAncestry" (exactly)
+* extension[cibmtrAncestry].value[x] only Coding
+* extension[cibmtrAncestry].valueCoding from CIBMTRAncestryValueset (required)
+
+
+// ======================================================
+// Patient Profile
+// ======================================================
 Profile:        CIBMTRPatient
-Parent:         us-core-patient 
+Parent:         us-core-patient
 Id:             cibmtr-patient
 Title:          "CIBMTR Patient Profile (us-core)"
-Description:    "CIBMTR Patient Profile for CRID assignment (us-core)"
+//Description:    "CIBMTR Patient Profile (us-core)."
+
 * extension contains MothersMaidenNameExtension named MaidenNameExt 0..1 MS
 //* extension contains BirthSexExtension named BirthSexExt 0..1 MS
 * extension contains PatientBirthPlaceExtension named PatBirthPlaceExt 0..1 MS
-* extension contains Ancestry named AncestryExt 0..1 MS
 * insert MetaSecurityRules
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "system"
@@ -165,5 +223,8 @@ Usage: #example
 // Description:  "Managing Organization Systems"
 // * http://cibmtr.org/identifier/transplant-center# 
 // * http://nmdp.org/identifier/transplant-center# 
+
+
+
 
 

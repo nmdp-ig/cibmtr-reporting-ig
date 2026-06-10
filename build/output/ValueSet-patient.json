@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "patient",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet patient</b></p><a name=\"patient\"> </a><a name=\"hcpatient\"> </a><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/3141-9/\">3141-9</a></td><td>Body weight Patient Mass Pt Qn Measured</td></tr><tr><td><a href=\"https://loinc.org/8352-7/\">8352-7</a></td><td>Clothing worn during measure Patient Type Pt Nom</td></tr><tr><td><a href=\"https://loinc.org/8361-8/\">8361-8</a></td><td>Body position with respect to gravity Patient Type Pt Nom</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/patient",
+  "version" : "0.1.11",
+  "name" : "Patient",
+  "title" : "CIBMTR Patient Ancestry Value Set",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-06-10T12:52:28-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
+  "description" : "US Core Race Categories (Intensional).\r\n1.\nThis value set is used by me",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "3141-9",
+        "display" : "Body weight Patient Mass Pt Qn Measured"
+      },
+      {
+        "code" : "8352-7",
+        "display" : "Clothing worn during measure Patient Type Pt Nom"
+      },
+      {
+        "code" : "8361-8",
+        "display" : "Body position with respect to gravity Patient Type Pt Nom"
+      }]
+    }]
+  }
+}

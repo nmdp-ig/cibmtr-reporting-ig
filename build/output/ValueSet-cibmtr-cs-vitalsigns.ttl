@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-cs-vitalsigns> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cibmtr-cs-vitalsigns"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet cibmtr-cs-vitalsigns</b></p><a name=\"cibmtr-cs-vitalsigns\"> </a><a name=\"hccibmtr-cs-vitalsigns\"> </a><p>This value set includes codes based on the following rules:</p><ul/></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-cs-vitalsigns"^^xsd:anyURI ;
+     fhir:l <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-cs-vitalsigns>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.11"] ; # 
+  fhir:name [ fhir:v "CIBMTRConceptSet_VitalSigns"] ; # 
+  fhir:title [ fhir:v "CIBMTR Vital Signs Concept Set"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-06-10T12:52:28-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.cibmtr.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Milius" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bmilius@nmdp.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CIBMTR Vital Signs Concept Set"] . # 
+
+# -------------------------------------------------------------------------------------
+

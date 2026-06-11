@@ -19,14 +19,14 @@ The following data elements must always be present (**Mandatory**) or must be su
 the data is present in the sending system (**Must Support**). Additional guidance and examples
 are provided in the sections below.
 
-**Each Vital Signs Observation Must Have**
+**Each Vital Signs Observation Must Have:**
 - security label
 - status 
 - code identifying the vital sign being measured 
 - patient reference (subject)
 - clinically relevant time
 
-**Each Vital Signs Observation Must Support**
+**Each Vital Signs Observation Must Support:**
 - performer
 - result value
 - reason if the value is absent

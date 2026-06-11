@@ -8,7 +8,7 @@ The CIBMTR Patient Profile (us-core) inherits from the US Core Patient Profile, 
 
 The following data elements must always be present (**Mandatory**) or must be supported if the data is present in the sending system (**Must Support**). They are presented below in a simple human-readable explanation. Profile-specific guidance and examples are provided below.
 
-**Each Patient "Must Have"**
+**Each Patient Must Have:**
 - security label
 - CCN (5digit)
 - first name
@@ -16,7 +16,7 @@ The following data elements must always be present (**Mandatory**) or must be su
 - birthdate (YYYY-MM-DD)
 - gender (M/F)
 
-**Each Patient "Must Support"**
+**Each Patient Must Support:**
 - address
 - communication
 - link

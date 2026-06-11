@@ -10,14 +10,14 @@ The following data elements must always be present (**Mandatory**) or must be su
 the data is present in the sending system (**Must Support**). Additional guidance and examples
 are provided in the sections below.
 
-**Each Medication Request Must Have**
+**Each Laboratory Observation Must Have:**
 - security label
 - status 
 - laboratory test code (code)
 - patient reference (subject)
 - effective date/time
 
-**Each Medication Request Must Support**
+**Each Laboratory Observation Must Support:**
 - encounter reference
 - specimen reference
 - reference range

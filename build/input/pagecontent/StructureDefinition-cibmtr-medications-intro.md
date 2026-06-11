@@ -15,14 +15,14 @@ The following data elements must always be present (**Mandatory**) or must be su
 the data is present in the sending system (**Must Support**). Additional guidance and examples
 are provided in the sections below.
 
-**Each MedicationRequest Must Have**
+**Each MedicationRequest Must Have:**
 - security label
 - status 
 - medication information (medicationReference or medicationCodeableConcept)
 - patient reference (subject)
 - authored date
 
-**Each MedicationRequest Must Support**
+**Each MedicationRequest Must Support:**
 - requester
 - dosage instruction
 - reason for medication

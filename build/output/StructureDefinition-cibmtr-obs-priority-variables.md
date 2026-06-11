@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables | *Version*:0.1.11 |
-| Draft as of 2026-06-10 | *Computable Name*:CIBMTRObsPriorityVariables |
+| Draft as of 2026-06-11 | *Computable Name*:CIBMTRObsPriorityVariables |
 
  
 CIBMTR Observation Laboratory Results: Priority Variables 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-cibmtr-obs-priority-
   "name" : "CIBMTRObsPriorityVariables",
   "title" : "CIBMTR Observation Laboratory Results: Priority Variables",
   "status" : "draft",
-  "date" : "2026-06-10T12:52:28-05:00",
+  "date" : "2026-06-11T12:11:14-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

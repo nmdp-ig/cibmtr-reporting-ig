@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab | *Version*:0.1.11 |
-| Draft as of 2026-06-10 | *Computable Name*:CIBMTRObservationLab |
+| Draft as of 2026-06-11 | *Computable Name*:CIBMTRObservationLab |
 
 ### Overview
 
@@ -168,7 +168,7 @@ In some cases, the laboratory result exceeds the measurable limits of the test a
   "name" : "CIBMTRObservationLab",
   "title" : "CIBMTR Observation Laboratory Results Profile (us-core)",
   "status" : "draft",
-  "date" : "2026-06-10T12:52:28-05:00",
+  "date" : "2026-06-11T12:11:14-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

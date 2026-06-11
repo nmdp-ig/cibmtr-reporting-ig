@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-epic-2021 | *Version*:0.1.11 |
-| Draft as of 2026-06-10 | *Computable Name*:PriorityVariablesEpic2021 |
+| Draft as of 2026-06-11 | *Computable Name*:PriorityVariablesEpic2021 |
 
  
 Priority Variables for Epic CIBMTR Reporting App (FY21) 
@@ -51,7 +51,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "CIBMTR Priority Variables Value Set for Epic App (FY21)",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-10T12:52:28-05:00",
+  "date" : "2026-06-11T12:11:14-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

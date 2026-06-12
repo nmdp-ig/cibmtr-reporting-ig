@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prior-exposure-vs | *Version*:0.1.11 |
-| Draft as of 2026-06-11 | *Computable Name*:RxNormPriorExposureVS |
+| Draft as of 2026-06-12 | *Computable Name*:RxNormPriorExposureVS |
 
  
 Prior Exposure: Potential Study Eligibility 
@@ -52,7 +52,7 @@ Prior Exposure: Potential Study Eligibility
   "title" : "RxNorm - Prior Exposure: Potential Study Eligibility",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-06-11T12:11:14-05:00",
+  "date" : "2026-06-12T09:38:46-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

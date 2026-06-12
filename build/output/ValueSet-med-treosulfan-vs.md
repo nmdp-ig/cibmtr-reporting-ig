@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-treosulfan-vs | *Version*:0.1.11 |
-| Draft as of 2026-06-11 | *Computable Name*:RxNormTreosulfanVS |
+| Draft as of 2026-06-12 | *Computable Name*:RxNormTreosulfanVS |
 
  
 RxNorm codes for Treosulfan 
@@ -51,7 +51,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "RxNorm - Treosulfan",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-06-11T12:11:14-05:00",
+  "date" : "2026-06-12T09:38:46-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

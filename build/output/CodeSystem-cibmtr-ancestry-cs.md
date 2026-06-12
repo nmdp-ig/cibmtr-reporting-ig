@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/CodeSystem/cibmtr-ancestry | *Version*:0.1.11 |
-| Draft as of 2026-06-11 | *Computable Name*:CIBMTRAncestryCodeSystem |
+| Draft as of 2026-06-12 | *Computable Name*:CIBMTRAncestryCodeSystem |
 
  
 A code system for CIBMTR ancestry information. 
@@ -31,7 +31,7 @@ A code system for CIBMTR ancestry information.
   "name" : "CIBMTRAncestryCodeSystem",
   "title" : "CIBMTR Ancestry CodeSystem",
   "status" : "draft",
-  "date" : "2026-06-11T12:11:14-05:00",
+  "date" : "2026-06-12T09:38:46-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

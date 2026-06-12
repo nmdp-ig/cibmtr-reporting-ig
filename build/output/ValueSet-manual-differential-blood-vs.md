@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/manual-differential-blood-vs | *Version*:0.1.11 |
-| Draft as of 2026-06-11 | *Computable Name*:ManualDifferentialBloodVS |
+| Draft as of 2026-06-12 | *Computable Name*:ManualDifferentialBloodVS |
 
  
 Manual Differential panel - Blood (24318-8) 
@@ -51,7 +51,7 @@ Manual Differential panel - Blood (24318-8)
   "title" : "Manual Differential panel - Blood (24318-8)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-06-11T12:11:14-05:00",
+  "date" : "2026-06-12T09:38:46-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

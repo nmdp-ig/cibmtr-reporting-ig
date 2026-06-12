@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/StructureDefinition/cibmtr-ancestry | *Version*:0.1.11 |
-| Draft as of 2026-06-11 | *Computable Name*:CIBMTRAncestryContainer |
+| Draft as of 2026-06-12 | *Computable Name*:CIBMTRAncestryContainer |
 
 Container extension holding US Core Race plus CIBMTR ancestry codes.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-cibmtr-ancestry.csv)
   "name" : "CIBMTRAncestryContainer",
   "title" : "CIBMTR Ancestry Extension",
   "status" : "draft",
-  "date" : "2026-06-11T12:11:14-05:00",
+  "date" : "2026-06-12T09:38:46-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-post-hct-disease-therapy-planned-medication | *Version*:0.1.11 |
-| Draft as of 2026-06-11 | *Computable Name*:CIBMTR_PostHCTDiseaseTherapyPlannedMedication |
+| Draft as of 2026-06-12 | *Computable Name*:CIBMTR_PostHCTDiseaseTherapyPlannedMedication |
 
  
 CIBMTR Planned Post-HCT Disease Therapy Medication 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-cibmtr-post-hct-dise
   "name" : "CIBMTR_PostHCTDiseaseTherapyPlannedMedication",
   "title" : "CIBMTR Planned Post-HCT Disease Therapy Medication",
   "status" : "draft",
-  "date" : "2026-06-11T12:11:14-05:00",
+  "date" : "2026-06-12T09:38:46-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

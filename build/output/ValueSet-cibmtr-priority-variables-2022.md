@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-2022 | *Version*:0.1.11 |
-| Draft as of 2026-06-11 | *Computable Name*:PriorityVariables2022 |
+| Draft as of 2026-06-12 | *Computable Name*:PriorityVariables2022 |
 
  
 Priority Variables for CIBMTR (FY22) 
@@ -51,7 +51,7 @@ Priority Variables for CIBMTR (FY22)
   "title" : "CIBMTR Priority Variables Value Set (FY22)",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-11T12:11:14-05:00",
+  "date" : "2026-06-12T09:38:46-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

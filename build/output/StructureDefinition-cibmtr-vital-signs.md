@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-vital-signs | *Version*:0.1.11 |
-| Draft as of 2026-06-11 | *Computable Name*:CIBMTRVitalSignsVariables |
+| Draft as of 2026-06-12 | *Computable Name*:CIBMTRVitalSignsVariables |
 
 ### Overview
 
@@ -147,7 +147,7 @@ A code system value **SHOULD** be supplied for each additional code.
   "name" : "CIBMTRVitalSignsVariables",
   "title" : "CIBMTR Vital Signs Results Profile (US Core)",
   "status" : "draft",
-  "date" : "2026-06-11T12:11:14-05:00",
+  "date" : "2026-06-12T09:38:46-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

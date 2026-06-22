@@ -51,7 +51,7 @@ Priority Variables for CIBMTR (FY22)
   "title" : "CIBMTR Priority Variables Value Set (FY22)",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-21T22:38:39-05:00",
+  "date" : "2026-06-21T23:16:04-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

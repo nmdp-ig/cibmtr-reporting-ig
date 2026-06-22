@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-cibmtr-vital-signs-w
   "name" : "CIBMTRVitalSignsWeight",
   "title" : "CIBMTR Vital Signs-Weight Profile (us-core)",
   "status" : "draft",
-  "date" : "2026-06-21T22:38:39-05:00",
+  "date" : "2026-06-21T23:16:04-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

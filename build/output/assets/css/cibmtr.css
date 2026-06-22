@@ -79,12 +79,14 @@
 
 
 /* ----------fhir-version-note styling------*/
-.fhir-version-note a {
+.fhir-version-note a,
+#fhir-version-note a{
     color: #000000 !important;
     text-decoration: underline !important;
 }
 
-.fhir-version-note a:hover {
+.fhir-version-note a:hover,
+#fhir-version-note a:hover {
     color: #00355E !important;
     text-decoration: underline !important;
 }
@@ -175,6 +177,13 @@ div.markdown-toc a:hover {
     color: #000000 !important;
 }
 
+/* FHIR Version Note hover */
+blockquote.fhir-version-note a:hover,
+blockquote.fhir-version-note a:hover::after {
+    color: #00355E !important;
+    text-decoration: underline !important;
+}
+
 /* Section numbering */
 h1::before,
 h2::before,
@@ -195,3 +204,4 @@ blockquote.fhir-version-note a[href*="hl7.org/fhir/STU3"]::after {
 #publish-box a[href*="history.html"]::after {
     filter: brightness(0) !important;
 }
+

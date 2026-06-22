@@ -168,11 +168,11 @@ In some cases, the laboratory result exceeds the measurable limits of the test a
   "name" : "CIBMTRObservationLab",
   "title" : "CIBMTR Observation Laboratory Results Profile (us-core)",
   "status" : "draft",
-  "date" : "2026-06-22T08:51:47-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the NMDP",
+  "date" : "2026-06-22T09:21:59-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {
-      "name" : "The Medical College of Wisconsin, Inc. and the NMDP",
+      "name" : "The Medical College of Wisconsin, Inc. and NMDP",
       "telecom" : [
         {
           "system" : "url",

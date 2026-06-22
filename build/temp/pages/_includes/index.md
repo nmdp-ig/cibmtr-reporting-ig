@@ -12,7 +12,7 @@ This FHIR Implementation Guide (IG) describes how to report transplant-related d
 ### Introduction
   
 The [Center for International Blood &amp; Marrow Transplant Research® (CIBMTR®)]
-is a research collaboration between the [NMDP]
+is a research collaboration between [NMDP]
 and the [Medical College of Wisconsin (MCW)]. 
 The CIBMTR collaborates with the global scientific community to advance hematopoietic cell 
 transplantation (HCT) and other cellular therapy worldwide to increase survival and enrich 

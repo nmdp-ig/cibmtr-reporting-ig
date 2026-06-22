@@ -63,11 +63,11 @@ The codes described here represent variables that have been identified as a prio
   "title" : "CIBMTR Priority Variables Value Set (FY21)",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-22T08:51:47-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the NMDP",
+  "date" : "2026-06-22T09:21:59-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {
-      "name" : "The Medical College of Wisconsin, Inc. and the NMDP",
+      "name" : "The Medical College of Wisconsin, Inc. and NMDP",
       "telecom" : [
         {
           "system" : "url",

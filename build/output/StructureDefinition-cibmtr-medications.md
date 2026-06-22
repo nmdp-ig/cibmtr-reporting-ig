@@ -212,11 +212,11 @@ The following example shows equivalent SNOMED CT and ICD-10 reason codes:
   "name" : "CIBMTR_Medications",
   "title" : "CIBMTR Medication Related (mcode)",
   "status" : "draft",
-  "date" : "2026-06-22T08:51:47-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the NMDP",
+  "date" : "2026-06-22T09:21:59-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {
-      "name" : "The Medical College of Wisconsin, Inc. and the NMDP",
+      "name" : "The Medical College of Wisconsin, Inc. and NMDP",
       "telecom" : [
         {
           "system" : "url",

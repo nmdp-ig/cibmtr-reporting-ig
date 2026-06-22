@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-prep-regimen-medication | *Version*:0.1.11 |
-| Draft as of 2026-06-12 | *Computable Name*:CIBMTR_PrepRegimenMedication |
+| Draft as of 2026-06-21 | *Computable Name*:CIBMTR_PrepRegimenMedication |
 
  
 CIBMTR Pre-HCT Preparative Regimen (Conditioning) Medication 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-cibmtr-prep-regimen-
   "name" : "CIBMTR_PrepRegimenMedication",
   "title" : "CIBMTR Prep Regimen Medication",
   "status" : "draft",
-  "date" : "2026-06-12T09:38:46-05:00",
+  "date" : "2026-06-21T21:50:44-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

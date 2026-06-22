@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-addition-peri-transplant-vs | *Version*:0.1.11 |
-| Draft as of 2026-06-12 | *Computable Name*:RxNormAdditionalPeriTransplantVS |
+| Draft as of 2026-06-21 | *Computable Name*:RxNormAdditionalPeriTransplantVS |
 
  
 RxNorm codes for Additional Drugs in Peri-Transplant Period 
@@ -52,7 +52,7 @@ RxNorm codes for Additional Drugs in Peri-Transplant Period
   "title" : "RxNorm - Additional Drugs in Peri-Transplant Period",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-06-12T09:38:46-05:00",
+  "date" : "2026-06-21T21:50:44-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

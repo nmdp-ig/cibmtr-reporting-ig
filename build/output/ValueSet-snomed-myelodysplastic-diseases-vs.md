@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/snomed-myelodysplastic-diseases-vs | *Version*:0.1.11 |
-| Draft as of 2026-06-12 | *Computable Name*:SNOMEDMyelodysplasticDiseasesVS |
+| Draft as of 2026-06-21 | *Computable Name*:SNOMEDMyelodysplasticDiseasesVS |
 
  
 The myelodysplastic syndromes (MDS) are a group of clonal hematopoietic stem cell diseases characterized by cytopenia(s), dysplasia (abnormal growth or development leading to an alteration in size, shape, and organization of the cell) in one or more of the major myeloid cell lines (WBC, RBC, and/or platelets), ineffective hematopoiesis, and an increased risk of developing acute myelogenous leukemia (AML). MDS occurs primarily in older adults, with a median age of 70 years. The majority of recipients present with symptoms related to cytopenias. Most recipients present with anemia requiring RBC transfusions. 
@@ -51,7 +51,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "SNOMED Myelodysplastic Diseases",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-06-12T09:38:46-05:00",
+  "date" : "2026-06-21T21:50:44-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

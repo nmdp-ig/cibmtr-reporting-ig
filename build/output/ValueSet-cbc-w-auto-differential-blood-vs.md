@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-auto-differential-blood-vs | *Version*:0.1.11 |
-| Draft as of 2026-06-12 | *Computable Name*:CBCWAutoDifferentialBloodVS |
+| Draft as of 2026-06-21 | *Computable Name*:CBCWAutoDifferentialBloodVS |
 
  
 CBC W Auto Differential panel - Blood (57021-8) 
@@ -51,7 +51,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "CBC W Auto Differential panel - Blood (57021-8)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-06-12T09:38:46-05:00",
+  "date" : "2026-06-21T21:50:44-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

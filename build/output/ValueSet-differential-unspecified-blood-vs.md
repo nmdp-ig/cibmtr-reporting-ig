@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/differential-unspecified-blood-vs | *Version*:0.1.11 |
-| Draft as of 2026-06-12 | *Computable Name*:DifferentialUnspecifiedBloodVS |
+| Draft as of 2026-06-21 | *Computable Name*:DifferentialUnspecifiedBloodVS |
 
  
 Differential panel, method unspecified - Blood (69738-3) 
@@ -51,7 +51,7 @@ Differential panel, method unspecified - Blood (69738-3)
   "title" : "Differential panel, method unspecified - Blood (69738-3)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-06-12T09:38:46-05:00",
+  "date" : "2026-06-21T21:50:44-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

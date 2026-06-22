@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-vital-signs-weight | *Version*:0.1.11 |
-| Draft as of 2026-06-12 | *Computable Name*:CIBMTRVitalSignsWeight |
+| Draft as of 2026-06-21 | *Computable Name*:CIBMTRVitalSignsWeight |
 
  
 CIBMTR Vital Signs-Weight Profile (us-core) 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-cibmtr-vital-signs-w
   "name" : "CIBMTRVitalSignsWeight",
   "title" : "CIBMTR Vital Signs-Weight Profile (us-core)",
   "status" : "draft",
-  "date" : "2026-06-12T09:38:46-05:00",
+  "date" : "2026-06-21T21:50:44-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

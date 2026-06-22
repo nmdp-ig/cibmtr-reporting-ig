@@ -174,3 +174,19 @@ div.markdown-toc a:hover {
 .stu-note a::after {
     color: #000000 !important;
 }
+
+/* Section numbering */
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+    color: #000000 !important;
+}
+
+/* Only the two FHIR Version Note external icons */
+blockquote.fhir-version-note a[href*="hl7.org/fhir/R4"]::after,
+blockquote.fhir-version-note a[href*="hl7.org/fhir/STU3"]::after {
+    filter: brightness(0) !important;
+}

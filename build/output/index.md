@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/nmdp.fhir.cibmtr-reporting | *Version*:0.1.11 |
-| Draft as of 2026-06-12 | *Computable Name*:CIBMTRReporting |
+| Draft as of 2026-06-21 | *Computable Name*:CIBMTRReporting |
 
 > This Implementation Guide is a CIBMTR Standard for Trial Use (STU). It is expected to undergo changes as we learn from experiences with our transplant center partners.
 
@@ -111,7 +111,7 @@ Guidance on connecting to and sending data to the Direct FHIR API is found in th
   "name" : "CIBMTRReporting",
   "title" : "CIBMTR Reporting Implementation Guide",
   "status" : "draft",
-  "date" : "2026-06-12T09:38:46-05:00",
+  "date" : "2026-06-21T21:50:44-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {
@@ -148,7 +148,7 @@ Guidance on connecting to and sending data to the Direct FHIR API is found in th
       ],
       "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId" : "hl7.terminology.r4",
-      "version" : "7.1.0"
+      "version" : "7.2.0"
     },
     {
       "id" : "hl7ext",

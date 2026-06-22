@@ -3,7 +3,7 @@ name: Build Output Deploy_Test
 on:
   push:
     branches:
-      - feature/V11_test
+      - feature/V11_final
 
   workflow_dispatch:
 
@@ -34,7 +34,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: pages-output/
+          path: build/output/
 
       - name: Deploy to GitHub Pages
         id: deployment

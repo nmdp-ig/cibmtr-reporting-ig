@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs | *Version*:0.1.11 |
-| Draft as of 2026-06-21 | *Computable Name*:RxNormGVHDProphylaxisVS |
+| Draft as of 2026-06-22 | *Computable Name*:RxNormGVHDProphylaxisVS |
 
  
 RxNorm codes for GVHD Prophylaxis 
@@ -52,11 +52,11 @@ RxNorm codes for GVHD Prophylaxis
   "title" : "RxNorm - GVHD Prophylaxis",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-06-21T23:16:04-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+  "date" : "2026-06-22T08:51:47-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and the NMDP",
   "contact" : [
     {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+      "name" : "The Medical College of Wisconsin, Inc. and the NMDP",
       "telecom" : [
         {
           "system" : "url",

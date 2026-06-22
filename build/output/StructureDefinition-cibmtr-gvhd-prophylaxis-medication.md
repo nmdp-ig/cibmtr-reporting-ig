@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-gvhd-prophylaxis-medication | *Version*:0.1.11 |
-| Draft as of 2026-06-21 | *Computable Name*:CIBMTR_GVHDProphylaxisMedication |
+| Draft as of 2026-06-22 | *Computable Name*:CIBMTR_GVHDProphylaxisMedication |
 
  
 CIBMTR GVHD Prophylaxis Medication 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-cibmtr-gvhd-prophyla
   "name" : "CIBMTR_GVHDProphylaxisMedication",
   "title" : "CIBMTR GVHD Prophylaxis Medication",
   "status" : "draft",
-  "date" : "2026-06-21T23:16:04-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+  "date" : "2026-06-22T08:51:47-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and the NMDP",
   "contact" : [
     {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+      "name" : "The Medical College of Wisconsin, Inc. and the NMDP",
       "telecom" : [
         {
           "system" : "url",

@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Thu, Jun 11, 2026 14:29+0000 for FHIR v6.0.0-ballot4 
+  Generated on Sun, Jun 21, 2026 21:04+0000 for FHIR v6.0.0-ballot4 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="6.0.0-ballot4">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -336,6 +336,11 @@
           <xs:documentation xml:lang="en">uuid</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="xhtml">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">xhtml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="Quantity">
         <xs:annotation>
           <xs:documentation xml:lang="en">Quantity</xs:documentation>
@@ -409,11 +414,6 @@
       <xs:enumeration value="VirtualServiceDetail">
         <xs:annotation>
           <xs:documentation xml:lang="en">VirtualServiceDetail</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="xhtml">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">xhtml</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Resource">
@@ -4069,6 +4069,11 @@
       <xs:enumeration value="entered-in-error">
         <xs:annotation>
           <xs:documentation xml:lang="en">Entered in Error</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="unknown">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Unknown</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
@@ -9632,861 +9637,6 @@
     <xs:complexContent>
        <xs:extension base="Element">
          <xs:attribute name="value" type="JurisdictionValueSetEnum" use="optional"/>
-       </xs:extension>
-     </xs:complexContent>
-  </xs:complexType>
-  <xs:simpleType name="VersionIndependentResourceTypesEnum">
-    <xs:restriction base="code-primitive">
-      <xs:enumeration value="Account">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Account</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ActivityDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ActivityDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ActorDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ActorDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="AdministrableProductDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">AdministrableProductDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="AdverseEvent">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">AdverseEvent</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="AllergyIntolerance">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">AllergyIntolerance</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Appointment">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Appointment</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="AppointmentResponse">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">AppointmentResponse</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ArtifactAssessment">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ArtifactAssessment</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="AuditEvent">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">AuditEvent</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Basic">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Basic</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Binary">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Binary</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="BiologicallyDerivedProduct">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">BiologicallyDerivedProduct</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="BodyStructure">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">BodyStructure</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Bundle">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Bundle</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="CapabilityStatement">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">CapabilityStatement</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="CarePlan">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">CarePlan</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="CareTeam">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">CareTeam</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Claim">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Claim</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ClaimResponse">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ClaimResponse</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ClinicalUseDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ClinicalUseDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="CodeSystem">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">CodeSystem</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Communication">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Communication</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="CommunicationRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">CommunicationRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="CompartmentDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">CompartmentDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Composition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Composition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ConceptMap">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ConceptMap</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Condition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Condition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Consent">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Consent</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Contract">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Contract</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Coverage">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Coverage</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="CoverageEligibilityRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">CoverageEligibilityRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="CoverageEligibilityResponse">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">CoverageEligibilityResponse</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DetectedIssue">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DetectedIssue</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Device">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Device</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DeviceAlert">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DeviceAlert</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DeviceAssociation">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DeviceAssociation</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DeviceDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DeviceDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DeviceMetric">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DeviceMetric</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DeviceRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DeviceRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DiagnosticReport">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DiagnosticReport</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DocumentReference">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DocumentReference</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Encounter">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Encounter</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Endpoint">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Endpoint</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="EnrollmentRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">EnrollmentRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="EnrollmentResponse">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">EnrollmentResponse</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="EpisodeOfCare">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">EpisodeOfCare</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="EventDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">EventDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Evidence">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Evidence</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="EvidenceVariable">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">EvidenceVariable</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ExampleScenario">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ExampleScenario</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ExplanationOfBenefit">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ExplanationOfBenefit</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="FamilyMemberHistory">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">FamilyMemberHistory</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Flag">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Flag</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Goal">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Goal</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Group">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Group</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="GuidanceResponse">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">GuidanceResponse</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="HealthcareService">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">HealthcareService</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ImagingSelection">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ImagingSelection</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ImagingStudy">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ImagingStudy</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Immunization">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Immunization</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ImplementationGuide">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ImplementationGuide</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Ingredient">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Ingredient</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="InsurancePlan">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">InsurancePlan</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="InsuranceProduct">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">InsuranceProduct</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Invoice">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Invoice</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Library">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Library</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="List">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">List</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Location">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Location</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ManufacturedItemDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ManufacturedItemDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Measure">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Measure</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MeasureReport">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MeasureReport</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Medication">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Medication</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicationAdministration">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicationAdministration</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicationDispense">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicationDispense</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicationRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicationRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicationStatement">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicationStatement</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProductDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProductDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MessageDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MessageDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MessageHeader">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MessageHeader</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="NamingSystem">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">NamingSystem</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="NutritionIntake">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">NutritionIntake</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="NutritionOrder">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">NutritionOrder</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="NutritionProduct">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">NutritionProduct</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Observation">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Observation</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ObservationDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ObservationDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="OperationDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">OperationDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="OperationOutcome">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">OperationOutcome</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Organization">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Organization</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="OrganizationAffiliation">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">OrganizationAffiliation</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="PackagedProductDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">PackagedProductDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Parameters">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Parameters</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Patient">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Patient</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="PaymentNotice">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">PaymentNotice</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="PaymentReconciliation">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">PaymentReconciliation</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Person">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Person</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="PlanDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">PlanDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Practitioner">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Practitioner</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="PractitionerRole">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">PractitionerRole</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Procedure">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Procedure</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Provenance">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Provenance</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Questionnaire">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Questionnaire</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="QuestionnaireResponse">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">QuestionnaireResponse</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="RegulatedAuthorization">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">RegulatedAuthorization</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="RelatedPerson">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">RelatedPerson</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="RequestOrchestration">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">RequestOrchestration</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Requirements">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Requirements</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ResearchStudy">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ResearchStudy</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ResearchSubject">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ResearchSubject</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="RiskAssessment">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">RiskAssessment</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Schedule">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Schedule</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="SearchParameter">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">SearchParameter</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ServiceRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ServiceRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Slot">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Slot</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Specimen">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Specimen</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="SpecimenDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">SpecimenDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="StructureDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">StructureDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="StructureMap">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">StructureMap</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Subscription">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Subscription</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="SubscriptionStatus">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">SubscriptionStatus</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="SubscriptionTopic">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">SubscriptionTopic</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Substance">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Substance</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="SubstanceDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">SubstanceDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Task">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Task</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="TerminologyCapabilities">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">TerminologyCapabilities</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ValueSet">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ValueSet</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="VisionPrescription">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">VisionPrescription</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="BodySite">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">BodySite</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="CatalogEntry">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">CatalogEntry</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Conformance">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Conformance</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DataElement">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DataElement</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DeviceComponent">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DeviceComponent</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DeviceUseRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DeviceUseRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DeviceUseStatement">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DeviceUseStatement</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DiagnosticOrder">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DiagnosticOrder</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DocumentManifest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DocumentManifest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="EffectEvidenceSynthesis">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">EffectEvidenceSynthesis</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="EligibilityRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">EligibilityRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="EligibilityResponse">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">EligibilityResponse</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ExpansionProfile">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ExpansionProfile</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ImagingManifest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ImagingManifest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ImagingObjectSelection">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ImagingObjectSelection</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Media">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Media</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicationOrder">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicationOrder</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicationUsage">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicationUsage</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProduct">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProduct</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProductAuthorization">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProductAuthorization</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProductContraindication">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProductContraindication</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProductIndication">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProductIndication</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProductIngredient">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProductIngredient</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProductInteraction">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProductInteraction</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProductManufactured">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProductManufactured</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProductPackaged">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProductPackaged</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProductPharmaceutical">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProductPharmaceutical</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProductUndesirableEffect">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProductUndesirableEffect</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Order">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Order</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="OrderResponse">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">OrderResponse</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ProcedureRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ProcedureRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ProcessRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ProcessRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ProcessResponse">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ProcessResponse</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ReferralRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ReferralRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="RequestGroup">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">RequestGroup</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ResearchDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ResearchDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ResearchElementDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ResearchElementDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="RiskEvidenceSynthesis">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">RiskEvidenceSynthesis</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Sequence">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Sequence</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ServiceDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ServiceDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="SubstanceSpecification">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">SubstanceSpecification</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="VersionIndependentResourceTypes">
-    <xs:annotation>
-      <xs:documentation xml:lang="en"></xs:documentation>
-      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-       <xs:extension base="Element">
-         <xs:attribute name="value" type="VersionIndependentResourceTypesEnum" use="optional"/>
        </xs:extension>
      </xs:complexContent>
   </xs:complexType>
@@ -16407,7 +15557,7 @@ A coverage may only be responsible for specific types of charges, and the sequen
               <xs:documentation xml:lang="en">The source of the information about the allergy that is recorded.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="lastReactionOccurrence" minOccurs="0" maxOccurs="1" type="dateTime">
+          <xs:element name="lastOccurrence" minOccurs="0" maxOccurs="1" type="dateTime">
             <xs:annotation>
               <xs:documentation xml:lang="en">Represents the date and/or time of the last known occurrence of a reaction event.</xs:documentation>
            </xs:annotation>
@@ -18078,6 +17228,11 @@ into another (possibly the same) biological entity.</xs:documentation>
           <xs:element name="morphology" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">The kind of structure being represented by the body structure at `BodyStructure.location`.  This can define both normal and abnormal morphologies.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="origin" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The origin of the included body structure, such as autologous, allogeneic, synthetic, or other source.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -20976,13 +20131,11 @@ of the resource representation.</xs:documentation>
               <xs:documentation xml:lang="en">A number to uniquely identify diagnosis entries.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:choice minOccurs="1" maxOccurs="1" >
+          <xs:element name="diagnosis" minOccurs="1" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">The nature of illness or problem in a coded form or as a reference to an external defined Condition.</xs:documentation>
-            </xs:annotation>
-            <xs:element name="diagnosisCodeableConcept" type="CodeableConcept"/>
-            <xs:element name="diagnosisReference" type="Reference"/>
-          </xs:choice>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="type" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">When the condition was observed or the relative ranking.</xs:documentation>
@@ -21019,13 +20172,11 @@ of the resource representation.</xs:documentation>
               <xs:documentation xml:lang="en">Date and optionally time the procedure was performed.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:choice minOccurs="1" maxOccurs="1" >
+          <xs:element name="procedure" minOccurs="1" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">The code or reference to a Procedure resource which identifies the clinical intervention performed.</xs:documentation>
-            </xs:annotation>
-            <xs:element name="procedureCodeableConcept" type="CodeableConcept"/>
-            <xs:element name="procedureReference" type="Reference"/>
-          </xs:choice>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="udi" minOccurs="0" maxOccurs="unbounded" type="Reference">
             <xs:annotation>
               <xs:documentation xml:lang="en">Unique Device Identifiers associated with this line item.</xs:documentation>
@@ -23591,6 +22742,7 @@ of the resource representation.</xs:documentation>
             <xs:element name="contentAttachment" type="Attachment"/>
             <xs:element name="contentReference" type="Reference"/>
             <xs:element name="contentCodeableConcept" type="CodeableConcept"/>
+            <xs:element name="contentString" type="string"/>
           </xs:choice>
         </xs:sequence>
       </xs:extension>
@@ -23794,6 +22946,7 @@ of the resource representation.</xs:documentation>
             <xs:element name="contentAttachment" type="Attachment"/>
             <xs:element name="contentReference" type="Reference"/>
             <xs:element name="contentCodeableConcept" type="CodeableConcept"/>
+            <xs:element name="contentString" type="string"/>
           </xs:choice>
         </xs:sequence>
       </xs:extension>
@@ -25288,7 +24441,7 @@ The actual author of the section when it is not the author of the composition. I
           </xs:element>
           <xs:element name="securityLabel" minOccurs="0" maxOccurs="unbounded" type="Coding">
             <xs:annotation>
-              <xs:documentation xml:lang="en">A security label, comprised of 0..* security label fields (Privacy tags), which define which resources are controlled by this exception.</xs:documentation>
+              <xs:documentation xml:lang="en">A security label, comprised of 0..* security label fields (Privacy tags), which define which resources are controlled by this provision.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="purpose" minOccurs="0" maxOccurs="unbounded" type="Coding">
@@ -25321,14 +24474,9 @@ The actual author of the section when it is not the author of the composition. I
               <xs:documentation xml:lang="en">The resources controlled by this provision if specific resources are referenced.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="expression" minOccurs="0" maxOccurs="1" type="Expression">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">A computable (FHIRPath or other) definition of what is controlled by this consent.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
           <xs:element name="provision" type="Consent.Provision" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Nested provisions adding further constraints and exceptions to the parent provision.</xs:documentation>
+              <xs:documentation xml:lang="en">Nested provisions adding further constraints on, or exceptions to the parent provision.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -25344,7 +24492,7 @@ The actual author of the section when it is not the author of the composition. I
         <xs:sequence>
           <xs:element name="role" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">How the individual is involved in the resources content that is described in the exception.</xs:documentation>
+              <xs:documentation xml:lang="en">How the individual is involved in the resources content targeted by this provision.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="reference" minOccurs="0" maxOccurs="1" type="Reference">
@@ -27018,13 +26166,11 @@ The actual author of the section when it is not the author of the composition. I
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:choice minOccurs="0" maxOccurs="1" >
+          <xs:element name="diagnosis" minOccurs="0" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">The nature of illness or problem in a coded form or as a reference to an external defined Condition.</xs:documentation>
-            </xs:annotation>
-            <xs:element name="diagnosisCodeableConcept" type="CodeableConcept"/>
-            <xs:element name="diagnosisReference" type="Reference"/>
-          </xs:choice>
+           </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -27940,7 +27086,7 @@ The actual author of the section when it is not the author of the composition. I
         <xs:sequence>
           <xs:element name="type" minOccurs="1" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The type of the substance added to the container.  This is represented as a concept from a code system or described in a Substance resource.</xs:documentation>
+              <xs:documentation xml:lang="en">The type of the substance added to the container.  This is represented as a concept from a code system or described in a Substance or SubstanceDefinition resource.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="quantity" minOccurs="0" maxOccurs="1" type="Quantity">
@@ -28072,12 +27218,12 @@ The actual author of the section when it is not the author of the composition. I
           </xs:element>
           <xs:element name="type" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">physiological | technical.</xs:documentation>
+              <xs:documentation xml:lang="en">The particular kind of alert, such as whether it is related to the patient condition; to irregular device state; or to workflow or regular device state, such as timers.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="priority" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The alert priority is usually reported by the source device. A priority of `info` SHOULD indicate that the alert is “for information only” and urgent action is not required. The element MAY be omitted if the priority is unknown.</xs:documentation>
+              <xs:documentation xml:lang="en">The urgency by which the condition ought to be addressed. The alert priority is usually reported by the source device. The element MAY be omitted if the priority is unknown.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="code" minOccurs="1" maxOccurs="1" type="CodeableConcept">
@@ -28181,12 +27327,12 @@ The actual author of the section when it is not the author of the composition. I
         <xs:sequence>
           <xs:element name="activationState" minOccurs="1" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Paused indicates that annunciation has temporarily been disabled (&quot;snooze&quot;).</xs:documentation>
+              <xs:documentation xml:lang="en">The activation state of the signal, e.g., whether it is activated, deactivated or temporarily deactivated (i.e., paused). An activated signal is not necessarily present; a present signal is always activated.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="presence" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Indicates whether the signal is currently being annunciated. An on signal is currently being annunciated; a latched signal is currently being being annunciated although the alert condition has ended; an off signal is not currently being annunciated; and an acknowledged signal is not currently being annunciated because the user has acknowledged the signal.</xs:documentation>
+              <xs:documentation xml:lang="en">Indicates whether signal annunciation is occurring, along with the underlying reason. An `on` signal is currently being annunciated; a `latched` signal is currently being annunciated although the alert condition has ended; an `off` signal is not currently being annunciated; and an `acknowledged` signal is not currently being annunciated because the user has acknowledged the signal.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="annunciator" minOccurs="0" maxOccurs="1" type="CodeableReference">
@@ -28553,6 +27699,11 @@ The actual author of the section when it is not the author of the composition. I
           <xs:element name="material" type="DeviceDefinition.Material" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">A substance used to create the material(s) of which the device is made.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="additive" type="DeviceDefinition.Additive" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Material added to a container device (typically used in specimen collection or initial processing).  The material may be added by the device manufacturer or by a different party subsequent to manufacturing.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="productionIdentifierInUDI" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
@@ -28928,6 +28079,27 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
           <xs:element name="allergenicIndicator" minOccurs="0" maxOccurs="1" type="boolean">
             <xs:annotation>
               <xs:documentation xml:lang="en">Whether the substance is a known or suspected allergen.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="DeviceDefinition.Additive">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">The definition of a kind of device or device component. Typically, this definition corresponds to a device model although it may be a broader category of device.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="CodeableReference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The type of the substance added to the container.  This is represented as a concept from a code system or described in a SubstanceDefinition resource.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="quantity" minOccurs="0" maxOccurs="1" type="Quantity">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The quantity of the additive substance in the container; may be volume, dimensions, or other appropriate measurements, depending on the container and additive substance type.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -29434,6 +28606,11 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
           <xs:element name="status" minOccurs="1" maxOccurs="1" type="DiagnosticReportStatus">
             <xs:annotation>
               <xs:documentation xml:lang="en">The status of the diagnostic report.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="statusReason" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Captures the reason for the current state of the DiagnosticReport.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="category" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
@@ -32908,13 +32085,11 @@ See guidance around (not) making local changes to elements [here](canonicalresou
               <xs:documentation xml:lang="en">A number to uniquely identify diagnosis entries.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:choice minOccurs="1" maxOccurs="1" >
+          <xs:element name="diagnosis" minOccurs="1" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">The nature of illness or problem in a coded form or as a reference to an external defined Condition.</xs:documentation>
-            </xs:annotation>
-            <xs:element name="diagnosisCodeableConcept" type="CodeableConcept"/>
-            <xs:element name="diagnosisReference" type="Reference"/>
-          </xs:choice>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="type" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">When the condition was observed or the relative ranking.</xs:documentation>
@@ -32951,13 +32126,11 @@ See guidance around (not) making local changes to elements [here](canonicalresou
               <xs:documentation xml:lang="en">Date and optionally time the procedure was performed.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:choice minOccurs="1" maxOccurs="1" >
+          <xs:element name="procedure" minOccurs="1" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">The code or reference to a Procedure resource which identifies the clinical intervention performed.</xs:documentation>
-            </xs:annotation>
-            <xs:element name="procedureCodeableConcept" type="CodeableConcept"/>
-            <xs:element name="procedureReference" type="Reference"/>
-          </xs:choice>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="udi" minOccurs="0" maxOccurs="unbounded" type="Reference">
             <xs:annotation>
               <xs:documentation xml:lang="en">Unique Device Identifiers associated with this line item.</xs:documentation>
@@ -36431,9 +35604,9 @@ The origin at the TLHC of the TLHC pixel is 0.0\0.0, the BRHC of the TLHC pixel 
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="type" minOccurs="1" maxOccurs="1" type="VersionIndependentResourceTypes">
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="uri">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The type of resource that all instances must conform to.</xs:documentation>
+              <xs:documentation xml:lang="en">The type of resource that all instances must conform to. This must be a resource, or a type with a [[[http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics]]] of [[[http://hl7.org/fhir/type-characteristics-code#can-be-target]]].</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="profile" minOccurs="1" maxOccurs="1" type="canonical">
@@ -39680,7 +38853,7 @@ The origin at the TLHC of the TLHC pixel is 0.0\0.0, the BRHC of the TLHC pixel 
           </xs:element>
           <xs:element name="form" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Physical form of the location, e.g. building, room, vehicle, road, virtual.</xs:documentation>
+              <xs:documentation xml:lang="en">Form of the location, e.g. building, room, vehicle, road, virtual.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="position" type="Location.Position" minOccurs="0" maxOccurs="1">
@@ -42770,9 +41943,9 @@ The primary difference between a medicationstatement and a medicationadministrat
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="code" minOccurs="1" maxOccurs="1" type="ResourceType">
+          <xs:element name="code" minOccurs="1" maxOccurs="1" type="uri">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The kind of resource that must be the focus for this message.</xs:documentation>
+              <xs:documentation xml:lang="en">The kind of resource that must be the focus for this message. This must be a resource, or a type with a [[[http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics]]] of [[[http://hl7.org/fhir/type-characteristics-code#can-be-target]]].</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="profile" minOccurs="0" maxOccurs="1" type="canonical">
@@ -44295,6 +43468,11 @@ The primary difference between a medicationstatement and a medicationadministrat
               <xs:documentation xml:lang="en">The status of the result value.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="statusReason" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Captures the reason for the current state of the Observation.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="category" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">A code that classifies the general type of observation being made.</xs:documentation>
@@ -44373,7 +43551,7 @@ The primary difference between a medicationstatement and a medicationadministrat
           </xs:element>
           <xs:element name="interpretationContext" minOccurs="0" maxOccurs="unbounded" type="CodeableReference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Other preceding or concurrent information that is critical to understand the context and significance of the observation.</xs:documentation>
+              <xs:documentation xml:lang="en">Contextual information that is relevant to understanding the observation value or interpretation.  The referenced information may be concurrent or precede the observation.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="note" minOccurs="0" maxOccurs="unbounded" type="Annotation">
@@ -44404,6 +43582,11 @@ The primary difference between a medicationstatement and a medicationadministrat
           <xs:element name="device" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
               <xs:documentation xml:lang="en">A reference to the device that generates the measurements or the device settings for the device.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="supportingDevice" minOccurs="0" maxOccurs="unbounded" type="CodeableReference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A reference to additional devices, kits, or reagents (e.g., Test Kit, Calibration Kit, QC materials) used to support the generation of the measurement.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="referenceRange" type="Observation.ReferenceRange" minOccurs="0" maxOccurs="unbounded">
@@ -44828,6 +44011,11 @@ Reflex | Repeat | Re-run.</xs:documentation>
             <xs:element name="deviceReference" type="Reference"/>
             <xs:element name="deviceCanonical" type="canonical"/>
           </xs:choice>
+          <xs:element name="supportingDevice" minOccurs="0" maxOccurs="unbounded" type="CodeableReference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A reference to additional devices, kits, or reagents (e.g., TestKit, Calibration Kit, QC materials) to support the generation of the measurement.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="preferredReportName" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The preferred name to be used when reporting the results of observations conforming to this ObservationDefinition.</xs:documentation>
@@ -45194,9 +44382,9 @@ Reflex | Repeat | Re-run.</xs:documentation>
               <xs:documentation xml:lang="en">Indicates that this operation definition is a constraining profile on the base.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="resource" minOccurs="0" maxOccurs="unbounded" type="VersionIndependentResourceTypesAll">
+          <xs:element name="resource" minOccurs="0" maxOccurs="unbounded" type="uri">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The types on which this operation can be executed.</xs:documentation>
+              <xs:documentation xml:lang="en">The types on which this operation can be executed. This must be a resource, or a type with a [[[http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics]]] of [[[http://hl7.org/fhir/type-characteristics-code#can-be-target]]].</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="system" minOccurs="1" maxOccurs="1" type="boolean">
@@ -45275,7 +44463,7 @@ Reflex | Repeat | Re-run.</xs:documentation>
               <xs:documentation xml:lang="en">Describes the meaning or use of this parameter.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="type" minOccurs="0" maxOccurs="1" type="FHIRTypes">
+          <xs:element name="type" minOccurs="0" maxOccurs="1" type="uri">
             <xs:annotation>
               <xs:documentation xml:lang="en">The type for this parameter.</xs:documentation>
            </xs:annotation>
@@ -45399,881 +44587,6 @@ Reflex | Repeat | Re-run.</xs:documentation>
     <xs:complexContent>
       <xs:extension base="Element">
         <xs:attribute name="value" type="OperationParameterUseEnum" use="optional"/>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:simpleType name="VersionIndependentResourceTypesAllEnum">
-    <xs:restriction base="code-primitive">
-      <xs:enumeration value="Account">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Account</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ActivityDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ActivityDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ActorDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ActorDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="AdministrableProductDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">AdministrableProductDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="AdverseEvent">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">AdverseEvent</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="AllergyIntolerance">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">AllergyIntolerance</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Appointment">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Appointment</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="AppointmentResponse">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">AppointmentResponse</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ArtifactAssessment">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ArtifactAssessment</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="AuditEvent">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">AuditEvent</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Basic">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Basic</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Binary">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Binary</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="BiologicallyDerivedProduct">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">BiologicallyDerivedProduct</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="BodyStructure">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">BodyStructure</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Bundle">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Bundle</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="CanonicalResource">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">CanonicalResource</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="CapabilityStatement">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">CapabilityStatement</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="CarePlan">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">CarePlan</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="CareTeam">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">CareTeam</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Claim">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Claim</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ClaimResponse">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ClaimResponse</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ClinicalUseDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ClinicalUseDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="CodeSystem">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">CodeSystem</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Communication">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Communication</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="CommunicationRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">CommunicationRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="CompartmentDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">CompartmentDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Composition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Composition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ConceptMap">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ConceptMap</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Condition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Condition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Consent">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Consent</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Contract">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Contract</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Coverage">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Coverage</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="CoverageEligibilityRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">CoverageEligibilityRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="CoverageEligibilityResponse">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">CoverageEligibilityResponse</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DetectedIssue">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DetectedIssue</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Device">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Device</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DeviceAlert">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DeviceAlert</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DeviceAssociation">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DeviceAssociation</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DeviceDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DeviceDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DeviceMetric">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DeviceMetric</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DeviceRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DeviceRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DiagnosticReport">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DiagnosticReport</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DocumentReference">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DocumentReference</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DomainResource">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DomainResource</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Encounter">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Encounter</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Endpoint">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Endpoint</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="EnrollmentRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">EnrollmentRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="EnrollmentResponse">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">EnrollmentResponse</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="EpisodeOfCare">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">EpisodeOfCare</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="EventDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">EventDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Evidence">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Evidence</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="EvidenceVariable">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">EvidenceVariable</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ExampleScenario">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ExampleScenario</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ExplanationOfBenefit">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ExplanationOfBenefit</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="FamilyMemberHistory">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">FamilyMemberHistory</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Flag">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Flag</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Goal">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Goal</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Group">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Group</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="GuidanceResponse">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">GuidanceResponse</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="HealthcareService">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">HealthcareService</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ImagingSelection">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ImagingSelection</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ImagingStudy">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ImagingStudy</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Immunization">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Immunization</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ImplementationGuide">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ImplementationGuide</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Ingredient">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Ingredient</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="InsurancePlan">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">InsurancePlan</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="InsuranceProduct">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">InsuranceProduct</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Invoice">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Invoice</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Library">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Library</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="List">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">List</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Location">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Location</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ManufacturedItemDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ManufacturedItemDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Measure">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Measure</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MeasureReport">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MeasureReport</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Medication">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Medication</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicationAdministration">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicationAdministration</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicationDispense">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicationDispense</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicationRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicationRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicationStatement">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicationStatement</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProductDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProductDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MessageDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MessageDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MessageHeader">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MessageHeader</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MetadataResource">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MetadataResource</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="NamingSystem">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">NamingSystem</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="NutritionIntake">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">NutritionIntake</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="NutritionOrder">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">NutritionOrder</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="NutritionProduct">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">NutritionProduct</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Observation">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Observation</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ObservationDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ObservationDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="OperationDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">OperationDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="OperationOutcome">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">OperationOutcome</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Organization">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Organization</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="OrganizationAffiliation">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">OrganizationAffiliation</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="PackagedProductDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">PackagedProductDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Parameters">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Parameters</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Patient">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Patient</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="PaymentNotice">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">PaymentNotice</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="PaymentReconciliation">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">PaymentReconciliation</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Person">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Person</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="PlanDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">PlanDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Practitioner">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Practitioner</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="PractitionerRole">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">PractitionerRole</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Procedure">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Procedure</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Provenance">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Provenance</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Questionnaire">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Questionnaire</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="QuestionnaireResponse">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">QuestionnaireResponse</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="RegulatedAuthorization">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">RegulatedAuthorization</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="RelatedPerson">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">RelatedPerson</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="RequestOrchestration">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">RequestOrchestration</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Requirements">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Requirements</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ResearchStudy">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ResearchStudy</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ResearchSubject">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ResearchSubject</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Resource">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Resource</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="RiskAssessment">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">RiskAssessment</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Schedule">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Schedule</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="SearchParameter">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">SearchParameter</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ServiceRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ServiceRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Slot">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Slot</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Specimen">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Specimen</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="SpecimenDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">SpecimenDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="StructureDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">StructureDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="StructureMap">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">StructureMap</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Subscription">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Subscription</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="SubscriptionStatus">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">SubscriptionStatus</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="SubscriptionTopic">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">SubscriptionTopic</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Substance">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Substance</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="SubstanceDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">SubstanceDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Task">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Task</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="TerminologyCapabilities">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">TerminologyCapabilities</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ValueSet">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ValueSet</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="VisionPrescription">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">VisionPrescription</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="BodySite">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">BodySite</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="CatalogEntry">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">CatalogEntry</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Conformance">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Conformance</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DataElement">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DataElement</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DeviceComponent">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DeviceComponent</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DeviceUseRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DeviceUseRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DeviceUseStatement">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DeviceUseStatement</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DiagnosticOrder">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DiagnosticOrder</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="DocumentManifest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">DocumentManifest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="EffectEvidenceSynthesis">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">EffectEvidenceSynthesis</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="EligibilityRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">EligibilityRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="EligibilityResponse">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">EligibilityResponse</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ExpansionProfile">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ExpansionProfile</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ImagingManifest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ImagingManifest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ImagingObjectSelection">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ImagingObjectSelection</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Media">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Media</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicationOrder">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicationOrder</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicationUsage">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicationUsage</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProduct">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProduct</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProductAuthorization">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProductAuthorization</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProductContraindication">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProductContraindication</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProductIndication">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProductIndication</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProductIngredient">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProductIngredient</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProductInteraction">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProductInteraction</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProductManufactured">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProductManufactured</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProductPackaged">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProductPackaged</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProductPharmaceutical">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProductPharmaceutical</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="MedicinalProductUndesirableEffect">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">MedicinalProductUndesirableEffect</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Order">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Order</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="OrderResponse">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">OrderResponse</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ProcedureRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ProcedureRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ProcessRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ProcessRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ProcessResponse">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ProcessResponse</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ReferralRequest">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ReferralRequest</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="RequestGroup">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">RequestGroup</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ResearchDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ResearchDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ResearchElementDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ResearchElementDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="RiskEvidenceSynthesis">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">RiskEvidenceSynthesis</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Sequence">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Sequence</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ServiceDefinition">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ServiceDefinition</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="SubstanceSpecification">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">SubstanceSpecification</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="VersionIndependentResourceTypesAll">
-    <xs:annotation>
-      <xs:documentation xml:lang="en"></xs:documentation>
-      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="Element">
-        <xs:attribute name="value" type="VersionIndependentResourceTypesAllEnum" use="optional"/>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
@@ -50269,6 +48582,11 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           <xs:documentation xml:lang="en">Stopped</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="unknown">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Unknown</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
   <xs:complexType name="QuestionnaireResponseStatus">
@@ -50487,7 +48805,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="communication" type="RelatedPerson.Communication" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="en">A language which may be used to communicate with the related person about the patient's health.</xs:documentation>
+              <xs:documentation xml:lang="en">A language which may be used to communicate with the related person.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -52208,9 +50526,9 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
               <xs:documentation xml:lang="en">Additional label that are recommended to be used in the URL or the parameter name in a parameters resource for this search parameter. Typically used to provide backwards-compatibility for renamed search parameters and translations into localized languages.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="base" minOccurs="1" maxOccurs="unbounded" type="VersionIndependentResourceTypesAll">
+          <xs:element name="base" minOccurs="1" maxOccurs="unbounded" type="uri">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The base resource type(s) that this search parameter can be used against.</xs:documentation>
+              <xs:documentation xml:lang="en">The base resource type(s) that this search parameter can be used against. This must be a resource, or a type with a [[[http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics]]] of [[[http://hl7.org/fhir/type-characteristics-code#can-be-target]]].</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="type" minOccurs="1" maxOccurs="1" type="SearchParamType">
@@ -52233,9 +50551,9 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
               <xs:documentation xml:lang="en">FHIRPath expression that defines/sets a complex constraint for when this SearchParameter is applicable.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="target" minOccurs="0" maxOccurs="unbounded" type="VersionIndependentResourceTypesAll">
+          <xs:element name="target" minOccurs="0" maxOccurs="unbounded" type="uri">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Types of resource (if a resource is referenced).</xs:documentation>
+              <xs:documentation xml:lang="en">Types of resource (if a resource is referenced). This must be a resource, or a type with a [[[http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics]]] of [[[http://hl7.org/fhir/type-characteristics-code#can-be-target]]].</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="multipleOr" minOccurs="0" maxOccurs="1" type="boolean">
@@ -53830,14 +52148,11 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
               <xs:documentation xml:lang="en">A coded value specifying the technique that is used to perform the procedure.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:choice minOccurs="0" maxOccurs="1" >
+          <xs:element name="device" minOccurs="0" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">A coded value specifying the device that is used to perform the procedure.</xs:documentation>
-            </xs:annotation>
-            <xs:element name="deviceCodeableConcept" type="CodeableConcept"/>
-            <xs:element name="deviceReference" type="Reference"/>
-            <xs:element name="deviceCanonical" type="canonical"/>
-          </xs:choice>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="procedure" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
               <xs:documentation xml:lang="en">The procedure event during which the specimen was collected (e.g. the surgery leading to the collection of a pathology sample).</xs:documentation>
@@ -53881,17 +52196,14 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
               <xs:documentation xml:lang="en">The performer of the processing of the specimen.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:choice minOccurs="0" maxOccurs="1" >
+          <xs:element name="device" minOccurs="0" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">The device used in the processing of the specimen.</xs:documentation>
-            </xs:annotation>
-            <xs:element name="deviceCodeableConcept" type="CodeableConcept"/>
-            <xs:element name="deviceReference" type="Reference"/>
-            <xs:element name="deviceCanonical" type="canonical"/>
-          </xs:choice>
-          <xs:element name="additive" minOccurs="0" maxOccurs="unbounded" type="CodeableReference">
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="additive" type="Specimen.Additive" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Material used in the processing step.</xs:documentation>
+              <xs:documentation xml:lang="en">Material used in the processing step (typically an additive added to a container device, such as a preservative or anticoagulant).</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:choice minOccurs="0" maxOccurs="1" >
@@ -53906,6 +52218,27 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="Specimen.Additive">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">A sample to be used for analysis.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="CodeableReference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The type of the substance used in the processing step.  This is represented as a concept from a code system or described in a Substance or SubstanceDefinition resource.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="quantity" minOccurs="0" maxOccurs="1" type="Quantity">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The quantity of the additive substance in the container; may be volume, dimensions, or other appropriate measurements, depending on the container and additive substance type.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="Specimen.Container">
     <xs:annotation>
       <xs:documentation xml:lang="en">A sample to be used for analysis.</xs:documentation>
@@ -53913,14 +52246,11 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:choice minOccurs="1" maxOccurs="1" >
+          <xs:element name="device" minOccurs="1" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">The device resource for the the container holding the specimen. If the container is in a holder then the referenced device will point to a parent device.</xs:documentation>
-            </xs:annotation>
-            <xs:element name="deviceCodeableConcept" type="CodeableConcept"/>
-            <xs:element name="deviceReference" type="Reference"/>
-            <xs:element name="deviceCanonical" type="canonical"/>
-          </xs:choice>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="specimenQuantity" minOccurs="0" maxOccurs="1" type="Quantity">
             <xs:annotation>
               <xs:documentation xml:lang="en">The quantity of specimen in the container; may be volume, dimensions, or other appropriate measurements, depending on the specimen type.</xs:documentation>
@@ -54194,31 +52524,13 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="material" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+          <xs:choice minOccurs="0" maxOccurs="1" >
             <xs:annotation>
-              <xs:documentation xml:lang="en">The type of material of the container.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="type" minOccurs="0" maxOccurs="1" type="CodeableConcept">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The type of container used to contain this kind of specimen.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="cap" minOccurs="0" maxOccurs="1" type="CodeableConcept">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Color of container cap.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="markdown">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The textual description of the kind of container.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="capacity" minOccurs="0" maxOccurs="1" type="Quantity">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The capacity (volume or other measure) of this kind of container.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
+              <xs:documentation xml:lang="en">The type of container used to contain this kind of specimen, expressed either as a code or as a reference to a DeviceDefinition that describes the container (including its material, type, cap, description and capacity).</xs:documentation>
+            </xs:annotation>
+            <xs:element name="deviceCodeableConcept" type="CodeableConcept"/>
+            <xs:element name="deviceCanonical" type="canonical"/>
+          </xs:choice>
           <xs:choice minOccurs="0" maxOccurs="1" >
             <xs:annotation>
               <xs:documentation xml:lang="en">The minimum volume to be conditioned in the container.</xs:documentation>
@@ -54247,13 +52559,16 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:choice minOccurs="1" maxOccurs="1" >
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Substance introduced in the kind of container to preserve, maintain or enhance the specimen. Examples: Formalin, Citrate, EDTA.</xs:documentation>
-            </xs:annotation>
-            <xs:element name="additiveCodeableConcept" type="CodeableConcept"/>
-            <xs:element name="additiveReference" type="Reference"/>
-          </xs:choice>
+              <xs:documentation xml:lang="en">The type of substance introduced in the kind of container to preserve, maintain or enhance the specimen. Examples: Formalin, Citrate, EDTA.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="quantity" minOccurs="0" maxOccurs="1" type="Quantity">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The quantity of the additive substance in the container; may be volume, dimensions, or other appropriate measurements, depending on the container and additive substance type.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -58448,6 +56763,11 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           <xs:element name="dateWritten" minOccurs="1" maxOccurs="1" type="dateTime">
             <xs:annotation>
               <xs:documentation xml:lang="en">The date (and perhaps time) when the prescription was written.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="effectiveEndDate" minOccurs="0" maxOccurs="1" type="dateTime">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The date/time after which the prescription is considered expired and can no longer be used to obtain lenses.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="prescriber" minOccurs="1" maxOccurs="1" type="Reference">

@@ -291,7 +291,7 @@ Here's an example with ethnicity included:
   "name" : "CIBMTRPatient",
   "title" : "CIBMTR Patient Profile (us-core)",
   "status" : "draft",
-  "date" : "2026-06-21T21:50:44-05:00",
+  "date" : "2026-06-21T22:38:39-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

@@ -147,7 +147,7 @@ A code system value **SHOULD** be supplied for each additional code.
   "name" : "CIBMTRVitalSignsVariables",
   "title" : "CIBMTR Vital Signs Results Profile (US Core)",
   "status" : "draft",
-  "date" : "2026-06-21T21:50:44-05:00",
+  "date" : "2026-06-21T22:38:39-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
   "contact" : [
     {

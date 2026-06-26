@@ -6,18 +6,14 @@ coding, and usage of vital sign observations to support consistent reporting and
 use in CIBMTR data collection and analysis workflows.
 
 This profile establishes minimum expectations for representing vital sign measurements
-(e.g., body height, body weight, blood pressure, body temperature) recorded for a Patient
-and submitted to the CIBMTR FHIR server. It specifies which elements **SHALL** be present,
-which elements are designated as **Must Support**, and how terminology bindings are applied
-to ensure interoperability across reporting centers.
+(e.g., body height, body weight) recorded for a patient
+and submitted to the CIBMTR FHIR server. It specifies the required elements, extensions, and identifier slices, and defines how they **SHALL** be used to support standardized reporting to CIBMTR.
 
----
 
 ### Mandatory and Must Support Data Elements
 
-The following data elements must always be present (**Mandatory**) or must be supported if
-the data is present in the sending system (**Must Support**). Additional guidance and examples
-are provided in the sections below.
+The following data elements must always be present (**Must Have**) or must be supported if
+the data is present in the sending system (**Must Support**). 
 
 **Each Vital Signs Observation Must Have:**
 - security label
@@ -33,8 +29,6 @@ are provided in the sections below.
 - component results
 
 
----
-
 ### Profile-specific Implementation Guidance (CIBMTR)
 
 **Security label requirement (meta.security)**<br>
@@ -43,13 +37,9 @@ The CIBMTR vital signs profile requires a **meta.security** label identifying th
 **subject**<br>
 The **subject** element is mandatory and must contain a reference to a Patient resource identifying the individual whose vital signs are being recorded.
 
-**Terminology bindings**<br>
-This profile binds `Observation.code` to standard LOINC codes for vital signs in accordance
-with the US Core Vital Signs profile. Where applicable, CIBMTR-specific value sets or
-constraints further limit acceptable codes to support consistent reporting.
-
+**code**<br>
+The code element identifies the vital sign being measured. Vital sign codes are typically represented using LOINC codes or CIBMTR-defined laboratory ValueSets where applicable.
 
 
 {% include link-list.md %}
 
----

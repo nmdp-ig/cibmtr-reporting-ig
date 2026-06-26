@@ -9,21 +9,19 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-vital-signs | *Version*:0.1.11 |
-| Draft as of 2026-06-10 | *Computable Name*:CIBMTRVitalSignsVariables |
+| Draft as of 2026-06-25 | *Computable Name*:CIBMTRVitalSignsVariables |
 
 ### Overview
 
 The CIBMTR Vital Signs Profile inherits from the US Core Vital Signs Profile, which in turn inherits from the base FHIR Observation resource. This profile constrains the representation, coding, and usage of vital sign observations to support consistent reporting and downstream use in CIBMTR data collection and analysis workflows.
 
-This profile establishes minimum expectations for representing vital sign measurements (e.g., body height, body weight, blood pressure, body temperature) recorded for a Patient and submitted to the CIBMTR FHIR server. It specifies which elements **SHALL** be present, which elements are designated as **Must Support**, and how terminology bindings are applied to ensure interoperability across reporting centers.
-
--------
+This profile establishes minimum expectations for representing vital sign measurements (e.g., body height, body weight) recorded for a patient and submitted to the CIBMTR FHIR server. It specifies the required elements, extensions, and identifier slices, and defines how they **SHALL** be used to support standardized reporting to CIBMTR.
 
 ### Mandatory and Must Support Data Elements
 
-The following data elements must always be present (**Mandatory**) or must be supported if the data is present in the sending system (**Must Support**). Additional guidance and examples are provided in the sections below.
+The following data elements must always be present (**Must Have**) or must be supported if the data is present in the sending system (**Must Support**).
 
-**Each Vital Signs Observation Must Have**
+**Each Vital Signs Observation Must Have:**
 
 * security label
 * status
@@ -31,14 +29,12 @@ The following data elements must always be present (**Mandatory**) or must be su
 * patient reference (subject)
 * clinically relevant time
 
-**Each Vital Signs Observation Must Support**
+**Each Vital Signs Observation Must Support:**
 
 * performer
 * result value
 * reason if the value is absent
 * component results
-
--------
 
 ### Profile-specific Implementation Guidance (CIBMTR)
 
@@ -48,10 +44,8 @@ The following data elements must always be present (**Mandatory**) or must be su
 **subject**
  The **subject** element is mandatory and must contain a reference to a Patient resource identifying the individual whose vital signs are being recorded.
 
-**Terminology bindings**
- This profile binds `Observation.code` to standard LOINC codes for vital signs in accordance with the US Core Vital Signs profile. Where applicable, CIBMTR-specific value sets or constraints further limit acceptable codes to support consistent reporting.
-
--------
+**code**
+ The code element identifies the vital sign being measured. Vital sign codes are typically represented using LOINC codes or CIBMTR-defined laboratory ValueSets where applicable.
 
 **Usages:**
 
@@ -86,8 +80,6 @@ Vital sign values **SHALL** be reported using UCUM units as defined by the US Co
 }
 
 ```
-
--------
 
 #### Special rules:
 
@@ -132,8 +124,6 @@ A code system value **SHOULD** be supplied for each additional code.
 * The observations **MAY** have component observations. For example, to qualify the vital sign observation, 8310-5 - Body temperature, 8327-9 - Body temperature measurement site (oral, forehead, rectal, etc.) may be used as a component observation. The FHIR core specification vital signs table provides several of these.
 * An Observation **MAY** include component observations to further qualify the measurement. For example, to qualify the vital sign observation, 8310-5 - Body temperature, 8327-9 - Body temperature measurement site (oral, forehead, rectal, etc.) may be used as a component observation. The FHIR core specification vital signs table provides several of these.
 
--------
-
 
 
 ## Resource Content
@@ -147,11 +137,11 @@ A code system value **SHOULD** be supplied for each additional code.
   "name" : "CIBMTRVitalSignsVariables",
   "title" : "CIBMTR Vital Signs Results Profile (US Core)",
   "status" : "draft",
-  "date" : "2026-06-10T07:35:08-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+  "date" : "2026-06-25T19:24:07-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+      "name" : "The Medical College of Wisconsin, Inc. and NMDP",
       "telecom" : [
         {
           "system" : "url",

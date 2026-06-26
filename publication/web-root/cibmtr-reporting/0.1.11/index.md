@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/nmdp.fhir.cibmtr-reporting | *Version*:0.1.11 |
-| Draft as of 2026-06-10 | *Computable Name*:CIBMTRReporting |
+| Draft as of 2026-06-25 | *Computable Name*:CIBMTRReporting |
 
 > This Implementation Guide is a CIBMTR Standard for Trial Use (STU). It is expected to undergo changes as we learn from experiences with our transplant center partners.
 
@@ -18,7 +18,7 @@ This FHIR Implementation Guide (IG) describes how to report transplant-related d
 
 ### Introduction
 
-The [Center for International Blood & Marrow Transplant Research® (CIBMTR®)](https://www.cibmtr.org) is a research collaboration between the [NMDP](https://www.nmdp.org/) and the [Medical College of Wisconsin (MCW)](https://www.mcw.edu). The CIBMTR collaborates with the global scientific community to advance hematopoietic cell transplantation (HCT) and other cellular therapy worldwide to increase survival and enrich quality of life for patients.
+The [Center for International Blood & Marrow Transplant Research® (CIBMTR®)](https://www.cibmtr.org) is a research collaboration between [NMDP](https://www.nmdp.org/) and the [Medical College of Wisconsin (MCW)](https://www.mcw.edu). The CIBMTR collaborates with the global scientific community to advance hematopoietic cell transplantation (HCT) and other cellular therapy worldwide to increase survival and enrich quality of life for patients.
 
 The CIBMTR facilitates critical observational and interventional research through scientific and statistical expertise, a large network of transplant centers, and a unique and extensive clinical outcomes database. CIBMTR collects data for HCT recipients using a web-based manual data entry system ([FormsNet3](https://www.cibmtr.org/DataManagement/SystemApplications/FormsNet3)) and an automated messaging system ([A Growable Network Information System (AGNIS)](https://www.cibmtr.org/DataManagement/SystemApplications/AGNIS/Pages/default.aspx)).
 
@@ -111,11 +111,11 @@ Guidance on connecting to and sending data to the Direct FHIR API is found in th
   "name" : "CIBMTRReporting",
   "title" : "CIBMTR Reporting Implementation Guide",
   "status" : "draft",
-  "date" : "2026-06-10T07:35:08-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+  "date" : "2026-06-25T19:24:07-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+      "name" : "The Medical College of Wisconsin, Inc. and NMDP",
       "telecom" : [
         {
           "system" : "url",
@@ -148,7 +148,7 @@ Guidance on connecting to and sending data to the Direct FHIR API is found in th
       ],
       "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId" : "hl7.terminology.r4",
-      "version" : "7.1.0"
+      "version" : "7.2.0"
     },
     {
       "id" : "hl7ext",

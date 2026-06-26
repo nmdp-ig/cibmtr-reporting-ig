@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-additional-peri-transplant-medication | *Version*:0.1.11 |
-| Draft as of 2026-06-22 | *Computable Name*:CIBMTR_AdditionalPeriTransplantMedication |
+| Draft as of 2026-06-25 | *Computable Name*:CIBMTR_AdditionalPeriTransplantMedication |
 
  
 CIBMTR Additional Drugs Given in the Peri-Transplant Period. Drugs may be given during the peri-transplant period to prevent transplant-related complications, such as liver injuries or to facilitate engraftment. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-cibmtr-additional-pe
   "name" : "CIBMTR_AdditionalPeriTransplantMedication",
   "title" : "CIBMTR Additional Drugs in Peri-Transplant Period",
   "status" : "draft",
-  "date" : "2026-06-22T09:21:59-05:00",
+  "date" : "2026-06-25T19:24:07-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {

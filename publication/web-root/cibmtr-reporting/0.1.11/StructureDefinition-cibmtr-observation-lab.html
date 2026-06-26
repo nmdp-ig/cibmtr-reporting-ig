@@ -359,7 +359,7 @@ h1 {
         
           Draft
           
-            as of 2026-06-10
+            as of 2026-06-25
           
         
       </td>
@@ -387,15 +387,12 @@ h1 {
 
 <p>Laboratory Observation FHIR resources may be submitted to the CIBMTR Direct FHIR API (see the R4 Connection Guide). These profiles are derived from profiles defined in the US Core Implementation Guide. The CIBMTR profiles extend the base profiles by requiring the <code class="language-plaintext highlighter-rouge">meta.security</code> element to identify the submitting center and by applying bindings to CIBMTR-defined or laboratory-specific ValueSets where applicable. The Laboratory Observation resource is patient-specific and represents laboratory test results and related laboratory observations for an individual subject.</p>
 
-<hr />
-
 <h3 id="mandatory-and-must-support-data-elements">Mandatory and Must Support Data Elements</h3>
 
-<p>The following data elements must always be present (<strong>Mandatory</strong>) or must be supported if
-the data is present in the sending system (<strong>Must Support</strong>). Additional guidance and examples
-are provided in the sections below.</p>
+<p>The following data elements must always be present (<strong>Must Have</strong>) or must be supported if
+the data is present in the sending system (<strong>Must Support</strong>).</p>
 
-<p><strong>Each Medication Request Must Have</strong></p>
+<p><strong>Each Laboratory Observation Must Have:</strong></p>
 <ul>
   <li>security label</li>
   <li>status</li>
@@ -404,7 +401,7 @@ are provided in the sections below.</p>
   <li>effective date/time</li>
 </ul>
 
-<p><strong>Each Medication Request Must Support</strong></p>
+<p><strong>Each Laboratory Observation Must Support:</strong></p>
 <ul>
   <li>encounter reference</li>
   <li>specimen reference</li>
@@ -414,18 +411,16 @@ are provided in the sections below.</p>
   <li>note</li>
 </ul>
 
-<hr />
-
 <h3 id="profile-specific-implementation-guidance-cibmtr">Profile-specific Implementation Guidance (CIBMTR)</h3>
 
 <p><strong>Security label requirement (meta.security)</strong><br />
 The CIBMTR observation laboratory results profile requires a <strong>meta.security</strong> label identifying the Transplant Center context (e.g., <code class="language-plaintext highlighter-rouge">rc_&lt;CCN&gt;</code>). This security tag is used as part of the query pattern for searching and for access scoping.</p>
 
+<p><strong>subject</strong><br />
+The <strong>subject</strong> element is mandatory and must contain a reference to a Patient resource identifying the subject of the laboratory result.</p>
+
 <p><strong>code</strong><br />
 The code element identifies the laboratory test or observation being reported. Laboratory test codes are typically represented using LOINC codes or CIBMTR-defined laboratory ValueSets where applicable.</p>
-
-<p><strong>subject</strong><br />
-The <strong>subject</strong> element is mandatory and must contain a reference to a Patient resource identifying the subject of the medication request.</p>
 
 <p><strong>value[x]</strong><br />
 Observation result values may be represented in multiple forms. CIBMTR currently supports only valueQuantity for numeric results and valueCodeableConcept for categorical results. For valueCodeableConcept, only coded values are supported. Other value types, such as valueString, are not currently supported.</p>
@@ -435,8 +430,6 @@ There are cases where the laboratory result exceeds the measurable limits of the
 
 <p><strong>referenceRange</strong><br />
 For CMV LOINC codes that use valueQuantity, a corresponding referenceRange element <strong>MUST</strong> also be provided.</p>
-
-<hr />
 
 
 </div>
@@ -699,7 +692,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Extensions that cannot be ignored even if unrecognized<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f35a141e-8e27-4ee5-9d0d-97e7b98f04b8
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 40a9014d-7c20-40d7-8c9a-7504e079dbf3
 document.getElementById('cbcibmtr-observation-labK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('cibmtr-observation-labK'), 'binding', document.getElementById('cbcibmtr-observation-labK-binding').checked, document.getElementById('ppcibmtr-observation-labK'));
 document.getElementById('cbcibmtr-observation-labK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1088,7 +1081,7 @@ filterDesc(document.getElementById('cibmtr-observation-labK'), 'obligation', doc
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f35a141e-8e27-4ee5-9d0d-97e7b98f04b8
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 40a9014d-7c20-40d7-8c9a-7504e079dbf3
 document.getElementById('cbcibmtr-observation-labD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('cibmtr-observation-labD'), 'binding', document.getElementById('cbcibmtr-observation-labD-binding').checked, document.getElementById('ppcibmtr-observation-labD'));
 document.getElementById('cbcibmtr-observation-labD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1648,7 +1641,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">See <a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange" title="Observation.referenceRange">referenceRange (Observation)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Provides guide for interpretation of component result<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f35a141e-8e27-4ee5-9d0d-97e7b98f04b8
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 40a9014d-7c20-40d7-8c9a-7504e079dbf3
 document.getElementById('cbcibmtr-observation-labS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('cibmtr-observation-labS'), 'binding', document.getElementById('cbcibmtr-observation-labS-binding').checked, document.getElementById('ppcibmtr-observation-labS'));
 document.getElementById('cbcibmtr-observation-labS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2479,7 +2472,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Extensions that cannot be ignored even if unrecognized<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f35a141e-8e27-4ee5-9d0d-97e7b98f04b8
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 40a9014d-7c20-40d7-8c9a-7504e079dbf3
 document.getElementById('cbcibmtr-observation-labKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('cibmtr-observation-labKA'), 'binding', document.getElementById('cbcibmtr-observation-labKA-binding').checked, document.getElementById('ppcibmtr-observation-labKA'));
 document.getElementById('cbcibmtr-observation-labKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2868,7 +2861,7 @@ filterDesc(document.getElementById('cibmtr-observation-labKA'), 'obligation', do
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f35a141e-8e27-4ee5-9d0d-97e7b98f04b8
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 40a9014d-7c20-40d7-8c9a-7504e079dbf3
 document.getElementById('cbcibmtr-observation-labDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('cibmtr-observation-labDA'), 'binding', document.getElementById('cbcibmtr-observation-labDA-binding').checked, document.getElementById('ppcibmtr-observation-labDA'));
 document.getElementById('cbcibmtr-observation-labDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3427,7 +3420,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">See <a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange" title="Observation.referenceRange">referenceRange (Observation)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Provides guide for interpretation of component result<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f35a141e-8e27-4ee5-9d0d-97e7b98f04b8
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 40a9014d-7c20-40d7-8c9a-7504e079dbf3
 document.getElementById('cbcibmtr-observation-labSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('cibmtr-observation-labSA'), 'binding', document.getElementById('cbcibmtr-observation-labSA-binding').checked, document.getElementById('ppcibmtr-observation-labSA'));
 document.getElementById('cbcibmtr-observation-labSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -4184,8 +4177,8 @@ if(window.location.hash != "") {
 <div class="container">  <!-- container -->
 <div class="inner-wrapper">
   <p>
-    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.11 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 10, 2026 07:35-0500">2026-06-10</span>
+    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and NMDP</a>  
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.11 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 25, 2026 19:24-0500">2026-06-25</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

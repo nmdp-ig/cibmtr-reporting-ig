@@ -9,17 +9,15 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient | *Version*:0.1.11 |
-| Draft as of 2026-06-22 | *Computable Name*:CIBMTRPatient |
+| Draft as of 2026-06-25 | *Computable Name*:CIBMTRPatient |
 
 ### Overview
 
-The CIBMTR Patient Profile (us-core) inherits from the US Core Patient Profile, which in turn inherits from the base FHIR Patient resource. This profile meets the requirements of the U.S. Core Data for Interoperability (USCDI) Patient Demographics/Information Data Class and sets minimum expectations for representing, searching, and retrieving patient demographic and administrative information for CIBMTR use cases. It specifies which elements, extensions, and identifier slices **SHALL** be present and constrains how they are used to support interoperability across CIBMTR reporting workflows.
-
--------
+The CIBMTR Patient Profile (us-core) inherits from the US Core Patient Profile, which in turn inherits from the base FHIR Patient resource. This profile meets the requirements of the U.S. Core Data for Interoperability (USCDI) Patient Demographics/Information Data Class and sets minimum expectations for representing, searching, and retrieving patient demographic and administrative information for CIBMTR use cases. It specifies the required elements, extensions, and identifier slices, and defines how they **SHALL** be used to support standardized reporting to CIBMTR.
 
 ### Mandatory and Must Support Data Elements
 
-The following data elements must always be present (**Mandatory**) or must be supported if the data is present in the sending system (**Must Support**). They are presented below in a simple human-readable explanation. Profile-specific guidance and examples are provided below.
+The following data elements must always be present (**Must Have**) or must be supported if the data is present in the sending system (**Must Support**).
 
 **Each Patient Must Have:**
 
@@ -35,8 +33,6 @@ The following data elements must always be present (**Mandatory**) or must be su
 * address
 * communication
 * link
-
--------
 
 ### Profile-specific Implementation Guidance (CIBMTR)
 
@@ -60,10 +56,6 @@ The following data elements must always be present (**Mandatory**) or must be su
 
 **SSN caution**
  **SSNs SHOULD NOT** be used as a patient identifier (`Patient.identifier.value`) due to identity theft and filtering concerns.
-
--------
-
--------
 
 **Usages:**
 
@@ -291,7 +283,7 @@ Here's an example with ethnicity included:
   "name" : "CIBMTRPatient",
   "title" : "CIBMTR Patient Profile (us-core)",
   "status" : "draft",
-  "date" : "2026-06-22T09:21:59-05:00",
+  "date" : "2026-06-25T19:24:07-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {

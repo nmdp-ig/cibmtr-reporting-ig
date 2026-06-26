@@ -9,23 +9,21 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medications | *Version*:0.1.11 |
-| Draft as of 2026-06-10 | *Computable Name*:CIBMTR_Medications |
+| Draft as of 2026-06-25 | *Computable Name*:CIBMTR_Medications |
 
 ### Overview
 
-Medication-related FHIR resources may be submitted to the CIBMTR Direct FHIR API (see the R4 Connection Guide). These profiles are derived from profiles defined in the US Core and mCODE Implementation Guides. The CIBMTR profiles extend the base profiles by requiring the meta.security element to identify the submitting center and by applying bindings to CIBMTR-defined or RxNorm-based ValueSets where applicable. In some cases, elements that were optional in the original profiles may be required in the CIBMTR profiles.
+Medication-related FHIR resources may be submitted to the CIBMTR Direct FHIR API (see the R4 Connection Guide). These profiles are derived from profiles defined in the US Core and mCODE Implementation Guides. The CIBMTR profiles extend the base profiles by requiring the **meta.security** element to identify the submitting center and by applying bindings to CIBMTR-defined or RxNorm-based ValueSets where applicable. In some cases, elements that were optional in the original profiles may be required in the CIBMTR profiles.
 
 The MedicationRequest resource is the primary medication-related resource received by CIBMTR. It is patient-specific and represents a medication order or request for an individual subject. Medication details are provided through the medication reference section in MedicationRequest, which points to a Medication resource.
 
 The Medication resource is definitional and provides the medication information referenced by MedicationRequest. A Medication resource may also reference another Medication resource when additional medication details or relationships need to be represented.
 
--------
-
 ### Mandatory and Must Support Data Elements
 
-The following data elements must always be present (**Mandatory**) or must be supported if the data is present in the sending system (**Must Support**). Additional guidance and examples are provided in the sections below.
+The following data elements must always be present (**Must Have**) or must be supported if the data is present in the sending system (**Must Support**).
 
-**Each MedicationRequest Must Have**
+**Each MedicationRequest Must Have:**
 
 * security label
 * status
@@ -33,7 +31,7 @@ The following data elements must always be present (**Mandatory**) or must be su
 * patient reference (subject)
 * authored date
 
-**Each MedicationRequest Must Support**
+**Each MedicationRequest Must Support:**
 
 * requester
 * dosage instruction
@@ -41,8 +39,6 @@ The following data elements must always be present (**Mandatory**) or must be su
 * category
 * note
 * encounter reference
-
--------
 
 ### Profile-specific Implementation Guidance (CIBMTR)
 
@@ -60,8 +56,6 @@ When `medicationReference` is used, the referenced Medication resource provides 
 
 **subject**
  The **subject** element is mandatory and must contain a reference to a Patient resource identifying the subject of the medication request.
-
--------
 
 **Usages:**
 
@@ -212,11 +206,11 @@ The following example shows equivalent SNOMED CT and ICD-10 reason codes:
   "name" : "CIBMTR_Medications",
   "title" : "CIBMTR Medication Related (mcode)",
   "status" : "draft",
-  "date" : "2026-06-10T07:35:08-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+  "date" : "2026-06-25T19:24:07-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+      "name" : "The Medical College of Wisconsin, Inc. and NMDP",
       "telecom" : [
         {
           "system" : "url",

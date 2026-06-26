@@ -9,19 +9,17 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab | *Version*:0.1.11 |
-| Draft as of 2026-06-10 | *Computable Name*:CIBMTRObservationLab |
+| Draft as of 2026-06-25 | *Computable Name*:CIBMTRObservationLab |
 
 ### Overview
 
 Laboratory Observation FHIR resources may be submitted to the CIBMTR Direct FHIR API (see the R4 Connection Guide). These profiles are derived from profiles defined in the US Core Implementation Guide. The CIBMTR profiles extend the base profiles by requiring the `meta.security` element to identify the submitting center and by applying bindings to CIBMTR-defined or laboratory-specific ValueSets where applicable. The Laboratory Observation resource is patient-specific and represents laboratory test results and related laboratory observations for an individual subject.
 
--------
-
 ### Mandatory and Must Support Data Elements
 
-The following data elements must always be present (**Mandatory**) or must be supported if the data is present in the sending system (**Must Support**). Additional guidance and examples are provided in the sections below.
+The following data elements must always be present (**Must Have**) or must be supported if the data is present in the sending system (**Must Support**).
 
-**Each Medication Request Must Have**
+**Each Laboratory Observation Must Have:**
 
 * security label
 * status
@@ -29,7 +27,7 @@ The following data elements must always be present (**Mandatory**) or must be su
 * patient reference (subject)
 * effective date/time
 
-**Each Medication Request Must Support**
+**Each Laboratory Observation Must Support:**
 
 * encounter reference
 * specimen reference
@@ -38,18 +36,16 @@ The following data elements must always be present (**Mandatory**) or must be su
 * performer
 * note
 
--------
-
 ### Profile-specific Implementation Guidance (CIBMTR)
 
 **Security label requirement (meta.security)**
  The CIBMTR observation laboratory results profile requires a **meta.security** label identifying the Transplant Center context (e.g., `rc_<CCN>`). This security tag is used as part of the query pattern for searching and for access scoping.
 
+**subject**
+ The **subject** element is mandatory and must contain a reference to a Patient resource identifying the subject of the laboratory result.
+
 **code**
  The code element identifies the laboratory test or observation being reported. Laboratory test codes are typically represented using LOINC codes or CIBMTR-defined laboratory ValueSets where applicable.
-
-**subject**
- The **subject** element is mandatory and must contain a reference to a Patient resource identifying the subject of the medication request.
 
 **value[x]**
  Observation result values may be represented in multiple forms. CIBMTR currently supports only valueQuantity for numeric results and valueCodeableConcept for categorical results. For valueCodeableConcept, only coded values are supported. Other value types, such as valueString, are not currently supported.
@@ -59,8 +55,6 @@ The following data elements must always be present (**Mandatory**) or must be su
 
 **referenceRange**
  For CMV LOINC codes that use valueQuantity, a corresponding referenceRange element **MUST** also be provided.
-
--------
 
 **Usages:**
 
@@ -168,11 +162,11 @@ In some cases, the laboratory result exceeds the measurable limits of the test a
   "name" : "CIBMTRObservationLab",
   "title" : "CIBMTR Observation Laboratory Results Profile (us-core)",
   "status" : "draft",
-  "date" : "2026-06-10T07:35:08-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+  "date" : "2026-06-25T19:24:07-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+      "name" : "The Medical College of Wisconsin, Inc. and NMDP",
       "telecom" : [
         {
           "system" : "url",

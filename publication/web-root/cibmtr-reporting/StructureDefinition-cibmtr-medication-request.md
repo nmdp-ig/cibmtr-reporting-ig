@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-request | *Version*:0.1.11 |
-| Draft as of 2026-06-10 | *Computable Name*:CIBMTR_MedicationRequest |
+| Draft as of 2026-06-25 | *Computable Name*:CIBMTR_MedicationRequest |
 
  
 CIBMTR Medication Request (mcode) 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-cibmtr-medication-re
   "name" : "CIBMTR_MedicationRequest",
   "title" : "CIBMTR Medication Request (mcode)",
   "status" : "draft",
-  "date" : "2026-06-10T07:35:08-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+  "date" : "2026-06-25T19:24:07-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+      "name" : "The Medical College of Wisconsin, Inc. and NMDP",
       "telecom" : [
         {
           "system" : "url",

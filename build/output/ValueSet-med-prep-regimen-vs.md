@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prep-regimen-vs | *Version*:0.1.11 |
-| Draft as of 2026-06-22 | *Computable Name*:RxNormPrepRegimenVS |
+| Draft as of 2026-06-25 | *Computable Name*:RxNormPrepRegimenVS |
 
  
 RxNorm codes for Prep Regimen 
@@ -52,7 +52,7 @@ RxNorm codes for Prep Regimen
   "title" : "RxNorm - Prep Regimen",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-06-22T09:21:59-05:00",
+  "date" : "2026-06-25T19:24:07-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {

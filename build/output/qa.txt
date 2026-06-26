@@ -1,9 +1,9 @@
 CIBMTRReporting : Validation Results
 =========================================
 
-err = 7, warn = 249, info = 348
-IG Publisher Version: 2.0.29 Out of date - current version is 2.2.9
-Generated Mon Jun 22 09:29:41 CDT 2026. FHIR version 4.0.1 for nmdp.fhir.cibmtr-reporting#0.1.11 (canonical = http://fhir.nmdp.org/ig/cibmtr-reporting)
+err = 7, warn = 237, info = 348
+IG Publisher Version: 2.0.29 Out of date - current version is 2.2.10
+Generated Thu Jun 25 19:34:02 CDT 2026. FHIR version 4.0.1 for nmdp.fhir.cibmtr-reporting#0.1.11 (canonical = http://fhir.nmdp.org/ig/cibmtr-reporting)
  Build Errors : 1 / 7 / 0
  D:\IG\0515_Final\build\fsh-generated\resources\CodeSystem-cibmtr-ancestry-cs : 2 / 2 / 2
  D:\IG\0515_Final\build\fsh-generated\resources\ImplementationGuide-nmdp.fhir.cibmtr-reporting : 0 / 2 / 1
@@ -45,8 +45,8 @@ Generated Mon Jun 22 09:29:41 CDT 2026. FHIR version 4.0.1 for nmdp.fhir.cibmtr-
  D:\IG\0515_Final\build\fsh-generated\resources\Patient-PatientExample5 : 0 / 3 / 6
  D:\IG\0515_Final\build\fsh-generated\resources\Patient-PatientExample6 : 0 / 2 / 2
  D:\IG\0515_Final\build\fsh-generated\resources\StructureDefinition-cibmtr-additional-peri-transplant-medication : 0 / 3 / 3
- D:\IG\0515_Final\build\fsh-generated\resources\StructureDefinition-cibmtr-ancestry : 2 / 5 / 1
- D:\IG\0515_Final\build\fsh-generated\resources\StructureDefinition-cibmtr-cytogenetics : 0 / 10 / 6
+ D:\IG\0515_Final\build\fsh-generated\resources\StructureDefinition-cibmtr-ancestry : 2 / 3 / 1
+ D:\IG\0515_Final\build\fsh-generated\resources\StructureDefinition-cibmtr-cytogenetics : 0 / 2 / 6
  D:\IG\0515_Final\build\fsh-generated\resources\StructureDefinition-cibmtr-gvhd-prophylaxis-medication : 0 / 3 / 2
  D:\IG\0515_Final\build\fsh-generated\resources\StructureDefinition-cibmtr-medication : 0 / 2 / 3
  D:\IG\0515_Final\build\fsh-generated\resources\StructureDefinition-cibmtr-medication-administration : 0 / 3 / 3
@@ -59,7 +59,7 @@ Generated Mon Jun 22 09:29:41 CDT 2026. FHIR version 4.0.1 for nmdp.fhir.cibmtr-
  D:\IG\0515_Final\build\fsh-generated\resources\StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication : 0 / 3 / 2
  D:\IG\0515_Final\build\fsh-generated\resources\StructureDefinition-cibmtr-prep-regimen-medication : 0 / 3 / 2
  D:\IG\0515_Final\build\fsh-generated\resources\StructureDefinition-cibmtr-prior-exposure-medication : 0 / 3 / 2
- D:\IG\0515_Final\build\fsh-generated\resources\StructureDefinition-cibmtr-vital-signs : 0 / 13 / 3
+ D:\IG\0515_Final\build\fsh-generated\resources\StructureDefinition-cibmtr-vital-signs : 0 / 11 / 3
  D:\IG\0515_Final\build\fsh-generated\resources\StructureDefinition-cibmtr-vital-signs-height : 0 / 9 / 3
  D:\IG\0515_Final\build\fsh-generated\resources\StructureDefinition-cibmtr-vital-signs-weight : 0 / 9 / 3
  D:\IG\0515_Final\build\fsh-generated\resources\ValueSet-auto-differential-blood-vs : 0 / 0 / 10
@@ -305,8 +305,6 @@ WARNING: StructureDefinition/cibmtr-additional-peri-transplant-medication: Struc
 ERROR: StructureDefinition.where(url = 'http://example.org/fhir/StructureDefinition/cibmtr-ancestry'): Conformance resource D:\IG\0515_Final\build\fsh-generated\resources\StructureDefinition-cibmtr-ancestry.json - the canonical URL (http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-ancestry) does not match the URL (http://example.org/fhir/StructureDefinition/cibmtr-ancestry). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/cibmtr-ancestry: StructureDefinition.snapshot.element[3].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '8.0.0', found versions: 6.1.0 (from hl7.fhir.us.core#6.1.0), 8.0.0 (from hl7.fhir.us.core#8.0.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race' to 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race|8.0.0'
 WARNING: StructureDefinition/cibmtr-ancestry: StructureDefinition.differential.element[1].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '8.0.0', found versions: 6.1.0 (from hl7.fhir.us.core#6.1.0), 8.0.0 (from hl7.fhir.us.core#8.0.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race' to 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race|8.0.0'
-WARNING: StructureDefinition/cibmtr-ancestry: StructureDefinition.differential.element[5].binding: The valueSet reference https://termservices.nmdp.org/atlas/#/conceptset/136/expression on element Extension.extension.value[x] could not be resolved
-WARNING: StructureDefinition/cibmtr-ancestry: StructureDefinition.snapshot.element[8].binding: The valueSet reference https://termservices.nmdp.org/atlas/#/conceptset/136/expression on element Extension.extension.value[x] could not be resolved
 WARNING: StructureDefinition.where(url = 'http://example.org/fhir/StructureDefinition/cibmtr-ancestry'): The Implementation Guide contains no examples for this extension
 ERROR: D:\IG\0515_Final\build\fsh-generated\resources\StructureDefinition-cibmtr-ancestry: URL Mismatch http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-ancestry vs http://example.org/fhir/StructureDefinition/cibmtr-ancestry
 == fsh-generated\resources\StructureDefinition-cibmtr-cytogenetics.json ==
@@ -316,15 +314,7 @@ INFORMATION: StructureDefinition/cibmtr-cytogenetics: StructureDefinition.differ
 INFORMATION: StructureDefinition/cibmtr-cytogenetics: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/cibmtr-cytogenetics: Observation.extension: The extension http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding|5.3.0 is deprecated with the note: 'This extension is deprecated - use the [[[http://hl7.org/fhir/StructureDefinition/observation-structure-type]]] instead'
 INFORMATION: StructureDefinition/cibmtr-cytogenetics: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-WARNING: StructureDefinition/cibmtr-cytogenetics: StructureDefinition.snapshot.element[46].binding: The valueSet reference http://loinc.org/vs/LL1971-2 on element Observation.value[x] could not be resolved
-WARNING: StructureDefinition/cibmtr-cytogenetics: StructureDefinition.snapshot.element[51].binding: The valueSet reference http://loinc.org/vs/LL4048-6 on element Observation.method could not be resolved
 INFORMATION: StructureDefinition/cibmtr-cytogenetics: StructureDefinition.snapshot.element[66].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-WARNING: StructureDefinition/cibmtr-cytogenetics: StructureDefinition.snapshot.element[107].binding: The valueSet reference http://loinc.org/vs/LL1040-6 on element Observation.component.value[x] could not be resolved
-WARNING: StructureDefinition/cibmtr-cytogenetics: StructureDefinition.snapshot.element[199].binding: The valueSet reference http://loinc.org/vs/LL5323-2 on element Observation.component.value[x] could not be resolved
-WARNING: StructureDefinition/cibmtr-cytogenetics: StructureDefinition.snapshot.element[235].binding: The valueSet reference http://loinc.org/vs/LL378-1 on element Observation.component.value[x] could not be resolved
-WARNING: StructureDefinition/cibmtr-cytogenetics: StructureDefinition.snapshot.element[269].binding: The valueSet reference http://loinc.org/vs/LL381-5 on element Observation.component.value[x] could not be resolved
-WARNING: StructureDefinition/cibmtr-cytogenetics: StructureDefinition.snapshot.element[296].binding: The valueSet reference http://loinc.org/vs/LL2938-0 on element Observation.component.value[x] could not be resolved
-WARNING: StructureDefinition/cibmtr-cytogenetics: StructureDefinition.snapshot.element[314].binding: The valueSet reference http://loinc.org/vs/LL380-7 on element Observation.component.value[x] could not be resolved
 == fsh-generated\resources\StructureDefinition-cibmtr-gvhd-prophylaxis-medication.json ==
 WARNING: StructureDefinition/cibmtr-gvhd-prophylaxis-medication: StructureDefinition.snapshot.element[26].binding.valueSet: There are multiple different potential matches for the url 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20240606', found versions: 20170601 (from us.nlm.vsac#0.11.0), 20240606 (from us.nlm.vsac#0.23.0). Suggested fix: change the canonical reference from 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4' to 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4|20240606'
 WARNING: StructureDefinition/cibmtr-gvhd-prophylaxis-medication: StructureDefinition.differential.element[1].binding: The definition for the element 'Medication.code.coding' binds to the value set 'http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs' which is experimental, but this structure is not labeled as experimental
@@ -466,9 +456,7 @@ WARNING: StructureDefinition/cibmtr-vital-signs: StructureDefinition.snapshot.el
 WARNING: StructureDefinition/cibmtr-vital-signs: StructureDefinition.snapshot.element[73].binding.valueSet: There are multiple different potential matches for the url 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20240322', found versions: 20210630 (from us.nlm.vsac#0.11.0), 20240322 (from us.nlm.vsac#0.23.0). Suggested fix: change the canonical reference from 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62' to 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62|20240322'
 WARNING: StructureDefinition/cibmtr-vital-signs: StructureDefinition.differential.element[5].binding.valueSet: A definition could not be found for Canonical URL 'https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.1/expansion'
 INFORMATION: StructureDefinition/cibmtr-vital-signs: StructureDefinition.differential.element[1].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-WARNING: StructureDefinition/cibmtr-vital-signs: StructureDefinition.differential.element[5].binding: The valueSet reference https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.1/expansion on element Observation.code could not be resolved
 INFORMATION: StructureDefinition/cibmtr-vital-signs: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-WARNING: StructureDefinition/cibmtr-vital-signs: StructureDefinition.snapshot.element[42].binding: The valueSet reference https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.1/expansion on element Observation.code could not be resolved
 WARNING: StructureDefinition.where(url = 'http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-vital-signs'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-cibmtr-vital-signs-height.json ==
 WARNING: StructureDefinition/cibmtr-vital-signs-height: StructureDefinition.baseDefinition: There are multiple different potential matches for the url 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '8.0.0', found versions: 6.1.0 (from hl7.fhir.us.core#6.1.0), 8.0.0 (from hl7.fhir.us.core#8.0.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height' to 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height|8.0.0'

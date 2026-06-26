@@ -16,7 +16,6 @@ misinterpretation or validation errors.
 }
 ```
 
----
 
 #### Special rules:
 - One code in observation.code must have a fixed `Observation.code.coding.code` provided in the [FHIR core specification vital signs table]. For example, the fixed code 8302-2 is required in body height fhir data,
@@ -60,5 +59,3 @@ further qualify, translate, or map to the primary vital sign code. Examples incl
 - An Observation **MAY** include component observations to further qualify the measurement. For example, to qualify the vital sign observation, 8310-5 - Body temperature, 8327-9 - Body temperature measurement site (oral, forehead, rectal, etc.) may be used as a component observation. The FHIR core specification vital signs table provides several of these.
 
 {% include link-list.md %}
-
----

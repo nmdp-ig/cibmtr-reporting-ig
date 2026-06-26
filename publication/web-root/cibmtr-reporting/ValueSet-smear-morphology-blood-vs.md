@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/smear-morphology-blood-vs | *Version*:0.1.11 |
-| Draft as of 2026-06-10 | *Computable Name*:SmearMorphologyBloodVS |
+| Draft as of 2026-06-25 | *Computable Name*:SmearMorphologyBloodVS |
 
  
 Smear morphology panel - Blood (34994-4) 
@@ -51,11 +51,11 @@ Smear morphology panel - Blood (34994-4)
   "title" : "Smear morphology panel - Blood (34994-4)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-06-10T07:35:08-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+  "date" : "2026-06-25T19:24:07-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+      "name" : "The Medical College of Wisconsin, Inc. and NMDP",
       "telecom" : [
         {
           "system" : "url",

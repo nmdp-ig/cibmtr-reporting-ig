@@ -213,9 +213,6 @@ h1 {
     </ul>
   </li>
   <li>
-    <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR (STU3)</a>
-  </li>
-  <li>
     <a href="artifacts.html">Artifact Index</a>
   </li>
   <li class="dropdown">
@@ -359,7 +356,7 @@ h1 {
         
           Draft
           
-            as of 2026-06-25
+            as of 2026-08-18
           
         
       </td>
@@ -493,7 +490,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">active | inactive | entered-in-error<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-medication-status.html" title="http://hl7.org/fhir/ValueSet/medication-status" class="binding">Medication Status Codes</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">A coded concept defining if the medication is in active use.</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 40a9014d-7c20-40d7-8c9a-7504e079dbf3
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 96716793-f370-45a8-b20d-3cc179dd90e3
 document.getElementById('cbcibmtr-gvhd-prophylaxis-medicationK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('cibmtr-gvhd-prophylaxis-medicationK'), 'binding', document.getElementById('cbcibmtr-gvhd-prophylaxis-medicationK-binding').checked, document.getElementById('ppcibmtr-gvhd-prophylaxis-medicationK'));
 document.getElementById('cbcibmtr-gvhd-prophylaxis-medicationK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -565,9 +562,9 @@ filterDesc(document.getElementById('cibmtr-gvhd-prophylaxis-medicationK'), 'obli
       <button data-clipboard-text="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4" title="Click to copy URL" class="btn-copy"></button>
       <img src="external.png" alt="."/>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to 20240606, the version found through the package references">&#x1F4E6;20240606</td>
+    <td title="Version is not explicitly stated, which means it is fixed to 20170601, the version found through the package references">&#x1F4E6;20170601</td>
     <td>
-      <a href="http://fhir.org/packages/us.nlm.vsac">VSAC v0.23</a>
+      <a href="http://fhir.org/packages/us.nlm.vsac">VSAC v0.11</a>
     </td>
   </tr>
   <tr>
@@ -729,7 +726,7 @@ filterDesc(document.getElementById('cibmtr-gvhd-prophylaxis-medicationK'), 'obli
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Code defined by a terminology system</span><br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-med-gvhd-prophylaxis-vs.html" title="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs" class="binding">RxNorm - GVHD Prophylaxis</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 40a9014d-7c20-40d7-8c9a-7504e079dbf3
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 96716793-f370-45a8-b20d-3cc179dd90e3
 document.getElementById('cbcibmtr-gvhd-prophylaxis-medicationD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('cibmtr-gvhd-prophylaxis-medicationD'), 'binding', document.getElementById('cbcibmtr-gvhd-prophylaxis-medicationD-binding').checked, document.getElementById('ppcibmtr-gvhd-prophylaxis-medicationD'));
 document.getElementById('cbcibmtr-gvhd-prophylaxis-medicationD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1047,7 +1044,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">When batch will expire</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 40a9014d-7c20-40d7-8c9a-7504e079dbf3
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 96716793-f370-45a8-b20d-3cc179dd90e3
 document.getElementById('cbcibmtr-gvhd-prophylaxis-medicationS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('cibmtr-gvhd-prophylaxis-medicationS'), 'binding', document.getElementById('cbcibmtr-gvhd-prophylaxis-medicationS-binding').checked, document.getElementById('ppcibmtr-gvhd-prophylaxis-medicationS'));
 document.getElementById('cbcibmtr-gvhd-prophylaxis-medicationS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1131,9 +1128,9 @@ filterDesc(document.getElementById('cibmtr-gvhd-prophylaxis-medicationS'), 'obli
     </td>
     <td title="A human language.">
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">Common Languages</a>
-      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages" title="Click to copy URL" class="btn-copy"></button>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages|4.0.1" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
     <td>
       <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
     </td>
@@ -1149,9 +1146,9 @@ filterDesc(document.getElementById('cibmtr-gvhd-prophylaxis-medicationS'), 'obli
       <button data-clipboard-text="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4" title="Click to copy URL" class="btn-copy"></button>
       <img src="external.png" alt="."/>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to 20240606, the version found through the package references">&#x1F4E6;20240606</td>
+    <td title="Version is not explicitly stated, which means it is fixed to 20170601, the version found through the package references">&#x1F4E6;20170601</td>
     <td>
-      <a href="http://fhir.org/packages/us.nlm.vsac">VSAC v0.23</a>
+      <a href="http://fhir.org/packages/us.nlm.vsac">VSAC v0.11</a>
     </td>
   </tr>
   <tr>
@@ -1190,9 +1187,9 @@ filterDesc(document.getElementById('cibmtr-gvhd-prophylaxis-medicationS'), 'obli
     </td>
     <td title="A coded concept defining the form of a medication.">
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medication-form-codes.html">SNOMED CT Form Codes</a>
-      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/medication-form-codes" title="Click to copy URL" class="btn-copy"></button>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/medication-form-codes|4.0.1" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
     <td>
       <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
     </td>
@@ -1360,7 +1357,7 @@ filterDesc(document.getElementById('cibmtr-gvhd-prophylaxis-medicationS'), 'obli
       "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.code.text" title="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user" class="dict"><span style="text-decoration: underline">text</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Plain text representation of the concept</span>
     },
     "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.status" title="A code to indicate if the medication is in active use (this element modifies the meaning of other elements)" class="dict"><span style="text-decoration: underline">status</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">active | inactive | entered-in-error</a></span>
-    "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.manufacturer" title="Describes the details of the manufacturer of the medication product.  This is not intended to represent the distributor of a medication product" class="dict"><span style="text-decoration: underline">manufacturer</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Manufacturer of the item</span>
+    "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.manufacturer" title="Describes the details of the manufacturer of the medication product.  This is not intended to represent the distributor of a medication product" class="dict"><span style="text-decoration: underline">manufacturer</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Organization|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Manufacturer of the item</span>
     "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.form" title="Describes the form of the item.  Powder; tablets; capsule" class="dict"><span style="text-decoration: underline">form</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">powder | tablets | capsule +</a></span>
     "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.amount" title="Specific amount of the drug in the packaged product.  For example, when specifying a product that has the same strength (For example, Insulin glargine 100 unit per mL solution for injection), this attribute provides additional clarification of the package amount (For example, 3 mL, 10mL, etc.)" class="dict"><span style="text-decoration: underline">amount</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Ratio">Ratio</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Amount of drug in package</span>
     "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.ingredient" title="Identifies a particular constituent of interest in the product" class="dict"><span style="text-decoration: underline">ingredient</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Active or inactive ingredient</span>
@@ -1368,7 +1365,7 @@ filterDesc(document.getElementById('cibmtr-gvhd-prophylaxis-medicationS'), 'obli
       ],
 <span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">The actual ingredient or content</span>. One of these 2:</span>
       "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.ingredient.itemCodeableConcept" title="The actual ingredient - either a substance (simple ingredient) or another medication of a medication" class="dict"><span style="text-decoration: underline">itemCodeableConcept</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The actual ingredient or content</span>
-      "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.ingredient.itemReference" title="The actual ingredient - either a substance (simple ingredient) or another medication of a medication" class="dict"><span style="text-decoration: underline">itemReference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/substance.html">Substance</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The actual ingredient or content</span>
+      "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.ingredient.itemReference" title="The actual ingredient - either a substance (simple ingredient) or another medication of a medication" class="dict"><span style="text-decoration: underline">itemReference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Substance|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The actual ingredient or content</span>
       "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.ingredient.isActive" title="Indication of whether this ingredient affects the therapeutic action of the drug" class="dict"><span style="text-decoration: underline">isActive</span></a>" : &lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></span>&gt;, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Active ingredient indicator</span>
       "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.ingredient.strength" title="Specifies how many (or how much) of the items there are in this Medication.  For example, 250 mg per tablet.  This is expressed as a ratio where the numerator is 250mg and the denominator is 1 tablet" class="dict"><span style="text-decoration: underline">strength</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Ratio">Ratio</a></span>} <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Quantity of ingredient present</span>
     }],
@@ -1475,7 +1472,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">active | inactive | entered-in-error<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-medication-status.html" title="http://hl7.org/fhir/ValueSet/medication-status" class="binding">Medication Status Codes</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">A coded concept defining if the medication is in active use.</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 40a9014d-7c20-40d7-8c9a-7504e079dbf3
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 96716793-f370-45a8-b20d-3cc179dd90e3
 document.getElementById('cbcibmtr-gvhd-prophylaxis-medicationKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('cibmtr-gvhd-prophylaxis-medicationKA'), 'binding', document.getElementById('cbcibmtr-gvhd-prophylaxis-medicationKA-binding').checked, document.getElementById('ppcibmtr-gvhd-prophylaxis-medicationKA'));
 document.getElementById('cbcibmtr-gvhd-prophylaxis-medicationKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1547,9 +1544,9 @@ filterDesc(document.getElementById('cibmtr-gvhd-prophylaxis-medicationKA'), 'obl
       <button data-clipboard-text="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4" title="Click to copy URL" class="btn-copy"></button>
       <img src="external.png" alt="."/>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to 20240606, the version found through the package references">&#x1F4E6;20240606</td>
+    <td title="Version is not explicitly stated, which means it is fixed to 20170601, the version found through the package references">&#x1F4E6;20170601</td>
     <td>
-      <a href="http://fhir.org/packages/us.nlm.vsac">VSAC v0.23</a>
+      <a href="http://fhir.org/packages/us.nlm.vsac">VSAC v0.11</a>
     </td>
   </tr>
   <tr>
@@ -1711,7 +1708,7 @@ filterDesc(document.getElementById('cibmtr-gvhd-prophylaxis-medicationKA'), 'obl
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Code defined by a terminology system</span><br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-med-gvhd-prophylaxis-vs.html" title="http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs" class="binding">RxNorm - GVHD Prophylaxis</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 40a9014d-7c20-40d7-8c9a-7504e079dbf3
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 96716793-f370-45a8-b20d-3cc179dd90e3
 document.getElementById('cbcibmtr-gvhd-prophylaxis-medicationDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('cibmtr-gvhd-prophylaxis-medicationDA'), 'binding', document.getElementById('cbcibmtr-gvhd-prophylaxis-medicationDA-binding').checked, document.getElementById('ppcibmtr-gvhd-prophylaxis-medicationDA'));
 document.getElementById('cbcibmtr-gvhd-prophylaxis-medicationDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2028,7 +2025,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">When batch will expire</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 40a9014d-7c20-40d7-8c9a-7504e079dbf3
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 96716793-f370-45a8-b20d-3cc179dd90e3
 document.getElementById('cbcibmtr-gvhd-prophylaxis-medicationSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('cibmtr-gvhd-prophylaxis-medicationSA'), 'binding', document.getElementById('cbcibmtr-gvhd-prophylaxis-medicationSA-binding').checked, document.getElementById('ppcibmtr-gvhd-prophylaxis-medicationSA'));
 document.getElementById('cbcibmtr-gvhd-prophylaxis-medicationSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2112,9 +2109,9 @@ filterDesc(document.getElementById('cibmtr-gvhd-prophylaxis-medicationSA'), 'obl
     </td>
     <td title="A human language.">
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">Common Languages</a>
-      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages" title="Click to copy URL" class="btn-copy"></button>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages|4.0.1" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
     <td>
       <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
     </td>
@@ -2130,9 +2127,9 @@ filterDesc(document.getElementById('cibmtr-gvhd-prophylaxis-medicationSA'), 'obl
       <button data-clipboard-text="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4" title="Click to copy URL" class="btn-copy"></button>
       <img src="external.png" alt="."/>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to 20240606, the version found through the package references">&#x1F4E6;20240606</td>
+    <td title="Version is not explicitly stated, which means it is fixed to 20170601, the version found through the package references">&#x1F4E6;20170601</td>
     <td>
-      <a href="http://fhir.org/packages/us.nlm.vsac">VSAC v0.23</a>
+      <a href="http://fhir.org/packages/us.nlm.vsac">VSAC v0.11</a>
     </td>
   </tr>
   <tr>
@@ -2171,9 +2168,9 @@ filterDesc(document.getElementById('cibmtr-gvhd-prophylaxis-medicationSA'), 'obl
     </td>
     <td title="A coded concept defining the form of a medication.">
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medication-form-codes.html">SNOMED CT Form Codes</a>
-      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/medication-form-codes" title="Click to copy URL" class="btn-copy"></button>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/medication-form-codes|4.0.1" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
     <td>
       <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
     </td>
@@ -2341,7 +2338,7 @@ filterDesc(document.getElementById('cibmtr-gvhd-prophylaxis-medicationSA'), 'obl
       "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.code.text" title="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user" class="dict"><span style="text-decoration: underline">text</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Plain text representation of the concept</span>
     },
     "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.status" title="A code to indicate if the medication is in active use (this element modifies the meaning of other elements)" class="dict"><span style="text-decoration: underline">status</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">active | inactive | entered-in-error</a></span>
-    "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.manufacturer" title="Describes the details of the manufacturer of the medication product.  This is not intended to represent the distributor of a medication product" class="dict"><span style="text-decoration: underline">manufacturer</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Manufacturer of the item</span>
+    "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.manufacturer" title="Describes the details of the manufacturer of the medication product.  This is not intended to represent the distributor of a medication product" class="dict"><span style="text-decoration: underline">manufacturer</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Organization|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Manufacturer of the item</span>
     "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.form" title="Describes the form of the item.  Powder; tablets; capsule" class="dict"><span style="text-decoration: underline">form</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">powder | tablets | capsule +</a></span>
     "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.amount" title="Specific amount of the drug in the packaged product.  For example, when specifying a product that has the same strength (For example, Insulin glargine 100 unit per mL solution for injection), this attribute provides additional clarification of the package amount (For example, 3 mL, 10mL, etc.)" class="dict"><span style="text-decoration: underline">amount</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Ratio">Ratio</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Amount of drug in package</span>
     "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.ingredient" title="Identifies a particular constituent of interest in the product" class="dict"><span style="text-decoration: underline">ingredient</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Active or inactive ingredient</span>
@@ -2349,7 +2346,7 @@ filterDesc(document.getElementById('cibmtr-gvhd-prophylaxis-medicationSA'), 'obl
       ],
 <span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">The actual ingredient or content</span>. One of these 2:</span>
       "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.ingredient.itemCodeableConcept" title="The actual ingredient - either a substance (simple ingredient) or another medication of a medication" class="dict"><span style="text-decoration: underline">itemCodeableConcept</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The actual ingredient or content</span>
-      "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.ingredient.itemReference" title="The actual ingredient - either a substance (simple ingredient) or another medication of a medication" class="dict"><span style="text-decoration: underline">itemReference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/substance.html">Substance</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The actual ingredient or content</span>
+      "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.ingredient.itemReference" title="The actual ingredient - either a substance (simple ingredient) or another medication of a medication" class="dict"><span style="text-decoration: underline">itemReference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Substance|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The actual ingredient or content</span>
       "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.ingredient.isActive" title="Indication of whether this ingredient affects the therapeutic action of the drug" class="dict"><span style="text-decoration: underline">isActive</span></a>" : &lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></span>&gt;, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Active ingredient indicator</span>
       "<a href="StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html#Medication.ingredient.strength" title="Specifies how many (or how much) of the items there are in this Medication.  For example, 250 mg per tablet.  This is expressed as a ratio where the numerator is 250mg and the denominator is 1 tablet" class="dict"><span style="text-decoration: underline">strength</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Ratio">Ratio</a></span>} <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Quantity of ingredient present</span>
     }],
@@ -2445,7 +2442,7 @@ if(window.location.hash != "") {
 <div class="inner-wrapper">
   <p>
     IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and NMDP</a>  
-    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.11 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 25, 2026 19:24-0500">2026-06-25</span>
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.11 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 18, 2026 15:36-0500">2026-08-18</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

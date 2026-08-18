@@ -21,11 +21,11 @@ Peter Doe Male, DoB: 1952-05-07 ( http://terminology.cibmtr.org/identifier/CRID#
 | Links: | * Managing Organization: Good Health Medical Center (Identifier: `http://terminology.cibmtr.org/identifier/transplant-center`/00000)
  |
 | US Core Ethnicity Extension: | * text: Not Hispanic or Latino
-* ombCategory: [CDC Race and Ethnicity: 2186-5](http://terminology.hl7.org/6.4.0/CodeSystem-CDCREC.html#CDCREC-2186-5) (Not Hispanic or Latino)
+* ombCategory: [CDC Race and Ethnicity: 2186-5](http://terminology.hl7.org/6.5.0/CodeSystem-CDCREC.html#CDCREC-2186-5) (Not Hispanic or Latino)
  |
 | US Core Race Extension: | * text: Mixed
-* ombCategory: [CDC Race and Ethnicity: 2054-5](http://terminology.hl7.org/6.4.0/CodeSystem-CDCREC.html#CDCREC-2054-5) (Black or African American)
-* ombCategory: [CDC Race and Ethnicity: 2028-9](http://terminology.hl7.org/6.4.0/CodeSystem-CDCREC.html#CDCREC-2028-9) (Asian)
+* ombCategory: [CDC Race and Ethnicity: 2054-5](http://terminology.hl7.org/6.5.0/CodeSystem-CDCREC.html#CDCREC-2054-5) (Black or African American)
+* ombCategory: [CDC Race and Ethnicity: 2028-9](http://terminology.hl7.org/6.5.0/CodeSystem-CDCREC.html#CDCREC-2028-9) (Asian)
  |
 
 

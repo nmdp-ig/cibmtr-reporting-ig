@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-vital-signs | *Version*:0.1.11 |
-| Draft as of 2026-06-25 | *Computable Name*:CIBMTRVitalSignsVariables |
+| Draft as of 2026-08-18 | *Computable Name*:CIBMTRVitalSignsVariables |
 
 ### Overview
 
@@ -45,7 +45,10 @@ The following data elements must always be present (**Must Have**) or must be su
  The **subject** element is mandatory and must contain a reference to a Patient resource identifying the individual whose vital signs are being recorded.
 
 **code**
- The code element identifies the vital sign being measured. Vital sign codes are typically represented using LOINC codes or CIBMTR-defined laboratory ValueSets where applicable.
+ The code element identifies the vital sign being measured. Vital sign codes are typically represented using LOINC codes or CIBMTR-defined laboratory ValueSets where applicable. A code system value **SHOULD** be supplied for each code.
+
+**value**
+ Vital signs result values are represented as numeric quantities, and systems **SHOULD** use a standard UCUM unit.
 
 **Usages:**
 
@@ -137,7 +140,7 @@ A code system value **SHOULD** be supplied for each additional code.
   "name" : "CIBMTRVitalSignsVariables",
   "title" : "CIBMTR Vital Signs Results Profile (US Core)",
   "status" : "draft",
-  "date" : "2026-06-25T19:24:07-05:00",
+  "date" : "2026-08-18T15:36:33-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {

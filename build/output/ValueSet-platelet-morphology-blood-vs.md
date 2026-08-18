@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/platelet-morphology-blood-vs | *Version*:0.1.11 |
-| Draft as of 2026-06-25 | *Computable Name*:PlateletMorphologyBloodVS |
+| Draft as of 2026-08-18 | *Computable Name*:PlateletMorphologyBloodVS |
 
  
 Platelet morphology panel - Blood (58406-0) 
@@ -51,7 +51,7 @@ Platelet morphology panel - Blood (58406-0)
   "title" : "Platelet morphology panel - Blood (58406-0)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-06-25T19:24:07-05:00",
+  "date" : "2026-08-18T15:36:33-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab | *Version*:0.1.11 |
-| Draft as of 2026-06-25 | *Computable Name*:CIBMTRObservationLab |
+| Draft as of 2026-08-18 | *Computable Name*:CIBMTRObservationLab |
 
 ### Overview
 
@@ -42,13 +42,13 @@ The following data elements must always be present (**Must Have**) or must be su
  The CIBMTR observation laboratory results profile requires a **meta.security** label identifying the Transplant Center context (e.g., `rc_<CCN>`). This security tag is used as part of the query pattern for searching and for access scoping.
 
 **subject**
- The **subject** element is mandatory and must contain a reference to a Patient resource identifying the subject of the laboratory result.
+ The subject element is mandatory and must contain a reference to a Patient resource identifying the subject of the laboratory result.
 
 **code**
- The code element identifies the laboratory test or observation being reported. Laboratory test codes are typically represented using LOINC codes or CIBMTR-defined laboratory ValueSets where applicable.
+ The code element identifies the laboratory test or observation being reported. Laboratory test codes are typically represented using LOINC codes or CIBMTR-defined laboratory ValueSets where applicable. A code system value **SHOULD** be supplied for each code.
 
-**value[x]**
- Observation result values may be represented in multiple forms. CIBMTR currently supports only valueQuantity for numeric results and valueCodeableConcept for categorical results. For valueCodeableConcept, only coded values are supported. Other value types, such as valueString, are not currently supported.
+**value**
+ Observation result values may be represented in multiple forms. CIBMTR currently supports only valueQuantity for numeric results and valueCodeableConcept for categorical results. For valueQuantity, systems **SHOULD** use a standard UCUM unit. For valueCodeableConcept, only coded values are supported and systems **SHOULD** use a standard SNOMED CT code. Other value types, such as valueString, are not currently supported.
 
 **valueQuantity.comparator**
  There are cases where the laboratory result exceeds the measurable limits of the test and a comparator such as < or > is required. In these cases, the valueQuantity.comparator element **MUST** be used.
@@ -162,7 +162,7 @@ In some cases, the laboratory result exceeds the measurable limits of the test a
   "name" : "CIBMTRObservationLab",
   "title" : "CIBMTR Observation Laboratory Results Profile (us-core)",
   "status" : "draft",
-  "date" : "2026-06-25T19:24:07-05:00",
+  "date" : "2026-08-18T15:36:33-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-blood-automated-vs | *Version*:0.1.11 |
-| Draft as of 2026-06-25 | *Computable Name*:CBCBloodAutomatedVS |
+| Draft as of 2026-08-18 | *Computable Name*:CBCBloodAutomatedVS |
 
  
 CBC panel - Blood by Automated count (58410-2) 
@@ -52,7 +52,7 @@ CBC panel - Blood by Automated count (58410-2)
   "title" : "CBC panel - Blood by Automated count (58410-2)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-06-25T19:24:07-05:00",
+  "date" : "2026-08-18T15:36:33-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {

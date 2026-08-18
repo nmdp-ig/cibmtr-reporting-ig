@@ -23,7 +23,7 @@ Peter Doe Male, DoB: 1952-05-07 ( http://terminology.cibmtr.org/identifier/CRID#
 | US Core Ethnicity Extension: | * text: Unknown
  |
 | US Core Race Extension: | * text: Black or African American
-* ombCategory: [CDC Race and Ethnicity: 2054-5](http://terminology.hl7.org/6.4.0/CodeSystem-CDCREC.html#CDCREC-2054-5) (Black or African American)
+* ombCategory: [CDC Race and Ethnicity: 2054-5](http://terminology.hl7.org/6.5.0/CodeSystem-CDCREC.html#CDCREC-2054-5) (Black or African American)
  |
 
 

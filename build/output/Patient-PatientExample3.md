@@ -23,7 +23,7 @@ Jane Doe Female, DoB: 1944-01-29 ( http://example.org/mrn#abc)
 | US Core Ethnicity Extension: | * text: Unknown
  |
 | US Core Race Extension: | * text: White Caucasian
-* ombCategory: [CDC Race and Ethnicity: 2106-3](http://terminology.hl7.org/6.4.0/CodeSystem-CDCREC.html#CDCREC-2106-3) (White)
+* ombCategory: [CDC Race and Ethnicity: 2106-3](http://terminology.hl7.org/6.5.0/CodeSystem-CDCREC.html#CDCREC-2106-3) (White)
  |
 
 

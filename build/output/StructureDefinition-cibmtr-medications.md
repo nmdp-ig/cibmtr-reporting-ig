@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medications | *Version*:0.1.11 |
-| Draft as of 2026-06-25 | *Computable Name*:CIBMTR_Medications |
+| Draft as of 2026-08-18 | *Computable Name*:CIBMTR_Medications |
 
 ### Overview
 
@@ -35,6 +35,7 @@ The following data elements must always be present (**Must Have**) or must be su
 
 * requester
 * dosage instruction
+* medication route
 * reason for medication
 * category
 * note
@@ -48,7 +49,7 @@ The following data elements must always be present (**Must Have**) or must be su
 **medication[x]** 
  Medication information in MedicationRequest must be represented using one of the following:
 
-`medicationReference` — references a Medication resource containing medication details, or `medicationCodeableConcept` — directly provides the medication code.
+`medicationReference` — references a Medication resource containing medication details, or `medicationCodeableConcept` — directly provides the medication code. A code system value **SHOULD** be supplied for each code.
 
 At least one representation is required in MedicationRequest.
 
@@ -206,7 +207,7 @@ The following example shows equivalent SNOMED CT and ICD-10 reason codes:
   "name" : "CIBMTR_Medications",
   "title" : "CIBMTR Medication Related (mcode)",
   "status" : "draft",
-  "date" : "2026-06-25T19:24:07-05:00",
+  "date" : "2026-08-18T15:36:33-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {

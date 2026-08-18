@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient | *Version*:0.1.11 |
-| Draft as of 2026-06-25 | *Computable Name*:CIBMTRPatient |
+| Draft as of 2026-08-18 | *Computable Name*:CIBMTRPatient |
 
 ### Overview
 
@@ -283,7 +283,7 @@ Here's an example with ethnicity included:
   "name" : "CIBMTRPatient",
   "title" : "CIBMTR Patient Profile (us-core)",
   "status" : "draft",
-  "date" : "2026-06-25T19:24:07-05:00",
+  "date" : "2026-08-18T15:36:33-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-etoposide-vs | *Version*:0.1.11 |
-| Draft as of 2026-06-25 | *Computable Name*:RxNormEtoposideVS |
+| Draft as of 2026-08-18 | *Computable Name*:RxNormEtoposideVS |
 
  
 RxNorm codes for Etoposide 
@@ -51,7 +51,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "RxNorm - Etoposide",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-06-25T19:24:07-05:00",
+  "date" : "2026-08-18T15:36:33-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {

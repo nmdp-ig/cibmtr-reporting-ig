@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication | *Version*:0.1.11 |
-| Draft as of 2026-06-25 | *Computable Name*:CIBMTR_Medication |
+| Draft as of 2026-08-18 | *Computable Name*:CIBMTR_Medication |
 
  
 CIBMTR Medication (us-core) 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-cibmtr-medication.cs
   "name" : "CIBMTR_Medication",
   "title" : "CIBMTR Medication (us-core)",
   "status" : "draft",
-  "date" : "2026-06-25T19:24:07-05:00",
+  "date" : "2026-08-18T15:36:33-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {

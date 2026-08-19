@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/erythrocyte-morphology-blood-vs | *Version*:0.1.11 |
-| Draft as of 2026-08-18 | *Computable Name*:ErythrocyteMorphologyBloodVS |
+| Draft as of 2026-08-19 | *Computable Name*:ErythrocyteMorphologyBloodVS |
 
  
 Erythrocyte morphology panel - Blood (58408-6) 
@@ -51,7 +51,7 @@ Erythrocyte morphology panel - Blood (58408-6)
   "title" : "Erythrocyte morphology panel - Blood (58408-6)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-08-18T15:36:33-05:00",
+  "date" : "2026-08-19T10:07:56-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {

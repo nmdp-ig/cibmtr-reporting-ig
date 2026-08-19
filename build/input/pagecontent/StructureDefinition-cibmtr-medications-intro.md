@@ -23,6 +23,7 @@ the data is present in the sending system (**Must Support**).
 **Each MedicationRequest Must Support:**
 - requester
 - dosage instruction
+- medication route
 - reason for medication
 - category
 - note
@@ -38,7 +39,7 @@ The CIBMTR MedicationRequest profile requires a `meta.security` label identifyin
 Medication information in MedicationRequest must be represented using one of the following:
 
 `medicationReference` — references a Medication resource containing medication details, or
-`medicationCodeableConcept` — directly provides the medication code.
+`medicationCodeableConcept` — directly provides the medication code. A code system value **SHOULD** be supplied for each code.
 
 At least one representation is required in MedicationRequest.
 

@@ -13,7 +13,7 @@
   <name value="CIBMTR_GVHDProphylaxisMedication"/>
   <title value="CIBMTR GVHD Prophylaxis Medication"/>
   <status value="draft"/>
-  <date value="2026-06-25T19:24:07-05:00"/>
+  <date value="2026-08-19T10:07:56-05:00"/>
   <publisher value="The Medical College of Wisconsin, Inc. and NMDP"/>
   <contact>
     <name value="The Medical College of Wisconsin, Inc. and NMDP"/>
@@ -120,10 +120,6 @@
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="argonaut-dq-dstu2"/>
-        <map value="Medication"/>
-      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="Entity. Role, or Act"/>
@@ -810,7 +806,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="A human language."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages|4.0.1"/>
       </binding>
     </element>
     <element id="Medication.text">
@@ -1018,10 +1014,6 @@
         <strength value="extensible"/>
         <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4"/>
       </binding>
-      <mapping>
-        <identity value="argonaut-dq-dstu2"/>
-        <map value="Medication.code"/>
-      </mapping>
       <mapping>
         <identity value="script10.6"/>
         <map value="coding.code = //element(*,MedicationType)/DrugCoded/ProductCode&#xD;&#xD;coding.system = //element(*,MedicationType)/DrugCoded/ProductCodeQualifier&#xD;&#xD;coding.display = //element(*,MedicationType)/DrugDescription"/>
@@ -1249,7 +1241,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1309,7 +1301,7 @@
         </extension>
         <strength value="example"/>
         <description value="A coded concept defining the form of a medication."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/medication-form-codes"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/medication-form-codes|4.0.1"/>
       </binding>
       <mapping>
         <identity value="script10.6"/>
@@ -1508,8 +1500,8 @@
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance|4.0.1"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication|4.0.1"/>
       </type>
       <constraint>
         <key value="ele-1"/>

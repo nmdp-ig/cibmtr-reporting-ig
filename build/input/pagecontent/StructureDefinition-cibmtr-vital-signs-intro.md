@@ -38,7 +38,10 @@ The CIBMTR vital signs profile requires a **meta.security** label identifying th
 The **subject** element is mandatory and must contain a reference to a Patient resource identifying the individual whose vital signs are being recorded.
 
 **code**<br>
-The code element identifies the vital sign being measured. Vital sign codes are typically represented using LOINC codes or CIBMTR-defined laboratory ValueSets where applicable.
+The code element identifies the vital sign being measured. Vital sign codes are typically represented using LOINC codes or CIBMTR-defined laboratory ValueSets where applicable. A code system value **SHOULD** be supplied for each code.
+
+**value**<br>
+Vital signs result values are represented as numeric quantities, and systems **SHOULD** use a standard UCUM unit.
 
 
 {% include link-list.md %}

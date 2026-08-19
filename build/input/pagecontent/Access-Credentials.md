@@ -1,42 +1,38 @@
 ### Access Credentials for CIBMTR Direct FHIR API
 A CIBMTR relationship manager or technical lead can initiate a request for API credentials.  CIBMTR uses OAuth2.0/OpenID (OIDC) for authentication and access management.  This process involves making a request to a third-party authorization server to receive a token.  The token is then passed to the CIBMTR API URL in the request header.  The following information will be provided by CIBMTR and is necessary for requesting an authorization token : 
 
-- CIBMTR Service Account Username
 - Application Client ID
 - Application Client Secret
 - Application Scope
 
-Different sets of credentials will be provided for the CIBMTR test and production environments.  
+New sets of credentials will be provided for the CIBMTR test and production environments, if neccessary. 
 
 To request an authentication token for any of the test environments, the third-party authorization server URL is:
 ~~~
-POST    https://oktapreview.nmdp.org/oauth2/ausaexcazhLhxKnJs0h7/v1/token
+POST    https://oktapreview.nmdp.org/oauth2/aus2gkqgfiffGB4VY0h8/v1/token
 ~~~
 
 To request an authentication token for the production environment, the third-party authorization server URL is: 
 
 ~~~
-POST    https://okta.nmdp.org/oauth2/aus3ck6q30qmOdpMb1t7/v1/token
+POST    https://okta.nmdp.org/oauth2/aus1ad6az5tJZ53Bh1t8/v1/token
 ~~~
 
-The header of the POST request to the authorization server must have an authorization string.  The string is constructed by base64 encoding the Application Client ID, a colon, and the Application Client Secret.  The encoded string is then appended to the word `Basic `.  For example, here is a snippet of psuedocode showing this. 
-
-~~~
-const auth_string = "Basic " + base64("<Application Client ID>" + ":" + "<Application Client Secret>")
-~~~
+The authorization header for the POST request to the authorization server is automatically generated from the Application Client ID and Application Client Secret.
 
 ***Note: The Application Client ID and Application Secret are different in the production and test environments and are specific to the CIBMTR Service Account.***
 
-An example of the header parameters for the POST request to the authorization server using the Postman API client tool (https://www.postman.com) is shown in Figure 1.  In the figure, the authorization string is blacked out.  Notice the space between the base 64 encoded string and the string prefix, `Basic`.   
+
+An example of a POST request to the authorization server using the Postman API client tool is shown in Figure 1. Under the Authorization tab, select Basic Auth and enter the Application Client ID and Application Client Secret. The authorization header is automatically generated from these credentials when the request is sent.
 
 <details class="fig-toggle">
 <summary><u>Figure 1</u></summary>
 
 <div style="text-align:center; width:100%; margin-top:10px;">
 
-<img src="dfhir_r3_figure01.png" style="width:50%;">
+<img src="Auth_Authorization.png" style="width:100%;">
 <div style="margin-top:8px;">
-<i>Figure 1: Example header information for the POST request to the authorization server</i>
+<i>Figure 1: Example authorization configuration for the POST request to the authorization server.</i>
 </div>
 
 </div>
@@ -62,17 +58,16 @@ An example of the header parameters for the POST request to the authorization se
 </style>
 <br>
 
-
-Figure 2 below shows the required fields in the body of the POST request to the authorization server API. The value for the `username` key is the CIBMTR Service Account Username provided by CIBMTR.   The value for the `password` key is the CIBMTR Service Account Password.  The `grant_type` key and the `scope` key have the same values as shown in Figure 2.  The response to the POST request will return a JSON object that includes a base64 encoded token.  The token can be a long character string (over 1000 chars). 
+Figure 2 shows the required fields in the body of the POST request to the authorization server. The **grant_type** value is **client_credentials**, and the scope value is the scope provided for the application.
 
 <details class="fig-toggle">
 <summary><u>Figure 2</u></summary>
 
 <div style="text-align:center; width:100%; margin-top:10px;">
 
-<img src="dfhir_r3_figure02.png" style="width:50%;">
+<img src="Auth_Body.png" style="width:100%;">
 <div style="margin-top:8px;">
-<i>Figure 2: Required POST fields to submit for the authorization token.</i>
+<i>Figure 2: Required POST fields for requesting an authorization token.</i>
 </div>
 
 </div>
@@ -98,42 +93,9 @@ Figure 2 below shows the required fields in the body of the POST request to the 
 </style>
 <br>
 
-Once the token has been received, a request to the CIBMTR Direct FHIR service API can be made. Tokens are valid for 30 minutes in the production environment, but last up to 24 hours in the test environment.  Applications must cache and re-use tokens until they are about to expire because Okta rate limits requests for new tokens. One workable strategy is to obtain a new token every 25 minutes. 
+The response to the POST request returns a JSON object containing an access token. Once the access token has been received, it can be used to make requests to the CIBMTR Direct FHIR Backend API. Applications SHOULD cache and reuse the access token until it is about to expire rather than requesting a new token for each API request. The token expiration information is provided in the authorization server response.
 
-<details class="fig-toggle">
-<summary><u>Figure 3 </u></summary>
-
-<div style="text-align:center; width:100%; margin-top:10px;">
-
-<img src="dfhir_r3_figure03.png" style="width:50%;">
-<div style="margin-top:8px;">
-<i>Figure 3: Example CIBMTR Direct FHIR API request using a bearer authorization token in the header of the request.</i>
-</div>
-
-</div>
-
-</details>
-<style>
-.fig-toggle summary {
-  list-style: none;
-  cursor: pointer;
-}
-
-.fig-toggle summary::-webkit-details-marker {
-  display: none;
-}
-
-.fig-toggle summary::before {
-  content: "> ";
-}
-
-.fig-toggle[open] summary::before {
-  content: "∨ ";
-}
-</style>
-<br>
-
-To make a request to the CIBMTR Direct FHIR Backend API, include the token in the header as the authorization key value of the request along with the word `Bearer ` in front of it, as shown in Figure 3.
+To make a request to the CIBMTR Direct FHIR Backend API, include the access token in the request authorization header as a Bearer token by prefixing the token with Bearer .
 
 ### Token Expiration 
 
@@ -178,19 +140,5 @@ If requests are submitted using an expired token, the server can reject those re
 </style>
 <br>
 
-### Example Code
 
-#### Request Authorization Token
-{% include example-code-req-auth-token.md %}
-
-<details>
-<summary><u>Request Authorization Token</u></summary>
-
-<div style="margin-top:10px;">
-
-{% include example-code-req-auth-token.md %}
-
-</div>
-
-</details>
 {% include link-list.md %}

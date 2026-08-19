@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/CodeSystem/cibmtr-ancestry | *Version*:0.1.11 |
-| Draft as of 2026-08-18 | *Computable Name*:CIBMTRAncestryCodeSystem |
+| Draft as of 2026-08-19 | *Computable Name*:CIBMTRAncestryCodeSystem |
 
  
 A code system for CIBMTR ancestry information. 
@@ -31,7 +31,7 @@ A code system for CIBMTR ancestry information.
   "name" : "CIBMTRAncestryCodeSystem",
   "title" : "CIBMTR Ancestry CodeSystem",
   "status" : "draft",
-  "date" : "2026-08-18T15:36:33-05:00",
+  "date" : "2026-08-19T10:07:56-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {

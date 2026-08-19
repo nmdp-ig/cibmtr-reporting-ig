@@ -13,19 +13,19 @@ A CIBMTR relationship manager or technical lead can initiate a request for API c
 * Application Client Secret
 * Application Scope
 
-Different sets of credentials will be provided for the CIBMTR test and production environments.
+New sets of credentials will be provided for the CIBMTR test and production environments, if neccessary.
 
 To request an authentication token for any of the test environments, the third-party authorization server URL is:
 
 ```
-POST    https://oktapreview.nmdp.org/oauth2/ausaexcazhLhxKnJs0h7/v1/token
+POST    https://oktapreview.nmdp.org/oauth2/aus2gkqgfiffGB4VY0h8/v1/token
 
 ```
 
 To request an authentication token for the production environment, the third-party authorization server URL is:
 
 ```
-POST    https://okta.nmdp.org/oauth2/aus3ck6q30qmOdpMb1t7/v1/token
+POST    https://okta.nmdp.org/oauth2/aus1ad6az5tJZ53Bh1t8/v1/token
 
 ```
 
@@ -35,7 +35,7 @@ The authorization header for the POST request to the authorization server is aut
 
 An example of a POST request to the authorization server using the Postman API client tool is shown in Figure 1. Under the Authorization tab, select Basic Auth and enter the Application Client ID and Application Client Secret. The authorization header is automatically generated from these credentials when the request is sent.
 
-Figure 2 shows the required fields in the body of the POST request to the authorization server. The grant_type value is client_credentials, and the scope value is the scope provided for the application.
+Figure 2 shows the required fields in the body of the POST request to the authorization server. The **grant_type** value is **client_credentials**, and the scope value is the scope provided for the application.
 
 The response to the POST request returns a JSON object containing an access token. Once the access token has been received, it can be used to make requests to the CIBMTR Direct FHIR Backend API. Applications SHOULD cache and reuse the access token until it is about to expire rather than requesting a new token for each API request. The token expiration information is provided in the authorization server response.
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/presence-valueset | *Version*:0.1.11 |
-| Draft as of 2026-08-18 | *Computable Name*:PresenceValueSet |
+| Draft as of 2026-08-19 | *Computable Name*:PresenceValueSet |
 
  
 Permissible values for presence 
@@ -53,7 +53,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "title" : "Presence Answer List",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-08-18T15:36:33-05:00",
+  "date" : "2026-08-19T10:07:56-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {

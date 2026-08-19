@@ -30,13 +30,13 @@ the data is present in the sending system (**Must Support**).
 The CIBMTR observation laboratory results profile requires a **meta.security** label identifying the Transplant Center context (e.g., `rc_<CCN>`). This security tag is used as part of the query pattern for searching and for access scoping.
 
 **subject**<br>
-The **subject** element is mandatory and must contain a reference to a Patient resource identifying the subject of the laboratory result.
+The subject element is mandatory and must contain a reference to a Patient resource identifying the subject of the laboratory result.
 
 **code**<br>
-The code element identifies the laboratory test or observation being reported. Laboratory test codes are typically represented using LOINC codes or CIBMTR-defined laboratory ValueSets where applicable.
+The code element identifies the laboratory test or observation being reported. Laboratory test codes are typically represented using LOINC codes or CIBMTR-defined laboratory ValueSets where applicable. A code system value **SHOULD** be supplied for each code.
 
-**value[x]**<br>
-Observation result values may be represented in multiple forms. CIBMTR currently supports only valueQuantity for numeric results and valueCodeableConcept for categorical results. For valueCodeableConcept, only coded values are supported. Other value types, such as valueString, are not currently supported.
+**value**<br>
+Observation result values may be represented in multiple forms. CIBMTR currently supports only valueQuantity for numeric results and valueCodeableConcept for categorical results. For valueQuantity, systems **SHOULD** use a standard UCUM unit. For valueCodeableConcept, only coded values are supported and systems **SHOULD** use a standard SNOMED CT code. Other value types, such as valueString, are not currently supported.
 
 **valueQuantity.comparator**<br>
 There are cases where the laboratory result exceeds the measurable limits of the test and a comparator such as < or > is required. In these cases, the valueQuantity.comparator element **MUST** be used.

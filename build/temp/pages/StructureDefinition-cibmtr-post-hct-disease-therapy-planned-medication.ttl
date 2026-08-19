@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "CIBMTR_PostHCTDiseaseTherapyPlannedMedication"] ; # 
   fhir:title [ fhir:v "CIBMTR Planned Post-HCT Disease Therapy Medication"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-06-25T19:24:07-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-08-19T10:07:56-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Medical College of Wisconsin, Inc. and NMDP"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "The Medical College of Wisconsin, Inc. and NMDP" ] ;
@@ -175,9 +175,6 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Medication" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Entity. Role, or Act" ]
        ] [
@@ -1049,8 +1046,8 @@
          fhir:strength [ fhir:v "preferred" ] ;
          fhir:description [ fhir:v "A human language." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/languages"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/ValueSet/languages>
+           fhir:v "http://hl7.org/fhir/ValueSet/languages|4.0.1"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/languages?version=4.0.1>
          ]
        ]
      ] [
@@ -1292,9 +1289,6 @@
          ]
        ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Medication.code" ]
-       ] [
          fhir:identity [ fhir:v "script10.6" ] ;
          fhir:map [ fhir:v "coding.code = //element(*,MedicationType)/DrugCoded/ProductCode\r\rcoding.system = //element(*,MedicationType)/DrugCoded/ProductCodeQualifier\r\rcoding.display = //element(*,MedicationType)/DrugDescription" ]
        ] [
@@ -1574,8 +1568,8 @@
            fhir:l fhir:Reference
          ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Organization>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Organization?version=4.0.1>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1650,8 +1644,8 @@
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "A coded concept defining the form of a medication." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/medication-form-codes"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/ValueSet/medication-form-codes>
+           fhir:v "http://hl7.org/fhir/ValueSet/medication-form-codes|4.0.1"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/medication-form-codes?version=4.0.1>
          ]
        ] ;
        fhir:mapping ( [
@@ -1891,11 +1885,11 @@
            fhir:l fhir:Reference
          ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Substance"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Substance>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Substance|4.0.1"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Substance?version=4.0.1>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Medication"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Medication>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Medication|4.0.1"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Medication?version=4.0.1>
          ] )
        ] ) ;
        fhir:constraint ( [

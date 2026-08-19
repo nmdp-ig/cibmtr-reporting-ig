@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-vital-signs-weight | *Version*:0.1.11 |
-| Draft as of 2026-08-18 | *Computable Name*:CIBMTRVitalSignsWeight |
+| Draft as of 2026-08-19 | *Computable Name*:CIBMTRVitalSignsWeight |
 
  
 CIBMTR Vital Signs-Weight Profile (us-core) 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-cibmtr-vital-signs-w
   "name" : "CIBMTRVitalSignsWeight",
   "title" : "CIBMTR Vital Signs-Weight Profile (us-core)",
   "status" : "draft",
-  "date" : "2026-08-18T15:36:33-05:00",
+  "date" : "2026-08-19T10:07:56-05:00",
   "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
   "contact" : [
     {

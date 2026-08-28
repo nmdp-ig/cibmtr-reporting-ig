@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cibmtr-ancestry-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet cibmtr-ancestry-vs</b></p><a name=\"cibmtr-ancestry-vs\"> </a><a name=\"hccibmtr-ancestry-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-cibmtr-ancestry-cs.html\"><code>http://example.org/fhir/CodeSystem/cibmtr-ancestry</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.12</span></li></ul></div>"
+  },
+  "url" : "https://termservices.nmdp.org/atlas/#/conceptset/136/expression",
+  "version" : "0.1.12",
+  "name" : "CIBMTRAncestryValueset",
+  "title" : "CIBMTR Ancestry ValueSet",
+  "status" : "draft",
+  "date" : "2026-08-28T03:34:40+00:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
+  "description" : "A value set for CIBMTR ancestry information.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/fhir/CodeSystem/cibmtr-ancestry"
+    }]
+  }
+}

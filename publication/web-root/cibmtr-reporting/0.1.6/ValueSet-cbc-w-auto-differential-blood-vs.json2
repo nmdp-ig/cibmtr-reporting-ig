@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cbc-w-auto-differential-blood-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-cbc-blood-automated-vs.html\">CBC panel - Blood by Automated count (58410-2)</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-auto-differential-blood-vs.html\">Auto Differential panel - Blood (57023-4)</a></li></ul></div>"
+  },
+  "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-auto-differential-blood-vs",
+  "version" : "0.1.6",
+  "name" : "CBCWAutoDifferentialBloodVS",
+  "title" : "CBC W Auto Differential panel - Blood (57021-8)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2023-05-05T10:46:24-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
+  "description" : "CBC W Auto Differential panel - Blood (57021-8)",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-blood-automated-vs"]
+    },
+    {
+      "valueSet" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/auto-differential-blood-vs"]
+    }]
+  }
+}

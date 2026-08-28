@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/Observation/NeutrophilsObservation> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NeutrophilsObservation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"^^xsd:anyURI ;
+       fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.cibmtr.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "rc_99999" ] ;
+       fhir:display [ fhir:v "99999 My Transplant Center" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"NeutrophilsObservation\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;NeutrophilsObservation&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cibmtr-obs-priority-variables.html\">CIBMTR Observation Laboratory Results: Priority Variables</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.cibmtr.org/codesystem/transplant-center http://terminology.cibmtr.org/codesystem/transplant-center}\">http://terminology.cibmtr.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Neutrophils [#/volume] in Cord blood <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#74398-9)</span></p><p><b>subject</b>: <a href=\"Patient-PatientExample6.html\">Patient/PatientExample6</a> &quot;&quot;</p><p><b>effective</b>: 2020-07-21 14:17:00+0000</p><p><b>value</b>: 7.9 billion per liter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code 10*9/L = '10*9/L')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:74398-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "74398-9" ] ;
+       fhir:display [ fhir:v "Neutrophils [#/volume] in Cord blood" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/Patient/PatientExample6> ;
+     fhir:reference [ fhir:v "Patient/PatientExample6" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-07-21T14:17:00Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "7.9"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "billion per liter" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "10*9/L" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/platelet-morphology-blood-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "platelet-morphology-blood-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet platelet-morphology-blood-vs</b></p><a name=\"platelet-morphology-blood-vs\"> </a><a name=\"hcplatelet-morphology-blood-vs\"> </a><a name=\"platelet-morphology-blood-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/7796-6/\">7796-6</a></td><td>Platelet clump [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/18312-9/\">18312-9</a></td><td>Platelet satellitism [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/33216-3/\">33216-3</a></td><td>Platelets agranular [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/5908-9/\">5908-9</a></td><td>Giant platelets [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/32146-3/\">32146-3</a></td><td>Platelets Large [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/32208-1/\">32208-1</a></td><td>Platelets Small [Presence] in Blood by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/11125-2/\">11125-2</a></td><td>Platelet morphology finding [Identifier] in Blood</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/platelet-morphology-blood-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "PlateletMorphologyBloodVS"] ; # 
+  fhir:title [ fhir:v "Platelet morphology panel - Blood (58406-0)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2025-02-18T16:12:42-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.cibmtr.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Milius" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bmilius@nmdp.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Platelet morphology panel - Blood (58406-0)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "7796-6" ] ;
+         fhir:display [ fhir:v "Platelet clump [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "18312-9" ] ;
+         fhir:display [ fhir:v "Platelet satellitism [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "33216-3" ] ;
+         fhir:display [ fhir:v "Platelets agranular [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "5908-9" ] ;
+         fhir:display [ fhir:v "Giant platelets [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "32146-3" ] ;
+         fhir:display [ fhir:v "Platelets Large [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "32208-1" ] ;
+         fhir:display [ fhir:v "Platelets Small [Presence] in Blood by Light microscopy" ]
+       ] [
+         fhir:code [ fhir:v "11125-2" ] ;
+         fhir:display [ fhir:v "Platelet morphology finding [Identifier] in Blood" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

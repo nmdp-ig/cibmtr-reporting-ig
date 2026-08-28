@@ -2,14 +2,14 @@
   "resourceType": "ImplementationGuide",
   "id": "nmdp.fhir.cibmtr-reporting",
   "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/nmdp.fhir.cibmtr-reporting",
-  "version": "0.1.10",
+  "version": "0.1.12",
   "name": "CIBMTRReporting",
   "title": "CIBMTR Reporting Implementation Guide",
   "status": "draft",
-  "publisher": "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+  "publisher": "The Medical College of Wisconsin, Inc. and NMDP",
   "contact": [
     {
-      "name": "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+      "name": "The Medical College of Wisconsin, Inc. and NMDP",
       "telecom": [
         {
           "system": "url",
@@ -36,7 +36,7 @@
   "dependsOn": [
     {
       "packageId": "hl7.fhir.us.core",
-      "version": "8.0.0",
+      "version": "9.0.0",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "id": "hl7_fhir_us_core"
     },
@@ -44,7 +44,7 @@
       "id": "mcode",
       "packageId": "hl7.fhir.us.mcode",
       "uri": "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode",
-      "version": "2.0.0"
+      "version": "4.0.0"
     },
     {
       "packageId": "hl7.fhir.uv.genomics-reporting",
@@ -169,6 +169,30 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/cibmtr-ancestry-cs"
+        },
+        "name": "CIBMTR Ancestry CodeSystem",
+        "description": "A code system for CIBMTR ancestry information.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cibmtr-ancestry"
+        },
+        "name": "CIBMTR Ancestry Extension",
+        "description": "Container extension holding US Core Race plus CIBMTR ancestry codes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/cibmtr-ancestry-vs"
+        },
+        "name": "CIBMTR Ancestry ValueSet",
+        "description": "A value set for CIBMTR ancestry information.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cibmtr-cytogenetics"
         },
         "name": "CIBMTR Cytogenetics Profile",
@@ -201,6 +225,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cibmtr-medications"
+        },
+        "name": "CIBMTR Medication Related (mcode)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cibmtr-medication-request"
         },
         "name": "CIBMTR Medication Request (mcode)",
@@ -220,7 +251,6 @@
           "reference": "StructureDefinition/cibmtr-observation-lab"
         },
         "name": "CIBMTR Observation Laboratory Results Profile (us-core)",
-        "description": "CIBMTR Observation Laboratory Results Profile (us-core)",
         "exampleBoolean": false
       },
       {
@@ -244,7 +274,6 @@
           "reference": "StructureDefinition/cibmtr-patient"
         },
         "name": "CIBMTR Patient Profile (us-core)",
-        "description": "CIBMTR Patient Profile for CRID assignment (us-core)",
         "exampleBoolean": false
       },
       {
@@ -872,6 +901,11 @@
         {
           "nameUrl": "CRID-Assignment_FHIR.html",
           "title": "CRID Assignment FHIR",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "CRID-Assignment_Non-FHIR.html",
+          "title": "CRID Assignment Non FHIR",
           "generation": "markdown"
         },
         {

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Patient - CIBMTR Reporting Implementation Guide v0.1.10</title>
+    <title>Patient - CIBMTR Reporting Implementation Guide v0.1.12</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +42,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"14"}
-    h3,h4,h5,h6{--heading-prefix:"14"}</style>
+    <style type="text/css">h2{--heading-prefix:"15"}
+    h3,h4,h5,h6{--heading-prefix:"15"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -129,7 +129,7 @@ h1 {
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.10 - Trial Use 1
+            <span style="display:inline-block;">0.1.12 - Trial Use 1
 
 
             </span>
@@ -186,10 +186,10 @@ h1 {
         <a href="Laboratory-Observations.html">Lab Observations</a>
       </li>
       <li>
-        <a href="Medications.html">Medications</a>
+        <a href="StructureDefinition-cibmtr-medications.html">Medications</a>
       </li>
       <li>
-        <a href="Vital-Signs.html">Vital Signs</a>
+        <a href="StructureDefinition-cibmtr-vital-signs.html">Vital Signs</a>
       </li>
       <li>
         <a href="Bundles.html">Bundles</a>
@@ -207,9 +207,6 @@ h1 {
         <a href="Appendices.html">Appendices</a>
       </li>
     </ul>
-  </li>
-  <li>
-    <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR (STU3)</a>
   </li>
   <li>
     <a href="artifacts.html">Artifact Index</a>
@@ -256,7 +253,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.10) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://fhir.nmdp.org/ig/cibmtr-reporting/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.12) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://fhir.nmdp.org/ig/cibmtr-reporting/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Patient</h2>
   
 
@@ -272,10 +269,120 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#mandatory-and-must-support-data-elements" id="markdown-toc-mandatory-and-must-support-data-elements">Mandatory and Must Support Data Elements</a></li>
+  <li><a href="#profile-specific-implementation-guidance-cibmtr" id="markdown-toc-profile-specific-implementation-guidance-cibmtr">Profile-specific Implementation Guidance (CIBMTR)</a></li>
+  <li><a href="#patient-resources-cibmtr-server-workflow" id="markdown-toc-patient-resources-cibmtr-server-workflow">Patient Resources (CIBMTR Server Workflow)</a></li>
+  <li><a href="#minimum-patient-resource-example" id="markdown-toc-minimum-patient-resource-example">Minimum Patient Resource Example</a></li>
+</ul>
+
 </div>
-<h3 id="patient-resources">Patient Resources</h3>
+<p><a href="StructureDefinition-cibmtr-patient.html">CIBMTR Patient Profile (us-core)</a></p>
+
+<h3 id="overview">Overview</h3>
+
+<p>The CIBMTR Patient Profile (us-core) inherits from the US Core Patient Profile, which in turn inherits from the base FHIR Patient resource. This profile meets the requirements of the U.S. Core Data for Interoperability (USCDI) Patient Demographics/Information Data Class and sets minimum expectations for representing, searching, and retrieving patient demographic and administrative information for CIBMTR use cases. It specifies which elements, extensions, and identifier slices <strong>SHALL</strong> be present and constrains how they are used to support interoperability across CIBMTR reporting workflows.</p>
+
+<hr />
+
+<h3 id="mandatory-and-must-support-data-elements">Mandatory and Must Support Data Elements</h3>
+
+<p>The following data elements must always be present (<strong>Mandatory</strong>) or must be supported if the data is present in the sending system (<strong>Must Support</strong>). They are presented below in a simple human-readable explanation. Profile-specific guidance and examples are provided below.</p>
+
+<p><strong>Each Patient "Must Have"</strong></p>
+<ul>
+  <li>a patient identifier (e.g., MRN)</li>
+  <li>a patient name</li>
+</ul>
+
+<p><strong>Each Patient "Must Support"</strong></p>
+<ul>
+  <li>a birth date</li>
+  <li>an address</li>
+</ul>
+
+<p><strong>Additional USCDI Requirements (for certification testing)</strong>
+These elements are not Mandatory or Must Support, but are included in the formal definition of the US Core Patient profile and examples:</p>
+<ul>
+  <li>contact detail (e.g., a telephone number or an email address)</li>
+  <li>a communication language</li>
+  <li>Interpreter Needed flag</li>
+  <li>a race</li>
+  <li>an ethnicity</li>
+  <li>an ancestry</li>
+  <li>a tribal affiliation</li>
+  <li>sex</li>
+  <li>date of death</li>
+  <li>address use</li>
+  <li>address period</li>
+  <li>name use</li>
+  <li>name period</li>
+  <li>suffix</li>
+</ul>
+
+<hr />
+
+<h3 id="profile-specific-implementation-guidance-cibmtr">Profile-specific Implementation Guidance (CIBMTR)</h3>
+
+<p><strong>Security label requirement (Patient.meta.security)</strong>
+The CIBMTR Patient profile requires a <strong>meta.security</strong> label identifying the Transplant Center context (e.g., <code class="language-plaintext highlighter-rouge">rc_&lt;CCN&gt;</code>). This security tag is used as part of the query pattern for searching and for access scoping.
+<strong>Race and Ethnicity (US Core complex extensions)</strong></p>
+<ul>
+  <li>The complex extensions for Race and Ethnicity allow for one or more codes:
+    <ul>
+      <li>Must Support at least one OMB category code (CDC Race &amp; Ethnicity / CDCREC system)</li>
+      <li>MAY include additional codes from <strong>detailed</strong> race/ethnicity value sets</li>
+      <li>SHALL include a <strong>text</strong> description</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Ancestry (cIBMTR complex extensions)</strong></p>
+<ul>
+  <li>The complex extensions for Ancestry allow for one or more codes:
+    <ul>
+      <li>Must Support at least one OMB category code (CDC Race / CDCREC system)</li>
+      <li>MAY include additional codes from <strong>detailed</strong> race value sets</li>
+      <li>MAY include codes from CIBMTR ancestry value sets</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Date of Death</strong></p>
+<ul>
+  <li>Date of death is communicated using <code class="language-plaintext highlighter-rouge">Patient.deceasedDateTime</code> (systems SHALL support at least this element if supporting <code class="language-plaintext highlighter-rouge">deceased[x]</code>).</li>
+</ul>
+
+<p><strong>Previous name / previous address</strong></p>
+<ul>
+  <li>Use <code class="language-plaintext highlighter-rouge">Patient.name.use = "old"</code> and/or an end date in <code class="language-plaintext highlighter-rouge">Patient.name.period</code></li>
+  <li>Use <code class="language-plaintext highlighter-rouge">Patient.address.use = "old"</code> and/or an end date in <code class="language-plaintext highlighter-rouge">Patient.address.period</code></li>
+</ul>
+
+<p><strong>Interpreter needed and preferred language</strong></p>
+<ul>
+  <li>Servers can use the <strong>US Core Interpreter Needed</strong> extension on Patient or Encounter; clients should support it on both.</li>
+  <li>Systems SHOULD designate the patient’s preferred language in <code class="language-plaintext highlighter-rouge">Patient.communication.preferred</code>.</li>
+</ul>
+
+<p><strong>Patient Address</strong></p>
+<ul>
+  <li>For new and updated records, follow the Project US@ Technical Specification for Patient Addresses (per USCDI guidance).</li>
+  <li>For US addresses, use USPS two-letter state codes. For non-US addresses, ISO 3166 subdivision codes are recommended.</li>
+</ul>
+
+<p><strong>SSN caution</strong></p>
+<ul>
+  <li><strong>SSNs SHOULD NOT</strong> be used as a patient identifier (<code class="language-plaintext highlighter-rouge">Patient.identifier.value</code>) due to identity theft and filtering concerns.</li>
+</ul>
+
+<hr />
+
+<h3 id="patient-resources-cibmtr-server-workflow">Patient Resources (CIBMTR Server Workflow)</h3>
+
+<h4 id="patient-resources">Patient Resources</h4>
 
 <p>A FHIR Patient resource with an identifier containing the CRID must exist on the CIBMTR FHIR server to be used as a subject reference in Observation or other resources. To prevent multiple identical Patient resources from being created, the client must first check to see if it already exists.</p>
 
@@ -286,7 +393,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     &amp;identifier=http://cibmtr.org/identifier/CRID|&lt;CRID&gt;
 </code></pre></div></div>
 
-<p>If the response shows a searchset result with a <code class="language-plaintext highlighter-rouge">total</code> of 0, then a Patient resource with that CRID has not been created, and a new Patient resource must be created. In this case, proceed to Step 3.</p>
+<p>If the response shows a searchset result with a <code class="language-plaintext highlighter-rouge">total</code> of 0, then a Patient resource with that CRID has not been created, and a new Patient resource must be created. In this case, proceed to <code class="language-plaintext highlighter-rouge">Submit Patient FHIR Resource</code>.</p>
 
 <p>If the response shows a <code class="language-plaintext highlighter-rouge">total</code> of one or more, then at least one Patient with that CRID already exists. In this case, skip Step 3, and go on to Step 4. If more than one Patient was found, then it suggests that someone created a Patient without checking to see if it first exists.</p>
 
@@ -322,7 +429,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><code class="language-plaintext highlighter-rouge">Patient.identifier</code> is a business identifier and the where the CRID is located.</li>
 </ul>
 
-<h4 id="step-3-submit-patient-fhir-resource">Step 3: Submit Patient FHIR Resource</h4>
+<h5 id="submit-patient-fhir-resource">Submit Patient FHIR Resource</h5>
 
 <p>If the Patient FHIR resource doesn't already exist, it must be created before any other FHIR resources.  The Patient FHIR resource ID is part of the response to the Patient POST request.  The resource ID is unique to the CIBMTR FHIR server and is used to reference the Patient subject on all subsequently submitted FHIR resources. The resource ID is assigned by the FHIR server and is different from the Patient.identifier section of the FHIR resource. The Patient ID is <strong>NOT</strong> a Patient CRID.</p>
 
@@ -333,7 +440,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The authorization key and bearer token must be included in the request as mentioned in the previous section.  FHIR JSON submissions should also include a <code class="language-plaintext highlighter-rouge">content-type</code> key in the header with value: <code class="language-plaintext highlighter-rouge">application/fhir+json</code>.</p>
 
-<h5 id="minimum-patient-resource">Minimum Patient resource</h5>
+<h3 id="minimum-patient-resource-example">Minimum Patient Resource Example</h3>
 <p>The Patient FHIR resource usually contains the demographics data for the patient, however, since the demographics data is already submitted during the CRID registration process, there are only three primary components necessary in the Patient FHIR resource:</p>
 
 <ol>
@@ -490,6 +597,8 @@ While including the CRID identifier, meta.security tag, and empty text element i
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
+<hr />
+
 
 
 
@@ -513,8 +622,8 @@ if(window.location.hash != "") {
 <div class="container">  <!-- container -->
 <div class="inner-wrapper">
   <p>
-    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.10 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 23, 2026 10:10-0500">2026-04-23</span>
+    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and NMDP</a>  
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.12 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 27, 2026 20:01-0500">2026-08-27</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

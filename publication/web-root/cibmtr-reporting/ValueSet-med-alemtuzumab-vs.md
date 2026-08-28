@@ -1,4 +1,4 @@
-# RxNorm - Alemtuzumab - CIBMTR Reporting Implementation Guide v0.1.10
+# RxNorm - Alemtuzumab - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-alemtuzumab-vs | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:RxNormAlemtuzumabVS |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-alemtuzumab-vs | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:RxNormAlemtuzumabVS |
 
  
 RxNorm codes for Alemtuzumab 
@@ -46,110 +46,100 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "med-alemtuzumab-vs",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-alemtuzumab-vs",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "RxNormAlemtuzumabVS",
   "title" : "RxNorm - Alemtuzumab",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:49:22-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "RxNorm codes for Alemtuzumab",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "117055",
+        "display" : "alemtuzumab"
+      },
       {
-        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "concept" : [
-          {
-            "code" : "117055",
-            "display" : "alemtuzumab"
-          },
-          {
-            "code" : "284679",
-            "display" : "Campath"
-          },
-          {
-            "code" : "1594659",
-            "display" : "Lemtrada"
-          },
-          {
-            "code" : "828267",
-            "display" : "1 ML alemtuzumab 30 MG/ML Injection [Campath]"
-          },
-          {
-            "code" : "1594663",
-            "display" : "1.2 ML alemtuzumab 10 MG/ML Injection [Lemtrada]"
-          },
-          {
-            "code" : "1594657",
-            "display" : "alemtuzumab 10 MG/ML"
-          },
-          {
-            "code" : "1594660",
-            "display" : "alemtuzumab 10 MG/ML [Lemtrada]"
-          },
-          {
-            "code" : "1656640",
-            "display" : "alemtuzumab 10 MG/ML Injection [Lemtrada]"
-          },
-          {
-            "code" : "1656628",
-            "display" : "alemtuzumab 30 MG/ML"
-          },
-          {
-            "code" : "1656631",
-            "display" : "alemtuzumab 30 MG/ML [Campath]"
-          },
-          {
-            "code" : "1656635",
-            "display" : "alemtuzumab 30 MG/ML Injection [Campath]"
-          },
-          {
-            "code" : "1164265",
-            "display" : "alemtuzumab Injectable Product"
-          },
-          {
-            "code" : "1656629",
-            "display" : "alemtuzumab Injection"
-          },
-          {
-            "code" : "1656632",
-            "display" : "alemtuzumab Injection [Campath]"
-          },
-          {
-            "code" : "1656637",
-            "display" : "alemtuzumab Injection [Lemtrada]"
-          },
-          {
-            "code" : "1172298",
-            "display" : "Campath Injectable Product"
-          },
-          {
-            "code" : "1594662",
-            "display" : "Lemtrada Injectable Product"
-          }
-        ]
-      }
-    ]
+        "code" : "284679",
+        "display" : "Campath"
+      },
+      {
+        "code" : "1594659",
+        "display" : "Lemtrada"
+      },
+      {
+        "code" : "828267",
+        "display" : "1 ML alemtuzumab 30 MG/ML Injection [Campath]"
+      },
+      {
+        "code" : "1594663",
+        "display" : "1.2 ML alemtuzumab 10 MG/ML Injection [Lemtrada]"
+      },
+      {
+        "code" : "1594657",
+        "display" : "alemtuzumab 10 MG/ML"
+      },
+      {
+        "code" : "1594660",
+        "display" : "alemtuzumab 10 MG/ML [Lemtrada]"
+      },
+      {
+        "code" : "1656640",
+        "display" : "alemtuzumab 10 MG/ML Injection [Lemtrada]"
+      },
+      {
+        "code" : "1656628",
+        "display" : "alemtuzumab 30 MG/ML"
+      },
+      {
+        "code" : "1656631",
+        "display" : "alemtuzumab 30 MG/ML [Campath]"
+      },
+      {
+        "code" : "1656635",
+        "display" : "alemtuzumab 30 MG/ML Injection [Campath]"
+      },
+      {
+        "code" : "1164265",
+        "display" : "alemtuzumab Injectable Product"
+      },
+      {
+        "code" : "1656629",
+        "display" : "alemtuzumab Injection"
+      },
+      {
+        "code" : "1656632",
+        "display" : "alemtuzumab Injection [Campath]"
+      },
+      {
+        "code" : "1656637",
+        "display" : "alemtuzumab Injection [Lemtrada]"
+      },
+      {
+        "code" : "1172298",
+        "display" : "Campath Injectable Product"
+      },
+      {
+        "code" : "1594662",
+        "display" : "Lemtrada Injectable Product"
+      }]
+    }]
   }
 }
 

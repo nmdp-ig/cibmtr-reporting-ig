@@ -1,4 +1,4 @@
-# RxNorm - Bortezomib - CIBMTR Reporting Implementation Guide v0.1.10
+# RxNorm - Bortezomib - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-bortezomib-vs | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:RxNormBortezomibVS |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-bortezomib-vs | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:RxNormBortezomibVS |
 
  
 RxNorm codes for Bortezomib 
@@ -46,78 +46,68 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "med-bortezomib-vs",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-bortezomib-vs",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "RxNormBortezomibVS",
   "title" : "RxNorm - Bortezomib",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:49:22-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "RxNorm codes for Bortezomib",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "358258",
+        "display" : "bortezomib"
+      },
       {
-        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "concept" : [
-          {
-            "code" : "358258",
-            "display" : "bortezomib"
-          },
-          {
-            "code" : "356733",
-            "display" : "Velcade"
-          },
-          {
-            "code" : "1804993",
-            "display" : "bortezomib 3.5 MG"
-          },
-          {
-            "code" : "1804996",
-            "display" : "bortezomib 3.5 MG [Velcade]"
-          },
-          {
-            "code" : "402244",
-            "display" : "bortezomib 3.5 MG Injection [Velcade]"
-          },
-          {
-            "code" : "1163075",
-            "display" : "bortezomib Injectable Product"
-          },
-          {
-            "code" : "1804994",
-            "display" : "bortezomib Injection"
-          },
-          {
-            "code" : "1804997",
-            "display" : "bortezomib Injection [Velcade]"
-          },
-          {
-            "code" : "1187756",
-            "display" : "Velcade Injectable Product"
-          }
-        ]
-      }
-    ]
+        "code" : "356733",
+        "display" : "Velcade"
+      },
+      {
+        "code" : "1804993",
+        "display" : "bortezomib 3.5 MG"
+      },
+      {
+        "code" : "1804996",
+        "display" : "bortezomib 3.5 MG [Velcade]"
+      },
+      {
+        "code" : "402244",
+        "display" : "bortezomib 3.5 MG Injection [Velcade]"
+      },
+      {
+        "code" : "1163075",
+        "display" : "bortezomib Injectable Product"
+      },
+      {
+        "code" : "1804994",
+        "display" : "bortezomib Injection"
+      },
+      {
+        "code" : "1804997",
+        "display" : "bortezomib Injection [Velcade]"
+      },
+      {
+        "code" : "1187756",
+        "display" : "Velcade Injectable Product"
+      }]
+    }]
   }
 }
 

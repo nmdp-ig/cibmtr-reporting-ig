@@ -1,4 +1,4 @@
-# Direct FHIR STU 3 - CIBMTR Reporting Implementation Guide v0.1.10
+# Direct FHIR STU 3 - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * **Direct FHIR STU 3**
@@ -37,23 +37,23 @@ Different sets of credentials will be provided for the CIBMTR test and productio
 
 To request an authentication token for the test environment, the third-party authorization server URL is: 
 
-`POST https://nmdp.oktapreview.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token`
+`POST https://nmdp.oktapreview.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token `
 
 or:
 
-`POST https://nmdp.oktapreview.com/oauth2/aus3ck6q30qmOdpMb1t7/v1/token`
+`POST https://nmdp.oktapreview.com/oauth2/aus3ck6q30qmOdpMb1t7/v1/token `
 
 To request an authentication token for the production environment, the third-party authorization server URL is:
 
-`POST https://nmdp.okta.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token`
+` POST https://nmdp.okta.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token `
 
 or:
 
-`POST https://nmdp.okta.com/oauth2/aus3ck6q30qmOdpMb1t7/v1/token`
+`POST https://nmdp.okta.com/oauth2/aus3ck6q30qmOdpMb1t7/v1/token `
 
 The header of the POST request to the authorization server must have an authorization string. The string is constructed by base64 encoding the Application Client ID, a colon, and the Application Client Secret. The encoded string is then appended to the word “Basic ”. 
 
-`const auth_string = "Basic " + base64("<Application Client ID>" + ":" + "<Application Client Secret>")`
+` const auth_string = "Basic " + base64("<Application Client ID>" + ":" + "<Application Client Secret>") `
 An example of the header parameters for the POST request to the authorization server is shown in Figure 1. In the figure, the authorization string is blacked out. Notice the space between the base 64 encoded string and the string prefix, “Basic”.
 
 "FIGURE1" Figure 1: Example header information for the POST request to the authorization server Figure 2 shows the required fields in the body of the POST request to the authorization server API. 
@@ -78,10 +78,10 @@ Register a patient with CIBMTR and receive a CIBMTR Recipient Identifier (CRID) 
 
 The CRID Service API uses a PUT request at the following case-sensitive endpoint URLs: Test Environment:
 
-`PUT https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/CRID`
+` PUT https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/CRID `
 Production Environment:
 
-`PUT https://api.nmdp.org/cibmtrehrclientbackend/v1/CRID`
+` PUT https://api.nmdp.org/cibmtrehrclientbackend/v1/CRID `
 The authorization key and bearer token must be included in the request as mentioned in the previous section. For the body of the PUT request, the following data fields are requested:
 
 Five required attributes
@@ -175,7 +175,7 @@ The authorization key and bearer token must be included in the request as mentio
 
 PII information should be avoided as part of the Patient resource. However, the Direct FHIR Service API will remove PII information, including any that might be contained in “text” or other sections of the resource before storing it on the FHIR server. The response after submitting a Patient resource request, indicates how the Patient resource is represented on the CIBMTR FHIR server (see Figure 6). The response JSON object has an “id” that is used to reference the Patient resource (circled in red in Figure 6). There is a new security label that indicates that the resource has been through a redaction process to remove any PII that may have been submitted with the Patient resource.
 
-`GET https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Patient? _security=http://terminology.cibmtr.org/codesystem/transplant-center%7Crc_<CCN>& identifier=<CRID>`
+` GET https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Patient? _security=http://terminology.cibmtr.org/codesystem/transplant-center%7Crc_<CCN>& identifier=<CRID> `
 
  The Patient resource ID is necessary for submitting other FHIR resources to the Direct FHIR Service API, but if the ID for a Patient resource previously submitted is not known, the following GET request can be submitted to the API to retrieve the Patient resource for a given CRID: 
 
@@ -212,7 +212,8 @@ An example of an Observation FHIR resource is shown in Figure 8. The basic struc
 To search for all Observation resources on the CIBMTR FHIR server for a given CRID, see the below GET request API URL:
 
 `GET https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Observation?subject:Patient.identifier=<CRID>`
-
+ 
+![](dfhir_r3_figure08.png)
 Figure 8: Example POST request for submitting an Observation resource, including the Observation resource format in the body of the request
 
 ####  Submitting CRID/FHIR Data Using the Postman Client 

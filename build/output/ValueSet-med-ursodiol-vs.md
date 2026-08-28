@@ -1,4 +1,4 @@
-# RxNorm - Ursodiol - CIBMTR Reporting Implementation Guide v0.1.10
+# RxNorm - Ursodiol - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-ursodiol-vs | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:RxNormUrsodiolVS |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-ursodiol-vs | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:RxNormUrsodiolVS |
 
  
 RxNorm codes for Ursodiol 
@@ -46,170 +46,160 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "med-ursodiol-vs",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-ursodiol-vs",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "RxNormUrsodiolVS",
   "title" : "RxNorm - Ursodiol",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:01:54-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "RxNorm codes for Ursodiol",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "215007",
+        "display" : "Actigall"
+      },
       {
-        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "concept" : [
-          {
-            "code" : "215007",
-            "display" : "Actigall"
-          },
-          {
-            "code" : "220706",
-            "display" : "Urso"
-          },
-          {
-            "code" : "11065",
-            "display" : "ursodiol"
-          },
-          {
-            "code" : "62427",
-            "display" : "ursodeoxycholate"
-          },
-          {
-            "code" : "151610",
-            "display" : "Destolit"
-          },
-          {
-            "code" : "2477891",
-            "display" : "Reltone"
-          },
-          {
-            "code" : "153695",
-            "display" : "Urdox"
-          },
-          {
-            "code" : "544268",
-            "display" : "Urso Forte"
-          },
-          {
-            "code" : "152480",
-            "display" : "Ursofalk"
-          },
-          {
-            "code" : "153628",
-            "display" : "Ursogal"
-          },
-          {
-            "code" : "1169904",
-            "display" : "Actigall Oral Product"
-          },
-          {
-            "code" : "1169905",
-            "display" : "Actigall Pill"
-          },
-          {
-            "code" : "1186788",
-            "display" : "Urso Oral Product"
-          },
-          {
-            "code" : "1186789",
-            "display" : "Urso Pill"
-          },
-          {
-            "code" : "632296",
-            "display" : "ursodeoxycholate Oral Capsule [Actigall]"
-          },
-          {
-            "code" : "632450",
-            "display" : "ursodeoxycholate Oral Capsule [Urso]"
-          },
-          {
-            "code" : "632416",
-            "display" : "ursodeoxycholate Oral Tablet [Urso]"
-          },
-          {
-            "code" : "858745",
-            "display" : "ursodiol 250 MG [Urso]"
-          },
-          {
-            "code" : "858746",
-            "display" : "ursodiol 250 MG Oral Capsule [Urso]"
-          },
-          {
-            "code" : "858752",
-            "display" : "ursodiol 250 MG Oral Tablet [Urso]"
-          },
-          {
-            "code" : "858748",
-            "display" : "ursodiol 300 MG [Actigall]"
-          },
-          {
-            "code" : "858749",
-            "display" : "ursodiol 300 MG Oral Capsule [Actigall]"
-          },
-          {
-            "code" : "384895",
-            "display" : "ursodiol 100 MG"
-          },
-          {
-            "code" : "360514",
-            "display" : "ursodiol 125 MG"
-          },
-          {
-            "code" : "858330",
-            "display" : "ursodiol 150 MG"
-          },
-          {
-            "code" : "452499",
-            "display" : "ursodiol 200 MG"
-          },
-          {
-            "code" : "360513",
-            "display" : "ursodiol 250 MG"
-          },
-          {
-            "code" : "858328",
-            "display" : "ursodiol 300 MG"
-          },
-          {
-            "code" : "452500",
-            "display" : "ursodiol 400 MG"
-          },
-          {
-            "code" : "452502",
-            "display" : "ursodiol 50 MG"
-          },
-          {
-            "code" : "858332",
-            "display" : "ursodiol 50 MG/ML"
-          },
-          {
-            "code" : "858732",
-            "display" : "ursodiol 500 MG"
-          }
-        ]
-      }
-    ]
+        "code" : "220706",
+        "display" : "Urso"
+      },
+      {
+        "code" : "11065",
+        "display" : "ursodiol"
+      },
+      {
+        "code" : "62427",
+        "display" : "ursodeoxycholate"
+      },
+      {
+        "code" : "151610",
+        "display" : "Destolit"
+      },
+      {
+        "code" : "2477891",
+        "display" : "Reltone"
+      },
+      {
+        "code" : "153695",
+        "display" : "Urdox"
+      },
+      {
+        "code" : "544268",
+        "display" : "Urso Forte"
+      },
+      {
+        "code" : "152480",
+        "display" : "Ursofalk"
+      },
+      {
+        "code" : "153628",
+        "display" : "Ursogal"
+      },
+      {
+        "code" : "1169904",
+        "display" : "Actigall Oral Product"
+      },
+      {
+        "code" : "1169905",
+        "display" : "Actigall Pill"
+      },
+      {
+        "code" : "1186788",
+        "display" : "Urso Oral Product"
+      },
+      {
+        "code" : "1186789",
+        "display" : "Urso Pill"
+      },
+      {
+        "code" : "632296",
+        "display" : "ursodeoxycholate Oral Capsule [Actigall]"
+      },
+      {
+        "code" : "632450",
+        "display" : "ursodeoxycholate Oral Capsule [Urso]"
+      },
+      {
+        "code" : "632416",
+        "display" : "ursodeoxycholate Oral Tablet [Urso]"
+      },
+      {
+        "code" : "858745",
+        "display" : "ursodiol 250 MG [Urso]"
+      },
+      {
+        "code" : "858746",
+        "display" : "ursodiol 250 MG Oral Capsule [Urso]"
+      },
+      {
+        "code" : "858752",
+        "display" : "ursodiol 250 MG Oral Tablet [Urso]"
+      },
+      {
+        "code" : "858748",
+        "display" : "ursodiol 300 MG [Actigall]"
+      },
+      {
+        "code" : "858749",
+        "display" : "ursodiol 300 MG Oral Capsule [Actigall]"
+      },
+      {
+        "code" : "384895",
+        "display" : "ursodiol 100 MG"
+      },
+      {
+        "code" : "360514",
+        "display" : "ursodiol 125 MG"
+      },
+      {
+        "code" : "858330",
+        "display" : "ursodiol 150 MG"
+      },
+      {
+        "code" : "452499",
+        "display" : "ursodiol 200 MG"
+      },
+      {
+        "code" : "360513",
+        "display" : "ursodiol 250 MG"
+      },
+      {
+        "code" : "858328",
+        "display" : "ursodiol 300 MG"
+      },
+      {
+        "code" : "452500",
+        "display" : "ursodiol 400 MG"
+      },
+      {
+        "code" : "452502",
+        "display" : "ursodiol 50 MG"
+      },
+      {
+        "code" : "858332",
+        "display" : "ursodiol 50 MG/ML"
+      },
+      {
+        "code" : "858732",
+        "display" : "ursodiol 500 MG"
+      }]
+    }]
   }
 }
 

@@ -1,4 +1,4 @@
-# CIBMTR Vital Signs Value Set - CIBMTR Reporting Implementation Guide v0.1.10
+# CIBMTR Vital Signs Value Set - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/vital-signs | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:VitalSigns |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/vital-signs | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:VitalSigns |
 
  
 CIBMTR Vital Signs Value Set 
@@ -46,50 +46,40 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "vital-signs",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/vital-signs",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "VitalSigns",
   "title" : "CIBMTR Vital Signs Value Set",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:01:54-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "CIBMTR Vital Signs Value Set",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "29463-7",
+        "display" : "Body weight Patient Mass Pt Qn"
+      },
       {
-        "system" : "http://loinc.org",
-        "concept" : [
-          {
-            "code" : "29463-7",
-            "display" : "Body weight Patient Mass Pt Qn"
-          },
-          {
-            "code" : "8302-2",
-            "display" : "Body height Patient Len Pt Qn"
-          }
-        ]
-      }
-    ]
+        "code" : "8302-2",
+        "display" : "Body height Patient Len Pt Qn"
+      }]
+    }]
   }
 }
 

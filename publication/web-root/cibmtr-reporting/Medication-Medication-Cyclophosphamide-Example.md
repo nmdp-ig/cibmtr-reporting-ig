@@ -1,4 +1,4 @@
-# Medication-Cyclophosphamide-Example - CIBMTR Reporting Implementation Guide v0.1.10
+# Medication-Cyclophosphamide-Example - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 Profile: [CIBMTR Medication (us-core)](StructureDefinition-cibmtr-medication.md)
 
-Security Label: 99999 My Transplant Center (Details: transplant-center code rc_99999 = '99999 My Transplant Center')
+Security Label: 
 
 **code**: CYCLOPHOSPHAMIDE 1 G IJ SOLR
 
@@ -17,7 +17,7 @@ Security Label: 99999 My Transplant Center (Details: transplant-center code rc_9
 | | | |
 | :--- | :--- | :--- |
 | - | **Item[x]** | **Strength** |
-| * | CYCLOPHOSPHAMIDE 1 G IJ SOLR | 1 gram(Details: UCUM codeg = 'g')/1 gram(Details: UCUM codeg = 'g') |
+| * | CYCLOPHOSPHAMIDE 1 G IJ SOLR | 1 gram (Details: UCUM codeg = 'g')/1 gram (Details: UCUM codeg = 'g') |
 
 
 
@@ -28,20 +28,34 @@ Security Label: 99999 My Transplant Center (Details: transplant-center code rc_9
   "resourceType" : "Medication",
   "id" : "Medication-Cyclophosphamide-Example",
   "meta" : {
-    "profile" : [
-      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication"
-    ],
-    "security" : [
-      {
-        "system" : "http://terminology.cibmtr.org/codesystem/transplant-center",
-        "code" : "rc_99999",
-        "display" : "99999 My Transplant Center"
-      }
-    ]
+    "profile" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication"],
+    "security" : [{
+      "system" : "http://terminology.cibmtr.org/codesystem/transplant-center",
+      "code" : "rc_99999",
+      "display" : "99999 My Transplant Center"
+    }]
   },
   "code" : {
-    "coding" : [
-      {
+    "coding" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "3002",
+      "display" : "cyclophosphamide"
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "1545988",
+      "display" : "cyclophosphamide anhydrous"
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "1734919",
+      "display" : "cyclophosphamide 1000 MG Injection"
+    }],
+    "text" : "CYCLOPHOSPHAMIDE 1 G IJ SOLR"
+  },
+  "ingredient" : [{
+    "itemCodeableConcept" : {
+      "coding" : [{
         "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
         "code" : "3002",
         "display" : "cyclophosphamide"
@@ -55,48 +69,24 @@ Security Label: 99999 My Transplant Center (Details: transplant-center code rc_9
         "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
         "code" : "1734919",
         "display" : "cyclophosphamide 1000 MG Injection"
-      }
-    ],
-    "text" : "CYCLOPHOSPHAMIDE 1 G IJ SOLR"
-  },
-  "ingredient" : [
-    {
-      "itemCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-            "code" : "3002",
-            "display" : "cyclophosphamide"
-          },
-          {
-            "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-            "code" : "1545988",
-            "display" : "cyclophosphamide anhydrous"
-          },
-          {
-            "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-            "code" : "1734919",
-            "display" : "cyclophosphamide 1000 MG Injection"
-          }
-        ],
-        "text" : "CYCLOPHOSPHAMIDE 1 G IJ SOLR"
+      }],
+      "text" : "CYCLOPHOSPHAMIDE 1 G IJ SOLR"
+    },
+    "strength" : {
+      "numerator" : {
+        "value" : 1,
+        "unit" : "gram",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "g"
       },
-      "strength" : {
-        "numerator" : {
-          "value" : 1,
-          "unit" : "gram",
-          "system" : "http://unitsofmeasure.org",
-          "code" : "g"
-        },
-        "denominator" : {
-          "value" : 1,
-          "unit" : "gram",
-          "system" : "http://unitsofmeasure.org",
-          "code" : "g"
-        }
+      "denominator" : {
+        "value" : 1,
+        "unit" : "gram",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "g"
       }
     }
-  ]
+  }]
 }
 
 ```

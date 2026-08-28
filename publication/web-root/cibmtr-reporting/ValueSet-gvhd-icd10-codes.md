@@ -1,4 +1,4 @@
-# GVHD ICD-10 Codes - CIBMTR Reporting Implementation Guide v0.1.10
+# GVHD ICD-10 Codes - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:GVHDICD10VS |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:GVHDICD10VS |
 
  
 GVHD ICD-10 Codes 
 
  **References** 
 
-* Included into [GVHDTypeValueSet](ValueSet-gvhd-all-valueset.md)
+* Included into [GVHD Type Value Set](ValueSet-gvhd-all-valueset.md)
 
 ### Logical Definition (CLD)
 
@@ -46,47 +46,37 @@ GVHD ICD-10 Codes
   "resourceType" : "ValueSet",
   "id" : "gvhd-icd10-codes",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "GVHDICD10VS",
   "title" : "GVHD ICD-10 Codes",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:49:22-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "GVHD ICD-10 Codes",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://hl7.org/fhir/sid/icd-10-cm",
-        "filter" : [
-          {
-            "property" : "concept",
-            "op" : "is-a",
-            "value" : "D89.81"
-          }
-        ]
-      }
-    ]
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "D89.81"
+      }]
+    }]
   }
 }
 

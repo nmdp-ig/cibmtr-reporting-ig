@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>CRID Assignment FHIR - CIBMTR Reporting Implementation Guide v0.1.10</title>
+    <title>CRID Assignment FHIR - CIBMTR Reporting Implementation Guide v0.1.12</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -129,7 +129,7 @@ h1 {
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.10 - Trial Use 1
+            <span style="display:inline-block;">0.1.12 - Trial Use 1
 
 
             </span>
@@ -186,10 +186,10 @@ h1 {
         <a href="Laboratory-Observations.html">Lab Observations</a>
       </li>
       <li>
-        <a href="Medications.html">Medications</a>
+        <a href="StructureDefinition-cibmtr-medications.html">Medications</a>
       </li>
       <li>
-        <a href="Vital-Signs.html">Vital Signs</a>
+        <a href="StructureDefinition-cibmtr-vital-signs.html">Vital Signs</a>
       </li>
       <li>
         <a href="Bundles.html">Bundles</a>
@@ -207,9 +207,6 @@ h1 {
         <a href="Appendices.html">Appendices</a>
       </li>
     </ul>
-  </li>
-  <li>
-    <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR (STU3)</a>
   </li>
   <li>
     <a href="artifacts.html">Artifact Index</a>
@@ -256,7 +253,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the CIBMTR Reporting Implementation Guide (v0.1.10: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the CIBMTR Reporting Implementation Guide (v0.1.12: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>CRID Assignment FHIR</h2>
   
 
@@ -373,196 +370,224 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 <p>Complete list of payload options for CRID registration is shown below.</p>
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Parameters"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"example"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"parameter"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"patient"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"resource"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"example"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-          </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"official"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"family"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FamilyName"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"given"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-              </span><span class="s2">"FirstName"</span><span class="p">,</span><span class="w">
-              </span><span class="s2">"LastName"</span><span class="w">
-            </span><span class="p">]</span><span class="w">
-          </span><span class="p">}</span><span class="w">
-        </span><span class="p">],</span><span class="w">
-        </span><span class="nl">"gender"</span><span class="p">:</span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"race"</span><span class="p">:</span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"birthdate"</span><span class="p">:</span><span class="s2">"date"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"security"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://cibmtr.org/codesystem/transplant-center"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;center_number_ccn&gt;"</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-          </span><span class="p">]</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ccn"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
 
-<p><strong>OMB Catagory Race Codes</strong></p>
+<details class="fig-toggle">
+<summary><u>CRID Registration JSON Example</u></summary>
+<pre><code class="language-json">
+{
+  "resourceType": "Parameters",
+  "id": "example",
+  "parameter": [
+    {
+      "name": "patient",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "example",
+        "name": [
+          {
+            "use": "official",
+            "family": "FamilyName",
+            "given": [
+              "FirstName",
+              "LastName"
+            ]
+          }
+        ],
+        "gender":"string",
+        "race":"string",
+        "birthdate":"date",
+        "meta": {
+          "security": [
+            {
+              "system": "http://cibmtr.org/codesystem/transplant-center",
+              "code": "&lt;center_number_ccn&gt;"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "ccn",
+      "valueString": "string"
+    }
+  ]
+}
+</code></pre>
 
-<table class="grid">
-  <thead>
-    <tr>
-      <th>Race Value Code</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1002-5</td>
-      <td>American Indian or Alaska Native</td>
-    </tr>
-    <tr>
-      <td>2028-9</td>
-      <td>Asian</td>
-    </tr>
-    <tr>
-      <td>2054-5</td>
-      <td>Black or African American</td>
-    </tr>
-    <tr>
-      <td>2076-8</td>
-      <td>Native Hawaiian or Other Pacific Islander</td>
-    </tr>
-    <tr>
-      <td>2106-3</td>
-      <td>White</td>
-    </tr>
-    <tr>
-      <td>ASKU</td>
-      <td>Not Reported</td>
-    </tr>
-    <tr>
-      <td>UNK</td>
-      <td>Unknown</td>
-    </tr>
-  </tbody>
-</table>
+</details>
+<style>
+.fig-toggle summary {
+  list-style: none;
+  cursor: pointer;
+}
 
-<p><strong>OMB Catagory Ethnicity Codes</strong></p>
+.fig-toggle summary::-webkit-details-marker {
+  display: none;
+}
 
-<table class="grid">
-  <thead>
-    <tr>
-      <th>Ethnicity Value Code</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>2135-2</td>
-      <td>Hispanic or Latino</td>
-    </tr>
-    <tr>
-      <td>2186-5</td>
-      <td>Non Hispanic or Latino</td>
-    </tr>
-    <tr>
-      <td>UNK</td>
-      <td>Unknown</td>
-    </tr>
-  </tbody>
-</table>
+.fig-toggle summary::before {
+  content: "> ";
+}
+
+.fig-toggle[open] summary::before {
+  content: "∨ ";
+}
+</style>
+
+<p><br /></p>
 
 <p>Because the CRID API is available as a <code class="language-plaintext highlighter-rouge">POST</code> request, submitting the same data twice does not re-register the patient, but rather will return the parameter response with 200 OK.</p>
 
 <p>The response payload of the CRID Service API is a JSON object that contains the CRID number (lower pane in Figure).  The CRID number is then used for all other data references to the registered patient.</p>
 
-<table class="grid">
-  <thead>
-    <tr>
-      <th style="text-align: center"><img src="CRID_response.jpg" alt="Figure 1" width="80%" /></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center"><i>Figure 1: Example CRID registration POST request with JSON body payload (top pane) and response payload (bottom pane)</i></td>
-    </tr>
-  </tbody>
-</table>
+<details class="fig-toggle">
+<summary><u>CRID Response Example</u></summary>
+
+<div style="text-align:center; width:100%; margin-top:10px;">
+
+<img src="CRID_response.jpg" style="width:70%;" />
+
+<div style="margin-top:8px;">
+<i>Figure 1: Example CRID registration POST request with JSON body payload (top pane) and response payload (bottom pane).</i>
+</div>
+
+</div>
+
+</details>
+<style>
+.fig-toggle summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.fig-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.fig-toggle summary::before {
+  content: "> ";
+}
+
+.fig-toggle[open] summary::before {
+  content: "∨ ";
+}
+</style>
 
 <h3 id="example-code">Example Code</h3>
 
 <h4 id="crid-lookupregistration-post">CRID Lookup/Registration (POST)</h4>
-<p><strong>patient.json Example</strong></p>
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Parameters"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"parameter"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"resource"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"resource"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                    </span><span class="nl">"security"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                        </span><span class="p">{</span><span class="w">
-                            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://cibmtr.org/codesystem/transplant-center"</span><span class="p">,</span><span class="w">
-                            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rc_12001"</span><span class="w">
-                        </span><span class="p">}</span><span class="w"> 
-                    </span><span class="p">]</span><span class="w">
-                </span><span class="p">},</span><span class="w">         
-                </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                    </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"official"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"family"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ranii"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"given"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"sdascvdi"</span><span class="p">]</span><span class="w">
-                    </span><span class="p">}</span><span class="w">
-                </span><span class="p">],</span><span class="w">
-                </span><span class="nl">"gender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"female"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"birthDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2010-02-04"</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ccn"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12001"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-<p><strong>Python Example</strong></p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/env python3
-</span>
-<span class="kn">import</span> <span class="n">json</span>
-<span class="kn">import</span> <span class="n">requests</span>
-<span class="kn">from</span> <span class="n">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+
+<details class="fig-toggle">
+<summary><u>Patient Json Example</u></summary>
+<pre><code class="language-json">
+{
+    "resourceType": "Parameters",
+    "parameter": [
+        {
+            "name": "resource",
+            "resource": {
+                "resourceType": "Patient",
+                "meta": {
+                    "security": [
+                        {
+                            "system": "http://cibmtr.org/codesystem/transplant-center",
+                            "code": "rc_12001"
+                        } 
+                    ]
+                },         
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Ranii",
+                        "given": ["sdascvdi"]
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "2010-02-04"
+            }
+        },
+        {
+            "name": "ccn",
+            "valueString": "12001"
+        }
+    ]
+}
+</code></pre>
+
+</details>
+<style>
+.fig-toggle summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.fig-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.fig-toggle summary::before {
+  content: "> ";
+}
+
+.fig-toggle[open] summary::before {
+  content: "∨ ";
+}
+</style>
+
+<details class="fig-toggle">
+<summary><u>Python Example</u></summary>
+<pre><code class="language-json">
+#!/usr/bin/env python3
+
+import json
+import requests
+from pathlib import Path
 
 
-<span class="c1"># Load patient object from patient.json 
-</span><span class="k">with</span> <span class="nf">open</span><span class="p">(</span><span class="sh">'</span><span class="s">patient.json</span><span class="sh">'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">patient</span> <span class="o">=</span> <span class="n">json</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+# Load patient object from patient.json 
+with open('patient.json') as f:
+    patient = json.load(f)
 
-<span class="c1">#print(patient)
-</span>
-<span class="n">tokenfile</span> <span class="o">=</span> <span class="nc">Path</span><span class="p">(</span><span class="sh">'</span><span class="s">token.txt</span><span class="sh">'</span><span class="p">)</span>  <span class="c1"># Bearer token was previously captured in token.txt
-</span><span class="n">authstring</span> <span class="o">=</span> <span class="sh">'</span><span class="s">Bearer </span><span class="sh">'</span> <span class="o">+</span> <span class="n">tokenfile</span><span class="p">.</span><span class="nf">read_text</span><span class="p">()</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">Authorization</span><span class="sh">'</span><span class="p">:</span> <span class="n">authstring</span><span class="p">,</span>
-           <span class="sh">'</span><span class="s">Content-Type</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">application/json</span><span class="sh">'</span><span class="p">}</span>
+#print(patient)
 
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="sh">'</span><span class="s">https://qa-internal-api.nmdp.org/cibmtr-fhir-backend/v1/r4/Patient/$crid-assignment</span><span class="sh">'</span><span class="p">,</span>
-                 <span class="n">json</span><span class="o">=</span><span class="n">patient</span><span class="p">,</span>
-                 <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+tokenfile = Path('token.txt')  # Bearer token was previously captured in token.txt
+authstring = 'Bearer ' + tokenfile.read_text()
+headers = {'Authorization': authstring,
+           'Content-Type': 'application/json'}
 
-<span class="k">if</span> <span class="n">r</span><span class="p">:</span>
-    <span class="nf">print</span><span class="p">(</span><span class="n">json</span><span class="p">.</span><span class="nf">dumps</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="nf">json</span><span class="p">(),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Request failed with status code </span><span class="si">{</span><span class="n">r</span><span class="p">.</span><span class="n">status_code</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
-    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Response body:</span><span class="sh">"</span><span class="p">)</span>
-    <span class="nf">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">text</span><span class="p">)</span>
-</code></pre></div></div>
+r = requests.post('https://qa-internal-api.nmdp.org/cibmtr-fhir-backend/v1/r4/Patient/$crid-assignment',
+                 json=patient,
+                 headers=headers)
+
+if r:
+    print(json.dumps(r.json(), indent=4))
+else:
+    print(f"Request failed with status code {r.status_code}")
+    print("Response body:")
+    print(r.text)
+</code></pre>
+
+</details>
+<style>
+.fig-toggle summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.fig-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.fig-toggle summary::before {
+  content: "> ";
+}
+
+.fig-toggle[open] summary::before {
+  content: "∨ ";
+}
+</style>
+
+<p><br /></p>
 
 
 
@@ -587,8 +612,8 @@ if(window.location.hash != "") {
 <div class="container">  <!-- container -->
 <div class="inner-wrapper">
   <p>
-    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.10 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 23, 2026 10:10-0500">2026-04-23</span>
+    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and NMDP</a>  
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.12 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 27, 2026 20:49-0500">2026-08-27</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

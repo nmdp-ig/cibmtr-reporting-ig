@@ -1,4 +1,4 @@
-# RxNorm - All of Form 2400 - CIBMTR Reporting Implementation Guide v0.1.10
+# RxNorm - All of Form 2400 - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-all-form2400-vs | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:RxNormAll2400VS |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-all-form2400-vs | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:RxNormAll2400VS |
 
  
 RxNorm codes for all of Form 2400 
@@ -46,67 +46,47 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "med-all-form2400-vs",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-all-form2400-vs",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "RxNormAll2400VS",
   "title" : "RxNorm - All of Form 2400",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:49:22-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "RxNorm codes for all of Form 2400",
   "compose" : {
-    "include" : [
-      {
-        "valueSet" : [
-          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-addition-peri-transplant-vs"
-        ]
-      },
-      {
-        "valueSet" : [
-          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs"
-        ]
-      },
-      {
-        "valueSet" : [
-          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs"
-        ]
-      },
-      {
-        "valueSet" : [
-          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-post-hct-disease-therapy-planned-vs"
-        ]
-      },
-      {
-        "valueSet" : [
-          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prep-regimen-vs"
-        ]
-      },
-      {
-        "valueSet" : [
-          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prior-exposure-vs"
-        ]
-      }
-    ]
+    "include" : [{
+      "valueSet" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-addition-peri-transplant-vs"]
+    },
+    {
+      "valueSet" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-gvhd-prophylaxis-vs"]
+    },
+    {
+      "valueSet" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs"]
+    },
+    {
+      "valueSet" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-post-hct-disease-therapy-planned-vs"]
+    },
+    {
+      "valueSet" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prep-regimen-vs"]
+    },
+    {
+      "valueSet" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prior-exposure-vs"]
+    }]
   }
 }
 

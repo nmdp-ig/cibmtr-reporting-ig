@@ -1,4 +1,4 @@
-# Auto Differential panel - Blood (57023-4) - CIBMTR Reporting Implementation Guide v0.1.10
+# Auto Differential panel - Blood (57023-4) - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/auto-differential-blood-vs | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:AutoDifferentialBloodVS |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/auto-differential-blood-vs | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:AutoDifferentialBloodVS |
 
  
 Auto Differential panel - Blood (57023-4) 
 
  **References** 
 
-* Included into [CBCWAutoDifferentialBloodVS](ValueSet-cbc-w-auto-differential-blood-vs.md)
+* Included into [CBC W Auto Differential panel - Blood (57021-8)](ValueSet-cbc-w-auto-differential-blood-vs.md)
 
 ### Logical Definition (CLD)
 
@@ -46,114 +46,104 @@ Auto Differential panel - Blood (57023-4)
   "resourceType" : "ValueSet",
   "id" : "auto-differential-blood-vs",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/auto-differential-blood-vs",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "AutoDifferentialBloodVS",
   "title" : "Auto Differential panel - Blood (57023-4)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:49:22-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "Auto Differential panel - Blood (57023-4)",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "770-8",
+        "display" : "Neutrophils/100 leukocytes in Blood by Automated count"
+      },
       {
-        "system" : "http://loinc.org",
-        "concept" : [
-          {
-            "code" : "770-8",
-            "display" : "Neutrophils/100 leukocytes in Blood by Automated count"
-          },
-          {
-            "code" : "35332-6",
-            "display" : "Band form neutrophils/100 leukocytes in Blood by Automated count"
-          },
-          {
-            "code" : "19023-1",
-            "display" : "Granulocytes/100 leukocytes in Blood by Automated count"
-          },
-          {
-            "code" : "736-9",
-            "display" : "Lymphocytes/100 leukocytes in Blood by Automated count"
-          },
-          {
-            "code" : "42250-1",
-            "display" : "Variant lymphocytes/100 leukocytes in Blood by Automated count"
-          },
-          {
-            "code" : "5905-5",
-            "display" : "Monocytes/100 leukocytes in Blood by Automated count"
-          },
-          {
-            "code" : "713-8",
-            "display" : "Eosinophils/100 leukocytes in Blood by Automated count"
-          },
-          {
-            "code" : "706-2",
-            "display" : "Basophils/100 leukocytes in Blood by Automated count"
-          },
-          {
-            "code" : "58409-4",
-            "display" : "Other cells/100 leukocytes in Blood by Automated count"
-          },
-          {
-            "code" : "751-8",
-            "display" : "Neutrophils [#/volume] in Blood by Automated count"
-          },
-          {
-            "code" : "30229-9",
-            "display" : "Band form neutrophils [#/volume] in Blood by Automated count"
-          },
-          {
-            "code" : "731-0",
-            "display" : "Lymphocytes [#/volume] in Blood by Automated count"
-          },
-          {
-            "code" : "43743-4",
-            "display" : "Variant lymphocytes [#/volume] in Blood by Automated count"
-          },
-          {
-            "code" : "742-7",
-            "display" : "Monocytes [#/volume] in Blood by Automated count"
-          },
-          {
-            "code" : "711-2",
-            "display" : "Eosinophils [#/volume] in Blood by Automated count"
-          },
-          {
-            "code" : "704-7",
-            "display" : "Basophils [#/volume] in Blood by Automated count"
-          },
-          {
-            "code" : "51383-8",
-            "display" : "Leukocytes other [#/volume] in Blood by Automated count"
-          },
-          {
-            "code" : "58443-3",
-            "display" : "Other cells [#/volume] in Blood by Automated count"
-          }
-        ]
-      }
-    ]
+        "code" : "35332-6",
+        "display" : "Band form neutrophils/100 leukocytes in Blood by Automated count"
+      },
+      {
+        "code" : "19023-1",
+        "display" : "Granulocytes/100 leukocytes in Blood by Automated count"
+      },
+      {
+        "code" : "736-9",
+        "display" : "Lymphocytes/100 leukocytes in Blood by Automated count"
+      },
+      {
+        "code" : "42250-1",
+        "display" : "Variant lymphocytes/100 leukocytes in Blood by Automated count"
+      },
+      {
+        "code" : "5905-5",
+        "display" : "Monocytes/100 leukocytes in Blood by Automated count"
+      },
+      {
+        "code" : "713-8",
+        "display" : "Eosinophils/100 leukocytes in Blood by Automated count"
+      },
+      {
+        "code" : "706-2",
+        "display" : "Basophils/100 leukocytes in Blood by Automated count"
+      },
+      {
+        "code" : "58409-4",
+        "display" : "Other cells/100 leukocytes in Blood by Automated count"
+      },
+      {
+        "code" : "751-8",
+        "display" : "Neutrophils [#/volume] in Blood by Automated count"
+      },
+      {
+        "code" : "30229-9",
+        "display" : "Band form neutrophils [#/volume] in Blood by Automated count"
+      },
+      {
+        "code" : "731-0",
+        "display" : "Lymphocytes [#/volume] in Blood by Automated count"
+      },
+      {
+        "code" : "43743-4",
+        "display" : "Variant lymphocytes [#/volume] in Blood by Automated count"
+      },
+      {
+        "code" : "742-7",
+        "display" : "Monocytes [#/volume] in Blood by Automated count"
+      },
+      {
+        "code" : "711-2",
+        "display" : "Eosinophils [#/volume] in Blood by Automated count"
+      },
+      {
+        "code" : "704-7",
+        "display" : "Basophils [#/volume] in Blood by Automated count"
+      },
+      {
+        "code" : "51383-8",
+        "display" : "Leukocytes other [#/volume] in Blood by Automated count"
+      },
+      {
+        "code" : "58443-3",
+        "display" : "Other cells [#/volume] in Blood by Automated count"
+      }]
+    }]
   }
 }
 

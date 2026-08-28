@@ -1,4 +1,4 @@
-# Laboratory Observations - CIBMTR Reporting Implementation Guide v0.1.10
+# Laboratory Observations - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * **Laboratory Observations**

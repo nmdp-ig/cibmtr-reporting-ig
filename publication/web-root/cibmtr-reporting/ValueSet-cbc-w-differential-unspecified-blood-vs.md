@@ -1,4 +1,4 @@
-# CBC W Differential panel, method unspecified - Blood (69742-5) - CIBMTR Reporting Implementation Guide v0.1.10
+# CBC W Differential panel, method unspecified - Blood (69742-5) - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-differential-unspecified-blood-vs | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:CBCWDifferentialUnspecifiedBloodVS |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-differential-unspecified-blood-vs | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:CBCWDifferentialUnspecifiedBloodVS |
 
  
 CBC W Differential panel, method unspecified - Blood (69742-5) 
@@ -46,87 +46,75 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "cbc-w-differential-unspecified-blood-vs",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-differential-unspecified-blood-vs",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "CBCWDifferentialUnspecifiedBloodVS",
   "title" : "CBC W Differential panel, method unspecified - Blood (69742-5)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:49:22-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "CBC W Differential panel, method unspecified - Blood (69742-5)",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://loinc.org",
-        "concept" : [
-          {
-            "code" : "20570-8",
-            "display" : "Hematocrit [Volume Fraction] of Blood"
-          },
-          {
-            "code" : "26453-1",
-            "display" : "Erythrocytes [#/volume] in Blood"
-          },
-          {
-            "code" : "718-7",
-            "display" : "Hemoglobin [Mass/volume] in Blood"
-          },
-          {
-            "code" : "26515-7",
-            "display" : "Platelets [#/volume] in Blood"
-          },
-          {
-            "code" : "28539-5",
-            "display" : "MCH [Entitic mass]"
-          },
-          {
-            "code" : "28540-3",
-            "display" : "MCHC [Mass/volume]"
-          },
-          {
-            "code" : "28542-9",
-            "display" : "Platelet mean volume [Entitic volume] in Blood"
-          },
-          {
-            "code" : "30384-2",
-            "display" : "Erythrocyte distribution width [Entitic volume]"
-          },
-          {
-            "code" : "30385-9",
-            "display" : "Erythrocyte distribution width [Ratio]"
-          },
-          {
-            "code" : "30428-7",
-            "display" : "MCV [Entitic volume]"
-          }
-        ]
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "20570-8",
+        "display" : "Hematocrit [Volume Fraction] of Blood"
       },
       {
-        "valueSet" : [
-          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/differential-unspecified-blood-vs"
-        ]
-      }
-    ]
+        "code" : "26453-1",
+        "display" : "Erythrocytes [#/volume] in Blood"
+      },
+      {
+        "code" : "718-7",
+        "display" : "Hemoglobin [Mass/volume] in Blood"
+      },
+      {
+        "code" : "26515-7",
+        "display" : "Platelets [#/volume] in Blood"
+      },
+      {
+        "code" : "28539-5",
+        "display" : "MCH [Entitic mass]"
+      },
+      {
+        "code" : "28540-3",
+        "display" : "MCHC [Mass/volume]"
+      },
+      {
+        "code" : "28542-9",
+        "display" : "Platelet mean volume [Entitic volume] in Blood"
+      },
+      {
+        "code" : "30384-2",
+        "display" : "Erythrocyte distribution width [Entitic volume]"
+      },
+      {
+        "code" : "30385-9",
+        "display" : "Erythrocyte distribution width [Ratio]"
+      },
+      {
+        "code" : "30428-7",
+        "display" : "MCV [Entitic volume]"
+      }]
+    },
+    {
+      "valueSet" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/differential-unspecified-blood-vs"]
+    }]
   }
 }
 

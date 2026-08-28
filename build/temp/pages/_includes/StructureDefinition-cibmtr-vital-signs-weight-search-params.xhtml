@@ -15,7 +15,7 @@
   </tr>
   <tr>
     <td>
-      <a href="http://hl7.org/fhir/us/core/STU8/SearchParameter-us-core-observation-lastupdated.html">_lastUpdated</a>
+      <a href="http://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-lastupdated.html">_lastUpdated</a>
     </td>
     <td>
       <a href="https://hl7.org/fhir/R4/search.html#date">date</a>
@@ -102,7 +102,7 @@ It           <strong>SHALL NOT</strong>
   </tr>
   <tr>
     <td>
-      <a href="http://hl7.org/fhir/us/core/STU4/SearchParameter-us-core-observation-category.html">category</a>
+      <a href="http://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-category.html">category</a>
     </td>
     <td>
       <a href="https://hl7.org/fhir/R4/search.html#token">token</a>
@@ -142,7 +142,7 @@ It           <strong>SHALL NOT</strong>
   </tr>
   <tr>
     <td>
-      <a href="http://hl7.org/fhir/us/core/STU4/SearchParameter-us-core-observation-code.html">code</a>
+      <a href="http://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-code.html">code</a>
     </td>
     <td>
       <a href="https://hl7.org/fhir/R4/search.html#token">token</a>
@@ -153,25 +153,40 @@ It           <strong>SHALL NOT</strong>
           <strong>The code of the observation type</strong>
           <br/>
 
-          <strong>NOTE</strong>
-: This US Core SearchParameter definition extends the usage context of the
-          <a href="http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html">Conformance expectation extension</a>
+NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the           <a href="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">Conformance expectation extension</a>
+ to define additional expectations for the following SearchParameter elements:
         </p>
 
         <ul>
 
-          <li>multipleAnd</li>
+          <li>
+            <code>multipleAnd</code>
+          </li>
 
-          <li>multipleOr</li>
+          <li>
+            <code>multipleOr</code>
+          </li>
 
-          <li>comparator</li>
+          <li>
+            <code>comparator</code>
+          </li>
 
-          <li>modifier</li>
+          <li>
+            <code>modifier</code>
+          </li>
 
-          <li>chain</li>
+          <li>
+            <code>chain</code>
+          </li>
 
 
         </ul>
+
+        <p>
+It           <strong>SHALL NOT</strong>
+ be used as a search parameter for search. Servers and Clients           <strong>SHOULD</strong>
+ use the standard FHIR SearchParameter.
+        </p>
 
 
       </div>
@@ -454,7 +469,7 @@ It           <strong>SHALL NOT</strong>
   </tr>
   <tr>
     <td>
-      <a href="http://hl7.org/fhir/us/core/STU4/SearchParameter-us-core-observation-date.html">date</a>
+      <a href="http://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-date.html">date</a>
     </td>
     <td>
       <a href="https://hl7.org/fhir/R4/search.html#date">date</a>
@@ -465,25 +480,40 @@ It           <strong>SHALL NOT</strong>
           <strong>Obtained date/time. If the obtained element is a period, a date that falls in the period</strong>
           <br/>
 
-          <strong>NOTE</strong>
-: This US Core SearchParameter definition extends the usage context of the
-          <a href="http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html">Conformance expectation extension</a>
+NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the           <a href="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">Conformance expectation extension</a>
+ to define additional expectations for the following SearchParameter elements:
         </p>
 
         <ul>
 
-          <li>multipleAnd</li>
+          <li>
+            <code>multipleAnd</code>
+          </li>
 
-          <li>multipleOr</li>
+          <li>
+            <code>multipleOr</code>
+          </li>
 
-          <li>comparator</li>
+          <li>
+            <code>comparator</code>
+          </li>
 
-          <li>modifier</li>
+          <li>
+            <code>modifier</code>
+          </li>
 
-          <li>chain</li>
+          <li>
+            <code>chain</code>
+          </li>
 
 
         </ul>
+
+        <p>
+It           <strong>SHALL NOT</strong>
+ be used as a search parameter for search. Servers and Clients           <strong>SHOULD</strong>
+ use the standard FHIR SearchParameter.
+        </p>
 
 
       </div>
@@ -906,7 +936,7 @@ It           <strong>SHALL NOT</strong>
   </tr>
   <tr>
     <td>
-      <a href="http://hl7.org/fhir/us/core/STU4/SearchParameter-us-core-observation-patient.html">patient</a>
+      <a href="http://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-patient.html">patient</a>
     </td>
     <td>
       <a href="https://hl7.org/fhir/R4/search.html#reference">reference</a>
@@ -917,25 +947,40 @@ It           <strong>SHALL NOT</strong>
           <strong>The subject that the observation is about (if patient)</strong>
           <br/>
 
-          <strong>NOTE</strong>
-: This US Core SearchParameter definition extends the usage context of the
-          <a href="http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html">Conformance expectation extension</a>
+NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the           <a href="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">Conformance expectation extension</a>
+ to define additional expectations for the following SearchParameter elements:
         </p>
 
         <ul>
 
-          <li>multipleAnd</li>
+          <li>
+            <code>multipleAnd</code>
+          </li>
 
-          <li>multipleOr</li>
+          <li>
+            <code>multipleOr</code>
+          </li>
 
-          <li>comparator</li>
+          <li>
+            <code>comparator</code>
+          </li>
 
-          <li>modifier</li>
+          <li>
+            <code>modifier</code>
+          </li>
 
-          <li>chain</li>
+          <li>
+            <code>chain</code>
+          </li>
 
 
         </ul>
+
+        <p>
+It           <strong>SHALL NOT</strong>
+ be used as a search parameter for search. Servers and Clients           <strong>SHOULD</strong>
+ use the standard FHIR SearchParameter.
+        </p>
 
 
       </div>
@@ -962,7 +1007,7 @@ It           <strong>SHALL NOT</strong>
   </tr>
   <tr>
     <td>
-      <a href="http://hl7.org/fhir/extensions/1.0.0/SearchParameter-workflow-researchStudy.html">researchStudy</a>
+      <a href="http://hl7.org/fhir/extensions/5.3.0-ballot-tc1/SearchParameter-workflow-researchStudy.html">researchStudy</a>
     </td>
     <td>
       <a href="https://hl7.org/fhir/R4/search.html#reference">reference</a>
@@ -975,7 +1020,7 @@ It           <strong>SHALL NOT</strong>
       </div>
     </td>
     <td>
-      <code>CodeSystem.extension('http://hl7.org/fhir/StructureDefinition/workflow-researchStudy').value</code>
+      <code>DomainResource.extension('http://hl7.org/fhir/StructureDefinition/workflow-researchStudy').value</code>
     </td>
   </tr>
   <tr>
@@ -995,37 +1040,13 @@ It           <strong>SHALL NOT</strong>
     </td>
   </tr>
   <tr>
-    <td>
-      <a href="http://hl7.org/fhir/us/core/STU4/SearchParameter-us-core-observation-status.html">status</a>
-    </td>
+    <td>status</td>
     <td>
       <a href="https://hl7.org/fhir/R4/search.html#token">token</a>
     </td>
     <td>
       <div>
-        <p>
-          <strong>The status of the observation</strong>
-          <br/>
-
-          <strong>NOTE</strong>
-: This US Core SearchParameter definition extends the usage context of the
-          <a href="http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html">Conformance expectation extension</a>
-        </p>
-
-        <ul>
-
-          <li>multipleAnd</li>
-
-          <li>multipleOr</li>
-
-          <li>comparator</li>
-
-          <li>modifier</li>
-
-          <li>chain</li>
-
-
-        </ul>
+        <p>The status of the observation</p>
 
 
       </div>
@@ -1112,6 +1133,26 @@ It           <strong>SHALL NOT</strong>
     </td>
     <td>
       <code>(Observation.value as string) | (Observation.value as CodeableConcept).text</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="http://hl7.org/fhir/extensions/5.3.0/SearchParameter-workflow-EpisodeOfCare.html">workflow-EpisodeOfCare</a>
+    </td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/search.html#reference">reference</a>
+    </td>
+    <td>
+      <div>
+        <p>
+SearchParameter for           <a href="StructureDefinition-workflow-episodeOfCare.html">EpisodeOfCare extension</a>
+        </p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Resource.extension('http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare').value</code>
     </td>
   </tr>
 </table>

@@ -1,4 +1,4 @@
-# GVHD Type Value Set - CIBMTR Reporting Implementation Guide v0.1.10
+# GVHD Type Value Set - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-all-valueset | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:GVHDTypeValueSet |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-all-valueset | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:GVHDTypeValueSet |
 
  
 Permissible values for types of Graft vs Host Disease, from SNOMED CT and ICD-10 
@@ -46,47 +46,35 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "gvhd-all-valueset",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-all-valueset",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "GVHDTypeValueSet",
   "title" : "GVHD Type Value Set",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:49:22-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "Permissible values for types of Graft vs Host Disease, from SNOMED CT and ICD-10",
   "compose" : {
-    "include" : [
-      {
-        "valueSet" : [
-          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-sct-codes"
-        ]
-      },
-      {
-        "valueSet" : [
-          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes"
-        ]
-      }
-    ]
+    "include" : [{
+      "valueSet" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-sct-codes"]
+    },
+    {
+      "valueSet" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes"]
+    }]
   }
 }
 

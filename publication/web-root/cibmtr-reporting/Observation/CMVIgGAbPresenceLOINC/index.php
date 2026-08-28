@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.10/Observation-CMVIgGAbPresenceLOINC.json2');
+  Redirect('https://fhir.nmdp.org/ig/cibmtr-reporting/0.1.12/Observation-CMVIgGAbPresenceLOINC.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.10/Observation-CMVIgGAbPresenceLOINC.json1');
+  Redirect('https://fhir.nmdp.org/ig/cibmtr-reporting/0.1.12/Observation-CMVIgGAbPresenceLOINC.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.10/Observation-CMVIgGAbPresenceLOINC.json');
+  Redirect('https://fhir.nmdp.org/ig/cibmtr-reporting/0.1.12/Observation-CMVIgGAbPresenceLOINC.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.10/Observation-CMVIgGAbPresenceLOINC.xml2');
+  Redirect('https://fhir.nmdp.org/ig/cibmtr-reporting/0.1.12/Observation-CMVIgGAbPresenceLOINC.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.10/Observation-CMVIgGAbPresenceLOINC.xml1');
+  Redirect('https://fhir.nmdp.org/ig/cibmtr-reporting/0.1.12/Observation-CMVIgGAbPresenceLOINC.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.10/Observation-CMVIgGAbPresenceLOINC.html');
+  Redirect('https://fhir.nmdp.org/ig/cibmtr-reporting/0.1.12/Observation-CMVIgGAbPresenceLOINC.html');
 else 
-  Redirect('http://fhir.nmdp.org/ig/cibmtr-reporting/0.1.10/Observation-CMVIgGAbPresenceLOINC.xml');
+  Redirect('https://fhir.nmdp.org/ig/cibmtr-reporting/0.1.12/Observation-CMVIgGAbPresenceLOINC.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

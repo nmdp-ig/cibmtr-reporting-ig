@@ -1,4 +1,4 @@
-# RxNorm - Carmustine - CIBMTR Reporting Implementation Guide v0.1.10
+# RxNorm - Carmustine - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-carmustine-vs | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:RxNormCarmustineVS |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-carmustine-vs | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:RxNormCarmustineVS |
 
  
 RxNorm codes for Carmustine 
@@ -46,114 +46,104 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "med-carmustine-vs",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-carmustine-vs",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "RxNormCarmustineVS",
   "title" : "RxNorm - Carmustine",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:49:22-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "RxNorm codes for Carmustine",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "2105",
+        "display" : "carmustine"
+      },
       {
-        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "concept" : [
-          {
-            "code" : "2105",
-            "display" : "carmustine"
-          },
-          {
-            "code" : "343027",
-            "display" : "BiCNU"
-          },
-          {
-            "code" : "217357",
-            "display" : "Gliadel"
-          },
-          {
-            "code" : "1173621",
-            "display" : "BiCNU Injectable Product"
-          },
-          {
-            "code" : "1729367",
-            "display" : "carmustine 100 MG"
-          },
-          {
-            "code" : "1729370",
-            "display" : "carmustine 100 MG [BiCNU]"
-          },
-          {
-            "code" : "105552",
-            "display" : "carmustine 100 MG Injection [BiCNU]"
-          },
-          {
-            "code" : "337509",
-            "display" : "carmustine 3.3 MG/ML"
-          },
-          {
-            "code" : "564079",
-            "display" : "carmustine 3.3 MG/ML [BiCNU]"
-          },
-          {
-            "code" : "596881",
-            "display" : "carmustine 3.3 MG/ML Injectable Solution [BiCNU]"
-          },
-          {
-            "code" : "340520",
-            "display" : "carmustine 7.7 MG"
-          },
-          {
-            "code" : "378774",
-            "display" : "carmustine Drug Implant"
-          },
-          {
-            "code" : "1151413",
-            "display" : "carmustine Drug Implant Product"
-          },
-          {
-            "code" : "1151727",
-            "display" : "carmustine Injectable Product"
-          },
-          {
-            "code" : "370496",
-            "display" : "carmustine Injectable Solution"
-          },
-          {
-            "code" : "491188",
-            "display" : "carmustine Injectable Solution [BiCNU]"
-          },
-          {
-            "code" : "1729368",
-            "display" : "carmustine Injection"
-          },
-          {
-            "code" : "1729371",
-            "display" : "carmustine Injection [BiCNU]"
-          }
-        ]
-      }
-    ]
+        "code" : "343027",
+        "display" : "BiCNU"
+      },
+      {
+        "code" : "217357",
+        "display" : "Gliadel"
+      },
+      {
+        "code" : "1173621",
+        "display" : "BiCNU Injectable Product"
+      },
+      {
+        "code" : "1729367",
+        "display" : "carmustine 100 MG"
+      },
+      {
+        "code" : "1729370",
+        "display" : "carmustine 100 MG [BiCNU]"
+      },
+      {
+        "code" : "105552",
+        "display" : "carmustine 100 MG Injection [BiCNU]"
+      },
+      {
+        "code" : "337509",
+        "display" : "carmustine 3.3 MG/ML"
+      },
+      {
+        "code" : "564079",
+        "display" : "carmustine 3.3 MG/ML [BiCNU]"
+      },
+      {
+        "code" : "596881",
+        "display" : "carmustine 3.3 MG/ML Injectable Solution [BiCNU]"
+      },
+      {
+        "code" : "340520",
+        "display" : "carmustine 7.7 MG"
+      },
+      {
+        "code" : "378774",
+        "display" : "carmustine Drug Implant"
+      },
+      {
+        "code" : "1151413",
+        "display" : "carmustine Drug Implant Product"
+      },
+      {
+        "code" : "1151727",
+        "display" : "carmustine Injectable Product"
+      },
+      {
+        "code" : "370496",
+        "display" : "carmustine Injectable Solution"
+      },
+      {
+        "code" : "491188",
+        "display" : "carmustine Injectable Solution [BiCNU]"
+      },
+      {
+        "code" : "1729368",
+        "display" : "carmustine Injection"
+      },
+      {
+        "code" : "1729371",
+        "display" : "carmustine Injection [BiCNU]"
+      }]
+    }]
   }
 }
 

@@ -1,11 +1,97 @@
-# Patient - CIBMTR Reporting Implementation Guide v0.1.10
+# Patient - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * **Patient**
 
 ## Patient
 
-### Patient Resources
+[CIBMTR Patient Profile (us-core)](StructureDefinition-cibmtr-patient.md)
+
+### Overview
+
+The CIBMTR Patient Profile (us-core) inherits from the US Core Patient Profile, which in turn inherits from the base FHIR Patient resource. This profile meets the requirements of the U.S. Core Data for Interoperability (USCDI) Patient Demographics/Information Data Class and sets minimum expectations for representing, searching, and retrieving patient demographic and administrative information for CIBMTR use cases. It specifies which elements, extensions, and identifier slices **SHALL** be present and constrains how they are used to support interoperability across CIBMTR reporting workflows.
+
+-------
+
+### Mandatory and Must Support Data Elements
+
+The following data elements must always be present (**Mandatory**) or must be supported if the data is present in the sending system (**Must Support**). They are presented below in a simple human-readable explanation. Profile-specific guidance and examples are provided below.
+
+**Each Patient "Must Have"**
+
+* a patient identifier (e.g., MRN)
+* a patient name
+
+**Each Patient "Must Support"**
+
+* a birth date
+* an address
+
+**Additional USCDI Requirements (for certification testing)** These elements are not Mandatory or Must Support, but are included in the formal definition of the US Core Patient profile and examples:
+
+* contact detail (e.g., a telephone number or an email address)
+* a communication language
+* Interpreter Needed flag
+* a race
+* an ethnicity
+* an ancestry
+* a tribal affiliation
+* sex
+* date of death
+* address use
+* address period
+* name use
+* name period
+* suffix
+
+-------
+
+### Profile-specific Implementation Guidance (CIBMTR)
+
+**Security label requirement (Patient.meta.security)** The CIBMTR Patient profile requires a **meta.security** label identifying the Transplant Center context (e.g., `rc_<CCN>`). This security tag is used as part of the query pattern for searching and for access scoping. **Race and Ethnicity (US Core complex extensions)**
+
+* The complex extensions for Race and Ethnicity allow for one or more codes: 
+* Must Support at least one OMB category code (CDC Race & Ethnicity / CDCREC system)
+* MAY include additional codes from **detailed** race/ethnicity value sets
+* SHALL include a **text** description
+ 
+
+**Ancestry (cIBMTR complex extensions)**
+
+* The complex extensions for Ancestry allow for one or more codes: 
+* Must Support at least one OMB category code (CDC Race / CDCREC system)
+* MAY include additional codes from **detailed** race value sets
+* MAY include codes from CIBMTR ancestry value sets
+ 
+
+**Date of Death**
+
+* Date of death is communicated using `Patient.deceasedDateTime` (systems SHALL support at least this element if supporting `deceased[x]`).
+
+**Previous name / previous address**
+
+* Use `Patient.name.use = "old"` and/or an end date in `Patient.name.period`
+* Use `Patient.address.use = "old"` and/or an end date in `Patient.address.period`
+
+**Interpreter needed and preferred language**
+
+* Servers can use the **US Core Interpreter Needed** extension on Patient or Encounter; clients should support it on both.
+* Systems SHOULD designate the patient’s preferred language in `Patient.communication.preferred`.
+
+**Patient Address**
+
+* For new and updated records, follow the Project US@ Technical Specification for Patient Addresses (per USCDI guidance).
+* For US addresses, use USPS two-letter state codes. For non-US addresses, ISO 3166 subdivision codes are recommended.
+
+**SSN caution**
+
+* **SSNs SHOULD NOT** be used as a patient identifier (`Patient.identifier.value`) due to identity theft and filtering concerns.
+
+-------
+
+### Patient Resources (CIBMTR Server Workflow)
+
+#### Patient Resources
 
 A FHIR Patient resource with an identifier containing the CRID must exist on the CIBMTR FHIR server to be used as a subject reference in Observation or other resources. To prevent multiple identical Patient resources from being created, the client must first check to see if it already exists.
 
@@ -18,7 +104,7 @@ GET <base URL>/r4/Patient?
 
 ```
 
-If the response shows a searchset result with a `total` of 0, then a Patient resource with that CRID has not been created, and a new Patient resource must be created. In this case, proceed to Step 3.
+If the response shows a searchset result with a `total` of 0, then a Patient resource with that CRID has not been created, and a new Patient resource must be created. In this case, proceed to `Submit Patient FHIR Resource`.
 
 If the response shows a `total` of one or more, then at least one Patient with that CRID already exists. In this case, skip Step 3, and go on to Step 4. If more than one Patient was found, then it suggests that someone created a Patient without checking to see if it first exists.
 
@@ -46,7 +132,7 @@ To drive home the point, the
 * `Patient.id` is a local server id, and is used as a subject.reference in other FHIR resources.
 * `Patient.identifier` is a business identifier and the where the CRID is located.
 
-#### Step 3: Submit Patient FHIR Resource
+##### Submit Patient FHIR Resource
 
 If the Patient FHIR resource doesn't already exist, it must be created before any other FHIR resources. The Patient FHIR resource ID is part of the response to the Patient POST request. The resource ID is unique to the CIBMTR FHIR server and is used to reference the Patient subject on all subsequently submitted FHIR resources. The resource ID is assigned by the FHIR server and is different from the Patient.identifier section of the FHIR resource. The Patient ID is **NOT** a Patient CRID.
 
@@ -59,7 +145,7 @@ POST    <base URL>/r4/Patient
 
 The authorization key and bearer token must be included in the request as mentioned in the previous section. FHIR JSON submissions should also include a `content-type` key in the header with value: `application/fhir+json`.
 
-##### Minimum Patient resource
+### Minimum Patient Resource Example
 
 The Patient FHIR resource usually contains the demographics data for the patient, however, since the demographics data is already submitted during the CRID registration process, there are only three primary components necessary in the Patient FHIR resource:
 
@@ -198,4 +284,6 @@ Here's an example with ethnicity included:
 }
 
 ```
+
+-------
 

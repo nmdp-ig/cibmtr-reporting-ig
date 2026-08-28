@@ -1,0 +1,311 @@
+# RxNorm - Prior Exposure: Potential Study Eligibility - CIBMTR Reporting Implementation Guide v0.1.12
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **RxNorm - Prior Exposure: Potential Study Eligibility**
+
+## ValueSet: RxNorm - Prior Exposure: Potential Study Eligibility (Experimental) 
+
+| | |
+| :--- | :--- |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prior-exposure-vs | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:RxNormPriorExposureVS |
+
+ 
+Prior Exposure: Potential Study Eligibility 
+
+ **References** 
+
+* Included into [RxNorm - All of Form 2400](ValueSet-med-all-form2400-vs.md)
+* [CIBMTR Prior Exposure Medication](StructureDefinition-cibmtr-prior-exposure-medication.md)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ Explanation of the columns that may appear on this page: 
+
+| | |
+| :--- | :--- |
+| Level | A few code lists that FHIR defines are hierarchical - each code is assigned a level. In this scheme, some codes are under other codes, and imply that the code they are under also applies |
+| System | The source of the definition of the code (when the value set draws in codes defined elsewhere) |
+| Code | The code (used as the code in the resource instance) |
+| Display | The display (used in the*display*element of a[Coding](http://hl7.org/fhir/R4/datatypes.html#Coding)). If there is no display, implementers should not simply display the code, but map the concept into their application |
+| Definition | An explanation of the meaning of the concept |
+| Comments | Additional notes about how to use the code |
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "med-prior-exposure-vs",
+  "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-prior-exposure-vs",
+  "version" : "0.1.12",
+  "name" : "RxNormPriorExposureVS",
+  "title" : "RxNorm - Prior Exposure: Potential Study Eligibility",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-08-27T20:40:53-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
+  "description" : "Prior Exposure: Potential Study Eligibility",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "10473",
+        "display" : "thiotepa"
+      },
+      {
+        "code" : "1156487",
+        "display" : "thiotepa Injectable Product"
+      },
+      {
+        "code" : "1185673",
+        "display" : "Mylotarg Injectable Product"
+      },
+      {
+        "code" : "1294580",
+        "display" : "gemtuzumab ozogamicin"
+      },
+      {
+        "code" : "1294581",
+        "display" : "gemtuzumab ozogamicin 1 MG/ML"
+      },
+      {
+        "code" : "1294582",
+        "display" : "gemtuzumab ozogamicin Injectable Product"
+      },
+      {
+        "code" : "1294583",
+        "display" : "gemtuzumab ozogamicin Injectable Solution"
+      },
+      {
+        "code" : "1294584",
+        "display" : "gemtuzumab ozogamicin 1 MG/ML Injectable Solution"
+      },
+      {
+        "code" : "1366537",
+        "display" : "Tepadina"
+      },
+      {
+        "code" : "1597258",
+        "display" : "blinatumomab"
+      },
+      {
+        "code" : "1597260",
+        "display" : "blinatumomab Injectable Product"
+      },
+      {
+        "code" : "1597262",
+        "display" : "blinatumomab 0.035 MG Injection"
+      },
+      {
+        "code" : "1597263",
+        "display" : "Blincyto"
+      },
+      {
+        "code" : "1597266",
+        "display" : "Blincyto Injectable Product"
+      },
+      {
+        "code" : "1597267",
+        "display" : "blinatumomab 0.035 MG Injection [Blincyto]"
+      },
+      {
+        "code" : "1651249",
+        "display" : "blinatumomab 0.035 MG"
+      },
+      {
+        "code" : "1651250",
+        "display" : "blinatumomab Injection"
+      },
+      {
+        "code" : "1651252",
+        "display" : "blinatumomab 0.035 MG [Blincyto]"
+      },
+      {
+        "code" : "1651253",
+        "display" : "blinatumomab Injection [Blincyto]"
+      },
+      {
+        "code" : "1660002",
+        "display" : "thiotepa 100 MG"
+      },
+      {
+        "code" : "1660003",
+        "display" : "thiotepa Injection"
+      },
+      {
+        "code" : "1660004",
+        "display" : "thiotepa 100 MG Injection"
+      },
+      {
+        "code" : "1660008",
+        "display" : "thiotepa 15 MG"
+      },
+      {
+        "code" : "1660009",
+        "display" : "thiotepa 15 MG Injection"
+      },
+      {
+        "code" : "1919206",
+        "display" : "thiotepa 100 MG [Tepadina]"
+      },
+      {
+        "code" : "1919207",
+        "display" : "thiotepa Injection [Tepadina]"
+      },
+      {
+        "code" : "1919208",
+        "display" : "Tepadina Injectable Product"
+      },
+      {
+        "code" : "1919209",
+        "display" : "thiotepa 100 MG Injection [Tepadina]"
+      },
+      {
+        "code" : "1919210",
+        "display" : "thiotepa 15 MG [Tepadina]"
+      },
+      {
+        "code" : "1919211",
+        "display" : "thiotepa 15 MG Injection [Tepadina]"
+      },
+      {
+        "code" : "1942950",
+        "display" : "inotuzumab ozogamicin"
+      },
+      {
+        "code" : "1942951",
+        "display" : "inotuzumab ozogamicin 0.9 MG"
+      },
+      {
+        "code" : "1942952",
+        "display" : "inotuzumab ozogamicin Injectable Product"
+      },
+      {
+        "code" : "1942953",
+        "display" : "inotuzumab ozogamicin Injection"
+      },
+      {
+        "code" : "1942954",
+        "display" : "inotuzumab ozogamicin 0.9 MG Injection"
+      },
+      {
+        "code" : "1942955",
+        "display" : "Besponsa"
+      },
+      {
+        "code" : "1942956",
+        "display" : "inotuzumab ozogamicin 0.9 MG [Besponsa]"
+      },
+      {
+        "code" : "1942957",
+        "display" : "inotuzumab ozogamicin Injection [Besponsa]"
+      },
+      {
+        "code" : "1942958",
+        "display" : "Besponsa Injectable Product"
+      },
+      {
+        "code" : "1942959",
+        "display" : "inotuzumab ozogamicin 0.9 MG Injection [Besponsa]"
+      },
+      {
+        "code" : "1944699",
+        "display" : "gemtuzumab ozogamicin 4.5 MG"
+      },
+      {
+        "code" : "1944700",
+        "display" : "gemtuzumab ozogamicin Injection"
+      },
+      {
+        "code" : "1944701",
+        "display" : "gemtuzumab ozogamicin 4.5 MG Injection"
+      },
+      {
+        "code" : "1944702",
+        "display" : "gemtuzumab ozogamicin 4.5 MG [Mylotarg]"
+      },
+      {
+        "code" : "1944703",
+        "display" : "gemtuzumab ozogamicin Injection [Mylotarg]"
+      },
+      {
+        "code" : "1944704",
+        "display" : "gemtuzumab ozogamicin 4.5 MG Injection [Mylotarg]"
+      },
+      {
+        "code" : "2054068",
+        "display" : "mogamulizumab"
+      },
+      {
+        "code" : "2054077",
+        "display" : "mogamulizumab-kpkc"
+      },
+      {
+        "code" : "2054078",
+        "display" : "mogamulizumab-kpkc 4 MG/ML"
+      },
+      {
+        "code" : "2054079",
+        "display" : "mogamulizumab Injectable Product"
+      },
+      {
+        "code" : "2054080",
+        "display" : "mogamulizumab Injection"
+      },
+      {
+        "code" : "2054081",
+        "display" : "5 ML mogamulizumab-kpkc 4 MG/ML Injection"
+      },
+      {
+        "code" : "2054082",
+        "display" : "Poteligeo"
+      },
+      {
+        "code" : "2054083",
+        "display" : "mogamulizumab-kpkc 4 MG/ML [Poteligeo]"
+      },
+      {
+        "code" : "2054084",
+        "display" : "mogamulizumab Injection [Poteligeo]"
+      },
+      {
+        "code" : "2054085",
+        "display" : "Poteligeo Injectable Product"
+      },
+      {
+        "code" : "2054086",
+        "display" : "5 ML mogamulizumab-kpkc 4 MG/ML Injection [Poteligeo]"
+      },
+      {
+        "code" : "261585",
+        "display" : "Mylotarg"
+      }]
+    }]
+  }
+}
+
+```

@@ -1,4 +1,4 @@
-# CBC panel - Blood by Automated count (58410-2) - CIBMTR Reporting Implementation Guide v0.1.10
+# CBC panel - Blood by Automated count (58410-2) - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,16 +8,16 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-blood-automated-vs | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:CBCBloodAutomatedVS |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-blood-automated-vs | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:CBCBloodAutomatedVS |
 
  
 CBC panel - Blood by Automated count (58410-2) 
 
  **References** 
 
-* Included into [CBCWAutoDifferentialBloodVS](ValueSet-cbc-w-auto-differential-blood-vs.md)
-* Included into [CBCWOrderedManualDifferentialBloodVS](ValueSet-cbc-w-ordered-manual-differential-blood-vs.md)
+* Included into [CBC W Auto Differential panel - Blood (57021-8)](ValueSet-cbc-w-auto-differential-blood-vs.md)
+* Included into [CBC W Ordered Manual Differential panel - Blood (57782-5)](ValueSet-cbc-w-ordered-manual-differential-blood-vs.md)
 
 ### Logical Definition (CLD)
 
@@ -47,90 +47,80 @@ CBC panel - Blood by Automated count (58410-2)
   "resourceType" : "ValueSet",
   "id" : "cbc-blood-automated-vs",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-blood-automated-vs",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "CBCBloodAutomatedVS",
   "title" : "CBC panel - Blood by Automated count (58410-2)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:49:22-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "CBC panel - Blood by Automated count (58410-2)",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "6690-2",
+        "display" : "Leukocytes [#/volume] in Blood by Automated count"
+      },
       {
-        "system" : "http://loinc.org",
-        "concept" : [
-          {
-            "code" : "6690-2",
-            "display" : "Leukocytes [#/volume] in Blood by Automated count"
-          },
-          {
-            "code" : "789-8",
-            "display" : "Erythrocytes [#/volume] in Blood by Automated count"
-          },
-          {
-            "code" : "718-7",
-            "display" : "Hemoglobin [Mass/volume] in Blood"
-          },
-          {
-            "code" : "4544-3",
-            "display" : "Hematocrit [Volume Fraction] of Blood by Automated count"
-          },
-          {
-            "code" : "787-2",
-            "display" : "MCV [Entitic volume] by Automated count"
-          },
-          {
-            "code" : "785-6",
-            "display" : "MCH [Entitic mass] by Automated count"
-          },
-          {
-            "code" : "786-4",
-            "display" : "MCHC [Mass/volume] by Automated count"
-          },
-          {
-            "code" : "21000-5",
-            "display" : "Erythrocyte distribution width [Entitic volume] by Automated count"
-          },
-          {
-            "code" : "788-0",
-            "display" : "Erythrocyte distribution width [Ratio] by Automated count"
-          },
-          {
-            "code" : "777-3",
-            "display" : "Platelets [#/volume] in Blood by Automated count"
-          },
-          {
-            "code" : "32207-3",
-            "display" : "Platelet distribution width [Entitic volume] in Blood by Automated count"
-          },
-          {
-            "code" : "32623-1",
-            "display" : "Platelet mean volume [Entitic volume] in Blood by Automated count"
-          }
-        ]
-      }
-    ]
+        "code" : "789-8",
+        "display" : "Erythrocytes [#/volume] in Blood by Automated count"
+      },
+      {
+        "code" : "718-7",
+        "display" : "Hemoglobin [Mass/volume] in Blood"
+      },
+      {
+        "code" : "4544-3",
+        "display" : "Hematocrit [Volume Fraction] of Blood by Automated count"
+      },
+      {
+        "code" : "787-2",
+        "display" : "MCV [Entitic volume] by Automated count"
+      },
+      {
+        "code" : "785-6",
+        "display" : "MCH [Entitic mass] by Automated count"
+      },
+      {
+        "code" : "786-4",
+        "display" : "MCHC [Mass/volume] by Automated count"
+      },
+      {
+        "code" : "21000-5",
+        "display" : "Erythrocyte distribution width [Entitic volume] by Automated count"
+      },
+      {
+        "code" : "788-0",
+        "display" : "Erythrocyte distribution width [Ratio] by Automated count"
+      },
+      {
+        "code" : "777-3",
+        "display" : "Platelets [#/volume] in Blood by Automated count"
+      },
+      {
+        "code" : "32207-3",
+        "display" : "Platelet distribution width [Entitic volume] in Blood by Automated count"
+      },
+      {
+        "code" : "32623-1",
+        "display" : "Platelet mean volume [Entitic volume] in Blood by Automated count"
+      }]
+    }]
   }
 }
 

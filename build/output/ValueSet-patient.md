@@ -1,4 +1,4 @@
-# CIBMTR Patient Ancestry Value Set - CIBMTR Reporting Implementation Guide v0.1.10
+# CIBMTR Patient Ancestry Value Set - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/patient | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:Patient |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/patient | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:Patient |
 
  
 US Core Race Categories (Intensional). 1. This value set is used by me 
@@ -46,54 +46,44 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "patient",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/patient",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "Patient",
   "title" : "CIBMTR Patient Ancestry Value Set",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:01:54-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "US Core Race Categories (Intensional).\r\n1.\nThis value set is used by me",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "3141-9",
+        "display" : "Body weight Patient Mass Pt Qn Measured"
+      },
       {
-        "system" : "http://loinc.org",
-        "concept" : [
-          {
-            "code" : "3141-9",
-            "display" : "Body weight Patient Mass Pt Qn Measured"
-          },
-          {
-            "code" : "8352-7",
-            "display" : "Clothing worn during measure Patient Type Pt Nom"
-          },
-          {
-            "code" : "8361-8",
-            "display" : "Body position with respect to gravity Patient Type Pt Nom"
-          }
-        ]
-      }
-    ]
+        "code" : "8352-7",
+        "display" : "Clothing worn during measure Patient Type Pt Nom"
+      },
+      {
+        "code" : "8361-8",
+        "display" : "Body position with respect to gravity Patient Type Pt Nom"
+      }]
+    }]
   }
 }
 

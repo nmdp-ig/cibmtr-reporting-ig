@@ -118,16 +118,25 @@ jobs:
           mkdir -p publication/web-root/cibmtr-reporting/${{ steps.meta.outputs.version }}
           cp -r build/output/* publication/web-root/cibmtr-reporting/${{ steps.meta.outputs.version }}/
 
-      # Run publish-update to generate history and package registry
+      # Run publish-update to generate history and package registry.
+      # -folder must be the WEB ROOT (the parent that contains the IG dir),
+      # not the IG dir itself. publish-update locates each IG by appending the
+      # canonical-minus-url path (/cibmtr-reporting) to -folder. Pointing
+      # -folder at .../cibmtr-reporting doubled that segment
+      # (.../cibmtr-reporting/cibmtr-reporting/<ver>) and every version was
+      # reported "not found". publish-setup.json / package-list.json live at
+      # the web-root level accordingly. history.html is still written into
+      # web-root/cibmtr-reporting/ (the resolved IG dir), where the theme step
+      # and Pages upload expect it.
       - name: Run publish-update
         working-directory: .
         run: |
-          cp build/publish-setup.json publication/web-root/cibmtr-reporting/publish-setup.json
+          cp build/publish-setup.json publication/web-root/publish-setup.json
           # Must copy AFTER the output overlay since build/output/ has its own single-version package-list.json
-          cp build/package-list.json publication/web-root/cibmtr-reporting/package-list.json
+          cp build/package-list.json publication/web-root/package-list.json
           echo "y" | java -Xmx4g -jar build/input-cache/publisher.jar \
             -publish-update \
-            -folder publication/web-root/cibmtr-reporting \
+            -folder publication/web-root \
             -registry ig-registry/fhir-ig-list.json \
             -history fhir-ig-history-template
         continue-on-error: true

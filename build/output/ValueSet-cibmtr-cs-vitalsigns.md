@@ -1,4 +1,4 @@
-# CIBMTR Vital Signs Concept Set - CIBMTR Reporting Implementation Guide v0.1.10
+# CIBMTR Vital Signs Concept Set - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-cs-vitalsigns | *Version*:0.1.10 |
-| Active as of 2026-04-23 | *Computable Name*:CIBMTRConceptSet_VitalSigns |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-cs-vitalsigns | *Version*:0.1.12 |
+| Active as of 2026-08-27 | *Computable Name*:CIBMTRConceptSet_VitalSigns |
 
  
 CIBMTR Vital Signs Concept Set 
@@ -48,33 +48,27 @@ No formal definition provided for this value set
   "resourceType" : "ValueSet",
   "id" : "cibmtr-cs-vitalsigns",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-cs-vitalsigns",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "CIBMTRConceptSet_VitalSigns",
   "title" : "CIBMTR Vital Signs Concept Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:01:54-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "CIBMTR Vital Signs Concept Set"
 }
 

@@ -1,4 +1,4 @@
-# CIBMTR Mobilizing Agents Medication - CIBMTR Reporting Implementation Guide v0.1.10
+# CIBMTR Mobilizing Agents Medication - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-mobilizing-agent-medication | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:CIBMTR_MobilizingAgentMedication |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-mobilizing-agent-medication | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:CIBMTR_MobilizingAgentMedication |
 
  
 CIBMTR Mobilizing Agents (auto only) Medication 
@@ -18,7 +18,7 @@ CIBMTR Mobilizing Agents (auto only) Medication
 
 * Examples for this Profile: [Medication/Medication-Mobilizing-Agent-Example](Medication-Medication-Mobilizing-Agent-Example.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/nmdp.fhir.cibmtr-reporting|current/StructureDefinition/cibmtr-mobilizing-agent-medication)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/nmdp.fhir.cibmtr-reporting|current/StructureDefinition/StructureDefinition-cibmtr-mobilizing-agent-medication.json)
 
 ### Formal Views of Profile Content
 
@@ -37,76 +37,66 @@ Other representations of profile: [CSV](StructureDefinition-cibmtr-mobilizing-ag
   "resourceType" : "StructureDefinition",
   "id" : "cibmtr-mobilizing-agent-medication",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-mobilizing-agent-medication",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "CIBMTR_MobilizingAgentMedication",
   "title" : "CIBMTR Mobilizing Agents Medication",
   "status" : "draft",
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:49:22-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "CIBMTR Mobilizing Agents (auto only) Medication",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "script10.6",
-      "uri" : "http://ncpdp.org/SCRIPT10_6",
-      "name" : "Mapping to NCPDP SCRIPT 10.6"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "script10.6",
+    "uri" : "http://ncpdp.org/SCRIPT10_6",
+    "name" : "Mapping to NCPDP SCRIPT 10.6"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Medication",
   "baseDefinition" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Medication",
-        "path" : "Medication"
-      },
-      {
-        "id" : "Medication.code.coding",
-        "path" : "Medication.code.coding",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.2/expansion"
-        }
+    "element" : [{
+      "id" : "Medication",
+      "path" : "Medication"
+    },
+    {
+      "id" : "Medication.code.coding",
+      "path" : "Medication.code.coding",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-mobilizing-agents-vs"
       }
-    ]
+    }]
   }
 }
 

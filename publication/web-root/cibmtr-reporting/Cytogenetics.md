@@ -1,4 +1,4 @@
-# Cytogenetics - CIBMTR Reporting Implementation Guide v0.1.10
+# Cytogenetics - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * **Cytogenetics**

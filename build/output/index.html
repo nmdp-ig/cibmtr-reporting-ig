@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Home - CIBMTR Reporting Implementation Guide v0.1.10</title>
+    <title>Home - CIBMTR Reporting Implementation Guide v0.1.12</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -129,7 +129,7 @@ h1 {
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.10 - Trial Use 1
+            <span style="display:inline-block;">0.1.12 - Trial Use 1
 
 
             </span>
@@ -186,10 +186,10 @@ h1 {
         <a href="Laboratory-Observations.html">Lab Observations</a>
       </li>
       <li>
-        <a href="Medications.html">Medications</a>
+        <a href="StructureDefinition-cibmtr-medications.html">Medications</a>
       </li>
       <li>
-        <a href="Vital-Signs.html">Vital Signs</a>
+        <a href="StructureDefinition-cibmtr-vital-signs.html">Vital Signs</a>
       </li>
       <li>
         <a href="Bundles.html">Bundles</a>
@@ -207,9 +207,6 @@ h1 {
         <a href="Appendices.html">Appendices</a>
       </li>
     </ul>
-  </li>
-  <li>
-    <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR (STU3)</a>
   </li>
   <li>
     <a href="artifacts.html">Artifact Index</a>
@@ -256,7 +253,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.10) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://fhir.nmdp.org/ig/cibmtr-reporting/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">CIBMTR Reporting Implementation Guide - Local Development build (v0.1.12) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://fhir.nmdp.org/ig/cibmtr-reporting/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -271,7 +268,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/nmdp.fhir.cibmtr-reporting<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/nmdp.fhir.cibmtr-reporting"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.10<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/nmdp.fhir.cibmtr-reporting|0.1.10"/></span>
+      <span class="copy-text">0.1.12<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/cibmtr-reporting/ImplementationGuide/nmdp.fhir.cibmtr-reporting|0.1.12"/></span>
       </td>
     </tr>
 
@@ -287,7 +284,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2026-04-23
+            as of 2026-08-27
           
         
       </td>
@@ -314,8 +311,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
-  <li><a href="#guidance" id="markdown-toc-guidance">Guidance</a></li>
-  <li><a href="#highlighted-artifacts" id="markdown-toc-highlighted-artifacts">Highlighted Artifacts</a></li>
+  <li><a href="#implementation-guidance-and-profiles" id="markdown-toc-implementation-guidance-and-profiles">Implementation Guidance and Profiles</a></li>
+  <li><a href="#cibmtr-program-specific-profiles" id="markdown-toc-cibmtr-program-specific-profiles">CIBMTR Program-Specific Profiles</a></li>
+  <li><a href="#valuesets" id="markdown-toc-valuesets">ValueSets</a></li>
 </ul>
 
 </div>
@@ -335,7 +333,7 @@ For information on submitting to our Direct FHIR endpoints using <a href="http:/
 <h3 id="introduction">Introduction</h3>
 
 <p>The <a href="https://www.cibmtr.org">Center for International Blood &amp; Marrow Transplant Research® (CIBMTR®)</a>
-is a research collaboration between the <a href="https://bethematch.org">National Marrow Donor Program® (NMDP)/Be The Match®</a>
+is a research collaboration between <a href="https://www.nmdp.org/">NMDP</a>
 and the <a href="https://www.mcw.edu">Medical College of Wisconsin (MCW)</a>. 
 The CIBMTR collaborates with the global scientific community to advance hematopoietic cell 
 transplantation (HCT) and other cellular therapy worldwide to increase survival and enrich 
@@ -360,7 +358,7 @@ focusing on a set of variables that have been identified as a priority for the C
 begun describing how medication-related resources may be reported, specifically in the context of <a href="https://www.cibmtr.org/manuals/fim/1/en/topic/2400">CIBMTR Form 2400 (Pre-TED)</a>. Future versions of this IG will include
 other FHIR resources such as Condition, Procedure, Encounter, EpisdoeOfCare, etc.</p>
 
-<h3 id="guidance">Guidance</h3>
+<h3 id="implementation-guidance-and-profiles">Implementation Guidance and Profiles</h3>
 <p>Guidance on connecting to and sending data to the Direct FHIR API is found in the links below.</p>
 
 <ul>
@@ -381,25 +379,25 @@ other FHIR resources such as Condition, Procedure, Encounter, EpisdoeOfCare, etc
   </li>
   <li><a href="CRID-Assignment_FHIR.html">CRID Assignment_FHIR API</a>
     <ul>
-      <li>Description of how to assign a CRID for Patient. This uses a FHIR API to submit patient demographic data to CIBMTR.</li>
+      <li>Description of how to assign a CRID for a patient using a FHIR API to submit patient demographic data to CIBMTR.</li>
     </ul>
   </li>
-  <li><a href="Patient.html">Patient</a>
+  <li><a href="StructureDefinition-cibmtr-patient.html">CIBMTR Patient</a>
     <ul>
       <li>Description of how to send patient information in FHIR resources</li>
     </ul>
   </li>
-  <li><a href="Laboratory-Observations.html">Laboratory Observations</a>
+  <li><a href="StructureDefinition-cibmtr-observation-lab.html">CIBMTR Laboratory Observations</a>
     <ul>
       <li>Description of how to send lab values in FHIR Observations.</li>
     </ul>
   </li>
-  <li><a href="Medications.html">Medications</a>
+  <li><a href="StructureDefinition-cibmtr-medications.html">CIBMTR Medications</a>
     <ul>
       <li>Description of how to send medication-related FHIR resources</li>
     </ul>
   </li>
-  <li><a href="Vital-Signs.html">Vital Signs</a>
+  <li><a href="StructureDefinition-cibmtr-vital-signs.html">CIBMTR Vital Signs</a>
     <ul>
       <li>Description of how to send vital sign values in FHIR resources</li>
     </ul>
@@ -416,18 +414,15 @@ other FHIR resources such as Condition, Procedure, Encounter, EpisdoeOfCare, etc
   </li>
 </ul>
 
-<h3 id="highlighted-artifacts">Highlighted Artifacts</h3>
-
-<h4 id="profiles">Profiles</h4>
+<h3 id="cibmtr-program-specific-profiles">CIBMTR Program-Specific Profiles</h3>
 
 <ul>
-  <li><a href="StructureDefinition-cibmtr-patient.html">CIBMTR Patient</a> - derived from US-Core</li>
-  <li><a href="StructureDefinition-cibmtr-observation-lab.html">Laboratory Observation Results</a> - derived from US-Core
+  <li>Laboratory Observation Profile
     <ul>
       <li><a href="StructureDefinition-cibmtr-obs-priority-variables.html">Laboratory Observation for Priority Variables</a> - derived from the general CIBMTR lab Observation, but bound to the FY2022 priority ValueSet</li>
     </ul>
   </li>
-  <li>Medication-related Profiles
+  <li>Medication Profile
     <ul>
       <li><a href="StructureDefinition-cibmtr-medication-request.html">MedicationRequest</a> - derived from mCode</li>
       <li><a href="StructureDefinition-cibmtr-medication.html">Medication</a> - derived from US-Core
@@ -442,7 +437,7 @@ other FHIR resources such as Condition, Procedure, Encounter, EpisdoeOfCare, etc
       </li>
     </ul>
   </li>
-  <li><a href="StructureDefinition-cibmtr-vital-signs.html">CIBMTR Vital Signs</a> - derived from US-Core
+  <li>Vital Signs Profile
     <ul>
       <li><a href="StructureDefinition-cibmtr-vital-signs-height.html">CIBMTR Vital Signs-Height</a> - derived from US-Core</li>
       <li><a href="StructureDefinition-cibmtr-vital-signs-weight.html">CIBMTR Vital Signs-Weight</a> - derived from US-Core</li>
@@ -450,7 +445,7 @@ other FHIR resources such as Condition, Procedure, Encounter, EpisdoeOfCare, etc
   </li>
 </ul>
 
-<h4 id="valuesets">ValueSets</h4>
+<h3 id="valuesets">ValueSets</h3>
 <ul>
   <li>Observation Resource
     <ul>
@@ -494,8 +489,8 @@ if(window.location.hash != "") {
 <div class="container">  <!-- container -->
 <div class="inner-wrapper">
   <p>
-    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.10 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 23, 2026 10:10-0500">2026-04-23</span>
+    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and NMDP</a>  
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.12 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 27, 2026 20:01-0500">2026-08-27</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

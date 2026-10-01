@@ -1,4 +1,4 @@
-# CIBMTR Vital Signs Results Profile (US Core) - CIBMTR Reporting Implementation Guide v0.1.10
+# CIBMTR Vital Signs Results Profile (US Core) - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,14 +8,53 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-vital-signs | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:CIBMTRVitalSignsVariables |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-vital-signs | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:CIBMTRVitalSignsVariables |
+
+### Overview
+
+The CIBMTR Vital Signs Profile inherits from the US Core Vital Signs Profile, which in turn inherits from the base FHIR Observation resource. This profile constrains the representation, coding, and usage of vital sign observations to support consistent reporting and downstream use in CIBMTR data collection and analysis workflows.
+
+This profile establishes minimum expectations for representing vital sign measurements (e.g., body height, body weight) recorded for a patient and submitted to the CIBMTR FHIR server. It specifies the required elements, extensions, and identifier slices, and defines how they **SHALL** be used to support standardized reporting to CIBMTR.
+
+### Mandatory and Must Support Data Elements
+
+The following data elements must always be present (**Must Have**) or must be supported if the data is present in the sending system (**Must Support**).
+
+**Each Vital Signs Observation Must Have:**
+
+* security label
+* status
+* code identifying the vital sign being measured
+* patient reference (subject)
+* clinically relevant time
+
+**Each Vital Signs Observation Must Support:**
+
+* performer
+* result value
+* reason if the value is absent
+* component results
+
+### Profile-specific Implementation Guidance (CIBMTR)
+
+**Security label requirement (meta.security)**
+ The CIBMTR vital signs profile requires a **meta.security** label identifying the Transplant Center context (e.g., `rc_<CCN>`). This security tag is used as part of the query pattern for searching and for access scoping.
+
+**subject**
+ The **subject** element is mandatory and must contain a reference to a Patient resource identifying the individual whose vital signs are being recorded.
+
+**code**
+ The code element identifies the vital sign being measured. Vital sign codes are typically represented using LOINC codes or CIBMTR-defined laboratory ValueSets where applicable. A code system value **SHOULD** be supplied for each code.
+
+**value**
+ Vital signs result values are represented as numeric quantities, and systems **SHOULD** use a standard UCUM unit.
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* This Profile is not used by any profiles in this Specification
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/nmdp.fhir.cibmtr-reporting|current/StructureDefinition/cibmtr-vital-signs)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/nmdp.fhir.cibmtr-reporting|current/StructureDefinition/StructureDefinition-cibmtr-vital-signs.json)
 
 ### Formal Views of Profile Content
 
@@ -24,6 +63,69 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
  
 
 Other representations of profile: [CSV](StructureDefinition-cibmtr-vital-signs.csv), [Excel](StructureDefinition-cibmtr-vital-signs.xlsx), [Schematron](StructureDefinition-cibmtr-vital-signs.sch) 
+
+### Notes:
+
+#### valueQuantity
+
+Vital Signs values can be reported in many forms. CIBMTR currently supports only "valueQuantity" and does not support other `value[x]` data types (e.g., `valueString`, `valueCodeableConcept`).
+
+Vital sign values **SHALL** be reported using UCUM units as defined by the US Core Vital Signs profile. Client systems **SHALL** ensure that numeric values and units are aligned to avoid misinterpretation or validation errors.
+
+**Example: valueQuantity using UCUM units**
+
+```
+"valueQuantity" : {
+    "value" : 65.899999999999991,
+    "unit" : "in",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "[in_i]"
+}
+
+```
+
+#### Special rules:
+
+* One code in observation.code must have a fixed `Observation.code.coding.code` provided in the [FHIR core specification vital signs table](https://hl7.org/fhir/R4/observation-vitalsigns.html#vitals-table.html). For example, the fixed code 8302-2 is required in body height fhir data,
+* Each vital signs Observation **SHALL** include a LOINC code in `Observation.code.coding.code` that corresponds to one of the fixed codes defined in the FHIR core Vital Signs table. The required LOINC code identifies the type of vital sign being reported.
+
+
+  For example, a Body Height observation **SHALL** include the fixed LOINC code `8302-2`:
+
+```
+"coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "8302-2", 
+      "display" : "Body height"
+    }]
+
+```
+
+* An Observation MAY include additional codes in Observation.code.coding that further qualify, translate, or map to the primary vital sign code. Examples include:
+
+
+  -a local system-specific code -a more specific LOINC code in addition to the fixed code
+
+
+  For example, a Body Weight observation may include both the fixed code 29463-7 (Body weight) and a more specific code such as 3141-9 (Body weight Measured):
+
+```
+"coding" : [
+    {"system":"http://loinc.org",
+     "code":"29463-7",
+     "display":"Body weight"},
+
+    {"system":"http://loinc.org",
+     "code":"3141-9",
+     "display":"Body weight Measured"}
+    ]
+
+```
+
+A code system value **SHOULD** be supplied for each additional code.
+
+* The observations **MAY** have component observations. For example, to qualify the vital sign observation, 8310-5 - Body temperature, 8327-9 - Body temperature measurement site (oral, forehead, rectal, etc.) may be used as a component observation. The FHIR core specification vital signs table provides several of these.
+* An Observation **MAY** include component observations to further qualify the measurement. For example, to qualify the vital sign observation, 8310-5 - Body temperature, 8327-9 - Body temperature measurement site (oral, forehead, rectal, etc.) may be used as a component observation. The FHIR core specification vital signs table provides several of these.
 
 
 
@@ -34,143 +136,125 @@ Other representations of profile: [CSV](StructureDefinition-cibmtr-vital-signs.c
   "resourceType" : "StructureDefinition",
   "id" : "cibmtr-vital-signs",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-vital-signs",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "CIBMTRVitalSignsVariables",
   "title" : "CIBMTR Vital Signs Results Profile (US Core)",
   "status" : "draft",
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:01:54-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "sct-concept",
-      "uri" : "http://snomed.info/conceptdomain",
-      "name" : "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "sct-attr",
-      "uri" : "http://snomed.org/attributebinding",
-      "name" : "SNOMED CT Attribute Binding"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
   "baseDefinition" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Observation",
-        "path" : "Observation"
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation"
+    },
+    {
+      "id" : "Observation.meta.security",
+      "path" : "Observation.meta.security",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "system"
+        }],
+        "description" : "slicing on meta.security",
+        "rules" : "open"
       },
-      {
-        "id" : "Observation.meta.security",
-        "path" : "Observation.meta.security",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "pattern",
-              "path" : "system"
-            }
-          ],
-          "description" : "slicing on meta.security",
-          "rules" : "open"
-        },
-        "min" : 1
-      },
-      {
-        "id" : "Observation.meta.security:TransplantCenter",
-        "path" : "Observation.meta.security",
-        "sliceName" : "TransplantCenter",
-        "min" : 1,
-        "max" : "1",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.meta.security:TransplantCenter.system",
-        "path" : "Observation.meta.security.system",
-        "min" : 1,
-        "patternUri" : "http://terminology.cibmtr.org/codesystem/transplant-center"
-      },
-      {
-        "id" : "Observation.meta.security:TransplantCenter.code",
-        "path" : "Observation.meta.security.code",
-        "min" : 1,
-        "constraint" : [
-          {
-            "key" : "sec-rc",
-            "severity" : "error",
-            "human" : "Use transplant center identifier for security tag",
-            "expression" : "matches('^rc_[0-9]{5}$')",
-            "source" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-vital-signs"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.code",
-        "path" : "Observation.code",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.1/expansion"
-        }
-      },
-      {
-        "id" : "Observation.value[x]",
-        "path" : "Observation.value[x]",
-        "type" : [
-          {
-            "extension" : [
-              {
-                "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                "valueBoolean" : true
-              }
-            ],
-            "code" : "Quantity"
-          }
-        ]
+      "min" : 1
+    },
+    {
+      "id" : "Observation.meta.security:TransplantCenter",
+      "path" : "Observation.meta.security",
+      "sliceName" : "TransplantCenter",
+      "min" : 1,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.meta.security:TransplantCenter.system",
+      "path" : "Observation.meta.security.system",
+      "min" : 1,
+      "patternUri" : "http://terminology.cibmtr.org/codesystem/transplant-center"
+    },
+    {
+      "id" : "Observation.meta.security:TransplantCenter.code",
+      "path" : "Observation.meta.security.code",
+      "min" : 1,
+      "constraint" : [{
+        "key" : "sec-rc",
+        "severity" : "error",
+        "human" : "Use transplant center identifier for security tag",
+        "expression" : "matches('^rc_[0-9]{5}$')",
+        "source" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-vital-signs"
+      }]
+    },
+    {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.1/expansion"
       }
-    ]
+    },
+    {
+      "id" : "Observation.value[x]",
+      "path" : "Observation.value[x]",
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+          "valueBoolean" : true
+        }],
+        "code" : "Quantity"
+      }]
+    }]
   }
 }
 

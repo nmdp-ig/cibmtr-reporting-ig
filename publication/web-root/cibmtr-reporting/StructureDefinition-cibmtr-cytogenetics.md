@@ -1,4 +1,4 @@
-# CIBMTR Cytogenetics Profile - CIBMTR Reporting Implementation Guide v0.1.10
+# CIBMTR Cytogenetics Profile - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-cytogenetics | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:CIBMTRCytogenetics |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-cytogenetics | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:CIBMTRCytogenetics |
 
  
 CIBMTR Cytogenetics Profile to capture ISCN 
@@ -22,7 +22,7 @@ This is describes how cytogenetics can be reported via ISCN strings in a FHIR Ob
 
 * Examples for this Profile: [Observation/Cytogenetics-Example-1](Observation-Cytogenetics-Example-1.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/nmdp.fhir.cibmtr-reporting|current/StructureDefinition/cibmtr-cytogenetics)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/nmdp.fhir.cibmtr-reporting|current/StructureDefinition/StructureDefinition-cibmtr-cytogenetics.json)
 
 ### Formal Views of Profile Content
 
@@ -41,187 +41,165 @@ Other representations of profile: [CSV](StructureDefinition-cibmtr-cytogenetics.
   "resourceType" : "StructureDefinition",
   "id" : "cibmtr-cytogenetics",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-cytogenetics",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "CIBMTRCytogenetics",
   "title" : "CIBMTR Cytogenetics Profile",
   "status" : "draft",
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:49:22-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "CIBMTR Cytogenetics Profile to capture ISCN",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "sct-concept",
-      "uri" : "http://snomed.info/conceptdomain",
-      "name" : "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "sct-attr",
-      "uri" : "http://snomed.org/attributebinding",
-      "name" : "SNOMED CT Attribute Binding"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
   "baseDefinition" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Observation",
-        "path" : "Observation"
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation"
+    },
+    {
+      "id" : "Observation.meta.security",
+      "path" : "Observation.meta.security",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "system"
+        }],
+        "description" : "slicing on meta.security",
+        "rules" : "open"
       },
-      {
-        "id" : "Observation.meta.security",
-        "path" : "Observation.meta.security",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "pattern",
-              "path" : "system"
-            }
-          ],
-          "description" : "slicing on meta.security",
-          "rules" : "open"
-        },
-        "min" : 1
+      "min" : 1
+    },
+    {
+      "id" : "Observation.meta.security:TransplantCenter",
+      "path" : "Observation.meta.security",
+      "sliceName" : "TransplantCenter",
+      "min" : 1,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.meta.security:TransplantCenter.system",
+      "path" : "Observation.meta.security.system",
+      "min" : 1,
+      "patternUri" : "http://terminology.cibmtr.org/codesystem/transplant-center"
+    },
+    {
+      "id" : "Observation.meta.security:TransplantCenter.code",
+      "path" : "Observation.meta.security.code",
+      "min" : 1,
+      "constraint" : [{
+        "key" : "sec-rc",
+        "severity" : "error",
+        "human" : "Use transplant center identifier for security tag",
+        "expression" : "matches('^rc_[0-9]{5}$')",
+        "source" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-cytogenetics"
+      }]
+    },
+    {
+      "id" : "Observation.subject",
+      "path" : "Observation.subject",
+      "min" : 1,
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.effective[x]",
+      "path" : "Observation.effective[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
       },
-      {
-        "id" : "Observation.meta.security:TransplantCenter",
-        "path" : "Observation.meta.security",
-        "sliceName" : "TransplantCenter",
-        "min" : 1,
-        "max" : "1",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.meta.security:TransplantCenter.system",
-        "path" : "Observation.meta.security.system",
-        "min" : 1,
-        "patternUri" : "http://terminology.cibmtr.org/codesystem/transplant-center"
-      },
-      {
-        "id" : "Observation.meta.security:TransplantCenter.code",
-        "path" : "Observation.meta.security.code",
-        "min" : 1,
-        "constraint" : [
-          {
-            "key" : "sec-rc",
-            "severity" : "error",
-            "human" : "Use transplant center identifier for security tag",
-            "expression" : "matches('^rc_[0-9]{5}$')",
-            "source" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-cytogenetics"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.subject",
-        "path" : "Observation.subject",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
-            ]
-          }
-        ],
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.effective[x]",
-        "path" : "Observation.effective[x]",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "type",
-              "path" : "$this"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        },
-        "min" : 1
-      },
-      {
-        "id" : "Observation.effective[x]:effectiveDateTime",
-        "path" : "Observation.effective[x]",
-        "sliceName" : "effectiveDateTime",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "dateTime"
-          }
-        ],
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component",
-        "path" : "Observation.component",
-        "min" : 2
-      },
-      {
-        "id" : "Observation.component:cytogenomic-nomenclature",
-        "path" : "Observation.component",
-        "sliceName" : "cytogenomic-nomenclature",
-        "min" : 1,
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:cytogenomic-nomenclature.value[x].coding.system",
-        "path" : "Observation.component.value[x].coding.system",
-        "patternUri" : "https://iscn.karger.com"
-      },
-      {
-        "id" : "Observation.component:genomic-source-class",
-        "path" : "Observation.component",
-        "sliceName" : "genomic-source-class",
-        "min" : 1,
-        "mustSupport" : true
-      }
-    ]
+      "min" : 1
+    },
+    {
+      "id" : "Observation.effective[x]:effectiveDateTime",
+      "path" : "Observation.effective[x]",
+      "sliceName" : "effectiveDateTime",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component",
+      "path" : "Observation.component",
+      "min" : 2
+    },
+    {
+      "id" : "Observation.component:cytogenomic-nomenclature",
+      "path" : "Observation.component",
+      "sliceName" : "cytogenomic-nomenclature",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:cytogenomic-nomenclature.value[x].coding.system",
+      "path" : "Observation.component.value[x].coding.system",
+      "patternUri" : "https://iscn.karger.com"
+    },
+    {
+      "id" : "Observation.component:genomic-source-class",
+      "path" : "Observation.component",
+      "sliceName" : "genomic-source-class",
+      "min" : 1,
+      "mustSupport" : true
+    }]
   }
 }
 

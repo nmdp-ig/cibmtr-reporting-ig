@@ -1,4 +1,4 @@
-# CIBMTR Medication Request (mcode) - CIBMTR Reporting Implementation Guide v0.1.10
+# CIBMTR Medication Request (mcode) - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-request | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:CIBMTR_MedicationRequest |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-request | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:CIBMTR_MedicationRequest |
 
  
 CIBMTR Medication Request (mcode) 
@@ -18,7 +18,7 @@ CIBMTR Medication Request (mcode)
 
 * Examples for this Profile: [MedicationRequest/MedicationRequest-Etoposide-Example](MedicationRequest-MedicationRequest-Etoposide-Example.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/nmdp.fhir.cibmtr-reporting|current/StructureDefinition/cibmtr-medication-request)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/nmdp.fhir.cibmtr-reporting|current/StructureDefinition/StructureDefinition-cibmtr-medication-request.json)
 
 ### Formal Views of Profile Content
 
@@ -37,116 +37,107 @@ Other representations of profile: [CSV](StructureDefinition-cibmtr-medication-re
   "resourceType" : "StructureDefinition",
   "id" : "cibmtr-medication-request",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-request",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "CIBMTR_MedicationRequest",
   "title" : "CIBMTR Medication Request (mcode)",
   "status" : "draft",
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:49:22-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "CIBMTR Medication Request (mcode)",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "script10.6",
-      "uri" : "http://ncpdp.org/SCRIPT10_6",
-      "name" : "Mapping to NCPDP SCRIPT 10.6"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "script10.6",
+    "uri" : "http://ncpdp.org/SCRIPT10_6",
+    "name" : "Mapping to NCPDP SCRIPT 10.6"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "MedicationRequest",
   "baseDefinition" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-request",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "MedicationRequest",
-        "path" : "MedicationRequest"
+    "element" : [{
+      "id" : "MedicationRequest",
+      "path" : "MedicationRequest"
+    },
+    {
+      "id" : "MedicationRequest.meta.security",
+      "path" : "MedicationRequest.meta.security",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "system"
+        }],
+        "description" : "slicing on meta.security",
+        "rules" : "open"
       },
-      {
-        "id" : "MedicationRequest.meta.security",
-        "path" : "MedicationRequest.meta.security",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "pattern",
-              "path" : "system"
-            }
-          ],
-          "description" : "slicing on meta.security",
-          "rules" : "open"
-        },
-        "min" : 1
-      },
-      {
-        "id" : "MedicationRequest.meta.security:TransplantCenter",
-        "path" : "MedicationRequest.meta.security",
-        "sliceName" : "TransplantCenter",
-        "min" : 1,
-        "max" : "1",
-        "mustSupport" : true
-      },
-      {
-        "id" : "MedicationRequest.meta.security:TransplantCenter.system",
-        "path" : "MedicationRequest.meta.security.system",
-        "min" : 1,
-        "patternUri" : "http://terminology.cibmtr.org/codesystem/transplant-center"
-      },
-      {
-        "id" : "MedicationRequest.meta.security:TransplantCenter.code",
-        "path" : "MedicationRequest.meta.security.code",
-        "min" : 1,
-        "constraint" : [
-          {
-            "key" : "sec-rc",
-            "severity" : "error",
-            "human" : "Use transplant center identifier for security tag",
-            "expression" : "matches('^rc_[0-9]{5}$')",
-            "source" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-request"
-          }
-        ]
-      }
-    ]
+      "min" : 1
+    },
+    {
+      "id" : "MedicationRequest.meta.security:TransplantCenter",
+      "path" : "MedicationRequest.meta.security",
+      "sliceName" : "TransplantCenter",
+      "min" : 1,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "MedicationRequest.meta.security:TransplantCenter.system",
+      "path" : "MedicationRequest.meta.security.system",
+      "min" : 1,
+      "patternUri" : "http://terminology.cibmtr.org/codesystem/transplant-center"
+    },
+    {
+      "id" : "MedicationRequest.meta.security:TransplantCenter.code",
+      "path" : "MedicationRequest.meta.security.code",
+      "min" : 1,
+      "constraint" : [{
+        "key" : "sec-rc",
+        "severity" : "error",
+        "human" : "Use transplant center identifier for security tag",
+        "expression" : "matches('^rc_[0-9]{5}$')",
+        "source" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-request"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.authoredOn",
+      "path" : "MedicationRequest.authoredOn",
+      "min" : 1
+    }]
   }
 }
 

@@ -12,10 +12,14 @@
 [CBCWDifferentialUnspecifiedBloodVS]: ValueSet-cbc-w-differential-unspecified-blood-vs.html
 [CBCWOrderedManualDifferentialBloodVS]: ValueSet-cbc-w-ordered-manual-differential-blood-vs.html
 [CIBMTR_AdditionalPeriTransplantMedication]: StructureDefinition-cibmtr-additional-peri-transplant-medication.html
+[CIBMTRAncestryCodeSystem]: CodeSystem-cibmtr-ancestry-cs.html
+[CIBMTRAncestryContainer]: StructureDefinition-cibmtr-ancestry.html
+[CIBMTRAncestryValueset]: ValueSet-cibmtr-ancestry-vs.html
 [CIBMTRCytogenetics]: StructureDefinition-cibmtr-cytogenetics.html
 [CIBMTR_GVHDProphylaxisMedication]: StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html
 [CIBMTR_Medication]: StructureDefinition-cibmtr-medication.html
 [CIBMTR_MedicationAdministration]: StructureDefinition-cibmtr-medication-administration.html
+[CIBMTR_Medications]: StructureDefinition-cibmtr-medications.html
 [CIBMTR_MedicationRequest]: StructureDefinition-cibmtr-medication-request.html
 [CIBMTR_MobilizingAgentMedication]: StructureDefinition-cibmtr-mobilizing-agent-medication.html
 [CIBMTRObservationLab]: StructureDefinition-cibmtr-observation-lab.html

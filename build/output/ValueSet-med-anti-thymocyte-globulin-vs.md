@@ -1,4 +1,4 @@
-# RxNorm - Anti-Thymocyte Globulin - CIBMTR Reporting Implementation Guide v0.1.10
+# RxNorm - Anti-Thymocyte Globulin - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-anti-thymocyte-globulin-vs | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:RxNormAntiThymocyteGlobulinVS |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-anti-thymocyte-globulin-vs | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:RxNormAntiThymocyteGlobulinVS |
 
  
 RxNorm codes for Anti-Thymocyte Globulin 
@@ -46,110 +46,100 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "med-anti-thymocyte-globulin-vs",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-anti-thymocyte-globulin-vs",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "RxNormAntiThymocyteGlobulinVS",
   "title" : "RxNorm - Anti-Thymocyte Globulin",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:01:54-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "RxNorm codes for Anti-Thymocyte Globulin",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "1204",
+        "display" : "ATGAM"
+      },
       {
-        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "concept" : [
-          {
-            "code" : "1204",
-            "display" : "ATGAM"
-          },
-          {
-            "code" : "1011",
-            "display" : "lymphocyte immune globulin, anti-thymocyte globulin"
-          },
-          {
-            "code" : "225741",
-            "display" : "Thymoglobulin"
-          },
-          {
-            "code" : "91601",
-            "display" : "lymphocyte immune globulin, anti-thymocyte globulin, equine"
-          },
-          {
-            "code" : "206289",
-            "display" : "5 ML lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML Injection [ATGAM]"
-          },
-          {
-            "code" : "1165939",
-            "display" : "ATGAM Injectable Product"
-          },
-          {
-            "code" : "2282515",
-            "display" : "lymphocyte immune globulin, anti-thymocyte globulin Injectable Product"
-          },
-          {
-            "code" : "2282516",
-            "display" : "lymphocyte immune globulin, anti-thymocyte globulin Injection"
-          },
-          {
-            "code" : "2282519",
-            "display" : "lymphocyte immune globulin, anti-thymocyte globulin Injection [ATGAM]"
-          },
-          {
-            "code" : "2282528",
-            "display" : "lymphocyte immune globulin, anti-thymocyte globulin Injection [Thymoglobulin]"
-          },
-          {
-            "code" : "2282514",
-            "display" : "lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML"
-          },
-          {
-            "code" : "2282518",
-            "display" : "lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML [ATGAM]"
-          },
-          {
-            "code" : "1870646",
-            "display" : "lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML Injection [ATGAM]"
-          },
-          {
-            "code" : "2282525",
-            "display" : "rabbit anti-human T-lymphocyte globulin 25 MG"
-          },
-          {
-            "code" : "2282527",
-            "display" : "rabbit anti-human T-lymphocyte globulin 25 MG [Thymoglobulin]"
-          },
-          {
-            "code" : "107050",
-            "display" : "rabbit anti-human T-lymphocyte globulin 25 MG Injection [Thymoglobulin]"
-          },
-          {
-            "code" : "1177887",
-            "display" : "Thymoglobulin Injectable Product"
-          }
-        ]
-      }
-    ]
+        "code" : "1011",
+        "display" : "lymphocyte immune globulin, anti-thymocyte globulin"
+      },
+      {
+        "code" : "225741",
+        "display" : "Thymoglobulin"
+      },
+      {
+        "code" : "91601",
+        "display" : "lymphocyte immune globulin, anti-thymocyte globulin, equine"
+      },
+      {
+        "code" : "206289",
+        "display" : "5 ML lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML Injection [ATGAM]"
+      },
+      {
+        "code" : "1165939",
+        "display" : "ATGAM Injectable Product"
+      },
+      {
+        "code" : "2282515",
+        "display" : "lymphocyte immune globulin, anti-thymocyte globulin Injectable Product"
+      },
+      {
+        "code" : "2282516",
+        "display" : "lymphocyte immune globulin, anti-thymocyte globulin Injection"
+      },
+      {
+        "code" : "2282519",
+        "display" : "lymphocyte immune globulin, anti-thymocyte globulin Injection [ATGAM]"
+      },
+      {
+        "code" : "2282528",
+        "display" : "lymphocyte immune globulin, anti-thymocyte globulin Injection [Thymoglobulin]"
+      },
+      {
+        "code" : "2282514",
+        "display" : "lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML"
+      },
+      {
+        "code" : "2282518",
+        "display" : "lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML [ATGAM]"
+      },
+      {
+        "code" : "1870646",
+        "display" : "lymphocyte immune globulin, anti-thymocyte globulin, equine 50 MG/ML Injection [ATGAM]"
+      },
+      {
+        "code" : "2282525",
+        "display" : "rabbit anti-human T-lymphocyte globulin 25 MG"
+      },
+      {
+        "code" : "2282527",
+        "display" : "rabbit anti-human T-lymphocyte globulin 25 MG [Thymoglobulin]"
+      },
+      {
+        "code" : "107050",
+        "display" : "rabbit anti-human T-lymphocyte globulin 25 MG Injection [Thymoglobulin]"
+      },
+      {
+        "code" : "1177887",
+        "display" : "Thymoglobulin Injectable Product"
+      }]
+    }]
   }
 }
 

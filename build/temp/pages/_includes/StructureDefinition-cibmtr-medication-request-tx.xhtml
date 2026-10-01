@@ -99,15 +99,15 @@
     <td>MedicationRequest.statusReason</td>
     <td>Base</td>
     <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
     </td>
-    <td title="Identifies the reasons for a given status.">
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medicationrequest-status-reason.html">Medication request  status  reason  codes</a>
-      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/medicationrequest-status-reason" title="Click to copy URL" class="btn-copy"></button>
-    </td>
-    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
     <td>
-      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/us/mcode/STU4/ValueSet-mcode-treatment-termination-reason-vs.html">Treatment Termination Reason Value Set</a>
+      <button data-clipboard-text="http://hl7.org/fhir/us/mcode/ValueSet/mcode-treatment-termination-reason-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 4.0.0, the version found through the package references">&#x1F4E6;4.0.0</td>
+    <td>
+      <a href="http://hl7.org/fhir/us/mcode/STU4">minimal Common Oncology Data Elements  v4.0</a>
     </td>
   </tr>
   <tr>
@@ -129,9 +129,24 @@
     <td>MedicationRequest.category</td>
     <td>Base</td>
     <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
-    <td title="The type of medication order.">
+    <td title="A coded concept identifying the category of medication request.  For example, where the medication is to be consumed or administered, or the type of medication treatment.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medicationrequest-category.html">Medication request  category  codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/medicationrequest-category" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>MedicationRequest.category:us-core</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="The type of medication order. Note that other codes are permitted, see [Required Bindings When Slicing by Value Sets](http://hl7.org/fhir/us/core/general-requirements.html#required-bindings-when-slicing-by-valuesets)">
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medicationrequest-category.html">Medication request  category  codes</a>
       <button data-clipboard-text="http://hl7.org/fhir/ValueSet/medicationrequest-category" title="Click to copy URL" class="btn-copy"></button>
     </td>
@@ -166,9 +181,9 @@
       <button data-clipboard-text="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4" title="Click to copy URL" class="btn-copy"></button>
       <img src="external.png" alt="."/>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to 20240606, the version found through the package references">&#x1F4E6;20240606</td>
+    <td title="Version is not explicitly stated, which means it is fixed to 20170601, the version found through the package references">&#x1F4E6;20170601</td>
     <td>
-      <a href="http://fhir.org/packages/us.nlm.vsac">VSAC v0.23</a>
+      <a href="http://fhir.org/packages/us.nlm.vsac">VSAC v0.11</a>
     </td>
   </tr>
   <tr>
@@ -193,12 +208,12 @@
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/us/mcode/STU2/ValueSet-mcode-cancer-disorder-vs.html">Cancer Disorder Value Set</a>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/us/mcode/STU4/ValueSet-mcode-cancer-disorder-vs.html">Cancer Disorder Value Set</a>
       <button data-clipboard-text="http://hl7.org/fhir/us/mcode/ValueSet/mcode-cancer-disorder-vs" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to 2.0.0, the version found through the package references">&#x1F4E6;2.0.0</td>
+    <td title="Version is not explicitly stated, which means it is fixed to 4.0.0, the version found through the package references">&#x1F4E6;4.0.0</td>
     <td>
-      <a href="http://hl7.org/fhir/us/mcode/STU2">minimal Common Oncology Data Elements  v2.0</a>
+      <a href="http://hl7.org/fhir/us/mcode/STU4">minimal Common Oncology Data Elements  v4.0</a>
     </td>
   </tr>
   <tr>
@@ -307,18 +322,33 @@
     </td>
   </tr>
   <tr>
+    <td>MedicationRequest.dosageInstruction.​doseAndRate.dose[x]</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-ucum-common.html">Common UCUM units</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/ucum-common" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
     <td>MedicationRequest.substitution.​allowed[x]</td>
     <td>Base</td>
     <td>
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td title="Identifies the type of substitution allowed.">
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.1.0/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html">ActSubstanceAdminSubstitutionCode</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.3.0/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html">ActSubstanceAdminSubstitutionCode</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is not explicitly stated, which means it is fixed to 3.0.0, the version found through the package references">&#x1F4E6;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.1.0">THO v7.1</a>
+      <a href="http://terminology.hl7.org/7.3.0">THO v7.3</a>
     </td>
   </tr>
   <tr>
@@ -328,12 +358,12 @@
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td title="A coded concept describing the reason that a different medication should (or should not) be substituted from what was prescribed.">
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.1.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html">SubstanceAdminSubstitutionReason</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.3.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html">SubstanceAdminSubstitutionReason</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is not explicitly stated, which means it is fixed to 3.0.0, the version found through the package references">&#x1F4E6;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.1.0">THO v7.1</a>
+      <a href="http://terminology.hl7.org/7.3.0">THO v7.3</a>
     </td>
   </tr>
 </table>

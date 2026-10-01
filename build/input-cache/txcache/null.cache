@@ -1,7 +1,394 @@
 -------------------------------------------------------------------------------------
-{"hierarchical" : false, "url": "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.1"}####
+{"hierarchical" : true, "language": "en", "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-all-valueset", "version": "0.1.12"}####
 e: {
-  "from-server" : true,
-  "error" : "Unable to find a server to expand 'https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1295.1'"
+  "class" : "UNKNOWN",
+  "source" : tx.fhir.org,
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-all-valueset",
+  "version" : "0.1.12",
+  "name" : "GVHDTypeValueSet",
+  "title" : "GVHD Type Value Set",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-08-27T14:02:40-05:00",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
+  "expansion" : {
+    "identifier" : "urn:uuid:0c81e234-8e7e-4a6a-b5c8-fdba5dafd6a0",
+    "timestamp" : "2026-08-27T19:05:06.331Z",
+    "total" : 23,
+    "offset" : 0,
+    "parameter" : [{
+      "name" : "displayLanguage",
+      "valueCode" : "en"
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : false
+    },
+    {
+      "name" : "warning-experimental",
+      "valueUri" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-all-valueset|0.1.12"
+    },
+    {
+      "name" : "offset",
+      "valueInteger" : 0
+    },
+    {
+      "name" : "count",
+      "valueInteger" : 1000
+    },
+    {
+      "name" : "warning-experimental",
+      "valueUri" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-sct-codes|0.1.12"
+    },
+    {
+      "name" : "used-valueset",
+      "valueUri" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-sct-codes|0.1.12"
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+    },
+    {
+      "name" : "warning-experimental",
+      "valueUri" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes|0.1.12"
+    },
+    {
+      "name" : "used-valueset",
+      "valueUri" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes|0.1.12"
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://hl7.org/fhir/sid/icd-10-cm|2026-04-01"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "234646005",
+      "display" : "Graft versus host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "402355000",
+      "display" : "Acute graft-versus-host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "402356004",
+      "display" : "Chronic graft-versus-host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "402357008",
+      "display" : "Lichenoid chronic graft-versus-host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "402358003",
+      "display" : "Sclerodermoid chronic graft-versus-host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "402360001",
+      "display" : "Materno-fetal graft-versus-host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "444547006",
+      "display" : "Cutaneous graft-versus-host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "762618008",
+      "display" : "Bronchiolitis obliterans syndrome due to and after lung transplantation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "846606007",
+      "display" : "Graft versus host disease of liver"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1144907001",
+      "display" : "Late acute graft-versus-host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1144908006",
+      "display" : "Late chronic graft-versus-host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1144963000",
+      "display" : "Acute on chronic graft-versus-host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1177120001",
+      "display" : "Bronchiolitis obliterans syndrome following allogeneic stem cell transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1268379007",
+      "display" : "Graft versus host disease of intestine"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "121131000119109",
+      "display" : "Chronic graft versus host disease after transplantation of bone marrow"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "128621000119106",
+      "display" : "Acute on chronic graft versus host disease following transplant of kidney"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "128641000119100",
+      "display" : "Acute graft-versus-host disease following transplant of kidney"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "128651000119103",
+      "display" : "Graft-versus-host disease following transplant of kidney"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
+      "code" : "D89.81",
+      "display" : "Graft-versus-host disease"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "code" : "D89.810",
+      "display" : "Acute graft-versus-host disease"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "code" : "D89.811",
+      "display" : "Chronic graft-versus-host disease"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "code" : "D89.812",
+      "display" : "Acute on chronic graft-versus-host disease"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "code" : "D89.813",
+      "display" : "Graft-versus-host disease, unspecified"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "language": "en", "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-all-valueset", "version": "0.1.11"}####
+e: {
+  "source" : tx.fhir.org,
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-all-valueset",
+  "version" : "0.1.11",
+  "name" : "GVHDTypeValueSet",
+  "title" : "GVHD Type Value Set",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-08-27T19:48:42-05:00",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
+  "expansion" : {
+    "identifier" : "urn:uuid:feeed0e6-521e-431b-90ec-96b32708d111",
+    "timestamp" : "2026-08-28T00:50:59.098Z",
+    "total" : 23,
+    "offset" : 0,
+    "parameter" : [{
+      "name" : "displayLanguage",
+      "valueCode" : "en"
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : false
+    },
+    {
+      "name" : "warning-experimental",
+      "valueUri" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-all-valueset|0.1.11"
+    },
+    {
+      "name" : "offset",
+      "valueInteger" : 0
+    },
+    {
+      "name" : "count",
+      "valueInteger" : 1000
+    },
+    {
+      "name" : "warning-experimental",
+      "valueUri" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-sct-codes|0.1.11"
+    },
+    {
+      "name" : "used-valueset",
+      "valueUri" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-sct-codes|0.1.11"
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+    },
+    {
+      "name" : "warning-experimental",
+      "valueUri" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes|0.1.11"
+    },
+    {
+      "name" : "used-valueset",
+      "valueUri" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/gvhd-icd10-codes|0.1.11"
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://hl7.org/fhir/sid/icd-10-cm|2026-04-01"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "234646005",
+      "display" : "Graft versus host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "402355000",
+      "display" : "Acute graft-versus-host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "402356004",
+      "display" : "Chronic graft-versus-host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "402357008",
+      "display" : "Lichenoid chronic graft-versus-host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "402358003",
+      "display" : "Sclerodermoid chronic graft-versus-host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "402360001",
+      "display" : "Materno-fetal graft-versus-host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "444547006",
+      "display" : "Cutaneous graft-versus-host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "762618008",
+      "display" : "Bronchiolitis obliterans syndrome due to and after lung transplantation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "846606007",
+      "display" : "Graft versus host disease of liver"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1144907001",
+      "display" : "Late acute graft-versus-host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1144908006",
+      "display" : "Late chronic graft-versus-host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1144963000",
+      "display" : "Acute on chronic graft-versus-host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1177120001",
+      "display" : "Bronchiolitis obliterans syndrome following allogeneic stem cell transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1268379007",
+      "display" : "Graft versus host disease of intestine"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "121131000119109",
+      "display" : "Chronic graft versus host disease after transplantation of bone marrow"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "128621000119106",
+      "display" : "Acute on chronic graft versus host disease following transplant of kidney"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "128641000119100",
+      "display" : "Acute graft-versus-host disease following transplant of kidney"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "128651000119103",
+      "display" : "Graft-versus-host disease following transplant of kidney"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
+      "code" : "D89.81",
+      "display" : "Graft-versus-host disease"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "code" : "D89.810",
+      "display" : "Acute graft-versus-host disease"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "code" : "D89.811",
+      "display" : "Chronic graft-versus-host disease"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "code" : "D89.812",
+      "display" : "Acute on chronic graft-versus-host disease"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "code" : "D89.813",
+      "display" : "Graft-versus-host disease, unspecified"
+    }]
+  }
+},
+  "error" : ""
 }
 -------------------------------------------------------------------------------------

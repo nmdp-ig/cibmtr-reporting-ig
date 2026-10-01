@@ -1,4 +1,4 @@
-# RxNorm - Busulfan - CIBMTR Reporting Implementation Guide v0.1.10
+# RxNorm - Busulfan - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:RxNormBusulfanVS |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:RxNormBusulfanVS |
 
  
 RxNorm codes for Busulfan 
@@ -46,134 +46,124 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "med-busulfan-vs",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-busulfan-vs",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "RxNormBusulfanVS",
   "title" : "RxNorm - Busulfan",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:01:54-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "RxNorm codes for Busulfan",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "1828",
+        "display" : "busulfan"
+      },
       {
-        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "concept" : [
-          {
-            "code" : "1828",
-            "display" : "busulfan"
-          },
-          {
-            "code" : "284676",
-            "display" : "Busulfex"
-          },
-          {
-            "code" : "203010",
-            "display" : "Myleran"
-          },
-          {
-            "code" : "284425",
-            "display" : "10 ML busulfan 6 MG/ML Injection [Busulfex]"
-          },
-          {
-            "code" : "332701",
-            "display" : "busulfan 0.5 MG"
-          },
-          {
-            "code" : "564077",
-            "display" : "busulfan 0.5 MG [Myleran]"
-          },
-          {
-            "code" : "105550",
-            "display" : "busulfan 0.5 MG Oral Tablet [Myleran]"
-          },
-          {
-            "code" : "317620",
-            "display" : "busulfan 2 MG"
-          },
-          {
-            "code" : "564078",
-            "display" : "busulfan 2 MG [Myleran]"
-          },
-          {
-            "code" : "105551",
-            "display" : "busulfan 2 MG Oral Tablet [Myleran]"
-          },
-          {
-            "code" : "315503",
-            "display" : "busulfan 6 MG/ML"
-          },
-          {
-            "code" : "574864",
-            "display" : "busulfan 6 MG/ML [Busulfex]"
-          },
-          {
-            "code" : "1729356",
-            "display" : "busulfan 6 MG/ML Injection [Busulfex]"
-          },
-          {
-            "code" : "1151374",
-            "display" : "busulfan Injectable Product"
-          },
-          {
-            "code" : "1729351",
-            "display" : "busulfan Injection"
-          },
-          {
-            "code" : "1729353",
-            "display" : "busulfan Injection [Busulfex]"
-          },
-          {
-            "code" : "1151375",
-            "display" : "busulfan Oral Product"
-          },
-          {
-            "code" : "371165",
-            "display" : "busulfan Oral Tablet"
-          },
-          {
-            "code" : "368542",
-            "display" : "busulfan Oral Tablet [Myleran]"
-          },
-          {
-            "code" : "1151376",
-            "display" : "busulfan Pill"
-          },
-          {
-            "code" : "1168702",
-            "display" : "Busulfex Injectable Product"
-          },
-          {
-            "code" : "1185666",
-            "display" : "Myleran Oral Product"
-          },
-          {
-            "code" : "1185667",
-            "display" : "Myleran Pill"
-          }
-        ]
-      }
-    ]
+        "code" : "284676",
+        "display" : "Busulfex"
+      },
+      {
+        "code" : "203010",
+        "display" : "Myleran"
+      },
+      {
+        "code" : "284425",
+        "display" : "10 ML busulfan 6 MG/ML Injection [Busulfex]"
+      },
+      {
+        "code" : "332701",
+        "display" : "busulfan 0.5 MG"
+      },
+      {
+        "code" : "564077",
+        "display" : "busulfan 0.5 MG [Myleran]"
+      },
+      {
+        "code" : "105550",
+        "display" : "busulfan 0.5 MG Oral Tablet [Myleran]"
+      },
+      {
+        "code" : "317620",
+        "display" : "busulfan 2 MG"
+      },
+      {
+        "code" : "564078",
+        "display" : "busulfan 2 MG [Myleran]"
+      },
+      {
+        "code" : "105551",
+        "display" : "busulfan 2 MG Oral Tablet [Myleran]"
+      },
+      {
+        "code" : "315503",
+        "display" : "busulfan 6 MG/ML"
+      },
+      {
+        "code" : "574864",
+        "display" : "busulfan 6 MG/ML [Busulfex]"
+      },
+      {
+        "code" : "1729356",
+        "display" : "busulfan 6 MG/ML Injection [Busulfex]"
+      },
+      {
+        "code" : "1151374",
+        "display" : "busulfan Injectable Product"
+      },
+      {
+        "code" : "1729351",
+        "display" : "busulfan Injection"
+      },
+      {
+        "code" : "1729353",
+        "display" : "busulfan Injection [Busulfex]"
+      },
+      {
+        "code" : "1151375",
+        "display" : "busulfan Oral Product"
+      },
+      {
+        "code" : "371165",
+        "display" : "busulfan Oral Tablet"
+      },
+      {
+        "code" : "368542",
+        "display" : "busulfan Oral Tablet [Myleran]"
+      },
+      {
+        "code" : "1151376",
+        "display" : "busulfan Pill"
+      },
+      {
+        "code" : "1168702",
+        "display" : "Busulfex Injectable Product"
+      },
+      {
+        "code" : "1185666",
+        "display" : "Myleran Oral Product"
+      },
+      {
+        "code" : "1185667",
+        "display" : "Myleran Pill"
+      }]
+    }]
   }
 }
 

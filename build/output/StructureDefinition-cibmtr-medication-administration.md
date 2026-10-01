@@ -1,4 +1,4 @@
-# CIBMTR Medication Administration (mcode) - CIBMTR Reporting Implementation Guide v0.1.10
+# CIBMTR Medication Administration (mcode) - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:CIBMTR_MedicationAdministration |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:CIBMTR_MedicationAdministration |
 
  
 CIBMTR Medication Administration (mcode) 
@@ -18,7 +18,7 @@ CIBMTR Medication Administration (mcode)
 
 * Examples for this Profile: [MedicationAdministration/MedicationAdministration-Example1](MedicationAdministration-MedicationAdministration-Example1.md) and [MedicationAdministration/MedicationAdministration-Example2](MedicationAdministration-MedicationAdministration-Example2.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/nmdp.fhir.cibmtr-reporting|current/StructureDefinition/cibmtr-medication-administration)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/nmdp.fhir.cibmtr-reporting|current/StructureDefinition/StructureDefinition-cibmtr-medication-administration.json)
 
 ### Formal Views of Profile Content
 
@@ -37,116 +37,102 @@ Other representations of profile: [CSV](StructureDefinition-cibmtr-medication-ad
   "resourceType" : "StructureDefinition",
   "id" : "cibmtr-medication-administration",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "CIBMTR_MedicationAdministration",
   "title" : "CIBMTR Medication Administration (mcode)",
   "status" : "draft",
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:01:54-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "CIBMTR Medication Administration (mcode)",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "w3c.prov",
-      "uri" : "http://www.w3.org/ns/prov",
-      "name" : "W3C PROV"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "w3c.prov",
+    "uri" : "http://www.w3.org/ns/prov",
+    "name" : "W3C PROV"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "MedicationAdministration",
   "baseDefinition" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "MedicationAdministration",
-        "path" : "MedicationAdministration"
+    "element" : [{
+      "id" : "MedicationAdministration",
+      "path" : "MedicationAdministration"
+    },
+    {
+      "id" : "MedicationAdministration.meta.security",
+      "path" : "MedicationAdministration.meta.security",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "system"
+        }],
+        "description" : "slicing on meta.security",
+        "rules" : "open"
       },
-      {
-        "id" : "MedicationAdministration.meta.security",
-        "path" : "MedicationAdministration.meta.security",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "pattern",
-              "path" : "system"
-            }
-          ],
-          "description" : "slicing on meta.security",
-          "rules" : "open"
-        },
-        "min" : 1
-      },
-      {
-        "id" : "MedicationAdministration.meta.security:TransplantCenter",
-        "path" : "MedicationAdministration.meta.security",
-        "sliceName" : "TransplantCenter",
-        "min" : 1,
-        "max" : "1",
-        "mustSupport" : true
-      },
-      {
-        "id" : "MedicationAdministration.meta.security:TransplantCenter.system",
-        "path" : "MedicationAdministration.meta.security.system",
-        "min" : 1,
-        "patternUri" : "http://terminology.cibmtr.org/codesystem/transplant-center"
-      },
-      {
-        "id" : "MedicationAdministration.meta.security:TransplantCenter.code",
-        "path" : "MedicationAdministration.meta.security.code",
-        "min" : 1,
-        "constraint" : [
-          {
-            "key" : "sec-rc",
-            "severity" : "error",
-            "human" : "Use transplant center identifier for security tag",
-            "expression" : "matches('^rc_[0-9]{5}$')",
-            "source" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration"
-          }
-        ]
-      }
-    ]
+      "min" : 1
+    },
+    {
+      "id" : "MedicationAdministration.meta.security:TransplantCenter",
+      "path" : "MedicationAdministration.meta.security",
+      "sliceName" : "TransplantCenter",
+      "min" : 1,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "MedicationAdministration.meta.security:TransplantCenter.system",
+      "path" : "MedicationAdministration.meta.security.system",
+      "min" : 1,
+      "patternUri" : "http://terminology.cibmtr.org/codesystem/transplant-center"
+    },
+    {
+      "id" : "MedicationAdministration.meta.security:TransplantCenter.code",
+      "path" : "MedicationAdministration.meta.security.code",
+      "min" : 1,
+      "constraint" : [{
+        "key" : "sec-rc",
+        "severity" : "error",
+        "human" : "Use transplant center identifier for security tag",
+        "expression" : "matches('^rc_[0-9]{5}$')",
+        "source" : "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-medication-administration"
+      }]
+    }]
   }
 }
 

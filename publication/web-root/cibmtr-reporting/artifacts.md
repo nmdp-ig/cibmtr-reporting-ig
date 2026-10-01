@@ -1,4 +1,4 @@
-# Artifacts Summary - CIBMTR Reporting Implementation Guide v0.1.10
+# Artifacts Summary - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -18,17 +18,26 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [CIBMTR GVHD Prophylaxis Medication](StructureDefinition-cibmtr-gvhd-prophylaxis-medication.md) | CIBMTR GVHD Prophylaxis Medication |
 | [CIBMTR Medication (us-core)](StructureDefinition-cibmtr-medication.md) | CIBMTR Medication (us-core) |
 | [CIBMTR Medication Administration (mcode)](StructureDefinition-cibmtr-medication-administration.md) | CIBMTR Medication Administration (mcode) |
+| [CIBMTR Medication Related (mcode)](StructureDefinition-cibmtr-medications.md) |  |
 | [CIBMTR Medication Request (mcode)](StructureDefinition-cibmtr-medication-request.md) | CIBMTR Medication Request (mcode) |
 | [CIBMTR Mobilizing Agents Medication](StructureDefinition-cibmtr-mobilizing-agent-medication.md) | CIBMTR Mobilizing Agents (auto only) Medication |
-| [CIBMTR Observation Laboratory Results Profile (us-core)](StructureDefinition-cibmtr-observation-lab.md) | CIBMTR Observation Laboratory Results Profile (us-core) |
+| [CIBMTR Observation Laboratory Results Profile (us-core)](StructureDefinition-cibmtr-observation-lab.md) |  |
 | [CIBMTR Observation Laboratory Results: Priority Variables](StructureDefinition-cibmtr-obs-priority-variables.md) | CIBMTR Observation Laboratory Results: Priority Variables |
-| [CIBMTR Patient Profile (us-core)](StructureDefinition-cibmtr-patient.md) | CIBMTR Patient Profile for CRID assignment (us-core) |
+| [CIBMTR Patient Profile (us-core)](StructureDefinition-cibmtr-patient.md) |  |
 | [CIBMTR Planned Post-HCT Disease Therapy Medication](StructureDefinition-cibmtr-post-hct-disease-therapy-planned-medication.md) | CIBMTR Planned Post-HCT Disease Therapy Medication |
 | [CIBMTR Prep Regimen Medication](StructureDefinition-cibmtr-prep-regimen-medication.md) | CIBMTR Pre-HCT Preparative Regimen (Conditioning) Medication |
 | [CIBMTR Prior Exposure Medication](StructureDefinition-cibmtr-prior-exposure-medication.md) | CIBMTR Prior Exposure: Potential Study Eligibility Medication |
 | [CIBMTR Vital Signs Results Profile (US Core)](StructureDefinition-cibmtr-vital-signs.md) |  |
 | [CIBMTR Vital Signs-Height Profile (us-core)](StructureDefinition-cibmtr-vital-signs-height.md) | CIBMTR Vital Signs-Height Profile (us-core) |
 | [CIBMTR Vital Signs-Weight Profile (us-core)](StructureDefinition-cibmtr-vital-signs-weight.md) | CIBMTR Vital Signs-Weight Profile (us-core) |
+
+### Structures: Extension Definitions 
+
+These define constraints on FHIR data types for systems conforming to this implementation guide.
+
+| | |
+| :--- | :--- |
+| [CIBMTR Ancestry Extension](StructureDefinition-cibmtr-ancestry.md) | Container extension holding US Core Race plus CIBMTR ancestry codes. |
 
 ### Terminology: Value Sets 
 
@@ -41,6 +50,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [CBC W Differential panel, method unspecified - Blood (69742-5)](ValueSet-cbc-w-differential-unspecified-blood-vs.md) | CBC W Differential panel, method unspecified - Blood (69742-5) |
 | [CBC W Ordered Manual Differential panel - Blood (57782-5)](ValueSet-cbc-w-ordered-manual-differential-blood-vs.md) | CBC W Ordered Manual Differential panel - Blood (57782-5) |
 | [CBC panel - Blood by Automated count (58410-2)](ValueSet-cbc-blood-automated-vs.md) | CBC panel - Blood by Automated count (58410-2) |
+| [CIBMTR Ancestry ValueSet](ValueSet-cibmtr-ancestry-vs.md) | A value set for CIBMTR ancestry information. |
 | [CIBMTR Patient Ancestry Value Set](ValueSet-patient.md) | US Core Race Categories (Intensional). 1. This value set is used by me |
 | [CIBMTR Priority Variables Value Set (FY21)](ValueSet-cibmtr-priority-variables-2021.md) | Priority Variables for CIBMTR (FY21) |
 | [CIBMTR Priority Variables Value Set (FY22)](ValueSet-cibmtr-priority-variables-2022.md) | Priority Variables for CIBMTR (FY22) |
@@ -81,6 +91,14 @@ These define sets of codes used by systems conforming to this implementation gui
 | [RxNorm - Ursodiol](ValueSet-med-ursodiol-vs.md) | RxNorm codes for Ursodiol |
 | [SNOMED Myelodysplastic Diseases](ValueSet-snomed-myelodysplastic-diseases-vs.md) | The myelodysplastic syndromes (MDS) are a group of clonal hematopoietic stem cell diseases characterized by cytopenia(s), dysplasia (abnormal growth or development leading to an alteration in size, shape, and organization of the cell) in one or more of the major myeloid cell lines (WBC, RBC, and/or platelets), ineffective hematopoiesis, and an increased risk of developing acute myelogenous leukemia (AML). MDS occurs primarily in older adults, with a median age of 70 years. The majority of recipients present with symptoms related to cytopenias. Most recipients present with anemia requiring RBC transfusions. |
 | [Smear morphology panel - Blood (34994-4)](ValueSet-smear-morphology-blood-vs.md) | Smear morphology panel - Blood (34994-4) |
+
+### Terminology: Code Systems 
+
+These define new code systems used by systems conforming to this implementation guide.
+
+| | |
+| :--- | :--- |
+| [CIBMTR Ancestry CodeSystem](CodeSystem-cibmtr-ancestry-cs.md) | A code system for CIBMTR ancestry information. |
 
 ### Example: Example Instances 
 

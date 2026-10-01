@@ -1,4 +1,4 @@
-# Leukocyte morphology panel - Blood (58407-8) - CIBMTR Reporting Implementation Guide v0.1.10
+# Leukocyte morphology panel - Blood (58407-8) - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/leukocyte-morphology-blood-vs | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:LeukocyteMorphologyBloodVS |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/leukocyte-morphology-blood-vs | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:LeukocyteMorphologyBloodVS |
 
  
 Leukocyte morphology panel - Blood (58407-8) 
 
  **References** 
 
-* Included into [SmearMorphologyBloodVS](ValueSet-smear-morphology-blood-vs.md)
+* Included into [Smear morphology panel - Blood (34994-4)](ValueSet-smear-morphology-blood-vs.md)
 
 ### Logical Definition (CLD)
 
@@ -46,82 +46,72 @@ Leukocyte morphology panel - Blood (58407-8)
   "resourceType" : "ValueSet",
   "id" : "leukocyte-morphology-blood-vs",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/leukocyte-morphology-blood-vs",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "LeukocyteMorphologyBloodVS",
   "title" : "Leukocyte morphology panel - Blood (58407-8)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:49:22-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "Leukocyte morphology panel - Blood (58407-8)",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "11281-3",
+        "display" : "Auer rods [Presence] in Blood by Light microscopy"
+      },
       {
-        "system" : "http://loinc.org",
-        "concept" : [
-          {
-            "code" : "11281-3",
-            "display" : "Auer rods [Presence] in Blood by Light microscopy"
-          },
-          {
-            "code" : "7792-5",
-            "display" : "Dohle body [Presence] in Blood by Light microscopy"
-          },
-          {
-            "code" : "33215-5",
-            "display" : "Neutrophils.agranular [Presence] in Blood by Light microscopy"
-          },
-          {
-            "code" : "765-8",
-            "display" : "Neutrophils.hypersegmented [Presence] in Blood by Light microscopy"
-          },
-          {
-            "code" : "18319-4",
-            "display" : "Neutrophils.vacuolated [Presence] in Blood by Light microscopy"
-          },
-          {
-            "code" : "18311-1",
-            "display" : "Pelger Huet cells [Presence] in Blood by Light microscopy"
-          },
-          {
-            "code" : "13048-4",
-            "display" : "Sezary cells [Presence] in Blood by Light microscopy"
-          },
-          {
-            "code" : "7798-2",
-            "display" : "Smudge cells [Presence] in Blood by Light microscopy"
-          },
-          {
-            "code" : "803-7",
-            "display" : "Toxic granules [Presence] in Blood by Light microscopy"
-          },
-          {
-            "code" : "11156-7",
-            "display" : "Leukocyte morphology finding [Identifier] in Blood"
-          }
-        ]
-      }
-    ]
+        "code" : "7792-5",
+        "display" : "Dohle body [Presence] in Blood by Light microscopy"
+      },
+      {
+        "code" : "33215-5",
+        "display" : "Neutrophils.agranular [Presence] in Blood by Light microscopy"
+      },
+      {
+        "code" : "765-8",
+        "display" : "Neutrophils.hypersegmented [Presence] in Blood by Light microscopy"
+      },
+      {
+        "code" : "18319-4",
+        "display" : "Neutrophils.vacuolated [Presence] in Blood by Light microscopy"
+      },
+      {
+        "code" : "18311-1",
+        "display" : "Pelger Huet cells [Presence] in Blood by Light microscopy"
+      },
+      {
+        "code" : "13048-4",
+        "display" : "Sezary cells [Presence] in Blood by Light microscopy"
+      },
+      {
+        "code" : "7798-2",
+        "display" : "Smudge cells [Presence] in Blood by Light microscopy"
+      },
+      {
+        "code" : "803-7",
+        "display" : "Toxic granules [Presence] in Blood by Light microscopy"
+      },
+      {
+        "code" : "11156-7",
+        "display" : "Leukocyte morphology finding [Identifier] in Blood"
+      }]
+    }]
   }
 }
 

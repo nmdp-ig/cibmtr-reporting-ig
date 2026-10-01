@@ -1,4 +1,4 @@
-# CBC W Ordered Manual Differential panel - Blood (57782-5) - CIBMTR Reporting Implementation Guide v0.1.10
+# CBC W Ordered Manual Differential panel - Blood (57782-5) - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-ordered-manual-differential-blood-vs | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:CBCWOrderedManualDifferentialBloodVS |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-ordered-manual-differential-blood-vs | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:CBCWOrderedManualDifferentialBloodVS |
 
  
 CBC W Ordered Manual Differential panel - Blood (57782-5) 
@@ -46,47 +46,35 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "cbc-w-ordered-manual-differential-blood-vs",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-w-ordered-manual-differential-blood-vs",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "CBCWOrderedManualDifferentialBloodVS",
   "title" : "CBC W Ordered Manual Differential panel - Blood (57782-5)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:01:54-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "CBC W Ordered Manual Differential panel - Blood (57782-5)",
   "compose" : {
-    "include" : [
-      {
-        "valueSet" : [
-          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-blood-automated-vs"
-        ]
-      },
-      {
-        "valueSet" : [
-          "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/manual-differential-blood-vs"
-        ]
-      }
-    ]
+    "include" : [{
+      "valueSet" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cbc-blood-automated-vs"]
+    },
+    {
+      "valueSet" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/manual-differential-blood-vs"]
+    }]
   }
 }
 

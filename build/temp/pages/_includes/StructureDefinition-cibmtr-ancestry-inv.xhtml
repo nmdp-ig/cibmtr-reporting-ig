@@ -17,27 +17,5 @@
       <b>Expression</b>
     </td>
   </tr>
-  <tr>
-    <td>ele-1</td>
-    <td>error</td>
-    <td>
-      <b>**ALL** elements</b>
-    </td>
-    <td>All FHIR elements must have a @value or children</td>
-    <td>
-      <code>hasValue() or (children().count() &gt; id.count())</code>
-    </td>
-  </tr>
-  <tr>
-    <td>ext-1</td>
-    <td>error</td>
-    <td>
-      <b>**ALL** extensions</b>
-    </td>
-    <td>Must have either extensions or value[x], not both</td>
-    <td>
-      <code>extension.exists() != value.exists()</code>
-    </td>
-  </tr>
 </table>
 {% endraw %}

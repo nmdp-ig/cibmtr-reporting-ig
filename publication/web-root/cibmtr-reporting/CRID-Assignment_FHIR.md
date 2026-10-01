@@ -1,4 +1,4 @@
-# CRID Assignment FHIR - CIBMTR Reporting Implementation Guide v0.1.10
+# CRID Assignment FHIR - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * **CRID Assignment FHIR**
@@ -50,149 +50,11 @@ The authorization key and bearer token must be included in the request as mentio
 
 Complete list of payload options for CRID registration is shown below.
 
-```
-{
-  "resourceType": "Parameters",
-  "id": "example",
-  "parameter": [
-    {
-      "name": "patient",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "example",
-        "name": [
-          {
-            "use": "official",
-            "family": "FamilyName",
-            "given": [
-              "FirstName",
-              "LastName"
-            ]
-          }
-        ],
-        "gender":"string",
-        "race":"string",
-        "birthdate":"date",
-        "meta": {
-          "security": [
-            {
-              "system": "http://cibmtr.org/codesystem/transplant-center",
-              "code": "<center_number_ccn>"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "name": "ccn",
-      "valueString": "string"
-    }
-  ]
-}
-
-```
-
-**OMB Catagory Race Codes**
-
-| | |
-| :--- | :--- |
-| 1002-5 | American Indian or Alaska Native |
-| 2028-9 | Asian |
-| 2054-5 | Black or African American |
-| 2076-8 | Native Hawaiian or Other Pacific Islander |
-| 2106-3 | White |
-| ASKU | Not Reported |
-| UNK | Unknown |
-
-**OMB Catagory Ethnicity Codes**
-
-| | |
-| :--- | :--- |
-| 2135-2 | Hispanic or Latino |
-| 2186-5 | Non Hispanic or Latino |
-| UNK | Unknown |
-
 Because the CRID API is available as a `POST` request, submitting the same data twice does not re-register the patient, but rather will return the parameter response with 200 OK.
 
 The response payload of the CRID Service API is a JSON object that contains the CRID number (lower pane in Figure). The CRID number is then used for all other data references to the registered patient.
 
-| |
-| :--- |
-| *Figure 1: Example CRID registration POST request with JSON body payload (top pane) and response payload (bottom pane)* |
-
 ### Example Code
 
 #### CRID Lookup/Registration (POST)
-
-**patient.json Example**
-
-```
-{
-    "resourceType": "Parameters",
-    "parameter": [
-        {
-            "name": "resource",
-            "resource": {
-                "resourceType": "Patient",
-                "meta": {
-                    "security": [
-                        {
-                            "system": "http://cibmtr.org/codesystem/transplant-center",
-                            "code": "rc_12001"
-                        } 
-                    ]
-                },         
-                "name": [
-                    {
-                        "use": "official",
-                        "family": "Ranii",
-                        "given": ["sdascvdi"]
-                    }
-                ],
-                "gender": "female",
-                "birthDate": "2010-02-04"
-            }
-        },
-        {
-            "name": "ccn",
-            "valueString": "12001"
-        }
-    ]
-}
-
-```
-
-**Python Example**
-
-```
-#!/usr/bin/env python3
-
-import json
-import requests
-from pathlib import Path
-
-
-# Load patient object from patient.json 
-with open('patient.json') as f:
-    patient = json.load(f)
-
-#print(patient)
-
-tokenfile = Path('token.txt')  # Bearer token was previously captured in token.txt
-authstring = 'Bearer ' + tokenfile.read_text()
-headers = {'Authorization': authstring,
-           'Content-Type': 'application/json'}
-
-r = requests.post('https://qa-internal-api.nmdp.org/cibmtr-fhir-backend/v1/r4/Patient/$crid-assignment',
-                 json=patient,
-                 headers=headers)
-
-if r:
-    print(json.dumps(r.json(), indent=4))
-else:
-    print(f"Request failed with status code {r.status_code}")
-    print("Response body:")
-    print(r.text)
-
-```
 

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - CIBMTR Reporting Implementation Guide v0.1.10</title>
+    <title>Artifacts Summary - CIBMTR Reporting Implementation Guide v0.1.12</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +42,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"16"}
-    h3,h4,h5,h6{--heading-prefix:"16.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"17"}
+    h3,h4,h5,h6{--heading-prefix:"17.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -129,7 +129,7 @@ h1 {
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.10 - Trial Use 1
+            <span style="display:inline-block;">0.1.12 - Trial Use 1
 
 
             </span>
@@ -186,10 +186,10 @@ h1 {
         <a href="Laboratory-Observations.html">Lab Observations</a>
       </li>
       <li>
-        <a href="Medications.html">Medications</a>
+        <a href="StructureDefinition-cibmtr-medications.html">Medications</a>
       </li>
       <li>
-        <a href="Vital-Signs.html">Vital Signs</a>
+        <a href="StructureDefinition-cibmtr-vital-signs.html">Vital Signs</a>
       </li>
       <li>
         <a href="Bundles.html">Bundles</a>
@@ -207,9 +207,6 @@ h1 {
         <a href="Appendices.html">Appendices</a>
       </li>
     </ul>
-  </li>
-  <li>
-    <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR (STU3)</a>
   </li>
   <li>
     <a href="artifacts.html">Artifact Index</a>
@@ -256,7 +253,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the CIBMTR Reporting Implementation Guide (v0.1.10: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the CIBMTR Reporting Implementation Guide (v0.1.12: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -271,10 +268,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#2">Terminology: Value Sets</a>
+         <a href="#2">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#3">Example: Example Instances</a>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -335,6 +338,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-cibmtr-medications.html"
+                  title="StructureDefinition/cibmtr-medications">CIBMTR Medication Related (mcode)</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-cibmtr-medication-request.html"
                   title="StructureDefinition/cibmtr-medication-request">CIBMTR Medication Request (mcode)</a>
             </td>
@@ -357,7 +369,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/cibmtr-observation-lab">CIBMTR Observation Laboratory Results Profile (us-core)</a>
             </td>
             <td>
-<p>CIBMTR Observation Laboratory Results Profile (us-core)</p>
+
 </td>
          </tr>
          <tr>
@@ -375,7 +387,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/cibmtr-patient">CIBMTR Patient Profile (us-core)</a>
             </td>
             <td>
-<p>CIBMTR Patient Profile for CRID assignment (us-core)</p>
+
 </td>
          </tr>
          <tr>
@@ -435,6 +447,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tbody>
    </table>
    <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cibmtr-ancestry.html"
+                  title="StructureDefinition/cibmtr-ancestry">CIBMTR Ancestry Extension</a>
+            </td>
+            <td>
+<p>Container extension holding US Core Race plus CIBMTR ancestry codes.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -483,6 +512,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>CBC panel - Blood by Automated count (58410-2)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-cibmtr-ancestry-vs.html"
+                  title="ValueSet/cibmtr-ancestry-vs">CIBMTR Ancestry ValueSet</a>
+            </td>
+            <td>
+<p>A value set for CIBMTR ancestry information.</p>
 </td>
          </tr>
          <tr>
@@ -839,7 +877,24 @@ This value set is used by me</p>
          </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-cibmtr-ancestry-cs.html"
+                  title="CodeSystem/cibmtr-ancestry-cs">CIBMTR Ancestry CodeSystem</a>
+            </td>
+            <td>
+<p>A code system for CIBMTR ancestry information.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -1194,8 +1249,8 @@ if(window.location.hash != "") {
 <div class="container">  <!-- container -->
 <div class="inner-wrapper">
   <p>
-    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.10 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 23, 2026 10:10-0500">2026-04-23</span>
+    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and NMDP</a>  
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.12 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 27, 2026 20:49-0500">2026-08-27</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

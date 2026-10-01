@@ -1,4 +1,4 @@
-# RxNorm - Thiotepa - CIBMTR Reporting Implementation Guide v0.1.10
+# RxNorm - Thiotepa - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-thiotepa-vs | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:RxNormThiotepaVS |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-thiotepa-vs | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:RxNormThiotepaVS |
 
  
 RxNorm codes for Thiotepa 
@@ -46,118 +46,108 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "med-thiotepa-vs",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-thiotepa-vs",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "RxNormThiotepaVS",
   "title" : "RxNorm - Thiotepa",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:01:54-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "RxNorm codes for Thiotepa",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "1366537",
+        "display" : "Tepadina"
+      },
       {
-        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "concept" : [
-          {
-            "code" : "1366537",
-            "display" : "Tepadina"
-          },
-          {
-            "code" : "224924",
-            "display" : "Thioplex"
-          },
-          {
-            "code" : "10473",
-            "display" : "thiotepa"
-          },
-          {
-            "code" : "1919208",
-            "display" : "Tepadina Injectable Product"
-          },
-          {
-            "code" : "1177866",
-            "display" : "Thioplex Injectable Product"
-          },
-          {
-            "code" : "340261",
-            "display" : "thiotepa 10.4 MG/ML"
-          },
-          {
-            "code" : "575228",
-            "display" : "thiotepa 10.4 MG/ML [Thioplex]"
-          },
-          {
-            "code" : "318248",
-            "display" : "thiotepa 10.4 MG/ML Injectable Solution [Thioplex]"
-          },
-          {
-            "code" : "1660002",
-            "display" : "thiotepa 100 MG"
-          },
-          {
-            "code" : "1919206",
-            "display" : "thiotepa 100 MG [Tepadina]"
-          },
-          {
-            "code" : "1919209",
-            "display" : "thiotepa 100 MG Injection [Tepadina]"
-          },
-          {
-            "code" : "1660008",
-            "display" : "thiotepa 15 MG"
-          },
-          {
-            "code" : "1919210",
-            "display" : "thiotepa 15 MG [Tepadina]"
-          },
-          {
-            "code" : "1919211",
-            "display" : "thiotepa 15 MG Injection [Tepadina]"
-          },
-          {
-            "code" : "1156487",
-            "display" : "thiotepa Injectable Product"
-          },
-          {
-            "code" : "375319",
-            "display" : "thiotepa Injectable Solution"
-          },
-          {
-            "code" : "363194",
-            "display" : "thiotepa Injectable Solution [Thioplex]"
-          },
-          {
-            "code" : "1660003",
-            "display" : "thiotepa Injection"
-          },
-          {
-            "code" : "1919207",
-            "display" : "thiotepa Injection [Tepadina]"
-          }
-        ]
-      }
-    ]
+        "code" : "224924",
+        "display" : "Thioplex"
+      },
+      {
+        "code" : "10473",
+        "display" : "thiotepa"
+      },
+      {
+        "code" : "1919208",
+        "display" : "Tepadina Injectable Product"
+      },
+      {
+        "code" : "1177866",
+        "display" : "Thioplex Injectable Product"
+      },
+      {
+        "code" : "340261",
+        "display" : "thiotepa 10.4 MG/ML"
+      },
+      {
+        "code" : "575228",
+        "display" : "thiotepa 10.4 MG/ML [Thioplex]"
+      },
+      {
+        "code" : "318248",
+        "display" : "thiotepa 10.4 MG/ML Injectable Solution [Thioplex]"
+      },
+      {
+        "code" : "1660002",
+        "display" : "thiotepa 100 MG"
+      },
+      {
+        "code" : "1919206",
+        "display" : "thiotepa 100 MG [Tepadina]"
+      },
+      {
+        "code" : "1919209",
+        "display" : "thiotepa 100 MG Injection [Tepadina]"
+      },
+      {
+        "code" : "1660008",
+        "display" : "thiotepa 15 MG"
+      },
+      {
+        "code" : "1919210",
+        "display" : "thiotepa 15 MG [Tepadina]"
+      },
+      {
+        "code" : "1919211",
+        "display" : "thiotepa 15 MG Injection [Tepadina]"
+      },
+      {
+        "code" : "1156487",
+        "display" : "thiotepa Injectable Product"
+      },
+      {
+        "code" : "375319",
+        "display" : "thiotepa Injectable Solution"
+      },
+      {
+        "code" : "363194",
+        "display" : "thiotepa Injectable Solution [Thioplex]"
+      },
+      {
+        "code" : "1660003",
+        "display" : "thiotepa Injection"
+      },
+      {
+        "code" : "1919207",
+        "display" : "thiotepa Injection [Tepadina]"
+      }]
+    }]
   }
 }
 

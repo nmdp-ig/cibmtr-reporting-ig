@@ -1,4 +1,4 @@
-# PatientExample3 - CIBMTR Reporting Implementation Guide v0.1.10
+# PatientExample3 - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 Profile: [CIBMTR Patient Profile (us-core)](StructureDefinition-cibmtr-patient.md)
 
-Security Label: 99999 My Transplant Center (Details: transplant-center code rc_99999 = '99999 My Transplant Center')
+Security Label: 
 
 Jane Doe Female, DoB: 1944-01-29 ( http://example.org/mrn#abc)
 
@@ -23,7 +23,7 @@ Jane Doe Female, DoB: 1944-01-29 ( http://example.org/mrn#abc)
 | US Core Ethnicity Extension: | * text: Unknown
  |
 | US Core Race Extension: | * text: White Caucasian
-* ombCategory: [Race & Ethnicity - CDC: 2106-3](http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-2106-3) (White)
+* ombCategory: [CDC Race and Ethnicity: 2106-3](http://terminology.hl7.org/6.5.0/CodeSystem-CDCREC.html#CDCREC-2106-3) (White)
  |
 
 
@@ -35,70 +35,54 @@ Jane Doe Female, DoB: 1944-01-29 ( http://example.org/mrn#abc)
   "resourceType" : "Patient",
   "id" : "PatientExample3",
   "meta" : {
-    "profile" : [
-      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"
-    ],
-    "security" : [
-      {
-        "system" : "http://terminology.cibmtr.org/codesystem/transplant-center",
-        "code" : "rc_99999",
-        "display" : "99999 My Transplant Center"
-      }
-    ]
+    "profile" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"],
+    "security" : [{
+      "system" : "http://terminology.cibmtr.org/codesystem/transplant-center",
+      "code" : "rc_99999",
+      "display" : "99999 My Transplant Center"
+    }]
   },
-  "extension" : [
-    {
-      "extension" : [
-        {
-          "url" : "text",
-          "valueString" : "White Caucasian"
-        },
-        {
-          "url" : "ombCategory",
-          "valueCoding" : {
-            "system" : "urn:oid:2.16.840.1.113883.6.238",
-            "code" : "2106-3",
-            "display" : "White"
-          }
-        }
-      ],
-      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+  "extension" : [{
+    "extension" : [{
+      "url" : "text",
+      "valueString" : "White Caucasian"
     },
     {
-      "extension" : [
-        {
-          "url" : "text",
-          "valueString" : "Unknown"
-        }
-      ],
-      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
-    }
-  ],
-  "identifier" : [
-    {
-      "system" : "http://example.org/mrn",
-      "value" : "abc"
-    },
-    {
-      "system" : "http://terminology.cibmtr.org/identifier/CRID",
-      "value" : "123456"
-    }
-  ],
-  "name" : [
-    {
-      "family" : "Doe",
-      "given" : ["Jane"]
-    }
-  ],
+      "url" : "ombCategory",
+      "valueCoding" : {
+        "system" : "urn:oid:2.16.840.1.113883.6.238",
+        "code" : "2106-3",
+        "display" : "White"
+      }
+    }],
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+  },
+  {
+    "extension" : [{
+      "url" : "text",
+      "valueString" : "Unknown"
+    }],
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+  }],
+  "identifier" : [{
+    "system" : "http://example.org/mrn",
+    "value" : "abc"
+  },
+  {
+    "system" : "http://terminology.cibmtr.org/identifier/CRID",
+    "value" : "123456"
+  }],
+  "name" : [{
+    "family" : "Doe",
+    "given" : ["Jane"]
+  }],
   "gender" : "female",
   "birthDate" : "1944-01-29",
-  "address" : [
-    {
-      "use" : "home",
-      "city" : "Garland",
-      "state" : "Texas"
-    }
-  ],
+  "address" : [{
+    "use" : "home",
+    "city" : "Garland",
+    "state" : "Texas"
+  }],
   "managingOrganization" : {
     "identifier" : {
       "system" : "http://terminology.cibmtr.org/identifier/transplant-center",

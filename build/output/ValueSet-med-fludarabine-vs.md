@@ -1,4 +1,4 @@
-# RxNorm - Fludarabine - CIBMTR Reporting Implementation Guide v0.1.10
+# RxNorm - Fludarabine - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-fludarabine-vs | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:RxNormFludarabineVS |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-fludarabine-vs | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:RxNormFludarabineVS |
 
  
 RxNorm codes for Fludarabine 
@@ -46,86 +46,76 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "med-fludarabine-vs",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-fludarabine-vs",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "RxNormFludarabineVS",
   "title" : "RxNorm - Fludarabine",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:01:54-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "RxNorm codes for Fludarabine",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "24698",
+        "display" : "fludarabine"
+      },
       {
-        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "concept" : [
-          {
-            "code" : "24698",
-            "display" : "fludarabine"
-          },
-          {
-            "code" : "877487",
-            "display" : "Oforta"
-          },
-          {
-            "code" : "1165043",
-            "display" : "fludarabine Injectable Product"
-          },
-          {
-            "code" : "1740863",
-            "display" : "fludarabine Injection"
-          },
-          {
-            "code" : "828708",
-            "display" : "fludarabine Oral Capsule"
-          },
-          {
-            "code" : "1165044",
-            "display" : "fludarabine Oral Product"
-          },
-          {
-            "code" : "393413",
-            "display" : "fludarabine Oral Tablet"
-          },
-          {
-            "code" : "828705",
-            "display" : "fludarabine phosphate 10 MG"
-          },
-          {
-            "code" : "328431",
-            "display" : "fludarabine phosphate 25 MG/ML"
-          },
-          {
-            "code" : "1740862",
-            "display" : "fludarabine phosphate 50 MG"
-          },
-          {
-            "code" : "1165045",
-            "display" : "fludarabine Pill"
-          }
-        ]
-      }
-    ]
+        "code" : "877487",
+        "display" : "Oforta"
+      },
+      {
+        "code" : "1165043",
+        "display" : "fludarabine Injectable Product"
+      },
+      {
+        "code" : "1740863",
+        "display" : "fludarabine Injection"
+      },
+      {
+        "code" : "828708",
+        "display" : "fludarabine Oral Capsule"
+      },
+      {
+        "code" : "1165044",
+        "display" : "fludarabine Oral Product"
+      },
+      {
+        "code" : "393413",
+        "display" : "fludarabine Oral Tablet"
+      },
+      {
+        "code" : "828705",
+        "display" : "fludarabine phosphate 10 MG"
+      },
+      {
+        "code" : "328431",
+        "display" : "fludarabine phosphate 25 MG/ML"
+      },
+      {
+        "code" : "1740862",
+        "display" : "fludarabine phosphate 50 MG"
+      },
+      {
+        "code" : "1165045",
+        "display" : "fludarabine Pill"
+      }]
+    }]
   }
 }
 

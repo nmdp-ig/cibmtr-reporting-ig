@@ -41,7 +41,10 @@ The authorization key and bearer token must be included in the request as mentio
 - Ethnicity (ethnicity code)
 
 Complete list of payload options for CRID registration is shown below.
-~~~ json
+
+<details class="fig-toggle">
+<summary><u>CRID Registration JSON Example</u></summary>
+<pre><code class="language-json">
 {
   "resourceType": "Parameters",
   "id": "example",
@@ -68,7 +71,7 @@ Complete list of payload options for CRID registration is shown below.
           "security": [
             {
               "system": "http://cibmtr.org/codesystem/transplant-center",
-              "code": "<center_number_ccn>"
+              "code": "&lt;center_number_ccn&gt;"
             }
           ]
         }
@@ -80,45 +83,74 @@ Complete list of payload options for CRID registration is shown below.
     }
   ]
 }
-~~~
+</code></pre>
 
-**OMB Catagory Race Codes**
+</details>
+<style>
+.fig-toggle summary {
+  list-style: none;
+  cursor: pointer;
+}
 
-|Race Value Code   |Description  |
-|------------------|-------------|
-|1002-5            |American Indian or Alaska Native|
-|2028-9            |Asian|
-|2054-5            |Black or African American|
-|2076-8            |Native Hawaiian or Other Pacific Islander|
-|2106-3            |White|
-|ASKU              |Not Reported|
-|UNK               |Unknown|
-{: .grid}
+.fig-toggle summary::-webkit-details-marker {
+  display: none;
+}
 
-**OMB Catagory Ethnicity Codes**
+.fig-toggle summary::before {
+  content: "> ";
+}
 
-|Ethnicity Value Code	| Description             |
-|-------------------------------------------------|
-|2135-2	                | Hispanic or Latino      |
-|2186-5	                | Non Hispanic or Latino  |
-|UNK 	                | Unknown                 |
-{: .grid}
+.fig-toggle[open] summary::before {
+  content: "∨ ";
+}
+</style>
+
+<br>
 
 Because the CRID API is available as a `POST` request, submitting the same data twice does not re-register the patient, but rather will return the parameter response with 200 OK. 
  
 The response payload of the CRID Service API is a JSON object that contains the CRID number (lower pane in Figure).  The CRID number is then used for all other data references to the registered patient.
 
-|![Figure 1](CRID_response.jpg){: width="80%"}|
-|:--:|
-| <i>Figure 1: Example CRID registration POST request with JSON body payload (top pane) and response payload (bottom pane)</i>|
-{:.grid}
+<details class="fig-toggle">
+<summary><u>CRID Response Example</u></summary>
 
+<div style="text-align:center; width:100%; margin-top:10px;">
+
+<img src="CRID_response.jpg" style="width:70%;">
+
+<div style="margin-top:8px;">
+<i>Figure 1: Example CRID registration POST request with JSON body payload (top pane) and response payload (bottom pane).</i>
+</div>
+
+</div>
+
+</details>
+<style>
+.fig-toggle summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.fig-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.fig-toggle summary::before {
+  content: "> ";
+}
+
+.fig-toggle[open] summary::before {
+  content: "∨ ";
+}
+</style>
 
 ### Example Code
 
 #### CRID Lookup/Registration (POST)
-**patient.json Example**
-~~~ json
+
+<details class="fig-toggle">
+<summary><u>Patient Json Example</u></summary>
+<pre><code class="language-json">
 {
     "resourceType": "Parameters",
     "parameter": [
@@ -151,9 +183,32 @@ The response payload of the CRID Service API is a JSON object that contains the 
         }
     ]
 }
-~~~
-**Python Example**
-~~~ python
+</code></pre>
+
+</details>
+<style>
+.fig-toggle summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.fig-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.fig-toggle summary::before {
+  content: "> ";
+}
+
+.fig-toggle[open] summary::before {
+  content: "∨ ";
+}
+</style>
+
+
+<details class="fig-toggle">
+<summary><u>Python Example</u></summary>
+<pre><code class="language-json">
 #!/usr/bin/env python3
 
 import json
@@ -182,6 +237,28 @@ else:
     print(f"Request failed with status code {r.status_code}")
     print("Response body:")
     print(r.text)
-~~~
+</code></pre>
+
+</details>
+<style>
+.fig-toggle summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.fig-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.fig-toggle summary::before {
+  content: "> ";
+}
+
+.fig-toggle[open] summary::before {
+  content: "∨ ";
+}
+</style>
+
+<br>
 
 {% include link-list.md %}

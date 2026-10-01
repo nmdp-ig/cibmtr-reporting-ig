@@ -1,4 +1,4 @@
-# RxNorm - Etoposide - CIBMTR Reporting Implementation Guide v0.1.10
+# RxNorm - Etoposide - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-etoposide-vs | *Version*:0.1.10 |
-| Draft as of 2026-04-23 | *Computable Name*:RxNormEtoposideVS |
+| *Official URL*:http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-etoposide-vs | *Version*:0.1.12 |
+| Draft as of 2026-08-27 | *Computable Name*:RxNormEtoposideVS |
 
  
 RxNorm codes for Etoposide 
@@ -46,158 +46,148 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "med-etoposide-vs",
   "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/med-etoposide-vs",
-  "version" : "0.1.10",
+  "version" : "0.1.12",
   "name" : "RxNormEtoposideVS",
   "title" : "RxNorm - Etoposide",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-04-23T10:10:52-05:00",
-  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-  "contact" : [
-    {
-      "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.cibmtr.org"
-        }
-      ]
-    },
-    {
-      "name" : "Bob Milius",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "bmilius@nmdp.org"
-        }
-      ]
-    }
-  ],
+  "date" : "2026-08-27T20:01:54-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and NMDP",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
   "description" : "RxNorm codes for Etoposide",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "4179",
+        "display" : "etoposide"
+      },
       {
-        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "concept" : [
-          {
-            "code" : "4179",
-            "display" : "etoposide"
-          },
-          {
-            "code" : "220347",
-            "display" : "Toposar"
-          },
-          {
-            "code" : "203058",
-            "display" : "Vepesid"
-          },
-          {
-            "code" : "274342",
-            "display" : "Etopophos"
-          },
-          {
-            "code" : "451835",
-            "display" : "etoposide 10 MG/ML"
-          },
-          {
-            "code" : "329753",
-            "display" : "etoposide 100 MG"
-          },
-          {
-            "code" : "564108",
-            "display" : "etoposide 100 MG [Vepesid]"
-          },
-          {
-            "code" : "105593",
-            "display" : "etoposide 100 MG Oral Capsule [Vepesid]"
-          },
-          {
-            "code" : "315912",
-            "display" : "etoposide 20 MG/ML"
-          },
-          {
-            "code" : "567639",
-            "display" : "etoposide 20 MG/ML [Toposar]"
-          },
-          {
-            "code" : "567640",
-            "display" : "etoposide 20 MG/ML [Vepesid]"
-          },
-          {
-            "code" : "206831",
-            "display" : "etoposide 20 MG/ML Injectable Solution [Toposar]"
-          },
-          {
-            "code" : "206832",
-            "display" : "etoposide 20 MG/ML Injectable Solution [Vepesid]"
-          },
-          {
-            "code" : "315913",
-            "display" : "etoposide 50 MG"
-          },
-          {
-            "code" : "564107",
-            "display" : "etoposide 50 MG [Vepesid]"
-          },
-          {
-            "code" : "105592",
-            "display" : "etoposide 50 MG Oral Capsule [Vepesid]"
-          },
-          {
-            "code" : "1157928",
-            "display" : "etoposide Injectable Product"
-          },
-          {
-            "code" : "376890",
-            "display" : "etoposide Injectable Solution"
-          },
-          {
-            "code" : "362881",
-            "display" : "etoposide Injectable Solution [Toposar]"
-          },
-          {
-            "code" : "362972",
-            "display" : "etoposide Injectable Solution [Vepesid]"
-          },
-          {
-            "code" : "1734339",
-            "display" : "etoposide Injection"
-          },
-          {
-            "code" : "372132",
-            "display" : "etoposide Oral Capsule"
-          },
-          {
-            "code" : "366233",
-            "display" : "etoposide Oral Capsule [Vepesid]"
-          },
-          {
-            "code" : "1157929",
-            "display" : "etoposide Oral Product"
-          },
-          {
-            "code" : "1157930",
-            "display" : "etoposide Pill"
-          },
-          {
-            "code" : "1178005",
-            "display" : "Toposar Injectable Product"
-          },
-          {
-            "code" : "1187877",
-            "display" : "Vepesid Injectable Product"
-          },
-          {
-            "code" : "1187878",
-            "display" : "Vepesid Oral Product"
-          },
-          {
-            "code" : "1187879",
-            "display" : "Vepesid Pill"
-          }
-        ]
-      }
-    ]
+        "code" : "220347",
+        "display" : "Toposar"
+      },
+      {
+        "code" : "203058",
+        "display" : "Vepesid"
+      },
+      {
+        "code" : "274342",
+        "display" : "Etopophos"
+      },
+      {
+        "code" : "451835",
+        "display" : "etoposide 10 MG/ML"
+      },
+      {
+        "code" : "329753",
+        "display" : "etoposide 100 MG"
+      },
+      {
+        "code" : "564108",
+        "display" : "etoposide 100 MG [Vepesid]"
+      },
+      {
+        "code" : "105593",
+        "display" : "etoposide 100 MG Oral Capsule [Vepesid]"
+      },
+      {
+        "code" : "315912",
+        "display" : "etoposide 20 MG/ML"
+      },
+      {
+        "code" : "567639",
+        "display" : "etoposide 20 MG/ML [Toposar]"
+      },
+      {
+        "code" : "567640",
+        "display" : "etoposide 20 MG/ML [Vepesid]"
+      },
+      {
+        "code" : "206831",
+        "display" : "etoposide 20 MG/ML Injectable Solution [Toposar]"
+      },
+      {
+        "code" : "206832",
+        "display" : "etoposide 20 MG/ML Injectable Solution [Vepesid]"
+      },
+      {
+        "code" : "315913",
+        "display" : "etoposide 50 MG"
+      },
+      {
+        "code" : "564107",
+        "display" : "etoposide 50 MG [Vepesid]"
+      },
+      {
+        "code" : "105592",
+        "display" : "etoposide 50 MG Oral Capsule [Vepesid]"
+      },
+      {
+        "code" : "1157928",
+        "display" : "etoposide Injectable Product"
+      },
+      {
+        "code" : "376890",
+        "display" : "etoposide Injectable Solution"
+      },
+      {
+        "code" : "362881",
+        "display" : "etoposide Injectable Solution [Toposar]"
+      },
+      {
+        "code" : "362972",
+        "display" : "etoposide Injectable Solution [Vepesid]"
+      },
+      {
+        "code" : "1734339",
+        "display" : "etoposide Injection"
+      },
+      {
+        "code" : "372132",
+        "display" : "etoposide Oral Capsule"
+      },
+      {
+        "code" : "366233",
+        "display" : "etoposide Oral Capsule [Vepesid]"
+      },
+      {
+        "code" : "1157929",
+        "display" : "etoposide Oral Product"
+      },
+      {
+        "code" : "1157930",
+        "display" : "etoposide Pill"
+      },
+      {
+        "code" : "1178005",
+        "display" : "Toposar Injectable Product"
+      },
+      {
+        "code" : "1187877",
+        "display" : "Vepesid Injectable Product"
+      },
+      {
+        "code" : "1187878",
+        "display" : "Vepesid Oral Product"
+      },
+      {
+        "code" : "1187879",
+        "display" : "Vepesid Pill"
+      }]
+    }]
   }
 }
 

@@ -1,4 +1,4 @@
-# Connection Guide R 4 - CIBMTR Reporting Implementation Guide v0.1.10
+# Connection Guide R 4 - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * **Connection Guide R 4**
@@ -275,7 +275,7 @@ An example of an Observation FHIR resource is shown in Figure 8. The basic struc
 
 • `valueQuantity` – The actual value of the measured lab is represented here as a decimal valued number. The unit system and code are also specified. The CIBMTR data translation engine will convert the values and units after submission if necessary. The units system and code should be UCUM. This section is **required**.
 
-• `referenceRange``– If the high and low range for this lab are known, they can be defined in this section using the same data format as the valueQuantity` section. This section is optional but important for answering some questions on the CIBMTR forms.
+• `referenceRange`` – If the high and low range for this lab are known, they can be defined in this section using the same data format as the valueQuantity` section. This section is optional but important for answering some questions on the CIBMTR forms.
 
 | |
 | :--- |

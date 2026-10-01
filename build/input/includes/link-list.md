@@ -24,7 +24,7 @@
 [HL7 Fast Healthcare Interoperability Resources&#174; (FHIR&#174;)]: http://hl7.org/fhir
 [Medical College of Wisconsin (MCW)]: https://www.mcw.edu
 [Center for International Blood &amp; Marrow Transplant Research® (CIBMTR®)]: https://www.cibmtr.org
-[National Marrow Donor Program® (NMDP)/Be The Match®]: https://bethematch.org
+[NMDP]: https://www.nmdp.org/
 [NMDP/Be The Match]: https://bethematch.org
 [Direct FHIR for STU3 Guide]: CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf
 [A Growable Network Information System (AGNIS)]: https://www.cibmtr.org/DataManagement/SystemApplications/AGNIS/Pages/default.aspx
@@ -42,8 +42,8 @@
 [CRID Assignment_Non-FHIR API]: CRID-Assignment_Non-FHIR.html
 [CRID Assignment_FHIR API]:CRID-Assignment_FHIR.html
 [Patient]: Patient.html
-[Laboratory Observations]: Laboratory-Observations.html
-[Medications]: Medications.html
+[CIBMTR Laboratory Observations]: StructureDefinition-cibmtr-observation-lab.html
+[CIBMTR Medications]: StructureDefinition-cibmtr-medications.html
 [Vital Signs]: Vital-Signs.html
 [Bundles]: Bundles.html
 [Example code]: Example-Code.html

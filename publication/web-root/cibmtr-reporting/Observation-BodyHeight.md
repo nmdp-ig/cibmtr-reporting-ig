@@ -1,4 +1,4 @@
-# BodyHeight - CIBMTR Reporting Implementation Guide v0.1.10
+# BodyHeight - CIBMTR Reporting Implementation Guide v0.1.12
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 Profile: [CIBMTR Vital Signs-Height Profile (us-core)](StructureDefinition-cibmtr-vital-signs-height.md)
 
-Security Label: 99999 My Transplant Center (Details: transplant-center code rc_99999 = '99999 My Transplant Center')
+Security Label: 
 
 **status**: Final
 
@@ -16,11 +16,11 @@ Security Label: 99999 My Transplant Center (Details: transplant-center code rc_9
 
 **code**: Body height
 
-**subject**: [Female, DoB Unknown ( http://terminology.cibmtr.org/identifier/CRID#123456)](Patient-PatientExample6.md)
+**subject**: [ Female, DoB Unknown ( http://terminology.cibmtr.org/identifier/CRID#123456)](Patient-PatientExample6.md)
 
 **effective**: 2020-07-21 14:17:00+0000
 
-**value**: 65.89999999999999 in(Details: UCUM code[in_i] = '[in_i]')
+**value**: 65.89999999999999 in (Details: UCUM code[in_i] = '[in_i]')
 
 
 
@@ -31,35 +31,25 @@ Security Label: 99999 My Transplant Center (Details: transplant-center code rc_9
   "resourceType" : "Observation",
   "id" : "BodyHeight",
   "meta" : {
-    "profile" : [
-      "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-vital-signs-height"
-    ],
-    "security" : [
-      {
-        "system" : "http://terminology.cibmtr.org/codesystem/transplant-center",
-        "code" : "rc_99999",
-        "display" : "99999 My Transplant Center"
-      }
-    ]
+    "profile" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-vital-signs-height"],
+    "security" : [{
+      "system" : "http://terminology.cibmtr.org/codesystem/transplant-center",
+      "code" : "rc_99999",
+      "display" : "99999 My Transplant Center"
+    }]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "vital-signs"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "8302-2"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "8302-2"
+    }]
   },
   "subject" : {
     "reference" : "Patient/PatientExample6"

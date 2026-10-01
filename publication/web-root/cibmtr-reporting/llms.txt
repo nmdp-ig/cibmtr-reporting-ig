@@ -1,4 +1,4 @@
-# nmdp.fhir.cibmtr-reporting#0.1.10: CIBMTR Reporting Implementation Guide
+# nmdp.fhir.cibmtr-reporting#0.1.12: CIBMTR Reporting Implementation Guide
 
 ## Pages
 
@@ -9,6 +9,7 @@
 * [Bundles](Bundles.md)
 * [Connection Guide R 4](Connection-Guide-R4.md)
 * [CRID Assignment FHIR](CRID-Assignment_FHIR.md)
+* [CRID Assignment Non FHIR](CRID-Assignment_Non-FHIR.md)
 * [Cytogenetics](Cytogenetics.md)
 * [Direct FHIR STU 3](Direct-FHIR-STU3.md)
 * [Endpoints](Endpoints.md)
@@ -21,6 +22,10 @@
 
 ## Resources
 
+### CodeSystems
+
+* [CIBMTR Ancestry CodeSystem](CodeSystem-cibmtr-ancestry-cs.md)
+
 ### ValueSets
 
 * [Auto Differential panel - Blood (57023-4)](ValueSet-auto-differential-blood-vs.md)
@@ -28,6 +33,7 @@
 * [CBC W Auto Differential panel - Blood (57021-8)](ValueSet-cbc-w-auto-differential-blood-vs.md)
 * [CBC W Differential panel, method unspecified - Blood (69742-5)](ValueSet-cbc-w-differential-unspecified-blood-vs.md)
 * [CBC W Ordered Manual Differential panel - Blood (57782-5)](ValueSet-cbc-w-ordered-manual-differential-blood-vs.md)
+* [CIBMTR Ancestry ValueSet](ValueSet-cibmtr-ancestry-vs.md)
 * [CIBMTR Vital Signs Concept Set](ValueSet-cibmtr-cs-vitalsigns.md)
 * [CIBMTR Priority Variables Value Set (FY21)](ValueSet-cibmtr-priority-variables-2021.md)
 * [CIBMTR Priority Variables Value Set (FY22)](ValueSet-cibmtr-priority-variables-2022.md)
@@ -77,6 +83,7 @@
 * [CIBMTR Medication Administration (mcode)](StructureDefinition-cibmtr-medication-administration.md)
 * [CIBMTR Medication Request (mcode)](StructureDefinition-cibmtr-medication-request.md)
 * [CIBMTR Medication (us-core)](StructureDefinition-cibmtr-medication.md)
+* [CIBMTR Medication Related (mcode)](StructureDefinition-cibmtr-medications.md)
 * [CIBMTR Mobilizing Agents Medication](StructureDefinition-cibmtr-mobilizing-agent-medication.md)
 * [CIBMTR Observation Laboratory Results: Priority Variables](StructureDefinition-cibmtr-obs-priority-variables.md)
 * [CIBMTR Observation Laboratory Results Profile (us-core)](StructureDefinition-cibmtr-observation-lab.md)
@@ -87,6 +94,10 @@
 * [CIBMTR Vital Signs-Height Profile (us-core)](StructureDefinition-cibmtr-vital-signs-height.md)
 * [CIBMTR Vital Signs-Weight Profile (us-core)](StructureDefinition-cibmtr-vital-signs-weight.md)
 * [CIBMTR Vital Signs Results Profile (US Core)](StructureDefinition-cibmtr-vital-signs.md)
+
+### Extensions
+
+* [CIBMTR Ancestry Extension](StructureDefinition-cibmtr-ancestry.md)
 
 ### ImplementationGuides
 

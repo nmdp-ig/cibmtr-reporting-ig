@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Medication-GVHD-Prophylaxis-Example - XML Representation - CIBMTR Reporting Implementation Guide v0.1.10</title>
+    <title>Medication-GVHD-Prophylaxis-Example - XML Representation - CIBMTR Reporting Implementation Guide v0.1.12</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -44,8 +44,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"16.82"}
-    h3,h4,h5,h6{--heading-prefix:"16.82"}</style>
+    <style type="text/css">h2{--heading-prefix:"17.86"}
+    h3,h4,h5,h6{--heading-prefix:"17.86"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -131,7 +131,7 @@ h1 {
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CIBMTR Reporting Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.10 - Trial Use 1
+            <span style="display:inline-block;">0.1.12 - Trial Use 1
 
 
             </span>
@@ -188,10 +188,10 @@ h1 {
         <a href="Laboratory-Observations.html">Lab Observations</a>
       </li>
       <li>
-        <a href="Medications.html">Medications</a>
+        <a href="StructureDefinition-cibmtr-medications.html">Medications</a>
       </li>
       <li>
-        <a href="Vital-Signs.html">Vital Signs</a>
+        <a href="StructureDefinition-cibmtr-vital-signs.html">Vital Signs</a>
       </li>
       <li>
         <a href="Bundles.html">Bundles</a>
@@ -209,9 +209,6 @@ h1 {
         <a href="Appendices.html">Appendices</a>
       </li>
     </ul>
-  </li>
-  <li>
-    <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Direct FHIR (STU3)</a>
   </li>
   <li>
     <a href="artifacts.html">Artifact Index</a>
@@ -251,7 +248,7 @@ h1 {
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the CIBMTR Reporting Implementation Guide (v0.1.10: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the CIBMTR Reporting Implementation Guide (v0.1.12: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://fhir.nmdp.org/ig/cibmtr-reporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -322,7 +319,7 @@ h1 {
   &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Medication.meta">meta</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Medication.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Medication Medication-GVHD-Prophylaxis-Example&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;Medication-GVHD-Prophylaxis-Example&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcMedication-GVHD-Prophylaxis-Example&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html&quot;&gt;CIBMTR GVHD Prophylaxis Medication&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Security Label: 99999 My Transplant Center (Details: transplant-center code rc_99999 = '99999 My Transplant Center')&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 1156186}, {http://www.nlm.nih.gov/research/umls/rxnorm 1732364}, {http://www.nlm.nih.gov/research/umls/rxnorm 1732366}, {http://www.nlm.nih.gov/research/umls/rxnorm 212844}&quot;&gt;cyclosporine injection&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Ingredients&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Item[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Strength&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 1156186}, {http://www.nlm.nih.gov/research/umls/rxnorm 1732364}, {http://www.nlm.nih.gov/research/umls/rxnorm 1732366}, {http://www.nlm.nih.gov/research/umls/rxnorm 212844}&quot;&gt;cyclosporine injection&lt;/span&gt;&lt;/td&gt;&lt;td&gt;50 milligram&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM  codemg = 'mg')&lt;/span&gt;/1 milliliter&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM  codemL = 'mL')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Medication Medication-GVHD-Prophylaxis-Example&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;Medication-GVHD-Prophylaxis-Example&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcMedication-GVHD-Prophylaxis-Example&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-cibmtr-gvhd-prophylaxis-medication.html&quot;&gt;CIBMTR GVHD Prophylaxis Medication&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Security Label: &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 1156186}, {http://www.nlm.nih.gov/research/umls/rxnorm 1732364}, {http://www.nlm.nih.gov/research/umls/rxnorm 1732366}, {http://www.nlm.nih.gov/research/umls/rxnorm 212844}&quot;&gt;cyclosporine injection&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Ingredients&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Item[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Strength&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 1156186}, {http://www.nlm.nih.gov/research/umls/rxnorm 1732364}, {http://www.nlm.nih.gov/research/umls/rxnorm 1732366}, {http://www.nlm.nih.gov/research/umls/rxnorm 212844}&quot;&gt;cyclosporine injection&lt;/span&gt;&lt;/td&gt;&lt;td&gt;50 milligram&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM  codemg = 'mg')&lt;/span&gt;/1 milliliter&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM  codemL = 'mL')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Medication.text">text</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/medication.html#Medication.code">code</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
@@ -414,8 +411,8 @@ if(window.location.hash != "") {
 <div class="container">  <!-- container -->
 <div class="inner-wrapper">
   <p>
-    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and the National Marrow Donor Program</a>  
-    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.10 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 23, 2026 10:10-0500">2026-04-23</span>
+    IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.cibmtr.org">The Medical College of Wisconsin, Inc. and NMDP</a>  
+    <br/>Package nmdp.fhir.cibmtr-reporting#0.1.12 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 27, 2026 20:49-0500">2026-08-27</span>
     <br/>
     <span style="color: #FFFF77">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

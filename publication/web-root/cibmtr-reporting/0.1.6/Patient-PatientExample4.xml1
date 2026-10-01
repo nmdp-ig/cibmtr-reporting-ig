@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PatientExample4"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
+    <security>
+      <system value="http://terminology.cibmtr.org/codesystem/transplant-center"/>
+      <code value="rc_99999"/>
+      <display value="99999 My Transplant Center"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Peter Doe </b> male, DoB: 1952-05-07 ( id: 1234567 (use: OFFICIAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Id:</td><td colspan="3">id: abc</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail:</td><td colspan="3">Grand Prarie Texas Unknown or unspecified (HOME)</td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>Managing Organization: <span>: Good Health Medical Center</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.">US Core Ethnicity Extension:</td><td colspan="3"><ul><li>text: Unknown</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:
+
+ - American Indian or Alaska Native
+ - Asian
+ - Black or African American
+ - Native Hawaiian or Other Pacific Islander
+ - White.">US Core Race Extension:</td><td colspan="3"><ul><li>text: Black or African American</li><li>ombCategory: <a href="http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-2054-5">Race &amp; Ethnicity - CDC</a> 2054-5: Black or African American</li></ul></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+    <extension url="text">
+      <valueString value="Black or African American"/>
+    </extension>
+    <extension url="ombCategory">
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.238"/>
+        <code value="2054-5"/>
+        <display value="Black or African American"/>
+      </valueCoding>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+    <extension url="text">
+      <valueString value="Unknown"/>
+    </extension>
+  </extension>
+  <identifier>
+    <system value="http://example.org/mrn"/>
+    <value value="abc"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <system value="http://terminology.cibmtr.org/identifier/CRID"/>
+    <value value="1234567"/>
+  </identifier>
+  <name>
+    <family value="Doe"/>
+    <given value="Peter"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1952-05-07"/>
+  <address>
+    <use value="home"/>
+    <city value="Grand Prarie"/>
+    <state value="Texas"/>
+    <country value="Unknown or unspecified"/>
+  </address>
+  <managingOrganization>
+    <identifier>
+      <system value="http://terminology.cibmtr.org/identifier/transplant-center"/>
+      <value value="00000"/>
+    </identifier>
+    <display value="Good Health Medical Center"/>
+  </managingOrganization>
+</Patient>

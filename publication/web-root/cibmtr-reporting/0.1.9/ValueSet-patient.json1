@@ -1,0 +1,44 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "patient",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet patient</b></p><a name=\"patient\"> </a><a name=\"hcpatient\"> </a><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/29463-7/\">29463-7</a></td><td>Body weight Patient Mass Pt Qn</td></tr><tr><td><a href=\"https://loinc.org/8302-2/\">8302-2</a></td><td>Body height Patient Len Pt Qn</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/patient",
+  "version" : "0.1.9",
+  "name" : "Patient",
+  "title" : "CIBMTR Patient Value Set",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-09-19T15:08:00-05:00",
+  "publisher" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+  "contact" : [{
+    "name" : "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cibmtr.org"
+    }]
+  },
+  {
+    "name" : "Bob Milius",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bmilius@nmdp.org"
+    }]
+  }],
+  "description" : "CIBMTR Patient Value Set",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "29463-7",
+        "display" : "Body weight Patient Mass Pt Qn"
+      },
+      {
+        "code" : "8302-2",
+        "display" : "Body height Patient Len Pt Qn"
+      }]
+    }]
+  }
+}

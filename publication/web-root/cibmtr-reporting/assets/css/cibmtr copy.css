@@ -1,0 +1,180 @@
+/* Product families should override the following colors with family-specific colors */
+:root {
+  /* --navbar-bg-color: #0079C1; /* 2. Header container color */
+  --navbar-bg-color: #00355E; /* 2. Header container color */
+  --footer-bg-color: #EAEAEB; /* 3. Footer background color*/
+  /* --footer-container-bg-color: #0079C1; /* 4. Footer container color */
+  --footer-container-bg-color: #00355E; /* 4. Footer container color */
+  --btn-hover-color: #41B8FF;  /* 6. Menu button hover color */
+}
+
+/* Generic settings common to all CIBMTR IGs */
+:root {
+  --stripe-bg-color: #EAEAEB; /* 5. Header strip color */
+  --btn-active-color: #0078a6; /* 7. Menu button active color */
+  --btn-text-color: #e6e6e6; /* 8. Menu button text color */
+  --stu-note-background-color:  #66a9a3; /* 19. (STU) Note box background color */
+  --stu-note-border-left-color: #007066; /* 20. (STU) Note box border color */
+  --ig-header-color: #ffffff;
+  --ig-header-container-color: #ffffff;
+  --link-color: #428bca;
+  --link-hover-color: #2a6496;
+  --ig-status-text-color: #003C60;
+  --toc-box-bg-color: #66869e;
+  --toc-box-border: 2px solid #00355E;
+  --publish-box-bg-color: #66aed9;
+  /* --publish-box-bg-color: #f3f6d3; */
+  --publish-box-border: 1px solid #0079C1;
+  --fhir-version-note-background-color:  #66a9a3; /* 19. (STU) Note box background color */
+  --fhir-version-note-border-left-color: #007066; /* 20. (STU) Note box border color */
+  
+}
+
+#cibmtr-nav {
+  line-height: 50px;
+  float: left;
+  margin-top: 4px;
+}
+
+#cibmtr-nav a {
+  color: inherit;
+}
+
+#cibmtr-logo {
+  float: left;
+  margin-left: 6px;
+}
+#cibmtr-search {
+  line-height: 50px;
+  float: right;
+  margin-top: 4px;
+  color: maroon;
+}
+#cibmtr-search a {
+  color: inherit;
+}
+#project-nav {
+  line-height: 50px;
+  float: left;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  color: #EEF4FA;
+}
+#project-logo {
+  float: left;
+  margin-left: 3px;
+}
+/* ----------publish-box styling------*/
+.publish-box a,
+#publish-box a {
+    color: #000000 !important;
+    text-decoration: underline !important;
+}
+
+.publish-box a:hover,
+#publish-box a:hover {
+    color: #000000 !important;
+}
+
+/* ----------fhir-version-note styling------*/
+.fhir-version-note a {
+    color: #000000 !important;
+    text-decoration: underline !important;
+}
+
+.fhir-version-note a:hover {
+    color: #000000 !important;
+}
+
+/* TOC box links on the Home page */
+div[style*="float: right"] a,
+div[style*="float:right"] a,
+div[style*="border"] ul a,
+div[style*="border"] li a {
+  color: #000000 !important;
+  text-decoration: underline !important;
+}
+
+div[style*="float: right"] a:hover,
+div[style*="float:right"] a:hover,
+div[style*="border"] ul a:hover,
+div[style*="border"] li a:hover {
+  color: #000000 !important;
+  text-decoration: underline !important;
+}
+
+
+/* ----------note-to-balloters styling------*/
+
+.note-to-balloters::before {
+  white-space: pre;
+  content: "Note To Balloters\A ";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
+.note-to-balloters, .stu-note {
+    margin: 5px;
+    padding: 10px;
+    border-left-style: solid;
+}
+
+.stu-note::before {
+  white-space: pre;
+  content: "STU Note\A ";
+  background-color: #66a9a3;
+  color: #007066;
+  font-weight: bold;
+}
+
+.fhir-version-note::before {
+  white-space: pre;
+  content: "FHIR Version Note\A ";
+  background-color: #66a9a3;
+  color: #007066;
+  font-weight: bold;
+}
+
+blockquote.fhir-version-note {
+	margin: 5px;
+	padding:10px;
+    background-color: var(--fhir-version-note-background-color);
+    border-left-color: var(--fhir-version-note-border-left-color);
+}
+
+td a[href^="http://"]:not([no-external^="true"]):after, a[href^="https://"]:not([no-external^="true"]):after {
+  content: url(../images/external.png);
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 3px;
+}
+/* Force Home page right-side TOC links to black */
+#segment-content > div ul li a,
+#segment-content > div ul li a:link,
+#segment-content > div ul li a:visited,
+#segment-content > div ul li a:hover,
+#segment-content > div ul li a:focus {
+  color: #000000 !important;
+  text-decoration: underline !important;
+}
+/* Example/code blocks */
+/* Example/code blocks */
+pre,
+pre code,
+pre code span {
+    background-color: #a9aaab !important;
+    color: #000000 !important;
+}
+
+/* Override ALL syntax highlighting colors */
+pre * {
+    color: #000000 !important;
+}
+
+/* Keep background consistent */
+pre,
+pre code {
+    background: #a9aaab !important;
+   
+}
+

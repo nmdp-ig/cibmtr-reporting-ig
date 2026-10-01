@@ -1,0 +1,40 @@
+{
+  "resourceType" : "Observation",
+  "id" : "LeukocytesObservation",
+  "meta" : {
+    "profile" : ["http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-observation-lab"],
+    "security" : [{
+      "system" : "http://terminology.cibmtr.org/codesystem/transplant-center",
+      "code" : "rc_99999",
+      "display" : "99999 My Transplant Center"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation LeukocytesObservation</b></p><a name=\"LeukocytesObservation\"> </a><a name=\"hcLeukocytesObservation\"> </a><a name=\"LeukocytesObservation-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 26464-8}\">Leukocytes [#/volume] in Blood</span></p><p><b>subject</b>: <a href=\"Patient-PatientExample6.html\"> Female, DoB Unknown ( http://terminology.cibmtr.org/identifier/CRID#123456)</a></p><p><b>effective</b>: 2020-07-21 14:17:00+0000</p><p><b>value</b>: 5.2 billion per liter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code10*9/L = '10*9/L')</span></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "26464-8",
+      "display" : "Leukocytes [#/volume] in Blood"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/PatientExample6"
+  },
+  "effectiveDateTime" : "2020-07-21T14:17:00Z",
+  "valueQuantity" : {
+    "value" : 5.2,
+    "unit" : "billion per liter",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "10*9/L"
+  }
+}

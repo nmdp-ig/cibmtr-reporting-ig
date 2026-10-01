@@ -1,0 +1,275 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/manual-differential-blood-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "manual-differential-blood-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-smear-morphology-blood-vs.html\">Smear morphology panel - Blood (34994-4)</a></li><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/26464-8/\">26464-8</a></td><td>Leukocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/30180-4/\">30180-4</a></td><td>Basophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/26444-0/\">26444-0</a></td><td>Basophils [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/34911-8/\">34911-8</a></td><td>Immature basophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/34910-0/\">34910-0</a></td><td>Immature basophils [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/26446-5/\">26446-5</a></td><td>Blasts/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/30376-8/\">30376-8</a></td><td>Blasts [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/26450-7/\">26450-7</a></td><td>Eosinophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/26449-9/\">26449-9</a></td><td>Eosinophils [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/34913-4/\">34913-4</a></td><td>Immature eosinophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/34912-6/\">34912-6</a></td><td>Immature eosinophils [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/30395-8/\">30395-8</a></td><td>Granulocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/30394-1/\">30394-1</a></td><td>Granulocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/35058-7/\">35058-7</a></td><td>Hairy cells/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/30397-4/\">30397-4</a></td><td>Hairy cells [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/26463-0/\">26463-0</a></td><td>Large unstained cells/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/26462-2/\">26462-2</a></td><td>Large unstained cells [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/26471-3/\">26471-3</a></td><td>Leukocytes other/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/30406-3/\">30406-3</a></td><td>Leukocytes other [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/34922-5/\">34922-5</a></td><td>Lymphoblasts/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/35050-4/\">35050-4</a></td><td>Lymphoblasts [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/26478-8/\">26478-8</a></td><td>Lymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/26474-7/\">26474-7</a></td><td>Lymphocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/30413-9/\">30413-9</a></td><td>Abnormal lymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/30412-1/\">30412-1</a></td><td>Abnormal lymphocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/13046-8/\">13046-8</a></td><td>Variant lymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/26477-0/\">26477-0</a></td><td>Variant lymphocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/30420-4/\">30420-4</a></td><td>Large granular lymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/35082-7/\">35082-7</a></td><td>Large granular lymphocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/34921-7/\">34921-7</a></td><td>Lymphocytes Plasmacytoid/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/35039-7/\">35039-7</a></td><td>Lymphocytes Plasmacytoid [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/30423-8/\">30423-8</a></td><td>Lymphoma cells/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/30422-0/\">30422-0</a></td><td>Lymphoma cells [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/34915-9/\">34915-9</a></td><td>Malignant cells/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/34914-2/\">34914-2</a></td><td>Malignant cells [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/28541-1/\">28541-1</a></td><td>Metamyelocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/30433-7/\">30433-7</a></td><td>Metamyelocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/34923-3/\">34923-3</a></td><td>Monoblasts/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/35029-8/\">35029-8</a></td><td>Monoblasts [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/26485-3/\">26485-3</a></td><td>Monocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/26484-6/\">26484-6</a></td><td>Monocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/30441-0/\">30441-0</a></td><td>Monocytes Abnormal/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/30440-2/\">30440-2</a></td><td>Monocytes Abnormal [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/34925-8/\">34925-8</a></td><td>Immature monocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/34924-1/\">34924-1</a></td><td>Immature monocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/30445-1/\">30445-1</a></td><td>Myeloblasts/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/30444-4/\">30444-4</a></td><td>Myeloblasts [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/26498-6/\">26498-6</a></td><td>Myelocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/30446-9/\">30446-9</a></td><td>Myelocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/26511-6/\">26511-6</a></td><td>Neutrophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/26499-4/\">26499-4</a></td><td>Neutrophils [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/26508-2/\">26508-2</a></td><td>Band form neutrophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/26507-4/\">26507-4</a></td><td>Band form neutrophils [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/30450-1/\">30450-1</a></td><td>Neutrophils.hypersegmented/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/30449-3/\">30449-3</a></td><td>Neutrophils.hypersegmented [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/30451-9/\">30451-9</a></td><td>Segmented neutrophils [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/26505-8/\">26505-8</a></td><td>Segmented neutrophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/34917-5/\">34917-5</a></td><td>Plasma cell precursor/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/34916-7/\">34916-7</a></td><td>Plasma cell precursor [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/13047-6/\">13047-6</a></td><td>Plasma cells/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/30458-4/\">30458-4</a></td><td>Plasma cells [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/34999-3/\">34999-3</a></td><td>Polymorphonuclear cells/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/35003-3/\">35003-3</a></td><td>Polymorphonuclear cells [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/30465-9/\">30465-9</a></td><td>Prolymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/30464-2/\">30464-2</a></td><td>Prolymphocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/30466-7/\">30466-7</a></td><td>Promonocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/34926-6/\">34926-6</a></td><td>Promonocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/26524-9/\">26524-9</a></td><td>Promyelocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/26523-1/\">26523-1</a></td><td>Promyelocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/34919-1/\">34919-1</a></td><td>Sezary cells/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/34918-3/\">34918-3</a></td><td>Sezary cells [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/34992-8/\">34992-8</a></td><td>Smudge cells/100 leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/34993-6/\">34993-6</a></td><td>Smudge cells [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/33255-1/\">33255-1</a></td><td>Cell Fractions/Differential [Interpretation] in Blood</td></tr><tr><td><a href=\"https://loinc.org/58445-8/\">58445-8</a></td><td>Manual differential comment [Interpretation] in Blood Narrative</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/manual-differential-blood-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "ManualDifferentialBloodVS"] ; # 
+  fhir:title [ fhir:v "Manual Differential panel - Blood (24318-8)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-05-05T10:46:24-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.cibmtr.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Milius" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bmilius@nmdp.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Manual Differential panel - Blood (24318-8)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/smear-morphology-blood-vs"^^xsd:anyURI ;
+         fhir:link <http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/smear-morphology-blood-vs>
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "26464-8" ] ;
+         fhir:display [ fhir:v "Leukocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30180-4" ] ;
+         fhir:display [ fhir:v "Basophils/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26444-0" ] ;
+         fhir:display [ fhir:v "Basophils [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "34911-8" ] ;
+         fhir:display [ fhir:v "Immature basophils/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "34910-0" ] ;
+         fhir:display [ fhir:v "Immature basophils [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26446-5" ] ;
+         fhir:display [ fhir:v "Blasts/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30376-8" ] ;
+         fhir:display [ fhir:v "Blasts [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26450-7" ] ;
+         fhir:display [ fhir:v "Eosinophils/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26449-9" ] ;
+         fhir:display [ fhir:v "Eosinophils [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "34913-4" ] ;
+         fhir:display [ fhir:v "Immature eosinophils/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "34912-6" ] ;
+         fhir:display [ fhir:v "Immature eosinophils [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30395-8" ] ;
+         fhir:display [ fhir:v "Granulocytes/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30394-1" ] ;
+         fhir:display [ fhir:v "Granulocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "35058-7" ] ;
+         fhir:display [ fhir:v "Hairy cells/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30397-4" ] ;
+         fhir:display [ fhir:v "Hairy cells [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26463-0" ] ;
+         fhir:display [ fhir:v "Large unstained cells/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26462-2" ] ;
+         fhir:display [ fhir:v "Large unstained cells [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26471-3" ] ;
+         fhir:display [ fhir:v "Leukocytes other/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30406-3" ] ;
+         fhir:display [ fhir:v "Leukocytes other [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "34922-5" ] ;
+         fhir:display [ fhir:v "Lymphoblasts/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "35050-4" ] ;
+         fhir:display [ fhir:v "Lymphoblasts [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26478-8" ] ;
+         fhir:display [ fhir:v "Lymphocytes/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26474-7" ] ;
+         fhir:display [ fhir:v "Lymphocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30413-9" ] ;
+         fhir:display [ fhir:v "Abnormal lymphocytes/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30412-1" ] ;
+         fhir:display [ fhir:v "Abnormal lymphocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "13046-8" ] ;
+         fhir:display [ fhir:v "Variant lymphocytes/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26477-0" ] ;
+         fhir:display [ fhir:v "Variant lymphocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30420-4" ] ;
+         fhir:display [ fhir:v "Large granular lymphocytes/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "35082-7" ] ;
+         fhir:display [ fhir:v "Large granular lymphocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "34921-7" ] ;
+         fhir:display [ fhir:v "Lymphocytes Plasmacytoid/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "35039-7" ] ;
+         fhir:display [ fhir:v "Lymphocytes Plasmacytoid [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30423-8" ] ;
+         fhir:display [ fhir:v "Lymphoma cells/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30422-0" ] ;
+         fhir:display [ fhir:v "Lymphoma cells [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "34915-9" ] ;
+         fhir:display [ fhir:v "Malignant cells/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "34914-2" ] ;
+         fhir:display [ fhir:v "Malignant cells [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "28541-1" ] ;
+         fhir:display [ fhir:v "Metamyelocytes/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30433-7" ] ;
+         fhir:display [ fhir:v "Metamyelocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "34923-3" ] ;
+         fhir:display [ fhir:v "Monoblasts/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "35029-8" ] ;
+         fhir:display [ fhir:v "Monoblasts [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26485-3" ] ;
+         fhir:display [ fhir:v "Monocytes/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26484-6" ] ;
+         fhir:display [ fhir:v "Monocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30441-0" ] ;
+         fhir:display [ fhir:v "Monocytes Abnormal/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30440-2" ] ;
+         fhir:display [ fhir:v "Monocytes Abnormal [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "34925-8" ] ;
+         fhir:display [ fhir:v "Immature monocytes/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "34924-1" ] ;
+         fhir:display [ fhir:v "Immature monocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30445-1" ] ;
+         fhir:display [ fhir:v "Myeloblasts/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30444-4" ] ;
+         fhir:display [ fhir:v "Myeloblasts [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26498-6" ] ;
+         fhir:display [ fhir:v "Myelocytes/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30446-9" ] ;
+         fhir:display [ fhir:v "Myelocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26511-6" ] ;
+         fhir:display [ fhir:v "Neutrophils/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26499-4" ] ;
+         fhir:display [ fhir:v "Neutrophils [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26508-2" ] ;
+         fhir:display [ fhir:v "Band form neutrophils/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26507-4" ] ;
+         fhir:display [ fhir:v "Band form neutrophils [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30450-1" ] ;
+         fhir:display [ fhir:v "Neutrophils.hypersegmented/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30449-3" ] ;
+         fhir:display [ fhir:v "Neutrophils.hypersegmented [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30451-9" ] ;
+         fhir:display [ fhir:v "Segmented neutrophils [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26505-8" ] ;
+         fhir:display [ fhir:v "Segmented neutrophils/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "34917-5" ] ;
+         fhir:display [ fhir:v "Plasma cell precursor/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "34916-7" ] ;
+         fhir:display [ fhir:v "Plasma cell precursor [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "13047-6" ] ;
+         fhir:display [ fhir:v "Plasma cells/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30458-4" ] ;
+         fhir:display [ fhir:v "Plasma cells [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "34999-3" ] ;
+         fhir:display [ fhir:v "Polymorphonuclear cells/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "35003-3" ] ;
+         fhir:display [ fhir:v "Polymorphonuclear cells [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30465-9" ] ;
+         fhir:display [ fhir:v "Prolymphocytes/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30464-2" ] ;
+         fhir:display [ fhir:v "Prolymphocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "30466-7" ] ;
+         fhir:display [ fhir:v "Promonocytes/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "34926-6" ] ;
+         fhir:display [ fhir:v "Promonocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26524-9" ] ;
+         fhir:display [ fhir:v "Promyelocytes/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "26523-1" ] ;
+         fhir:display [ fhir:v "Promyelocytes [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "34919-1" ] ;
+         fhir:display [ fhir:v "Sezary cells/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "34918-3" ] ;
+         fhir:display [ fhir:v "Sezary cells [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "34992-8" ] ;
+         fhir:display [ fhir:v "Smudge cells/100 leukocytes in Blood" ]
+       ] [
+         fhir:code [ fhir:v "34993-6" ] ;
+         fhir:display [ fhir:v "Smudge cells [#/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "33255-1" ] ;
+         fhir:display [ fhir:v "Cell Fractions/Differential [Interpretation] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "58445-8" ] ;
+         fhir:display [ fhir:v "Manual differential comment [Interpretation] in Blood Narrative" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

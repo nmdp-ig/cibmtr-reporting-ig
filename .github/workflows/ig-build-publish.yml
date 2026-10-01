@@ -128,6 +128,12 @@ jobs:
       # the web-root level accordingly. history.html is still written into
       # web-root/cibmtr-reporting/ (the resolved IG dir), where the theme step
       # and Pages upload expect it.
+      #
+      # -templates points at build/history-templates, which supplies the
+      # header/preamble/postamble.template fragments that
+      # fhir-ig-history-template/history.template references ($header$ etc.).
+      # Without -templates, templateSrc is null and HistoryPageUpdater throws
+      # "header.template / First entry in file path cannot be null".
       - name: Run publish-update
         working-directory: .
         run: |
@@ -138,7 +144,8 @@ jobs:
             -publish-update \
             -folder publication/web-root \
             -registry ig-registry/fhir-ig-list.json \
-            -history fhir-ig-history-template
+            -history fhir-ig-history-template \
+            -templates build/history-templates
         continue-on-error: true
 
       # Apply CIBMTR theme and fix history page JS/CSS

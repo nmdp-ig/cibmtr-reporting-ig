@@ -180,9 +180,12 @@ jobs:
         with:
           path: publication/web-root/cibmtr-reporting/
 
-      # Commit publication artifacts to deploy-ready branch
+      # Commit publication artifacts to deploy-ready branch.
+      # Only from main: deploy-ready is the stable source consumed by the
+      # GitLab Docker build. Feature branches still deploy to the preview
+      # Pages site, but must not overwrite deploy-ready.
       - name: Commit to deploy-ready
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           # Use a fresh clone to avoid any large files from the build
           cd /tmp

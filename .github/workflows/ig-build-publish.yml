@@ -119,27 +119,90 @@ jobs:
           cp -r build/output/* publication/web-root/cibmtr-reporting/${{ steps.meta.outputs.version }}/
 
       # Run publish-update to generate history and package registry.
-      # -folder must be the WEB ROOT (the parent that contains the IG dir),
-      # not the IG dir itself. publish-update locates each IG by appending the
-      # canonical-minus-url path (/cibmtr-reporting) to -folder. Pointing
-      # -folder at .../cibmtr-reporting doubled that segment
-      # (.../cibmtr-reporting/cibmtr-reporting/<ver>) and every version was
-      # reported "not found". publish-setup.json / package-list.json live at
-      # the web-root level accordingly. history.html is still written into
-      # web-root/cibmtr-reporting/ (the resolved IG dir), where the theme step
-      # and Pages upload expect it.
+      #
+      # Three things must line up or IG Publisher's IGWebSiteMaintainer fails
+      # (historically swallowed by continue-on-error, producing a single-version,
+      # no-history site):
+      #
+      # 1. -folder must be the WEB ROOT (publication/web-root), NOT the IG dir.
+      #    The publisher locates each IG by appending (canonical - website.url) to
+      #    -folder. canonical=.../ig/cibmtr-reporting, website.url=.../ig, so it
+      #    appends /cibmtr-reporting. Pointing -folder at .../web-root/cibmtr-reporting
+      #    doubled it -> .../cibmtr-reporting/cibmtr-reporting/<ver> "not found".
+      #    history.html still lands in web-root/cibmtr-reporting/ (the resolved IG dir).
+      #
+      # 2. -templates must be supplied. It is the dir holding the
+      #    header/preamble/postamble.template fragments that fill the
+      #    $header$/$preamble$/$postamble$ placeholders in history.template.
+      #    Omitting it passes a null templateSrc into HistoryPageUpdater.loadTemplate(),
+      #    which throws "First entry in file path cannot be null or empty ... header.template".
+      #    Fragments are tracked at publication/web-root/history-templates/.
+      #
+      # 3. package-list.json must list EXACTLY the version folders present on disk.
+      #    Any listed version whose folder is missing -> "path not found" hard fail.
+      #    We regenerate the version list from the 0.* dirs actually staged, so it
+      #    can never drift from reality.
       - name: Run publish-update
         working-directory: .
         run: |
-          cp build/publish-setup.json publication/web-root/publish-setup.json
-          # Must copy AFTER the output overlay since build/output/ has its own single-version package-list.json
-          cp build/package-list.json publication/web-root/package-list.json
+          WEBROOT=publication/web-root
+          IGDIR=$WEBROOT/cibmtr-reporting
+
+          # publish-setup.json goes at the WEB ROOT (describes the site).
+          cp build/publish-setup.json $WEBROOT/publish-setup.json
+
+          # package-list.json goes ONLY in the IG dir. If one also sits at the web
+          # root, scanForIgs() treats the web root itself as a second IG ("found 2
+          # IGs") and fails with a null-path error. Remove any stray root copy.
+          rm -f $WEBROOT/package-list.json
+
+          # Source the version list from the fullest available history, then keep
+          # only versions whose folder is actually staged on disk:
+          #   1. deploy-ready carried-forward list (has ALL published versions), else
+          #   2. build/package-list.json (repo default, may lag newest versions).
+          SRC=/tmp/existing-deploy/publication/web-root/cibmtr-reporting/package-list.json
+          [ -f "$SRC" ] || SRC=build/package-list.json
+          echo "Using package-list source: $SRC"
+          python3 - "$IGDIR" "$SRC" "$IGDIR/package-list.json" <<'PY'
+          import json, os, sys
+          igdir, src_path, out_path = sys.argv[1], sys.argv[2], sys.argv[3]
+          src = json.load(open(src_path))
+          ondisk = {d for d in os.listdir(igdir) if d.startswith("0.") and os.path.isdir(os.path.join(igdir, d))}
+          listed = {e.get("version") for e in src["list"]}
+          kept = [e for e in src["list"] if e.get("version") == "current" or e.get("version") in ondisk]
+          dropped = [e.get("version") for e in src["list"] if e not in kept]
+          missing = sorted(ondisk - listed)
+          src["list"] = kept
+          json.dump(src, open(out_path, "w"), indent=2)
+          print("on-disk versions :", sorted(ondisk))
+          print("kept in list     :", [e.get("version") for e in kept])
+          if dropped: print("dropped (no dir) :", dropped)
+          if missing:
+              print("::error::versions on disk but missing from package-list source:", missing)
+              sys.exit(1)
+          PY
+
           echo "y" | java -Xmx4g -jar build/input-cache/publisher.jar \
             -publish-update \
-            -folder publication/web-root \
+            -folder "$WEBROOT" \
             -registry ig-registry/fhir-ig-list.json \
-            -history fhir-ig-history-template
+            -history fhir-ig-history-template \
+            -templates publication/web-root/history-templates
         continue-on-error: true
+
+      # Fail loudly if publish-update did not actually produce the history page.
+      # publish-update runs under continue-on-error so a transient issue can't block
+      # the deploy, but a MISSING history.html means the publication is broken
+      # (single-version, no history) and we want that surfaced, not hidden by a green run.
+      - name: Verify history page was generated
+        working-directory: .
+        run: |
+          HIST=publication/web-root/cibmtr-reporting/history.html
+          if [ ! -s "$HIST" ]; then
+            echo "::error::publish-update did not generate $HIST — history/package registry step failed."
+            exit 1
+          fi
+          echo "history.html generated OK ($(wc -c < "$HIST") bytes)"
 
       # Apply CIBMTR theme and fix history page JS/CSS
       - name: Apply CIBMTR theme to history page
@@ -162,8 +225,10 @@ jobs:
             sed -i 's|https://hl7.org/fhir/history-cm.js|history-cm.js|g' $WEBROOT/history.html
             sed -i 's|https://hl7.org/fhir/history.js|history.js|g' $WEBROOT/history.html
 
-            # Fix pageJSON: replace the embedded package-list data with our full version list
-            PAGEJSON=$(cat build/package-list.json | tr -d '\n' | sed "s/'/\\\\'/g")
+            # Fix pageJSON: replace the embedded package-list data with the
+            # reconciled version list that publish-update used (in the IG dir),
+            # NOT build/package-list.json (which can lag the newest versions).
+            PAGEJSON=$(cat $WEBROOT/package-list.json | tr -d '\n' | sed "s/'/\\\\'/g")
             sed -i "s|var pageJSON = '.*';|var pageJSON = '${PAGEJSON}';|" $WEBROOT/history.html
           fi
 

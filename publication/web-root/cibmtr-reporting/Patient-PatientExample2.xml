@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PatientExample2"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
+    <security>
+      <system value="http://terminology.cibmtr.org/codesystem/transplant-center"/>
+      <code value="rc_99999"/>
+      <display value="99999 My Transplant Center"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient PatientExample2</b></p><a name="PatientExample2"> </a><a name="hcPatientExample2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cibmtr-patient.html">CIBMTR Patient Profile (us-core)</a></p><p style="margin-bottom: 0px">Security Label: </p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">John Doe  Male, DoB Unknown ( http://example.org/mrn#abc)</p><hr/></div>
+  </text>
+  <identifier>
+    <system value="http://example.org/mrn"/>
+    <value value="abc"/>
+  </identifier>
+  <name>
+    <family value="Doe"/>
+    <given value="John"/>
+  </name>
+  <gender value="male"/>
+</Patient>

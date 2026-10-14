@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PatientExample1"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-patient"/>
+    <security>
+      <system value="http://terminology.cibmtr.org/codesystem/transplant-center"/>
+      <code value="rc_99999"/>
+      <display value="99999 My Transplant Center"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Jane Doe </b> female, DoB Unknown ( id: abc)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Id:</td><td colspan="3">id: 123456</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://example.org/mrn"/>
+    <value value="abc"/>
+  </identifier>
+  <identifier>
+    <system value="http://terminology.cibmtr.org/identifier/CRID"/>
+    <value value="123456"/>
+  </identifier>
+  <name>
+    <family value="Doe"/>
+    <given value="Jane"/>
+  </name>
+  <gender value="female"/>
+</Patient>
